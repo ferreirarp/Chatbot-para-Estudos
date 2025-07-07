@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Educacional - Estudos para Prova</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .chat-area {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-message {
+            text-align: right;
+        }
+
+        .bot-message {
+            text-align: left;
+        }
+
+        .message-bubble {
+            display: inline-block;
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            word-wrap: break-word;
+            position: relative;
+        }
+
+        .user-message .message-bubble {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+
+        .bot-message .message-bubble {
+            background: white;
+            color: #333;
+            border: 1px solid #e0e0e0;
+            border-bottom-left-radius: 5px;
+        }
+
+        .input-area {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .student-info {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .student-info input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .student-info input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        #messageInput {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+        }
+
+        #messageInput:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .send-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+
+        .send-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .admin-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            min-width: 200px;
+        }
+
+        .admin-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        .admin-btn:hover {
+            background: #218838;
+        }
+
+        .typing-indicator {
+            display: none;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .typing-indicator .message-bubble {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-bottom-left-radius: 5px;
+        }
+
+        .dots {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+        }
+
+        .dots span {
+            display: inline-block;
+            background: #667eea;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 0 1px;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .dots span:nth-child(1) { animation-delay: -0.32s; }
+        .dots span:nth-child(2) { animation-delay: -0.16s; }
+        .dots span:nth-child(3) { animation-delay: 0s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                height: 100vh;
+                border-radius: 0;
+            }
+            
+            .admin-panel {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Assistente de Estudos</h1>
+            <p>Tire suas dúvidas sobre o conteúdo da prova</p>
+        </div>
+
+        <div class="chat-area" id="chatArea">
+            <div class="warning">
+                <strong>⚠️ Importante:</strong> Este chatbot só pode ajudar com os conteúdos específicos da prova. Outras perguntas não serão respondidas.
+            </div>
+            
+            <div class="message bot-message">
+                <div class="message-bubble">
+                    Olá! 👋 Eu sou seu assistente de estudos. Estou aqui para ajudar você a estudar para a prova.<br><br>
+                    Antes de começarmos, por favor me diga seu nome para que possamos ter uma conversa mais personalizada!
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="message-bubble">
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="student-info" id="studentInfo">
+                <input type="text" id="studentName" placeholder="Seu nome completo" required>
+                <input type="text" id="studentId" placeholder="Matrícula (opcional)">
+                <button class="admin-btn" onclick="setStudentInfo()">Confirmar</button>
+            </div>
+            <div id="chatInterface" style="display: none; flex: 1; display: flex; gap: 10px;">
+                <textarea id="messageInput" placeholder="Digite sua pergunta sobre o conteúdo da prova..."></textarea>
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()">📤</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-panel">
+        <h4>🔧 Painel do Professor</h4>
+        <button class="admin-btn" onclick="exportConversations()">📄 Exportar Conversas</button>
+        <button class="admin-btn" onclick="clearAllData()">🗑️ Limpar Dados</button>
+        <button class="admin-btn" onclick="showStats()">📊 Estatísticas</button>
+    </div>
+
+    <script>
+        // Configuração do conteúdo da prova (PERSONALIZE AQUI)
+        const CONTEUDO_PROVA = {
+            "matematica": [
+                "equações do segundo grau",
+                "funções quadráticas",
+                "sistemas de equações",
+                "geometria analítica",
+                "trigonometria básica"
+            ],
+            "fisica": [
+                "leis de Newton",
+                "cinemática",
+                "dinâmica",
+                "energia mecânica",
+                "ondas e som"
+            ],
+            "historia": [
+                "revolução industrial",
+                "primeira guerra mundial",
+                "segunda guerra mundial",
+                "guerra fria",
+                "ditadura militar no Brasil"
+            ]
+        };
+
+        // Perguntas e respostas pré-definidas (PERSONALIZE AQUI)
+        const PERGUNTAS_RESPOSTAS = {
+            "o que é equação do segundo grau": "Uma equação do segundo grau é uma equação polinomial de grau 2, na forma ax² + bx + c = 0, onde a ≠ 0. Pode ser resolvida usando a fórmula de Bhaskara: x = (-b ± √(b²-4ac)) / 2a",
+            
+            "primeira lei de newton": "A primeira lei de Newton, também conhecida como Lei da Inércia, estabelece que um corpo em repouso permanece em repouso e um corpo em movimento permanece em movimento com velocidade constante, a menos que uma força externa atue sobre ele.",
+            
+            "o que foi a revolução industrial": "A Revolução Industrial foi um período de grandes transformações econômicas, tecnológicas e sociais que começou na Inglaterra no século XVIII. Caracterizou-se pela mecanização da produção, urbanização e mudanças nas relações de trabalho.",
+            
+            "como calcular função quadrática": "Uma função quadrática tem a forma f(x) = ax² + bx + c. Para encontrar o vértice, use x = -b/2a. O discriminante Δ = b² - 4ac determina se há raízes reais (Δ ≥ 0) ou complexas (Δ < 0)."
+        };
+
+        let currentStudent = null;
+        let conversationHistory = [];
+        let allConversations = JSON.parse(localStorage.getItem('allConversations') || '[]');
+
+        function setStudentInfo() {
+            const name = document.getElementById('studentName').value.trim();
+            if (!name) {
+                alert('Por favor, digite seu nome!');
+                return;
+            }
+
+            const studentId = document.getElementById('studentId').value.trim();
+            currentStudent = {
+                name: name,
+                id: studentId || 'N/A',
+                timestamp: new Date().toLocaleString('pt-BR')
+            };
+
+            document.getElementById('studentInfo').style.display = 'none';
+            document.getElementById('chatInterface').style.display = 'flex';
+
+            // Mensagem de boas-vindas personalizada
+            addMessage(`Olá, ${name}! 😊 Agora podemos começar. Faça suas perguntas sobre o conteúdo da prova e eu te ajudarei a estudar!`, 'bot');
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+
+            addMessage(message, 'user');
+            input.value = '';
+
+            // Mostrar indicador de digitação
+            showTypingIndicator();
+
+            // Simular delay de resposta
+            setTimeout(() => {
+                const response = generateResponse(message);
+                hideTypingIndicator();
+                addMessage(response, 'bot');
+            }, 1000 + Math.random() * 2000);
+        }
+
+        function addMessage(text, sender) {
+            const chatArea = document.getElementById('chatArea');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            bubbleDiv.innerHTML = text.replace(/\n/g, '<br>');
+            
+            messageDiv.appendChild(bubbleDiv);
+            chatArea.appendChild(messageDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+
+            // Salvar na conversa atual
+            conversationHistory.push({
+                text: text,
+                sender: sender,
+                timestamp: new Date().toLocaleString('pt-BR')
+            });
+
+            // Salvar conversa completa
+            saveConversation();
+        }
+
+        function generateResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            // Verificar se a pergunta está relacionada ao conteúdo da prova
+            const isValidTopic = checkIfValidTopic(lowerMessage);
+            
+            if (!isValidTopic) {
+                return "🚫 Desculpe, só posso ajudar com questões relacionadas ao conteúdo da prova. Por favor, faça perguntas sobre os temas que serão cobrados no exame.";
+            }
+
+            // Buscar resposta nas perguntas pré-definidas
+            for (const [pergunta, resposta] of Object.entries(PERGUNTAS_RESPOSTAS)) {
+                if (lowerMessage.includes(pergunta.toLowerCase())) {
+                    return resposta;
+                }
+            }
+
+            // Respostas genéricas baseadas no conteúdo
+            if (lowerMessage.includes('equação')) {
+                return "📐 Sobre equações: lembre-se de sempre isolar a variável e verificar suas soluções. Precisa de ajuda com algum tipo específico de equação?";
+            }
+            
+            if (lowerMessage.includes('newton') || lowerMessage.includes('força')) {
+                return "⚖️ As leis de Newton são fundamentais! Primeira lei (inércia), segunda lei (F=ma) e terceira lei (ação e reação). Sobre qual lei você gostaria de saber mais?";
+            }
+            
+            if (lowerMessage.includes('revolução') || lowerMessage.includes('industrial')) {
+                return "🏭 A Revolução Industrial transformou a sociedade! Marcou a transição da produção manual para a mecanizada. Quer saber sobre suas fases ou consequências?";
+            }
+
+            // Resposta padrão para tópicos válidos
+            return "🤔 Essa é uma boa pergunta sobre o conteúdo da prova! Pode ser mais específico? Isso me ajudará a dar uma resposta mais detalhada e útil para seus estudos.";
+        }
+
+        function checkIfValidTopic(message) {
+            const validKeywords = [
+                ...CONTEUDO_PROVA.matematica,
+                ...CONTEUDO_PROVA.fisica,
+                ...CONTEUDO_PROVA.historia,
+                'equação', 'função', 'sistema', 'geometria', 'trigonometria',
+                'newton', 'força', 'movimento', 'energia', 'onda',
+                'revolução', 'guerra', 'ditadura', 'industrial', 'fria'
+            ];
+
+            return validKeywords.some(keyword => 
+                message.toLowerCase().includes(keyword.toLowerCase())
+            );
+        }
+
+        function showTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'block';
+            document.getElementById('chatArea').scrollTop = document.getElementById('chatArea').scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'none';
+        }
+
+        function saveConversation() {
+            if (!currentStudent) return;
+
+            const existingIndex = allConversations.findIndex(conv => 
+                conv.student.name === currentStudent.name && conv.student.id === currentStudent.id
+            );
+
+            const conversationData = {
+                student: currentStudent,
+                messages: conversationHistory,
+                lastUpdate: new Date().toLocaleString('pt-BR')
+            };
+
+            if (existingIndex !== -1) {
+                allConversations[existingIndex] = conversationData;
+            } else {
+                allConversations.push(conversationData);
+            }
+
+            localStorage.setItem('allConversations', JSON.stringify(allConversations));
+        }
+
+        function exportConversations() {
+            if (allConversations.length === 0) {
+                alert('Nenhuma conversa para exportar!');
+                return;
+            }
+
+            let content = "RELATÓRIO DE CONVERSAS DO CHATBOT EDUCACIONAL\n";
+            content += "=" + "=".repeat(50) + "\n\n";
+            content += `Gerado em: ${new Date().toLocaleString('pt-BR')}\n`;
+            content += `Total de conversas: ${allConversations.length}\n\n`;
+
+            allConversations.forEach((conv, index) => {
+                content += `CONVERSA ${index + 1}\n`;
+                content += "-".repeat(30) + "\n";
+                content += `Estudante: ${conv.student.name}\n`;
+                content += `Matrícula: ${conv.student.id}\n`;
+                content += `Iniciada em: ${conv.student.timestamp}\n`;
+                content += `Última atualização: ${conv.lastUpdate}\n`;
+                content += `Total de mensagens: ${conv.messages.length}\n\n`;
+
+                conv.messages.forEach((msg, msgIndex) => {
+                    const sender = msg.sender === 'user' ? 'ESTUDANTE' : 'CHATBOT';
+                    content += `[${msg.timestamp}] ${sender}: ${msg.text}\n\n`;
+                });
+
+                content += "\n" + "=".repeat(60) + "\n\n";
+            });
+
+            // Criar e baixar arquivo
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `conversas_chatbot_${new Date().toISOString().split('T')[0]}.txt`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function clearAllData() {
+            if (confirm('Tem certeza que deseja limpar todos os dados? Esta ação não pode ser desfeita!')) {
+                localStorage.removeItem('allConversations');
+                allConversations = [];
+                alert('Todos os dados foram limpos!');
+            }
+        }
+
+        function showStats() {
+            const totalConversations = allConversations.length;
+            const totalMessages = allConversations.reduce((sum, conv) => sum + conv.messages.length, 0);
+            const studentsWithMessages = allConversations.filter(conv => conv.messages.length > 2).length;
+
+            alert(`📊 ESTATÍSTICAS\n\n` +
+                  `Total de conversas: ${totalConversations}\n` +
+                  `Total de mensagens: ${totalMessages}\n` +
+                  `Estudantes ativos: ${studentsWithMessages}\n` +
+                  `Média de mensagens por conversa: ${totalConversations > 0 ? Math.round(totalMessages / totalConversations) : 0}`);
+        }
+
+        // Event listeners
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        document.getElementById('studentName').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                setStudentInfo();
+            }
+        });
+
+        document.getElementById('studentId').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                setStudentInfo();
+            }
+        });
+
+        // Carregar conversas existentes ao iniciar
+        window.addEventListener('load', function() {
+            console.log('Chatbot Educacional carregado!');
+            console.log(`Total de conversas salvas: ${allConversations.length}`);
+        });
+    </script>
+</body>
+</html>
