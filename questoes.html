@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Banco de Questões ENEM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: filtros fixos à esquerda (empilham no celular) + lista de questões
+   em formato de cartão-resposta, com alternativas em bolinhas. */
+:root {
+  --bg: #f4f6f9;
+  --surface: #ffffff;
+  --ink: #18202c;
+  --muted: #5b6676;
+  --line: #dde2ea;
+  --accent: #2547c8;          /* caneta azul */
+  --accent-soft: #e6ebfb;
+  --mark: #fff1a8;            /* marca-texto */
+  --ok: #1d7a46; --ok-soft: #dff3e7;
+  --bad: #b3261e; --bad-soft: #fbe3e1;
+  --a-cn: #1f7a5a; --a-ce: #2547c8; --a-lg: #b4561d; --a-ch: #7a3aa8;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --radius: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11151c; --surface: #19202a; --ink: #e7ebf2; --muted: #9aa5b5; --line: #2b3441;
+    --accent: #8aa4ff; --accent-soft: #232f4d; --mark: #4d4416;
+    --ok: #6fd39a; --ok-soft: #173426; --bad: #ff8f86; --bad-soft: #3d1f1d;
+    --a-cn: #6fcfa8; --a-ce: #8aa4ff; --a-lg: #f0a56f; --a-ch: #c79bf0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11151c; --surface: #19202a; --ink: #e7ebf2; --muted: #9aa5b5; --line: #2b3441;
+  --accent: #8aa4ff; --accent-soft: #232f4d; --mark: #4d4416;
+  --ok: #6fd39a; --ok-soft: #173426; --bad: #ff8f86; --bad-soft: #3d1f1d;
+  --a-cn: #6fcfa8; --a-ce: #8aa4ff; --a-lg: #f0a56f; --a-ch: #c79bf0;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font-ui);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px;
+}
+img { max-width: 100%; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.app { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 24px; align-items: start; }
+header.top { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+header.top h1 { margin: 0; font-size: 1.5rem; letter-spacing: -0.01em; text-wrap: balance; }
+header.top p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+/* filtros */
+aside.filters {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px; display: grid; gap: 16px; max-height: calc(100vh - 32px); overflow: auto;
+}
+.fgroup { display: grid; gap: 6px; }
+.fgroup > .label { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.search { width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.opts { display: grid; gap: 2px; }
+.opt { display: flex; align-items: center; gap: 8px; padding: 4px 6px; border-radius: 6px; cursor: pointer; font-size: .9rem; }
+.opt:hover { background: var(--accent-soft); }
+.opt input { accent-color: var(--accent); margin: 0; }
+.opt .n { margin-left: auto; color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.opt.zero { opacity: .45; }
+.reset { justify-self: start; background: none; border: 0; color: var(--accent); padding: 0; cursor: pointer; font-weight: 600; font-size: .88rem; }
+.toggle-filters { display: none; }
+
+/* lista */
+main { min-width: 0; display: grid; gap: 14px; }
+.summary { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; color: var(--muted); font-size: .9rem; }
+.summary strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; display: grid; gap: 14px; min-width: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip { font-size: .76rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.chip.area { color: var(--surface); border-color: transparent; }
+.chip.area[data-a="Ciências da Natureza"] { background: var(--a-cn); }
+.chip.area[data-a="Ciências Exatas"] { background: var(--a-ce); }
+.chip.area[data-a="Linguagens"] { background: var(--a-lg); }
+.chip.area[data-a="Ciências Humanas"] { background: var(--a-ch); }
+.chip.disc { color: var(--ink); }
+.chip.warn { color: var(--bad); border-color: var(--bad); }
+.prova { font-size: .8rem; color: var(--muted); width: 100%; }
+.enunciado { font-family: var(--font-text); font-size: 1.02rem; line-height: 1.6; max-width: 70ch; overflow-wrap: anywhere; }
+.enunciado p { margin: 0 0 .6em; }
+.enunciado p:last-child { margin-bottom: 0; }
+.enunciado p.cite { font-family: var(--font-ui); font-size: .78rem; color: var(--muted); text-align: right; overflow-wrap: anywhere; }
+.figura { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 6px; overflow-x: auto; }
+.figura img { display: block; width: 100%; max-width: 760px; height: auto; }
+.figura-nota { font-size: .8rem; color: var(--muted); }
+details.texto { font-size: .88rem; }
+details.texto summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
+
+.alts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.alt { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: start; width: 100%; text-align: left; background: none; border: 1px solid transparent; border-radius: 8px; padding: 6px 8px; cursor: pointer; font-family: var(--font-text); font-size: 1rem; }
+.alt:hover { border-color: var(--line); }
+.bubble { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--ink); display: grid; place-items: center; font: 700 .8rem var(--font-ui); }
+.alt.escolhida .bubble { background: var(--ink); color: var(--surface); }
+.alt.certa { background: var(--ok-soft); border-color: var(--ok); }
+.alt.certa .bubble { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+.alt.errada { background: var(--bad-soft); border-color: var(--bad); }
+.alt.errada .bubble { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+.alt .vazio { color: var(--muted); font-family: var(--font-ui); font-size: .85rem; }
+.feedback { font-size: .9rem; font-weight: 600; }
+.feedback.ok { color: var(--ok); } .feedback.bad { color: var(--bad); }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.btn { border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: .85rem; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.more { justify-self: center; padding: 10px 18px; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); padding: 28px; text-align: center; color: var(--muted); }
+
+@media (max-width: 860px) {
+  .app { grid-template-columns: minmax(0, 1fr); }
+  aside.filters { position: static; max-height: none; }
+  aside.filters[data-open="false"] > :not(.toggle-filters) { display: none; }
+  .toggle-filters { display: block; justify-self: start; }
+  .card { padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>Banco de Questões ENEM</h1>
+    <p id="fonte">Provas e gabaritos oficiais do INEP</p>
+  </header>
+
+  <aside class="filters" id="filtros" data-open="false" aria-label="Filtros">
+    <button class="btn toggle-filters" id="abrirFiltros" type="button" aria-expanded="false">Mostrar filtros</button>
+    <div class="fgroup">
+      <label class="label" for="busca">Buscar no texto</label>
+      <input class="search" id="busca" type="search" placeholder="ex.: polia, probabilidade, ATP">
+    </div>
+    <div class="fgroup"><span class="label">Área</span><div class="opts" id="f-area"></div></div>
+    <div class="fgroup"><span class="label">Disciplina</span><div class="opts" id="f-disc"></div></div>
+    <div class="fgroup"><span class="label">Conteúdo</span><div class="opts" id="f-cont"></div></div>
+    <div class="fgroup"><span class="label">Ano</span><div class="opts" id="f-ano"></div></div>
+    <div class="fgroup"><span class="label">Aplicação</span><div class="opts" id="f-apl"></div></div>
+    <div class="fgroup"><span class="label">Formato</span><div class="opts" id="f-fmt"></div></div>
+    <div class="fgroup">
+      <label class="opt"><input type="checkbox" id="semAnuladas" checked> Ocultar questões anuladas</label>
+    </div>
+    <button class="reset" id="limpar" type="button">Limpar filtros</button>
+  </aside>
+
+  <main>
+    <div class="summary" id="resumo" aria-live="polite"></div>
+    <div id="lista" style="display:grid;gap:14px"></div>
+    <button class="btn more" id="mais" type="button" hidden>Mostrar mais questões</button>
+  </main>
+</div>
+
+<script src="data/banco_questoes.js"></script>
+<script>
+(function () {
+  "use strict";
+  const BANCO = Array.isArray(window.BANCO_QUESTOES) ? window.BANCO_QUESTOES : [];
+  const POR_PAGINA = 15;
+  const ORDEM_AREA = ["Ciências da Natureza", "Ciências Exatas", "Linguagens", "Ciências Humanas"];
+  const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
+  let filtros = VAZIO(), busca = "", semAnuladas = true, limite = POR_PAGINA;
+  const respostas = {};  // id -> letra escolhida (só nesta visita)
+
+  const $ = (id) => document.getElementById(id);
+  const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  const formato = (q) => (q.imagem ? "Com figura, tabela ou fórmula" : "Só texto");
+  const aplicacao = (q) => (q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
+  const campos = {
+    area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
+    ano: (q) => [String(q.prova.ano)], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
+  };
+  BANCO.forEach((q) => { q._busca = norm(q.enunciado + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ")); });
+
+  // Referência bibliográfica: "SOBRENOME, I." no início da linha.
+  const AUTOR = /^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+(?: [A-ZÀ-Ý][A-ZÀ-Ý'\-]+)*, [A-ZÀ-Ý]\./;
+  const FONTE = /Disponível em|Acesso em|\(adaptado\)|^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+, [A-ZÀ-Ý]\./;
+  const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
+  // Desfaz as quebras de linha do PDF, mantendo parágrafos e listas.
+  function paragrafos(t) {
+    const linhas = (t || "").split("\n").map((l) => l.trim());
+    const largura = Math.max(30, ...linhas.map((l) => l.length));
+    const out = []; let cur = "", anterior = "";
+    linhas.forEach((s) => {
+      if (!s) { if (cur) { out.push(cur); cur = ""; } anterior = ""; return; }
+      // Parágrafo novo: item de lista, linha de fonte ("Disponível em"), ou
+      // linha anterior curta e terminada em pontuação (fim de parágrafo).
+      const novo = /^[•\-–]\s/.test(s) || /^Disponível em/.test(s) || AUTOR.test(s)
+        || (anterior && /[.:?!)]$/.test(anterior) && anterior.length < largura * 0.8);
+      if (novo || !cur) { if (cur) out.push(cur); cur = s; }
+      else cur += " " + s;
+      anterior = s;
+    });
+    if (cur) out.push(cur);
+    return out.map((p) => (FONTE.test(p) && p.length < 400 ? '<p class="cite">' : "<p>") + esc(p) + "</p>").join("");
+  }
+
+  function passa(q, ignorar) {
+    if (semAnuladas && q.anulada) return false;
+    if (busca && !busca.split(/\s+/).every((t) => q._busca.includes(t))) return false;
+    for (const k in filtros) {
+      if (k === ignorar || !filtros[k].size) continue;
+      if (!campos[k](q).some((v) => filtros[k].has(v))) return false;
+    }
+    return true;
+  }
+
+  function montarOpcoes(chave, el, ordem) {
+    const base = BANCO.filter((q) => passa(q, chave));
+    const todos = new Map();
+    BANCO.forEach((q) => campos[chave](q).forEach((v) => todos.set(v, 0)));
+    base.forEach((q) => new Set(campos[chave](q)).forEach((v) => todos.set(v, (todos.get(v) || 0) + 1)));
+    let valores = [...todos.keys()];
+    if (chave === "cont" && (filtros.disc.size || filtros.area.size)) valores = valores.filter((v) => todos.get(v) > 0 || filtros.cont.has(v));
+    valores.sort(ordem || ((a, b) => a.localeCompare(b, "pt-BR")));
+    el.innerHTML = valores.length ? valores.map((v, i) => {
+      const id = `op-${chave}-${i}`, n = todos.get(v) || 0;
+      return `<label class="opt${n ? "" : " zero"}" for="${id}"><input type="checkbox" id="${id}" data-k="${chave}" value="${esc(v)}"${filtros[chave].has(v) ? " checked" : ""}> ${esc(v)}<span class="n">${n}</span></label>`;
+    }).join("") : '<span class="figura-nota">Nenhuma opção</span>';
+  }
+
+  function cartao(q) {
+    const r = respostas[q.id];
+    const resolvida = r !== undefined;
+    const chips = [`<span class="chip area" data-a="${esc(q.area)}">${esc(q.area)}</span>`]
+      .concat(q.disciplinas.filter((d) => d !== "Matemática" || q.area !== "Ciências Exatas").map((d) => `<span class="chip disc">${esc(d)}</span>`))
+      .concat(q.conteudos.map((c) => `<span class="chip">${esc(c)}</span>`))
+      .concat(q.lingua ? [`<span class="chip">${q.lingua === "ingles" ? "Inglês" : "Espanhol"}</span>`] : [])
+      .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : []);
+    const corpo = q.imagem
+      ? `<figure class="figura" style="margin:0"><img src="${esc(q.imagem)}" alt="Questão como aparece na prova impressa" loading="lazy"></figure>
+         <details class="texto"><summary>Ver texto extraído (pode ter fórmulas incompletas)</summary><div class="enunciado">${paragrafos(q.enunciado)}</div></details>`
+      : `<div class="enunciado">${paragrafos(q.enunciado)}</div>`;
+    const alts = "ABCDE".split("").map((L) => {
+      const txt = (q.alternativas || {})[L];
+      let cls = "alt";
+      if (resolvida) {
+        if (L === q.gabarito) cls += " certa";
+        else if (L === r) cls += " errada";
+      }
+      const texto = txt && txt.trim() ? esc(txt) : '<span class="vazio">ver alternativa na imagem</span>';
+      return `<li><button type="button" class="${cls}" data-q="${esc(q.id)}" data-l="${L}" ${q.anulada ? "disabled" : ""}><span class="bubble">${L}</span><span>${texto}</span></button></li>`;
+    }).join("");
+    let fb = "";
+    if (resolvida) {
+      fb = r === q.gabarito ? `<span class="feedback ok">Você acertou: ${q.gabarito}.</span>`
+        : r === "?" ? `<span class="feedback">Resposta: ${q.gabarito}.</span>`
+        : `<span class="feedback bad">Você marcou ${r}. A resposta é ${q.gabarito}.</span>`;
+    }
+    return `<article class="card" id="${esc(q.id)}">
+      <div class="meta">${chips.join("")}<span class="prova">${esc(q.prova.descricao)}</span></div>
+      ${corpo}
+      <ol class="alts" aria-label="Alternativas">${alts}</ol>
+      <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}</div>
+    </article>`;
+  }
+
+  function render() {
+    const ordemArea = (a, b) => ORDEM_AREA.indexOf(a) - ORDEM_AREA.indexOf(b);
+    montarOpcoes("area", $("f-area"), ordemArea);
+    montarOpcoes("disc", $("f-disc"));
+    montarOpcoes("cont", $("f-cont"));
+    montarOpcoes("ano", $("f-ano"), (a, b) => b - a);
+    montarOpcoes("apl", $("f-apl"));
+    montarOpcoes("fmt", $("f-fmt"));
+    const res = BANCO.filter((q) => passa(q));
+    const provas = new Set(BANCO.map((q) => q.prova.descricao));
+    $("fonte").textContent = `${BANCO.length} questões de ${provas.size} prova${provas.size > 1 ? "s" : ""} oficial${provas.size > 1 ? "is" : ""} do INEP`;
+    const acertos = Object.entries(respostas).filter(([id, l]) => l !== "?" && (BANCO.find((q) => q.id === id) || {}).gabarito === l).length;
+    const feitas = Object.values(respostas).filter((l) => l !== "?").length;
+    $("resumo").innerHTML = `<span><strong>${res.length}</strong> ${res.length === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
+      (feitas ? `<span>Nesta visita: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${feitas}</strong></span>` : "");
+    $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")
+      : '<div class="empty">Nenhuma questão com esses filtros. Desmarque algum filtro ou limpe a busca.</div>';
+    $("mais").hidden = res.length <= limite;
+    $("mais").textContent = `Mostrar mais questões (${Math.min(POR_PAGINA, res.length - limite)} de ${res.length - limite} restantes)`;
+    salvar();
+  }
+
+  function salvar() {
+    try { localStorage.setItem("banco-enem-filtros", JSON.stringify({ f: Object.fromEntries(Object.entries(filtros).map(([k, v]) => [k, [...v]])), busca, semAnuladas })); } catch (e) { /* armazenamento indisponível */ }
+  }
+  function carregar() {
+    try {
+      const s = JSON.parse(localStorage.getItem("banco-enem-filtros") || "null");
+      if (!s) return;
+      filtros = VAZIO();
+      Object.entries(s.f || {}).forEach(([k, v]) => { if (filtros[k]) v.forEach((x) => filtros[k].add(x)); });
+      busca = s.busca || ""; semAnuladas = s.semAnuladas !== false;
+      $("busca").value = busca; $("semAnuladas").checked = semAnuladas;
+    } catch (e) { /* começa sem filtros */ }
+  }
+
+  document.addEventListener("change", (e) => {
+    const t = e.target;
+    if (t.dataset && t.dataset.k) { t.checked ? filtros[t.dataset.k].add(t.value) : filtros[t.dataset.k].delete(t.value); limite = POR_PAGINA; render(); }
+    if (t.id === "semAnuladas") { semAnuladas = t.checked; limite = POR_PAGINA; render(); }
+  });
+  let timer;
+  $("busca").addEventListener("input", (e) => { clearTimeout(timer); timer = setTimeout(() => { busca = norm(e.target.value.trim()); limite = POR_PAGINA; render(); }, 180); });
+  $("limpar").addEventListener("click", () => { filtros = VAZIO(); busca = ""; $("busca").value = ""; semAnuladas = true; $("semAnuladas").checked = true; limite = POR_PAGINA; render(); });
+  $("mais").addEventListener("click", () => { limite += POR_PAGINA; render(); });
+  $("abrirFiltros").addEventListener("click", () => {
+    const f = $("filtros"), aberto = f.dataset.open === "true";
+    f.dataset.open = String(!aberto); $("abrirFiltros").setAttribute("aria-expanded", String(!aberto));
+    $("abrirFiltros").textContent = aberto ? "Mostrar filtros" : "Esconder filtros";
+  });
+  $("lista").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.l) respostas[b.dataset.q] = b.dataset.l;
+    else if (b.dataset.ver) respostas[b.dataset.ver] = "?";
+    else if (b.dataset.refazer) delete respostas[b.dataset.refazer];
+    else return;
+    const id = b.dataset.q || b.dataset.ver || b.dataset.refazer;
+    const q = BANCO.find((x) => x.id === id);
+    const card = document.getElementById(id);
+    if (q && card) { card.outerHTML = cartao(q); }
+    const acertos = Object.entries(respostas).filter(([i, l]) => l !== "?" && (BANCO.find((x) => x.id === i) || {}).gabarito === l).length;
+    const feitas = Object.values(respostas).filter((l) => l !== "?").length;
+    const total = BANCO.filter((x) => passa(x)).length;
+    $("resumo").innerHTML = `<span><strong>${total}</strong> ${total === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
+      (feitas ? `<span>Nesta visita: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${feitas}</strong></span>` : "");
+  });
+
+  if (!BANCO.length) {
+    $("lista").innerHTML = '<div class="empty">O arquivo data/banco_questoes.js não foi encontrado. Rode <code>python scripts/gerar_banco.py</code> e abra esta página de novo.</div>';
+    return;
+  }
+  carregar();
+  render();
+})();
+</script>
+</body>
+</html>

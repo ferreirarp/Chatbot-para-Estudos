@@ -51,11 +51,17 @@ AREAS = {
     (1, "LC"): range(1, 46), (1, "CH"): range(46, 91),
     (2, "CN"): range(91, 136), (2, "MT"): range(136, 181),
 }
+# Nomes usados no banco de questões (Matemática = "Ciências Exatas").
 NOMES_AREA = {
-    "LC": "Linguagens, Códigos e suas Tecnologias",
-    "CH": "Ciências Humanas e suas Tecnologias",
-    "CN": "Ciências da Natureza e suas Tecnologias",
-    "MT": "Matemática e suas Tecnologias",
+    "LC": "Linguagens",
+    "CH": "Ciências Humanas",
+    "CN": "Ciências da Natureza",
+    "MT": "Ciências Exatas",
+}
+APLICACOES = {
+    # aplicação: (trecho do nome do arquivo no INEP, rótulo)
+    "regular": ("impresso", "Aplicação regular"),
+    "reaplicacao": ("reaplicacao_PPL", "Reaplicação"),
 }
 SIMBOLOS_FORMULA = set("√∑∫∞≤≥≠≈±×÷πΔ∆θλμσΩωαβγ⋅·∙")
 FONTES_FORMULA = ("symbol", "math", "cambria", "euclid", "mt extra", "mtextra")
@@ -331,10 +337,12 @@ def salvar_imagem(pdf, q: dict, destino: Path) -> None:
 
 
 # -------------------------------------------------------------------- main
-def processar(ano: int, dia: int, caderno: int) -> Path:
+def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> Path:
     ctx = contexto_ssl()
-    nome_prova = f"{ano}_PV_impresso_D{dia}_CD{caderno}.pdf"
-    nome_gab = f"{ano}_GB_impresso_D{dia}_CD{caderno}.pdf"
+    trecho, rotulo_aplicacao = APLICACOES[aplicacao]
+    nome_prova = f"{ano}_PV_{trecho}_D{dia}_CD{caderno}.pdf"
+    nome_gab = f"{ano}_GB_{trecho}_D{dia}_CD{caderno}.pdf"
+    chave = f"{aplicacao}_D{dia}_CD{caderno}"
     prova = baixar(BASE_DOWNLOAD + nome_prova, CACHE / str(ano) / nome_prova, ctx)
     gab = ler_gabarito(baixar(BASE_DOWNLOAD + nome_gab, CACHE / str(ano) / nome_gab, ctx))
 
@@ -360,7 +368,7 @@ def processar(ano: int, dia: int, caderno: int) -> Path:
         sufixo = f"_{lingua}" if lingua else ""
         imagem = None
         if visuais:
-            arq = pasta / "img" / f"D{dia}_CD{caderno}_Q{n:03d}{sufixo}.png"
+            arq = pasta / "img" / f"{chave}_Q{n:03d}{sufixo}.png"
             salvar_imagem(pdf, q, arq)
             imagem = arq.relative_to(pasta).as_posix()
 
@@ -375,11 +383,18 @@ def processar(ano: int, dia: int, caderno: int) -> Path:
         alertas_gerais += [f"Q{n}{sufixo}: {a}" for a in alertas]
 
         saida.append({
-            "id": f"{ano}-D{dia}-CD{caderno}-Q{n:03d}{sufixo.replace('_', '-')}",
-            "ano": ano, "dia": dia, "caderno": caderno, "cor": cor,
-            "versao": "regular (impressa)",
-            "area": area_da_questao(dia, n),
-            "area_nome": NOMES_AREA.get(area_da_questao(dia, n)),
+            "id": f"{ano}-{aplicacao}-D{dia}-CD{caderno}-Q{n:03d}{sufixo.replace('_', '-')}",
+            "prova": {
+                "ano": ano,
+                "aplicacao": aplicacao,
+                "reaplicacao": aplicacao == "reaplicacao",
+                "dia": dia,
+                "caderno": caderno,
+                "cor": cor,
+                "descricao": f"ENEM {ano} · {rotulo_aplicacao} · {dia}º dia · Caderno {caderno} {cor}",
+            },
+            "area": NOMES_AREA.get(area_da_questao(dia, n)),
+            # Número no caderno: só para rastrear até o PDF e o gabarito oficiais.
             "numero": n,
             "lingua_estrangeira": lingua,
             "enunciado": enunciado,
@@ -396,7 +411,7 @@ def processar(ano: int, dia: int, caderno: int) -> Path:
     alertas_gerais += verificar_cobertura(pdf, questoes)
 
     pasta.mkdir(parents=True, exist_ok=True)
-    destino = pasta / f"D{dia}_CD{caderno}.json"
+    destino = pasta / f"{chave}.json"
     destino.write_text(json.dumps(saida, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     esperado = 90 + (10 if dia == 1 else 0) - (5 if dia == 1 else 0)
@@ -424,8 +439,10 @@ def main() -> None:
     ap.add_argument("--ano", type=int, required=True)
     ap.add_argument("--dia", type=int, choices=(1, 2), required=True)
     ap.add_argument("--caderno", type=int, required=True)
+    ap.add_argument("--aplicacao", choices=tuple(APLICACOES), default="regular",
+                    help="regular (padrão) ou reaplicacao (PPL)")
     a = ap.parse_args()
-    processar(a.ano, a.dia, a.caderno)
+    processar(a.ano, a.dia, a.caderno, a.aplicacao)
 
 
 if __name__ == "__main__":
