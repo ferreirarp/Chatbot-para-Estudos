@@ -22,9 +22,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import re
+import shutil
 import ssl
+import subprocess
 import sys
+import unicodedata
 import urllib.request
 from pathlib import Path
 
@@ -94,6 +98,16 @@ def descobrir_arquivos(ano: int, ctx: ssl.SSLContext) -> list[dict]:
             "dia": dia, "caderno": cad, "cor": m["cor"], "area": m["area"],
             "url_prova": link, "url_gabarito": gab_link,
         })
+    # Caderno regular de referência por dia: o de menor número que não seja
+    # adaptado. Todas as cores regulares têm as mesmas questões em outra ordem.
+    adaptados = {a["caderno"] for a in achados}
+    for arq in achados:
+        re_reg = re.compile(rf"/{ano}_PV_impresso_D{arq['dia']}_CD(\d+)\.pdf$")
+        regulares = sorted(
+            (int(m.group(1)), l) for l in links
+            if (m := re_reg.search(l)) and int(m.group(1)) not in adaptados
+        )
+        arq["url_regular"] = regulares[0][1] if regulares else None
     return achados
 
 
@@ -193,6 +207,55 @@ def limpar_enunciado(linhas: list[str]) -> str:
     return re.sub(r"\n{3,}", "\n\n", texto)
 
 
+# ------------------------------------------- comparação com a prova regular
+# Os cadernos adaptados substituem algumas questões. Para marcar quais só
+# existem na versão adaptada, procura-se o enunciado no caderno regular INTEIRO
+# (o texto do PDF regular, em duas colunas, não pode ser recortado por questão
+# com segurança). Medida: fração das sequências de 4 palavras do enunciado que
+# aparecem no caderno regular. Em 2023: ausentes = 0,00; presentes >= 0,48.
+LIMIAR_PRESENTE = 0.40
+LIMIAR_AUSENTE = 0.15
+
+
+def _palavras(texto: str) -> list[str]:
+    t = unicodedata.normalize("NFKD", texto.lower())
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    return re.findall(r"[a-z]{3,}", t)
+
+
+def _sequencias(texto: str, k: int = 4) -> set[str]:
+    p = _palavras(texto)
+    return {" ".join(p[i:i + k]) for i in range(len(p) - k + 1)}
+
+
+def sequencias_pdf(pdf: Path) -> set[str]:
+    """Usa o pdftotext (poppler) quando disponível: no caderno regular de
+    2023, o pypdf extraiu o texto com falhas e gerou 1 falso "ausente" e
+    7 casos inconclusivos; o pdftotext, nenhum."""
+    if shutil.which("pdftotext"):
+        texto = subprocess.run(
+            ["pdftotext", str(pdf), "-"], capture_output=True, text=True, check=True
+        ).stdout
+    else:
+        print("  aviso: pdftotext não encontrado; usando pypdf (comparação menos precisa)")
+        logging.getLogger("pypdf").setLevel(logging.ERROR)
+        texto = "\n".join(pg.extract_text() or "" for pg in pypdf.PdfReader(str(pdf)).pages)
+    return _sequencias(texto)
+
+
+def comparar_com_regular(enunciado: str, regular: set[str]) -> tuple[bool | None, float]:
+    sem_descricao = re.sub(r"Descrição d.*?\(Fim da descrição\)", " ", enunciado, flags=re.S)
+    seq = _sequencias(sem_descricao)
+    if not seq:
+        return None, 0.0
+    nota = round(len(seq & regular) / len(seq), 2)
+    if nota >= LIMIAR_PRESENTE:
+        return True, nota
+    if nota <= LIMIAR_AUSENTE:
+        return False, nota
+    return None, nota
+
+
 # ----------------------------------------------------------------------- main
 def processar_ano(ano: int) -> Path:
     ctx = contexto_ssl()
@@ -202,7 +265,13 @@ def processar_ano(ano: int) -> Path:
 
     saida: list[dict] = []
     problemas: list[str] = []
+    regulares: dict[str, set[str]] = {}
     for arq in arquivos:
+        url_reg = arq["url_regular"]
+        if url_reg and url_reg not in regulares:
+            rnome = url_reg.rsplit("/", 1)[-1]
+            regulares[url_reg] = sequencias_pdf(baixar(url_reg, CACHE / str(ano) / rnome, ctx))
+
         nome = arq["url_prova"].rsplit("/", 1)[-1]
         txt = baixar(arq["url_prova"], CACHE / str(ano) / nome, ctx)
         if not arq["url_gabarito"]:
@@ -226,6 +295,13 @@ def processar_ano(ano: int) -> Path:
                 alertas.append("sem resposta no gabarito")
             if not enunciado:
                 alertas.append("enunciado vazio")
+            if arq["url_regular"]:
+                na_regular, semelhanca = comparar_com_regular(enunciado, regulares[arq["url_regular"]])
+                if na_regular is None:
+                    alertas.append(f"semelhança com a prova regular inconclusiva ({semelhanca}); verificar manualmente")
+            else:
+                na_regular, semelhanca = None, None
+                alertas.append("caderno regular não encontrado para comparação")
             for a in alertas:
                 problemas.append(f"{ano} D{arq['dia']} CD{arq['caderno']} Q{n}{'/' + lingua if lingua else ''}: {a}")
 
@@ -245,10 +321,17 @@ def processar_ano(ano: int) -> Path:
                 "alternativas": dict(zip("ABCDE", q["alts"])),
                 "gabarito": resposta,
                 "anulada": anulada,
+                "na_prova_regular": na_regular,
+                "somente_versao_adaptada": na_regular is False,
+                "semelhanca_prova_regular": semelhanca,
                 "tem_descricao_visual": "Descrição d" in enunciado
                     or any("Descrição d" in a for a in q["alts"]),
                 "alertas": alertas,
-                "fonte": {"prova": arq["url_prova"], "gabarito": arq["url_gabarito"]},
+                "fonte": {
+                    "prova": arq["url_prova"],
+                    "gabarito": arq["url_gabarito"],
+                    "prova_regular_comparada": arq["url_regular"],
+                },
             })
 
     saida.sort(key=lambda q: (q["dia"], q["numero"], q["lingua_estrangeira"] or ""))
@@ -261,6 +344,10 @@ def processar_ano(ano: int) -> Path:
         n = sum(1 for q in saida if q["area"] == area)
         print(f"  {area}: {n}")
     print(f"  anuladas: {sum(q['anulada'] for q in saida)}")
+    so_adapt = [q["id"] for q in saida if q["somente_versao_adaptada"]]
+    print(f"  somente na versão adaptada: {len(so_adapt)}")
+    for i in so_adapt:
+        print("   -", i)
     print(f"  com descrição de figura/gráfico: {sum(q['tem_descricao_visual'] for q in saida)}")
     print(f"  alertas: {len(problemas)}")
     for p in problemas:
