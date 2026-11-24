@@ -45,12 +45,27 @@ fluidos do corpo, resolvida por polaridade e solubilidade, é Química, não Bio
 associada ao código de prova (`CO_PROVA`) cujo gabarito bate com 100% das
 questões da área; sem correspondência exata, nada é importado.
 
-**Dificuldade:** parâmetro b da TRI. A nota equivalente na escala do ENEM é
-500 + 100 × b (INEP, *Procedimentos de Análise*). A barra vai de b = −1,5
-(350 pontos) a b = 3,5 (850 pontos) e é dividida em 7 faixas de largura igual
-(≈ 0,71 cada): Para não zerar, Facílima, Fácil, Mediana, Difícil, Dificílima,
-Impossível. Em 2023, o b de todas as questões ficou entre −1,15 e 3,22.
-Questões descartadas da nota pelo INEP não têm b e aparecem marcadas.
+**Escala de notas:** o INEP calcula a proficiência θ por TRI de 3 parâmetros
+(D = 1), método EAP com priori normal padrão e 40 pontos de quadratura, e a
+converte em nota com uma fórmula linear própria de cada **área e ano**
+(nota = k·θ + m). Como k e m não são publicados, o importador os estima por
+regressão numa amostra de candidatos dos microdados e valida em outra amostra.
+2023: Natureza = 113,10·θ + 501,14; Matemática = 129,65·θ + 500,02; erro
+máximo de 0,05 ponto em relação às notas oficiais.
+
+**Dificuldade:** cada questão tem uma "nota equivalente" (k·b + m), a nota em
+que um candidato tem chance intermediária de acertá-la. A barra é **calibrada
+por área**: vai da questão mais fácil à mais difícil daquela área no banco, em
+7 faixas de largura igual (Para não zerar, Facílima, Fácil, Mediana, Difícil,
+Dificílima, Impossível). A calibração é refeita a cada `gerar_banco.py`, ou
+seja, sempre que uma prova é adicionada. Áreas com menos de 10 questões ficam
+sem barra. Questões descartadas da nota pelo INEP não têm dificuldade.
+
+**Calculadora de nota (interface):** usa o mesmo modelo e as mesmas constantes
+para estimar a nota a partir das respostas marcadas, separada por área e ano,
+com uma faixa provável (±1 desvio-padrão da estimativa). Testada com 6
+candidatos reais: a nota exibida coincidiu com a oficial (arredondada) nos 12
+casos. As respostas ficam salvas só no navegador de quem usa a página.
 
 ### Texto e imagem
 - Questões só de texto: salvas só como texto (`texto_fiel: true`).

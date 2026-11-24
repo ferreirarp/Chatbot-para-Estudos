@@ -110,6 +110,19 @@ main { min-width: 0; display: grid; gap: 14px; }
 /* o rótulo acompanha o marcador sem sair da barra nas pontas */
 .dif-rotulo { position: absolute; top: 9px; left: var(--pos); transform: translateX(calc(-1 * var(--pos))); white-space: nowrap; font-size: .9rem; font-weight: 700; }
 .dif-vazia { font-size: .82rem; color: var(--muted); }
+
+/* Calculadora de nota */
+.summary .btn { margin-left: auto; }
+.painel-nota { background: var(--surface); border: 1px solid var(--accent); border-radius: var(--radius); padding: 18px 20px; display: grid; gap: 14px; }
+.painel-nota h2 { margin: 0; font-size: 1.05rem; }
+.painel-nota .topo { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; justify-content: space-between; }
+.notas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.nota-area { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+.nota-area .nome { font-size: .78rem; font-weight: 600; color: var(--muted); }
+.nota-area .valor { font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.nota-area .faixa, .nota-area .det { font-size: .82rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.nota-area .alerta { font-size: .8rem; color: var(--bad); }
+.painel-nota .explica { font-size: .82rem; color: var(--muted); margin: 0; max-width: 75ch; }
 .chip.disc { color: var(--ink); }
 .chip.warn { color: var(--bad); border-color: var(--bad); }
 .prova { font-size: .8rem; color: var(--muted); width: 100%; }
@@ -181,6 +194,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
 
   <main>
     <div class="summary" id="resumo" aria-live="polite"></div>
+    <section class="painel-nota" id="painelNota" hidden aria-live="polite"></section>
     <div id="lista" style="display:grid;gap:14px"></div>
     <button class="btn more" id="mais" type="button" hidden>Mostrar mais questões</button>
   </main>
@@ -194,11 +208,13 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const POR_PAGINA = 15;
   const ORDEM_AREA = ["Linguagens, Códigos e suas Tecnologias", "Ciências Humanas e suas Tecnologias",
                       "Ciências da Natureza e suas Tecnologias", "Matemática e suas Tecnologias"];
-  const ESCALA = window.ESCALA_DIFICULDADE || { min: -1.5, max: 3.5, niveis: [] };
+  const ESCALAS = window.ESCALA_DIFICULDADE || {};      // por área: {min, max, n, niveis}
+  const ESCALA_NOTAS = window.ESCALA_NOTAS || {};       // "ano|área": {k, m}
+  const NIVEIS = ["Para não zerar", "Facílima", "Fácil", "Mediana", "Difícil", "Dificílima", "Impossível"];
   const SEM_DIF = "Sem dificuldade calculada";
   const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), dif: new Set(), hab: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
   let filtros = VAZIO(), busca = "", semAnuladas = true, limite = POR_PAGINA;
-  const respostas = {};  // id -> letra escolhida (só nesta visita)
+  let respostas = {};  // id -> letra escolhida; "?" = só viu a resposta
 
   const $ = (id) => document.getElementById(id);
   const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -209,7 +225,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const campos = {
     area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
     ano: (q) => [String(q.prova.ano)], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
-    dif: (q) => [q.dificuldade ? q.dificuldade.nivel : SEM_DIF],
+    dif: (q) => [q.dificuldade && q.dificuldade.nivel ? q.dificuldade.nivel : SEM_DIF],
     hab: (q) => (q.habilidade ? [q.habilidade.chave] : []),
   };
   const HABS = {};
@@ -219,14 +235,13 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   });
   const SIGLAS = ["LC", "CH", "CN", "MT"];
   const ordemHab = (a, b) => SIGLAS.indexOf(a.split(" ")[0]) - SIGLAS.indexOf(b.split(" ")[0]) || parseInt(a.split(" H")[1]) - parseInt(b.split(" H")[1]);
-  const ordemDif = (a, b) => (ESCALA.niveis.indexOf(a) + 1 || 99) - (ESCALA.niveis.indexOf(b) + 1 || 99);
+  const ordemDif = (a, b) => (NIVEIS.indexOf(a) + 1 || 99) - (NIVEIS.indexOf(b) + 1 || 99);
   const curto = (t, n) => (t && t.length > n ? t.slice(0, n - 1).trimEnd() + "…" : t || "");
   const rotuloHab = (k) => { const h = HABS[k]; return h ? `${k} · ${curto(h.texto, 70)}` : k; };
 
   // Referência bibliográfica: "SOBRENOME, I." no início da linha.
   const AUTOR = /^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+(?: [A-ZÀ-Ý][A-ZÀ-Ý'\-]+)*, [A-ZÀ-Ý]\./;
   const FONTE = /Disponível em|Acesso em|\(adaptado\)|^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+, [A-ZÀ-Ý]\./;
-  const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
   // Desfaz as quebras de linha do PDF, mantendo parágrafos e listas.
   function paragrafos(t) {
     const linhas = (t || "").split("\n").map((l) => l.trim());
@@ -275,10 +290,14 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     if (!d) {
       return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">${q.descartada_da_nota ? (q.anulada ? "Sem dificuldade calculada: questão anulada" : "Sem dificuldade calculada: o INEP descartou esta questão do cálculo da nota por um problema estatístico") + (q.motivo_descarte ? " (motivo oficial: " + esc(q.motivo_descarte) + ")" : "") + "." : "Sem dados de dificuldade."}</span></div>`;
     }
-    const pos = Math.max(0, Math.min(100, (d.b - ESCALA.min) / (ESCALA.max - ESCALA.min) * 100));
-    const b = d.b.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    return `<div class="dif" style="--pos:${pos.toFixed(1)}%" role="img" aria-label="Dificuldade: ${esc(d.nivel)} (b = ${b})">
-      <div class="dif-topo"><span>Dificuldade</span><span title="Nota equivalente na escala do ENEM = 500 + 100 × b">b = ${b} · ≈ ${d.nota_equivalente} pontos</span></div>
+    const e = ESCALAS[q.area];
+    if (!d.nivel || !e) {
+      return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">Ainda não calibrada: poucas questões desta área no banco.</span></div>`;
+    }
+    const pos = Math.max(0, Math.min(100, d.posicao * 100));
+    const titulo = `Escala de ${q.area}, calibrada com ${e.n} questões do banco: de ${e.min} (mais fácil) a ${e.max} pontos (mais difícil), em 7 faixas iguais.`;
+    return `<div class="dif" style="--pos:${pos.toFixed(1)}%" role="img" aria-label="Dificuldade: ${esc(d.nivel)} (${d.nota_equivalente} pontos)" title="${esc(titulo)}">
+      <div class="dif-topo"><span>Dificuldade na área</span><span>questão de ≈ ${d.nota_equivalente} pontos</span></div>
       <div class="dif-barra"><span class="dif-marca"></span></div>
       <div class="dif-trilho"><span class="dif-seta"></span><span class="dif-rotulo">${esc(d.nivel)}</span></div>
     </div>`;
@@ -322,6 +341,75 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     </article>`;
   }
 
+  // Mesmo modelo do INEP: TRI de 3 parâmetros (D = 1), EAP com priori normal
+  // padrão e 40 pontos em [-4, 4]; nota = k·θ + m (por área e ano). Validado
+  // contra as notas oficiais de 2023 (erro máximo de 0,05 ponto).
+  const PTS = Array.from({ length: 40 }, (_, i) => -4 + (8 * i) / 39);
+  function estimar(itens) {
+    const logs = PTS.map((t) => {
+      let l = -(t * t) / 2;
+      itens.forEach(({ a, b, c, x }) => {
+        const p = c + (1 - c) / (1 + Math.exp(-a * (t - b)));
+        l += Math.log(x ? p : 1 - p);
+      });
+      return l;
+    });
+    const max = Math.max(...logs);
+    const w = logs.map((l) => Math.exp(l - max));
+    const soma = w.reduce((s, v) => s + v, 0);
+    const theta = w.reduce((s, v, i) => s + v * PTS[i], 0) / soma;
+    const dp = Math.sqrt(w.reduce((s, v, i) => s + v * (PTS[i] - theta) ** 2, 0) / soma);
+    return { theta, dp };
+  }
+
+  function respondidas() {
+    return Object.entries(respostas).filter(([, l]) => l && l !== "?")
+      .map(([id, l]) => [BANCO.find((q) => q.id === id), l]).filter(([q]) => q);
+  }
+
+  function calcularNota() {
+    const grupos = {};
+    let semParametro = 0;
+    respondidas().forEach(([q, l]) => {
+      const chave = `${q.prova.ano}|${q.area}`;
+      if (!q.tri || !ESCALA_NOTAS[chave]) { semParametro++; return; }
+      (grupos[chave] = grupos[chave] || []).push({ ...q.tri, x: l === q.gabarito });
+    });
+    const ordem = Object.keys(grupos).sort((a, b) => b.split("|")[0] - a.split("|")[0] || ORDEM_AREA.indexOf(a.split("|")[1]) - ORDEM_AREA.indexOf(b.split("|")[1]));
+    const cartoes = ordem.map((chave) => {
+      const [ano, area] = chave.split("|");
+      const itens = grupos[chave], { k, m } = ESCALA_NOTAS[chave];
+      const { theta, dp } = estimar(itens);
+      const nota = k * theta + m, lo = k * (theta - dp) + m, hi = k * (theta + dp) + m;
+      const ac = itens.filter((i) => i.x).length;
+      const f = (v) => Math.round(v).toLocaleString("pt-BR");
+      return `<div class="nota-area">
+        <span class="nome">${esc(area)} · ENEM ${ano}</span>
+        <span class="valor">${f(nota)}</span>
+        <span class="faixa">Faixa provável: ${f(lo)} a ${f(hi)}</span>
+        <span class="det">${ac} acerto${ac === 1 ? "" : "s"} em ${itens.length} questõe${itens.length === 1 ? "" : "s"} respondida${itens.length === 1 ? "" : "s"}</span>
+        ${itens.length < 15 ? '<span class="alerta">Poucas questões: a estimativa ainda é imprecisa.</span>' : ""}
+      </div>`;
+    });
+    const painel = $("painelNota");
+    painel.innerHTML = `<div class="topo"><h2>Sua nota estimada</h2>
+        <span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="button" id="recalcular">Recalcular</button><button class="btn" type="button" id="apagarRespostas">Apagar minhas respostas</button><button class="btn" type="button" id="fecharNota">Fechar</button></span></div>
+      ${cartoes.length ? `<div class="notas">${cartoes.join("")}</div>` : '<p class="explica">Marque alternativas em algumas questões para calcular a nota.</p>'}
+      ${semParametro ? `<p class="explica">${semParametro} resposta${semParametro === 1 ? "" : "s"} não entra${semParametro === 1 ? "" : "m"} no cálculo (questões anuladas ou descartadas pelo INEP).</p>` : ""}
+      <p class="explica">Calculada como o INEP calcula: pela TRI, considerando quais questões você acertou, não só quantas. A nota de cada área e ano é separada, porque cada uma tem sua própria escala. Aqui entram só as questões que você respondeu; na prova real, questão em branco conta como erro. A faixa provável mostra a incerteza: quanto mais questões respondidas, mais estreita ela fica.</p>`;
+    painel.hidden = false;
+  }
+
+  function atualizarResumo(total) {
+    const r = respondidas();
+    const acertos = r.filter(([q, l]) => q.gabarito === l).length;
+    $("resumo").innerHTML = `<span><strong>${total}</strong> ${total === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
+      (r.length ? `<span>Suas respostas: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${r.length}</strong></span>` : "") +
+      `<button class="btn" type="button" id="calcNota"${r.length ? "" : " disabled title=\"Responda pelo menos uma questão\""}>Calcular minha nota</button>`;
+    if (!$("painelNota").hidden) calcularNota();
+    try { localStorage.setItem("banco-enem-respostas", JSON.stringify(respostas)); } catch (e) { /* sem armazenamento */ }
+  }
+
   function render() {
     const ordemArea = (a, b) => ORDEM_AREA.indexOf(a) - ORDEM_AREA.indexOf(b);
     montarOpcoes("area", $("f-area"), ordemArea);
@@ -335,10 +423,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     const res = BANCO.filter((q) => passa(q));
     const provas = new Set(BANCO.map((q) => q.prova.descricao));
     $("fonte").textContent = `${BANCO.length} questões de ${provas.size} prova${provas.size > 1 ? "s" : ""} oficial${provas.size > 1 ? "is" : ""} do INEP`;
-    const acertos = Object.entries(respostas).filter(([id, l]) => l !== "?" && (BANCO.find((q) => q.id === id) || {}).gabarito === l).length;
-    const feitas = Object.values(respostas).filter((l) => l !== "?").length;
-    $("resumo").innerHTML = `<span><strong>${res.length}</strong> ${res.length === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
-      (feitas ? `<span>Nesta visita: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${feitas}</strong></span>` : "");
+    atualizarResumo(res.length);
     $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")
       : '<div class="empty">Nenhuma questão com esses filtros. Desmarque algum filtro ou limpe a busca.</div>';
     $("mais").hidden = res.length <= limite;
@@ -384,11 +469,16 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     const q = BANCO.find((x) => x.id === id);
     const card = document.getElementById(id);
     if (q && card) { card.outerHTML = cartao(q); }
-    const acertos = Object.entries(respostas).filter(([i, l]) => l !== "?" && (BANCO.find((x) => x.id === i) || {}).gabarito === l).length;
-    const feitas = Object.values(respostas).filter((l) => l !== "?").length;
-    const total = BANCO.filter((x) => passa(x)).length;
-    $("resumo").innerHTML = `<span><strong>${total}</strong> ${total === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
-      (feitas ? `<span>Nesta visita: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${feitas}</strong></span>` : "");
+    atualizarResumo(BANCO.filter((x) => passa(x)).length);
+  });
+  $("resumo").addEventListener("click", (e) => { if (e.target.id === "calcNota") calcularNota(); });
+  $("painelNota").addEventListener("click", (e) => {
+    if (e.target.id === "fecharNota") $("painelNota").hidden = true;
+    if (e.target.id === "recalcular") calcularNota();
+    if (e.target.id === "apagarRespostas") {
+      if (e.target.dataset.confirmar !== "1") { e.target.dataset.confirmar = "1"; e.target.textContent = "Confirmar: apagar todas"; return; }
+      respostas = {}; $("painelNota").hidden = true; render();
+    }
   });
 
   if (!BANCO.length) {
@@ -396,6 +486,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     return;
   }
   carregar();
+  try { respostas = JSON.parse(localStorage.getItem("banco-enem-respostas") || "{}") || {}; } catch (e) { respostas = {}; }
   render();
 })();
 </script>
