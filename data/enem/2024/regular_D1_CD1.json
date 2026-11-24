@@ -29,7 +29,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q001_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: http://thumbpress.com. Acesso em: 28 out. 2013.\nA relação entre as citações atribuídas ao físico Albert Einstein\ne ao cantor e compositor Bob Marley reside na crença de que\né necessário"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q002-ingles",
@@ -785,7 +798,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nA linguagem visual dos adornos transmite informações\nsobre prestígio e transgressão, direito e dever, pois só é\npermitido ao indivíduo o uso de adornos de sua linhagem.\nQuando diretamente vinculadas aos conceitos cosmológicos,\nas artes indígenas convertem-se antes em prismas que\nrefletem as concepções acerca da composição do universo\ne dos componentes que o povoam.\nAGUILAR, N. (Org.); DIAS, J. A. B. F.; VELTHEN, L. H. V. Mostra do\nredescobrimento: artes indígenas. São Paulo: Fundação Bienal de\nSão Paulo-Associação Brasil 500 anos, 2000 (adaptado).\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q021_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Diadema (etnia Kayapó). Estados do Mato Grosso e Pará.\n\nMuseu de Arte Indígena, s.d.\n\nDisponível em: www.maimuseu.com.br. Acesso em: 11 jul. 2024.\nPela leitura desses textos, infere-se que a compreensão\nda arte plumária indígena requer a consideração da"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q022",
@@ -1243,7 +1273,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I TEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q036_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Anônimo. Cabeça de uma figura feminina.\n\nCirca 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.\n\nMetropolitan Museum of Art, Nova Iorque."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q036_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "MODIGLIANI, A. Cabeça de mulher. Circa 1910-1911.\n\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\n\nNational Gallery of Art, Washington.\n\nWOLKOFF, J. These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art.\nDisponível em: www.artsy.net. Acesso em: 19 jun. 2019.\nA leitura comparativa das duas esculturas, separadas por mais de 2500 anos, indica a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q037",
@@ -1757,7 +1813,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Diferenças entre inundação gradual e brusca"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q053_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "TOMINAGA, L. K.; SANTORO, J.; AMARAL, R. Desastres naturais:\nconhecer para prevenir. São Paulo: Instituto Geológico, 2009 (adaptado).\nA desproporção de velocidade e tempo de duração nos\ntipos de inundação destacados é condicionada pela"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q054",
@@ -2299,7 +2372,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A26ª Conferência do Clima das Nações Unidas foi realizada\ncom a perspectiva de que os países tornassem ainda mais\nambiciosos os compromissos assumidos no enfrentamento\ndas mudanças climáticas, de modo a evitar que a temperatura\nglobal se eleve acima de 1,5 °C, marca que já vinha sendo\ndiscutida desde o Acordo de Paris, de 2015.\n\nA pressão do setor empresarial, que se posicionou de\nmaneira contundente nesta COP-26, gerou impacto positivo.\nO Conselho Empresarial Brasileiro para o Desenvolvimento\nSustentável (CEBDS) capitaneou, por meio do movimento\nEmpresários pelo Clima, a adesão de 119 CEOs de importantes\nempresas e 14 instituições do setor privado, de setores tão\ndiversos como agronegócio, alimentício, aviação, elétrico,\nfarmacêutico, finanças, infraestrutura, logística, papel e celulose,\npetroquímico, saúde, tecnologia, telefonia e varejo.\n\nO Brasil deixa a conferência com o compromisso de fazer\nvaler sua meta e reduzir 50% dos gases de efeito estufa até\n2030 em relação aos níveis de 2005 — anteriormente, a meta\nde redução era de 43%.\nGROSSI, M. A mais plural das COPs e a lição de casa para o Brasil.\nDisponível em: www.nexojornal.com.br.\nAcesso em: 24 nov. 2021 (adaptado).\nConforme o texto, o compromisso assumido pelo Brasil foi\nresultado dos tensionamentos promovidos por"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q072",

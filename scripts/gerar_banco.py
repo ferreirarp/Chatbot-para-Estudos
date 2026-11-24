@@ -92,7 +92,12 @@ def aplicar_edicoes(banco: list[dict], avisos: list[str]) -> None:
             continue
         for k, v in ed.get("campos", {}).items():
             q[k] = v
-        if ed.get("imagem") and q["imagem"]:
+        for chave, r in (ed.get("recortes") or {}).items():
+            if chave.startswith("alt-") and q.get("alternativas_imagem"):
+                q["alternativas_imagem"][chave[4:]] = r["imagem"]
+            elif q.get("blocos") and chave[1:].isdigit() and int(chave[1:]) < len(q["blocos"]):
+                q["blocos"][int(chave[1:])]["imagem"] = r["imagem"]
+        if ed.get("imagem") and q["imagem"] and not q.get("blocos"):
             q["imagem_original"] = q["imagem"]
             q["imagem"] = ed["imagem"]
         invalidas = [d for d in q["disciplinas"] if d not in DISCIPLINAS_VALIDAS]
@@ -153,6 +158,12 @@ def main() -> None:
                 "visuais": q["elementos_visuais"],
                 "imagem": (f"data/enem/{ano}/{q['imagem']}" if q["imagem"] else None),
                 "texto_fiel": q["texto_fiel"],
+                # versão estruturada: texto + recortes só dos objetos visuais
+                "blocos": ([dict(b, imagem=f"data/enem/{ano}/{b['imagem']}") if b["tipo"] == "figura" else b
+                            for b in q["blocos"]] if q.get("blocos") else None),
+                "alternativas_imagem": ({L: f"data/enem/{ano}/{v}" for L, v in q["alternativas_imagem"].items()}
+                                        if q.get("alternativas_imagem") else None),
+                "revisar": q.get("revisar") or [],
                 "habilidade": ({
                     "codigo": hab,
                     "chave": f"{sigla} {hab}",

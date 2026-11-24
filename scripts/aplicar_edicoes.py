@@ -22,7 +22,8 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA = RAIZ / "data" / "enem" / "edicoes"
 ARQ = PASTA / "edicoes.json"
-CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao"}
+CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao", "blocos"}
+RE_RECORTE = re.compile(r"^(b\d+|alt-[A-E])$")
 RE_ID = re.compile(r"^\d{4}-(regular|reaplicacao)-D\d-CD\d+-Q\d{3}(-(ingles|espanhol))?$")
 PREFIXO_PNG = "data:image/png;base64,"
 
@@ -55,11 +56,26 @@ def main() -> None:
                 reg["receita"] = ed.get("receita")
         elif destino.exists():
             destino.unlink()  # a imagem voltou ao original
-        if campos or "imagem" in reg:
+        recortes = {}
+        for chave, r in (ed.get("recortes") or {}).items():
+            png_r = (r or {}).get("imagem_png") or ""
+            if not RE_RECORTE.match(chave) or not png_r.startswith(PREFIXO_PNG):
+                print(f"  {qid}: recorte {chave!r} ignorado")
+                continue
+            arq = PASTA / "img" / f"{qid}__{chave}.png"
+            arq.write_bytes(base64.b64decode(png_r[len(PREFIXO_PNG):]))
+            recortes[chave] = {"imagem": f"data/enem/edicoes/img/{arq.name}", "receita": r.get("receita")}
+        for velho in (PASTA / "img").glob(f"{qid}__*.png"):
+            if velho.stem.split("__", 1)[1] not in recortes:
+                velho.unlink()  # recorte que voltou ao original
+        if recortes:
+            reg["recortes"] = recortes
+        if campos or "imagem" in reg or recortes:
             atuais[qid] = reg
         else:
             atuais.pop(qid, None)
-        print(f"  {qid}: {', '.join(sorted(campos)) or '-'}{' + imagem' if 'imagem' in reg else ''}")
+        print(f"  {qid}: {', '.join(sorted(campos)) or '-'}{' + imagem' if 'imagem' in reg else ''}"
+              f"{' + recortes ' + ','.join(sorted(recortes)) if recortes else ''}")
 
     ARQ.write_text(json.dumps(dict(sorted(atuais.items())), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"{len(atuais)} questões editadas em {ARQ.relative_to(RAIZ)}. Rode scripts/gerar_banco.py.")

@@ -44,11 +44,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Células a combustível microbianas (CCM) são capazes\nde gerar eletricidade a partir de águas residuárias urbanas e\nagroindustriais. As CCM são compostas de duas câmaras.\nNuma delas, onde ocorre o tratamento da matéria orgânica,\nas bactérias eletrogênicas crescem formando um biofilme\ne se alimentam dos poluentes presentes no efluente. Ao se\nalimentarem, essas bactérias geram uma corrente elétrica\nque percorre o material sobre o qual elas formaram o biofilme.\nUm fio condutor externo possibilita a migração dessa corrente\npara uma segunda câmara, promovendo uma reação química.\nA figura esquematiza uma CCM e as reações envolvidas.\nCH COO− (aq) + 2 H O (I) → 2 CO (g) + 7 H+ (aq) + 8 e−\n3 2 2\n4 H+ (aq) + O (g) + 4 e− → 2 H O (I)\n2 2\nQUINTO, A. C. Biobaterias geram eletricidade a partir de\nesgoto sanitário e efluentes agroindustriais. Disponível em:\nhttps://jornal.usp.br. Acesso em: 1 dez. 2021 (adaptado).\nQual das equações representa a reação global que ocorre\ndurante o funcionamento dessa CCM?",
     "alternativas": {
-      "A": "CH COO− (aq) + O (g) → 2 CO (g) + 3 H+ (aq) 3 2 2",
-      "B": "CO (g) + O (g) + H+ (aq) → H O (l) + CH COO− (aq) 2 2 2 3",
-      "C": "CHCOO− (aq) + H+ (aq) + 2 O (g) → 2 CO (g) + 2 HO (l) 3 2 2 2",
-      "D": "CHCOO− (aq) + 6 HO (l) → 2 CO (g) + 2 O (g) + 15 H+ (aq) 3 2 2 2",
-      "E": "2 CO (g) + 11 H+ (aq) + O (g) → CHCOO− (aq) + 4 HO (l) 2 2 3 2"
+      "A": "CH₃COO⁻ (aq) + O₂ (g) → 2 CO₂ (g) + 3 H⁺ (aq)",
+      "B": "CO₂ (g) + O₂ (g) + H⁺ (aq) → H₂O (l) + CH₃COO⁻ (aq)",
+      "C": "CH₃COO⁻ (aq) +H⁺ (aq) +2 O₂ (g)→2 CO₂ (g) +2 H₂O (l)",
+      "D": "CH₃COO⁻ (aq) + 6H₂O(l)→2CO₂ (g) +2O₂ (g) +15H⁺ (aq)",
+      "E": "2 CO₂ (g) + 11 H⁺ (aq) + O₂ (g)→CH₃COO⁻ (aq) + 4 H₂O (l)"
     },
     "gabarito": "C",
     "anulada": false,
@@ -62,7 +62,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Células a combustível microbianas (CCM) são capazes\nde gerar eletricidade a partir de águas residuárias urbanas e\nagroindustriais. As CCM são compostas de duas câmaras.\nNuma delas, onde ocorre o tratamento da matéria orgânica,\nas bactérias eletrogênicas crescem formando um biofilme\ne se alimentam dos poluentes presentes no efluente. Ao se\nalimentarem, essas bactérias geram uma corrente elétrica\nque percorre o material sobre o qual elas formaram o biofilme.\nUm fio condutor externo possibilita a migração dessa corrente\npara uma segunda câmara, promovendo uma reação química.\nA figura esquematiza uma CCM e as reações envolvidas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q092_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "CH₃COO⁻ (aq) + 2 H₂O (I) → 2 CO₂ (g) + 7 H⁺ (aq) + 8 e⁻\n\n4 H⁺ (aq) + O₂ (g) + 4 e⁻ → 2 H₂O (I)\n\nQUINTO, A. C. Biobaterias geram eletricidade a partir de\nesgoto sanitário e efluentes agroindustriais. Disponível em:\nhttps://jornal.usp.br. Acesso em: 1 dez. 2021 (adaptado).\nQual das equações representa a reação global que ocorre\ndurante o funcionamento dessa CCM?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q093",
@@ -219,7 +236,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O soro caseiro serve para combater a desidratação por\nmeio da reposição da água e sais minerais perdidos,\npor exemplo, por diarreia. Uma receita simples para a sua\npreparação consiste em utilizar duas colheres grandes\n(de sopa) de açúcar e duas colheres pequenas (de café)\nde sal de cozinha, dissolvidos em 2 L de água fervida,\nobtendo-se uma solução com concentração de íon sódio\nde 1,4 mg/mL.\n\nConsidere as massas molares: NaCl = 58,5 g/mol;\nNa = 23 g/mol.\nQual é o valor mais próximo da massa, em grama, de\ncloreto de sódio presente em uma única colher pequena?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q098",
@@ -266,11 +291,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma ambulância em alta velocidade com a sirene ligada\ndesloca-se em direção a um radar operado por uma pessoa.\nO radar emite ondas de rádio com frequência f que são\n0\nrefletidas pela dianteira da ambulância, retornando para\no detector com frequência f. A percepção do operador do\nr\nradar, em relação ao som emitido pela sirene, é de que\neste se altera à medida que a ambulância se aproxima\nou se afasta.\nDurante a aproximação, como o operador percebe o som\nda sirene e qual é a relação entre as frequências f e f\nr 0\nmedidas pelo radar?",
     "alternativas": {
-      "A": "Mais grave do que o som emitido e f < f . r 0",
-      "B": "Mais agudo do que o som emitido e f < f . r 0",
-      "C": "Mais agudo do que o som emitido e f = f . r 0",
-      "D": "Mais agudo do que o som emitido e f > f . r 0",
-      "E": "Mais grave do que o som emitido e f > f . r 0"
+      "A": "Mais grave do que o som emitido e fᵣ < f₀.",
+      "B": "Mais agudo do que o som emitido e fᵣ < f₀.",
+      "C": "Mais agudo do que o som emitido e fᵣ = f₀.",
+      "D": "Mais agudo do que o som emitido e fᵣ > f₀.",
+      "E": "Mais grave do que o som emitido e fᵣ > f₀."
     },
     "gabarito": "D",
     "anulada": false,
@@ -283,7 +308,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma ambulância em alta velocidade com a sirene ligada\ndesloca-se em direção a um radar operado por uma pessoa.\nO radar emite ondas de rádio com frequência f₀ que são\nrefletidas pela dianteira da ambulância, retornando para\no detector com frequência fᵣ. A percepção do operador do\nradar, em relação ao som emitido pela sirene, é de que\neste se altera à medida que a ambulância se aproxima\nou se afasta.\nDurante a aproximação, como o operador percebe o som\nda sirene e qual é a relação entre as frequências fᵣ e f₀\nmedidas pelo radar?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q100",
@@ -686,7 +719,50 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um dos exemplos mais conhecidos de herança\nrecessiva ligada ao cromossomo X é o daltonismo.\nComo em qualquer distúrbio recessivo ligado ao\ncromossomo X, existem muito mais homens apresentando\no fenótipo com esse tipo de daltonismo do que mulheres.\nUm casal formado por um homem não daltônico e por uma\nmulher gestante também não daltônica, mas portadora\ndo gene recessivo para esse tipo de daltonismo, está\nesperando um bebê. Em uma das consultas de pré-natal,\no casal recebeu um heredograma que contém todas as\npossibilidades de genótipo para esse bebê.\nConsidere a legenda:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q112_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q112_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q112_f3.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q112_f4.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q112_f5.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "GRIFFITHS, A. et al. Introdução à genética. Rio de Janeiro:\nGuanabara Koogan, 2016 (adaptado).\nQual heredograma foi recebido pelo casal?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q112_f6.png",
+      "B": "img/blocos/regular_D2_CD7_Q112_f7.png",
+      "C": "img/blocos/regular_D2_CD7_Q112_f8.png",
+      "D": "img/blocos/regular_D2_CD7_Q112_f9.png",
+      "E": "img/blocos/regular_D2_CD7_Q112_f10.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q113",
@@ -815,7 +891,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O magnésio metálico utilizado em ligas leves é\nproduzido em um processo que envolve várias etapas e\nutiliza água do mar como matéria-prima. A primeira etapa\ndesse processo consiste na reação entre o íon Mg²⁺ e\nhidróxido de cálcio, Ca(OH)₂, obtendo uma mistura que\ncontém hidróxido de magnésio, pouco solúvel, e íons Ca²⁺,\nde acordo com a equação química:\nMg²⁺ (aq) + Ca(OH)₂ (aq) → Mg(OH)₂ (s) + Ca²⁺ (aq)\nO método adequado para separar o Mg(OH)₂ dessa\nmistura é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q117",
@@ -878,7 +962,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A hidroxiapatita, Ca₅(PO₄)₃OH, é um mineral\nconstituinte do esmalte dos dentes. Entre as diversas\nreações que ocorrem no meio bucal, encontram-se em\nequilíbrio as reações de desmineralização e mineralização\nda hidroxiapatita em meio aquoso, ilustradas a seguir.\nA desmineralização está associada à fragilização do esmalte\ndo dente e à formação de cáries."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q118_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O uso de creme dental pode minimizar a perda da\nhidroxiapatita. O quadro apresenta o agente de polimento\ne o pH de alguns cremes dentais comerciais."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q118_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "STORGATTO, G. A.; BRAIBANTE, M. E. F.; BRAIBANTE, H. T. S.\nA química na odontologia. Química Nova na Escola,\nv. 39, fev. 2017 (adaptado).\nConsiderando o equilíbrio químico envolvido, qual creme dental\npromove a maior desmineralização do esmalte do dente?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q119",
@@ -1146,9 +1256,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Em um experimento de laboratório, duas barras\nmetálicas, A e B, são carregadas com cargas opostas e\nimersas em óleo. Farelo de milho é jogado sobre o óleo e,\napós um certo tempo, o farelo assume o formato das linhas\nde campo elétrico entre as barras. A figura representa a\nvista superior desse experimento.\nALMEIDA, M. A. T. Introdução às ciências físicas 2 — volume 4:\nmódulo 4. Rio de Janeiro: Fundação CECIERJ, 2007 (adaptado).\nAo repetir o experimento colocando um cilindro metálico\noco entre as placas, o esquema que representa o formato\ndas linhas de campo assumido pelo farelo é:",
     "alternativas": {
-      "A": "D",
+      "A": "",
       "B": "",
-      "C": ""
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "E",
     "anulada": false,
@@ -1163,7 +1275,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em um experimento de laboratório, duas barras\nmetálicas, A e B, são carregadas com cargas opostas e\nimersas em óleo. Farelo de milho é jogado sobre o óleo e,\napós um certo tempo, o farelo assume o formato das linhas\nde campo elétrico entre as barras. A figura representa a\nvista superior desse experimento."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q127_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ALMEIDA, M. A. T. Introdução às ciências físicas 2 — volume 4:\nmódulo 4. Rio de Janeiro: Fundação CECIERJ, 2007 (adaptado).\nAo repetir o experimento colocando um cilindro metálico\noco entre as placas, o esquema que representa o formato\ndas linhas de campo assumido pelo farelo é:"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q127_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q127_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q127_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q127_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q127_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q128",
@@ -1259,7 +1394,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O diagrama P-V a seguir representa o ciclo de Otto\npara um motor de combustão interna, como os motores a\ngasolina ou a etanol, utilizados nos automóveis."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q130_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "As etapas representadas no diagrama estão descritas\nno quadro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q130_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.mspc.eng.br.\nAcesso em: 24 fev. 2013 (adaptado).\nA transformação da energia térmica em energia útil ocorre\nna etapa"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q131",
@@ -1357,7 +1518,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O biogás é uma alternativa energética muito importante,\npois, além de reduzir a dependência por combustíveis\nfósseis, sua obtenção pode ser realizada a partir de\nresíduos da produção agroindustrial. Considere que o\nbiogás produzido em um empreendimento de suinocultura\ncontém 70% em volume de metano (massa molar 16 g/mol;\nvolume molar 22 L/mol). Ele será utilizado para geração de\nenergia em substituição ao etanol (massa molar 46 g/mol)\nem um gerador no qual 1 m³ de biogás de origem suína\nsubstitui 0,59 L de etanol anidro (densidade 0,78 g/mL).\nNessas condições, a massa de metano necessária para\nsubstituir 10 mol de etanol na produção de energia é mais\npróxima de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q134",
@@ -1454,7 +1623,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O tamanho mínimo que a visão humana é capaz de\nvisualizar sem o uso de equipamento auxiliar é equivalente\na 100 micrômetros (1 micrômetro = 10⁻³ milímetros).\nUma estudante pretende visualizar e analisar hemácias\ndo sangue humano, que medem 0,007 mm de diâmetro.\nEla adquiriu um microscópio óptico que tem uma lente\nocular que amplia em 10 vezes a imagem do objeto em\nobservação, e um conjunto de lentes objetivas com estas\ncapacidades de ampliação:\n• lente I: 2 vezes;\n• lente II: 10 vezes;\n• lente III: 15 vezes;\n• lente IV: 1,1 vez;\n• lente V: 1,4 vez."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q136_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O funcionamento desse microscópio permite o uso da\nlente ocular sozinha ou a combinação dela com uma\nde suas lentes objetivas, proporcionando, nesse caso,\num aumento de sua capacidade de ampliação final, que é\ndada pelo produto entre as capacidades de ampliação da\nocular e da objetiva.\n\nEssa estudante pretende selecionar a lente objetiva de\nmenor capacidade de ampliação que permita, na combinação\ncom a ocular, visualizar hemácias do sangue humano.\nA lente objetiva a ser selecionada pela estudante é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q137",
@@ -1548,7 +1734,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um artesão utiliza dois tipos de componentes, X e\nY, nos enfeites que produz. Ele sempre compra todos os\ncomponentes em uma mesma loja. O quadro apresenta\nos preços dos dois tipos de componentes nas lojas I e II."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q139_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Ele confeccionará enfeites formados por duas unidades\ndo componente X e uma unidade do componente Y e\nefetuará a compra na loja que oferecer o menor valor total\npara a confecção de um enfeite.\nO artesão efetuará a compra na loja"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q140",
@@ -1627,11 +1830,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma criança, utilizando um aplicativo, escreveu uma\nmensagem para enviar a um amigo. Essa mensagem foi\nescrita seguindo estas etapas:\nEtapas Visor de escrita\n1ª etapa: inseriu três fi guras\ndo tipo no visor de\nescrita da mensagem;\n2ª etapa: copiou o que havia\ninserido anteriormente e\ncolou (inseriu o que havia\ncopiado) ao lado;\n3ª etapa: copiou o que tinha\nno visor na 2ª etapa e colou\nao lado.\nA criança seguiu copiando e colando, em cada etapa,\no que tinha no visor na etapa imediatamente anterior, até\nconcluir a 20ª etapa. Em seguida, enviou a mensagem.\nQual foi o total de figuras contidas na mensagem enviada?",
     "alternativas": {
-      "A": "3 × 219",
-      "B": "3 × 220",
-      "C": "3 × 221",
-      "D": "3 × 220 − 1",
-      "E": "3 × 220 − 3"
+      "A": "3 × 2¹⁹",
+      "B": "3 × 2²⁰",
+      "C": "3 × 2²¹",
+      "D": "3 × 2²⁰ − 1",
+      "E": "3 × 2²⁰ − 3"
     },
     "gabarito": "A",
     "anulada": false,
@@ -1645,7 +1848,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma criança, utilizando um aplicativo, escreveu uma\nmensagem para enviar a um amigo. Essa mensagem foi\nescrita seguindo estas etapas:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q142_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A criança seguiu copiando e colando, em cada etapa,\no que tinha no visor na etapa imediatamente anterior, até\nconcluir a 20ª etapa. Em seguida, enviou a mensagem.\nQual foi o total de figuras contidas na mensagem enviada?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q143",
@@ -2026,7 +2246,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Contratos de vários serviços disponíveis na internet\napresentam uma quantidade excessiva de informações.\nIsso faz com que o tempo necessário para a leitura desses\ncontratos possa ser longo.\n\nO quadro apresenta uma amostra do tempo considerado\nnecessário para a leitura completa do contrato de alguns\nserviços digitais."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q154_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ROMERO, L. Não li e concordo. Superinteressante,\nn. 307, ago. 2012 (adaptado).\nO tempo médio, em minuto, necessário para a leitura\ncompleta de um contrato de serviço dentre os listados\nno quadro é, com uma casa decimal, aproximadamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q155",
@@ -2375,7 +2612,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para melhorar o fluxo de ônibus em uma avenida que\ntem dois semáforos, a prefeitura reduzirá o tempo em\nque cada sinal ficará vermelho, que atualmente é de 15\nsegundos a cada 60 segundos. Admita que o instante de\nchegada de um ônibus a cada semáforo é aleatório.\n\nO engenheiro de tráfego da prefeitura calculou a\nprobabilidade de um ônibus encontrar cada um deles\nvermelho, obtendo 15/60. A partir daí, estabeleceu uma\nmesma redução na quantidade do tempo, em segundo,\nem que cada sinal ficará vermelho, de maneira que\na probabilidade de um ônibus encontrar ambos os\nsinais vermelhos numa mesma viagem seja igual a 4/100,\nconsiderando os eventos independentes.\nPara isso, a redução do tempo em que o sinal ficará\nvermelho, em segundo, estabelecida pelo engenheiro foi de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q166",
@@ -2650,9 +2895,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Em um jogo virtual para celular, um personagem pode\npercorrer trajetórias retilíneas voando ou se deslocando ao\nlongo de paredes. Considere que o personagem descreve\na trajetória ABCDEF, em que os pontos A, D e E estão em\num plano paralelo ao que contém os pontos B e C, sendo\nesses dois planos ortogonais ao plano da base que contém\no ponto F, conforme a figura.\nA projeção ortogonal, sobre o plano da base, da trajetória\nABCDEF descrita pelo personagem é",
     "alternativas": {
-      "A": "D",
-      "B": "E",
-      "C": ""
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "C",
     "anulada": false,
@@ -2667,7 +2914,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em um jogo virtual para celular, um personagem pode\npercorrer trajetórias retilíneas voando ou se deslocando ao\nlongo de paredes. Considere que o personagem descreve\na trajetória ABCDEF, em que os pontos A, D e E estão em\num plano paralelo ao que contém os pontos B e C, sendo\nesses dois planos ortogonais ao plano da base que contém\no ponto F, conforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q174_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A projeção ortogonal, sobre o plano da base, da trajetória\nABCDEF descrita pelo personagem é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q174_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q174_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q174_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q174_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q174_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q175",

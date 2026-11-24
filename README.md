@@ -74,6 +74,19 @@ com uma faixa provável (±1 desvio-padrão da estimativa). Testada com 6
 candidatos reais: a nota exibida coincidiu com a oficial (arredondada) nos 12
 casos. As respostas ficam salvas só no navegador de quem usa a página.
 
+### Texto + recortes (piloto, 20 questões de 2024)
+`scripts/estruturar_questoes.py` reescreve questões salvas como imagem inteira
+em texto, recortando só os objetos visuais (foto, gráfico, desenho, tabela,
+fórmula complexa). Regras: linhas que se sobrepõem a uma figura (rótulos,
+legenda de eixo, texto de tabela) ficam no recorte; índices e expoentes viram
+Unicode (H₂O, 10⁻³, f₀); frações simples viram "15/60"; alternativas em
+desenho viram imagem por alternativa; linha centralizada (equação) é parágrafo
+próprio. O que a conversão não garante fica marcado em `revisar`. A imagem
+inteira continua salva e aparece em "Ver a questão como está na prova".
+
+    python scripts/estruturar_questoes.py --ano 2024 --dia 2 --caderno 7 --questoes 92,97
+    python scripts/gerar_banco.py
+
 ### Edição de questões e imagens
 Cada cartão tem **Editar questão** (enunciado, alternativas, gabarito,
 disciplinas, conteúdos, observação) e, nas questões com imagem, **Editar
