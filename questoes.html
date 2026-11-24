@@ -186,6 +186,11 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     <div class="fgroup"><span class="label">Dificuldade</span><div class="opts" id="f-dif"></div></div>
     <div class="fgroup"><span class="label">Habilidade (Matriz de Referência)</span><div class="opts" id="f-hab"></div></div>
     <div class="fgroup"><span class="label">Formato</span><div class="opts" id="f-fmt"></div></div>
+    <div class="fgroup"><span class="label">Língua estrangeira</span><div class="opts" id="f-lingua">
+      <label class="opt" for="lingua-ingles"><input type="radio" name="lingua" id="lingua-ingles" value="ingles"> Inglês</label>
+      <label class="opt" for="lingua-espanhol"><input type="radio" name="lingua" id="lingua-espanhol" value="espanhol"> Espanhol</label>
+      <label class="opt" for="lingua-ambas"><input type="radio" name="lingua" id="lingua-ambas" value="" checked> Ver as duas</label>
+    </div></div>
     <div class="fgroup">
       <label class="opt"><input type="checkbox" id="semAnuladas" checked> Ocultar questões anuladas</label>
     </div>
@@ -214,6 +219,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const SEM_DIF = "Sem dificuldade calculada";
   const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), dif: new Set(), hab: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
   let filtros = VAZIO(), busca = "", semAnuladas = true, limite = POR_PAGINA;
+  let lingua = "";  // "ingles", "espanhol" ou "" (ver as duas)
+  const NOME_LINGUA = { ingles: "inglês", espanhol: "espanhol" };
   let respostas = {};  // id -> letra escolhida; "?" = só viu a resposta
 
   const $ = (id) => document.getElementById(id);
@@ -273,6 +280,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
 
   function passa(q, ignorar) {
     if (semAnuladas && q.anulada) return false;
+    if (lingua && q.lingua && q.lingua !== lingua) return false;
     if (busca && !busca.split(/\s+/).every((t) => q._busca.includes(t))) return false;
     for (const k in filtros) {
       if (k === ignorar || !filtros[k].size) continue;
@@ -379,8 +387,14 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
 
   function calcularNota() {
     const grupos = {};
-    let semParametro = 0;
-    respondidas().forEach(([q, l]) => {
+    let semParametro = 0, outraLingua = 0;
+    const resp = respondidas();
+    // No ENEM só conta a língua estrangeira escolhida pelo candidato.
+    const linguasRespondidas = [...new Set(resp.map(([q]) => q.lingua).filter(Boolean))];
+    const linguaUsada = lingua || (linguasRespondidas.length === 1 ? linguasRespondidas[0] : "");
+    const precisaEscolher = !lingua && linguasRespondidas.length > 1;
+    resp.forEach(([q, l]) => {
+      if (q.lingua && (precisaEscolher || q.lingua !== linguaUsada)) { outraLingua++; return; }
       const chave = `${q.prova.ano}|${q.area}`;
       if (!q.tri || !ESCALA_NOTAS[chave]) { semParametro++; return; }
       (grupos[chave] = grupos[chave] || []).push({ ...q.tri, x: l === q.gabarito });
@@ -405,6 +419,9 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     painel.innerHTML = `<div class="topo"><h2>Sua nota estimada</h2>
         <span style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="button" id="recalcular">Recalcular</button><button class="btn" type="button" id="apagarRespostas">Apagar minhas respostas</button><button class="btn" type="button" id="fecharNota">Fechar</button></span></div>
       ${cartoes.length ? `<div class="notas">${cartoes.join("")}</div>` : '<p class="explica">Marque alternativas em algumas questões para calcular a nota.</p>'}
+      ${precisaEscolher ? `<p class="explica" style="color:var(--bad)">Você respondeu questões de inglês e de espanhol, mas no ENEM só conta a língua escolhida. Escolha a sua para incluir essas questões em Linguagens:
+        <button class="btn" type="button" data-escolher-lingua="ingles">Inglês</button> <button class="btn" type="button" data-escolher-lingua="espanhol">Espanhol</button></p>` : ""}
+      ${!precisaEscolher && outraLingua ? `<p class="explica">${outraLingua} resposta${outraLingua === 1 ? "" : "s"} de ${linguaUsada === "ingles" ? "espanhol" : "inglês"} não entra${outraLingua === 1 ? "" : "m"} no cálculo: sua língua estrangeira é ${NOME_LINGUA[linguaUsada]}.</p>` : ""}
       ${semParametro ? `<p class="explica">${semParametro} resposta${semParametro === 1 ? "" : "s"} não entra${semParametro === 1 ? "" : "m"} no cálculo (questões anuladas ou descartadas pelo INEP).</p>` : ""}
       <p class="explica">Calculada como o INEP calcula: pela TRI, considerando quais questões você acertou, não só quantas. A nota de cada área e ano é separada, porque cada uma tem sua própria escala. Aqui entram só as questões que você respondeu; na prova real, questão em branco conta como erro. A faixa provável mostra a incerteza: quanto mais questões respondidas, mais estreita ela fica.</p>`;
     painel.hidden = false;
@@ -442,7 +459,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   }
 
   function salvar() {
-    try { localStorage.setItem("banco-enem-filtros", JSON.stringify({ f: Object.fromEntries(Object.entries(filtros).map(([k, v]) => [k, [...v]])), busca, semAnuladas })); } catch (e) { /* armazenamento indisponível */ }
+    try { localStorage.setItem("banco-enem-filtros", JSON.stringify({ f: Object.fromEntries(Object.entries(filtros).map(([k, v]) => [k, [...v]])), busca, semAnuladas, lingua })); } catch (e) { /* armazenamento indisponível */ }
   }
   function carregar() {
     try {
@@ -452,6 +469,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
       Object.entries(s.f || {}).forEach(([k, v]) => { if (filtros[k]) v.forEach((x) => filtros[k].add(x)); });
       busca = s.busca || ""; semAnuladas = s.semAnuladas !== false;
       $("busca").value = busca; $("semAnuladas").checked = semAnuladas;
+      lingua = ["ingles", "espanhol"].includes(s.lingua) ? s.lingua : "";
+      $("lingua-" + (lingua || "ambas")).checked = true;
     } catch (e) { /* começa sem filtros */ }
   }
 
@@ -459,6 +478,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     const t = e.target;
     if (t.dataset && t.dataset.k) { t.checked ? filtros[t.dataset.k].add(t.value) : filtros[t.dataset.k].delete(t.value); limite = POR_PAGINA; render(); }
     if (t.id === "semAnuladas") { semAnuladas = t.checked; limite = POR_PAGINA; render(); }
+    if (t.name === "lingua") { lingua = t.value; limite = POR_PAGINA; render(); }
   });
   let timer;
   $("busca").addEventListener("input", (e) => { clearTimeout(timer); timer = setTimeout(() => { busca = norm(e.target.value.trim()); limite = POR_PAGINA; render(); }, 180); });
@@ -485,6 +505,11 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   $("painelNota").addEventListener("click", (e) => {
     if (e.target.id === "fecharNota") $("painelNota").hidden = true;
     if (e.target.id === "recalcular") calcularNota();
+    if (e.target.dataset.escolherLingua) {
+      lingua = e.target.dataset.escolherLingua;
+      $("lingua-" + lingua).checked = true;
+      render(); calcularNota();
+    }
     if (e.target.id === "apagarRespostas") {
       if (e.target.dataset.confirmar !== "1") { e.target.dataset.confirmar = "1"; e.target.textContent = "Confirmar: apagar todas"; return; }
       respostas = {}; $("painelNota").hidden = true; render();
