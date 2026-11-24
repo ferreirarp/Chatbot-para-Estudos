@@ -32,7 +32,7 @@
     "Língua Inglesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "5-ingles": {
@@ -104,15 +104,15 @@
   },
   "8": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "9": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -120,10 +120,10 @@
   },
   "10": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "11": {
@@ -169,10 +169,10 @@
   },
   "16": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "17": {
@@ -185,18 +185,18 @@
   },
   "18": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "19": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "20": {
@@ -282,7 +282,7 @@
   },
   "30": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -298,7 +298,7 @@
   },
   "32": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -306,7 +306,7 @@
   },
   "33": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -322,10 +322,10 @@
   },
   "35": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "36": {
@@ -386,10 +386,10 @@
   },
   "43": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "44": {
@@ -402,10 +402,10 @@
   },
   "45": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "46": {
@@ -774,5 +774,20 @@
     "Economia e globalização"
    ]
   }
- }
+ },
+ "disciplinas_validas": [
+  "Artes",
+  "Biologia",
+  "Educação Física",
+  "Filosofia",
+  "Física",
+  "Geografia",
+  "História",
+  "Língua Espanhola",
+  "Língua Inglesa",
+  "Língua Portuguesa",
+  "Matemática",
+  "Química",
+  "Sociologia"
+ ]
 }

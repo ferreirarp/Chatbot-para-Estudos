@@ -34,6 +34,12 @@ SIGLA = {
 # comparável entre anos. Cada ÁREA tem a sua barra: vai da questão mais fácil
 # à mais difícil daquela área no banco, dividida em 7 faixas de largura igual.
 # A calibração é refeita a cada execução, ou seja, sempre que entra uma prova.
+# Únicas disciplinas aceitas na classificação.
+DISCIPLINAS_VALIDAS = {
+    "Língua Portuguesa", "Língua Inglesa", "Língua Espanhola", "Artes", "Educação Física",
+    "Geografia", "História", "Filosofia", "Sociologia",
+    "Matemática", "Biologia", "Física", "Química",
+}
 NIVEIS = ["Para não zerar", "Facílima", "Fácil", "Mediana", "Difícil", "Dificílima", "Impossível"]
 MIN_QUESTOES_CALIBRACAO = 10
 
@@ -79,6 +85,9 @@ def main() -> None:
         for q in json.loads(arq.read_text(encoding="utf-8")):
             chave = str(q["numero"]) + (f"-{q['lingua_estrangeira']}" if q.get("lingua_estrangeira") else "")
             c = classif.get(chave, {})
+            invalidas = [d for d in c.get("disciplinas", []) if d not in DISCIPLINAS_VALIDAS]
+            if invalidas:
+                avisos.append(f"{q['id']}: disciplina fora da lista oficial: {invalidas}")
             if classif and not c:
                 avisos.append(f"{q['id']}: não classificada")
             of = oficial.get(chave, {})

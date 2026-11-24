@@ -16,7 +16,7 @@
     "Língua Inglesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "3-ingles": {
@@ -24,7 +24,7 @@
     "Língua Inglesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "4-ingles": {
@@ -32,7 +32,7 @@
     "Língua Inglesa"
    ],
    "conteudos": [
-    "Poesia",
+    "Literatura (poesia)",
     "Variação e diversidade linguística"
    ]
   },
@@ -67,7 +67,7 @@
     "Língua Espanhola"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "4-espanhol": {
@@ -97,10 +97,10 @@
   },
   "7": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa",
+    "Literatura (prosa)",
     "Recursos expressivos e figuras de linguagem"
    ]
   },
@@ -114,7 +114,7 @@
   },
   "9": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -122,7 +122,7 @@
   },
   "10": {
    "disciplinas": [
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Comunicação e informação"
@@ -138,26 +138,26 @@
   },
   "12": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "13": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "14": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "15": {
@@ -219,10 +219,10 @@
   },
   "22": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "23": {
@@ -243,19 +243,19 @@
   },
   "25": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa",
+    "Literatura (prosa)",
     "Recursos expressivos e figuras de linguagem"
    ]
   },
   "26": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "27": {
@@ -272,31 +272,31 @@
    ],
    "conteudos": [
     "Funções da linguagem",
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "29": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "30": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Prosa"
+    "Literatura (prosa)"
    ]
   },
   "31": {
    "disciplinas": [
-    "Literatura"
+    "Língua Portuguesa"
    ],
    "conteudos": [
-    "Poesia"
+    "Literatura (poesia)"
    ]
   },
   "32": {
@@ -341,14 +341,12 @@
   },
   "37": {
    "disciplinas": [
-    "Artes",
-    "Tecnologias da Informação e Comunicação"
+    "Artes"
    ],
    "conteudos": [
     "Artes visuais",
     "Comunicação e informação"
-   ],
-   "observacao": "Linguagem das artes visuais e uso das plataformas digitais para circulação da obra."
+   ]
   },
   "38": {
    "disciplinas": [
@@ -361,14 +359,12 @@
   },
   "39": {
    "disciplinas": [
-    "Língua Portuguesa",
-    "Tecnologias da Informação e Comunicação"
+    "Língua Portuguesa"
    ],
    "conteudos": [
     "Variação e diversidade linguística",
     "Comunicação e informação"
-   ],
-   "observacao": "Mudança no sentido de um verbete (língua) impulsionada por petição on-line (tecnologia e comunicação)."
+   ]
   },
   "40": {
    "disciplinas": [
@@ -789,5 +785,20 @@
     "Filosofia antiga"
    ]
   }
- }
+ },
+ "disciplinas_validas": [
+  "Artes",
+  "Biologia",
+  "Educação Física",
+  "Filosofia",
+  "Física",
+  "Geografia",
+  "História",
+  "Língua Espanhola",
+  "Língua Inglesa",
+  "Língua Portuguesa",
+  "Matemática",
+  "Química",
+  "Sociologia"
+ ]
 }
