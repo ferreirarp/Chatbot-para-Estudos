@@ -95,6 +95,15 @@ campos alterados são guardados, por cima do original, e "Restaurar original"
 desfaz. Da imagem guarda-se a receita (corte e ajustes), então ela reabre
 ajustável a partir do original, que nunca é alterado.
 
+Questões em blocos (texto + imagens) aceitam, no editor: adicionar campo de
+texto, imagem de arquivo ou recorte da imagem original da prova; mover e
+remover blocos; estilo por bloco (texto, título, legenda, fonte/citação,
+centralizado); e formatação em linha (**negrito**, __itálico__, expoente e
+índice). Questões no formato antigo podem ser montadas em blocos pelo botão
+"Montar em blocos". Correções feitas no repositório ficam em
+`data/enem/edicoes/edicoes.json` (ex.: questão 36 de 2024, cujo "TEXTO II"
+estava fora do lugar na prova).
+
 - **Página publicada:** edições no banco de dados do artefato e imagens no
   armazenamento de arquivos dele; só o dono e editores alteram, quem abre o
   link vê as mesmas edições.

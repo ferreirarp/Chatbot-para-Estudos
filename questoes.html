@@ -207,7 +207,22 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
 
 .figura.recorte { display: block; max-width: 100%; margin: 8px 0 !important; border: 0; padding: 0; background: none; }
 .figura.recorte img, .alt-img { display: block; max-width: 100%; height: auto; background: #fff; border-radius: 4px; }
+.figura.recorte img { margin: 0 auto; }
 .revisar { font-size: .8rem; color: var(--bad); margin: 0; }
+.enunciado .b-titulo { font-family: var(--font-ui); font-weight: 700; font-size: .9rem; letter-spacing: .02em; margin: 14px 0 4px; }
+.enunciado .b-legenda { font-size: .86rem; text-align: center; color: var(--muted); margin: 2px 0 10px; }
+.enunciado .b-centro { text-align: center; }
+.bl { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; display: grid; gap: 6px; background: var(--surface); }
+.bl-topo { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .78rem; font-weight: 600; color: var(--muted); }
+.bl-topo select { width: auto; padding: 3px 6px; font-size: .8rem; }
+.bl-topo .esp { flex: 1; }
+.bl button.mini, .bl-add button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 2px 8px; font-size: .78rem; cursor: pointer; color: var(--ink); }
+.bl button.mini:hover, .bl-add button:hover { border-color: var(--accent); color: var(--accent); }
+.bl-ferr { display: flex; gap: 4px; }
+.bl-ferr button { min-width: 32px; }
+.bl img { max-height: 120px; max-width: 100%; justify-self: start; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.bl-add { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.bl-add button { color: var(--muted); border-style: dashed; }
 .enunciado sup, .enunciado sub, .alts sup, .alts sub { font-size: .72em; line-height: 0; }
 </style>
 </head>
@@ -263,7 +278,10 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     <p class="sub" id="dlgTextoProva"></p>
     <label class="campo" id="edEnunciadoCampo">Enunciado (uma linha em branco separa parágrafos)
       <textarea id="edEnunciado" rows="10"></textarea></label>
+    <div class="actions" id="edConverterLinha"><button class="btn sec" type="button" id="edConverter">Montar em blocos (texto + imagens)</button>
+      <span class="dica">Permite separar o texto das figuras, recortar a imagem original e formatar.</span></div>
     <div class="blocos-ed" id="edBlocos" hidden></div>
+    <input type="file" id="edArquivo" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
     <div class="alts-ed" id="edAlts"></div>
     <label class="campo">Resposta correta (gabarito)
       <select id="edGabarito"><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></label>
@@ -319,13 +337,13 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   const POR_PAGINA = 15;
   const ORDEM_AREA = ["Linguagens, Códigos e suas Tecnologias", "Ciências Humanas e suas Tecnologias",
                       "Ciências da Natureza e suas Tecnologias", "Matemática e suas Tecnologias"];
-  // Recortes são gerados a 200 dpi; exibidos na mesma proporção do texto
-  // da página (1 ponto do PDF ≈ 1,5 px de tela).
-  const PX_POR_PIXEL_RECORTE = (72 / 200) * 1.5;
+  // Recortes do PDF são exibidos na mesma proporção do texto da página
+  // (1 ponto do PDF ≈ 1,5 px de tela); data-dpi diz a resolução do recorte.
   document.addEventListener("load", (e) => {
     const im = e.target;
-    if (im.tagName === "IMG" && im.classList.contains("rec") && !im.closest("form"))
-      im.style.width = Math.round(im.naturalWidth * PX_POR_PIXEL_RECORTE) + "px";
+    if (im.tagName !== "IMG" || !im.classList.contains("rec") || im.closest("form")) return;
+    const dpi = Number(im.dataset.dpi ?? 200);
+    if (dpi > 0) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
   }, true);
   const ESCALAS = window.ESCALA_DIFICULDADE || {};      // por área: {min, max, n, niveis}
   const ESCALA_NOTAS = window.ESCALA_NOTAS || {};       // "ano|área": {k, m}
@@ -345,6 +363,8 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   // <sub>/<sup>: a fonte do texto não tem todos esses caracteres.
   const SUP = "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱᵃˣʸᵇᵒᶜ", SUP_N = "0123456789+−=()niaxyboc";
   const SUB = "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₕₖₗₘₙₚₛₜᵣᵢⱼᵤᵥ", SUB_N = "0123456789+−=()aeoxhklmnpstrijuv";
+  // **negrito** e __itálico__ (marcação simples que o editor insere)
+  const fmt = (html) => html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/__(.+?)__/g, "<em>$1</em>");
   const indices = (html) => html
     .replace(new RegExp(`[${SUP}]+`, "g"), (m) => "<sup>" + [...m].map((c) => SUP_N[SUP.indexOf(c)]).join("") + "</sup>")
     .replace(new RegExp(`[${SUB}]+`, "g"), (m) => "<sub>" + [...m].map((c) => SUB_N[SUB.indexOf(c)]).join("") + "</sub>");
@@ -363,7 +383,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     indexar(q);
   });
   function indexar(q) {
-    const textoBlocos = q.blocos ? q.blocos.filter((b) => b.tipo === "texto").map((b) => b.texto).join(" ") : q.enunciado;
+    const textoBlocos = q.blocos ? q.blocos.filter((b) => b.tipo === "texto").map((b) => b.texto.replace(/\*\*|__/g, "")).join(" ") : q.enunciado;
     q._busca = norm(textoBlocos + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ") + " " + (q.habilidade ? q.habilidade.codigo + " " + q.habilidade.texto : ""));
   }
   const SIGLAS = ["LC", "CH", "CN", "MT"];
@@ -401,7 +421,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       else cur += " " + s;                                            // prosa: junta a linha
     });
     if (cur) out.push(cur);
-    return out.map((p) => (FONTE.test(p) && p.length < 400 ? '<p class="cite">' : "<p>") + indices(esc(p)).replace(/\n/g, "<br>") + "</p>").join("");
+    return out.map((p) => (FONTE.test(p) && p.length < 400 ? '<p class="cite">' : "<p>") + fmt(indices(esc(p))).replace(/\n/g, "<br>") + "</p>").join("");
   }
 
   function passa(q, ignorar) {
@@ -448,6 +468,22 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     </div>`;
   }
 
+  // Blocos do formato texto + recortes. Texto com estilo: normal (parágrafos),
+  // título, legenda, fonte (citação) ou centralizado. Imagem: recorte do PDF
+  // (dpi conhecido, exibido na proporção do texto) ou arquivo enviado (dpi 0).
+  const srcBloco = (b) => (b.imagem_id ? "/_blob/" + b.imagem_id : b.imagem_dados || b._previa || b.imagem);
+  const CLASSE_ESTILO = { titulo: "b-titulo", legenda: "b-legenda", fonte: "cite", centro: "b-centro" };
+  function htmlBlocos(blocos) {
+    return blocos.map((b) => {
+      if (b.tipo === "figura") {
+        return `<figure class="figura recorte" style="margin:0"><img class="rec" data-dpi="${b.dpi ?? 200}" src="${esc(srcBloco(b))}" alt="${b.motivo === "fórmula" ? "Fórmula" : "Figura da questão"}" loading="lazy"></figure>`;
+      }
+      const est = CLASSE_ESTILO[b.estilo];
+      if (!est) return paragrafos(b.texto);
+      return `<p class="${est}">${b.texto.split("\n").map((l) => fmt(indices(esc(l)))).join("<br>")}</p>`;
+    }).join("");
+  }
+
   function cartao(q) {
     const r = respostas[q.id];
     const resolvida = r !== undefined;
@@ -460,8 +496,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       .concat(!q.anulada && q.descartada_da_nota ? ['<span class="chip warn" title="O INEP não usou esta questão no cálculo da nota">Descartada da nota</span>'] : []);
     const original = ORIGINAL.get(q.id).imagem || q.imagem;
     const corpo = q.blocos
-      ? `<div class="enunciado">${q.blocos.map((b) => b.tipo === "texto" ? paragrafos(b.texto)
-            : `<figure class="figura recorte" style="margin:0"><img class="rec" src="${esc(b.imagem)}" alt="${b.motivo === "fórmula" ? "Fórmula" : "Figura da questão"}" loading="lazy"></figure>`).join("")}</div>
+      ? `<div class="enunciado">${htmlBlocos(q.blocos)}</div>
          ${q.revisar && q.revisar.length ? `<p class="revisar">Conferir: ${esc(q.revisar.join("; "))}.</p>` : ""}
          <details class="texto"><summary>Ver a questão como está na prova</summary><figure class="figura" style="margin:0"><img src="${esc(original)}" alt="Questão como aparece na prova impressa" loading="lazy"></figure></details>`
       : q.imagem
@@ -477,7 +512,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       }
       const altImg = q.alternativas_imagem && q.alternativas_imagem[L];
       const texto = altImg ? `<img class="alt-img rec" src="${esc(altImg)}" alt="Alternativa ${L}" loading="lazy">`
-        : txt && txt.trim() ? indices(esc(txt)) : '<span class="vazio">ver alternativa na imagem</span>';
+        : txt && txt.trim() ? fmt(indices(esc(txt))) : '<span class="vazio">ver alternativa na imagem</span>';
       return `<li><button type="button" class="${cls}" data-q="${esc(q.id)}" data-l="${L}" ${q.anulada ? "disabled" : ""}><span class="bubble">${L}</span><span>${texto}</span></button></li>`;
     }).join("");
     let fb = "";
@@ -682,11 +717,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   // Imagens editáveis de uma questão: a imagem inteira (formato antigo) ou
   // cada recorte do formato novo ("b<índice do bloco>" e "alt-<letra>").
   function alvosImagem(id) {
-    const o = ORIGINAL.get(id);
-    if (!o.blocos) return o.imagem ? [{ chave: "", nome: "Imagem da questão", src: o.imagem }] : [];
+    const o = ORIGINAL.get(id), q = BANCO.find((x) => x.id === id);
+    if (!q.blocos) return o.imagem ? [{ chave: "", nome: "Imagem da questão", src: o.imagem }] : [];
     let n = 0;
     const lista = [];
-    o.blocos.forEach((b, i) => { if (b.tipo === "figura") lista.push({ chave: "b" + i, nome: `${b.motivo === "fórmula" ? "Fórmula" : "Figura"} ${++n}`, src: b.imagem }); });
+    // fonte da edição: a imagem sem ajustes do bloco (o original do recorte)
+    q.blocos.forEach((b, i) => { if (b.tipo === "figura") lista.push({ chave: "b" + i, nome: `${b.motivo === "fórmula" ? "Fórmula" : "Figura"} ${++n}`, src: b.imagem_base || b.imagem || srcBloco(b) }); });
     Object.entries(o.alternativas_imagem || {}).forEach(([L, src]) => lista.push({ chave: "alt-" + L, nome: "Alternativa " + L, src }));
     return lista;
   }
@@ -750,20 +786,84 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
 
   // ---------- editor de texto ----------
   let emEdicao = null;
+  let EB = null;  // blocos em edição (null = questão sem blocos: só enunciado)
+  const ESTILOS = [["normal", "Texto"], ["titulo", "Título"], ["legenda", "Legenda"], ["fonte", "Fonte / citação"], ["centro", "Centralizado"]];
+  // blocos como ficam guardados (sem prévias locais nem arquivos pendentes)
+  const limparBlocos = (bl) => bl.map((b) => { const c = Object.assign({}, b); delete c._blob; delete c._previa; if (c.tipo === "texto" && (!c.estilo || c.estilo === "normal")) delete c.estilo; return c; });
+
+  function desenharBlocosEditor() {
+    const add = (pos) => `<div class="bl-add" data-pos="${pos}"><button type="button" data-add="texto">+ Texto</button><button type="button" data-add="arquivo">+ Imagem de arquivo</button>${ORIGINAL.get(emEdicao).imagem ? '<button type="button" data-add="recorte">+ Recorte da prova</button>' : ""}</div>`;
+    $("edBlocos").innerHTML = add(0) + EB.map((b, i) => {
+      const topo = `<div class="bl-topo"><span>${b.tipo === "texto" ? "Texto" : b.motivo === "fórmula" ? "Fórmula" : "Imagem"}</span>`
+        + (b.tipo === "texto" ? `<select data-estilo="${i}" aria-label="Estilo do bloco">${ESTILOS.map(([v, n]) => `<option value="${v}"${(b.estilo || "normal") === v ? " selected" : ""}>${n}</option>`).join("")}</select>` : "")
+        + `<span class="esp"></span><button type="button" class="mini" data-acao="sobe" data-i="${i}" ${i ? "" : "disabled"} aria-label="Subir">↑</button><button type="button" class="mini" data-acao="desce" data-i="${i}" ${i < EB.length - 1 ? "" : "disabled"} aria-label="Descer">↓</button><button type="button" class="mini" data-acao="remove" data-i="${i}">Remover</button></div>`;
+      const corpo = b.tipo === "texto"
+        ? `<div class="bl-ferr"><button type="button" class="mini" data-fmt="b" data-i="${i}" title="Negrito"><b>N</b></button><button type="button" class="mini" data-fmt="i" data-i="${i}" title="Itálico"><i>I</i></button><button type="button" class="mini" data-fmt="sup" data-i="${i}" title="Sobrescrito (expoente)">x²</button><button type="button" class="mini" data-fmt="sub" data-i="${i}" title="Subscrito (índice)">x₂</button></div><textarea data-texto="${i}" rows="${Math.min(14, 2 + Math.round((b.texto || "").length / 80))}"></textarea>`
+        : `<img src="${esc(srcBloco(b))}" alt=""><span class="dica">Corte e ajustes desta imagem: botão “Editar imagem” no cartão, depois de salvar.</span>`;
+      return `<div class="bl">${topo}${corpo}</div>` + add(i + 1);
+    }).join("");
+    EB.forEach((b, i) => { if (b.tipo === "texto") $("edBlocos").querySelector(`[data-texto="${i}"]`).value = b.texto || ""; });
+  }
+  const INV_SUP = Object.fromEntries([...SUP_N].map((c, i) => [c, SUP[i]]));
+  const INV_SUB = Object.fromEntries([...SUB_N].map((c, i) => [c, SUB[i]]));
+  INV_SUP["-"] = "⁻"; INV_SUB["-"] = "₋";
+  function formatar(ta, tipo) {
+    const a = ta.selectionStart, z = ta.selectionEnd, sel = ta.value.slice(a, z);
+    if (!sel) return;
+    const novo = tipo === "b" ? `**${sel}**` : tipo === "i" ? `__${sel}__`
+      : [...sel].map((c) => (tipo === "sup" ? INV_SUP : INV_SUB)[c] || c).join("");
+    ta.setRangeText(novo, a, z, "select");
+    ta.dispatchEvent(new Event("input", { bubbles: true }));
+    ta.focus();
+  }
+  let posNovoBloco = 0;
+  $("edBlocos").addEventListener("input", (e) => { const i = e.target.dataset.texto; if (i !== undefined) EB[i].texto = e.target.value; });
+  $("edBlocos").addEventListener("change", (e) => { const i = e.target.dataset.estilo; if (i !== undefined) EB[i].estilo = e.target.value; });
+  $("edBlocos").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const i = Number(b.dataset.i);
+    if (b.dataset.fmt) return formatar($("edBlocos").querySelector(`[data-texto="${i}"]`), b.dataset.fmt);
+    if (b.dataset.acao === "sobe" && i > 0) [EB[i - 1], EB[i]] = [EB[i], EB[i - 1]];
+    else if (b.dataset.acao === "desce" && i < EB.length - 1) [EB[i + 1], EB[i]] = [EB[i], EB[i + 1]];
+    else if (b.dataset.acao === "remove") EB.splice(i, 1);
+    else if (b.dataset.add) {
+      posNovoBloco = Number(b.closest(".bl-add").dataset.pos);
+      if (b.dataset.add === "texto") EB.splice(posNovoBloco, 0, { tipo: "texto", texto: "" });
+      else if (b.dataset.add === "arquivo") { $("edArquivo").value = ""; $("edArquivo").click(); return; }
+      else if (b.dataset.add === "recorte") {
+        return abrirEditorImagem(emEdicao, null, (r) => {
+          EB.splice(posNovoBloco, 0, { tipo: "figura", motivo: "figura", dpi: 150, receita: r.receita, _blob: r.blob, _previa: URL.createObjectURL(r.blob) });
+          desenharBlocosEditor();
+        });
+      }
+    } else return;
+    desenharBlocosEditor();
+  });
+  $("edArquivo").addEventListener("change", () => {
+    const f = $("edArquivo").files[0]; if (!f) return;
+    if (!/^image\/(png|jpeg|webp|gif)$/.test(f.type)) return mostrarErro($("edErro"), "Use uma imagem PNG, JPG, WEBP ou GIF.");
+    if (f.size > 5 * 1024 * 1024) return mostrarErro($("edErro"), "Imagem acima de 5 MB: reduza antes de enviar.");
+    EB.splice(posNovoBloco, 0, { tipo: "figura", motivo: "figura", dpi: 0, _blob: f, _previa: URL.createObjectURL(f) });
+    desenharBlocosEditor();
+  });
+  $("edConverter").addEventListener("click", () => {
+    // questão no formato antigo: começa com a imagem inteira (para recortar) e o texto extraído
+    const q = BANCO.find((x) => x.id === emEdicao), o = ORIGINAL.get(emEdicao);
+    EB = (o.imagem ? [{ tipo: "figura", motivo: "figura", dpi: 150, imagem: o.imagem }] : []).concat([{ tipo: "texto", texto: q.enunciado || "" }]);
+    $("edEnunciadoCampo").hidden = true; $("edConverterLinha").hidden = true; $("edBlocos").hidden = false;
+    desenharBlocosEditor();
+  });
+
   function abrirEditorTexto(id) {
     const q = BANCO.find((x) => x.id === id); if (!q) return;
     emEdicao = id;
+    EB = q.blocos ? JSON.parse(JSON.stringify(q.blocos)) : null;
     $("dlgTextoProva").textContent = q.prova.descricao + (q.lingua ? ` · ${q.lingua === "ingles" ? "Inglês" : "Espanhol"}` : "");
     $("edEnunciado").value = q.enunciado || "";
-    $("edEnunciadoCampo").hidden = !!q.blocos;
-    $("edBlocos").hidden = !q.blocos;
-    if (q.blocos) {
-      let t = 0;
-      $("edBlocos").innerHTML = q.blocos.map((b, i) => b.tipo === "texto"
-        ? `<label class="campo">Trecho ${++t} (uma linha em branco separa parágrafos)<textarea rows="${Math.min(14, 3 + Math.round(b.texto.length / 90))}" data-bloco="${i}"></textarea></label>`
-        : `<div class="fig-ed"><img src="${esc(b.imagem)}" alt=""><span>${b.motivo === "fórmula" ? "Fórmula" : "Figura"} (ajuste em “Editar imagem”)</span></div>`).join("");
-      q.blocos.forEach((b, i) => { if (b.tipo === "texto") $("edBlocos").querySelector(`[data-bloco="${i}"]`).value = b.texto; });
-    }
+    $("edEnunciadoCampo").hidden = !!EB;
+    $("edConverterLinha").hidden = !!EB;
+    $("edBlocos").hidden = !EB;
+    if (EB) desenharBlocosEditor();
     $("edAlts").innerHTML = "ABCDE".split("").map((L) => q.alternativas_imagem && q.alternativas_imagem[L]
       ? `<label><span>${L}</span><img src="${esc(q.alternativas_imagem[L])}" alt="Alternativa ${L}"><textarea hidden data-alt="${L}"></textarea></label>`
       : `<label><span>${L}</span><textarea rows="2" data-alt="${L}"></textarea></label>`).join("");
@@ -781,43 +881,64 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   }
   function mostrarErro(el, msg) { el.textContent = msg; el.hidden = false; }
   $("edCancelar").addEventListener("click", () => $("dlgTexto").close());
+  // envia as imagens novas dos blocos (nuvem: armazenamento do artefato; local: no navegador)
+  async function gravarImagensNovas(bl) {
+    for (const b of bl) {
+      if (!b._blob) continue;
+      if (ED.modo === "nuvem") {
+        if (!ED.assets) throw new Error("só o dono e editores podem enviar imagens");
+        b.imagem_id = (await ED.assets.upload(b._blob, { type: b._blob.type || "image/png" })).id;
+      } else b.imagem_dados = await paraDataURL(b._blob);
+    }
+    return limparBlocos(bl);
+  }
+  const idsDeImagem = (bl) => new Set((bl || []).map((b) => b.imagem_id).filter(Boolean));
   $("formTexto").addEventListener("submit", async (e) => {
     e.preventDefault();
     const id = emEdicao, o = ORIGINAL.get(id);
     const alts = {};
     "ABCDE".split("").forEach((L) => { alts[L] = $("edAlts").querySelector(`[data-alt="${L}"]`).value.trim(); });
+    // lê o conteúdo atual dos campos (colar pelo menu, preenchimento automático)
+    if (EB) $("edBlocos").querySelectorAll("[data-texto]").forEach((t) => { EB[Number(t.dataset.texto)].texto = t.value; });
+    if (EB) EB.forEach((b) => { if (b.tipo === "texto") b.texto = (b.texto || "").replace(/\r/g, "").trim(); });
+    if (EB && !EB.some((b) => b.tipo === "figura" || b.texto)) return mostrarErro($("edErro"), "A questão ficou sem nenhum bloco com conteúdo.");
     const novo = {
-      enunciado: $("edEnunciado").value.replace(/\r/g, "").trim(),
+      enunciado: EB ? (o.enunciado || "").trim() : $("edEnunciado").value.replace(/\r/g, "").trim(),
       alternativas: alts,
       gabarito: o.gabarito === null ? null : $("edGabarito").value,
       disciplinas: [...$("edDiscs").querySelectorAll("input:checked")].map((i) => i.value),
       conteudos: $("edConteudos").value.split(";").map((c) => c.trim()).filter(Boolean),
       observacao: $("edObs").value.trim() || null,
-      blocos: o.blocos ? o.blocos.map((b, i) => b.tipo === "texto"
-        ? { tipo: "texto", texto: $("edBlocos").querySelector(`[data-bloco="${i}"]`).value.replace(/\r/g, "").trim() } : b) : null,
+      blocos: null,
     };
-    if (o.blocos) novo.enunciado = (o.enunciado || "").trim();
     if (!novo.disciplinas.length) return mostrarErro($("edErro"), "Escolha pelo menos uma disciplina.");
-    if (!novo.enunciado && !o.blocos) return mostrarErro($("edErro"), "O enunciado não pode ficar vazio.");
-    const origAlts = Object.fromEntries("ABCDE".split("").map((L) => [L, ((o.alternativas || {})[L] || "").trim()]));
-    const campos = {};
-    CAMPOS_TEXTO.forEach((k) => {
-      const base = k === "alternativas" ? origAlts : k === "enunciado" ? (o.enunciado || "").trim() : o[k];
-      if (!mesmo(novo[k], base)) campos[k] = novo[k];
-    });
-    const reg = Object.assign({}, edicoes[id] || {}, { campos, atualizado: new Date().toISOString() });
+    if (!novo.enunciado && !EB) return mostrarErro($("edErro"), "O enunciado não pode ficar vazio.");
     $("edSalvar").disabled = true;
+    const antes = idsDeImagem((edicoes[id] && edicoes[id].campos || {}).blocos);
     try {
+      if (EB) novo.blocos = await gravarImagensNovas(EB.filter((b) => b.tipo === "figura" || b.texto));
+      const origAlts = Object.fromEntries("ABCDE".split("").map((L) => [L, ((o.alternativas || {})[L] || "").trim()]));
+      const campos = {};
+      CAMPOS_TEXTO.forEach((k) => {
+        const base = k === "alternativas" ? origAlts : k === "enunciado" ? (o.enunciado || "").trim() : k === "blocos" ? (o.blocos && limparBlocos(o.blocos)) : o[k];
+        if (!mesmo(novo[k], base ?? null)) campos[k] = novo[k];
+      });
+      const reg = Object.assign({}, edicoes[id] || {}, { campos, atualizado: new Date().toISOString() });
       await gravar(id, temConteudo(reg) ? reg : null);
+      // imagens enviadas antes e que saíram da questão
+      const agora = idsDeImagem(campos.blocos);
+      if (ED.assets) antes.forEach((x) => { if (!agora.has(x)) ED.assets.delete(x).catch(() => {}); });
       $("dlgTexto").close();
     } catch (err) { mostrarErro($("edErro"), "Não foi possível salvar: " + erroTexto(err)); }
     finally { $("edSalvar").disabled = false; }
   });
   $("edRestaurar").addEventListener("click", async () => {
     const id = emEdicao, reg = Object.assign({}, edicoes[id] || {});
+    const antes = idsDeImagem((reg.campos || {}).blocos);
     delete reg.campos;
     try {
       await gravar(id, temConteudo(reg) ? reg : null);
+      if (ED.assets) antes.forEach((x) => ED.assets.delete(x).catch(() => {}));
       $("dlgTexto").close();
     } catch (err) { mostrarErro($("edErro"), "Não foi possível restaurar: " + erroTexto(err)); }
   });
@@ -872,19 +993,27 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     });
   }
   // registro da imagem em edição: o próprio registro (formato antigo) ou o do recorte
-  const registroImagem = (reg, alvo) => (alvo ? ((reg && reg.recortes) || {})[alvo] || {} : reg || {});
-  function abrirEditorImagem(id, alvo) {
-    const q = BANCO.find((x) => x.id === id), alvos = alvosImagem(id);
+  const registroImagem = (reg, alvo, id) => {
+    if (alvo && alvo[0] === "b") { const q = BANCO.find((x) => x.id === (id || IM.id)); return (q && q.blocos && q.blocos[Number(alvo.slice(1))]) || {}; }
+    return alvo ? ((reg && reg.recortes) || {})[alvo] || {} : reg || {};
+  };
+  // novo: função que recebe {blob, receita} — modo "recorte da prova para um bloco novo"
+  function abrirEditorImagem(id, alvo, novo) {
+    const q = BANCO.find((x) => x.id === id);
+    const alvos = novo ? [{ chave: "novo", nome: "Imagem original da questão", src: ORIGINAL.get(id).imagem }] : alvosImagem(id);
     if (!q || !alvos.length) return;
+    IM.novo = novo || null;
     const escolhido = alvos.find((a) => a.chave === alvo) || alvos[0];
-    $("imgAlvoCampo").hidden = alvos.length < 2 && !escolhido.chave;
+    $("imgAlvoCampo").hidden = !!novo || (alvos.length < 2 && !escolhido.chave);
+    $("dlgImagemTitulo").textContent = novo ? "Recortar da prova" : "Editar imagem";
+    $("imgSalvar").textContent = novo ? "Inserir recorte" : "Salvar imagem";
     $("imgAlvo").innerHTML = alvos.map((a) => `<option value="${esc(a.chave)}"${a.chave === escolhido.chave ? " selected" : ""}>${esc(a.nome)}</option>`).join("");
     IM.id = id; IM.alvo = escolhido.chave; IM.img = null; IM.previa = null; IM.comparar = false; $("imgComparar").setAttribute("aria-pressed", "false"); $("imgComparar").textContent = "Ver original";
-    const reg = registroImagem(edicoes[id], IM.alvo);
+    const reg = novo ? {} : registroImagem(edicoes[id], IM.alvo, id);
     IM.receita = Object.assign(RECEITA0(), reg.receita || {});
     $("dlgImagemProva").textContent = q.prova.descricao;
     $("imgErro").hidden = true;
-    $("imgRestaurar").hidden = !fonteImagem(registroImagem(edicoes[id], IM.alvo));
+    $("imgRestaurar").hidden = !!novo || !fonteImagem(registroImagem(edicoes[id], IM.alvo, id));
     sincronizarControles();
     const img = new Image();
     img.onload = () => {
@@ -937,8 +1066,25 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   $("imgCancelar").addEventListener("click", () => $("dlgImagem").close());
   $("imgAlvo").addEventListener("change", () => abrirEditorImagem(IM.id, $("imgAlvo").value));
   // grava a imagem do alvo atual (ou a remove, com nova = null) no registro da questão
+  // só se apaga do armazenamento uma versão ajustada (com receita), nunca a
+  // imagem enviada que serve de base para o ajuste
+  const versaoAjustada = (r) => !!(r && r.imagem_id && r.receita && !String(r.imagem_base || "").includes(r.imagem_id));
   function comImagem(antigo, alvo, nova) {
     const reg = Object.assign({}, antigo, { atualizado: new Date().toISOString() });
+    if (alvo && alvo[0] === "b") {
+      // imagem de um bloco: os blocos inteiros passam a ser a edição
+      const q = BANCO.find((x) => x.id === IM.id), o = ORIGINAL.get(IM.id), i = Number(alvo.slice(1));
+      const bl = limparBlocos(JSON.parse(JSON.stringify(q.blocos)));
+      const b = bl[i];
+      b.imagem_base = b.imagem_base || b.imagem || srcBloco(q.blocos[i]);
+      if (!b.imagem) b.imagem = b.imagem_base;
+      delete b.imagem_id; delete b.imagem_dados; delete b.receita;
+      if (nova) Object.assign(b, nova); else delete b.imagem_base;
+      const campos = Object.assign({}, reg.campos || {});
+      if (o.blocos && mesmo(bl, limparBlocos(o.blocos))) delete campos.blocos; else campos.blocos = bl;
+      reg.campos = campos;
+      return reg;
+    }
     if (!alvo) {
       delete reg.imagem_id; delete reg.imagem_dados; delete reg.receita;
       if (nova) Object.assign(reg, nova);
@@ -963,7 +1109,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   $("formImagem").addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!IM.img) return;
-    const id = IM.id, alvo = IM.alvo, antigo = edicoes[id] || {}, r = IM.receita, anterior = registroImagem(antigo, alvo);
+    if (IM.novo) {  // recorte para um bloco novo: devolve ao editor de texto
+      try { IM.novo({ blob: await renderizarFinal(), receita: JSON.parse(JSON.stringify(IM.receita)) }); $("dlgImagem").close(); }
+      catch (err) { mostrarErro($("imgErro"), "Não foi possível recortar: " + erroTexto(err)); }
+      return;
+    }
+    const id = IM.id, alvo = IM.alvo, antigo = edicoes[id] || {}, r = IM.receita, anterior = registroImagem(antigo, alvo, id);
     const semMudanca = !r.corte && !r.brilho && !r.contraste && !r.nitidez;
     $("imgSalvar").disabled = true; $("imgSalvar").textContent = "Salvando…";
     try {
@@ -976,20 +1127,20 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       }
       const reg = comImagem(antigo, alvo, nova);
       await gravar(id, temConteudo(reg) ? reg : null);
-      if (anterior.imagem_id && (!nova || anterior.imagem_id !== nova.imagem_id) && ED.assets) ED.assets.delete(anterior.imagem_id).catch(() => {});
+      if (versaoAjustada(anterior) && (!nova || anterior.imagem_id !== nova.imagem_id) && ED.assets) ED.assets.delete(anterior.imagem_id).catch(() => {});
       $("dlgImagem").close();
     } catch (err) {
       mostrarErro($("imgErro"), err && err.name === "SecurityError"
         ? "Este navegador bloqueou a leitura da imagem (página aberta direto do disco). Abra pela página publicada ou por um servidor local."
         : "Não foi possível salvar: " + erroTexto(err));
-    } finally { $("imgSalvar").disabled = false; $("imgSalvar").textContent = "Salvar imagem"; }
+    } finally { $("imgSalvar").disabled = false; $("imgSalvar").textContent = IM.novo ? "Inserir recorte" : "Salvar imagem"; }
   });
   $("imgRestaurar").addEventListener("click", async () => {
-    const id = IM.id, antigo = edicoes[id] || {}, anterior = registroImagem(antigo, IM.alvo);
+    const id = IM.id, antigo = edicoes[id] || {}, anterior = Object.assign({}, registroImagem(antigo, IM.alvo, id));
     const reg = comImagem(antigo, IM.alvo, null);
     try {
       await gravar(id, temConteudo(reg) ? reg : null);
-      if (anterior.imagem_id && ED.assets) ED.assets.delete(anterior.imagem_id).catch(() => {});
+      if (versaoAjustada(anterior) && ED.assets) ED.assets.delete(anterior.imagem_id).catch(() => {});
       $("dlgImagem").close();
     } catch (err) { mostrarErro($("imgErro"), "Não foi possível restaurar: " + erroTexto(err)); }
   });
@@ -1001,8 +1152,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     try {
       const saida = { formato: "banco-enem-edicoes", versao: 1, gerado_em: new Date().toISOString(), edicoes: {} };
       for (const [id, reg] of Object.entries(edicoes)) {
-        const item = { campos: reg.campos || {}, receita: reg.receita || null, atualizado: reg.atualizado || null };
+        const item = { campos: JSON.parse(JSON.stringify(reg.campos || {})), receita: reg.receita || null, atualizado: reg.atualizado || null };
         const png = async (r) => r.imagem_dados || (r.imagem_id ? await paraDataURL(await (await fetch("/_blob/" + r.imagem_id)).blob()) : null);
+        for (const b of item.campos.blocos || []) {
+          const dados = await png(b);
+          if (dados) { b.imagem_png = dados; delete b.imagem_id; delete b.imagem_dados; }
+        }
         const principal = await png(reg);
         if (principal) item.imagem_png = principal;
         if (temRecortes(reg)) {

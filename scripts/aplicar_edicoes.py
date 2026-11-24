@@ -26,6 +26,18 @@ CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "
 RE_RECORTE = re.compile(r"^(b\d+|alt-[A-E])$")
 RE_ID = re.compile(r"^\d{4}-(regular|reaplicacao)-D\d-CD\d+-Q\d{3}(-(ingles|espanhol))?$")
 PREFIXO_PNG = "data:image/png;base64,"
+RE_DATA_URL = re.compile(r"^data:image/(png|jpeg|webp|gif);base64,")
+
+
+def gravar_data_url(valor: str, destino_sem_ext: Path) -> str | None:
+    """Grava uma imagem em data URL e devolve o caminho usado no banco."""
+    m = RE_DATA_URL.match(valor or "")
+    if not m:
+        return None
+    ext = {"jpeg": "jpg"}.get(m.group(1), m.group(1))
+    arq = destino_sem_ext.with_suffix("." + ext)
+    arq.write_bytes(base64.b64decode(valor[m.end():]))
+    return f"data/enem/edicoes/img/{arq.name}"
 
 
 def main() -> None:
@@ -45,6 +57,18 @@ def main() -> None:
             continue
         campos = {k: v for k, v in (ed.get("campos") or {}).items() if k in CAMPOS}
         reg = {"campos": campos, "atualizado": ed.get("atualizado")}
+        gravados = set()
+        # imagens dentro dos blocos (enviadas, recortadas ou ajustadas)
+        for i, b in enumerate(campos.get("blocos") or []):
+            for campo, sufixo in (("imagem_png", f"bloco{i}"), ("imagem_base", f"bloco{i}_base")):
+                caminho = gravar_data_url(b.get(campo) or "", PASTA / "img" / f"{qid}__{sufixo}")
+                if caminho:
+                    gravados.add(Path(caminho).name)
+                    b["imagem" if campo == "imagem_png" else "imagem_base"] = caminho
+            b.pop("imagem_png", None)
+            for campo in ("imagem_id", "imagem_dados"):
+                if b.pop(campo, None):
+                    print(f"  {qid}: bloco {i} com imagem que não veio no arquivo (exporte de novo)")
         png = ed.get("imagem_png")
         destino = PASTA / "img" / f"{qid}.png"
         if png:
@@ -64,10 +88,11 @@ def main() -> None:
                 continue
             arq = PASTA / "img" / f"{qid}__{chave}.png"
             arq.write_bytes(base64.b64decode(png_r[len(PREFIXO_PNG):]))
+            gravados.add(arq.name)
             recortes[chave] = {"imagem": f"data/enem/edicoes/img/{arq.name}", "receita": r.get("receita")}
-        for velho in (PASTA / "img").glob(f"{qid}__*.png"):
-            if velho.stem.split("__", 1)[1] not in recortes:
-                velho.unlink()  # recorte que voltou ao original
+        for velho in (PASTA / "img").glob(f"{qid}__*"):
+            if velho.name not in gravados:
+                velho.unlink()  # imagem que saiu da questão ou voltou ao original
         if recortes:
             reg["recortes"] = recortes
         if campos or "imagem" in reg or recortes:

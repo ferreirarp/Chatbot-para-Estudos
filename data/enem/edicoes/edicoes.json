@@ -1,0 +1,49 @@
+{
+ "2024-regular-D1-CD1-Q036": {
+  "campos": {
+   "blocos": [
+    {
+     "tipo": "texto",
+     "estilo": "titulo",
+     "texto": "TEXTO I"
+    },
+    {
+     "tipo": "figura",
+     "imagem": "data/enem/2024/img/blocos/regular_D1_CD1_Q036_f1.png",
+     "motivo": "figura"
+    },
+    {
+     "tipo": "texto",
+     "estilo": "legenda",
+     "texto": "Anônimo. **Cabeça de uma figura feminina.**\n__Circa__ 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.\nMetropolitan Museum of Art, Nova Iorque."
+    },
+    {
+     "tipo": "texto",
+     "estilo": "titulo",
+     "texto": "TEXTO II"
+    },
+    {
+     "tipo": "figura",
+     "imagem": "data/enem/2024/img/blocos/regular_D1_CD1_Q036_f2.png",
+     "motivo": "figura"
+    },
+    {
+     "tipo": "texto",
+     "estilo": "legenda",
+     "texto": "MODIGLIANI, A. **Cabeça de mulher.** __Circa__ 1910-1911.\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\nNational Gallery of Art, Washington."
+    },
+    {
+     "tipo": "texto",
+     "estilo": "fonte",
+     "texto": "WOLKOFF, J. **These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art.**\nDisponível em: www.artsy.net. Acesso em: 19 jun. 2019."
+    },
+    {
+     "tipo": "texto",
+     "texto": "A leitura comparativa das duas esculturas, separadas por mais de 2500 anos, indica a"
+    }
+   ]
+  },
+  "atualizado": "2026-11-24T00:00:00Z",
+  "motivo": "Erro de diagramação da prova: \"TEXTO II\" estava na mesma linha de \"TEXTO I\"."
+ }
+}
