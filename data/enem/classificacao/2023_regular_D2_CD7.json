@@ -1,6 +1,6 @@
 {
  "prova": "2023/regular_D2_CD7",
- "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado.",
+ "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado. Mais de uma disciplina só quando a resolução exige as duas.",
  "questoes": {
   "91": {
    "disciplinas": [
@@ -20,11 +20,14 @@
   },
   "93": {
    "disciplinas": [
-    "Física"
+    "Física",
+    "Química"
    ],
    "conteudos": [
-    "Energia"
-   ]
+    "Energia",
+    "Química ambiental"
+   ],
+   "observacao": "Saber que a fissão gera calor sem combustível fóssil (Física) e descartar chuva ácida e gases tóxicos (Química ambiental)."
   },
   "94": {
    "disciplinas": [
@@ -182,11 +185,14 @@
   },
   "113": {
    "disciplinas": [
-    "Física"
+    "Física",
+    "Matemática"
    ],
    "conteudos": [
-    "Ondulatória"
-   ]
+    "Ondulatória",
+    "Geometria espacial"
+   ],
+   "observacao": "Intensidade = potência/área exige a área da esfera (4πr²) e notação científica."
   },
   "114": {
    "disciplinas": [
@@ -214,11 +220,14 @@
   },
   "117": {
    "disciplinas": [
-    "Física"
+    "Física",
+    "Matemática"
    ],
    "conteudos": [
-    "Radiação e física moderna"
-   ]
+    "Radiação e física moderna",
+    "Razão, proporção e escala"
+   ],
+   "observacao": "Interpretar a dose em Sv e montar a proporção anual."
   },
   "118": {
    "disciplinas": [
@@ -230,11 +239,13 @@
   },
   "119": {
    "disciplinas": [
-    "Química"
+    "Química",
+    "Física"
    ],
    "conteudos": [
     "Gases"
-   ]
+   ],
+   "observacao": "Equação de Clapeyron (PV = nRT) com conversão de unidades: conteúdo comum às duas disciplinas."
   },
   "120": {
    "disciplinas": [
@@ -281,8 +292,10 @@
     "Biologia"
    ],
    "conteudos": [
-    "Genética e biologia molecular"
-   ]
+    "Genética e biologia molecular",
+    "Citologia"
+   ],
+   "observacao": "Formação de gametas na meiose de portadores de trissomia."
   },
   "126": {
    "disciplinas": [
@@ -319,11 +332,14 @@
   },
   "130": {
    "disciplinas": [
-    "Física"
+    "Física",
+    "Química"
    ],
    "conteudos": [
-    "Termologia"
-   ]
+    "Termologia",
+    "Química ambiental"
+   ],
+   "observacao": "Baixa condutividade térmica (Física) e redução de resíduo não biodegradável (Química ambiental)."
   },
   "131": {
    "disciplinas": [
@@ -335,12 +351,14 @@
   },
   "132": {
    "disciplinas": [
-    "Física"
+    "Física",
+    "Química"
    ],
    "conteudos": [
-    "Termologia",
-    "Gases"
-   ]
+    "Gases",
+    "Termologia"
+   ],
+   "observacao": "Transformação a volume constante (P proporcional a T): conteúdo comum às duas disciplinas."
   },
   "133": {
    "disciplinas": [
@@ -355,16 +373,20 @@
     "Biologia"
    ],
    "conteudos": [
-    "Citologia"
-   ]
+    "Citologia",
+    "Genética e biologia molecular"
+   ],
+   "observacao": "Origem dos micronúcleos: cromossomos na divisão celular."
   },
   "135": {
    "disciplinas": [
     "Física"
    ],
    "conteudos": [
-    "Ondulatória"
-   ]
+    "Ondulatória",
+    "Cinemática"
+   ],
+   "observacao": "Velocidade do som a partir dos tempos de eco."
   },
   "136": {
    "disciplinas": [

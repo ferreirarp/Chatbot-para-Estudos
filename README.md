@@ -27,9 +27,9 @@ Abra `questoes.html` no navegador (funciona direto do disco, sem servidor).
 | `data/enem/classificacao/*.json` | Disciplinas e conteúdos de cada questão (feito à parte; não é apagado ao reextrair) |
 | `data/banco_questoes.js` | Banco unificado para a interface (gerado; não editar) |
 
-Cada questão registra a **versão da prova** (`prova`: ano, aplicação regular ou
-reaplicação, dia, caderno e cor), a **área** (Ciências da Natureza, Ciências
-Exatas, Linguagens, Ciências Humanas), as **disciplinas** e os **conteúdos**.
+Cada questão registra a **versão da prova** (`prova`: ano e aplicação regular ou
+reaplicação), a **área** com o nome oficial do ENEM, as **disciplinas** e os
+**conteúdos** (uma questão pode ter mais de um de cada, quando a resolução exige).
 
 **Critério de disciplina:** a habilidade e o conhecimento usados para chegar à
 resposta, não o contexto do enunciado. Ex.: uma questão sobre um inseticida em

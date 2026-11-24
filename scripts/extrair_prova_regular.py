@@ -51,12 +51,12 @@ AREAS = {
     (1, "LC"): range(1, 46), (1, "CH"): range(46, 91),
     (2, "CN"): range(91, 136), (2, "MT"): range(136, 181),
 }
-# Nomes usados no banco de questões (Matemática = "Ciências Exatas").
+# Nomes oficiais das áreas de conhecimento do ENEM.
 NOMES_AREA = {
-    "LC": "Linguagens",
-    "CH": "Ciências Humanas",
-    "CN": "Ciências da Natureza",
-    "MT": "Ciências Exatas",
+    "LC": "Linguagens, Códigos e suas Tecnologias",
+    "CH": "Ciências Humanas e suas Tecnologias",
+    "CN": "Ciências da Natureza e suas Tecnologias",
+    "MT": "Matemática e suas Tecnologias",
 }
 APLICACOES = {
     # aplicação: (trecho do nome do arquivo no INEP, rótulo)
@@ -388,10 +388,7 @@ def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> P
                 "ano": ano,
                 "aplicacao": aplicacao,
                 "reaplicacao": aplicacao == "reaplicacao",
-                "dia": dia,
-                "caderno": caderno,
-                "cor": cor,
-                "descricao": f"ENEM {ano} · {rotulo_aplicacao} · {dia}º dia · Caderno {caderno} {cor}",
+                "descricao": f"ENEM {ano} · {rotulo_aplicacao}",
             },
             "area": NOMES_AREA.get(area_da_questao(dia, n)),
             # Número no caderno: só para rastrear até o PDF e o gabarito oficiais.

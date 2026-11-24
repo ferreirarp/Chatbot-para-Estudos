@@ -44,6 +44,7 @@ def main() -> None:
                 "area": q["area"],
                 "disciplinas": c.get("disciplinas", []),
                 "conteudos": c.get("conteudos", []),
+                "observacao": c.get("observacao"),
                 "lingua": q.get("lingua_estrangeira"),
                 "enunciado": q["enunciado"],
                 "alternativas": q["alternativas"],

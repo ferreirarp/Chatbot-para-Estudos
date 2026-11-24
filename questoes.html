@@ -87,10 +87,12 @@ main { min-width: 0; display: grid; gap: 14px; }
 .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .chip { font-size: .76rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
 .chip.area { color: var(--surface); border-color: transparent; }
-.chip.area[data-a="Ciências da Natureza"] { background: var(--a-cn); }
-.chip.area[data-a="Ciências Exatas"] { background: var(--a-ce); }
-.chip.area[data-a="Linguagens"] { background: var(--a-lg); }
-.chip.area[data-a="Ciências Humanas"] { background: var(--a-ch); }
+.chip.area[data-a^="Ciências da Natureza"] { background: var(--a-cn); }
+.chip.area[data-a^="Matemática"] { background: var(--a-ce); }
+.chip.area[data-a^="Linguagens"] { background: var(--a-lg); }
+.chip.area[data-a^="Ciências Humanas"] { background: var(--a-ch); }
+.chip.area { white-space: normal; }
+.obs { font-size: .8rem; color: var(--muted); width: 100%; }
 .chip.disc { color: var(--ink); }
 .chip.warn { color: var(--bad); border-color: var(--bad); }
 .prova { font-size: .8rem; color: var(--muted); width: 100%; }
@@ -171,7 +173,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   "use strict";
   const BANCO = Array.isArray(window.BANCO_QUESTOES) ? window.BANCO_QUESTOES : [];
   const POR_PAGINA = 15;
-  const ORDEM_AREA = ["Ciências da Natureza", "Ciências Exatas", "Linguagens", "Ciências Humanas"];
+  const ORDEM_AREA = ["Linguagens, Códigos e suas Tecnologias", "Ciências Humanas e suas Tecnologias",
+                      "Ciências da Natureza e suas Tecnologias", "Matemática e suas Tecnologias"];
   const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
   let filtros = VAZIO(), busca = "", semAnuladas = true, limite = POR_PAGINA;
   const respostas = {};  // id -> letra escolhida (só nesta visita)
@@ -239,7 +242,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     const r = respostas[q.id];
     const resolvida = r !== undefined;
     const chips = [`<span class="chip area" data-a="${esc(q.area)}">${esc(q.area)}</span>`]
-      .concat(q.disciplinas.filter((d) => d !== "Matemática" || q.area !== "Ciências Exatas").map((d) => `<span class="chip disc">${esc(d)}</span>`))
+      .concat(q.disciplinas.filter((d) => d !== "Matemática" || !q.area.startsWith("Matemática")).map((d) => `<span class="chip disc">${esc(d)}</span>`))
       .concat(q.conteudos.map((c) => `<span class="chip">${esc(c)}</span>`))
       .concat(q.lingua ? [`<span class="chip">${q.lingua === "ingles" ? "Inglês" : "Espanhol"}</span>`] : [])
       .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : []);
@@ -264,7 +267,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
         : `<span class="feedback bad">Você marcou ${r}. A resposta é ${q.gabarito}.</span>`;
     }
     return `<article class="card" id="${esc(q.id)}">
-      <div class="meta">${chips.join("")}<span class="prova">${esc(q.prova.descricao)}</span></div>
+      <div class="meta">${chips.join("")}<span class="prova">${esc(q.prova.descricao)}</span>${q.observacao ? `<span class="obs">Por que ${q.disciplinas.length > 1 ? "estas disciplinas" : "esta classificação"}: ${esc(q.observacao)}</span>` : ""}</div>
       ${corpo}
       <ol class="alts" aria-label="Alternativas">${alts}</ol>
       <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}</div>
