@@ -87,6 +87,21 @@ inteira continua salva e aparece em "Ver a questão como está na prova".
     python scripts/estruturar_questoes.py --ano 2024 --dia 2 --caderno 7 --questoes 92,97
     python scripts/gerar_banco.py
 
+### Questões próprias e provas impressas
+- **+ Nova questão** (barra lateral): questão autoral ou de outra fonte, com
+  origem, fonte, ano, área e habilidade da Matriz do ENEM. O enunciado é feito
+  em blocos (texto, imagem de arquivo), como nas demais. Sem parâmetros de TRI:
+  a dificuldade fica para quando houver respostas de alunos.
+- **+ Prova** em cada cartão monta uma prova; o botão **Prova (N)** abre o
+  painel para ordenar, dar título e escolher 1 ou 2 colunas, origem das
+  questões, cartão-resposta e gabarito. **Imprimir** usa a impressão do
+  navegador; **Baixar para imprimir** gera um HTML com as imagens embutidas
+  (abre em qualquer navegador e imprime ou salva em PDF). Provas podem ser
+  salvas e reabertas.
+- Na página publicada, questões próprias e provas ficam no banco de dados do
+  artefato (coleções `questoes` e `provas`); "Baixar edições" inclui as duas
+  como cópia de segurança.
+
 ### Edição de questões e imagens
 Cada cartão tem **Editar questão** (enunciado, alternativas, gabarito,
 disciplinas, conteúdos, observação) e, nas questões com imagem, **Editar

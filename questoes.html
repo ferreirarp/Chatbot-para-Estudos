@@ -223,6 +223,57 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
 .bl img { max-height: 120px; max-width: 100%; justify-self: start; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
 .bl-add { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .bl-add button { color: var(--muted); border-style: dashed; }
+.meta-ed { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px 12px; }
+.btn.na-prova { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.campo-pv { display: grid; gap: 4px; font-size: .8rem; font-weight: 600; color: var(--muted); }
+.campo-pv input { border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px; background: var(--bg); font-size: .95rem; color: var(--ink); }
+.pv-lista { margin: 0; padding-left: 1.6em; display: grid; gap: 4px; font-size: .88rem; }
+.pv-lista li { padding: 4px 0; border-bottom: 1px solid var(--line); }
+.pv-lista .linha { display: flex; gap: 8px; align-items: baseline; }
+.pv-lista .txt { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pv-lista .origem { color: var(--muted); font-size: .78rem; }
+.pv-lista button, #pvSalvas button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 1px 7px; font-size: .78rem; cursor: pointer; color: var(--ink); }
+.pv-opcoes { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .86rem; align-items: center; }
+.pv-opcoes select { width: auto; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; background: var(--bg); }
+#pvSalvas { font-size: .86rem; display: grid; gap: 4px; }
+#pvSalvas .salva { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+
+/* Impressão da prova: na tela fica oculta; ao imprimir, só ela aparece */
+#impressao { display: none; }
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+  body.imprimindo { background: #fff !important; padding: 0 !important; }
+  body.imprimindo > :not(#impressao) { display: none !important; }
+  body.imprimindo #impressao { display: block; }
+}
+.pv-doc { color: #000; background: #fff; font: 10.5pt/1.42 "Source Serif 4", Georgia, "Times New Roman", serif; }
+.pv-doc .p-cab { border: 1.5px solid #000; padding: 3mm 4mm; margin-bottom: 5mm; font-family: Inter, Arial, sans-serif; }
+.pv-doc .p-cab h1 { font-size: 14pt; margin: 0 0 2mm; }
+.pv-doc .p-cab .campos { display: grid; grid-template-columns: 3fr 1fr 1fr; gap: 3mm; font-size: 9.5pt; }
+.pv-doc .p-cab .campos span { border-bottom: 1px solid #000; padding-top: 4mm; }
+.pv-doc .p-cols2 { column-count: 2; column-gap: 8mm; column-rule: 1px solid #888; }
+.pv-doc .p-q { break-inside: avoid; margin: 0 0 6mm; }
+.pv-doc .p-num { font: 700 10pt Inter, Arial, sans-serif; margin-bottom: 1.5mm; border-bottom: 1px solid #000; }
+.pv-doc .p-num span { font-weight: 400; font-size: 8pt; color: #333; }
+.pv-doc p { margin: 0 0 2mm; }
+.pv-doc .cite { font-size: 8pt; text-align: right; color: #222; }
+.pv-doc .b-titulo { font: 700 9.5pt Inter, Arial, sans-serif; margin: 3mm 0 1mm; }
+.pv-doc .b-legenda { font-size: 8.5pt; text-align: center; }
+.pv-doc .b-centro { text-align: center; }
+.pv-doc figure, .pv-doc .figura { margin: 2mm 0; border: 0; padding: 0; background: none; }
+.pv-doc figure img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.pv-doc .p-alts { list-style: none; margin: 2mm 0 0; padding: 0; }
+.pv-doc .p-alts li { display: flex; gap: 2mm; margin: 0 0 1mm; break-inside: avoid; }
+.pv-doc .p-alts b { font-family: Inter, Arial, sans-serif; }
+.pv-doc .p-alts img { max-width: 70%; height: auto; }
+.pv-doc sup, .pv-doc sub { font-size: .72em; line-height: 0; }
+.pv-doc .p-pagina { break-before: page; }
+.pv-doc .p-cartao { columns: 3; column-gap: 8mm; font: 10pt Inter, Arial, sans-serif; }
+.pv-doc .p-cartao div { break-inside: avoid; display: flex; gap: 2.2mm; align-items: center; margin-bottom: 2.4mm; }
+.pv-doc .p-cartao .n { width: 7mm; text-align: right; font-weight: 700; }
+.pv-doc .p-cartao i { display: inline-grid; place-items: center; width: 5.2mm; height: 5.2mm; border: 1px solid #000; border-radius: 50%; font-style: normal; font-size: 7.5pt; }
+.pv-doc .p-gab { columns: 4; font: 10pt Inter, Arial, sans-serif; }
+.pv-doc h2 { font: 700 12pt Inter, Arial, sans-serif; margin: 0 0 4mm; }
 .enunciado sup, .enunciado sub, .alts sup, .alts sub { font-size: .72em; line-height: 0; }
 </style>
 </head>
@@ -260,6 +311,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       <label class="opt"><input type="checkbox" id="soEditadas"> Só questões editadas <span class="n" id="nEditadas">0</span></label>
       <p class="ed-estado" id="edEstado">Edições salvas neste navegador.</p>
       <button class="btn sec" id="baixarEdicoes" type="button">Baixar edições (JSON)</button>
+      <button class="btn pri" id="novaQuestao" type="button">+ Nova questão</button>
     </div>
     <button class="reset" id="limpar" type="button">Limpar filtros</button>
   </aside>
@@ -267,6 +319,26 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   <main>
     <div class="summary" id="resumo" aria-live="polite"></div>
     <section class="painel-nota" id="painelNota" hidden aria-live="polite"></section>
+    <section class="painel-nota" id="painelProva" hidden aria-label="Montar prova">
+      <div class="topo"><h2>Montar prova</h2><button class="btn" type="button" id="fecharProva">Fechar</button></div>
+      <label class="campo-pv">Título <input type="text" id="pvTitulo" placeholder="ex.: Simulado de Natureza – 3º ano"></label>
+      <ol class="pv-lista" id="pvLista"></ol>
+      <div class="pv-opcoes">
+        <label>Colunas <select id="pvColunas"><option value="2">2 (como o ENEM)</option><option value="1">1</option></select></label>
+        <label><input type="checkbox" id="pvFonte" checked> Mostrar origem da questão</label>
+        <label><input type="checkbox" id="pvCartao" checked> Cartão-resposta</label>
+        <label><input type="checkbox" id="pvGabarito" checked> Gabarito na última página</label>
+      </div>
+      <p class="explica" id="pvAviso"></p>
+      <div class="actions">
+        <button class="btn pri" type="button" id="pvImprimir">Imprimir</button>
+        <button class="btn" type="button" id="pvBaixar">Baixar para imprimir (HTML)</button>
+        <button class="btn" type="button" id="pvSalvar">Salvar prova</button>
+        <button class="btn sec" type="button" id="pvLimpar">Começar outra</button>
+      </div>
+      <p class="explica" id="pvEstado"></p>
+      <div id="pvSalvas"></div>
+    </section>
     <div id="lista" style="display:grid;gap:14px"></div>
     <button class="btn more" id="mais" type="button" hidden>Mostrar mais questões</button>
   </main>
@@ -276,6 +348,13 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   <form method="dialog" id="formTexto">
     <h2 id="dlgTextoTitulo">Editar questão</h2>
     <p class="sub" id="dlgTextoProva"></p>
+    <fieldset id="edMeta" hidden><legend>Questão própria</legend><div class="meta-ed">
+      <label class="campo">Origem <select id="edOrigem"><option value="autoral">Autoral</option><option value="outra">Outra fonte</option></select></label>
+      <label class="campo">Fonte (livro, vestibular, site…) <input type="text" id="edFonte"></label>
+      <label class="campo">Ano <input type="text" id="edAno" inputmode="numeric" maxlength="4"></label>
+      <label class="campo">Área <select id="edArea"></select></label>
+      <label class="campo">Habilidade (Matriz do ENEM) <select id="edHab"></select></label>
+    </div></fieldset>
     <label class="campo" id="edEnunciadoCampo">Enunciado (uma linha em branco separa parágrafos)
       <textarea id="edEnunciado" rows="10"></textarea></label>
     <div class="actions" id="edConverterLinha"><button class="btn sec" type="button" id="edConverter">Montar em blocos (texto + imagens)</button>
@@ -294,6 +373,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     <p class="erro" id="edErro" hidden></p>
     <div class="rodape">
       <button class="btn perigo" type="button" id="edRestaurar">Restaurar original</button>
+      <button class="btn perigo" type="button" id="edExcluir" hidden>Excluir questão</button>
       <span class="esp"></span>
       <button class="btn" type="button" id="edCancelar">Cancelar</button>
       <button class="btn pri" type="submit" id="edSalvar">Salvar</button>
@@ -329,6 +409,8 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   </form>
 </dialog>
 
+<div id="impressao" aria-hidden="true"></div>
+
 <script src="data/banco_questoes.js"></script>
 <script>
 (function () {
@@ -343,7 +425,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const im = e.target;
     if (im.tagName !== "IMG" || !im.classList.contains("rec") || im.closest("form")) return;
     const dpi = Number(im.dataset.dpi ?? 200);
-    if (dpi > 0) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
+    if (dpi > 0 && im.naturalWidth) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
   }, true);
   const ESCALAS = window.ESCALA_DIFICULDADE || {};      // por área: {min, max, n, niveis}
   const ESCALA_NOTAS = window.ESCALA_NOTAS || {};       // "ano|área": {k, m}
@@ -369,11 +451,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     .replace(new RegExp(`[${SUP}]+`, "g"), (m) => "<sup>" + [...m].map((c) => SUP_N[SUP.indexOf(c)]).join("") + "</sup>")
     .replace(new RegExp(`[${SUB}]+`, "g"), (m) => "<sub>" + [...m].map((c) => SUB_N[SUB.indexOf(c)]).join("") + "</sub>");
 
-  const formato = (q) => (q.blocos ? "Texto + recortes (nova versão)" : q.imagem ? "Com figura, tabela ou fórmula" : "Só texto");
-  const aplicacao = (q) => (q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
+  const formato = (q) => (q.propria ? (q.blocos.some((b) => b.tipo === "figura") ? "Texto + recortes (nova versão)" : "Só texto")
+    : q.blocos ? "Texto + recortes (nova versão)" : q.imagem ? "Com figura, tabela ou fórmula" : "Só texto");
+  const aplicacao = (q) => (q.propria ? (q.origem === "outra" ? "Outra fonte" : "Questão autoral") : q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
   const campos = {
     area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
-    ano: (q) => [String(q.prova.ano)], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
+    ano: (q) => [q.prova.ano ? String(q.prova.ano) : "Sem ano"], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
     dif: (q) => [q.dificuldade && q.dificuldade.nivel ? q.dificuldade.nivel : SEM_DIF],
     hab: (q) => (q.habilidade ? [q.habilidade.chave] : []),
   };
@@ -453,7 +536,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   function barraDificuldade(q) {
     const d = q.dificuldade;
     if (!d) {
-      return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">${q.descartada_da_nota ? (q.anulada ? "Sem dificuldade calculada: questão anulada" : "Sem dificuldade calculada: o INEP descartou esta questão do cálculo da nota por um problema estatístico") + (q.motivo_descarte ? " (motivo oficial: " + esc(q.motivo_descarte) + ")" : "") + "." : "Sem dados de dificuldade."}</span></div>`;
+      return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">${q.descartada_da_nota ? (q.anulada ? "Sem dificuldade calculada: questão anulada" : "Sem dificuldade calculada: o INEP descartou esta questão do cálculo da nota por um problema estatístico") + (q.motivo_descarte ? " (motivo oficial: " + esc(q.motivo_descarte) + ")" : "") + "." : q.propria ? "Questão própria: a dificuldade será estimada quando houver respostas suficientes de alunos." : "Sem dados de dificuldade."}</span></div>`;
     }
     const e = ESCALAS[q.area];
     if (!d.nivel || !e) {
@@ -526,7 +609,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       ${barraDificuldade(q)}
       ${corpo}
       <ol class="alts" aria-label="Alternativas">${alts}</ol>
-      <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}${botoesEdicao(q)}</div>
+      <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}${botaoProva(q)}${botoesEdicao(q)}</div>
     </article>`;
   }
 
@@ -593,7 +676,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       ${precisaEscolher ? `<p class="explica" style="color:var(--bad)">Você respondeu questões de inglês e de espanhol, mas no ENEM só conta a língua escolhida. Escolha a sua para incluir essas questões em Linguagens:
         <button class="btn" type="button" data-escolher-lingua="ingles">Inglês</button> <button class="btn" type="button" data-escolher-lingua="espanhol">Espanhol</button></p>` : ""}
       ${!precisaEscolher && outraLingua ? `<p class="explica">${outraLingua} resposta${outraLingua === 1 ? "" : "s"} de ${linguaUsada === "ingles" ? "espanhol" : "inglês"} não entra${outraLingua === 1 ? "" : "m"} no cálculo: sua língua estrangeira é ${NOME_LINGUA[linguaUsada]}.</p>` : ""}
-      ${semParametro ? `<p class="explica">${semParametro} resposta${semParametro === 1 ? "" : "s"} não entra${semParametro === 1 ? "" : "m"} no cálculo (questões anuladas ou descartadas pelo INEP).</p>` : ""}
+      ${semParametro ? `<p class="explica">${semParametro} resposta${semParametro === 1 ? "" : "s"} não entra${semParametro === 1 ? "" : "m"} no cálculo (questões próprias ainda sem calibração, ou anuladas/descartadas pelo INEP).</p>` : ""}
       <p class="explica">Calculada como o INEP calcula: pela TRI, considerando quais questões você acertou, não só quantas. A nota de cada área e ano é separada, porque cada uma tem sua própria escala. Aqui entram só as questões que você respondeu; na prova real, questão em branco conta como erro. A faixa provável mostra a incerteza: quanto mais questões respondidas, mais estreita ela fica.</p>`;
     painel.hidden = false;
   }
@@ -603,6 +686,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const acertos = r.filter(([q, l]) => q.gabarito === l).length;
     $("resumo").innerHTML = `<span><strong>${total}</strong> ${total === 1 ? "questão encontrada" : "questões encontradas"}</span>` +
       (r.length ? `<span>Suas respostas: <strong>${acertos}</strong> acerto${acertos === 1 ? "" : "s"} em <strong>${r.length}</strong></span>` : "") +
+      `<button class="btn" type="button" id="abrirProva">Prova (${MONT.questoes.length})</button>` +
       `<button class="btn" type="button" id="calcNota"${r.length ? "" : " disabled title=\"Responda pelo menos uma questão\""}>Calcular minha nota</button>`;
     if (!$("painelNota").hidden) calcularNota();
     try { localStorage.setItem("banco-enem-respostas", JSON.stringify(respostas)); } catch (e) { /* sem armazenamento */ }
@@ -613,7 +697,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     montarOpcoes("area", $("f-area"), ordemArea);
     montarOpcoes("disc", $("f-disc"));
     montarOpcoes("cont", $("f-cont"));
-    montarOpcoes("ano", $("f-ano"), (a, b) => b - a);
+    montarOpcoes("ano", $("f-ano"), (a, b) => (Number(b) || 0) - (Number(a) || 0));
     montarOpcoes("apl", $("f-apl"));
     montarOpcoes("fmt", $("f-fmt"));
     montarOpcoes("dif", $("f-dif"), ordemDif);
@@ -665,6 +749,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   $("lista").addEventListener("click", (e) => {
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.editar) { abrirEditorTexto(b.dataset.editar); return; }
+    if (b.dataset.prova) { alternarNaProva(b.dataset.prova); return; }
     if (b.dataset.editarImg) { abrirEditorImagem(b.dataset.editarImg); return; }
     if (b.dataset.l) respostas[b.dataset.q] = b.dataset.l;
     else if (b.dataset.ver) respostas[b.dataset.ver] = "?";
@@ -676,7 +761,10 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     if (q && card) { card.outerHTML = cartao(q); }
     atualizarResumo(BANCO.filter((x) => passa(x)).length);
   });
-  $("resumo").addEventListener("click", (e) => { if (e.target.id === "calcNota") calcularNota(); });
+  $("resumo").addEventListener("click", (e) => {
+    if (e.target.id === "calcNota") calcularNota();
+    if (e.target.id === "abrirProva") abrirPainelProva();
+  });
   $("painelNota").addEventListener("click", (e) => {
     if (e.target.id === "fecharNota") $("painelNota").hidden = true;
     if (e.target.id === "recalcular") calcularNota();
@@ -759,7 +847,8 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     $("edEstado").textContent = ED.aviso || (ED.modo === "nuvem"
       ? (ED.podeEditar ? "Edições salvas no artefato: quem abre este link vê as mesmas." : "Você pode ver as edições, mas só o dono e editores alteram.")
       : "Edições salvas só neste navegador. Use “Baixar edições” para guardar uma cópia.");
-    $("baixarEdicoes").disabled = n === 0;
+    $("baixarEdicoes").disabled = n === 0 && !Object.keys(proprias).length && !Object.keys(provasSalvas).length;
+    $("novaQuestao").hidden = !ED.podeEditar;
   }
   function redesenhar(id) {
     const q = BANCO.find((x) => x.id === id), card = document.getElementById(id);
@@ -767,6 +856,10 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     atualizarEstadoEdicao();
   }
   async function gravar(id, reg) {
+    if (proprias[id]) {  // questão própria: as alterações vão direto para o registro dela
+      const r = Object.assign({}, proprias[id], (reg && reg.campos) || {}, { atualizado: new Date().toISOString() });
+      return gravarPropria(r);
+    }
     if (ED.modo === "nuvem") {
       const ref = ED.db.collection("edicoes").doc(id);
       if (reg) await ref.set(reg); else await ref.delete();
@@ -877,6 +970,18 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     $("edObs").value = q.observacao || "";
     $("edErro").hidden = true;
     $("edRestaurar").hidden = !temCampos(edicoes[id]);
+    const pr = !!q.propria;
+    $("edMeta").hidden = !pr;
+    $("edExcluir").hidden = !pr || !proprias[id];
+    $("edExcluir").textContent = "Excluir questão"; delete $("edExcluir").dataset.confirmar;
+    $("dlgTextoTitulo").textContent = pr ? (proprias[id] ? "Editar questão própria" : "Nova questão") : "Editar questão";
+    if (pr) {
+      $("edOrigem").value = q.origem || "autoral";
+      $("edFonte").value = q.fonte || "";
+      $("edAno").value = q.prova.ano || "";
+      preencherAreas(q.area);
+      preencherHabs(q.area, q.habilidade && q.habilidade.codigo);
+    }
     $("dlgTexto").showModal();
   }
   function mostrarErro(el, msg) { el.textContent = msg; el.hidden = false; }
@@ -913,6 +1018,28 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     };
     if (!novo.disciplinas.length) return mostrarErro($("edErro"), "Escolha pelo menos uma disciplina.");
     if (!novo.enunciado && !EB) return mostrarErro($("edErro"), "O enunciado não pode ficar vazio.");
+    const qAtual = BANCO.find((x) => x.id === id);
+    if (qAtual && qAtual.propria) {
+      const preenchidas = "ABCDE".split("").filter((L) => alts[L]);
+      if (preenchidas.length < 2) return mostrarErro($("edErro"), "Preencha pelo menos duas alternativas.");
+      if (!alts[novo.gabarito]) return mostrarErro($("edErro"), "A resposta correta aponta para uma alternativa vazia.");
+      const ano = $("edAno").value.trim();
+      if (ano && !/^\d{4}$/.test(ano)) return mostrarErro($("edErro"), "O ano deve ter 4 dígitos.");
+      $("edSalvar").disabled = true;
+      try {
+        const r = Object.assign({}, proprias[id] || { criada: new Date().toISOString() }, {
+          id, origem: $("edOrigem").value, fonte: $("edFonte").value.trim() || null, ano: ano ? Number(ano) : null,
+          area: $("edArea").value, habilidade: $("edHab").value || null,
+          blocos: await gravarImagensNovas(EB.filter((b) => b.tipo === "figura" || b.texto)),
+          alternativas: alts, gabarito: novo.gabarito, disciplinas: novo.disciplinas, conteudos: novo.conteudos,
+          observacao: novo.observacao, atualizado: new Date().toISOString(),
+        });
+        await gravarPropria(r);
+        $("dlgTexto").close();
+      } catch (err) { mostrarErro($("edErro"), "Não foi possível salvar: " + erroTexto(err)); }
+      finally { $("edSalvar").disabled = false; }
+      return;
+    }
     $("edSalvar").disabled = true;
     const antes = idsDeImagem((edicoes[id] && edicoes[id].campos || {}).blocos);
     try {
@@ -1166,6 +1293,17 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
         }
         saida.edicoes[id] = item;
       }
+      const embutir = async (b) => {
+        const dados = b.imagem_dados || (b.imagem_id ? await paraDataURL(await (await fetch("/_blob/" + b.imagem_id)).blob()) : null);
+        if (dados) { b.imagem_png = dados; delete b.imagem_id; delete b.imagem_dados; }
+      };
+      saida.proprias = {};
+      for (const [id, r] of Object.entries(proprias)) {
+        const c = JSON.parse(JSON.stringify(r));
+        for (const b of c.blocos || []) await embutir(b);
+        saida.proprias[id] = c;
+      }
+      saida.provas = JSON.parse(JSON.stringify(provasSalvas));
       const texto = JSON.stringify(saida, null, 1), nome = "edicoes-banco-enem.json";
       if (ED.downloads) await ED.downloads.save({ filename: nome, data: texto });
       else {
@@ -1176,6 +1314,259 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     } catch (err) {
       if (!err || err.code !== "cancelled") { ED.aviso = "Não foi possível baixar as edições: " + erroTexto(err); atualizarEstadoEdicao(); ED.aviso = ""; }
     } finally { b.textContent = rotulo; b.disabled = false; atualizarEstadoEdicao(); }
+  });
+
+
+  // ================= Questões próprias (autorais e de outras fontes) =================
+  // Guardadas inteiras (não como edição por cima): coleção "questoes" na página
+  // publicada; aberta do disco, neste navegador.
+  const CHAVE_PROPRIAS = "banco-enem-proprias";
+  const SIGLA_AREA = { "Linguagens, Códigos e suas Tecnologias": "LC", "Ciências Humanas e suas Tecnologias": "CH",
+    "Ciências da Natureza e suas Tecnologias": "CN", "Matemática e suas Tecnologias": "MT" };
+  const ORIGEM = { autoral: "Questão autoral", outra: "Outra fonte" };
+  let proprias = {};
+  try { proprias = JSON.parse(localStorage.getItem(CHAVE_PROPRIAS) || "{}") || {}; } catch (e) { proprias = {}; }
+  let rascunho = null;  // id da questão nova ainda não salva
+  function questaoDePropria(r) {
+    const c = JSON.parse(JSON.stringify(r));
+    const chaveHab = c.habilidade ? `${SIGLA_AREA[c.area]} ${c.habilidade}` : null;
+    return Object.assign({
+      alternativas: { A: "", B: "", C: "", D: "", E: "" }, gabarito: "A", anulada: false, disciplinas: [], conteudos: [],
+      observacao: null, blocos: [{ tipo: "texto", texto: "" }], enunciado: "", imagem: null, alternativas_imagem: null,
+      lingua: null, dificuldade: null, tri: null, descartada_da_nota: false, visuais: [], texto_fiel: true, revisar: [],
+    }, c, {
+      propria: true,
+      prova: { ano: c.ano || null, aplicacao: "propria", reaplicacao: false,
+               descricao: (c.fonte || ORIGEM[c.origem] || "Questão própria") + (c.ano ? " · " + c.ano : "") },
+      habilidade: chaveHab ? Object.assign({ codigo: c.habilidade, chave: chaveHab, texto: "" }, HABS[chaveHab] || {}) : null,
+    });
+  }
+  const fotografar = (q) => JSON.parse(JSON.stringify(Object.fromEntries(CAMPOS_TEXTO.concat("imagem", "alternativas_imagem").map((k) => [k, q[k] ?? null]))));
+  function sincronizarProprias() {
+    for (let i = BANCO.length - 1; i >= 0; i--) {
+      if (BANCO[i].propria && BANCO[i].id !== rascunho) { ORIGINAL.delete(BANCO[i].id); BANCO.splice(i, 1); }
+    }
+    // as mais recentes primeiro, no topo da lista
+    Object.values(proprias).sort((a, b) => String(a.criada).localeCompare(String(b.criada))).forEach((r) => {
+      const q = questaoDePropria(r); indexar(q); BANCO.unshift(q); ORIGINAL.set(q.id, fotografar(q));
+    });
+  }
+  async function gravarPropria(r, apagar) {
+    if (ED.modo === "nuvem") {
+      const ref = ED.db.collection("questoes").doc(r.id);
+      if (apagar) await ref.delete(); else await ref.set(JSON.parse(JSON.stringify(r)));
+    }
+    const novo = Object.assign({}, proprias);
+    if (apagar) delete novo[r.id]; else novo[r.id] = r;
+    if (ED.modo === "local") {
+      try { localStorage.setItem(CHAVE_PROPRIAS, JSON.stringify(novo)); }
+      catch (e) { throw new Error("O navegador não tem espaço para guardar esta questão (imagens ocupam muito)."); }
+    }
+    proprias = novo; rascunho = null;
+    sincronizarProprias(); aplicarEdicoes(); render();
+  }
+  function preencherAreas(a) {
+    $("edArea").innerHTML = ORDEM_AREA.map((x) => `<option${x === a ? " selected" : ""}>${esc(x)}</option>`).join("");
+  }
+  function preencherHabs(area, cod) {
+    const sig = SIGLA_AREA[area];
+    const hs = Object.values(HABS).filter((h) => h.chave.startsWith(sig + " ")).sort((a, b) => parseInt(a.codigo.slice(1)) - parseInt(b.codigo.slice(1)));
+    $("edHab").innerHTML = '<option value="">— nenhuma —</option>' + hs.map((h) => `<option value="${esc(h.codigo)}"${h.codigo === cod ? " selected" : ""}>${esc(h.codigo)} · ${esc(curto(h.texto, 60))}</option>`).join("");
+  }
+  $("edArea").addEventListener("change", () => preencherHabs($("edArea").value, null));
+  $("novaQuestao").addEventListener("click", () => {
+    const id = "propria-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    const q = questaoDePropria({ id, origem: "autoral", area: ORDEM_AREA[0] });
+    indexar(q); BANCO.unshift(q); ORIGINAL.set(id, fotografar(q)); rascunho = id;
+    abrirEditorTexto(id);
+  });
+  $("dlgTexto").addEventListener("close", () => {
+    if (rascunho && !proprias[rascunho]) {
+      const i = BANCO.findIndex((x) => x.id === rascunho);
+      if (i >= 0) BANCO.splice(i, 1);
+      ORIGINAL.delete(rascunho);
+    }
+    rascunho = null;
+  });
+  $("edExcluir").addEventListener("click", async () => {
+    const b = $("edExcluir");
+    if (b.dataset.confirmar !== "1") { b.dataset.confirmar = "1"; b.textContent = "Confirmar: excluir de vez"; return; }
+    const r = proprias[emEdicao]; if (!r) return;
+    try {
+      await gravarPropria(r, true);
+      if (ED.assets) (r.blocos || []).forEach((x) => { if (x.imagem_id) ED.assets.delete(x.imagem_id).catch(() => {}); });
+      MONT.questoes = MONT.questoes.filter((x) => x !== r.id); salvarMont();
+      $("dlgTexto").close();
+    } catch (err) { mostrarErro($("edErro"), "Não foi possível excluir: " + erroTexto(err)); }
+  });
+
+  // ================= Montar prova (impressa) =================
+  const CHAVE_MONT = "banco-enem-montagem", CHAVE_PROVAS = "banco-enem-provas";
+  const MONT0 = () => ({ id: null, titulo: "", questoes: [], opcoes: { colunas: 2, fonte: true, cartao: true, gabarito: true } });
+  let MONT = MONT0();
+  try { const m = JSON.parse(localStorage.getItem(CHAVE_MONT) || "null"); if (m) MONT = Object.assign(MONT0(), m, { opcoes: Object.assign(MONT0().opcoes, m.opcoes || {}) }); } catch (e) { /* começa vazia */ }
+  let provasSalvas = {};
+  try { provasSalvas = JSON.parse(localStorage.getItem(CHAVE_PROVAS) || "{}") || {}; } catch (e) { provasSalvas = {}; }
+  const salvarMont = () => { try { localStorage.setItem(CHAVE_MONT, JSON.stringify(MONT)); } catch (e) { /* sem armazenamento */ } };
+  const estadoProva = (t) => { $("pvEstado").textContent = t; };
+  function botaoProva(q) {
+    const na = MONT.questoes.includes(q.id);
+    return `<button class="btn${na ? " na-prova" : ""}" type="button" data-prova="${esc(q.id)}" aria-pressed="${na}">${na ? "✓ Na prova" : "+ Prova"}</button>`;
+  }
+  function alternarNaProva(id) {
+    const i = MONT.questoes.indexOf(id);
+    if (i >= 0) MONT.questoes.splice(i, 1); else MONT.questoes.push(id);
+    salvarMont(); redesenhar(id);
+    atualizarResumo(BANCO.filter((x) => passa(x)).length);
+    if (!$("painelProva").hidden) desenharPainelProva();
+  }
+  const questoesDaProva = () => MONT.questoes.map((id) => BANCO.find((x) => x.id === id)).filter(Boolean);
+  const textoCurto = (q) => curto(((q.blocos ? q.blocos.filter((b) => b.tipo === "texto").map((b) => b.texto).join(" ") : q.enunciado) || "").replace(/\*\*|__/g, "").replace(/\s+/g, " ").trim(), 90);
+  const origemCurta = (q) => (q.propria ? (q.fonte || ORIGEM[q.origem] || "Questão própria") + (q.prova.ano ? " " + q.prova.ano : "")
+    : `ENEM ${q.prova.ano}${q.prova.reaplicacao ? " – reaplicação" : ""}`);
+  function desenharPainelProva() {
+    const o = MONT.opcoes;
+    $("pvTitulo").value = MONT.titulo; $("pvColunas").value = String(o.colunas);
+    $("pvFonte").checked = o.fonte; $("pvCartao").checked = o.cartao; $("pvGabarito").checked = o.gabarito;
+    const qs = questoesDaProva();
+    $("pvLista").innerHTML = qs.length ? qs.map((q, i) => `<li><div class="linha"><span class="txt">${esc(textoCurto(q))} <span class="origem">· ${esc(origemCurta(q))}${q.lingua ? " · " + (q.lingua === "ingles" ? "Inglês" : "Espanhol") : ""}</span></span>
+        <button type="button" data-pv="sobe" data-i="${i}" ${i ? "" : "disabled"} aria-label="Subir">↑</button><button type="button" data-pv="desce" data-i="${i}" ${i < qs.length - 1 ? "" : "disabled"} aria-label="Descer">↓</button><button type="button" data-pv="tira" data-i="${i}" aria-label="Tirar da prova">✕</button></div></li>`).join("")
+      : '<li style="list-style:none;color:var(--muted)">Nenhuma questão. Use “+ Prova” nos cartões.</li>';
+    const antigas = qs.filter((q) => !q.blocos && q.imagem).length;
+    $("pvAviso").textContent = antigas ? `${antigas} questão(ões) ainda estão como imagem inteira da prova original: sairão como imagem, com o número original. Para convertê-las, use “Montar em blocos” no editor.` : "";
+    const salvas = Object.values(provasSalvas).sort((a, b) => String(b.atualizado).localeCompare(String(a.atualizado)));
+    $("pvSalvas").innerHTML = salvas.length ? "<strong>Provas salvas</strong>" + salvas.map((p) => `<div class="salva"><span>${esc(p.titulo || "Sem título")} · ${p.questoes.length} questões · ${esc(new Date(p.atualizado).toLocaleDateString("pt-BR"))}</span>
+        <button type="button" data-abrir-prova="${esc(p.id)}">Abrir</button><button type="button" data-excluir-prova="${esc(p.id)}">Excluir</button></div>`).join("") : "";
+  }
+  function abrirPainelProva() { desenharPainelProva(); estadoProva(""); $("painelProva").hidden = false; $("painelProva").scrollIntoView({ behavior: "smooth", block: "start" }); }
+  $("fecharProva").addEventListener("click", () => { $("painelProva").hidden = true; });
+  $("pvTitulo").addEventListener("input", () => { MONT.titulo = $("pvTitulo").value; salvarMont(); });
+  ["pvColunas", "pvFonte", "pvCartao", "pvGabarito"].forEach((k) => $(k).addEventListener("change", () => {
+    MONT.opcoes = { colunas: Number($("pvColunas").value), fonte: $("pvFonte").checked, cartao: $("pvCartao").checked, gabarito: $("pvGabarito").checked };
+    salvarMont();
+  }));
+  $("pvLista").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-pv]"); if (!b) return;
+    const i = Number(b.dataset.i), L = MONT.questoes, id = L[i];
+    if (b.dataset.pv === "sobe" && i > 0) [L[i - 1], L[i]] = [L[i], L[i - 1]];
+    else if (b.dataset.pv === "desce" && i < L.length - 1) [L[i + 1], L[i]] = [L[i], L[i + 1]];
+    else if (b.dataset.pv === "tira") L.splice(i, 1);
+    salvarMont(); desenharPainelProva();
+    if (b.dataset.pv === "tira") { redesenhar(id); atualizarResumo(BANCO.filter((x) => passa(x)).length); }
+  });
+  $("pvLimpar").addEventListener("click", () => {
+    const antes = MONT.questoes.slice();
+    MONT = MONT0(); salvarMont(); desenharPainelProva(); estadoProva("");
+    antes.forEach((id) => redesenhar(id)); atualizarResumo(BANCO.filter((x) => passa(x)).length);
+  });
+
+  // documento da prova: cabeçalho, questões numeradas, cartão-resposta e gabarito
+  function htmlProvaDoc(qs, o, titulo) {
+    const corpo = qs.map((q, i) => {
+      const cab = `<div class="p-num">Questão ${i + 1}${o.fonte ? ` <span>(${esc(origemCurta(q))})</span>` : ""}</div>`;
+      if (!q.blocos && q.imagem) return `<div class="p-q">${cab}<figure><img class="rec" data-dpi="150" src="${esc(q.imagem)}" alt=""></figure></div>`;
+      const alts = "ABCDE".split("").filter((L) => (q.alternativas || {})[L] || (q.alternativas_imagem || {})[L]).map((L) => {
+        const im = (q.alternativas_imagem || {})[L];
+        return `<li><b>${L}</b><span>${im ? `<img class="rec" data-dpi="200" src="${esc(im)}" alt="">` : fmt(indices(esc(q.alternativas[L])))}</span></li>`;
+      }).join("");
+      return `<div class="p-q">${cab}${q.blocos ? htmlBlocos(q.blocos) : paragrafos(q.enunciado)}<ol class="p-alts">${alts}</ol></div>`;
+    }).join("");
+    const campos = '<div class="campos"><span>Nome:</span><span>Turma:</span><span>Data:</span></div>';
+    const cartao = o.cartao ? `<section class="p-pagina"><div class="p-cab"><h1>Cartão-resposta${titulo ? " · " + esc(titulo) : ""}</h1>${campos}</div>
+      <div class="p-cartao">${qs.map((q, i) => `<div><span class="n">${i + 1}</span>${"ABCDE".split("").map((L) => `<i>${L}</i>`).join("")}</div>`).join("")}</div></section>` : "";
+    const gab = o.gabarito ? `<section class="p-pagina"><h2>Gabarito${titulo ? " · " + esc(titulo) : ""}</h2>
+      <div class="p-gab">${qs.map((q, i) => `<div>${i + 1}. ${q.anulada ? "anulada" : esc(q.gabarito || "—")}</div>`).join("")}</div></section>` : "";
+    return `<div class="pv-doc"><div class="p-cab"><h1>${esc(titulo || "Prova")}</h1>${campos}</div>
+      <div class="${o.colunas === 2 ? "p-cols2" : ""}">${corpo}</div>${cartao}${gab}</div>`;
+  }
+  function escalarRecorte(im) {
+    const dpi = Number(im.dataset.dpi ?? 200);
+    if (dpi > 0 && im.naturalWidth) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
+  }
+  $("pvImprimir").addEventListener("click", () => {
+    const qs = questoesDaProva();
+    if (!qs.length) return estadoProva("Adicione questões antes de imprimir.");
+    $("impressao").innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
+    const imgs = [...$("impressao").querySelectorAll("img")];
+    estadoProva("Preparando a impressão…");
+    Promise.all(imgs.map((im) => (im.complete ? Promise.resolve() : new Promise((r) => { im.addEventListener("load", r); im.addEventListener("error", r); }))))
+      .then(() => {
+        imgs.forEach(escalarRecorte);
+        document.body.classList.add("imprimindo");
+        const fim = () => { document.body.classList.remove("imprimindo"); window.removeEventListener("afterprint", fim); };
+        window.addEventListener("afterprint", fim);
+        estadoProva("Se a janela de impressão não abrir, use “Baixar para imprimir” e imprima o arquivo baixado.");
+        try { window.print(); } catch (e) { fim(); }
+      });
+  });
+  $("pvBaixar").addEventListener("click", async () => {
+    const qs = questoesDaProva();
+    if (!qs.length) return estadoProva("Adicione questões antes de baixar.");
+    const b = $("pvBaixar"); b.disabled = true; estadoProva("Preparando o arquivo (as imagens vão dentro dele)…");
+    try {
+      const div = document.createElement("div");
+      div.innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
+      for (const im of div.querySelectorAll("img")) {
+        const blob = await (await fetch(im.getAttribute("src"))).blob();
+        const dpi = Number(im.dataset.dpi ?? 200);
+        if (dpi > 0) { const bmp = await createImageBitmap(blob); im.style.width = Math.round(bmp.width * (72 / dpi) * 1.5) + "px"; }
+        im.src = await paraDataURL(blob);
+      }
+      const css = [...document.querySelectorAll("style")].map((x) => x.textContent).join("\n");
+      const titulo = MONT.titulo || "Prova";
+      const doc = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(titulo)}</title>`
+        + `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">`
+        + `<style>${css}\nbody{background:#fff!important;color:#000;padding:12mm!important;max-width:210mm;margin:0 auto}@media print{body{padding:0!important;max-width:none}}</style></head><body>${div.innerHTML}</body></html>`;
+      const nome = (titulo.normalize("NFD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").toLowerCase() || "prova") + ".html";
+      if (ED.downloads) await ED.downloads.save({ filename: nome, data: doc });
+      else {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob([doc], { type: "text/html" })); a.download = nome;
+        document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      }
+      estadoProva("Arquivo pronto: abra no navegador e use Imprimir (ou salvar em PDF).");
+    } catch (err) {
+      estadoProva(err && err.code === "cancelled" ? "" : "Não foi possível gerar o arquivo: " + erroTexto(err));
+    } finally { b.disabled = false; }
+  });
+  async function gravarProva(p, apagar) {
+    if (ED.modo === "nuvem") {
+      const ref = ED.db.collection("provas").doc(p.id);
+      if (apagar) await ref.delete(); else await ref.set(JSON.parse(JSON.stringify(p)));
+    }
+    const novo = Object.assign({}, provasSalvas);
+    if (apagar) delete novo[p.id]; else novo[p.id] = p;
+    if (ED.modo === "local") { try { localStorage.setItem(CHAVE_PROVAS, JSON.stringify(novo)); } catch (e) { throw new Error("sem espaço no navegador"); } }
+    provasSalvas = novo;
+    desenharPainelProva(); atualizarEstadoEdicao();
+  }
+  $("pvSalvar").addEventListener("click", async () => {
+    if (!MONT.questoes.length) return estadoProva("Adicione questões antes de salvar.");
+    if (!ED.podeEditar) return estadoProva("Só o dono e editores salvam provas.");
+    const agora = new Date().toISOString();
+    if (!MONT.id) MONT.id = "prova-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    const p = Object.assign({ criada: (provasSalvas[MONT.id] || {}).criada || agora }, JSON.parse(JSON.stringify(MONT)), { atualizado: agora });
+    try { await gravarProva(p); salvarMont(); estadoProva(`Prova salva (${p.questoes.length} questões).`); }
+    catch (err) { estadoProva("Não foi possível salvar: " + erroTexto(err)); }
+  });
+  $("pvSalvas").addEventListener("click", async (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.abrirProva) {
+      const p = provasSalvas[b.dataset.abrirProva]; if (!p) return;
+      const antes = MONT.questoes.slice();
+      MONT = Object.assign(MONT0(), JSON.parse(JSON.stringify(p)));
+      delete MONT.criada; delete MONT.atualizado;
+      salvarMont(); desenharPainelProva();
+      new Set(antes.concat(MONT.questoes)).forEach((id) => redesenhar(id));
+      atualizarResumo(BANCO.filter((x) => passa(x)).length);
+      const faltam = p.questoes.length - questoesDaProva().length;
+      estadoProva(faltam ? `${faltam} questão(ões) desta prova não existem mais no banco.` : `Prova “${p.titulo || "Sem título"}” aberta.`);
+    }
+    if (b.dataset.excluirProva) {
+      if (b.dataset.confirmar !== "1") { b.dataset.confirmar = "1"; b.textContent = "Confirmar"; return; }
+      try { await gravarProva(provasSalvas[b.dataset.excluirProva], true); if (MONT.id === b.dataset.excluirProva) { MONT.id = null; salvarMont(); } }
+      catch (err) { estadoProva("Não foi possível excluir: " + erroTexto(err)); }
+    }
   });
 
   // ---------- na página publicada: banco de dados do artefato ----------
@@ -1190,8 +1581,22 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     ED.assets = await window.claude.use("assets");
     ED.podeImagem = !!ED.assets;
     ED.downloads = await window.claude.use("downloads");
-    edicoes = {}; aplicarEdicoes(); render();
+    edicoes = {}; proprias = {}; provasSalvas = {};
+    sincronizarProprias(); aplicarEdicoes(); render();
     ED.aviso = "Carregando edições salvas…"; atualizarEstadoEdicao();
+    db.collection("questoes").onSnapshot((snap) => {
+      const novo = {};
+      snap.docs.forEach((d) => { novo[d.id] = d.data(); });
+      if (mesmo(novo, proprias)) return;
+      proprias = novo; sincronizarProprias(); aplicarEdicoes(); render();
+    }, () => { ED.aviso = "Não foi possível carregar as questões próprias."; atualizarEstadoEdicao(); });
+    db.collection("provas").onSnapshot((snap) => {
+      const novo = {};
+      snap.docs.forEach((d) => { novo[d.id] = d.data(); });
+      provasSalvas = novo;
+      if (!$("painelProva").hidden) desenharPainelProva();
+      atualizarEstadoEdicao();
+    }, () => { /* provas salvas indisponíveis: a montagem continua funcionando */ });
     const espera = setTimeout(() => { ED.aviso = "As edições salvas ainda não carregaram; o que aparece pode estar desatualizado."; atualizarEstadoEdicao(); }, 10000);
     db.collection("edicoes").onSnapshot((snap) => {
       if (!snap.metadata.fromCache) { clearTimeout(espera); ED.aviso = ""; }
@@ -1211,6 +1616,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     return;
   }
   carregar();
+  sincronizarProprias();
   aplicarEdicoes();
   try { respostas = JSON.parse(localStorage.getItem("banco-enem-respostas") || "{}") || {}; } catch (e) { respostas = {}; }
   render();
