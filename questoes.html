@@ -93,6 +93,23 @@ main { min-width: 0; display: grid; gap: 14px; }
 .chip.area[data-a^="Ciências Humanas"] { background: var(--a-ch); }
 .chip.area { white-space: normal; }
 .obs { font-size: .8rem; color: var(--muted); width: 100%; }
+.hab { font-size: .82rem; color: var(--muted); width: 100%; }
+.hab b { color: var(--ink); font-weight: 600; }
+
+/* Dificuldade: barra verde→vermelho (b da TRI), marcador e rótulo abaixo */
+.dif { --pos: 50%; display: grid; gap: 2px; width: min(100%, 440px); }
+.dif-topo { display: flex; justify-content: space-between; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.dif-topo span:nth-child(2) { text-transform: none; letter-spacing: 0; font-weight: 500; font-variant-numeric: tabular-nums; }
+.dif-barra { position: relative; height: 10px; border-radius: 999px;
+  background: linear-gradient(90deg, #1e9e57 0%, #7cc242 22%, #e9c52e 50%, #ef8a2c 75%, #d6332a 100%); }
+.dif-barra::after { content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: repeating-linear-gradient(90deg, transparent 0 calc(100% / 7 - 1.5px), var(--surface) calc(100% / 7 - 1.5px) calc(100% / 7)); opacity: .9; }
+.dif-marca { position: absolute; top: -4px; left: var(--pos); width: 4px; height: 18px; margin-left: -2px; border-radius: 2px; background: var(--ink); box-shadow: 0 0 0 2px var(--surface); z-index: 1; }
+.dif-trilho { position: relative; height: 30px; }
+.dif-seta { position: absolute; top: 1px; left: var(--pos); margin-left: -6px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 7px solid var(--ink); }
+/* o rótulo acompanha o marcador sem sair da barra nas pontas */
+.dif-rotulo { position: absolute; top: 9px; left: var(--pos); transform: translateX(calc(-1 * var(--pos))); white-space: nowrap; font-size: .9rem; font-weight: 700; }
+.dif-vazia { font-size: .82rem; color: var(--muted); }
 .chip.disc { color: var(--ink); }
 .chip.warn { color: var(--bad); border-color: var(--bad); }
 .prova { font-size: .8rem; color: var(--muted); width: 100%; }
@@ -153,6 +170,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     <div class="fgroup"><span class="label">Conteúdo</span><div class="opts" id="f-cont"></div></div>
     <div class="fgroup"><span class="label">Ano</span><div class="opts" id="f-ano"></div></div>
     <div class="fgroup"><span class="label">Aplicação</span><div class="opts" id="f-apl"></div></div>
+    <div class="fgroup"><span class="label">Dificuldade</span><div class="opts" id="f-dif"></div></div>
+    <div class="fgroup"><span class="label">Habilidade (Matriz de Referência)</span><div class="opts" id="f-hab"></div></div>
     <div class="fgroup"><span class="label">Formato</span><div class="opts" id="f-fmt"></div></div>
     <div class="fgroup">
       <label class="opt"><input type="checkbox" id="semAnuladas" checked> Ocultar questões anuladas</label>
@@ -175,7 +194,9 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const POR_PAGINA = 15;
   const ORDEM_AREA = ["Linguagens, Códigos e suas Tecnologias", "Ciências Humanas e suas Tecnologias",
                       "Ciências da Natureza e suas Tecnologias", "Matemática e suas Tecnologias"];
-  const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
+  const ESCALA = window.ESCALA_DIFICULDADE || { min: -1.5, max: 3.5, niveis: [] };
+  const SEM_DIF = "Sem dificuldade calculada";
+  const VAZIO = () => ({ area: new Set(), disc: new Set(), cont: new Set(), dif: new Set(), hab: new Set(), ano: new Set(), apl: new Set(), fmt: new Set() });
   let filtros = VAZIO(), busca = "", semAnuladas = true, limite = POR_PAGINA;
   const respostas = {};  // id -> letra escolhida (só nesta visita)
 
@@ -188,8 +209,19 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const campos = {
     area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
     ano: (q) => [String(q.prova.ano)], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
+    dif: (q) => [q.dificuldade ? q.dificuldade.nivel : SEM_DIF],
+    hab: (q) => (q.habilidade ? [q.habilidade.chave] : []),
   };
-  BANCO.forEach((q) => { q._busca = norm(q.enunciado + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ")); });
+  const HABS = {};
+  BANCO.forEach((q) => {
+    if (q.habilidade) HABS[q.habilidade.chave] = q.habilidade;
+    q._busca = norm(q.enunciado + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ") + " " + (q.habilidade ? q.habilidade.codigo + " " + q.habilidade.texto : ""));
+  });
+  const SIGLAS = ["LC", "CH", "CN", "MT"];
+  const ordemHab = (a, b) => SIGLAS.indexOf(a.split(" ")[0]) - SIGLAS.indexOf(b.split(" ")[0]) || parseInt(a.split(" H")[1]) - parseInt(b.split(" H")[1]);
+  const ordemDif = (a, b) => (ESCALA.niveis.indexOf(a) + 1 || 99) - (ESCALA.niveis.indexOf(b) + 1 || 99);
+  const curto = (t, n) => (t && t.length > n ? t.slice(0, n - 1).trimEnd() + "…" : t || "");
+  const rotuloHab = (k) => { const h = HABS[k]; return h ? `${k} · ${curto(h.texto, 70)}` : k; };
 
   // Referência bibliográfica: "SOBRENOME, I." no início da linha.
   const AUTOR = /^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+(?: [A-ZÀ-Ý][A-ZÀ-Ý'\-]+)*, [A-ZÀ-Ý]\./;
@@ -224,18 +256,32 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     return true;
   }
 
-  function montarOpcoes(chave, el, ordem) {
+  function montarOpcoes(chave, el, ordem, rotulo) {
     const base = BANCO.filter((q) => passa(q, chave));
     const todos = new Map();
     BANCO.forEach((q) => campos[chave](q).forEach((v) => todos.set(v, 0)));
     base.forEach((q) => new Set(campos[chave](q)).forEach((v) => todos.set(v, (todos.get(v) || 0) + 1)));
     let valores = [...todos.keys()];
-    if (chave === "cont" && (filtros.disc.size || filtros.area.size)) valores = valores.filter((v) => todos.get(v) > 0 || filtros.cont.has(v));
+    if ((chave === "cont" || chave === "hab") && (filtros.disc.size || filtros.area.size)) valores = valores.filter((v) => todos.get(v) > 0 || filtros.cont.has(v));
     valores.sort(ordem || ((a, b) => a.localeCompare(b, "pt-BR")));
     el.innerHTML = valores.length ? valores.map((v, i) => {
       const id = `op-${chave}-${i}`, n = todos.get(v) || 0;
-      return `<label class="opt${n ? "" : " zero"}" for="${id}"><input type="checkbox" id="${id}" data-k="${chave}" value="${esc(v)}"${filtros[chave].has(v) ? " checked" : ""}> ${esc(v)}<span class="n">${n}</span></label>`;
+      return `<label class="opt${n ? "" : " zero"}" for="${id}"><input type="checkbox" id="${id}" data-k="${chave}" value="${esc(v)}"${filtros[chave].has(v) ? " checked" : ""}> <span${rotulo && HABS[v] ? ` title="${esc(HABS[v].texto)}"` : ""}>${esc(rotulo ? rotulo(v) : v)}</span><span class="n">${n}</span></label>`;
     }).join("") : '<span class="figura-nota">Nenhuma opção</span>';
+  }
+
+  function barraDificuldade(q) {
+    const d = q.dificuldade;
+    if (!d) {
+      return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">${q.descartada_da_nota ? (q.anulada ? "Sem dificuldade calculada: questão anulada" : "Sem dificuldade calculada: o INEP descartou esta questão do cálculo da nota por um problema estatístico") + (q.motivo_descarte ? " (motivo oficial: " + esc(q.motivo_descarte) + ")" : "") + "." : "Sem dados de dificuldade."}</span></div>`;
+    }
+    const pos = Math.max(0, Math.min(100, (d.b - ESCALA.min) / (ESCALA.max - ESCALA.min) * 100));
+    const b = d.b.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return `<div class="dif" style="--pos:${pos.toFixed(1)}%" role="img" aria-label="Dificuldade: ${esc(d.nivel)} (b = ${b})">
+      <div class="dif-topo"><span>Dificuldade</span><span title="Nota equivalente na escala do ENEM = 500 + 100 × b">b = ${b} · ≈ ${d.nota_equivalente} pontos</span></div>
+      <div class="dif-barra"><span class="dif-marca"></span></div>
+      <div class="dif-trilho"><span class="dif-seta"></span><span class="dif-rotulo">${esc(d.nivel)}</span></div>
+    </div>`;
   }
 
   function cartao(q) {
@@ -245,7 +291,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
       .concat(q.disciplinas.filter((d) => d !== "Matemática" || !q.area.startsWith("Matemática")).map((d) => `<span class="chip disc">${esc(d)}</span>`))
       .concat(q.conteudos.map((c) => `<span class="chip">${esc(c)}</span>`))
       .concat(q.lingua ? [`<span class="chip">${q.lingua === "ingles" ? "Inglês" : "Espanhol"}</span>`] : [])
-      .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : []);
+      .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : [])
+      .concat(!q.anulada && q.descartada_da_nota ? ['<span class="chip warn" title="O INEP não usou esta questão no cálculo da nota">Descartada da nota</span>'] : []);
     const corpo = q.imagem
       ? `<figure class="figura" style="margin:0"><img src="${esc(q.imagem)}" alt="Questão como aparece na prova impressa" loading="lazy"></figure>
          <details class="texto"><summary>Ver texto extraído (pode ter fórmulas incompletas)</summary><div class="enunciado">${paragrafos(q.enunciado)}</div></details>`
@@ -267,7 +314,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
         : `<span class="feedback bad">Você marcou ${r}. A resposta é ${q.gabarito}.</span>`;
     }
     return `<article class="card" id="${esc(q.id)}">
-      <div class="meta">${chips.join("")}<span class="prova">${esc(q.prova.descricao)}</span>${q.observacao ? `<span class="obs">Por que ${q.disciplinas.length > 1 ? "estas disciplinas" : "esta classificação"}: ${esc(q.observacao)}</span>` : ""}</div>
+      <div class="meta">${chips.join("")}<span class="prova">${esc(q.prova.descricao)}</span>${q.habilidade ? `<span class="hab"><b>Habilidade ${esc(q.habilidade.codigo)}</b> · ${esc(q.habilidade.texto)}</span>` : ""}${q.observacao ? `<span class="obs">Por que ${q.disciplinas.length > 1 ? "estas disciplinas" : "esta classificação"}: ${esc(q.observacao)}</span>` : ""}</div>
+      ${barraDificuldade(q)}
       ${corpo}
       <ol class="alts" aria-label="Alternativas">${alts}</ol>
       <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}</div>
@@ -282,6 +330,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     montarOpcoes("ano", $("f-ano"), (a, b) => b - a);
     montarOpcoes("apl", $("f-apl"));
     montarOpcoes("fmt", $("f-fmt"));
+    montarOpcoes("dif", $("f-dif"), ordemDif);
+    montarOpcoes("hab", $("f-hab"), ordemHab, rotuloHab);
     const res = BANCO.filter((q) => passa(q));
     const provas = new Set(BANCO.map((q) => q.prova.descricao));
     $("fonte").textContent = `${BANCO.length} questões de ${provas.size} prova${provas.size > 1 ? "s" : ""} oficial${provas.size > 1 ? "is" : ""} do INEP`;
