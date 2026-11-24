@@ -61,6 +61,10 @@ Dificílima, Impossível). A calibração é refeita a cada `gerar_banco.py`, ou
 seja, sempre que uma prova é adicionada. Áreas com menos de 10 questões ficam
 sem barra. Questões descartadas da nota pelo INEP não têm dificuldade.
 
+**Língua estrangeira:** a interface tem a escolha entre inglês e espanhol. A
+língua não escolhida some da lista e não entra na nota, como no ENEM; com
+"Ver as duas" e respostas nas duas línguas, a calculadora pede a escolha.
+
 **Calculadora de nota (interface):** usa o mesmo modelo e as mesmas constantes
 para estimar a nota a partir das respostas marcadas, separada por área e ano,
 com uma faixa provável (±1 desvio-padrão da estimativa). Testada com 6
@@ -87,6 +91,14 @@ casos. As respostas ficam salvas só no navegador de quem usa a página.
 |---|---|---|---|---|
 | 2023 · regular · 1º dia · caderno 1 (Azul) | 95/95 (45 + 5 da 2ª língua estrangeira + 45) | 82 | 13 | 13 imagens revisadas; gabarito 95/95 contra leitura independente; 95 questões classificadas |
 | 2023 · regular · 2º dia · caderno 7 (Azul) | 90/90 | 33 | 57 | 57 imagens revisadas; gabarito 90/90 contra leitura independente; 90 questões classificadas |
+| 2023 · reaplicação · 1º dia · caderno 1 (Azul) | 95/95 | 73 | 22 | 22 imagens revisadas; gabarito 95/95 igual aos microdados; 95 questões classificadas |
+| 2023 · reaplicação · 2º dia · caderno 7 (Azul) | 90/90 | 35 | 55 | 55 imagens revisadas; gabarito 90/90 igual aos microdados; 90 questões classificadas |
+
+A reaplicação de 2023 (PPL e reaplicação, mesma prova) não repete nenhuma questão
+da aplicação regular do mesmo ano, mas reaproveita questões de edições anteriores.
+A escala de notas de cada área é a mesma da aplicação regular: conferida em 25 a 28
+candidatos da reaplicação por área (erro máximo de 0,05 ponto) e com 8 de 8 notas
+reproduzidas pela calculadora.
 
 Escalas de nota de 2023 (validadas contra as notas oficiais, erro máximo de 0,05 ponto):
 Linguagens 108,09·θ + 499,98; Humanas 112,31·θ + 501,49; Natureza 113,10·θ + 501,14;

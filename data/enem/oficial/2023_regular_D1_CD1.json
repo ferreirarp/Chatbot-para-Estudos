@@ -9,6 +9,16 @@
    "1191"
   ]
  },
+ "validacao_escala": {
+  "LC": {
+   "candidatos": 500,
+   "erro_maximo": 0.051
+  },
+  "CH": {
+   "candidatos": 500,
+   "erro_maximo": 0.051
+  }
+ },
  "questoes": {
   "1-ingles": {
    "co_item": "140743",

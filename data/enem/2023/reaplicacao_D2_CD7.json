@@ -1,0 +1,2828 @@
+[
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q091",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 91,
+    "lingua_estrangeira": null,
+    "enunciado": "No calor tórrido e seco da Serra do Cabral, em Minas\nGerais, o delgado talo com translúcidas flores lilases\ndesponta da areia branca. Philcoxia minensis recorre a\ntruques para sobreviver. Um deles é manter as folhas\nenterradas, protegidas do sol, que mesmo assim chega\nsuficiente para a fotossíntese. O segundo é atrair vermes\nsubterrâneos, que viram suplemento alimentar num\nsolo pobre. A digestão fica por conta das fosfatases\nsecretadas pelas glândulas.\nDisponível em: http://revistapesquisa.fapesp.br. Acesso em: 7 jul. 2015 (adaptado).\nQual tipo de substância liberada pelos vermes digeridos\né absorvida por Philcoxia minensis?",
+    "alternativas": {
+      "A": "Glicose.",
+      "B": "Aminoácidos.",
+      "C": "Sais minerais.",
+      "D": "Fosfolipídeos.",
+      "E": "Ácidos nucleicos."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q092",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 92,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma notícia traz esperança a pessoas com certos\ntipos sanguíneos. Pesquisadores europeus conseguiram\ninjetar, com sucesso, glóbulos vermelhos originados a\npartir de células-tronco em uma pessoa.\nFolha de S. Paulo, 3 set. 2011 (adaptado).\nEsse avanço na medicina foi importante porque permitirá",
+    "alternativas": {
+      "A": "a substituição de tratamentos convencionais para estancar hemorragias internas.",
+      "B": "a produção de glóbulos vermelhos in vitro do próprio indivíduo, evitando transfusões sanguíneas.",
+      "C": "a realização da transfusão de sangue entre doador e receptor com menor risco de incompatibilidade.",
+      "D": "a substituição dos glóbulos vermelhos pelas células-tronco na corrente sanguínea, aumentando o número dessas células.",
+      "E": "a realização de tratamentos de doenças do sangue ou até mesmo a não manifestação de algumas doenças, reduzindo o número de mortes."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q093",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 93,
+    "lingua_estrangeira": null,
+    "enunciado": "Para que um produto seja vendido como orgânico,\na unidade produtora deve passar por um período de\nconversão que, no caso do café, pode durar até três\nanos, deixando o agricultor com poucas alternativas de\nprodução durante esse tempo. Outro aspecto importante\né a preservação das características orgânicas do produto,\ndurante as fases de beneficiamento e comercialização,\ndiante do risco de contaminação. O café orgânico tem\nsua competitividade diretamente ligada à minimização\ndos gastos com insumos por meio do aproveitamento\nde resíduos orgânicos pelo valor que agregam ao\nproduto. Com isso, a cafeicultura orgânica apresenta alta\neficiência no sistema de produção, relacionada ao estado\nnutricional do produto e à fertilidade do solo das lavouras.\nDisponível em: www.custoseagronegocioonline.com.br.\nAcesso em: 2 dez. 2008 (adaptado).\nApesar do custo mais alto, uma das vantagens do café\norganicamente cultivado é o(a)",
+    "alternativas": {
+      "A": "técnica de cultivo, que favorece a conservação do solo.",
+      "B": "eliminação dos resíduos orgânicos, que agrega valor ao produto.",
+      "C": "período curto de conversão de uma propriedade não orgânica em orgânica.",
+      "D": "manutenção de suas características orgânicas, embora seja perdido seu valor nutricional.",
+      "E": "remota possibilidade de contaminação durante o processo de distribuição e comercialização."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q094",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 94,
+    "lingua_estrangeira": null,
+    "enunciado": "Na formulação de detergentes sintéticos, são\nencontradas diversas substâncias que possuem ação\nespecífica. Entre essas substâncias, estão os tensoativos\naniônicos, dos quais o dodecilbenzenossulfonato de\nsódio é o mais comum em detergentes para cozinha.\nO dodecilbenzenossulfonato de sódio é um tensoativo\nem razão da presença",
+    "alternativas": {
+      "A": "do íon Na+ hidrofílico e pela porção sulfonato lipofílica.",
+      "B": "das porções sulfonato hidrofílica e dodecilbenzeno lipofílica.",
+      "C": "da porção benzenossulfonato, que possui característica lipofílica.",
+      "D": "do íon Na+, que possui tanto característica hidrofílica quanto lipofílica.",
+      "E": "do dodecilbenzeno, que possui tanto característica hidrofílica quanto lipofílica."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q094.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q095",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 95,
+    "lingua_estrangeira": null,
+    "enunciado": "Um carro sedã apresenta tipicamente 200 kg de\nalumínio distribuídos pelo chassi, motor e cabine.\nUma amostra de bauxita, principal fonte natural do metal,\né composta por 50% em massa de óxido de alumínio\n(Al O ). Considere a massa molar do alumínio (Al) igual\n2 3\na 27 g mol−1 e a do oxigênio (O) igual a 16 g mol−1.\nA massa de bauxita que deve ser empregada para produzir\no alumínio usado na fabricação de um carro desse modelo\né mais próxima de",
+    "alternativas": {
+      "A": "378 kg.",
+      "B": "400 kg.",
+      "C": "637 kg.",
+      "D": "756 kg.",
+      "E": "1 512 kg."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q095.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q096",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 96,
+    "lingua_estrangeira": null,
+    "enunciado": "A primeira experiência empresarial de mineração\nda Amazônia ocorreu no Amapá, em 1945, com a\nexploração de manganês na Serra do Navio. Para atender\nàs exigências do mercado consumidor, foi inicialmente\nlavrado o minério de alto teor (média de 40% de Mn),\ncorrespondendo a cerca de 22 milhões de toneladas,\no que comprometeu a vida útil da jazida. As atividades de\nlavra foram interrompidas em 1998 por causa da exaustão\ndo minério economicamente viável, sendo que, do ponto\nde vista ambiental, pouco mais de 50% da área atingida\ndurante a atividade mineradora foi recuperada. Contudo, as\nconsequências mais danosas do empreendimento não\nforam apenas de ordem ambiental, mas também social.\nA população local viu seu minério ser esgotado sem\nreceber ajuda de programas que lhe garantissem emprego\nalternativo e condições de vida dignas.\nAmazônia: a floresta e o futuro. Scientific American Brasil, n. 2, 2008 (adaptado).\nA exemplo do caso descrito, é possível citar, como\nimpactos socioambientais decorrentes da extração e do\nprocessamento de minérios, o fato de essa prática",
+    "alternativas": {
+      "A": "produzir resíduos e renovar os recursos naturais.",
+      "B": "alterar a paisagem e consumir grande quantidade de energia.",
+      "C": "gerar baixos lucros às empresas e afetar os lençóis de água subterrâneos.",
+      "D": "contaminar o ambiente com mercúrio e consumir grande quantidade de energia.",
+      "E": "apresentar pequena demanda da parte do mercado consumidor e alterar a paisagem."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q097",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 97,
+    "lingua_estrangeira": null,
+    "enunciado": "A figura apresenta o ciclo biogeoquímico do enxofre, que tem emissões de fontes naturais, biogênicas e\nantropogênicas que podem causar danos no ambiente.\nTerra\nH S / SO / SO 2−\n2 2 4 Transporte\nOceano\nEmissões Compostos\nSO\nvulcânicas SO 2 / SO 4 2− SO 2 / SO 4 2− 2 SO 2 / SO 4 2− redu S zidos\nSO 2− Compostos Compostos Chuva\n4 reduzidos reduzidos Combustíveis\nS S fósseis,\nChuva e outras Deposição vapores etc. Emissões\nSpray deposições seca biogênicas,\nmarinho Emissões Emissões vegetais\nbiogênicas, biogênicas,\nOceanos costeiras\nSSOO 22–− SSOO 22−− SSoolloo\n44 44\nRRiiooss\nOOcceeaannoo DDeeppoossiiççããoo\nRRoocchhaass\nsseeddiimmeennttaarreess\nSSeeddiimmeennttoo\nRRoocchhaass ííggnneeaass\nMMaaggmmaa\nDisponível em: www.jovemexplorador.iag.usp.br. Acesso em: 3 nov. 2022 (adaptado).\nQual é o impacto ambiental gerado a partir dessas emissões?",
+    "alternativas": {
+      "A": "Aumento do efeito estufa.",
+      "B": "Surgimento de ilhas de calor.",
+      "C": "Aparecimento de chuva ácida.",
+      "D": "Formação do smog fotoquímico.",
+      "E": "Degradação da camada de ozônio."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q097.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q098",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 98,
+    "lingua_estrangeira": null,
+    "enunciado": "A disponibilidade de nutrientes do solo (fertilidade) está associada à capacidade de ceder nutrientes essenciais às\nplantas, a qual é dependente do pH do solo. O cultivo agrícola para grande parte das espécies vegetais desenvolve-se\nde forma adequada no pH próximo a 6. Para isso, os produtores rurais realizam práticas agrícolas e manejo do\nsolo de forma a minimizar os efeitos deletérios do alumínio, manganês e excesso de ferro, além de potencializar a\ndisponibilidade de outros nutrientes, como cálcio, potássio, magnésio e fósforo. Considere um solo alcalino no qual\nse deseja realizar o manejo a fim de ajustar o pH e aumentar sua fertilidade.\nCARDOSO, E. J. B. N.; ANDREOTE, F. D. Microbiologia do solo. Piracicaba: Esalq, 2016 (adaptado).\nO composto que pode ser adicionado ao solo para atender a essa necessidade é",
+    "alternativas": {
+      "A": "KNO . 3",
+      "B": "CaCO . 3",
+      "C": "Na PO . 3 4",
+      "D": "Al (SO ) . 2 4 3",
+      "E": "(NH ) SO . 4 2 4"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q098.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q099",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 99,
+    "lingua_estrangeira": null,
+    "enunciado": "O processo de radiação de alimentos consiste em\nsubmeter os alimentos, já embalados ou a granel, a uma\nquantidade controlada de radiação ionizante, por um\ndeterminado período de tempo. Esse procedimento não\naumenta o nível de radioatividade normal dos alimentos.\nA aplicação de uma dose de radiação normalmente resulta\nna morte de insetos, bactérias patogênicas, fungos e\nleveduras, aumentando assim o tempo de conservação\ndos alimentos, e pode retardar a maturação de algumas\nfrutas e legumes, sendo possível assim aumentar seu\nperíodo de armazenamento.\nEm relação ao processo de conservação de alimentos\ndescrito no texto, infere-se que",
+    "alternativas": {
+      "A": "as frutas e os legumes submetidos a uma dose de radiação apodrecem mais rapidamente que as demais.",
+      "B": "o processo de radiação de alimentos torna-os altamente radioativos e impróprios para o consumo humano.",
+      "C": "apenas os alimentos já embalados em recipientes adequados podem ser submetidos a uma dose de radiação ionizante.",
+      "D": "alimentos tratados com radiação ficam mais sensíveis ao ataque de insetos, bactérias patogênicas, fungos e leveduras.",
+      "E": "com a eliminação dos principais agentes patogênicos, a aplicação da radiação em alimentos contribui para sua melhor conservação."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q100",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 100,
+    "lingua_estrangeira": null,
+    "enunciado": "A crescente facilidade para aquisição de aerogeradores\ne painéis fotovoltaicos tem permitido que unidades\nconsumidoras tenham suas próprias unidades microgeradoras\nde energia. A integração das unidades microgeradoras à rede\npública de distribuição pode beneficiar tanto as unidades\nconsumidoras quanto as concessionárias de fornecimento,\nconforme o fluxograma. Quando as unidades microgeradoras\nnão geram energia suficiente para a unidade consumidora,\na rede de distribuição supre a diferença. Quando a unidade\nmicrogeradora gera excedente de energia, esse excedente\npoderá ser entregue à concessionária em troca de crédito.\nUnidade microgeradora eólica ou fotovoltaica\nQuadro de Rede pública\nUnidade\nenergia e de distruibuição\nconsumidora\nmedidor de energia\nA vantagem técnica que as unidades microgeradoras\nproporcionam para as concessionárias da rede pública é a",
+    "alternativas": {
+      "A": "redução das perdas energéticas provenientes do transporte de longa distância.",
+      "B": "sincronização dos picos de produção das microgeradoras com os picos de demanda da rede pública.",
+      "C": "diminuição da necessidade da rede pública, no caso de todas as unidades consumidoras optarem pela microgeração.",
+      "D": "intensificação do uso da energia gerada por pequenas termoelétricas próximas às unidades consumidoras.",
+      "E": "diminuição da dependência da energia gerada em grandes parques eólicos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q100.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q101",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 101,
+    "lingua_estrangeira": null,
+    "enunciado": "Com o objetivo de demonstrar a transferência\nde energia de um sistema para outro, um professor\nsolicitou a seus alunos que determinassem o calor\nde combustão de alguns alimentos e, para auxiliar\nnessa tarefa, forneceu um quadro que apresenta cinco\nalimentos identificados por números e seus respectivos\ncalores de combustão.\nAlimento Calor de combustão (cal/g)\nI 15\nII 120\nIII 160\nIV 240\nV 400\nPosteriormente, entregou uma amostra de 0,5 g de\num alimento indeterminado a um dos estudantes, que\nrealizou o seguinte procedimento experimental: colocou\n4 mL de água em um tubo de ensaio e mediu a temperatura,\nencontrando 20 °C. Em seguida, o estudante queimou o\nalimento recebido, abaixo do tubo de ensaio contendo a\nágua, o que elevou a temperatura da água para 50 °C.\nConsidere que, nas condições do experimento, a perda de\ncalor para o ambiente é desprezível e o calor específico\nda água e sua densidade são, respectivamente,\n1 cal/(g °C) e 1 g/mL.\nQual alimento do quadro o estudante recebeu do professor?",
+    "alternativas": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV",
+      "E": "V"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q101.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q102",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 102,
+    "lingua_estrangeira": null,
+    "enunciado": "Um fabricante de eletrodomésticos desenvolveu\num compartimento refrigerador inovador que consegue\nresfriar, em apenas 7 minutos, duas latas de refrigerante\n(350 mL cada), com densidade igual a 1,0 g/mL.\nA refrigeração do líquido consome 21% da potência\ndo sistema quando o refrigerante tem sua temperatura\ndiminuída em 15 °C. Considere o calor específico do\nrefrigerante igual a 1,0 cal/(g °C) e 1 cal = 4,2 J.\nA potência total, em watt, desse dispositivo refrigerador\né, aproximadamente,",
+    "alternativas": {
+      "A": "105.",
+      "B": "120.",
+      "C": "315.",
+      "D": "500.",
+      "E": "1 500."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q103",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 103,
+    "lingua_estrangeira": null,
+    "enunciado": "Lentes fotocrômicas escurecem em ambientes externos\ncom alta incidência de luz ultravioleta (UVA), conforme\nilustrado. Uma vez na sombra, as lentes se tornam claras\nnovamente.\nAmbiente\ninterno\nAmbiente\nexterno\nEm lentes fotocrômicas de plástico, são utilizados\ncorantes orgânicos pertencentes à família dos\nindenonaftopiranos. Quando o corante fotocrômico\n(Estrutura 1) é exposto à alta incidência de radiação\nUVA, uma ligação química é quebrada. A molécula\nentão se rearranja, transformando-se em uma espécie\nque absorve radiação de comprimento de onda maior\n(Estrutura 2), fazendo com que a lente escureça.\nUVA\nO\nO\nEstrutura 1 Estrutura 2\nERICKSON, B. Self-Darkening Eyeglasses. Chemical & Engineering News,\nn. 87, 2009 (adaptado).\nO escurecimento desse tipo de lente ocorre porque as\nmoléculas de indenonaftopirano",
+    "alternativas": {
+      "A": "polimerizam, pela alta incidência de radicais.",
+      "B": "tautomerizam, pela reação no grupo enol.",
+      "C": "polarizam a luz, pela alta energia da luz UVA absorvida.",
+      "D": "oxidam, pela conversão do grupo éter em uma carbonila.",
+      "E": "dispersam a luz, pela ampliação do tamanho da molécula."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q103.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q104",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 104,
+    "lingua_estrangeira": null,
+    "enunciado": "Na última década, para melhorar a performance\ndos motores a combustão e reduzir o consumo, a\nindústria automobilística tem investido cada vez\nmais no desenvolvimento dos turbocompressores.\nO turbocompressor é formado por duas câmaras\ndistintas, chamadas caixa fria e caixa quente. No interior\nde cada uma dessas caixas, existe um rotor e ambos são\ninterligados por um mesmo eixo. Com a caixa quente\ninstalada no coletor de escapamento, a passagem dos\ngases faz girar o rotor. Consequentemente, gira também\no rotor da caixa fria, produzindo a compressão. Em alguns\nmodelos, é instalado, entre a turbina e a câmara de\nexplosão, um dispositivo denominado intercooler, que é\nreconhecido como um dos componentes principais para\nmelhorar a performance dos motores turbo. O intercooler\né uma espécie de radiador ou, mais especificamente,\num permutador de calor. Ele é posicionado entre o turbo\ne o coletor de admissão, tendo como uma das principais\nvantagens a redução da temperatura do ar quente que\nsai do turbo.\nDisponível em: www.turbocenter.com.br. Acesso em: 21 nov. 2019 (adaptado).\nO ar que sai do turbo está em alta temperatura porque",
+    "alternativas": {
+      "A": "sofreu uma compressão isocórica.",
+      "B": "sofreu uma compressão adiabática.",
+      "C": "sofreu uma transformação isotérmica.",
+      "D": "recebeu diretamente calor dos gases aquecidos do sistema de escape.",
+      "E": "recebeu diretamente calor do motor a combustão que está em alta temperatura."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q105",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 105,
+    "lingua_estrangeira": null,
+    "enunciado": "As baterias de lítio para carros elétricos são capazes\nde armazenar cerca de 700 Wh de energia em um volume\nde 1 L, enquanto a combustão de 1 L de etanol hidratado\nem um motor a combustão disponibiliza 6 300 Wh de\nenergia. Os motores a combustão têm uma eficiência\nbaixa, com apenas 30% da energia do combustível sendo\ntransformada em movimento. Já os motores elétricos\napresentam eficiência três vezes maior. Para estudar\na viabilidade de se utilizar a mesma plataforma de um\ncarro movido a álcool, com tanque de 40 L de combustível,\npara a produção de modelos elétricos, uma equipe de\nengenharia precisa estimar o volume da bateria de lítio\nque corresponda, no carro elétrico, à mesma quantidade\nenergética desse carro a álcool.\nVASCONCELOS, Y. Mais energia. Pesquisa Fapesp, n. 261, nov. 2017 (adaptado).\nO volume aproximado, em litro, da bateria de lítio a ser\nutilizada é",
+    "alternativas": {
+      "A": "36.",
+      "B": "120.",
+      "C": "360.",
+      "D": "400.",
+      "E": "1 080."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q106",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 106,
+    "lingua_estrangeira": null,
+    "enunciado": "Duas pessoas saem de suas casas para se exercitarem\nnuma pista retilínea cujo comprimento é D. Elas percorrem\ntodo o percurso e, ao final dele, retornam ao ponto de\npartida pelo mesmo caminho. A primeira delas caminha\ncom velocidade de módulo v, e a segunda corre com uma\nvelocidade de módulo 2v. As duas partem do mesmo\nponto, no mesmo instante.\nA distância percorrida pela segunda pessoa até o ponto\nem que as duas se encontram pela primeira vez é",
+    "alternativas": {
+      "A": "2D . 3 5D",
+      "B": ". 4",
+      "C": "4D . 3 5D",
+      "D": ". 3",
+      "E": "7D . 4"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q106.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q107",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 107,
+    "lingua_estrangeira": null,
+    "enunciado": "Dois operários deslizam uma pedra, para cima, sobre uma superfície inclinada com velocidade constante.\nUm deles puxa a pedra utilizando uma corda, enquanto o outro a empurra, conforme a figura. No instante em que\na pedra desliza sobre a posição B, apesar da força de atrito f exercida pela superfície, os pés dos operários não\nB\ndeslizam nas posições A e C, por causa, respectivamente, das forças de atrito f e f , exercidas sobre esses pés.\nA C\nN\nC\nB\nA P\nO diagrama que representa os sentidos das forças de atrito exercidas pela superfície da rampa nas posições A, B e C é:\nf\nC C\nf",
+    "alternativas": {
+      "A": "B B f A A f C C f",
+      "B": "B B f A A f C C",
+      "C": "f B B f A A f C C f",
+      "D": "B B f A A f C f C",
+      "E": "B B f A A"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q107.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q108",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 108,
+    "lingua_estrangeira": null,
+    "enunciado": "Os agentes lacrimogêneos são espécies químicas capazes de provocar forte irritação das vias aéreas superiores e\ndos olhos. Até o final da década de 1960, a cloroacetofenona (CA) foi a substância mais utilizada com essa finalidade.\nUma forma de descontaminar a pele exposta à CA consiste em lavá-la com uma solução aquosa de determinado sal,\no qual reagirá com a CA, conforme a reação representada.\nO O\nCl O OH\n+ sal + NaCl\nO\nAMORIM, N. M. et al. Química e armas não letais: gás lacrimogêneo em foco. Química Nova na Escola, n. 2, 2015 (adaptado).\nQual destes compostos pode ser usado para fazer essa descontaminação?",
+    "alternativas": {
+      "A": "NaCH COO 3",
+      "B": "NaHCO 3",
+      "C": "NaHSO 3",
+      "D": "Na SO 2 4",
+      "E": "NaOH"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q108.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q109",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 109,
+    "lingua_estrangeira": null,
+    "enunciado": "O etanol de segunda geração envolve o reaproveitamento dos resíduos do bagaço da cana e sua produção ocorre\nem um sistema fechado contínuo, que evita a evaporação. A figura ilustra esse processo.\nLevedura\nBagaço de Água\ncana-de-açúcar\nHidrólise CO\n2\nenzimática\nEtanol\nÁcido lático\nÁcido pirúvico\nn\nGLICOSE Bactérias contaminantes\nCELULOSE\nDorna de fermentação\nalcoólica\nCORONA CARVALHO, J. A. et al. Bagaço de cana-de-açúcar como fonte de glicose: pré-tratamento. Revista Virtual de Química, n. 9, nov. 2016 (adaptado).\nPara evitar o rompimento da dorna por pressão, qual substância, além do combustível, deverá ser continuamente removida\ndo sistema?",
+    "alternativas": {
+      "A": "Etanol.",
+      "B": "Glicose.",
+      "C": "Ácido lático.",
+      "D": "Ácido pirúvico.",
+      "E": "Dióxido de carbono."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q109.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q110",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 110,
+    "lingua_estrangeira": null,
+    "enunciado": "A altura de uma nota musical é determinada pela\nfrequência da vibração que a nota causa. No piano,\nconsidere como referência a nota Lá, cuja frequência\né 440 hertz, e a existência de outras notas Lá com\nfrequências acima e abaixo desta. A tabela a seguir\nmostra as frequências de algumas notas Lá, em função do\nnúmero n de oitavas abaixo e acima do Lá de referência,\ne o gráfico corresponde a uma função contínua que passa\npelos pontos dados na tabela.\nNúmero n de oitavas Número de hertz\n−2 110\n−1 220\n0 440\n1 880\n2 1 760\n3 3 520\nFrequência (hertz)\n7 000\n6 000\n5 000\n4 000\n3 000\n2 000\n1 000\n−2 −1 0 1 2 3 4\nJABLONSKI, F. J. Astrofísica observacional. Disponível em:\nhttp://mtc-m18.sid.inpe.br. Acesso em: 28 dez. 2012 (adaptado).\nA partir dessas informações, verifica-se que",
+    "alternativas": {
+      "A": "a variação da frequência da nota Lá é constante e igual a 2.",
+      "B": "a frequência da nota Lá cresce exponencialmente em função do número n de oitavas.",
+      "C": "para cada oitava acima da nota Lá usada como referência, a variação da frequência é 110 hertz.",
+      "D": "a função que estabelece a relação entre o número de oitavas e a frequência da nota Lá é decrescente somente entre −2 e 0.",
+      "E": "a função que estabelece a relação entre o número de oitavas e a frequência da nota Lá é decrescente para as oitavas abaixo e crescente para as oitavas acima do Lá usado como referência."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q110.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q111",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 111,
+    "lingua_estrangeira": null,
+    "enunciado": "Lavar a seco significa lavar por meio de fluido ou\nsolvente não aquoso, isto é, trata-se de um processo que\nlimpa sem utilizar a água. Dessa forma, apesar de o nome\nser lavagem a seco, o processo deixa o que está sendo\nlavado molhado pelo solvente utilizado, o qual poderá ser\nfacilmente evaporado ao final do processo. Entre 1850\ne 1940, foram empregados na lavagem a seco alguns\nhidrocarbonetos e organoclorados líquidos, como os que\nestão representados a seguir, entre os quais apenas um\nse mostrou seguro por não ser inflamável, em função\nda sua menor quantidade de ligações C―H.\nHexano\nCanfeno\nBenzeno\nIso-octano\nCl Cl\nCl\nTricloroetileno\nBORGES, L. D.; MACHADO, P. F. L. Lavagem a seco.\nQuímica Nova na Escola, n. 1, fev. 2013 (adaptado).\nPela análise das estruturas químicas, o solvente que se\nmostrou seguro é o",
+    "alternativas": {
+      "A": "hexano.",
+      "B": "canfeno.",
+      "C": "benzeno.",
+      "D": "iso-octano.",
+      "E": "tricloroetileno."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q111.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q112",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 112,
+    "lingua_estrangeira": null,
+    "enunciado": "A Caatinga está em risco: estudo revela que 59% da\nvegetação natural desse bioma já sofreram algum tipo\nde modificação por atividades humanas. Um problema\nque esse bioma enfrenta é o fenômeno da desertificação.\nSegundo cientistas, à medida que a agricultura avança\nna região, esse fenômeno ganha maiores proporções.\nPara os cientistas, essa constatação evidencia a grande\nnecessidade de medidas urgentes para a preservação\nda Caatinga, que hoje só tem 1% de sua área inclusa em\nunidades de conservação.\nFERRAZ, M. Caatinga, muito prazer. Ciência Hoje, n. 251, 2008 (adaptado).\nA Caatinga pode ser considerada um ambiente frágil,\nonde a desertificação",
+    "alternativas": {
+      "A": "ocorre devido à presença de solos ricos em nutrientes, porém rasos.",
+      "B": "ocorre devido à presença de um lençol freático extenso, porém raso.",
+      "C": "deverá regredir nos próximos anos devido ao regime de chuvas da região.",
+      "D": "é um problema de pouca importância, pois atinge poucas regiões do bioma.",
+      "E": "pode ser evitada mantendo-se a vegetação nativa, que impede esse fenômeno."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q113",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 113,
+    "lingua_estrangeira": null,
+    "enunciado": "A incapacidade de perceber certas cores é\ndenominada daltonismo. Um tipo raro é classificado\nde tritanomalia e corresponde a um defeito nos cones\nsensíveis à cor azul. O gene responsável pela herança\nsitua-se no cromossomo 7, permitindo que homens e\nmulheres sejam igualmente afetados. Além disso, casais\nsem tritanomalia podem ter crianças com a herança.\nO padrão dessa herança rara é",
+    "alternativas": {
+      "A": "ligado ao X e recessivo.",
+      "B": "ligado ao Y e recessivo.",
+      "C": "ligado ao X e dominante.",
+      "D": "autossômico e recessivo.",
+      "E": "autossômico e dominante."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q114",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 114,
+    "lingua_estrangeira": null,
+    "enunciado": "Um homem submetido à vasectomia tem a conexão\ndos testículos com a uretra interrompida em função do\ncorte dos canais deferentes. Esse método contraceptivo\né considerado definitivo quando a cirurgia é realizada\ncorretamente.\nEsse método contraceptivo é eficiente porque",
+    "alternativas": {
+      "A": "interrompe a liberação de sêmen.",
+      "B": "cessa a produção de espermatozoides.",
+      "C": "inibe a atividade hormonal dos testículos.",
+      "D": "impede a passagem de espermatozoides para o sêmen.",
+      "E": "modifica a atividade das glândulas produtoras de sêmen."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q115",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 115,
+    "lingua_estrangeira": null,
+    "enunciado": "A análise da atividade de dois cultivos celulares\nmantidos com diferentes substratos está representada\nno quadro.\nRendimento\nCultivo celular Substrato energético dos\nprodutos\nA Glicose + O 219 kcal/mol\n2\nB Glicose 29 kcal/mol\nQual organela celular não está ativa no cultivo B?",
+    "alternativas": {
+      "A": "Núcleo.",
+      "B": "Lisossomos.",
+      "C": "Mitocôndrias.",
+      "D": "Complexo de Golgi.",
+      "E": "Retículo endoplasmático."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q115.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q116",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 116,
+    "lingua_estrangeira": null,
+    "enunciado": "No ciclo de vida de um inseto endoparasitoide, as larvas\nse desenvolvem dentro de um hospedeiro. Essa relação\nleva o hospedeiro à morte, por isso considera-se que o\nparasitoidismo é um misto de parasitismo e predação.\nA larva desse inseto possui a vantagem adaptativa de",
+    "alternativas": {
+      "A": "ficar livre do ataque de predadores.",
+      "B": "poder se reproduzir dentro do hospedeiro.",
+      "C": "ter alimento durante o seu desenvolvimento.",
+      "D": "estar protegida contra o ataque de parasitas.",
+      "E": "desenvolver-se em ambiente com temperatura constante."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q117",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 117,
+    "lingua_estrangeira": null,
+    "enunciado": "Observam-se, na figura, peixes nadando na superfície\nde um lago em estágio muito avançado de eutrofização.\nEsse fenômeno pode ser causado pelo aporte externo\nde nutrientes na água, principalmente em razão da ação\nantrópica. Os corpos-d’água adquirem uma coloração\nturva, o que bloqueia a penetração de luz e impede a\nfotossíntese. O problema se agrava quando as algas\ncomeçam a morrer e uma grande quantidade de nutrientes\nprovenientes delas ficam disponíveis aos decompositores,\nque proliferam.\nDisponível em: www.pea.org.br. Acesso em: 15 out. 2015 (adaptado).\nO comportamento do animal no ambiente mencionado\nse deve ao(à)",
+    "alternativas": {
+      "A": "proliferação de microrganismos patogênicos, o que promove sua fuga para a superfície.",
+      "B": "aumento da quantidade de nutrientes, o que facilita a sua alimentação.",
+      "C": "elevação da densidade da água, o que dificulta o deslocamento vertical.",
+      "D": "restrição de oxigênio, o que os obriga a buscar o gás na interface.",
+      "E": "redução da luminosidade, o que os impede de enxergar."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q117.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q118",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 118,
+    "lingua_estrangeira": null,
+    "enunciado": "Anualmente, o número de casos de dengue aumenta\nsubstancialmente no Brasil, mas ainda não há uma\nvacina amplamente disponível. Quatro sorotipos do\nvírus circulam no país e são todos transmitidos pelas\nfêmeas do mosquito Aedes aegypti. Os casos mais\ngraves evoluem para a fase hemorrágica, que pode levar\nà morte por choque hipovolêmico. Muitos desses casos\nacontecem quando o indivíduo contrai a doença pela\nsegunda vez com um sorotipo diferente daquele contra\no qual já produziu anticorpos.\nO que tem dificultado o desenvolvimento de uma vacina\npara essa doença é a",
+    "alternativas": {
+      "A": "resistência do homem contra antígenos específicos do vírus.",
+      "B": "baixa resposta imunogênica da espécie humana contra o vírus.",
+      "C": "obtenção de antígenos que representem os quatro sorotipos do vírus.",
+      "D": "reação cruzada de anticorpos produzidos pelo indivíduo contra outros vírus.",
+      "E": "ausência de resposta imune dos indivíduos após a primeira infecção pelo vírus."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q119",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 119,
+    "lingua_estrangeira": null,
+    "enunciado": "Ácido nítrico é um importante reagente usado no\npreparo de nitrato de amônio, NH NO , um fertilizante\n4 3\nnitrogenado. Industrialmente, o ácido nítrico é obtido a\npartir da reação da amônia com gás oxigênio, um processo\nque ocorre em três etapas, todas exotérmicas.\nEtapa 1: 4 NH (g) + 5 O (g) → 4 NO (g) + 6 H O (l)\n3 2 2\nEtapa 2: 2 NO (g) + O (g) → 2 NO (g)\n2 2\nEtapa 3: 3 NO (g) + H O (l) → 2 HNO (aq) + NO (g)\n2 2 3\nNa primeira etapa, forma-se NO, o qual reage com\nmais oxigênio formando NO , um óxido ácido, que reage\n2\ncom a água formando HNO e NO. O composto NO é,\n3\nportanto, um subproduto da reação. É importante o seu\nreaproveitamento, senão ele pode ser liberado para o\nambiente, onde reagirá com o oxigênio, formando NO .\n2\nATKINS, P.; JONES, L. Princípios de química: questionando a vida moderna\ne o meio ambiente. Porto Alegre: Bookman, 2006 (adaptado).\nO procedimento que permite diminuir a quantidade\nformada do subproduto NO é aumentar a",
+    "alternativas": {
+      "A": "pressão de oxigênio, na etapa 1.",
+      "B": "concentração de NO , na etapa 3. 2",
+      "C": "quantidade de amônia, na etapa 1.",
+      "D": "quantidade de oxigênio, na etapa 2.",
+      "E": "temperatura dos reagentes, na etapa 1."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q119.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q120",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 120,
+    "lingua_estrangeira": null,
+    "enunciado": "Na produção do politereftalato de etileno, o PET,\nutiliza-se como reagente o para-dimetilbenzeno,\ntambém chamado de para-xileno, que deve ter alta\npureza. No entanto, o para-xileno obtido do petróleo\npossui contaminação dos seus isômeros orto-xileno\ne meta-xileno, cujas estruturas são apresentadas na\nfigura. No quadro, são listadas as temperaturas de fusão\ne ebulição desses três isômeros.\nCH\n3\nCH\nCH 3\n3\nCH\n3\nCH\n3\nCH\n3\norto-xileno meta-xileno para-xileno\nTemperatura de Temperatura de\nIsômero\nfusão (°C) ebulição (°C)\norto-xileno −25 144\nmeta-xileno − 47,4 139,3\npara-xileno 13,5 137,5\nQual processo de separação permite a purificação desse\nreagente?",
+    "alternativas": {
+      "A": "Destilação simples.",
+      "B": "Cristalização simples.",
+      "C": "Destilação fracionada.",
+      "D": "Extração líquido-líquido.",
+      "E": "Solidificação fracionada."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q120.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q121",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 121,
+    "lingua_estrangeira": null,
+    "enunciado": "O tratamento do esgoto gerado por fábricas e\nresidências pode se tornar mais acessível em virtude de\numa nova proposta tecnológica, que utiliza um reator capaz\nde transformar nitrogênio orgânico, presente no esgoto, em\nnitrogênio inorgânico. A tecnologia prevê o uso de um cilindro\nde acrílico com espuma de poliuretano em seu interior,\nsob a qual se fixam bactérias capazes de tratar o efluente.\nAs bactérias que ficam no exterior da espuma realizam\nreações de nitrificação desse substrato, e as que ficam\nno interior da espuma realizam reações de desnitrificação.\nDisponível em: http://cienciahoje.uol.com.br. Acesso em: 25 jun. 2015 (adaptado).\nNa primeira etapa do processo, que ocorre no exterior da\nespuma, a ação das bactérias consiste em",
+    "alternativas": {
+      "A": "converter nitrogênio gasoso (N ) em fertilizante. 2",
+      "B": "usar CO para converter nitrato em nitrogênio 2 gasoso (N ). 2",
+      "C": "transformar a matéria orgânica morta em íons amônio (NH +). 4",
+      "D": "capturar nitrogênio gasoso (N ) e convertê-lo em 2 amônia (NH ). 3",
+      "E": "utilizar O para transformar amônia (NH ) em nitrito 2 3 e, após, em nitrato."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q121.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q122",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 122,
+    "lingua_estrangeira": null,
+    "enunciado": "O lançamento de 60 satélites altamente refletores\npela empresa SpaceX está preocupando os cientistas:\na “superpopulação” de satélites ameaça a nossa\nobservação das estrelas. A SpaceX espera que um\ndia seja possível ter 12 mil satélites na órbita da Terra,\npermitindo o acesso à internet de alta velocidade, com\na qual toda a humanidade só pode sonhar. A SpaceX é\nsó uma das companhias no setor da internet via satélite.\n“Se muitos dos satélites dessas novas\nmegaconstelações tiverem esse tipo de brilho constante,\nentão em 20 anos ou menos, o olho humano passará a ver,\ndurante boa parte da noite em qualquer lugar do mundo,\nmais satélites do que estrelas”.\nAstrônomos alertam: satélites da SpaceX podem mudar céu noturno.\nDisponível em: https://br.sputniknews.com. Acesso em: 21 nov. 2019 (adaptado).\nA preocupação dos astrônomos baseia-se no fato de\nesses satélites",
+    "alternativas": {
+      "A": "refletirem a luz do Sol durante o período noturno, ofuscando a luz das demais estrelas.",
+      "B": "emitirem para a Terra muita radiação luminosa que se sobrepõe à das estrelas.",
+      "C": "refratarem a luz das estrelas, desviando os raios dos telescópios posicionados na superfície da Terra.",
+      "D": "refletirem a luz do Sol durante o período diurno, ofuscando a luz das demais estrelas.",
+      "E": "emitirem de volta para o espaço a luz das estrelas que seria captada pelos telescópios posicionados na superfície da Terra."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q123",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 123,
+    "lingua_estrangeira": null,
+    "enunciado": "O esquema representa a etapa fotoquímica da fotossíntese. As moléculas de clorofila e os pigmentos acessórios\nque compõem os fotossistemas I e II são excitados pela radiação luminosa. A energia dessa excitação retira elétrons das\nmoléculas de clorofila a P , no Fotossistema II, e de clorofila a P , no Fotossistema I. Esses elétrons são responsáveis\n680 700\npelo mecanismo de fosforilação do ADP formando ATP e pela redução do NADP+ em NADPH.\nFotossistema I\nP *\n700\nA\n0\nFeSx\nFotossistema II FNR\nP *\n680\nFeO NADP +\nQa\nComplexo\nde\nNADPH\ncitocromo\nhν\nP\n700\nADP + Pi ATP\nP\n680\nComplexo\nhν produtor\nde oxigênio\nHO O + H+\n2 2\naigrenE\nSADAVA, D. et al. Vida: a ciência da biologia. Porto Alegre: Artmed, 2009 (adaptado).\nO agente redutor primário responsável pela reposição dos elétrons perdidos no Fotossistema II é o(a)",
+    "alternativas": {
+      "A": "complexo Fotossistema I.",
+      "B": "complexo de citocromo.",
+      "C": "molécula de água.",
+      "D": "molécula de ADP.",
+      "E": "radiação solar."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q123.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q124",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 124,
+    "lingua_estrangeira": null,
+    "enunciado": "Hoje em dia, não é raro encontrar sacolas plásticas preenchidas com apenas um ou dois produtos. E não só no\nsupermercado: da padaria à farmácia, o consumidor está sempre diante de uma sacola, mesmo que ela não seja tão\nnecessária assim. A cada mês, cerca de 1,5 bilhão de sacolas são consumidas no Brasil. Isso significa 50 milhões\npor dia e 18 bilhões ao ano. Não é à toa, portanto, que o uso indiscriminado de sacolas virou um dos alvos preferidos\ndos ambientalistas.\nRevista Sustenta, n. 1, out. 2008 (adaptado).\nOs ambientalistas consideram o uso excessivo de sacolas plásticas um risco ambiental, pois",
+    "alternativas": {
+      "A": "o uso de materiais descartáveis incrementa o consumo.",
+      "B": "o plástico é derivado do petróleo, recurso natural escasso.",
+      "C": "as sacolas se transformam em lixo de difícil decomposição.",
+      "D": "o risco de contaminação do solo e subsolo por gases tóxicos aumenta.",
+      "E": "o consumo de produtos industrializados é estimulado em detrimento dos artesanais."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q125",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 125,
+    "lingua_estrangeira": null,
+    "enunciado": "Para se utilizar um controle remoto que funciona com\numa diferença de potencial de 3 V, compraram-se duas\npilhas tipo AA de 1,5 V cada uma. Sabe-se que a ligação\nem série dessas pilhas possibilita um aumento da diferença\nde potencial do conjunto e da energia total disponível.\nQuando ligadas em paralelo, no entanto, só ocorre o\naumento da energia total disponível.\nQual dos esquemas representa a ligação correta das\npilhas utilizadas no controle remoto?",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q125.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q126",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 126,
+    "lingua_estrangeira": null,
+    "enunciado": "Lâmpadas incandescentes são constituídas de um\nfilamento de tungstênio dentro de um bulbo de vidro\ncom um gás a baixa pressão. Essas lâmpadas podem\napresentar diferentes potências quando submetidas à\nmesma tensão elétrica.\nUm estudante precisa selecionar uma lâmpada que\nforneça o maior brilho, para isso deverá selecionar\naquela que possui o filamento mais",
+    "alternativas": {
+      "A": "curto, pois terá a menor resistência.",
+      "B": "comprido, pois terá a maior resistência.",
+      "C": "curto, pois terá a menor resistividade.",
+      "D": "curto, pois terá a menor corrente elétrica.",
+      "E": "comprido, pois terá a menor resistividade."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q127",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 127,
+    "lingua_estrangeira": null,
+    "enunciado": "O odor desagradável de peixe deve-se principalmente\na compostos orgânicos que contêm um grupo amino\n(R―NH ), em que R representa um grupo alquil. Um chefe\n2\nde cozinha experimental dispõe, em seu laboratório, de\ncinco soluções aquosas, dentre as quais deve escolher uma\npara eliminar o odor de peixe, por meio da neutralização\ndo grupo amino. Suponha que a molécula responsável\npelo odor é a metilamina (CH NH , K = 5,5 × 10−4).\n3 2 b\nO quadro apresenta dados de acidez/basicidade de\nalgumas espécies químicas.\nH B\nConsidere: K e K 2\nEspécie Dados de acidez/\nSolução aquosa\nquímica basicidade\nHipoclorito de sódio\nClO− K = 2,5 × 10−7\n(NaClO) b\nHidrogenocarbonato\nHCO − K = 2,8 × 10−8\nde sódio (NaHCO ) 3 b\n3\nÁcido etanoico CH COOH K = 1,8 × 10−5\n3 a\nCloreto de sódio\nNa+ K = 1,6 × 10−15\n(NaCl) a\nEtanol CH CH OH K = 1,3 × 10−16\n3 2 a\nQual substância deve ser escolhida pelo chefe de cozinha?",
+    "alternativas": {
+      "A": "NaClO",
+      "B": "NaHCO 3",
+      "C": "CH COOH 3",
+      "D": "NaCl",
+      "E": "CH CH OH 3 2"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q127.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q128",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 128,
+    "lingua_estrangeira": null,
+    "enunciado": "As anfetaminas são drogas sintéticas utilizadas como\nmoderadores de apetite no tratamento de obesidade.\nEssas drogas atuam sobre receptores celulares\nestimulando a produção de adrenalina, um hormônio\ncatabólico responsável por várias funções fisiológicas\nno organismo. Entretanto, a produção exagerada desse\nhormônio pode gerar mudanças fisiológicas indesejáveis\ne até perigosas para a saúde.\nA alteração fisiológica observada pelo uso indevido\ndessas drogas é o(a)",
+    "alternativas": {
+      "A": "diminuição da pressão arterial.",
+      "B": "diminuição da frequência cardíaca.",
+      "C": "aumento da contração dos brônquios.",
+      "D": "aumento das secreções gastrointestinais.",
+      "E": "aumento da concentração de glicose sanguínea."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q129",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 129,
+    "lingua_estrangeira": null,
+    "enunciado": "Fatores como introdução de espécies exóticas,\ndestruição de hábitats e caça predatória têm como\nimpacto a perda de biodiversidade. Isso tem como possível\nconsequência a redução do potencial para gerar alimentos\ne produzir medicamentos.\nUma medida efetiva para a redução desse impacto é o(a)",
+    "alternativas": {
+      "A": "plantio de espécies nativas.",
+      "B": "promoção de endocruzamentos.",
+      "C": "criação de espécies em cativeiro.",
+      "D": "isolamento de fragmentos de matas nativas.",
+      "E": "manutenção de espécies com mesmo nicho ecológico."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q130",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 130,
+    "lingua_estrangeira": null,
+    "enunciado": "Um grupo de pesquisadores interessados no estudo\ndo efeito da paisagem na diversidade genética em\npopulações de marsupiais Caluromys philander considerou\nduas paisagens distintas: uma contínua (Pontos 1 e 2)\ne outra fragmentada (Fragmentos 1 e 2), que foi desmatada\npara o plantio de soja. Coletaram amostras de tecidos de\ndez indivíduos em cada paisagem e extraíram o DNA,\nverificando a variabilidade genética, como apresentado\nno quadro.\nGenótipo de um lócus gênico de\nindivíduos de Caluromys philander\nContínua Fragmentada\nIndivíduo\nPonto 1 Ponto 2 Fragmento 1 Fragmento 2\n1 A2A3 A2A2 A1A1 A3A3\n2 A2A3 A2A2 A2A1 A3A3\n3 A3A3 A3A3 A1A1 A3A3\n4 A1A2 A2A3 A1A1 A3A3\n5 A3A3 A2A3 A2A2 A3A3\n6 A2A3 A3A3 A1A1 A2A2\n7 A2A3 A2A4 A1A1 A3A3\n8 A2A2 A2A3 A1A1 A3A3\n9 A2A2 A2A4 A1A1 A3A3\n10 A1A2 A2A2 A1A1 A3A3\nLIMA, J. S.; OPREA, M.; COLLEVATI, R. G. Efeito da paisagem na diversidade e diferenciaçã o\ngenética das populações. Genética na Escola, n. 1, 2015 (adaptado).\nCom base nos resultados, qual é a estratégia eficiente no\nmanejo e na conservação dessa espécie?",
+    "alternativas": {
+      "A": "Realização da fragmentação do hábitat.",
+      "B": "Criação de barreiras de redução do fluxo gênico.",
+      "C": "Manutenção da conectividade entre os fragmentos.",
+      "D": "Diminuição da dispersão de indivíduos entre diferentes populações.",
+      "E": "Manutenção do acasalamento entre indivíduos aparentados dentro das populações."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q130.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q131",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 131,
+    "lingua_estrangeira": null,
+    "enunciado": "A primeira tecnologia comercial de comunicação da\ninternet foi realizada usando a rede de voz telefônica,\nimplantada por pares de fios condutores (par trançado),\nque permitiam uma transferência máxima de 56 kbps\n(quilobites por segundo). Nesse padrão de comunicação, a\ntransferência se faz usando uma onda quadrada modulada,\ncom os níveis 1 e 0 representados pela diferença de\npotencial (d.d.p.) nos fios ou pela ausência dessa d.d.p.\nNas comunicações atuais, a capacidade de transferência\nde dados por fibra óptica ou micro-ondas (usando uma\nonda de 2,5 GHz na tecnologia 4G ou uma de 3,5 GHz\nna tecnologia 5G) é muito superior. Na 5G está prevista\numa capacidade de transferência superior a 10 Gbps para\ncada dispositivo conectado. Considere que a informação\n2\né transportada a uma velocidade igual a da velocidade\n3\nda luz (c = 3 × 108 m/s), por uma perturbação do campo\nelétrico ou por uma onda eletromagnética.\nOs comprimentos, em metro, de um bit de informação\ntransportado no par trançado e na rede 5G,\nrespectivamente, são mais próximos de",
+    "alternativas": {
+      "A": "3,6 × 103 e 2,0 × 10–2.",
+      "B": "3,6 × 103 e 8,6 × 10–2.",
+      "C": "3,6 × 10–1 e 2,0 × 10–1.",
+      "D": "5,4 × 10–1 e 8,6 × 10–2.",
+      "E": "5,4 × 10–1 e 3,0 × 10–2."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q131.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q132",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 132,
+    "lingua_estrangeira": null,
+    "enunciado": "O ser humano é incapaz de enxergar a radiação\ninfravermelha e as ondas de rádio (baixas frequências),\nassim como a ultravioleta e os raios X (altas frequências).\nA observação dessas faixas do espectro pode ser\nrealizada por meios indiretos, por exemplo, usando um\ncintilador, que é uma placa utilizada como sensor para\ndetectar um feixe de raios X, pois emite luz quando o\nfeixe incide sobre ela.\nPara que uma pessoa enxergue a incidência de raios X\nno cintilador, é necessário que essa placa",
+    "alternativas": {
+      "A": "reflita o feixe de raios X, alterando sua polarização.",
+      "B": "transmita o feixe de raios X, alterando sua polarização.",
+      "C": "absorva o feixe de raios X, reemitindo parte de sua energia na região do visível.",
+      "D": "absorva o feixe de raios X, reemitindo parte de sua energia na região do ultravioleta.",
+      "E": "absorva o feixe de raios X, reemitindo parte de sua energia na região do infravermelho."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q133",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 133,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma microempresa adquire um sistema fotovoltaico\nde captação de energia solar para reduzir o gasto mensal de\nenergia elétrica. O sistema é composto de 15 placas\ncom potência média útil de 150 W por placa, realizando\ncaptação de energia solar oito horas por dia. A energia\ncaptada é armazenada em um conjunto de baterias de 12 V.\nO sistema apresenta também um inversor, cuja função é\nconverter a tensão de 12 V contínua para 120 V alternada,\ne sua eficiência é de 80%. A microempresa trabalha doze\nhoras por dia, utilizando a energia captada pelo sistema solar.\nAs intensidades das correntes elétricas, em ampère, na\nentrada e saída do inversor são, respectivamente,",
+    "alternativas": {
+      "A": "100 e 8.",
+      "B": "100 e 10.",
+      "C": "125 e 10.",
+      "D": "125 e 12,5.",
+      "E": "1 500 e 150."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q134",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 134,
+    "lingua_estrangeira": null,
+    "enunciado": "No manual de bolso sobre a sífilis, disponibilizado\ngratuitamente pelo Ministério da Saúde, é informado que a\nsífilis congênita é resultado da disseminação hematogênica\ndo Treponema pallidum, presente no sangue da gestante\ninfectada. A falta de tratamento ou tratamento inadequado\ndurante o período embrionário causa a transmissão vertical\npor via transplacentária.\nManual de bolso — sífilis. Disponível em: http://bvsms.saude.gov.br.\nAcesso em: 10 fev. 2012 (adaptado).\nConsidere uma gestante que descobre, no primeiro mês\nde gravidez, estar contaminada por essa bactéria. Para\ndiminuir a chance de contaminação do feto, a gestante\ndeverá",
+    "alternativas": {
+      "A": "realizar um transplante de placenta.",
+      "B": "tratar por via transplacentária o embrião.",
+      "C": "fazer exames sorológicos durante a gestação.",
+      "D": "eliminar o quanto antes o parasita de seu sangue.",
+      "E": "medicar adequadamente a criança logo após o nascimento."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q135",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 135,
+    "lingua_estrangeira": null,
+    "enunciado": "Balões cheios de gás hélio são soltos no ar pelas\ncrianças e sobem até não serem mais vistos em poucos\nminutos.\nDurante a subida, o gás no interior do balão sofre\naumento de",
+    "alternativas": {
+      "A": "volume.",
+      "B": "pressão.",
+      "C": "densidade.",
+      "D": "temperatura.",
+      "E": "massa molar."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q136",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 136,
+    "lingua_estrangeira": null,
+    "enunciado": "Um funcionário de uma loja de computadores\nmisturou, por descuido, três computadores defeituosos\ncom sete computadores perfeitos que estavam no estoque.\nUma pequena empresa fez a compra de cinco\ncomputadores nessa loja, escolhendo-os aleatoriamente\ndentre os dez que estavam no estoque.\nQual é a probabilidade de essa empresa ter levado, em\nsua compra, todos os três computadores defeituosos?\n1",
+    "alternativas": {
+      "A": "72 1",
+      "B": "12 1",
+      "C": "4 3",
+      "D": "10 3",
+      "E": "7"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q136.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q137",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 137,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma empresa fundada em 2005, ao longo dos anos\nganhou popularidade e aumentou consideravelmente sua\natuação na economia do país. Os lucros anuais e seu\npadrão de crescimento podem ser observados na tabela.\nLucro\nAno\n(em milhares de reais)\n2005 3\n2006 5\n2007 9\n2008 17\n2009 33\n... ...\nSupondo que se tenha mantido o padrão observado na\ntabela para os 5 anos seguintes, estima-se que o lucro total\ndessa empresa, de 2005 a 2014, em milhar de real, foi",
+    "alternativas": {
+      "A": "120.",
+      "B": "134.",
+      "C": "1 025.",
+      "D": "2 056.",
+      "E": "2 074."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q137.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q138",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 138,
+    "lingua_estrangeira": null,
+    "enunciado": "“Quanto é mil trilhões\nVezes infinito?”\nTOLLER, P. Oito anos. In: Paula Toller. Rio de Janeiro: Warner Music Brasil, 1998.\nO trecho da canção Oito anos, de Paula Toller, foi\napresentado por um professor de matemática a um grupo\nde cinco alunos. Em seguida, o professor solicitou que\ncada aluno apresentasse uma expressão matemática\nque traduzisse os versos citados. Cinco respostas diferentes\nforam dadas:\nResposta 1: 109 × ∞\nResposta 2: 1012 × ∅\nResposta 3: 1012 × ∞\nResposta 4: 1015 × ∅\nResposta 5: 1015 × ∞\nA resposta que representa matematicamente o trecho da\ncanção é a",
+    "alternativas": {
+      "A": "1.",
+      "B": "2.",
+      "C": "3.",
+      "D": "4.",
+      "E": "5."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q138.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q139",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 139,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma câmara de resfriamento de um laboratório tem\num dispositivo que, ao ser ajustado, alterará a temperatura,\nem grau Celsius, de um líquido ao final de cada minuto.\nNessa câmara, existem dois visores, o primeiro indicando\no quanto a temperatura do líquido deve ser diminuída ao\nfinal de cada minuto, e o segundo indicando a temperatura\ndo líquido na câmara naquele instante.\nFoi iniciado um teste nessa câmara quando um líquido,\nà temperatura de 30 °C, foi colocado em seu interior.\nEla estava programada no primeiro visor em 1,4 °C.\nNo final de 5 minutos, foi alterada a temperatura, e o valor\nda mudança que aparecia no primeiro visor foi diminuído\nem 0,5 °C. Ao final de 15 minutos do início do teste, a\ntemperatura registrada no primeiro visor foi aumentada\nem 0,3 °C em relação à última marcação.\nUm dos objetivos desse teste é que, ao final de\n30 minutos, a temperatura do líquido seja de 0 °C. Assim,\napós 25 minutos relativamente ao início do teste, novo\najuste deve ser feito na numeração do primeiro visor.\nQue alteração deverá ser feita na numeração do primeiro\nvisor ao final de 25 minutos do início do teste?",
+    "alternativas": {
+      "A": "Aumentar 4,0 °C.",
+      "B": "Aumentar 3,0 °C.",
+      "C": "Aumentar 1,0 °C.",
+      "D": "Diminuir 0,8 °C.",
+      "E": "Diminuir 3,0 °C."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q140",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 140,
+    "lingua_estrangeira": null,
+    "enunciado": "O síndico de um condomínio contratou uma empresa\npara verificar a qualidade da água dos cinco reservatórios\nque alimentam esses edifícios. A empresa utiliza um\nteste que fornece o valor de um parâmetro, expresso em\npontos que variam de 0 a 100, que indicam a qualidade da\nágua, sendo o valor 0 associado à péssima qualidade e\n100 associado à ótima qualidade da água. Quando esse\nparâmetro assume um valor a partir de 50 pontos, a água\né considerada de qualidade adequada.\nPara os reservatórios I, II, III e IV, esse parâmetro\nassumiu, respectivamente, os valores 64, 53, 63 e 64\nnesse tipo de teste. Já no reservatório V, esse parâmetro\nfoi de 20 pontos, reprovando a qualidade da água. Com\nisso, a água desse reservatório será tratada de modo a\naumentar sua qualidade.\nO síndico pretende que o parâmetro de qualidade da\nágua do reservatório V aumente o suficiente para que a\nmédia dos parâmetros de qualidade da água dos cinco\nreservatórios seja, no mínimo, igual a 60 pontos.\nA quantidade mínima de pontos que o parâmetro da\nqualidade da água do reservatório V deve aumentar é",
+    "alternativas": {
+      "A": "36.",
+      "B": "40.",
+      "C": "41.",
+      "D": "43.",
+      "E": "44."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q141",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 141,
+    "lingua_estrangeira": null,
+    "enunciado": "Após uma reforma, um clube decide comprar duchas\npara serem instaladas no vestiário. O tipo de ducha\nescolhida, segundo o fabricante, tem probabilidade igual a\n1\nde apresentar funcionamento irregular. O administrador\n10\ndo clube planeja adquirir uma certa quantidade dessas\nduchas, de forma que a probabilidade de que pelo menos\numa das duchas adquiridas apresente funcionamento\n99\nregular seja igual a, no mínimo, .\n100\nA quantidade mínima de duchas que deverá ser adquirida\npara atender ao planejamento desse administrador é",
+    "alternativas": {
+      "A": "2.",
+      "B": "8.",
+      "C": "9.",
+      "D": "10.",
+      "E": "11."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q141.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q142",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 142,
+    "lingua_estrangeira": null,
+    "enunciado": "Na modelagem e no estudo de fenômenos\nperiódicos, em geral, os modelos associados fazem uso\nde funções trigonométricas. Nesse sentido, considere\num experimento, realizado em laboratório, em que uma\nplanta foi colocada em uma estufa, onde a temperatura\né controlável. O experimento consiste em observar\nalterações nas características dessa planta ao ser\nsubmetida a variações de temperatura. Durante 24 horas,\na temperatura T(x) da estufa variou de acordo\n(cid:29) x(cid:26)\ncom a função T(x) = 20 − 10sen(cid:27)(cid:31)(cid:30) (cid:24), em que x\n(cid:28) 4(cid:25)\né medido em hora, variando no intervalo 0 ≤ x ≤ 24.\nDurante esse experimento, quantas vezes a temperatura\nna estufa atingiu o seu valor mínimo?",
+    "alternativas": {
+      "A": "1",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "7"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q142.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q143",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 143,
+    "lingua_estrangeira": null,
+    "enunciado": "A nota final de um estudante em uma disciplina é dada\npela mediana das notas de suas quatro provas.\nCinco estudantes dessa disciplina obtiveram as notas\napresentadas no quadro.\nEstudante Prova 1 Prova 2 Prova 3 Prova 4\nI 85 45 90 45\nII 80 70 70 75\nIII 75 75 75 55\nIV 85 35 35 90\nV 60 70 70 75\nO professor dessa disciplina pediu a cada estudante\nque calculasse sua nota final e lhe apresentasse o resultado\nobtido. Os resultados informados pelos estudantes foram:\n• estudante I: 77;\n• estudante II: 70;\n• estudante III: 70;\n• estudante IV: 60;\n• estudante V: 70.\nQual(is) estudante(s) acertou(aram) sua nota final?",
+    "alternativas": {
+      "A": "I",
+      "B": "III",
+      "C": "II e III",
+      "D": "II e V",
+      "E": "IV e V"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q143.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q144",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 144,
+    "lingua_estrangeira": null,
+    "enunciado": "A tartaruga ou tachão de trânsito é um dispositivo de\nsinalização horizontal utilizado para canalizar o tráfego\nou garantir o afastamento do fluxo de veículos de zonas\nperigosas ou com grande risco de acidentes. A Figura 1\napresenta alguns deles já instalados.\nFigura 1\nDisponível em: www.alfasinalizacao.com.br. Acesso em: 28 nov. 2021 (adaptado).\nO modelo geométrico de um tachão está representado\nna Figura 2. Ele é formado por duas faces retangulares\nparalelas e quatro faces trapezoidais. Suas arestas\nlaterais, se prolongadas, concorrem em um mesmo ponto.\nFigura 2\nQual é o sólido representado pelo modelo geométrico\ndo tachão?",
+    "alternativas": {
+      "A": "Paralelepípedo reto.",
+      "B": "Paralelepípedo oblíquo.",
+      "C": "Pirâmide quadrangular.",
+      "D": "Tronco de pirâmide hexagonal.",
+      "E": "Tronco de pirâmide quadrangular."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q144.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q145",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 145,
+    "lingua_estrangeira": null,
+    "enunciado": "Os candidatos A, B e C participaram de um concurso\ncomposto por uma prova de Matemática, uma de Português\ne outra de Geografia, sendo os pesos dessas três provas\ndiferentes. As notas obtidas por esses três candidatos e\nos pesos atribuídos a essas provas estão representados\nnas tabelas:\nTabela I (Notas)\nCandidato Matemática Português Geografi a\nA 9 6 7\nB 8 7 8\nC 9 5 6\nTabela II (Pesos)\nMatérias Pesos\nMatemática 3\nPortuguês 2\nGeografi a 1\nAs notas finais são obtidas somando-se os produtos\ndas notas pelos respectivos pesos. As notas finais dos três\ncandidatos podem ser obtidas multiplicando-se a matriz\ndas notas dos três candidatos nas três provas pela matriz\ndos pesos das três provas.\nA matriz das notas finais dos três candidatos é",
+    "alternativas": {
+      "A": "(cid:31)52 37 43(cid:30) (cid:31)46(cid:28) (cid:29) (cid:26)",
+      "B": "(cid:29)46(cid:26) (cid:29) (cid:26) (cid:30)43(cid:27) (cid:31)66(cid:28) (cid:29) (cid:26)",
+      "C": "(cid:29)46(cid:26) (cid:29) (cid:26) (cid:30)20(cid:27) (cid:31)27 12 7(cid:28) (cid:29) (cid:26)",
+      "D": "(cid:29)24 14 8(cid:26) (cid:29) (cid:26) (cid:30)27 10 6(cid:27) (cid:31)27 18 21(cid:28) (cid:29) (cid:26)",
+      "E": "(cid:29)16 14 16(cid:26) (cid:29) (cid:26) (cid:30) 9 5 6 (cid:27)"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q145.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q146",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 146,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma imobiliária pôs cinco apartamentos à venda em cinco prédios diferentes de uma cidade brasileira. O quadro\napresenta o preço e a área de cada um desses imóveis.\nPreço\nApartamento Área (m2)\n(milhares de reais)\nI 80 350\nII 90 450\nIII 120 480\nIV 130 580\nV 135 620\nUm investidor decidiu comprar o apartamento com o menor preço por metro quadrado dentre os cinco apresentados.\nEle deverá comprar o apartamento",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q146.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q147",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 147,
+    "lingua_estrangeira": null,
+    "enunciado": "Segundo regras da Fifa, em um campo de futebol, a área penal é a região limitada pelo retângulo ABCD, indicado na\nfigura, cujo lado AB mede, aproximadamente, 16 m. O ponto penal P, equidistante dos lados AB e CD, fica localizado a\n11 m do lado AD. O arco de circunferência, exterior à região penal, tem centro em P, e o raio mede, aproximadamente, 9 m.\nA B\nE\nP\nF\nD C\nDisponível em: www.cbf.com.br. Acesso em: 5 ago. 2008 (adaptado).\nDe acordo com as medidas especificadas no texto e na figura, a distância EF entre as extremidades do arco de\ncírculo é",
+    "alternativas": {
+      "A": "inferior a 7 m.",
+      "B": "superior a 7 m e inferior a 14 m.",
+      "C": "superior a 14 m e inferior a 19 m.",
+      "D": "superior a 19 m e inferior a 23 m.",
+      "E": "superior a 23 m."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q147.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q148",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 148,
+    "lingua_estrangeira": null,
+    "enunciado": "No ano em que uma empresa lançou seu novo modelo\nde celular no mercado brasileiro, investiu 45 milhões de\nreais no primeiro semestre em cada uma das cinco regiões\ndo país, colocando à venda 30 mil aparelhos por região.\nNo primeiro semestre, todos os aparelhos colocados\nà venda foram vendidos, gerando um lucro total de\n30 milhões de reais. No segundo semestre, a empresa\ndecidiu que faria o mesmo investimento e colocou à\nvenda as mesmas quantidades de aparelhos por região.\nPor causa da demanda observada, a empresa considerou\nque todos os aparelhos desse modelo que fossem\nofertados sejam vendidos e, além disso, planeja obter um\nlucro total 10% maior no segundo semestre do que o que\nobteve no primeiro.\nPara que essa empresa alcance o lucro planejado, qual\ndeve ser o valor de venda, em real, de um aparelho\ncelular desse modelo, no segundo semestre desse ano?",
+    "alternativas": {
+      "A": "R$ 1 650,00",
+      "B": "R$ 1 720,00",
+      "C": "R$ 1 870,00",
+      "D": "R$ 2 500,00",
+      "E": "R$ 2 600,00"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q149",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 149,
+    "lingua_estrangeira": null,
+    "enunciado": "A amplitude é uma medida estatística que detecta\na variabilidade dos dados de uma amostra. Ela pode\nser utilizada como critério de qualidade da produção na\nindústria de peças, indicando, por exemplo, a necessidade\ndo descarte de um lote defeituoso.\nUma fábrica analisou cinco unidades de cada um\ndos cinco lotes da produção de um tipo de peça que, por\nprojeto, devem ter comprimento igual a 10 cm. As medidas,\nem centímetro, dessas unidades estão distribuídas\na seguir:\n• lote I: 9,80; 10,30; 10,30; 10,30 e 10,30;\n• lote II: 10,55; 10,58; 10,58; 10,60 e 10,60;\n• lote III: 9,80; 9,80; 10,00; 10,00 e 10,20;\n• lote IV: 9,90; 9,90; 9,90; 10,20 e 10,20;\n• lote V: 9,30; 9,30; 9,50; 9,50 e 9,50.\nFoi determinado o descarte do lote que apresentasse\na maior amplitude.\nDe acordo com o critério adotado, a fábrica descartará\no lote",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q150",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 150,
+    "lingua_estrangeira": null,
+    "enunciado": "Em um ateliê de costura, para confeccionar\n200 calças jeans, em 5 dias de trabalho, são necessários\n10 funcionários. Devido a uma crise financeira no ateliê,\na gerência decidiu demitir 4 funcionários visando a\nredução de custos. Sabe-se que a produção deverá ser\nmantida com o novo quadro de funcionários, ou seja, após\na demissão.\nEm quantos dias de trabalho o novo quadro de funcionários\nconfeccionará a mesma quantidade de calças jeans?",
+    "alternativas": {
+      "A": "2,0",
+      "B": "3,0",
+      "C": "3,3",
+      "D": "8,3",
+      "E": "12,0"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q151",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 151,
+    "lingua_estrangeira": null,
+    "enunciado": "No espaço, a falta de gravidade faz com que o\norganismo produza mais cálcio e, como o mineral não\né usado, o corpo o expele, fazendo com que os ossos\ndiminuam de tamanho. Um dos ossos que sofrem essa\nredução é o fêmur. O gráfico apresenta a evolução linear\ndo tamanho desse osso, ao longo de três meses, em um\nastronauta que, antes de ir para o espaço, tinha um fêmur\nde 50 cm.\n50\n49,5\n49\n48,5\n48\n47,5\n47\n46,5\n46\n0 1 2 3\nTempo (mês)\n)mc(\nohnamaT\n4 5\nDUARTE, M. O guia dos curiosos. São Paulo: Panda Books, 2015 (adaptado).\nComo esse astronauta ficará cinco meses no espaço,\nconsidere que a tendência de sua evolução óssea,\nobservada nos três primeiros meses, mantenha-se a\nmesma ao longo dos próximos meses.\nO tamanho, em centímetro, do fêmur desse astronauta,\nao completar quatro meses no espaço, será",
+    "alternativas": {
+      "A": "44,8.",
+      "B": "46,0.",
+      "C": "46,8.",
+      "D": "47,0.",
+      "E": "47,8."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q151.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q152",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 152,
+    "lingua_estrangeira": null,
+    "enunciado": "Especialistas do Instituto Internacional de Águas de\nEstocolmo estimam que cada pessoa necessita de, no\nmínimo, 1 000 m3 de água por ano, para consumo, higiene e\ncultivo de alimentos. Sabe-se também que o Rio Amazonas\ndespeja 200 000 m3 de água no mar por segundo.\nScientific America Brasil, set. 2008.\nPor quanto tempo deveríamos coletar as águas que o\nRio Amazonas despeja no mar para manter a população\nda cidade de São Paulo, estimada em 20 milhões de\npessoas, por um ano?",
+    "alternativas": {
+      "A": "16 minutos e 40 segundos.",
+      "B": "2 horas, 46 minutos e 40 segundos.",
+      "C": "1 dia, 3 horas, 46 minutos e 40 segundos.",
+      "D": "11 dias, 13 horas, 46 minutos e 40 segundos.",
+      "E": "3 meses, 25 dias, 17 horas, 46 minutos e 40 segundos."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q152.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q153",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 153,
+    "lingua_estrangeira": null,
+    "enunciado": "Mariana não tem computador pessoal em casa e\nprecisa fazer uma pesquisa na internet para um trabalho\nde escola. Então, foi até uma lan house perto de sua casa.\nNa porta da lan house havia esta placa:\nACESSO À INTERNET\nR$ 0,12 POR MINUTO\nR$ 2,00 (TAXA DE UTILIZAÇÃO)\nAssim, quantos reais Mariana pagaria para ficar uma\nhora e meia usando a internet nessa lan house?",
+    "alternativas": {
+      "A": "R$ 0,18",
+      "B": "R$ 2,18",
+      "C": "R$ 3,08",
+      "D": "R$ 3,18",
+      "E": "R$ 12,80"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q153.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q154",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 154,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma padaria criou uma receita de bolo chamada Bolo\nde xícara, pois, com exceção dos ovos e do fermento,\nos demais ingredientes são medidos com xícaras de\nmesma capacidade, conforme descrito.\nBolo de xícara\nIngredientes\n5 ovos\n9_\nxícara de farinha de trigo\n4\n4_\nxícara de chocolate em pó\n3\n3_\n1 xícara de açúcar\n4\n5_\nxícara de leite\n6\n1 colher de fermento em pó\nO modo de fazer a receita orienta colocar, primeiramente,\nos ovos e depois ir adicionando os ingredientes cujas\nquantidades foram medidas em xícara, da menor para a\nmaior quantidade. Por último, adiciona-se o fermento.\nEm qual ordem os ingredientes medidos em xícara serão\nadicionados na receita?",
+    "alternativas": {
+      "A": "Chocolate; leite; açúcar; farinha de trigo.",
+      "B": "Leite; chocolate; açúcar; farinha de trigo.",
+      "C": "Leite; chocolate; farinha de trigo; açúcar.",
+      "D": "Farinha de trigo; açúcar; chocolate; leite.",
+      "E": "Leite; farinha de trigo; açúcar; chocolate."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q154.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q155",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 155,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa tinha um projeto para um salão de festas\nno formato de paralelepípedo reto retângulo. Ela comprou\na quantidade exata de azulejos para cobrir as paredes\nlaterais, incluindo as regiões destinadas a uma porta e\numa janela. Os azulejos que cobririam essas regiões\nseriam reservados para futuras substituições. Esse projeto\nprevia que o salão teria, como dimensões internas, 10 m\nde comprimento por 6 m de largura por 2,5 m de altura.\nEm decorrência de uma mudança no projeto, o salão\nficará com 12 m de comprimento por 5 m de largura e as\nmesmas dimensões para porta e janela. Como a compra\nde azulejos já foi feita, essa pessoa ajustará a altura do\nsalão de modo que a área lateral, incluindo as regiões\nda porta e da janela, seja equivalente à área lateral antes da\nalteração do projeto.\nQual é a medida, em metro, dessa nova altura, expressa\ncom duas casas decimais?",
+    "alternativas": {
+      "A": "3,25",
+      "B": "3,00",
+      "C": "2,50",
+      "D": "2,35",
+      "E": "2,00"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q156",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 156,
+    "lingua_estrangeira": null,
+    "enunciado": "Em radiometria, a potência radiante emitida por\numa fonte de radiação é diretamente proporcional à\nquantidade de energia, em joule (J), irradiada pela fonte,\ne inversamente proporcional ao intervalo de tempo,\nem segundo (s), que a fonte necessita para emitir essa\nenergia. Por meio de sensores adequados, localizados\nem diferentes distâncias da fonte, medidas em metro (m),\né possível medir a potência radiante por unidade de área\nque chega àquela posição.\nA expressão que representa a unidade de medida para a\ngrandeza potência radiante por unidade de área é",
+    "alternativas": {
+      "A": "J ⋅ s ⋅ m2",
+      "B": "J ⋅ s ⋅ m (cid:45)",
+      "C": "(cid:86)(cid:31)(cid:80) J",
+      "D": "⋅m2 s (cid:45)",
+      "E": "(cid:86)(cid:31)(cid:80)(cid:21)"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q156.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q157",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 157,
+    "lingua_estrangeira": null,
+    "enunciado": "A trajetória de um avião durante um voo entre duas\ncidades ocorre dentro de áreas de controle de tráfego.\nDurante um voo, é exigido que o avião sobrevoe pontos\nde controle situados no solo e demarcados entre a\norigem (O) e o destino (D) da aeronave. Assim, embora a\ntrajetória do avião ocorra num espaço tridimensional, para\no controlador de voo, a visualização representativa dessa\ntrajetória é dada por uma linha poligonal plana, em que\ntrês pontos de controle sucessivos, nas representações,\ndevem ser não colineares.\nDisponível em: www.kaspersky.com.br. Acesso em: 21 out. 2019 (adaptado).\nAs figuras apresentam algumas possibilidades dessas\nrepresentações, nas quais todos os pontos de controle\nestão representados.\nD\nD\nO\nO\nI II\nO\nD\nD\nO\nIII\nIV\nD\nO\nV\nSuponha que um avião fez um voo com origem\ndiferente do destino final e cuja representação apresente\ntrês pontos de controle.\nNesse voo, qual das figuras apresentadas é compatível\ncom as restrições estabelecidas?",
+    "alternativas": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV",
+      "E": "V"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q157.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q158",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 158,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma quadra oficial de futebol de salão ocupa uma área\nque corresponde à área de um retângulo com comprimento\nde 40 m e largura de 20 m. Para segurança dos atletas, as\nlinhas demarcatórias da quadra, nas laterais e nos fundos,\ndeverão estar a uma distância de, no mínimo, 2 m de\nobstáculos que não fazem parte da quadra, tais como\nrede de proteção, tela, grade ou parede.\nDisponível em: www.cbfs.com.br. Acesso em: 20 out. 2019 (adaptado).\nA gerência do Departamento de Obras de uma\nPrefeitura avalia adquirir um terreno e nele construir\numa quadra oficial de futebol de salão. Há cinco terrenos\ndisponíveis, e a gerência comprará o terreno que tiver\nmenor área, desde que comporte a construção da quadra\ngarantindo todas as demandas que ofereçam segurança\naos atletas. Planeja-se ainda que a quadra seja construída\nde modo que o seu lado maior seja paralelo à rua. A figura\nilustra os terrenos disponíveis e que estão sendo avaliados.\nRua Rua Rua\nCalçada Calçada Calçada\n44 m 40 m 42 m\n24 m 20 m 22 m\n22 m\nTerreno 1 Terreno 2 Terreno 3\nRua Rua\nCalçada Calçada\n60 m 50 m\n40 m\n48 m\n20 m Terreno 5\nTerreno 4\nQual dos cinco terrenos a gerência deve adquirir a fim de\natender a todas as exigências apresentadas?",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q158.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q159",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 159,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma empresa produziu uma bola de chocolate,\nem formato esférico, para utilizar na decoração de sua\nloja. Essa bola tem 20 cm de diâmetro externo, sendo oca\npor dentro, e a medida da espessura entre as superfícies\ninterna e externa corresponde a 1 cm. Considere que,\nna confecção dessa bola, foi utilizado um tipo de chocolate\nem que 1 g equivale a 0,75 cm³.\nA quantidade de chocolate, em grama, utilizado na confecção\ndessa bola é\n76π",
+    "alternativas": {
+      "A": "3 304π",
+      "B": "9 4336π",
+      "C": "9 4000π",
+      "D": "3 18256π",
+      "E": "9"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q159.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q160",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 160,
+    "lingua_estrangeira": null,
+    "enunciado": "Duas empresas do mercado de pequenos reparos\ndomésticos determinam o valor de seus serviços a partir\nde um valor fixo acrescido de um valor cobrado por hora.\nA empresa X cobra R$ 60,00 de valor fixo mais R$ 18,00 por\nhora de serviço prestado. A empresa Y cobra R$ 24,00 de\nvalor fixo e está definindo um novo valor a ser cobrado por\nhora. Sua estratégia de mercado prevê que, em relação\nà empresa X, o custo total do serviço deve ser menor ou\nigual para trabalhos de até duas horas de duração.\nQual é o valor máximo, em real, que a empresa Y poderá\ncobrar por hora de serviço prestado a fim de atender à\nsua estratégia de mercado?",
+    "alternativas": {
+      "A": "18",
+      "B": "36",
+      "C": "48",
+      "D": "54",
+      "E": "78"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q161",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 161,
+    "lingua_estrangeira": null,
+    "enunciado": "Um reservatório que abastece uma região urbana está\ncom uma quantidade V de água. Previsões meteorológicas\nindicam que a região passará por uma escassez de\nchuva e, por isso, as autoridades locais determinaram a\nrealização de várias medições do volume de água nesse\nreservatório para efeito de monitoramento.\nA primeira medição indicou que o volume de água\nreduziu-se à metade; a segunda indicou a retirada da terça\nparte do que restou; a terceira, a retirada da quarta parte\ndo que restou; a quarta, a retirada da quinta parte do que\nrestou e assim sucessivamente nas demais medições,\nmantendo o seguinte padrão de retirada: na n-ésima\nmedição, a retirada da (n + 1)-ésima parte do que restou.\nConsidere que não houve reabastecimento de água no\nreservatório no período em que foram feitas as medições.\nMantendo esse padrão de retirada, as quantidades de\nágua restantes no reservatório referentes às 7ª, 8ª e 9ª\nmedições são iguais a, respectivamente,\n7 8 9",
+    "alternativas": {
+      "A": "V, V e V 8 9 10 6 7 8",
+      "B": "V, V e V 7 8 9 6 7 8",
+      "C": "V, V e V 8 9 10 1 1 1",
+      "D": "V, V e V 7 8 9 1 1 1",
+      "E": "V, V e V 8 9 10"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q161.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q162",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 162,
+    "lingua_estrangeira": null,
+    "enunciado": "Um equipamento monitora o volume de água que\npassa por uma tubulação em um período de tempo.\nUm técnico rascunhou cinco possibilidades de unidade de\nmedida para a grandeza que esse equipamento monitora.\nNas imagens, cm significa centímetro, e s significa\nsegundo.\ncm cm² cm³\ns s s\nRascunho I Rascunho II Rascunho III\ns s\ncm³ cm²\nRascunho IV Rascunho V\nO rascunho que expressa corretamente uma unidade de\nmedida para a grandeza que esse equipamento monitora\né o",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q162.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q163",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 163,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa comprou uma caixa com 25 bombons por\n5 reais. Resolveu revendê-los de forma avulsa a um preço\núnico. Não resistindo à tentação, durante a venda, comeu\ncinco bombons. Obteve, mesmo assim, com a venda dos\nbombons restantes, um lucro de 20% sobre o valor pago\npela caixa.\nQual foi o valor, em real, de venda de cada bombom?",
+    "alternativas": {
+      "A": "0,20",
+      "B": "0,24",
+      "C": "0,30",
+      "D": "0,35",
+      "E": "0,40"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q164",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 164,
+    "lingua_estrangeira": null,
+    "enunciado": "Para o tratamento de uma doença específica, existem\ndisponíveis no mercado somente quatro medicamentos,\nque são comercializados em versões diferentes.\n• Medicamento I: caixa com 25 comprimidos, com\npreço de R$ 50,00.\n• Medicamento II: caixa com 30 comprimidos, com\npreço de R$ 48,00.\n• Medicamento III: caixa com 40 comprimidos, com\npreço de R$ 60,00.\n• Medicamento IV: caixa com 60 comprimidos, com\npreço de R$ 100,00.\nUm laboratório lançou um novo medicamento,\nchamado Z, para o tratamento dessa doença. Visando\ntornar esse medicamento competitivo economicamente, o\nlaboratório decidiu fixar um preço que apresente o menor\nvalor por comprimido em relação aos medicamentos\njá existentes.\nO preço máximo, por comprimido, do medicamento Z será",
+    "alternativas": {
+      "A": "R$ 1,40.",
+      "B": "R$ 1,49.",
+      "C": "R$ 1,59.",
+      "D": "R$ 1,60.",
+      "E": "R$ 1,99."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q165",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 165,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma costureira tem à sua disposição pelo menos\nduas unidades de cada um dos quatro tipos de retalhos\nretangulares com as estampas e os tamanhos apresentados.\n10 cm 10 cm\n10 cm 10 cm\n10 cm 10 cm\n10 cm 20 cm\nPara confeccionar um tapete em formato retangular\nde 10 cm × 50 cm, ela utilizará os retalhos, na posição\nindicada na figura, costurando um lado de um a um lado do\noutro, sem que haja rotações desses retalhos. O modelo\nde tapete que pretende confeccionar deverá conter um\núnico retalho de 10 cm × 20 cm e mais três retalhos de\nformato 10 cm × 10 cm, sendo que retalhos de mesma\nestampa não poderão ficar lado a lado.\nQuantos modelos diferentes de tapetes poderão ser\nconfeccionados?",
+    "alternativas": {
+      "A": "12",
+      "B": "24",
+      "C": "34",
+      "D": "48",
+      "E": "60"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q165.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q166",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 166,
+    "lingua_estrangeira": null,
+    "enunciado": "Restaurantes geralmente se deparam com o problema\nde definir a quantidade de alimentos a serem preparados\npara cada dia. Diante desse problema, o gerente de\num restaurante anotou as quantidades de clientes que\nalmoçaram em seu restaurante durante os 10 primeiros\ndias do mês e registrou esses dados, obtendo este gráfico:\n100\n90\n80\n70\n60\n50\n40\n30\n20\n10\n1 2 3 4 5 6\nDia\nsetneilc\ned\nedaditnauQ\nQuantidade de clientes nos\n10 primeiros dias do mês\n100 100\n90 94 94 92 94\n86\n80 80\n7 8 9 10\nEle considerou a moda da distribuição das quantidades\nde clientes que almoçaram em seu restaurante nesses\n10 primeiros dias do mês como uma boa medida para\ndimensionar a quantidade de alimentos a serem preparados\ndiariamente.\nO valor da moda dessa distribuição é",
+    "alternativas": {
+      "A": "90.",
+      "B": "91.",
+      "C": "93.",
+      "D": "94.",
+      "E": "97."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q166.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q167",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 167,
+    "lingua_estrangeira": null,
+    "enunciado": "Um estudante de arquitetura projetou um prédio de\n32 m de altura a ser construído em uma maquete, em\npapel-cartão, na escala 1 : 50.\nNesse caso, na maquete, a altura do prédio mede",
+    "alternativas": {
+      "A": "0,32 m.",
+      "B": "0,50 m.",
+      "C": "0,64 m.",
+      "D": "1,00 m.",
+      "E": "1,32 m."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q168",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 168,
+    "lingua_estrangeira": null,
+    "enunciado": "Em 1953, o veterinário francês Monsier LeBeau\ndescobriu que um cão de pequeno porte tem um ritmo de\nenvelhecimento maior do que o de um ser humano, sendo\nmais acentuado nos dois primeiros anos de vida. Depois\ndesse tempo, esse ritmo de envelhecimento diminui\ne obtêm-se as seguintes relações:\n• um cão de um ano corresponde a um humano de\n15 anos;\n• um cão de 2 anos corresponde a um humano de\n24 anos;\n• depois de 2 anos de idade, cada ano vivido por um\ncão equivale a quatro anos vividos por humanos.\nDisponível em: http://online.wsj.com. Acesso em: 16 nov. 2014 (adaptado).\nConsidere o dia em que um cão de pequeno porte\ncompletou 6 anos de idade.\nCom base nessas informações, a idade humana, em\nano, correspondente à idade desse cão, nesse dia, é",
+    "alternativas": {
+      "A": "90.",
+      "B": "60.",
+      "C": "44.",
+      "D": "40.",
+      "E": "35."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q169",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 169,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa foi a um supermercado comprar uma\ncaixa de sabão em pó. Lá encontrou várias marcas desse\nproduto, disponibilizado em embalagens com diferentes\ncapacidades e preços. No quadro são fornecidos o preço,\nem real, e o conteúdo, em quilograma, das embalagens\nde cinco diferentes marcas de sabão em pó que estão à\nvenda nesse supermercado.\nPreço por Conteúdo da\nMarca\nembalagem (R$) embalagem (kg)\nI 18,00 3,0\nII 10,00 2,5\nIII 8,00 0,5\nIV 7,00 1,0\nV 34,00 2,0\nA marca cuja embalagem oferece o menor preço, em\nreal, por quilograma de sabão em pó é",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q169.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q170",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 170,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma piscina de um clube tem o formato de\nparalelepípedo reto retângulo com 50 m de comprimento,\n25 m de largura e 3 m de profundidade. O proprietário\ndo clube construirá duas novas piscinas, de formatos\ndiferentes, e necessita que cada uma tenha o mesmo volume\nda existente ou o mais próximo possível desse volume.\nA empresa de construção contratada disponibilizou,\npara a avaliação desse proprietário, uma proposta com\ncinco projetos de piscina: três com o formato de cilindro\ncircular reto e duas com o formato de paralelepípedo\nreto retângulo:\n• piscina cilíndrica I (C ): 50 m de diâmetro de base\n1\ne 2 m de profundidade;\n• piscina cilíndrica II (C ): 40 m de diâmetro de base\n2\ne 3 m de profundidade;\n• piscina cilíndrica III (C ): 46 m de diâmetro de base\n3\ne 2,5 m de profundidade;\n• piscina em formato de paralelepípedo I (P): 62 m de\n1\ncomprimento, 24 m de largura e 2 m de profundidade;\n• piscina em formato de paralelepípedo II (P ):\n2\n64 m de comprimento, 30 m de largura e 2 m\nde profundidade.\nConsidere 3 como valor aproximado de π.\nPara atender às suas necessidades, dentre os projetos\npropostos, o proprietário desse clube deverá escolher\nas piscinas",
+    "alternativas": {
+      "A": "C e P . 1 2",
+      "B": "C e C . 1 3",
+      "C": "C e P . 2 1",
+      "D": "C e P . 3 2",
+      "E": "P e P . 1 2"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q170.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q171",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 171,
+    "lingua_estrangeira": null,
+    "enunciado": "Um professor de matemática desenvolveu uma\natividade educacional relacionada aos Jogos Olímpicos\ne confeccionou uma maquete que representa uma piscina\nnas dimensões olímpicas. Admitiu que a piscina olímpica\ndeve ter capacidade mínima de 2 500 000 litros e construiu\nsua maquete, referente a esse valor mínimo, na forma de\nparalelepípedo reto retângulo com dimensões internas\n2 cm, 25 cm e 50 cm, cujo volume é 2 500 cm3. Considere\nque 1 L = 103 cm3.\nA maquete confeccionada pelo professor foi elaborada\nna escala",
+    "alternativas": {
+      "A": "1 : 100.",
+      "B": "1 : 1 000.",
+      "C": "1 : 2 000.",
+      "D": "1 : 50 000.",
+      "E": "1 : 1 000 000."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q171.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q172",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 172,
+    "lingua_estrangeira": null,
+    "enunciado": "O Torcidômetro é uma ferramenta para se entender\na dinâmica do crescimento ou encolhimento das torcidas\ndos times de futebol no país. O gráfico mostra a variação\npercentual, entre 1993 e 2007, das torcidas de cinco times\nnumerados em: I, II, III, IV e V.\n(em%)\n20\n19\n18\n17 I\n16\n15\n14\n13\n12\n11\n10 II\n09\n08\n07 III\n06\n05 IV\n04 V\n03\n02\n01\n00\n3 0 1 2 2 2 3 4 5 6 6 7 7\n9 0 0 0 0 0 0 0 0 0 0 0 0\n1/ 8/ 6/ 6/ 8/ 2/ 2/ 2/ 0/ 2/ 6/ 8/ 1/\n1 0 0 0 0 1 1 1 1 0 0 0 1\n1/ 0/ 8/ 7/ 6/ 1/ 5/ 8/ 1/ 2/ 4/ 5/ 8/\n1 2 2 0 1 1 1 1 2 0 2 1 2\nDisponível em: www.netvasco.com.br. Acesso em: 25 fev. 2009.\nOs dados exibidos no gráfico indicam que a torcida que\napenas cresceu, entre fevereiro de 2006 e agosto de\n2007, foi a torcida do time",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q172.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q173",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 173,
+    "lingua_estrangeira": null,
+    "enunciado": "Um tipo de célula se reproduz constantemente por\ndivisão celular, triplicando sua quantidade a cada duas\nhoras, sob condições ideais de proliferação. Suponha uma\nquantidade inicial Q dessas células sob as condições\n0\nideais de proliferação durante um certo período.\nQual a representação algébrica da quantidade Q dessas\ncélulas em função do tempo t, em hora, nesse período?",
+    "alternativas": {
+      "A": "Q(t) = Q ⋅ 3t 0",
+      "B": "Q(t) = Q ⋅ 32t 0 t",
+      "C": "Q(t) = Q ⋅ 23 0 t",
+      "D": "Q(t) = Q ⋅ 32 0 t−1",
+      "E": "Q(t) = Q ⋅ 32 0"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q173.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q174",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 174,
+    "lingua_estrangeira": null,
+    "enunciado": "A proprietária de uma confecção pretende liquidar\nas camisas que possui em estoque, por meio de uma\npromoção na qual fará a venda de lotes com iguais\nquantidades de camisas. Para a 1ª semana, pretende\nanunciar a venda de cada lote de camisas por R$ 720,00.\nNa 2ª semana, para acelerar as vendas, planeja anunciar\na venda de lotes com 3 unidades a mais do que os lotes\nvendidos na primeira semana, ainda por R$ 720,00 cada\nlote, e de forma que o preço unitário de cada peça seja\nR$ 20,00 mais baixo do que o valor que teria sido cobrado\npor peça na 1ª semana de promoção.\nQuantas camisas deverão conter os lotes que serão\ncolocados à venda na 1ª semana para que seja possível\npraticar essa promoção?",
+    "alternativas": {
+      "A": "9",
+      "B": "12",
+      "C": "24",
+      "D": "33",
+      "E": "105"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q174.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q175",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 175,
+    "lingua_estrangeira": null,
+    "enunciado": "Um rolo de papel higiênico tradicional é representado\npor um cilindro circular reto retirando-se outro cilindro\ncircular reto interior, de mesmo eixo de simetria, mesma\naltura e diâmetro menor, conforme a figura.\nAltura\nDiâmetro\ninterno\nDiâmetro externo\nConsidere um rolo de papel higiênico com 12 cm de\ndiâmetro externo, 4 cm de diâmetro interno e 10 cm\nde altura.\nO volume, em centímetro cúbico, desse rolo é",
+    "alternativas": {
+      "A": "80π.",
+      "B": "160π.",
+      "C": "320π.",
+      "D": "640π.",
+      "E": "1 280π."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q175.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q176",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 176,
+    "lingua_estrangeira": null,
+    "enunciado": "Em um pronto-socorro, um paciente ingeriu, à\nmeia-noite, um comprimido que continha 800 mg de uma\nmedicação. O médico, ao liberar o paciente, informou\nque, caso ele voltasse a sentir dores, deveria tomar outro\ncomprimido daquele, no máximo três vezes, nas próximas\n24 horas, dependendo das recomendações da bula.\nComo o paciente voltou a sentir dores ao chegar em\ncasa, ainda na madrugada, decidiu seguir a orientação\ndo médico e leu a bula do remédio. O paciente verificou\nque, a cada 6 horas, a quantidade dessa medicação no\norganismo se reduzia à metade da quantidade anterior.\nObservou também a recomendação de que a pessoa\ndeveria, preferencialmente, ingerir um novo comprimido\nquando a quantidade de medicação no organismo\nestivesse compreendida entre 200 mg e 100 mg.\nSeguindo as informações e recomendações da bula, em\nque período(s) do dia o paciente deveria tomar novamente\no remédio?",
+    "alternativas": {
+      "A": "Um na mesma madrugada, um de manhã e mais um à tarde.",
+      "B": "Dois pela manhã e mais um à tarde.",
+      "C": "Um pela manhã, um à tarde e mais um à noite.",
+      "D": "Apenas um à tarde.",
+      "E": "Apenas um à noite."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q177",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 177,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa, procurando um estacionamento, encontrou\ncinco opções com as seguintes formas de cobrança:\n• A: R$ 6,00 por hora ou fração de hora;\n• B: R$ 6,00 pelas duas primeiras horas e R$ 3,00\na cada hora ou fração de hora subsequente;\n• C: R$ 6,00 por hora ou fração de hora, com tolerância\nde 15 minutos;\n• D: R$ 6,00 pelas duas primeiras horas e R$ 3,00\na cada hora ou fração de hora subsequente, com\ntolerância de 15 minutos;\n• E: R$ 0,10 por minuto.\nEssa pessoa irá utilizar o estacionamento por 5 horas\ne 12 minutos.\nO estacionamento que permite a essa pessoa pagar o\nmenor valor possível é",
+    "alternativas": {
+      "A": "A.",
+      "B": "B.",
+      "C": "C.",
+      "D": "D.",
+      "E": "E."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q178",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 178,
+    "lingua_estrangeira": null,
+    "enunciado": "Estudantes de psicologia experimental estão analisando\num modelo matemático que foi desenvolvido a partir de\num experimento com pombos. Nesse experimento, um\nalimento considerado como uma recompensa reforçadora\nera fornecido em quantidades (Q) para as aves, com a\npossibilidade de atraso no tempo de entrega.\nO modelo matemático que relaciona os valores\nreforçadores V e V de duas recompensas em função de suas\n1 2\nrespectivas quantidades Q e Q e de seus respectivos tempos\n1 2\nde atraso T e T na disponibilização de cada uma delas é\n1 2\nV Q T\n1 (cid:31) 1 (cid:30) 2\nV Q T\n2 2 1\nAo analisarem o caso em que a quantidade Q é o\n1\ndobro da quantidade Q , cinco estudantes fizeram as\n2\nseguintes afirmações sobre em que condição o valor V\n1\nserá maior que o valor V :\n2\n• estudante 1: sempre, pois Q é o dobro de Q ;\n1 2\n• estudante 2: apenas quando a razão entre T e T\n2 1\nfor maior que 0,5;\n• estudante 3: apenas quando a razão entre T e T\n2 1\nfor menor que 0,5;\n• estudante 4: apenas quando T for igual a T;\n1 2\n• estudante 5: apenas quando a razão entre T e T\n2 1\nfor maior que 0,5 e menor que 1.\nQual estudante fez a afirmação correta?",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q178.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q179",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 179,
+    "lingua_estrangeira": null,
+    "enunciado": "Em uma sala escura há um ponto luminoso, a mais\nde 3 metros de distância de uma parede, e um disco\npendurado, paralelo à parede, entre ela e o ponto\nluminoso. O disco encontra-se a 1 metro de distância do\nponto luminoso, projetando uma sombra S , em formato\n1\nde círculo, na parede. Esse disco é afastado mais 2 m do\nponto luminoso, em direção à sombra e sem encostar na\nparede, projetando outra sombra S , também no formato\n2\nde um círculo.\nSejam A a área de S e A a área de S .\n1 1 2 2\nA\nO valor de 1 é\nA\n2",
+    "alternativas": {
+      "A": "1.",
+      "B": "2.",
+      "C": "3.",
+      "D": "4.",
+      "E": "9."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q179.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D2-CD7-Q180",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 180,
+    "lingua_estrangeira": null,
+    "enunciado": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é\nCaloria Caloria\n(cal) (cal)\n405 405\n275 275",
+    "alternativas": {
+      "A": "DD 175 100 0 30 60 90 Tempo 0 30 60 90 120 Tempo (min) (min) Caloria Caloria (cal) (cal)",
+      "B": "175 EE 175 130 130 100 100 0 30 60 90 Tempo 0 30 60 90 Tempo (min) (min) Caloria (cal) 405 275",
+      "C": "100 0 30 60 90 Tempo (min)"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q180.png",
+    "texto_fiel": false,
+    "alertas": [
+      "3 alternativas no texto (esperado 5); ver a imagem"
+    ],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  }
+]

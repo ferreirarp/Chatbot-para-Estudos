@@ -3,7 +3,7 @@
  "modelo": "TRI 3PL, D=1, EAP, priori N(0,1), 40 pontos em [-4, 4]; nota = k*theta + m",
  "areas": {
   "CH": {
-   "k": 112.3089,
+   "k": 112.3088,
    "m": 501.4896,
    "n_ajuste": 1500,
    "n_validacao": 1500,
@@ -11,15 +11,15 @@
    "erro_maximo": 0.052
   },
   "CN": {
-   "k": 113.1011,
-   "m": 501.1445,
+   "k": 113.1012,
+   "m": 501.1446,
    "n_ajuste": 1500,
    "n_validacao": 1500,
    "erro_mediano": 0.025,
    "erro_maximo": 0.051
   },
   "LC": {
-   "k": 108.0862,
+   "k": 108.0864,
    "m": 499.9772,
    "n_ajuste": 1500,
    "n_validacao": 1500,
@@ -27,7 +27,7 @@
    "erro_maximo": 0.051
   },
   "MT": {
-   "k": 129.6456,
+   "k": 129.6455,
    "m": 500.0189,
    "n_ajuste": 1500,
    "n_validacao": 1500,

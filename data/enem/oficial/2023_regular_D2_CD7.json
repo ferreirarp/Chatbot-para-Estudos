@@ -9,6 +9,16 @@
    "1211"
   ]
  },
+ "validacao_escala": {
+  "CN": {
+   "candidatos": 500,
+   "erro_maximo": 0.051
+  },
+  "MT": {
+   "candidatos": 500,
+   "erro_maximo": 0.051
+  }
+ },
  "questoes": {
   "91": {
    "co_item": "84422",

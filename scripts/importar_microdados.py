@@ -130,8 +130,7 @@ def amostra_participantes(ano: int, ctx, linhas: int = 60000) -> Path:
     return destino
 
 
-def estimar_escala(sigla: str, codigos: list[str], por_prova: dict, participantes: list[dict]) -> dict | None:
-    """Ajusta nota = k·θ + m para uma área e valida em candidatos não usados."""
+def pares_theta_nota(sigla: str, codigos: list[str], por_prova: dict, participantes: list[dict], limite: int):
     pares = []
     for p in participantes:
         cod, nota, resp = p.get(f"CO_PROVA_{sigla}"), p.get(f"NU_NOTA_{sigla}"), p.get(f"TX_RESPOSTAS_{sigla}")
@@ -147,8 +146,23 @@ def estimar_escala(sigla: str, codigos: list[str], por_prova: dict, participante
                 if r["IN_ITEM_ABAN"] != "1" and r["TX_GABARITO"] in "ABCDE"]
         itens = [(float(r["NU_PARAM_A"]), float(r["NU_PARAM_B"]), float(r["NU_PARAM_C"])) for r, _ in usar]
         pares.append((theta_eap(itens, [x == r["TX_GABARITO"] for r, x in usar]), float(nota)))
-        if len(pares) >= 3000:
+        if len(pares) >= limite:
             break
+    return pares
+
+
+def validar_prova(sigla, codigos, escala, por_prova, participantes) -> dict:
+    """Confere a escala da área nos candidatos que fizeram ESTA prova."""
+    pares = pares_theta_nota(sigla, codigos, por_prova, participantes, 500)
+    if not pares:
+        return {"candidatos": 0}
+    erros = [abs(escala["k"] * t + escala["m"] - y) for t, y in pares]
+    return {"candidatos": len(pares), "erro_maximo": round(max(erros), 3)}
+
+
+def estimar_escala(sigla: str, codigos: list[str], por_prova: dict, participantes: list[dict]) -> dict | None:
+    """Ajusta nota = k·θ + m para uma área e valida em candidatos não usados."""
+    pares = pares_theta_nota(sigla, codigos, por_prova, participantes, 3000)
     if len(pares) < 600:
         print(f"  escala {sigla}: candidatos insuficientes na amostra ({len(pares)})")
         return None
@@ -249,7 +263,16 @@ def importar(ano: int) -> None:
                                           "areas": escalas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     for arq, questoes, cods in associacoes:
-        gravar(ano, arq, questoes, cods, por_prova, escalas)
+        validacao = {}
+        for sigla, lista in cods.items():
+            if sigla in escalas:
+                v = validar_prova(sigla, lista, escalas[sigla], por_prova, participantes)
+                validacao[sigla] = v
+                ok = v["candidatos"] == 0 or v["erro_maximo"] <= 1.0
+                print(f"  {arq.stem} {sigla}: escala conferida em {v['candidatos']} candidatos desta prova"
+                      + (f", erro máx {v['erro_maximo']}" if v["candidatos"] else " (nenhum na amostra)")
+                      + ("" if ok else "  <- ATENÇÃO: escala não reproduz as notas desta prova"))
+        gravar(ano, arq, questoes, cods, por_prova, escalas, validacao)
 
 
 def associar(arq: Path, questoes: list[dict], por_prova: dict) -> dict[str, list[str]]:
@@ -274,9 +297,9 @@ def associar(arq: Path, questoes: list[dict], por_prova: dict) -> dict[str, list
     return codigos
 
 
-def gravar(ano, arq, questoes, codigos, por_prova, escalas) -> None:
+def gravar(ano, arq, questoes, codigos, por_prova, escalas, validacao=None) -> None:
     saida = {"prova": f"{ano}/{arq.stem}", "fonte": URL_MICRODADOS.format(ano=ano),
-             "codigos_prova": codigos, "questoes": {}}
+             "codigos_prova": codigos, "validacao_escala": validacao or {}, "questoes": {}}
     for area_nome, sigla in SIGLA.items():
         if sigla not in codigos:
             continue

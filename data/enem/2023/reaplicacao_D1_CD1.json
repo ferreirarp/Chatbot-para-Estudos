@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q001-ingles",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 1,
+    "lingua_estrangeira": "ingles",
+    "enunciado": "Disponível em: https://images1.the-dots.com. Acesso em: 29 out. 2021.\nPor meio de recursos verbais e não verbais, esse cartaz\nde campanha objetiva",
+    "alternativas": {
+      "A": "criticar os jovens por abandono do lar.",
+      "B": "apontar as causas da violência doméstica.",
+      "C": "relatar o drama da vulnerabilidade emocional.",
+      "D": "divulgar o fundo de ajuda a pessoas desabrigadas.",
+      "E": "destacar a fragilidade das construções para o inverno."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q001_ingles.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q002-ingles",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 2,
+    "lingua_estrangeira": "ingles",
+    "enunciado": "“We won’t ruin Mars. It’s too big and too good.” said\nthe captain.\n“You think not? We Earth Men have a talent for ruining\nbig, beautiful things. The only reason we didn’t set up hot-dog\nstands in the midst of the Egyptian temple of Karnak is\nbecause it was out of the way and served no large commercial\npurpose. And Egypt is a small part of Earth. But here, this\nwhole thing is ancient and different, and we have to set down\nsomewhere and start fouling it up. We’ll call the canal the\nRockefeller Canal and the mountain King George Mountain\nand the sea the Dupont Sea, and there’ll be Roosevelt and\nLincoln and Coolidge cities, and it won’t ever be right, when\nthere are the proper names for these places.”\nBRADBURY, R. And the Moon Be Still as Bright. In: The\nMartian Chronicles. Londres: Harper Collins, 2014.\nNesse fragmento de um conto do autor Ray Bradbury,\no personagem revela ao capitão",
+    "alternativas": {
+      "A": "sua dúvida sobre a preservação de lugares antigos.",
+      "B": "seu entusiasmo com a descoberta de um território.",
+      "C": "sua curiosidade sobre o desenvolvimento do Egito.",
+      "D": "sua indiferença com o crescimento dos espaços urbanos.",
+      "E": "sua preocupação com a exploração de um planeta."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q003-ingles",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 3,
+    "lingua_estrangeira": "ingles",
+    "enunciado": "Our physical alienation from India almost inevitably\nmeans that we will not be capable of reclaiming precisely\nthe thing that was lost; that we will, in short, create fictions,\nnot actual cities or villages, but invisible ones, imaginary\nhomelands, Indias of the mind. […] It may be argued that\nthe past is a country from which we have all emigrated\n[…], but I suggest that the writer who is out-of-country\nand even out-of-language may experience this loss in an\nintensified form.\nRUSHDIE, S. Imaginary Homelands. Londres: Vintage Books, 2010 (adaptado).\nNesse fragmento de texto, ao abordar a literatura\nanglo-indiana, o autor Salman Rushdie ressalta a relação\nentre criação literária e",
+    "alternativas": {
+      "A": "desejo de retorno à terra natal.",
+      "B": "narrativas de espaços urbanos.",
+      "C": "consequências da imigração de origem asiática.",
+      "D": "invisibilidade de autores de literatura indiana.",
+      "E": "distanciamento das raízes culturais."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q004-ingles",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 4,
+    "lingua_estrangeira": "ingles",
+    "enunciado": "we gave birth to a new generation,\nAmeRícan, broader than lost gold\nnever touched, hidden inside the\npuerto rican mountains.\nwe gave birth to a new generation\nAmeRícan, it includes everything\nimaginable you-name-it-we-got-it\nsociety.\nwe gave birth to a new generation,\nAmeRícan salutes all folklores,\neuropean, indian, black, spanish\nand anything else compatible.\nAmeRícan,\nyes, for now, for i love this, my second land,\nand i dream to take the accent from\nthe altercation, and be proud to call\nmyself american, in the u.s. sense of the\nword, AmeRícan, America!\nLAVIERA, T. Benedición: The Complete Poetry of Tato Laviera.\nHouston: Arte Público Press, 2014 (fragmento).\nNos versos desse poema, o eu lírico adota um tom de",
+    "alternativas": {
+      "A": "objeção aos costumes de uma geração.",
+      "B": "crítica à política monetária.",
+      "C": "celebração de uma identidade plural.",
+      "D": "homenagem à sociedade americana.",
+      "E": "exaltação da geografia porto-riquenha."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q005-ingles",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 5,
+    "lingua_estrangeira": "ingles",
+    "enunciado": "MCPHAIL, W. Disponível em: https://fineartamerica.com. Acesso em: 25 out. 2021.\nAo utilizar a expressão “be a shame if something were to\nhappen to it”, o pássaro",
+    "alternativas": {
+      "A": "expressa uma ideia de ameaça.",
+      "B": "demonstra uma sugestão de alimento.",
+      "C": "exprime uma sensação de vergonha.",
+      "D": "revela uma ocorrência do passado.",
+      "E": "retrata uma tentativa de aproximação."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q005_ingles.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q001-espanhol",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 1,
+    "lingua_estrangeira": "espanhol",
+    "enunciado": "“Ni para cotufas, estoy en la lona”\nAsí se dice en Venezuela. En España diríamos: “Ni para\npalomitas, estoy sin blanca”. Los argentinos utilizarían otra\nforma, y los chilenos, y los mexicanos... Esta es una guía\nbásica de entendimiento entre los hispanohablantes.\nEspaña Argentina Chile México Venezuela\nTapa (de Botana,\nPicadita Picoteo Pasapalo\ncomida) antojito\nLavabo Lavatorio Lavatorio Lavamanos Lavamanos\nPerrito Perro\nPancho Hot dog Hot dog\ncaliente caliente\n¿Diga? ¿Holá? ¿Aló? ¿Bueno? ¿Aló?\nMicro, bus, Buseta,\nAutobús Colectivo Camión\nliebre carrito\nEstar sin Estar sin un Estar sin un Estar en la\nEstar pato\nblanca mango quinto lona\nTempora,\nTrabajo Changa, Pololo, Rebusque,\ntrabajo\ntemporal changuita pololito tigre\ntrasitorial\nWeon,\nColega Compinche Cuate Pana\nbroder\nEstupendo Bárbaro Regio Padre Chévere\nPalomitas Pochoclo Cabritas Palomitas Cotufas\nCamarero Mozo Garzón Mesero Mesonero\nMOLERO, A. El español de España y el español de América.\nMadri: Editorial SM, 2003 (adaptado).\nEsse texto reúne palavras e expressões para destacar a",
+    "alternativas": {
+      "A": "identificação do falante com uma variedade específica.",
+      "B": "interferência do estrangeirismo na língua espanhola.",
+      "C": "necessidade de expandir o vocabulário do leitor.",
+      "D": "presença do diminutivo em algumas variedades.",
+      "E": "diversidade linguística do espanhol."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q001_espanhol.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q002-espanhol",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 2,
+    "lingua_estrangeira": "espanhol",
+    "enunciado": "Pobre Juan\nJuan se lanzó marchándose al norte\nIba en busca de una vida digna\nCruzando México por valles y por montes\nIba Juan lleno de fe\nLa historia es que Juan se iba a casar\nCon María embarazada\nPero él no tenía ni un centavo\nNi un clavo que darle\nPero este Juan iba muy decidido\nY a la frontera él llegó con todo el filo\nSe conectó con el mero mayor de los coyotes\nY la historia le contó\nMire usted que yo quiero cruzarme ya\nA San Diego o Chicago\nDígame usted lo que hago\nQué precio le pago\nJuan ya nunca regresó\nEn la línea se quedó\nPobre Juan\nO la migra lo mató\nO el desierto lo enterró\nPobre Juan\nMANÁ. In: Revolución de amor. México: Warner Music Spain, 2002 (fragmento).\nConsiderando-se a temática abordada nessa letra de\ncanção, a palavra “coyotes”",
+    "alternativas": {
+      "A": "descreve o animal característico das regiões áridas percorridas pelos imigrantes.",
+      "B": "ressalta o conhecimento dos habitantes das regiões desérticas mexicanas.",
+      "C": "indica o preço a ser pago pelos viajantes para se casarem em outro país.",
+      "D": "personifica a rede de exploração a que estão submetidos os imigrantes.",
+      "E": "representa a necessidade de vencer o deserto escaldante."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q003-espanhol",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 3,
+    "lingua_estrangeira": "espanhol",
+    "enunciado": "LINIERS, R. S. Disponível em: https://muhimu.es. Acesso em: 15 out. 2021.\nNessa tirinha, ao utilizar a expressão “doble vacación”, a\nprotagonista conclui que",
+    "alternativas": {
+      "A": "enredos muito extensos são desafiadores.",
+      "B": "obras com muitos personagens são instigantes.",
+      "C": "narrativas sobre viagens são mais interessantes.",
+      "D": "livros de conteúdo mais denso estão presentes na vida dos jovens.",
+      "E": "leituras diversificadas são um convite a conhecer outras realidades."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q003_espanhol.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q004-espanhol",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 4,
+    "lingua_estrangeira": "espanhol",
+    "enunciado": "Mujeres de la radio en la selva tropical\nTres valientes mujeres de Ecuador han emprendido\nuna lucha digital. Con micrófono y grabadora atraviesan la\nselva tropical. Su pequeña emisora de radio se convierte\nen bastión contra la explotación de su tierra. Los pueblos\nindígenas de la selva amazónica están amenazados: las\nempresas petroleras están invadiendo cada vez más sus\nhábitats. Las reporteras radiales vuelven a sus raíces para\ndarles voz a las mujeres indígenas.\nMariana Canelos, Jiyun Uyunkar y Rupay Sumak\nviven hoy en la ciudad, pero nacieron y se crearon en la\nselva. Además del español, también hablan sus lenguas\ntribales, lo que es indispensable para llegar a los oyentes\nen los remotos pueblos amazónicos. “Hasta ahora nadie\nha dado voz a las mujeres de las aldeas. Pero nosotras\nlo hacemos”, dice Mariana Canelos, “queremos mostrar\nsu vida cotidiana, grabar sus historias y canciones antes\nde que se olviden”. Para ello, las mujeres de la radio se\ntrasladan en canoa por el Amazonas y sus afluentes,\nincluso en las zonas más remotas.\nDisponível em: www.dw.com. Acesso em: 28 out. 2021.\nNesse texto, o trecho “antes de que se olviden” revela o\ntemor das três mulheres de que",
+    "alternativas": {
+      "A": "a emissora de rádio seja alvo de censura política.",
+      "B": "os povos remotos percam o acesso ao rádio.",
+      "C": "as histórias do seu povo sejam esquecidas.",
+      "D": "a voz das mulheres indígenas seja calada.",
+      "E": "os povos indígenas sejam ameaçados."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q005-espanhol",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 5,
+    "lingua_estrangeira": "espanhol",
+    "enunciado": "DIVERSIDAD\nFAMILIAR en el\naula\nEl alumnado procede de familias...\npadre y madre con hijos que\nTRADICIONALES\nconviven en el mismo hogar\ncon hijos o hijas en adopción o ADOPTIVAS\nacogida temporal o permanente\nHOMOPARENTALdos padres o dos madres\ncon hijos o hijas\nun padre o una madre MONOPARENTAL\ncon hijos e hijas\nSEPARADASpadres separados o divorciados que\nse alternan la custodia de los hijos\nprogenitores que conviven RECONSTITUIDAS\ncon una nueva pareja\nNUMEROSA con tres o más hijos en\nla unidad familiar\ncon miembros de MULTIÉTNICA\ndistinta etnia\n“FAMILIA NO solo hay una”\nAtender la diversidad supone reconocer que\ncada alumno o alumna es una persona única e\nirrepetible, con su propia historia, sus afectos,\nmotivaciones, necesidades, intereses, etc...\nEsto exige que la escuela ofrezca respuestas\nadecuadas a cada niño o niña.\nDisponível em: www.juntadeandalucia.es. Acesso em: 21 out. 2021.\nEsse infográfico foi produzido com o objetivo de",
+    "alternativas": {
+      "A": "defender uma política pela diversidade na constituição familiar.",
+      "B": "incentivar o convívio harmônico entre pais e filhos no ambiente escolar.",
+      "C": "fomentar o engajamento dos diferentes tipos de família na vida escolar dos filhos.",
+      "D": "apresentar a terminologia adequada para se referir aos diferentes tipos de família.",
+      "E": "promover uma reflexão sobre o papel da escola no acolhimento da diversidade familiar."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q005_espanhol.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q006",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 6,
+    "lingua_estrangeira": null,
+    "enunciado": "O fim da história\nNão creio que o tempo\nVenha comprovar\nNem negar que a História\nPossa se acabar\nBasta ver que um povo\nDerruba um czar\nDerruba de novo\nQuem pôs no lugar\nÉ como se o livro dos tempos pudesse\nSer lido trás pra frente, frente pra trás\nVem a História, escreve um capítulo\nCujo título pode ser “Nunca Mais”\nVem o tempo e elege outra história, que escreve\nOutra parte, que se chama “Nunca É Demais”\n“Nunca Mais”, “Nunca É Demais”, “Nunca Mais”\n“Nunca É Demais”, e assim por diante, tanto faz\nIndiferente se o livro é lido\nDe trás pra frente ou lido de frente pra trás.\nGILBERTO GIL. In: Parabolicamará. Rio de Janeiro: WEA, 1991.\nConsiderando-se o jogo de oposições presente nessa\nletra de canção, infere-se que a narrativa histórica",
+    "alternativas": {
+      "A": "está sujeita a diferentes interpretações.",
+      "B": "é construída pela relação causa e efeito.",
+      "C": "sucede-se em espaços de tempo cíclicos.",
+      "D": "limita-se a fatos relevantes de um grupo social.",
+      "E": "desenvolve-se em torno de uma mesma temática."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q007",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 7,
+    "lingua_estrangeira": null,
+    "enunciado": "Jon Lord, fundador do Deep Purple, era um caso raro\nna música. Depois de uma carreira bem-sucedida como\ntecladista de duas das maiores bandas de rock do planeta,\naposentou-se em 2002 para compor peças eruditas.\nPara ele, clássico e popular eram apenas aspectos de uma\nmesma entidade, a boa música. O caminho era quase\nnatural. Tendo aprendido a tocar os clássicos no piano,\nLord apaixonou-se pelo rock ao ouvir Buddy Holly\ne começou a tocar em combos de jazz, rhythm’n’blues\ne depois rock. Em 1969, aos 27 anos, ele compôs, com\na ajuda do maestro Malcolm Arnold, um Concerto para\ngrupo e orquestra, temperando a estrutura de uma peça\nerudita com a eletricidade agressiva da fase mais criativa\ndo Deep Purple, a mesma equipe que comporia Smoke\non the Water em 1972.\nSOARES, M. Jon Lord foi um pioneiro na fusão entre rock e erudito.\nDisponível em: www1.folha.uol.com.br. Acesso em: 16 nov. 2021 (adaptado).\nA circulação do tecladista Jon Lord (1941-2012) entre\ngêneros aparentemente distantes como o rock e a música\nerudita foi possível porque ele",
+    "alternativas": {
+      "A": "conheceu muitos países e culturas ao longo das constantes viagens em turnê.",
+      "B": "superou eventuais barreiras estéticas ao se abrir para novos estilos musicais.",
+      "C": "aventurou-se em novas estéticas musicais após a aposentadoria da banda.",
+      "D": "reconheceu a limitação de possibilidades de composição da música popular.",
+      "E": "adaptou-se a um repertório musical mais amplo diante do sucesso do grupo."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q008",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 8,
+    "lingua_estrangeira": null,
+    "enunciado": "A verdade é que não me preocupo muito com\no outro mundo. Admito Deus, pagador celeste dos meus\ntrabalhadores, mal remunerados cá na terra, e admito\no diabo, futuro carrasco do ladrão que me furtou uma vaca\nde raça. Tenho, portanto, um pouco de religião, embora\njulgue que, em parte, ela é dispensável a um homem.\nMas mulher sem religião é horrível.\nComunista, materialista. Bonito casamento! Amizade\ncom o Padilha, aquele imbecil. “Palestras amenas\ne variadas”. Que haveria nas palestras? Reformas sociais,\nou coisa pior. Sei lá! Mulher sem religião é capaz de tudo.\nRAMOS, G. São Bernardo. Rio de Janeiro: Record, 1981.\nUma das características da prosa de Graciliano Ramos\né ser bastante direta e enxuta. No romance São Bernardo,\no autor faz a análise psicológica de personagens e expõe\ndesigualdades sociais com base na relação entre patrão\ne empregado, além da relação conjugal. Nesse sentido,\no texto revela um(a)",
+    "alternativas": {
+      "A": "narrador personagem que coloca no mesmo plano Deus e o diabo, além de defender o livre-arbítrio feminino no tocante à religião.",
+      "B": "narrador onisciente, que não participa da história, conhecedor profundo do caráter machista de Paulo Honório e da sua ideologia política.",
+      "C": "narração em terceira pessoa que explora o aspecto objetivo e claro da linguagem para associar o espaço interno do personagem ao espaço externo.",
+      "D": "discurso em primeira pessoa que transmite o caráter ambíguo da religiosidade do personagem e sua convicção acerca da relação que a mulher deve ter com a religião.",
+      "E": "narrador alheio às questões socioculturais e econômicas da sociedade capitalista e que defende a divisão dos bens e o trabalho coletivo como modo de organização social e política."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q009",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 9,
+    "lingua_estrangeira": null,
+    "enunciado": "É vantajoso que as crianças possam entender\no funcionamento por trás da tecnologia que está\npresente em diversos aspectos da vida cotidiana,\naproveitando a curiosidade infantil como impulso inicial.\nA computação ajuda a desenvolver o raciocínio, a melhorar\na comunicação e a trabalhar a capacidade de resolver\nproblemas. Os computadores executam tarefas por meio\nde comandos dados em uma programação. Essa, por sua\nvez, é feita com linguagens próprias, que funcionam como\numa espécie de “idioma”, por meio do qual o programador\nse comunica com as máquinas.\nPorém, mais do que dominar essas linguagens,\no programador precisa empregar a lógica computacional.\nO programador precisa expressar em seu código as\ncondições e seus efeitos, como “se acontecer A, faça\nB, a não ser que haja X, então faça C”. A escrita de um\nalgoritmo é repleta de condições interconectadas, do tipo\n“se”, “então”, “senão”, “ou”, “até que”, “enquanto” etc. Por\nisso, para programar, é necessário compreender esse\ntipo de raciocínio. Para as crianças, isso é tarefa fácil;\nafinal elas têm uma capacidade incrível de assimilar\ninformações novas.\nDisponível em: https://catracalivre.com.br. Acesso em: 25 nov. 2021.\nEsse texto promove uma reflexão sobre o ensino de\nprogramação na infância. A defesa da proposta está\nancorada na caracterização da programação com base\nna sua",
+    "alternativas": {
+      "A": "conexão com aspectos lúdicos da infância.",
+      "B": "autonomia em relação ao raciocínio lógico.",
+      "C": "presença crescente no dia a dia das pessoas.",
+      "D": "similaridade com o funcionamento das línguas.",
+      "E": "capacidade de inovação na resolução de tarefas."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q010",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 10,
+    "lingua_estrangeira": null,
+    "enunciado": "Que Stendhal confessasse haver escrito um de seus\nlivros para cem leitores, coisa é que admira e consterna.\nO que não admira, nem provavelmente consternará, é se\neste outro livro não tiver os cem leitores de Stendhal,\nnem cinquenta, nem vinte, e quando muito, dez. Dez?\nTalvez cinco. Trata-se, na verdade, de uma obra difusa,\nna qual eu, Brás Cubas, se adotei a forma livre de um\nSterne, ou de um Xavier de Maistre, não sei se lhe meti\nalgumas rabugens de pessimismo. Pode ser. Obra de\nfinado. Escrevia-a com a pena da galhofa e a tinta da\nmelancolia, e não é difícil antever o que poderá sair desse\nconúbio. Acresce que a gente grave achará no livro umas\naparências de puro romance, ao passo que a gente frívola\nnão achará nele o seu romance usual; ei-lo aí fica privado\nda estima dos graves e do amor dos frívolos, que são as\nduas colunas máximas da opinião.\nASSIS, M. Memórias póstumas de Brás Cubas. Disponível em: www.dominiopublico.gov.br.\nAcesso em: 8 ago. 2015.\nNo fragmento transcrito da dedicatória “Ao leitor”, em\nMemórias póstumas de Brás Cubas, o autor serve-se da\nfigura do narrador-defunto para",
+    "alternativas": {
+      "A": "desqualificar o gênero romance, forma literária à qual Machado de Assis pouco se dedicou.",
+      "B": "ressaltar a inverossimilhança dos fatos narrados, confrontados com a realidade da burguesia carioca do século XIX.",
+      "C": "criticar a sociedade burguesa brasileira da época, valendo-se do uso da terceira pessoa e do ponto de vista distanciado.",
+      "D": "sobrepor a “tinta da melancolia” ao aspecto humorístico, de modo a valorizar o tom sóbrio e a temática realista típicos do romance burguês brasileiro.",
+      "E": "fazer intromissões na narrativa, introduzindo pausas no relato durante as quais estabelece com o leitor um diálogo de tom sarcástico e provocativo."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q011",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 11,
+    "lingua_estrangeira": null,
+    "enunciado": "A solidão nas cidades grandes é muito mais um sinal da\nprecariedade do sentido da comunidade e da convivência,\né mais um problema sociocultural do que de escolha individual.\nCertamente ela reflete a impossibilidade de retornar\nàs florestas, como um dia fez Henry Thoreau. As florestas\nestão em extinção, assim como, curiosamente, a ideia de\nhumanidade. Resta fugir para a moderna caverna na selva\nde pedra — sem querer reeditar lugares-comuns — que\né a casa de cada um.\nA solidão é, assim, a categoria política que expressa\na nostalgia de uma vivência de si mesmo. Ela é, por isso,\na tentativa de preservar a subjetividade e a intimidade\nconsigo mesmo que não tem lugar no contexto de relações\nsociais transformadas em mercadorias baratas.\nA sociedade da antipolítica precisa tratar a solidão\ncomo uma pena e um mal-estar quando não consegue\nolhar para a miséria da vez: o fetiche da hiperconectividade,\nque ilude que não somos sozinhos.\nTIBURI, M. Disponível em: http://revistacult.uol.com.br. Acesso em: 7 out. 2011.\nMarcia Tiburi trata de um tema relevante para a sociedade\nmoderna: a convivência interpessoal e a hiperconectividade\nvivenciada no ciberespaço. O texto classifica-se, quanto\nao gênero textual, como artigo de opinião, porque",
+    "alternativas": {
+      "A": "busca resolver a causa da perda de sentido ocorrida na convivência interpessoal.",
+      "B": "procura definir a solidão como uma epidemia que está além das doenças humanas.",
+      "C": "tenta explicar o comportamento do homem contemporâneo tendo como padrão o homem das cavernas.",
+      "D": "objetiva expressar o ponto de vista de que o mal-estar provocado na sociedade decorre da hiperconectividade.",
+      "E": "procura discutir os desejos dos antipolíticos que destroem a intimidade na tentativa de preservar a subjetividade."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q012",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 12,
+    "lingua_estrangeira": null,
+    "enunciado": "O Esporte Adaptado ou Paradesporto é compreendido\ncomo prática que oportuniza às pessoas com deficiência\n(PcD) o alcance de novos horizontes e perspectivas\nde vida por meio de vivências motoras, psicológicas e\nsociais diversificadas. Esse tipo de atividade consiste\nna possibilidade de prática esportiva para PcD com\nmodificações relacionadas às regras da modalidade\nou à maneira como a modalidade se desenvolve.\nAdicionalmente, o esporte para PcD é geralmente dividido\npor grupos de deficiência específicos nos quais cada grupo\ntem história distinta, organização, programa de competição\ne abordagem diferentes. Registram-se atualmente\nmovimentos esportivos específicos para pessoas surdas,\npara deficientes físicos, deficientes visuais e para pessoas\ncom deficiência intelectual. Uma grande variedade de\nmodalidades esportivas foram adaptadas para serem\npraticadas por pessoas com diferentes deficiências, assim\ncomo outras modalidades foram criadas exclusivamente\npara PcD.\nSIMIM, M. A. M. et al. O estado da arte das pesquisas em esportes\ncoletivos para pessoas com deficiência: uma revisão sistemática.\nArquivos de Ciências do Esporte, n. 1, 2018 (adaptado).\nDe acordo com esse texto, as práticas esportivas para\nPcD são caracterizadas por",
+    "alternativas": {
+      "A": "terem regras flexíveis em função do desempenho dos atletas em cada modalidade.",
+      "B": "ampliarem perspectivas de vida ao considerarem o desenvolvimento integral das pessoas.",
+      "C": "estarem voltadas para o estímulo à competitividade dos atletas com deficiência.",
+      "D": "buscarem a adesão do público para garantir apoio financeiro às competições.",
+      "E": "serem organizadas sem distinção para grupos de diferentes deficiências."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q013",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 13,
+    "lingua_estrangeira": null,
+    "enunciado": "Leão do Norte\nSou o coração do folclore nordestino\nEu sou Mateus e Bastião do boi-bumbá\nSou o boneco do Mestre Vitalino\nDançando uma ciranda em Itamaracá\nEu sou um verso de Carlos Pena Filho\nNum frevo de Capiba\nAo som da Orquestra Armorial\nSou Capibaribe\nNum livro de João Cabral\nSou mamulengo de São Bento do Una\nVindo no baque solto de maracatu\nEu sou um auto de Ariano Suassuna\nNo meio da Feira de Caruaru\nSou Frei Caneca do Pastoril do Faceta\nLevando a Flor da Lira\nPra Nova Jerusalém\nSou Luiz Gonzaga\nE eu sou mangue também\nEu sou mameluco, sou de Casa Forte\nSou de Pernambuco, sou o Leão do Norte\nLENINE; PINHEIRO, P. C. Leão do Norte. In: LENINE.\nOlho de peixe. São Paulo, 1993 (fragmento).\nA letra da canção expressa a diversidade de danças,\nsendo uma delas demonstrada no trecho:",
+    "alternativas": {
+      "A": "“Eu sou mameluco, sou de Casa Forte”.",
+      "B": "“Sou de Pernambuco, sou o Leão do Norte”.",
+      "C": "“Sou Luiz Gonzaga / E eu sou mangue também”.",
+      "D": "“Eu sou um auto de Ariano Suassuna / No meio da Feira de Caruaru”.",
+      "E": "“Eu sou Mateus e Bastião do boi-bumbá / Sou o boneco do Mestre Vitalino”."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q014",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 14,
+    "lingua_estrangeira": null,
+    "enunciado": "Construindo uma irmandade da língua\nA ideia de que a língua portuguesa é pertença de\ntodos os seus falantes é hoje quase pacífica. Só meia\ndúzia de ultranacionalistas portugueses insiste ainda no\ndisparate de se julgar proprietário exclusivo do idioma.\nAliás, ao contrário da Commonwealth e da francofonia,\na irmandade da língua portuguesa não tem um único centro\nou voz dominante, e essa é precisamente uma das suas\nmaiores virtudes.\nAGUALUSA, J. E. O Globo, 8 maio 2021 (adaptado).\nNesse texto, o termo “Aliás” articula dois enunciados\nenvolvidos numa mesma relação argumentativa,\nconstruindo, para o segundo, uma ideia de",
+    "alternativas": {
+      "A": "questionamento da origem da língua portuguesa.",
+      "B": "semelhança de condições sociais dos falantes do português.",
+      "C": "acréscimo de fato comprobatório sobre a língua portuguesa.",
+      "D": "comparação entre o português brasileiro e o europeu.",
+      "E": "relevância do português sobre o inglês e o francês."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q015",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 15,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nVocê vai ficar obsoleto\nVivemos numa época em que as coisas ficam\nobsoletas cada vez mais rápido. Produtos e serviços\ndesaparecem substituídos por outros, como também\nindústrias inteiras, devoradas por formas mais eficientes\nde trabalho. O comportamento das pessoas também está\nmudando; hoje aceitamos a inovação muito mais rápido.\nVocê sabia que a eletricidade demorou 46 anos\npara ser adotada por pelos menos 25% da população\nnorte-americana? Para o telefone foram necessários\n35 anos, 31 para o rádio, 26 para a televisão, 16 para\no computador, 13 para o celular e apenas 7 para a internet.\nDessa forma, tecnologia e empreendedorismo\nformam uma combinação explosiva que afeta os\ntradicionais setores econômicos, transformando modelos\nde negócios inteiros e acelerando o envelhecimento das\ncoisas. Portanto, a chave para lidar com isso nos exige\nsair constantemente da zona de conforto. Deixar para\ntrás o velho e abrir-se ao novo é despir-se do medo do\ndesconhecido. É deixar-se dominar pelo entusiasmo, pela\ncuriosidade e pela vontade de viver e fazer diferente.\nSENGER, A. Disponível em: www.cloudcoaching.com.br.\nAcesso em: 20 nov. 2021 (adaptado).\nTEXTO II\nA rotina obsoleta\nSer do tempo da máquina de escrever não me assusta\nmais. Já é objeto de museu. De colecionador. Até seu\nsucessor, o computador de mesa, está com os dias\ncontados. Tão mais prático o laptop! Mas também existe\no tablet, e quem sabe o que logo mais.\nÉ surpreendente a velocidade com que meu cotidiano\nse transforma. Objetos essenciais até um tempinho atrás\ndesapareceram.\nInventa-se um dispositivo, todo mundo tem, e,\ndali a pouco, ele é trocado por outro, mais avançado.\nA velocidade da mudança supera as eras anteriores.\nO próprio papel está perdendo a razão de ser.\nDocumentos on-line são aceitos. Posso assinar um\ncontrato por e-mail. Houve um tempo em que ter xerox\nde RG com firma reconhecida era um avanço. Hoje…\nQuem faz xerox? Imagine, eu sou do tempo em que\nna escola se faziam apostilas em xerox! Hoje, a gente\nrecebe on-line.\nParece estável? Vai sumir. A vida se torna obsoleta\na cada segundo. Mas o novo vai surgir. Isso torna a vida\nfascinante. A realidade é deliciosamente instável.\nCARRASCO, W. Disponível em: https://veja.abril.com.br. Acesso em: 20 nov. 2021.\nOs textos I e II abordam a temática da obsolescência\ne têm em comum a",
+    "alternativas": {
+      "A": "expressão de uma latente nostalgia.",
+      "B": "crítica à velocidade das inovações tecnológicas.",
+      "C": "percepção de uma constante sensação de inutilidade.",
+      "D": "opinião desfavorável a mudanças de hábitos e comportamentos.",
+      "E": "perspectiva otimista diante da impermanência do mundo contemporâneo."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q016",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 16,
+    "lingua_estrangeira": null,
+    "enunciado": "Até agora não pudemos saber se há ouro ou prata\nnela, ou outra coisa de metal, ou ferro; nem lha vimos.\nContudo a terra em si é de muito bons ares frescos\ne temperados como os de Entre-Douro-e-Minho, porque\nneste tempo d’agora assim os achávamos como os de lá.\nÁguas são muitas; infinitas. Em tal maneira é graciosa\nque, querendo-a aproveitar, dar-se-á nela tudo; por causa\ndas águas que tem! Contudo, o melhor fruto que dela\nse pode tirar parece-me que será salvar esta gente.\nE esta deve ser a principal semente que Vossa Alteza\nem ela deve lançar. E que não houvesse mais do que ter\nVossa Alteza aqui esta pousada para essa navegação de\nCalicute bastava. Quanto mais, disposição para se nela\ncumprir e fazer o que Vossa Alteza tanto deseja, a saber,\nacrescentamento da nossa fé!\nCAMINHA, P. V. A carta. Disponível em: www.dominiopublico.gov.br.\nAcesso em: 31 out. 2021.\nEsse texto é um fragmento da carta de Pero Vaz de\nCaminha para o rei de Portugal, cuja importância\ndocumental reside no fato de",
+    "alternativas": {
+      "A": "apresentar usos pouco comuns do português padrão da época.",
+      "B": "descrever o estranhamento do autor ao chegar ao Brasil.",
+      "C": "fazer um inventário do expediente das rotinas de navegação e achados da tripulação.",
+      "D": "exemplificar procedimentos de comunicação formal em um contexto de forte hierarquia.",
+      "E": "ser um registro histórico e linguístico do período em que foi redigido."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q017",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 17,
+    "lingua_estrangeira": null,
+    "enunciado": "emicida\n@emicida\nAí, maloqueiro, aí, maloqueira\nLevanta essa cabeça\nEnxuga essas lágrimas, certo?\nRespira fundo e volta pro ringue\nCê vai sair dessa prisão\nCê vai atrás desse diploma\nCom a fúria da beleza do Sol, tendeu?\nFaz isso por nóiz, faz essa por nóiz\nTe vejo no pódio\n#EmicidaLiveEmCasa\n10:35 PM . 10 de maio de 2020\nDisponível em: https://twitter.com/emicida. Acesso em: 23 out. 2021.\nNessa postagem dirigida aos seus seguidores de rede\nsocial, o autor utiliza uma linguagem",
+    "alternativas": {
+      "A": "própria de manifestações poéticas.",
+      "B": "aplicada em contextos da área desportiva.",
+      "C": "característica àquela atribuída a falantes escolarizados.",
+      "D": "empregada por falantes urbanos jovens de determinada região.",
+      "E": "marcada por uma relação de distanciamento entre os interlocutores."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q017.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q018",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 18,
+    "lingua_estrangeira": null,
+    "enunciado": "O grande hall do hotel estava repleto. [...] Os criados\npassavam apressados, erguendo numa azáfama os pratos\nde metal. Ao alto, os ventiladores faziam um rumor\nde colmeias. Senhoras e cavalheiros, perfeitamente felizes,\nas senhoras quase todas com largos boás de plumas brancas,\nchalravam e sorriam. Estávamos bem na bizarra sociedade\nde entalhe que é o escol dos hotéis. Alta, longa, comprida,\ncom uma cintura de esmaltes translúcidos e o ar empoado\nde uma íntima do general Lafayette, a escritora americana\ncuja admiração por Gonçalves Dias chegara a fazê-la\nestudar e propagar o Brasil, mastigava gravemente. Logo\nao lado, um grupo de engenheiros, também americanos,\nbebia, com gargalhadas brutais e decerto inconvenientes,\nchampanhe Mumm. [...] De vez em quando parava à porta\num novo hóspede, hesitava, percorria com o olhar a extensa\nfila de mesas onde o debinage se acalorava. A um canto,\nMlles. Peres, filhas de um rico argentino, yatch-recorderman\nnas horas vagas e vendedor de gado nas outras, perlavam\nrisadinhas de flerte para o solitário e divino Alberto Guerra,\nseguro dos seus bíceps, dos seus brilhantes e quiçá dos\nseus versos.\nJOÃO DO RIO. Dentro da noite. São Paulo: Antiqua, 2002 (fragmento).\nNessa descrição, o narrador traça um panorama\nsociocultural das primeiras décadas do século XX.\nSua perspectiva revela uma",
+    "alternativas": {
+      "A": "percepção irônica da importação de valores e modismos.",
+      "B": "euforia generalizada com as facilidades da modernidade.",
+      "C": "visão otimista sobre as atitudes da mulher emancipada.",
+      "D": "adesão propagandística aos gostos burgueses e ao luxo.",
+      "E": "preocupação nacionalista com a integridade da língua."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q019",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 19,
+    "lingua_estrangeira": null,
+    "enunciado": "Para começar, ele nos olha na cara. Não é como\na máquina de escrever, que a gente olha de cima, com\nsuperioridade. Com ele é olho no olho ou tela no olho.\nEle nos desafia. Parece estar dizendo: vamos lá, seu\ndesprezível pré-eletrônico, mostre o que você sabe fazer.\nA máquina de escrever faz tudo que você manda, mesmo\nque seja a tapa. Com o computador é diferente. Você\nfaz tudo que ele manda. Ou precisa fazer tudo ao modo\ndele, senão ele não aceita. Às vezes, quando a gente\nerra, ele faz “bip”. Assim, para todo mundo ouvir. Comecei\na usar o computador na redação do jornal e volta e meia\nerrava. E lá vinha ele: “Bip!” “Olha aqui, pessoal: ele errou.”\n“O burro errou!”.\nOutra coisa: ele é mais inteligente que você.\nEsse negócio de que qualquer máquina só é tão inteligente\nquanto quem a usa não vale com ele. Está subentendido,\nnas suas relações com o computador, que você jamais\naproveitará metade das coisas que ele tem para oferecer.\nA máquina de escrever podia ter recursos que você nunca\nusaria, mas não tinha o mesmo ar de quem só aguentava\nos humanos por falta de coisa melhor, no momento.\nE a máquina, mesmo nos seus instantes de maior\nimpaciência conosco, jamais faria “bip” em público.\nVERISSIMO, L. F. Pai não entende nada. Porto Alegre: L&PM, 1990.\nAo descrever sua relação com a máquina de escrever\ne o computador, o cronista adota uma perspectiva que",
+    "alternativas": {
+      "A": "põe em evidência a disparidade entre tecnologias.",
+      "B": "critica a quantidade de recursos dos dispositivos.",
+      "C": "defende a utilização de equipamentos obsoletos.",
+      "D": "sobrepõe a inteligência humana à da máquina.",
+      "E": "refuta o progresso técnico da comunicação."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q020",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 20,
+    "lingua_estrangeira": null,
+    "enunciado": "PAULINO, R. Bastidores (detalhe). Gravura sobre tecido em\nsuporte de madeira para bordado, 1997.\nDisponível em: www.galeriavirgilio.com.br. Acesso em: 29 out. 2010.\nSob a perspectiva em que o artista deve trabalhar com\nas coisas que o tocam profundamente, a singularidade\nda obra Bastidores, produzida com objetos do cotidiano\ne de pouco valor material, mostra a boca, que expressa uma",
+    "alternativas": {
+      "A": "situação religiosa afro-brasileira que envolve grande parte da população.",
+      "B": "condição particular da artista, deslocada de um contexto sociocultural.",
+      "C": "situação histórica em que as mulheres ainda bordavam em bastidores.",
+      "D": "condição vivida por parte das mulheres afro-brasileiras trabalhadoras.",
+      "E": "situação que se sugere, mas que não se aplica, a parcelas da população."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q020.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q021",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 21,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nVIK MUNIZ. Segundo Warhol: dupla Mona Lisa. Fotografia da\ncomposição, realizada com geleia e pasta de amendoim.\nMAC Lima, Peru, 1999.\nDisponível em: www.artnet.com. Acesso em: 1 nov. 2022.\nTEXTO II\nARCIMBOLDO, G. Vertumnus (Imperador Rodolfo II).\nÓleo sobre painel de madeira, 70 x 57 cm.\nCastelo Skokloster, Suécia, circa 1590.\nDisponível em: www.aventurasnahistoria.uol.com.br. Acesso em: 16 fev. 2023.\nProduzidas com mais de 400 anos de diferença, as obras\nde Vik Muniz e Giuseppe Arcimboldo têm em comum\na referência a alimentos. Contudo, enquanto na obra\nde Arcimboldo os alimentos fazem parte de um jogo\nde representação, em Muniz, são empregados como\nmatéria-prima, sinalizando uma",
+    "alternativas": {
+      "A": "composição minimalista em contraposição aos excessos do Barroco.",
+      "B": "forma de questionar a importância do cânone na pintura de Leonardo Da Vinci.",
+      "C": "provocação sobre as mudanças de hábitos alimentares com o passar dos séculos.",
+      "D": "intenção parodística, estabelecendo um diálogo entre a Pop Art e a tradição.",
+      "E": "reafirmação da estética renascentista revisitada pela contemporaneidade."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q021.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q022",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 22,
+    "lingua_estrangeira": null,
+    "enunciado": "Basquiat representa uma das classes da sociedade\namericana às quais as barreiras sociais impedem,\ngeralmente, o acesso à arte. Os seus quadros, objetos\npictóricos e desenhos apresentam-se cheios de sinais,\ntranscrições de textos e elementos figurativos, encadeados\nem ritmos pictóricos de uma precisão empolgante — um\nmisto de pintura gráfica, símbolos populares americanos,\ngírias de rua e alusões a obras de arte famosas.\nHONNEF, K. Arte contemporânea. São Paulo: 1994 (adaptado).\nAs características pictóricas das obras de Basquiat\napresentadas no texto aproximam-se das que\nencontramos no Brasil no",
+    "alternativas": {
+      "A": "conjunto de azulejos da arte barroca.",
+      "B": "óleo sobre tela A Batalha do Riachuelo, do artista Victor Meirelles.",
+      "C": "painel de pastilhas do mural de rua Imprensa, do artista modernista Di Cavalcanti, localizado na cidade de São Paulo.",
+      "D": "óleo sobre tela intitulado Abaporu, da artista modernista Tarsila do Amaral, em São Paulo.",
+      "E": "óleo sobre tela do artista modernista Alfredo Volpi."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q023",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 23,
+    "lingua_estrangeira": null,
+    "enunciado": "Plantas superpoderosas\nA bióloga Joanne Chory já tinha 60 anos e um\ndiagnóstico de Parkinson quando decidiu se dedicar a um\nprojeto que capturasse gás carbônico da atmosfera — coisa\nque as plantas fazem regularmente há 2,8 bilhões de anos.\nPara isso, a pesquisadora começou a estudar algumas\nespécies e alterá-las por meio de técnicas de horticultura\ne manipulação genética. A ideia é que capturem mais\ncarbono e o armazenem em suas raízes. Uma dessas\nplantas, um tipo de mostarda, já cresce no delta do rio\nMississipi. Caso funcione, a pesquisa tem potencial para\ndiminuir em 46% o excesso de CO jogado anualmente na\n2\natmosfera. “Provavelmente não estarei aqui para ver os\nresultados. Mas prefiro ser parte da solução a me sentar\ne reclamar”, diz Joanne. Que as superplantas criadas pela\nbióloga vinguem e vicejem!\nCARNEIRO, F. Disponível em: https://veja.abril.com.br.\nAcesso em: 23 out. 2021 (adaptado).\nEsse texto descreve a pesquisa inovadora realizada por\numa bióloga de 60 anos com diagnóstico de Parkinson.\nO trecho que permite uma referência indireta a essa\ncondição física é",
+    "alternativas": {
+      "A": "“decidiu se dedicar a um projeto que capturasse gás carbônico”.",
+      "B": "“a pesquisadora começou a estudar algumas espécies”.",
+      "C": "“Caso funcione, a pesquisa tem potencial para diminuir em 46% o excesso de CO ”. 2",
+      "D": "“‘Provavelmente não estarei aqui para ver os resultados’”.",
+      "E": "“Que as superplantas criadas pela bióloga vinguem e vicejem!”."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q023.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q024",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 24,
+    "lingua_estrangeira": null,
+    "enunciado": "Proclamação do amor antigramática\n“Dá-me um beijo”, ela me disse,\nE eu nunca mais voltei lá.\nQuem fala “dá-me” não ama,\nQuem ama fala “me dá”\n“Dá-me um beijo” é que é correto,\nÉ linguagem de doutor,\nMas “me dá” tem mais afeto,\nBeijo me-dado é melhor.\nA gramática foi feita\nPor um velho professor,\nPor isso é tão má receita\nPra dizer coisas de amor.\nO mestre pune com zero\nQuem não diz “amo-te”. Aposto\nQue em casa ele é mais sincero\nE diz pra mulher: “te gosto”\nDelírio dos olhos meus,\nEstás ficando antipática.\nPelo diabo ou por deus\nManda às favas a gramática.\nFala, meu cheiro de rosa,\nDo jeito que estou pedindo:\n“Hoje estou menas formosa,\nCom licença, vou se indo”.\nComete miles de erros,\nMistura tu com você,\nE eu proclamarei aos berros:\n“Vós és o meu bem querer”.\nLAGO, M. Disponível em: www.mariolago.com.br. Acesso em: 30 out. 2021.\nNesse poema, o eu lírico defende o uso de algumas\nestruturas consideradas inadequadas na norma-padrão\nda língua. Esse uso, exemplificado por “me dá” e “te\ngosto”, é legitimado",
+    "alternativas": {
+      "A": "pelo contexto de situação discutido ao longo do poema.",
+      "B": "pelas características enunciativas requeridas pelo gênero poema.",
+      "C": "pela interlocução construída entre o eu lírico e os leitores do poema.",
+      "D": "pela mobilização da função poética da linguagem na composição do texto.",
+      "E": "pelo reconhecimento do valor social da variedade de prestígio em textos escritos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q025",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 25,
+    "lingua_estrangeira": null,
+    "enunciado": "Terça-feira, 30 de maio de 1893.\nEu gosto muito de todas as festas de Diamantina; mas\nquando são na igreja do Rosário, que é quase pegada\nà chácara de vovó, eu gosto ainda mais. Até parece que\na festa é nossa. E este ano foi mesmo. Foi sorteada para\nrainha do Rosário uma ex-escrava de vovó chamada\nJúlia e para rei um negro muito entusiasmado que eu\nnão conhecia. Coitada de Júlia! Ela vinha há muito tempo\najuntando dinheiro para comprar um rancho. Gastou tudo\nna festa e ainda ficou devendo. Agora é que eu vi como\nfica caro para os pobres dos negros serem reis por um dia.\nJúlia com o vestido e a coroa já gastou muito. Além disso,\nteve de dar um jantar para a corte toda. A rainha tem uma\ncaudatária que vai atrás segurando na capa que tem uma\ngrande cauda. Esta também é negra da chácara e ajudou\nno jantar. Eu acho graça é no entusiasmo dos pretos\nneste reinado tão curto. Ninguém rejeita o cargo, mesmo\nsabendo a despesa que dá!\nMORLEY, H. Minha vida de menina. São Paulo: Cia. das Letras, 1998.\nO trecho apresenta marcas textuais que justificam\no emprego da linguagem coloquial. O tom informal do\ndiscurso se deve ao fato de que se trata de um(a)",
+    "alternativas": {
+      "A": "narrativa regionalista, que procura reproduzir as características mais típicas da região, como as falas dos personagens e o contexto social a que pertencem.",
+      "B": "carta pessoal, escrita pela autora e endereçada a um destinatário específico, com o qual ela tem intimidade suficiente para suprimir as formalidades da correspondência oficial.",
+      "C": "registro no diário da autora, conforme indicam a data, o emprego da primeira pessoa, a expressão de reflexões pessoais e a ausência de uma intenção literária explícita na escrita.",
+      "D": "narrativa de memórias, na qual a grande distância temporal entre o momento da escrita e o fato narrado impõe o tom informal, pois a autora tem dificuldade de se lembrar com exatidão dos acontecimentos narrados.",
+      "E": "narrativa oral, em que a autora deve escrever como se estivesse falando para um interlocutor, isto é, sem se preocupar com a norma-padrão da língua portuguesa e com referências exatas aos acontecimentos mencionados."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q026",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 26,
+    "lingua_estrangeira": null,
+    "enunciado": "QUANDO TUDO SE CONFUNDE QUALQUER MAPA É MÚNDI\nLAERTE. Mapa-múndi. Disponível em: www1.folha.uol.com.br. Acesso em: 24 out. 2021.\nNesse cartum, a predominância da função poética da\nlinguagem manifesta-se na",
+    "alternativas": {
+      "A": "ênfase dada à dificuldade de compreensão de um atlas.",
+      "B": "articulação entre a expressão verbal e as imagens representadas.",
+      "C": "singularidade da percepção da autora sobre a área de geografia.",
+      "D": "construção de uma representação cartográfica diferente.",
+      "E": "forma de organização das informações do mapa-múndi."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q026.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q027",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 27,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma marca de eletrodomésticos que retornou para\no mercado brasileiro posicionou painéis em pontos\nestratégicos da cidade de São Paulo com frases que\ntrazem histórias reais de mulheres que desafiaram\npadrões e estereótipos, com a premissa de trazer uma\nreflexão sobre o Dia da Igualdade Feminina.\nCada uma das 9 frases traz um contraponto instigante\ne atualiza uma nova ideia em sintonia com o ambiente,\ndialogando com a cidade, como “O cara que inventou\na cerveja foi uma mulher”, perto de bares, e “O melhor\nartilheiro da seleção é uma mulher nordestina”, em frente\na estádios de futebol.\nFrases como “O pai do wi-fi foi uma mulher, atriz e\nrefugiada”; “O gênio por trás do GPS foi uma mulher\nnegra”; “O arquiteto que projetou o MASP foi uma\nmulher imigrante”; “O ator que mais vezes venceu o\nOscar foi uma mulher”; “O cientista precursor da energia\nlimpa foi uma mulher”; “O primeiro piloto de testes\nda história foi uma mulher” e “O autor do primeiro\nromance do mundo foi uma mulher japonesa” estavam\npresentes em 15 pontos da cidade de São Paulo.\nALVES, S. Disponível em: www.b9.com.br. Acesso em: 5 nov. 2021 (adaptado).\nAo provocar a reflexão sobre o Dia da Igualdade Feminina,\na campanha descrita nesse texto fundamenta-se no(a)",
+    "alternativas": {
+      "A": "oposição proposital entre as referências de gênero presentes nas frases.",
+      "B": "relação entre os dizeres do painel e o local estratégico de instalação.",
+      "C": "alusão a grandes feitos científicos que são amplamente conhecidos.",
+      "D": "padrão das frases que favorece a assimilação da mensagem.",
+      "E": "apresentação de temáticas muito presentes no dia a dia."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q028",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 28,
+    "lingua_estrangeira": null,
+    "enunciado": "A palavra saudade faz parte do vocabulário cotidiano\ndos portugueses e, também, do povo brasileiro. Mas\nafinal, qual é a sua verdadeira origem? Existem algumas\nespeculações sobre a origem de saudade. Há quem\ndefenda que a palavra vem do árabe saudah. Outros\nentendem que a sua origem vem do latim sólitas, que\nsignifica solidão.\nAlguns especialistas indicam que palavras\ncomo saud, saudá e suaida significam “sangue pisado” e\n“preto dentro do coração”. A metáfora perfeita para alguém\nque carrega no seu coração uma profunda tristeza, tristeza\nesta que pode ser causada pela saudade. Os árabes\nutilizam o termo as-saudá quando querem se referir\na uma doença do fígado, diagnosticada por eles como\n“melancolia do paciente”.\nEm certos idiomas, o significado de solitate foi mantido,\ncomo é o caso do castelhano (soledad), do italiano\n(solitudine) ou do francês (solitude). Em português e no\ngalego (soidade), alterou-se com o tempo. Assim sendo,\nquando alguém dizia “tenho saudades de casa” significava\nque sentia “solidão” por não estar em casa. De qualquer\nforma, os portugueses foram atribuindo outros significados\na saudade. Dizem até que passou a fazer parte do\ndicionário dos portugueses no tempo dos Descobrimentos\nMarítimos. Saudade definia a solidão que os portugueses\ntinham da sua terra, familiares e amigos, quando estes\npartiam para o Brasil.\nDisponível em: www.natgeo.pt. Acesso em: 24 nov. 2021 (adaptado).\nEsse texto, que trata da acepção da palavra “saudade”\nem vários idiomas, tem como objetivo",
+    "alternativas": {
+      "A": "questionar sua evolução histórica.",
+      "B": "especular sobre suas origens etimológicas.",
+      "C": "explicar seu processo de dicionarização.",
+      "D": "problematizar seus diferentes sentidos na sociedade.",
+      "E": "defender a tese acerca de sua origem desconhecida."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q029",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 29,
+    "lingua_estrangeira": null,
+    "enunciado": "Quaresma despiu-se, lavou-se, enfiou a roupa de casa,\nveio para a biblioteca, sentou-se a uma cadeira de balanço,\ndescansando. Estava num aposento vasto, e todo ele era\nforrado de estantes de ferro. Havia perto de dez, com quatro\nprateleiras, fora as pequenas com os livros de maior tomo.\nQuem examinasse vagarosamente aquela grande coleção\nde livros havia de espantar-se ao perceber o espírito\nque presidia a sua reunião. Na ficção, havia unicamente\nautores nacionais ou tidos como tais: o Bento Teixeira, da\nProsopopeia; o Gregório de Matos, o Basílio da Gama,\no Santa Rita Durão, o José de Alencar (todo), o Macedo,\no Gonçalves Dias (todo), além de muitos outros.\nBARRETO, L. Triste fim de Policarpo Quaresma.\nRio de Janeiro: Mediafashion, 2008.\nNo texto, o uso do artigo definido anteposto aos nomes\npróprios dos escritores brasileiros",
+    "alternativas": {
+      "A": "demonstra a familiaridade e o conhecimento que o personagem tem dos autores nacionais e de suas obras.",
+      "B": "consiste em um regionalismo que tem a função de caracterizar a fala pitoresca do personagem principal.",
+      "C": "é uma marca da linguagem culta cuja função é enfatizar o gosto do personagem pela literatura brasileira.",
+      "D": "constitui um recurso estilístico do narrador para mostrar que o personagem vem de uma classe social inferior.",
+      "E": "indica o tom depreciativo com o qual o narrador se refere aos autores nacionais, reforçado pela expressão “tidos como tais”."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q030",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 30,
+    "lingua_estrangeira": null,
+    "enunciado": "Foram 11 bilhões de palavras examinadas em mais\nde três milhões de livros que mostraram que a linguagem\nusada em romances, durante mais de cem anos, é sexista.\nUm grupo de cientistas realizou um descomunal trabalho\nde campo no qual analisou de forma maciça textos escritos\nem inglês em livros publicados entre 1900 e 2008. O que\nfoi analisado exatamente? A correlação entre gêneros\ne qualificativos em busca de um padrão: o tratamento\ndiferente entre mulheres e homens em textos escritos.\nO estudo utilizou um sistema baseado em inteligência\nartificial e aprendizagem de máquina para analisar, palavra\npor palavra, as obras publicadas nesse período. A análise\nconcluiu que as mulheres recebem apenas qualificativos\nrelacionados ao seu físico, enquanto para os homens as\nreferências se concentram principalmente em sua força\ne personalidade. Os atributos negativos relacionados ao\nfísico e à aparência nessas obras são observados até\ncinco vezes mais nas mulheres do que nos homens.\nOs algoritmos aprendem com os textos já escritos e\npublicados. Assim, um sistema pode considerar bom um\nmodelo que se repete várias vezes (por exemplo, aquele\nrelacionado à beleza e à mulher) e assimilá-lo em sua\nexecução atual.\nZURIARRAIN, J. M. Disponível em: https://brasil.elpais.com.\nAcesso em: 5 nov. 2021 (adaptado).\nO desenvolvimento de tecnologias, como os algoritmos\ne a inteligência artificial, permite a análise de um grande\nvolume de dados. Nesse texto, a utilização desses\nrecursos",
+    "alternativas": {
+      "A": "avalia as qualidades positivas atribuídas aos homens.",
+      "B": "revela a materialidade linguística de estereótipos de gênero.",
+      "C": "indica a pouca eficácia da aprendizagem de máquina.",
+      "D": "questiona a linearidade de padrões linguísticos.",
+      "E": "atesta cientificamente as diferenças sociais."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q031",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 31,
+    "lingua_estrangeira": null,
+    "enunciado": "Disponível em: https://facebook.com/SenadoFederal. Acesso em: 1 nov. 2021.\nCom essa postagem, o enunciador busca",
+    "alternativas": {
+      "A": "divulgar dispositivos legais criados para ajudar no combate a um crime.",
+      "B": "manifestar adesão a uma lei voltada para coibir a prática de um delito.",
+      "C": "incentivar o cidadão a obter informação sobre uma lei por vias informais.",
+      "D": "tornar pública uma lei voltada à criação de perfis nas salas de bate-papo.",
+      "E": "alertar o público usuário de redes sociais sobre mudanças em uma lei vigente."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q031.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q032",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 32,
+    "lingua_estrangeira": null,
+    "enunciado": "No tempo em que assistíamos\ntelevisão no meio da praça\nO que eu vou contar nestas próximas linhas não\nfará sentido para os leitores mais jovens, mas houve\num tempo em que assistíamos televisão no meio da\npraça. Nessa fase, a propriedade de aparelhos ainda\nera restrita às camadas mais abastadas.\nSeja no meio de uma praça pública, seja na sala\nde casa, a televisão cumpriu um importante papel de\nsociabilização, mesmo que de forma mitigada. Isso\nporque, ao contrário do que acontecia na antiguidade,\nas praças não eram (como ainda não são) espaços de\nconvivência pública ativa, no máximo um lugar para gastar\no tempo, bater um papo. Naqueles tempos, os aparelhos\nde TV nas praças reverteram um pouco dessa lógica.\nAo que parece, está se inaugurando no Brasil um novo\ntempo no campo da pesquisa sobre a televisão e sua\ninserção sociocultural nas camadas populares.\nEssas pesquisas não podem e não devem ignorar,\nespecialmente, a intensa concentração desses veículos\nnas mãos de poucas famílias e grupos econômicos, sob o\nrisco de a televisão no Brasil continuar centrada num modelo\nantidemocrático, antimediador, intransitivo, tendo como\nconsequência direta a limitação crescente da participação\nda população nas instâncias públicas de decisão\n(a televisão é uma concessionária de serviço público),\nsó que agora com o agravante da falsa sensação de que\na comunicação se tornou mais democrática com a internet.\nQue a televisão permaneça por muitos e muitos anos,\nmas que o seu atual modelo tenha seus dias contados!\nQuem sabe com isso um dia voltemos para o meio da\npraça, não mais para assistir TV, mas para fazermos\nvaler uma cultura de participação política realmente ativa\ne instruída, como uma democracia de fato merece.\nARAÚJO, F. P. Disponível em: www.observatoriodaimprensa.com.br.\nAcesso em: 30 out. 2021 (adaptado).\nEmbora reconheça o impacto social da televisão e seu\nimportante papel de sociabilização ao longo do tempo, o\ntexto defende que essa tecnologia passe por mudanças\nque contribuam para",
+    "alternativas": {
+      "A": "ampliar o acesso a aparelhos de TV para toda a população.",
+      "B": "transformar a praça pública em um lugar de convivência social.",
+      "C": "divulgar os resultados de pesquisas sobre sua inserção social.",
+      "D": "fomentar uma maior participação da população nas esferas públicas.",
+      "E": "viabilizar sua permanência no futuro em contraposição ao advento da internet."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q033",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 33,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nA nova opinião pública e as redes digitais\nTodas as vezes que os injustiçados do mundo ganham\nespaço nas telinhas dos gadgets de última geração e nas\ncorrentes caudalosas de e-mails, e o barulho digital é tanto\nque chega até aos veículos de comunicação tradicionais,\nmuita gente destaca as boas qualidades do que chamam\nde uma nova opinião pública.\nÉ difícil não nos confrontarmos com as novas formas\nque a sociedade utiliza para se inteirar, integrar-se,\npersuadir, manipular, controlar, aprender, fazer-se ver e\nser vista, conversar e fofocar. Isso porque, o tempo todo,\nas multidões estão opinando, capturando imagens em\nquantidade descomunal e disponibilizando-as facilmente\npara audiências abrangentes.\nEssa produção midiática da multidão, muitas vezes\nformatada sem preocupações técnicas, éticas e estéticas,\ncom certeza não contribui para a consolidação de uma\nconversação democrática, que respeite a alteridade,\ndê tempo ao contraditório e à comunicação. Essa nova\nopinião pública é rápida em linchamentos simbólicos e\nem expressar preconceitos em mensagens rapidinhas,\nde 140 caracteres.\nAMADEU, S. Disponível em: www.sescsp.org.br. Acesso em: 26 nov. 2021 (adaptado).\nTEXTO II\nUma nova opinião pública. Será?\nA internet inverteu o ecossistema comunicacional.\nO difícil não é falar. Agora, o grande problema é ser ouvido.\nTodavia, quando alguém fala algo que todos queriam\nouvir, uma onda imediatamente se forma no oceano\ninformacional e pode gerar ações concretas nas ruas,\nnos mercados, nas bolsas de valores.\nA rede é um articulador coletivo de diversas\ncausas. Não podemos ter a ilusão de que somente ideias\ndemocratizantes e ligadas à nobre causa da defesa\nambiental é que geram adeptos. Uma análise mais\naprofundada das ações e do ativismo em rede permite\nobservar que cada vez mais se formam redes de opinião\ndistintas e muitas vezes opostas.\nPor fim, também é preciso notar que a internet é\numa rede de arquitetura distribuída. Por isso, sua natureza\né mais propícia às ações democratizadoras, livres e\nfavoráveis ao compartilhamento do que às posturas que\nvisam simplesmente à dominação, ao controle autoritário\ne ao impedimento da troca de arquivos digitais.\nNASSAR, P. Disponível em: www.sescsp.org.br. Acesso em: 26 nov. 2021 (adaptado).\nCom relação à produção da opinião pública na\ncontemporaneidade, os textos I e II divergem sobre o(a)",
+    "alternativas": {
+      "A": "compreensão da internet como espaço de construção democrática.",
+      "B": "uso mal-intencionado das tecnologias de informação e comunicação.",
+      "C": "entendimento da internet como meio de exposição de pensamentos.",
+      "D": "impacto das postagens nas redes de defensores de causas minoritárias.",
+      "E": "falta de curadoria dos conteúdos disponíveis nos ambientes virtuais."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q034",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 34,
+    "lingua_estrangeira": null,
+    "enunciado": "Disponível em: www.fapcom.edu.br. Acesso em: 20 nov. 2021.\nNesse texto, ao combinar os gêneros anúncio e manchete\nde notícia, o autor pretende",
+    "alternativas": {
+      "A": "destacar a variedade de informações divulgadas na mídia.",
+      "B": "aproximar o leitor da realidade vivenciada pelas celebridades.",
+      "C": "criticar a superficialidade de notícias em veículos de comunicação.",
+      "D": "ilustrar a inclusão da população carente em campanhas publicitárias.",
+      "E": "conscientizar o leitor acerca da responsabilidade social nos anúncios."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q034.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q035",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 35,
+    "lingua_estrangeira": null,
+    "enunciado": "O corrupião\nEscaveirado corrupião idiota,\nOlha a atmosfera livre, o amplo éter belo,\nE a alga criptógama e a úsnea e o cogumelo,\nQue do fundo do chão todo o ano brota!\nMas a ânsia de alto voar, de à antiga rota\nVoar, não tens mais! E pois, preto e amarelo,\nPões-te a assobiar, bruto, sem cerebelo\nA gargalhada da última derrota!\nA gaiola aboliu tua vontade.\nTu nunca mais verás a liberdade!...\nAh! Tu somente ainda és igual a mim.\nContinua a comer teu milho alpiste.\nFoi este mundo que me fez tão triste,\nFoi a gaiola que te pôs assim!\nANJOS, A. Eu e outras poesias. Disponível em: www.dominiopublico.gov.br.\nAcesso em: 30 out. 2021.\nNesse soneto, a imagem e o comportamento do pássaro\nsão utilizados pelo eu lírico para metaforizar o",
+    "alternativas": {
+      "A": "sofrimento provocado pela solidão.",
+      "B": "instinto de revolta perante as injustiças.",
+      "C": "contraste entre natureza e civilização.",
+      "D": "declínio relacionado ao envelhecimento.",
+      "E": "gesto de resignação ante as privações diárias."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q036",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 36,
+    "lingua_estrangeira": null,
+    "enunciado": "A animação Vida Maria\nProduzido em computação gráfica 3D e finalizado\nem 35 mm, o curta-metragem mostra personagens e\ncenários modelados com texturas e cores pesquisadas\ne capturadas no sertão cearense, no Nordeste do Brasil,\ncriando uma atmosfera realista e humanizada.\nO filme nos mostra a história da rotina da personagem\nMaria José, uma menina de cinco anos de idade que\nse diverte aprendendo a escrever o nome, mas que é\nobrigada pela mãe a abandonar os estudos e começar a\ncuidar dos afazeres domésticos e trabalhar na roça.\nEnquanto trabalha, ela cresce, casa e tem filhos e\ndepois envelhece, e o ciclo continua a se reproduzir nas\noutras Marias suas filhas, netas e bisnetas.\nDisponível em: www.revistaprosaversoearte.com. Acesso em: 1 nov. 2021.\nEsse fragmento é caracterizado como gênero sinopse,\npois apresenta",
+    "alternativas": {
+      "A": "posicionamento da revista sobre a produção da animação.",
+      "B": "relato da história abordada no curta-metragem.",
+      "C": "acontecimentos do cotidiano de uma família.",
+      "D": "história sucinta com poucos personagens.",
+      "E": "fatos da vida de uma menina e seus familiares."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q037",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 37,
+    "lingua_estrangeira": null,
+    "enunciado": "KANDINSKY, W. Sem título (desenho para o Diagrama 17).\nNanquim sobre papel, 28,4 cm x 36 cm. Museu de Arte Mount\nHolyoke College, South Hadley, 1925.\nDisponível em: https://artmuseum.mtholyoke.edu/object/untitled-drawing-diagram-17.\nO artista Wassily Kandinsky apresenta, em sua\nprodução, aspectos formais relacionados aos elementos\nfundamentais da linguagem visual, que comprovam que\na linha é criada a partir do(a)",
+    "alternativas": {
+      "A": "movimento do ponto.",
+      "B": "criação da textura sobre o plano.",
+      "C": "cor aplicada sobre a superfície.",
+      "D": "mancha na relação formal.",
+      "E": "plano visual sobre o volume."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q037.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q038",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 38,
+    "lingua_estrangeira": null,
+    "enunciado": "Disponível em: www.cnj.jus.br. Acesso em: 30 out. 2021.\nA articulação entre os recursos verbais e não verbais\nutilizados na construção do texto tem como objetivo",
+    "alternativas": {
+      "A": "explicar para o público os efeitos de conteúdos enganosos.",
+      "B": "expor a fragilidade de tecnologias digitais na manipulação de dados.",
+      "C": "promover a partilha de conhecimentos por meio de recursos tecnológicos.",
+      "D": "orientar práticas para o reconhecimeto de mensagens perigosas em ambientes digitais.",
+      "E": "incentivar a adoção de comportamentos adequados na disseminação de informações."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q038.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q039",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 39,
+    "lingua_estrangeira": null,
+    "enunciado": "Disponível em: www.cnj.jus.br. Acesso em: 28 out. 2021.\nEsse cartaz, parte de uma campanha publicitária, tem\ncomo propósito",
+    "alternativas": {
+      "A": "propagar a atuação de entidades de proteção a crianças.",
+      "B": "divulgar políticas de combate a crimes de violência.",
+      "C": "incentivar denúncias de violência contra crianças.",
+      "D": "estimular a criação de canais de denúncias.",
+      "E": "assegurar o anonimato dos denunciantes."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q039.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q040",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 40,
+    "lingua_estrangeira": null,
+    "enunciado": "Rebeca Andrade superou a si mesma, fazendo história.\nAos 22 anos, entrou para o Olimpo da ginástica mundial,\nostentando a medalha de prata no individual geral feminino\ne subindo ao topo do pódio olímpico na prova de salto.\nSua caminhada começou graças a uma tia que viu seu\ntalento e a apresentou à técnica de ginástica da cidade.\nNão demorou para que ganhasse o apelido de “Daiane\ndos Santos 2”. A atleta dá sequência a um legado iniciado\npor ginastas como Daniele Hypólito e Daiane dos Santos,\nrespectivamente, primeira medalhista e primeira campeã\nem campeonatos mundiais. Rebeca tornou-se a primeira\nmedalhista e campeã olímpica do Brasil na modalidade.\nDaiane afirmou que admira a jovem atleta, cuja vitória é\npermeada por simbolismos importantes. “Durante muito\ntempo disseram que as pessoas negras não podiam fazer\nalguns esportes, e a gente vê hoje a primeira medalha, de\numa menina negra. Tem uma representatividade muito grande\natrás de tudo isso”, falou. A ginasta Nádia Comaneci, dona\nda primeira nota 10 na ginástica, parabenizou a brasileira\nem suas redes.\nDisponível em: https://brasil.elpais.com. Acesso em: 10 nov. 2021 (adaptado).\nA relevância social da conquista de Rebeca Andrade na\nginástica se traduz no(a)",
+    "alternativas": {
+      "A": "continuidade de um legado iniciado por outras atletas.",
+      "B": "reconhecimento por atletas ícones da modalidade.",
+      "C": "ingresso no esporte por intermédio da família.",
+      "D": "visibilidade étnico-racial no esporte.",
+      "E": "medalha de ouro na modalidade."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q041",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 41,
+    "lingua_estrangeira": null,
+    "enunciado": "As práticas corporais representam uma possibilidade\nde promoção da educação, do lazer e da saúde.\nA identificação das preferências das práticas corporais\npode ser um incentivo para a adesão dos usuários aos\nserviços de saúde mental. Desse modo, a interação\nsocial por meio delas contribui para o desenvolvimento\nda identidade dos usuários, uma vez que essas atividades\npermeiam as dimensões cognitiva, emocional, social\ne comportamental. Nesse contexto, realizar atividades\nfísicas, com um viés lúdico, converte-se numa maneira\nde cuidado com o corpo, gerando avaliações positivas\ndos usuários.\nSILVA, D. P.; RODRIGUES, L. T.; FLORES, F. F. Estágio em educação física\nna saúde mental: experiência em ministrar práticas corporais.\nEnsino em Perspectivas, n. 1, 2021 (adaptado).\nAs práticas corporais realizadas em serviços de saúde\nmental estimulam o(a)",
+    "alternativas": {
+      "A": "aprimoramento cognitivo na realização de tarefas.",
+      "B": "aquisição da linguagem para a interação social.",
+      "C": "inserção no mercado de trabalho.",
+      "D": "fortalecimento da identidade.",
+      "E": "expansão da expressão corporal."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q042",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 42,
+    "lingua_estrangeira": null,
+    "enunciado": "Se todos fossem iguais a você\nSe todos fossem iguais a você\nQue maravilha viver\nUma canção pelo ar\nUma mulher a cantar\nUma cidade a cantar\nA sorrir, a cantar, a pedir\nA beleza de amar\nMORAES, V.; TOM JOBIM. Disponível em: http://letras.terra.com.br.\nAcesso em: 16 set. 2011 (fragmento).\nO locutor da letra da canção exalta as características de\numa pessoa ideal. O uso da palavra “se” contribui para\nessa idealização, pois ela introduz no texto a",
+    "alternativas": {
+      "A": "junção de dois perfis femininos.",
+      "B": "explicação para um romance feliz.",
+      "C": "consequência de uma vida feliz a dois.",
+      "D": "superação da mulher amada pelas demais.",
+      "E": "hipótese para a existência de um mundo prazeroso."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q043",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 43,
+    "lingua_estrangeira": null,
+    "enunciado": "O voluntário\nQuem não sabe o efeito produzido à beira do rio\npela notícia da declaração da guerra entre o Brasil e o\nParaguai?\nNas classes mais favorecidas da fortuna, nas cidades\nprincipalmente, o entusiasmo foi grande e duradouro.\nMas entre o povo miúdo o medo do recrutamento para\nvoluntário da Pátria foi tão intenso que muitos tapuios se\nmeteram pelas matas e pelas cabeceiras dos rios, e ali\nviveram como animais bravios sujeitos a toda a espécie\nde privações.\n[...]\nCoisa terrível que era então o recrutamento!\nEsse meio violento de preencher os quadros do\nexército era ao tempo da guerra posto em prática com\nbarbaridade e tirania, indignas dum povo que pretende\nforos de civilizado.\nSuplícios tremendos eram infligidos aos que, fugindo a\numa obrigação não compreendida, ousavam preferir a paz\ndo trabalho e o sossego do lar à ventura de se deixarem\ncortar em postas na defesa das estâncias rio-grandenses\ne das aldeolas de Mato Grosso.\nSOUZA, I. Contos amazônicos. Jundiaí: Cadernos do Mundo Inteiro, 2018 (fragmento).\nPara descrever o modo como indígenas e ribeirinhos\neram recrutados para lutarem como “voluntários da\nPátria”, o texto de Inglês de Souza",
+    "alternativas": {
+      "A": "enfatiza a capacidade de resiliência dos tapuios.",
+      "B": "põe em evidência a brutalidade do alistamento compulsório.",
+      "C": "ironiza a importância atribuída à guerra pelas elites da época.",
+      "D": "relativiza a prevalência da disputa bélica sobre a natureza pacífica.",
+      "E": "critica a incompreensão da população acerca das motivações do conflito."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q044",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 44,
+    "lingua_estrangeira": null,
+    "enunciado": "A sobrevivência dos pomeranos\nOcorrem no Brasil atual casos como o da língua falada\npelos pomeranos, que imigraram para o Brasil devido à\nSegunda Guerra Mundial, e que conseguiu manter-se viva\nem pequenas comunidades do Rio Grande do Sul e do\nEspírito Santo. Essa língua, em pleno uso e transmissão\nno Brasil, não é mais falada na Europa Central, sua região\nde origem. Após a guerra, a região onde ficava Pomerode\nfoi incorporada à Polônia pela força do regime soviético.\nQuanto à etnia dos pomeranos, praticamente foi extinta e\nos sobreviventes dispersados pela Polônia. Mas a língua\npermanece viva no Brasil.\nCASAL JR., M. Disponível em: http://desafios.ipea.gov.br.\nAcesso em: 30 out. 2021 (adaptado).\nDe acordo com esse texto, a língua falada pelos\npomeranos",
+    "alternativas": {
+      "A": "continua sendo transmitida em Pomerode, na Polônia.",
+      "B": "permanece preservada em algumas regiões do Brasil.",
+      "C": "apresenta características distintas no Brasil.",
+      "D": "contribui para o isolamento da Polônia no Leste Europeu.",
+      "E": "foi dispersada por ação do regime soviético."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q045",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Linguagens, Códigos e suas Tecnologias",
+    "numero": 45,
+    "lingua_estrangeira": null,
+    "enunciado": "Da calma e do silêncio\nQuando eu morder\na palavra,\npor favor,\nnão me apressem,\nquero mascar,\nrasgar entre os dentes,\na pele, os ossos, o tutano\ndo verbo,\npara assim versejar\no âmago das coisas...\n[...]\nQuando meus pés\nabrandarem na marcha,\npor favor,\nnão me forcem.\nCaminhar para quê?\nDeixem-me quedar,\ndeixem-me quieta,\nna aparente inércia.\nNem todo viandante\nanda estradas,\nhá mundos submersos,\nque só o silêncio\nda poesia penetra.\nEVARISTO, C. Poemas de recordação e outros movimentos.\nRio de Janeiro: Malê, 2021 (fragmento).\nNa reflexão sobre motivos e soluções do trabalho com\na palavra, o eu lírico defende que a poesia",
+    "alternativas": {
+      "A": "reflete as limitações inerentes à sua matéria-prima.",
+      "B": "é um produto relacionado ao sentimento de angústia.",
+      "C": "exige o engajamento social para a sua plena realização.",
+      "D": "requer um tempo próprio de amadurecimento e plenitude.",
+      "E": "deve desvincular-se de questões de inspiração metafísica."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q046",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 46,
+    "lingua_estrangeira": null,
+    "enunciado": "O Estado surge pelo fato de ser o homem um animal\nnaturalmente social, político. O Estado provê, inicialmente,\na satisfação daquelas necessidades materiais, negativas\ne positivas, defesa e segurança, conservação e\nengrandecimento, de outro modo irrealizáveis. Mas o seu\nfim essencial é espiritual, isto é, deve promover a virtude\ne, consequentemente, a felicidade dos súditos mediante\na ciência.\nARISTÓTELES. A política. São Paulo: Martins Fontes, 2006 (adaptado).\nSegundo o autor, é função do Estado garantir o(a)",
+    "alternativas": {
+      "A": "justiça divina, pregando a salvação eterna dos fiéis.",
+      "B": "soberania, respeitando a autonomia dos três poderes.",
+      "C": "propriedade privada, protegendo o direito natural inalienável.",
+      "D": "vida ética, proporcionando a formação moral dos cidadãos.",
+      "E": "direito de resistência, suprimindo governos considerados impopulares."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q047",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 47,
+    "lingua_estrangeira": null,
+    "enunciado": "Saga da Amazônia\nMas o dragão continua a floresta devorar.\nE quem habita essa mata, pra onde vai se mudar?\nCorre índio, seringueiro, preguiça, tamanduá.\nTartaruga, pé ligeiro, corre, corre tribo dos Kamaiurá.\nFARIAS, V. Disponível em: www.letras.com.br. Acesso em: 15 out. 2021 (fragmento).\nPara solucionar o problema apresentado no texto, qual\nmedida governamental é necessária?",
+    "alternativas": {
+      "A": "Ampliação do número de terras devolutas.",
+      "B": "Proibição do extrativismo local sustentável.",
+      "C": "Regulação de pesquisas de origem estrangeira.",
+      "D": "Contenção do tráfego das embarcações fluviais.",
+      "E": "Fiscalização da exploração dos recursos naturais."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q048",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 48,
+    "lingua_estrangeira": null,
+    "enunciado": "Estudiosos do Instituto de Antropologia Evolucionária\nde Leipzig, na Alemanha, colocaram um chimpanzé em\num quarto com a visão de suculentos pedaços de comida\ntrancados dentro de um armário. A um segundo chimpanzé\nera dada, então, a oportunidade de liberar a comida,\nporém, sem usufruir dela. Em aproximadamente 80% das\nvezes, eles tomaram a decisão mais caridosa e liberaram\no alimento para o outro chimpanzé.\nEstudos mostram caridade no mundo animal. Disponível em:\nhttp://revistagalileu.globo.com. Acesso em: 17 out. 2021.\nConsiderando nossa relação com outros, o experimento\nenvolvendo os chimpanzés ilustra qual tipo de\ncomportamento moral humano?",
+    "alternativas": {
+      "A": "Hedonista, anseia o prazer pessoal.",
+      "B": "Altruísta, promove o bem-estar imparcial.",
+      "C": "Retributivo, busca um retorno equivalente.",
+      "D": "Deontológico, cumpre uma obrigação formal.",
+      "E": "Meritocrático, valoriza o merecimento individual."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q049",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 49,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma missão internacional de investigação, em\nsetembro de 2017, documentou os impactos sociais e\nambientais causados pela expansão do agronegócio e\npela especulação de terras na região do Matopiba em sete\ncomunidades no sul do Piauí. Os resultados mostraram\nque a população sofre com as graves consequências\ndo desmatamento, da perda da biodiversidade e da\ncontaminação generalizada do solo, da água e do gado\npor agrotóxicos.\nRelatório sobre o Matopiba aponta impactos ambientais e sociais da financeirização\nde terras. Disponível em: https://cimi.org.br. Acesso em: 13 out. 2021.\nOs impactos socioambientais descritos no texto\nprovocam a",
+    "alternativas": {
+      "A": "adoção de cultivos irrigados.",
+      "B": "ampliação da agricultura familiar.",
+      "C": "fragilização das comunidades locais.",
+      "D": "diversificação da produtividade agrícola.",
+      "E": "desapropriação de áreas improdutivas."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q050",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 50,
+    "lingua_estrangeira": null,
+    "enunciado": "Tobias Kuemmerle, acadêmico da Humboldt-Universität\nde Berlim na Alemanha, fez uma pesquisa de campo no\nChaco, área de mata nativa na fronteira da Argentina\ncom Paraguai e Bolívia. “Estudamos qual é a mudança\nocorrida na região e seu efeito nas emissões de CO\n2\ne na diversidade”, diz o pesquisador. “E (o impacto) se\ndeve sobretudo a grandes companhias internacionais\nque compram áreas para desmatar. Tudo está claramente\nligado ao consumo de carne na Europa e à importação de\nsoja. A Europa protege muito sua agricultura, mas compra\ncada vez mais de regiões onde o impacto ambiental é\nmuito grande.”.\nORGAZ, C. Como a elogiada “agricultura verde” da Europa pode estar prejudicando\no meio ambiente no Brasil. Disponível em: www.bbc.com. Acesso em: 17 out. 2021.\nO texto apresenta uma ação da Europa na América Latina\nque ocorre pela combinação dos seguintes elementos:",
+    "alternativas": {
+      "A": "Garimpos organizados regionalmente e apoio político.",
+      "B": "Vegetações convertidas em pastos e foco na exportação.",
+      "C": "Maquinários utilizados ilicitamente e base no extrativismo.",
+      "D": "Terras transformadas em laboratórios e ênfase na ciência.",
+      "E": "Trabalhadores contratados ilegalmente e financiamento estatal."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q050.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q051",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 51,
+    "lingua_estrangeira": null,
+    "enunciado": "Pode chamar de fake news, notícias falsas de\ninternet, fraude informativa, informações falsas, ou até\nde misinformation, se prefere inglês, que você estará\ndesignando corretamente a mesma doença informacional\nque se disseminou como uma pandemia pela vida pública\nmundo afora nos últimos anos, e cujos principais sintomas\nnas pessoas infectadas consistem na perda da capacidade\nde distinguir a verdade, de lidar adequadamente com fatos\ne dados e de tomar decisões bem-informadas. Sabe-se\nque o portador do vírus se torna alérgico a fatos e evita a\ntodo custo a dissonância cognitiva, isto é, entrar em contato\ncom informações que não satisfaçam os seus desejos e\ncom relatos que se choquem com as suas crenças.\nDOURADO, T.; GOMES, W. O que são, afinal, fake news, enquanto fenômeno\nde comunicação política? In: Anais do VIII Compolítica, Brasília, 2019.\nDisponível em: http://compolitica.org. Acesso em: 7 out. 2021.\nQual é a consequência do fenômeno apresentado no\ntexto para a vida democrática?",
+    "alternativas": {
+      "A": "Prática de censura.",
+      "B": "Distorção da realidade.",
+      "C": "Manifestação de cidadania.",
+      "D": "Regulamentação das condutas.",
+      "E": "Fortalecimento das instituições."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q052",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 52,
+    "lingua_estrangeira": null,
+    "enunciado": "Foi relevante uma lei aprovada pelo velho Parlamento,\nque sancionou legalmente a oposição entre proletariado\ne burguesia, com esta elevada à categoria de classe\ndominante. A lei em questão, aprovada em 1824, anulava\ntodas as disposições precedentes que, até então,\nproibiam aos operários associar-se para a defesa de\nseus interesses. Os operários conquistaram assim um\ndireito que, até esta data, era um privilégio reservado à\naristocracia e à burguesia: a liberdade de associação.\nENGELS, F. A situação da classe trabalhadora na Inglaterra.\nSão Paulo: Boitempo, 2008 (adaptado).\nA conquista do direito mencionado no texto possibilitou\naos trabalhadores a constituição de",
+    "alternativas": {
+      "A": "instituições de cultura.",
+      "B": "corporações de ofício.",
+      "C": "juntas comerciais.",
+      "D": "organizações sindicais.",
+      "E": "cooperativas manufatureiras."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q053",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 53,
+    "lingua_estrangeira": null,
+    "enunciado": "Deputados que participaram da Conferência da\nOrganização das Nações Unidas (ONU) sobre Mudanças\nClimáticas, na Escócia, avaliaram a participação do Brasil\ne apontaram o “dever de casa” do país a partir de agora.\nA COP-26 reuniu quase 200 países em busca de ações\nefetivas para a redução das emissões de gases que aceleram\no aquecimento global. O Brasil atualizou sua Contribuição\nNacional Determinada (NDC), ou seja, a meta voluntária\nde redução das emissões de gases que comprometem a\nqualidade do ar: a previsão de corte nas emissões passou\nde 43% para 50% até 2030. O país também reafirmou a\nmeta de neutralidade climática até 2050.\nDisponível em: www.camara.leg.br. Acesso em: 24 nov. 2021 (adaptado).\nConsiderando os objetivos da conferência citada, a\nindústria brasileira, nos próximos anos, deverá",
+    "alternativas": {
+      "A": "priorizar a utilização de fontes renováveis.",
+      "B": "ampliar a participação no PIB nacional.",
+      "C": "aumentar a produção de mercadorias.",
+      "D": "concentrar as fábricas poluidoras.",
+      "E": "melhorar as relações trabalhistas."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q054",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 54,
+    "lingua_estrangeira": null,
+    "enunciado": "As greves operárias que eclodiram em São Paulo, em\njunho de 1917, se tornariam o símbolo não só da miséria\nsocial vivida pela classe no período, mas também de rebeldia\ne revolta de mulheres e homens. Naquele momento, as\nmulheres ocupavam quase 34% da mão de obra, e no setor\ntêxtil o número de empregadas superava o de homens. Na\nFábrica de Fósforos Pauliceia, os homens chegavam a receber\ndiárias de 4 mil réis, mas havia lá cem mulheres empregadas\nque não recebiam mais que 1 800 réis por dia. A manhã de\n17 de outubro de 1917 nasceu com uma paralisação numa\ndas fábricas de Matarazzo, a Mariângela. A notícia veiculada\ninformava que as operárias do ramo têxtil reivindicavam\naumento de 20% dos salários em atitude pacífica.\nFRACCARO, G. C. C. Mulheres, sindicato e organização política nas greves de 1917\nem São Paulo. Revista Brasileira de História, n. 76, 2017 (adaptado).\nA situação dessas trabalhadoras coloca em evidência a",
+    "alternativas": {
+      "A": "discrepância de escala nos horários noturnos.",
+      "B": "desigualdade de gênero nas relações laborais.",
+      "C": "dissimetria de critérios nos processos seletivos.",
+      "D": "diferença de condições nas negociações sindicais.",
+      "E": "disparidade de remuneração nos diferentes cargos."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q055",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 55,
+    "lingua_estrangeira": null,
+    "enunciado": "O Rio Paraíba corria bem próximo ao cercado.\nE era tudo. Em tempos antigos fora muito mais estreito.\nOs marizeiros e as ingazeiras apertavam as duas margens\ne as águas corriam em leito mais fundo. Agora era largo e,\nquando descia nas grandes enchentes, fazia medo.\nContava-se o tempo pelas eras das cheias. Isto se deu\nna cheia de 1893, aquilo se fez depois da cheia de 1868.\nPara nós, meninos, o rio era mesmo a nossa serventia\nnos tempos de verão, quando as águas partiam e se\nretinham nos poços. Os moleques saíam para lavar os\ncavalos e íamos com eles. Punham-se os animais dentro\nd’água e ficávamos nos banhos, nos cangapés. O leito\ndo rio cobria-se de junco e faziam-se plantações de\nbatata-doce pelas vazantes. Era o bom rio da seca a pagar\no que fizera de mau nas cheias devastadoras. E quando\nainda não partia a corrente, o povo grande do engenho\narmava banheiros de palha para o banho das moças.\nO rio para mim seria um ponto de contato com o mundo.\nRÊGO, J. L. Meus verdes anos. Rio de Janeiro: Tecnoprint, 1956.\nAo apresentar relações no espaço geográfico, o texto\ndescreve mudanças associadas a",
+    "alternativas": {
+      "A": "atividades turísticas e itinerários termais.",
+      "B": "investigações científicas e biomas nativos.",
+      "C": "paisagens naturais e hábitos culturais.",
+      "D": "afetividades religiosas e roteiros gastronômicos.",
+      "E": "pesquisas etnobotânicas e saberes acadêmicos."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q056",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 56,
+    "lingua_estrangeira": null,
+    "enunciado": "Os estudos realizados sobre o impacto ambiental\nconfirmaram um patrimônio arqueológico, histórico\ne cultural positivo para onde se planeja implantar a\nferrovia Transnordestina. Esse quadro já era esperado,\nconsiderando-se o rico contexto de ocupações humanas\nque se desenvolveram na área desde o período\npré-colonial até os dias atuais. Foi ainda identificado\num rico patrimônio de arte rupestre na região, com a\npresença de dois sítios arqueológicos, colocando a área\nde implantação da ferrovia Transnordestina dentro do\ndiversificado panorama pré-colonial que caracteriza o\ninterior do Nordeste brasileiro.\nRelatório de impacto ambiental — Rima: ferrovia Transnordestina. DNIT, 2004 (adaptado).\nUma ação capaz de evitar os danos arqueológicos\nmencionados no texto é o(a)",
+    "alternativas": {
+      "A": "catalogação dos materiais líticos.",
+      "B": "adoção de medidas compensatórias.",
+      "C": "remoção das habitações dos nativos.",
+      "D": "reflorestamento de áreas degradadas.",
+      "E": "deslocamento dos eixos da construção."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q057",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 57,
+    "lingua_estrangeira": null,
+    "enunciado": "O Instituto Nacional de Propriedade Industrial (Inpi)\nconcedeu o registro de indicação geográfica (IG), na\nespécie denominação de origem (DO), para o produto\nbanana, da região de Corupá. Essa região produz a\nbanana do subgrupo Cavendish, que guarda relação com\no meio geográfico. Resulta disso uma de suas principais\ncaracterísticas qualitativas: o sabor doce mais pronunciado\naliado a uma menor acidez.\nO registro de IG permite delimitar uma área geográfica,\nrestringindo o uso de seu nome aos produtores e\nprestadores de serviços da região. A espécie de IG\nchamada “denominação de origem” reconhece o nome\nde um país, cidade ou região cujo produto ou serviço\ntem certas características específicas graças a seu meio\ngeográfico, incluídos fatores naturais e humanos.\nNa região de Corupá, inúmeras famílias rurais se\nbeneficiam da produção das bananas em um ambiente único e\ninigualável, não apenas pelas peculiaridades de clima e\nde relevo, mas também pelo saber-fazer, pelas tradições\ne culturas. Produzir banana é uma atividade emblemática na\nregião, e o produto está presente na agricultura, nas festas\ne nos eventos, na arquitetura, no artesanato e no lazer.\nInpi concede indicação geográfica à banana de Corupá. Disponível em:\nwww.gov.br/inpi. Acesso em: 5 nov. 2021 (adaptado).\nA certificação produtiva apresentada no texto favorece a\nregião citada por promover a",
+    "alternativas": {
+      "A": "manipulação do mercado interno.",
+      "B": "legalização da mão de obra local.",
+      "C": "valorização da identidade comercial.",
+      "D": "incorporação de tecnologia moderna.",
+      "E": "eliminação da concorrência internacional."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q058",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 58,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nO dispositivo panóptico organiza unidades espaciais\nque permitem ver sem parar e reconhecer imediatamente.\nEm suma, o princípio da masmorra é invertido; ou antes,\nde suas três funções — trancar, privar de luz e esconder —\nsó se conserva a primeira e suprimem-se as outras\nduas. A visibilidade é uma armadilha. Fazer com que a\nvigilância seja permanente em seus efeitos, mesmo se\né descontínua em sua ação; que a perfeição do poder\ntenda a tornar inútil a atualidade de seu exercício; que\nesse aparelho arquitetural seja uma máquina de criar e\nsustentar uma relação de poder independente daquele\nque o exerce.\nFOUCAULT, M. Vigiar e punir: nascimento da prisão. Petrópolis: Vozes, 1987 (adaptado).\nTEXTO II\nLAERTE. Disponível em: www.laerte.art.br. Acesso em: 25 nov. 2021.\nO objetivo do modelo de vigilância descrito nos textos I\ne II aponta para o(a)",
+    "alternativas": {
+      "A": "intercâmbio de opinião diversa.",
+      "B": "desenvolvimento de sujeito crítico.",
+      "C": "sentimento de observação constante.",
+      "D": "movimento de revolta individual.",
+      "E": "criação de liberdade efetiva."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q058.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q059",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 59,
+    "lingua_estrangeira": null,
+    "enunciado": "A concepção tecnocrata está associada à fé em\nmercados — não necessariamente no capitalismo\nlivre, laissez-faire, mas uma crença mais ampla de que\nmecanismos de mercado são os principais instrumentos\npara alcançar o bem público. Esse modo de pensar é\ntecnocrático, no sentido de que esvazia o discurso público\nde argumentos substantivamente morais e questões\nideologicamente contestáveis como se fossem assuntos de\neficiência econômica, domínio de especialistas. A verdadeira\ndivisão, argumentaram eles, não era mais esquerda versus\ndireita, mas aberto versus fechado. Isso insinuava que os\ncontrários à terceirização, tratados de livre-comércio e fluxos\nde capitais irrestritos eram pessoas de mente fechada, não\nde mente aberta; eram tribais, não globais.\nSANDEL, M. J. A tirania do mérito: o que aconteceu ao bem comum?\nRio de Janeiro: Civilização Brasileira, 2020 (adaptado).\nA crítica ao modelo de pensamento apresentado no texto\nfundamenta-se na postura de desvalorização do(a)",
+    "alternativas": {
+      "A": "sistema financeiro.",
+      "B": "participação política.",
+      "C": "intercâmbio comercial.",
+      "D": "produção exportadora.",
+      "E": "comportamento diplomático."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q059.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q060",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 60,
+    "lingua_estrangeira": null,
+    "enunciado": "Examinando detidamente o fator de maior\npredominância na evolução social, penso não errar\nafirmando que a causa principal de falharem todos os\nsistemas econômicos, experimentados para estabelecer\no equilíbrio das forças produtivas, se encontra na livre\natividade permitida à atuação das energias naturais,\nisto é, na falta de organização do capital e do trabalho.\nVARGAS, G. As diretrizes da nova política do Brasil. Rio de Janeiro: J. Olympio, 1942.\nNesse discurso de 1931, o então presidente Getúlio\nVargas condenava, de forma explícita, o",
+    "alternativas": {
+      "A": "liberalismo econômico.",
+      "B": "intervencionismo estatal.",
+      "C": "corporativismo trabalhista.",
+      "D": "sistema oligárquico.",
+      "E": "nacionalismo econômico."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q061",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 61,
+    "lingua_estrangeira": null,
+    "enunciado": "Maria Leonor é uma criança de 7 anos de Miranda do\nDouro, em Portugal, que começou a achar muito divertido\n“falar brasileiro” depois que conheceu um influenciador\ndigital na internet. Jonathan, de 6, vive no Porto e passou a\ncumprimentar as amiguinhas com “oi, menina” depois que\ndescobriu vídeos de brasileiros nas redes sociais. As duas\ncrianças são parte de um fenômeno que provoca polêmica\nem Portugal. O sotaque brasileiro tem criado polêmica\nentre alguns países e virou tema na imprensa local.\nFARIAS, V. F.; VASCONCELOS, R. Crianças portuguesas aprendem a “falar brasileiro”\nno Youtube durante a pandemia. Disponível em: https://internacional.estadao.com.br.\nAcesso em: 11 nov. 2021 (adaptado).\nO fenômeno descrito no texto é provocado pelo",
+    "alternativas": {
+      "A": "aumento das trocas comerciais.",
+      "B": "desenvolvimento dos laços afetivos.",
+      "C": "crescimento do intercâmbio cultural.",
+      "D": "incremento da padronização linguística.",
+      "E": "enfrentamento do preconceito estrutural."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q062",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 62,
+    "lingua_estrangeira": null,
+    "enunciado": "O processo produtivo do café integra vários\nsubprocessos, realizados em unidades físicas bem\ndefinidas e caracterizadas no tempo e no espaço por\nelementos arquitetônicos, resultando uma arquitetura\nespecífica e original: a fazenda cafeeira. O desenvolvimento\ntecnológico, ao inovar o processo produtivo, alcançou\noutros espaços para além da fazenda cafeeira.\nRevista História Viva. Disponível em: www2.uol.com.br. Acesso em: 23 jul. 2012 (adaptado).\nDe acordo com o texto, a produção de café gerou mudanças\nno espaço urbano, que estão evidenciadas no(a)",
+    "alternativas": {
+      "A": "transporte em lombo de animais, gerando problemas sanitários.",
+      "B": "derrubada da vegetação nativa, abrindo novas áreas de plantio.",
+      "C": "presença de trabalhadores livres no sistema de parceria, aumentando a produtividade.",
+      "D": "plantio em regiões próximas aos centros urbanos, reduzindo os gastos com o transporte.",
+      "E": "melhoria da infraestrutura de circulação, introduzindo ferrovias e diversificação de serviços."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q063",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 63,
+    "lingua_estrangeira": null,
+    "enunciado": "O trabalhador pode até saber que sua fábrica produz\naviões ou medicamentos, mas a sua parcela de atividade\nestá totalmente subordinada a uma estrutura abstrata,\ndiluída numa massa de atividades conexas, em muitos\ncasos dividida em diversos continentes e em proprietários\nnão visíveis. Ele não se reconhece na materialidade\nfinal do seu trabalho, que se lhe afigura como obra da\n“empresa”, e sua subordinação parece ser ao “sistema”.\nFONTES, V. Capitalismo em tempo de uberização: do emprego ao trabalho.\nDisponível em: www.niepmarx.blog.br. Acesso em: 6 out. 2021 (adaptado).\nSegundo o texto, a razão para a dificuldade do trabalhador\nem reconhecer o seu labor é a",
+    "alternativas": {
+      "A": "fragmentação da produção.",
+      "B": "regionalização da economia.",
+      "C": "aglomeração da indústria.",
+      "D": "flexibilização da jornada.",
+      "E": "qualificação da função."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q064",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 64,
+    "lingua_estrangeira": null,
+    "enunciado": "Diferentes projeções para a população brasileira: 2010-2100\n240 000\n230 000\n220 000\n210 000\n200 000\n190 000\n180 000\n0102 5102 0202 5202 0302 5302 0402 5402 0502 5502 0602 5602 0702 5702 0802 5802 0902 5902 0012\nIBGE rev. 2018 ONU rev. 2017\n)lim\nme(\noãçalupoP\nFonte: IBGE, revisão 2018; UM/ESA, revisão 2017.\nALVES, J. E. D. A nova projeção da população brasileira do IBGE.\nDisponível em: www.ufjf.br. Acesso em: 1 out. 2021.\nA configuração da projeção demográfica apresentada é\nexplicada pelo(a)",
+    "alternativas": {
+      "A": "ampliação do êxodo campesino.",
+      "B": "aumento da taxa de fecundidade.",
+      "C": "redução do crescimento vegetativo.",
+      "D": "retrocesso no controle de natalidade.",
+      "E": "estagnação da entrada de imigrantes."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q064.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q065",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 65,
+    "lingua_estrangeira": null,
+    "enunciado": "Nem mesmo Castelo Branco seria um aliado\nincondicional das políticas liberais recomendadas pelos\norganismos financeiros internacionais, nem dos contornos\nque o Departamento de Estado norte-americano promovia\nna política externa dos Estados latino-americanos. As\npolíticas da Ditadura Militar — em particular as iniciativas de\nplanejamento econômico, um projeto frustrado de reforma\nagrária promovido pelo ministro Roberto Campos e a rejeição\nao “alinhamento automático” com Washington nos organismos\nmultilaterais — proporcionariam pelo menos incerteza nos\ncírculos decisórios da política externa dos Estados Unidos.\nRAPOPORT, M.; LAUFER, R. Os Estados Unidos diante do Brasil e da Argentina :\nos golpes militares da década de 1960. Revista Brasileira de Política Internacional,\nn. 43, 2000 (adaptado).\nO texto aborda uma diretriz do Estado brasileiro em suas\nrelações com os Estados Unidos caracterizada pela",
+    "alternativas": {
+      "A": "construção de alianças pragmáticas.",
+      "B": "busca da superioridade comercial.",
+      "C": "afirmação da equidade continental.",
+      "D": "insistência na integração regional.",
+      "E": "redução de investimentos bélicos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q066",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 66,
+    "lingua_estrangeira": null,
+    "enunciado": "Suponha-se que seja trazida de súbito a este mundo\numa pessoa dotada das mais poderosas faculdades\nda razão e reflexão. É verdade que ela observaria\nimediatamente um acontecimento seguindo-se a outro,\nmas não conseguiria descobrir nada além disso. Ela não\nseria, no início, capaz de apreender, por meio de nenhum\nraciocínio, a ideia de causa e efeito.\nHUME, D. Investigação sobre o entendimento humano e sobre\nos princípios da moral. São Paulo: Unesp, 2003.\nSegundo Hume, nossa capacidade de estabelecer relações\ncomo aquelas mencionadas no texto resulta do(a)",
+    "alternativas": {
+      "A": "representação construída pela assimilação dos juízos universais.",
+      "B": "hábito desenvolvido pela repetição de uma operação.",
+      "C": "testemunho proveniente de relato de terceiros.",
+      "D": "intuição formada pela atividade mental pura.",
+      "E": "reminiscência advinda de vidas passadas."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q067",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 67,
+    "lingua_estrangeira": null,
+    "enunciado": "É fundamental que se reconheça que as Tecnologias\nda Informação e Comunicação (TICs) no meio rural\npotencializam a comunicação e facilitam as trocas de\nexperiências, sobretudo entre os jovens, que veem nela a\npossibilidade de sair para além de seus espaços geográfico\ne social, podendo fazer-se pertencer a diferentes redes,\nonde a organização pode emergir como resultado de\num processo de partilha de interesses e sentimentos\nde pertencimento.\nREDIN, E. et al. Juventude rural e novas formas [...]. Disponível em:\nwww.revistas.usp.br. Acesso em: 6 out. 2021 (adaptado).\nO aspecto mencionado no texto, favorecido pela difusão\ndas TICs no espaço rural, é o(a)",
+    "alternativas": {
+      "A": "ampliação de sociabilidade.",
+      "B": "redistribuição da terra.",
+      "C": "direito do trabalhador.",
+      "D": "alteração da paisagem.",
+      "E": "deslocamento da população."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q068",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 68,
+    "lingua_estrangeira": null,
+    "enunciado": "Nos governos de Vargas e Perón, o esporte começou\na ser visto como um importante elemento na relação entre\no regime e a sociedade. Tal fato não deve ser entendido\napenas como uma resposta à crescente popularidade\ndo esporte. Ainda que crescente em seus governos, a\nmassificação do esporte já havia ocorrido muito antes.\nTalvez a influência dos regimes de Mussolini e Hitler sobre\nos dois governantes latino-americanos possa apontar para\num melhor entendimento dessa nova visão política, uma\nvez que ambos tiveram uma estreita ligação com o esporte\ne a sua utilização como propaganda política.\nDRUMOND, M. Vargas, Perón e o esporte. Revista Estudos Históricos,\nn. 44, jul.-dez. 2009.\nDe acordo com o texto, o uso do esporte nos regimes\npolíticos mencionados foi explorado com o objetivo de",
+    "alternativas": {
+      "A": "construção de identidades nacionais.",
+      "B": "reprodução de poderes autocráticos.",
+      "C": "celebração de festividades cívicas.",
+      "D": "formação de cidadãos saudáveis.",
+      "E": "contestação de símbolos pátrios."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q069",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 69,
+    "lingua_estrangeira": null,
+    "enunciado": "Quem não morreu na Espanhola\nquem dela pôde escapar\nnão dê mais tratos à bola\ntoca a rir, toca a brincar.\nVai o prazer aos confins\nremexe-se a terra inteira\nao som vivaz dos clarins\nao ronco do Zé Pereira.\nHá alegrias à ufa\ne em se tocando a brincar\nnem este calor de estufa\nnos chega a preocupar.\nTenho por cetro um chocalho\npor trono um bombo de rufo\no Deus Momo louco e bufo\nvai começar a reinar.\nIn: CASTRO, R. O Carnaval da guerra e da gripe. Rio de Janeiro: Cia. das Letras, 2019.\nA pandemia que afetou o Rio de Janeiro no início do\nséculo XX é mencionada nos versos pré-carnavalescos\nde 1919 como aquela que",
+    "alternativas": {
+      "A": "suscitou o motim de pessoas da periferia.",
+      "B": "causou a destruição de praias da cidade.",
+      "C": "motivou a revolta de moradores do centro.",
+      "D": "provocou o passamento de habitantes da capital.",
+      "E": "ocasionou o isolamento de residentes do subúrbio."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q070",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 70,
+    "lingua_estrangeira": null,
+    "enunciado": "Antônio Vieira enfrentou a Inquisição portuguesa, de\nolho no apoio que os judeus portugueses podiam oferecer\nà causa da Restauração. Mas a Companhia de Jesus e a\nInquisição portuguesa nunca foram muito amigas. Basta\nlembrar a estratégia missionária dos jesuítas, calcada na\nadaptação do catolicismo à cultura dos povos missionados,\nenquanto a Inquisição era obcecada pelo ideal de pureza\nda fé, sem mistura de nenhum tipo.\nVAINFAS, R. In: FIGUEIREDO, L. (Org.). História do Brasil para ocupados.\nRio de Janeiro: Casa da Palavra, 2013.\nNo contexto da dominação ibérica da América, um\nexemplo do dissenso referido no texto girou em torno da",
+    "alternativas": {
+      "A": "criação de polos de fomento do comércio ultramarino.",
+      "B": "condenação da utilização de escravos do continente africano.",
+      "C": "ressignificação dos panteões indígenas pela propaganda cristã.",
+      "D": "fundação de núcleos de catequese nas regiões agroprodutoras.",
+      "E": "incorporação de indivíduos nativos pelas forças militares coloniais."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q071",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 71,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nPáscoa Vieira (século XVII)\nNasceu em Massangano, no interior do atual território\nde Angola, em 1658, filha de cativos, sendo ela própria serva\nde uma senhora chamada Domingas de Carvalho, que a\nbatizou e realizou o seu casamento com outro cativo da\nmesma propriedade, de nome Aleixo. Em 1695, foi vendida\ne embarcada para Salvador. Anos mais tarde, estabeleceu\nrelações conjugais com o cativo Pedro Ardas, motivo pelo\nqual no ano de 1700 foi denunciada à Inquisição de Lisboa.\nDisponível em: www.ufrgs.br. Acesso em: 20 out. 2021 (adaptado).\nTEXTO II\nPáscoa possuía várias culturas, duas línguas\n(o quimbundo e o português). A cultura africana de sua\ninfância e juventude foi pouco evocada no processo; em\ncontrapartida, demonstrou um conhecimento aprofundado\ndo catolicismo romano. Seu marido na Bahia vinha de\noutra África, diferente da sua, de um universo cultural\ne linguístico diverso. Ela morava em Salvador, mas seu\ndestino foi decidido em Lisboa, sede do tribunal que a\ncondenou e iria modificar o curso de sua vida.\nCASTELNAU-L’ESTOILE, C. Páscoa Vieira diante da Inquisição: uma escrava entre Angola,\nBrasil e Portugal no século XVII. Rio de Janeiro: Bazar do Tempo, 2020 (adaptado).\nQual a relevância do estudo das relações de poder\napresentadas nos textos?",
+    "alternativas": {
+      "A": "Expor o legado de uma líder.",
+      "B": "Confirmar a condição de liberta.",
+      "C": "Denunciar o caráter de uma pagã.",
+      "D": "Retirar a personagem do anonimato.",
+      "E": "Apresentar a inclusão dos povos conquistados."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q072",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 72,
+    "lingua_estrangeira": null,
+    "enunciado": "Belém é cercada por rios. Mas é a água que vem\nlá de cima que altera o ritmo na cidade. Quem vive na\ncapital paraense sempre sai de casa com uma dúvida e\numa certeza: sabe que vai chover, mas não sabe quando.\n“No Pará é assim. Ou você marca o encontro antes ou\ndepois da chuva”, conta um morador. É quase sempre assim\no ano inteiro, os moradores costumam dizer que só existem\nduas estações do ano na região — a que chove pouco e a\nque chove muito. “Não tem hora para chover”, constata uma\nmoradora. “Trabalho, escola... Atrasa tudo. Tem que ficar\nesperando passar a chuva, na verdade”, diz outra moradora.\nAntes e depois da chuva. Disponível em: http://g1.globo.com.\nAcesso em: 6 nov. 2021 (adaptado).\nQual fator geográfico favorece a condição climática da\ncidade citada no texto?",
+    "alternativas": {
+      "A": "Baixa latitude.",
+      "B": "Elevada altitude.",
+      "C": "Fraca insolação.",
+      "D": "Forte continentalidade.",
+      "E": "Acentuada refletividade."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q073",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 73,
+    "lingua_estrangeira": null,
+    "enunciado": "Expansão da fronteira agrícola do Brasil\n-72,00º -60,00º -48,00º -36,00º\nRR\nBOA VISTA AP\n00,00º MACAPÁ\nAM SÃO LUÍS\nBELÉM\nFORTALEZA\nMANAUS\nPA MA CE\nRN NATAL\nTERESINA\nPB JOÃO PESSOA\nPI PE RECIFE\nAC PORTO TO AL\nVELHO MACEIÓ\nRIO BRANCO SE\nPALMAS\nRO ARACAJU\nBA\nMT SALVADOR\nDF\n-16,00º\nGO\nCUIABÁ BRASÍLIA\nGOIÂNIA MG\nPeríodo (décadas) MS\nES\n1970 BELO HORIZONTE VITÓRIA\nCAMPO GRANDE\n1980 SP RJ\nRIO DE JANEIRO\n1990 PR SÃO PAULO\n2000 CURITIBA\nEscala 1 : 21 700 000 N SC FLORIANÓPOLIS\nRS\nO L\nPORTO ALEGRE\n-32,00º S\nVIEIRA FILHO, J. E. R.; FISHLOW, A. Agricultura e indústria no Brasil: inovação e competitividade. Brasília: Ipea, 2017 (adaptado).\nA dinâmica espacial expressa no mapa foi viabilizada pela",
+    "alternativas": {
+      "A": "fragmentação da rede urbana.",
+      "B": "mecanização do setor primário.",
+      "C": "criação de reservas ecológicas.",
+      "D": "estagnação do mercado interno.",
+      "E": "concentração da produção fabril."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q073.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q074",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 74,
+    "lingua_estrangeira": null,
+    "enunciado": "É claramente impossível criar um mapa perfeito, no qual\na escala principal seja preservada em todos os pontos. É fácil,\nporém, manter a escala principal ao longo de certas linhas\nou pontos no mapa em que a escala seja constante e igual à\nescala principal, ocasionando uma distorção nula. Linhas de\ndistorção nula são linhas em uma projeção em que a escala\nprincipal é preservada. São caracterizadas pela tangência ou\nsecância da superfície terrestre com a superfície de projeção.\nMENEZES, P.; FERNANDES, M. Roteiro de cartografia.\nSão Paulo: Oficina de Textos, 2013 (adaptado).\nConforme o texto, a projeção que representará uma região\npróxima à Linha do Equador com a menor distorção da\nescala principal é:",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q074.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q075",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 75,
+    "lingua_estrangeira": null,
+    "enunciado": "A história da interiorização da própria presença do\nEstado nacional brasileiro na Amazônia se deve em grande\nparte aos serviços de saúde pública e sua íntima relação\ncom o combate às chamadas endemias rurais — como\nmalária, leishmaniose, doença de Chagas, brucelose,\nfebre amarela, esquistossomose, ancilostomose e bócio\nendêmico — que motivaram gerações de cientistas e\nsanitaristas no controle de doenças na região. É impossível\nresistir à comparação histórica com a gripe espanhola.\nA gripe espanhola grassou em Belém e na região, que\nvivenciavam um frágil estado sanitário após o ciclo da\nborracha. A introdução da doença por rios e mares, o\nnúmero reduzido de médicos e os registros de mortes\nacentuados nas periferias marcaram aquele momento do\nmundo pós-Primeira Guerra Mundial.\nMUNIZI, E. S. A interiorização da covid-19 na Amazônia: reflexões sobre o passado e o presen te\nda saúde pública. História, Ciências, Saúde – Manguinhos, n. 3, jul.-set. 2021 (adaptado).\nDe acordo com o texto, o Estado se fez presente na\nAmazônia com ações para",
+    "alternativas": {
+      "A": "oferecer formação técnica aos nativos.",
+      "B": "prestar proteção militar às populações.",
+      "C": "expor padrões higienistas aos indígenas.",
+      "D": "garantir direitos fundamentais aos cidadãos.",
+      "E": "impedir acesso estrangeiro às comunidades."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q076",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 76,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma característica da pólis é o cunho de plena\npublicidade dada às manifestações mais importantes da\nvida social. Pode-se mesmo dizer que a pólis existe apenas\nna medida em que se distinguiu um domínio público, nos\ndois sentidos diferentes, mas solidários do termo: um setor\nde interesse comum opondo-se aos assuntos privados;\npráticas abertas, estabelecidas em pleno dia, opondo-se\na processos secretos. A cultura grega constitui-se dando\na um círculo sempre mais amplo — finalmente ao demos\ntodo — o acesso ao mundo espiritual, reservado no início\na uma aristocracia de caráter guerreiro e sacerdotal.\nVERNANT, J.-P. As origens do pensamento grego. Rio de Janeiro: Difel, 2002 (adaptado).\nO advento da pólis, com as mudanças descritas no texto,\né produto de um conjunto de transformações no mundo\ngrego antigo que resultou na",
+    "alternativas": {
+      "A": "extensão participativa dos cidadãos.",
+      "B": "elevação financeira das famílias.",
+      "C": "dominação de uma nobreza urbana.",
+      "D": "supervisão dos assuntos monárquicos.",
+      "E": "instauração de uma comunidade igualitária."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q077",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 77,
+    "lingua_estrangeira": null,
+    "enunciado": "A migração tem sido objeto de um intenso debate político\nnos últimos anos. Ao analisar o impacto econômico da\nmigração nos países anfitriões, é constatado que, de modo\ngeral, a migração aumenta o crescimento econômico e a\nprodutividade nesses países. Nas economias avançadas,\nos imigrantes aumentam a produção e a produtividade\ntanto no curto como no médio prazo. Um aumento de\n1 ponto percentual no fluxo imigratório em relação ao total\ndo emprego aumenta a produção em quase 1%.\nENGLER, P. et al. A migração para economias avançadas pode acelerar o crescimento.\nDisponível em: www.imf.org. Acesso em: 10 nov. 2021 (adaptado).\nConforme o texto, os imigrantes contribuem em qual\naspecto nos países mencionados?",
+    "alternativas": {
+      "A": "Integração da cultura da nação.",
+      "B": "Ampliação da tolerância religiosa.",
+      "C": "Desenvolvimento de serviços manuais.",
+      "D": "Fomento de auxílios governamentais.",
+      "E": "Dinamização do mercado de trabalho."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q078",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 78,
+    "lingua_estrangeira": null,
+    "enunciado": "O legado dos movimentos sociais dos anos 1970-80\nNa mudança de regime político, que culminou com\na Carta Constitucional de 1988, os movimentos sociais\nforam, sem dúvida, os grandes atores. Se tomarmos a\nConstituição de 1988 como o coroamento desse processo,\nno qual os movimentos sociais ocuparam a cena pública,\nvamos perceber que os valores democráticos nela inscritos\nsão inéditos como experiência de sociedade, e não seria\nexagero dizer que a sociedade brasileira de antes de 1964\nnão se reconheceria na Carta de 1988, o que equivale a\ndizer que o processo vivido nesses anos recentes logrou\nestabelecer os fundamentos de uma nova sociedade\nmarcada, especialmente, pelo reconhecimento dos direitos\nde cidadania que a sociedade passou a atribuir-se através\ndos seus movimentos.\nSILVEIRA, R. J. Revista Mediações, n. 1, jan.-jun. 2000 (adaptado).\nCom base no texto, a ação dos atores sociais mencionados\nproduziu o seguinte resultado:",
+    "alternativas": {
+      "A": "Manipulação da memória nacional.",
+      "B": "Subordinação do sistema judiciário.",
+      "C": "Imposição dos discursos ideológicos.",
+      "D": "Transformação da realidade histórica.",
+      "E": "Destruição dos princípios tradicionais."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q079",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 79,
+    "lingua_estrangeira": null,
+    "enunciado": "A Primavera Árabe parecia mudar a realidade.\nEm janeiro de 2011, enquanto Ben Ali renunciava ao poder\nna Tunísia, ativistas por democracia no Egito começaram\na convocar protestos por reformas no país — como na\nTunísia, aproveitando o potencial da comunicação via\ninternet e redes sociais. Ruas e praças, especialmente\nna capital, Cairo, foram rapidamente tomadas pela\npopulação pedindo melhoras econômicas e reformas\npolíticas. A praça Tahrir (em português, Libertação), no\nCairo, tornou-se o centro do movimento por democracia.\nO que foi e como terminou a Primavera Árabe? Disponível em:\nwww.bbc.com. Acesso em: 6 out. 2021 (adaptado).\nA reivindicação da revolução popular apresentada no\ntexto exigiu o(a)",
+    "alternativas": {
+      "A": "garantia de direitos civis.",
+      "B": "controle da crença religiosa.",
+      "C": "mudança da cultura islâmica.",
+      "D": "domínio de militantes radicais.",
+      "E": "defesa de Estados autocráticos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q080",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 80,
+    "lingua_estrangeira": null,
+    "enunciado": "Há uma década, Alter (PA) e Santarém (PA) resgatam\no idioma de nheengatu — a língua mais falada no Brasil\ne proibida em 1758 pela Coroa portuguesa — por\nmeio do ensino em 47 escolas. Uma delas é a Escola\nIndígena Antônio de Sousa Pedroso, mais conhecida\ncomo Escola Borari. A região é hoje repleta de mestres\nnativos de nheengatu. Nhe’eng significa “língua”, e “boa”\né a tradução de katu. Daí o nheengatu ou nhengatu\n(ou língua geral), criado no século 16 pelos jesuítas a partir\ndo tupi e criminalizado no século 18 por um decreto do\nMarquês de Pombal.\nLEMOS, S. Indígena ensina língua proibida pelos portugueses na paradisíaca Alter (PA).\nDisponível em: https://tab.uol.com.br. Acesso em: 11 nov. 2021 (adaptado).\nO ensino da língua mencionada no texto tem como\nobjetivo a",
+    "alternativas": {
+      "A": "resolução dos conflitos legais.",
+      "B": "estetização do dialeto regional.",
+      "C": "gramatização do vocabulário local.",
+      "D": "valorização da tradição cultural.",
+      "E": "reabilitação das autoridades políticas."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q081",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 81,
+    "lingua_estrangeira": null,
+    "enunciado": "Os valores políticos são valores efetivamente\nsuperiores, que regem o quadro básico da vida social\ne definem precisamente os termos fundamentais da\ncooperação política e social. Na teoria da justiça como\nequidade, alguns desses valores políticos são expressos\npelos princípios de justiça para a estrutura básica: a\nliberdade política e civil igual para todos, a justa igualdade\ndas oportunidades, a reciprocidade econômica, as bases\nsociais do respeito mútuo entre os cidadãos.\nRAWLS, J. Justiça e democracia. São Paulo: Martins Fontes, 2000 (adaptado).\nConforme descrito no texto, a teoria da justiça como\nequidade é mais adequada ao regime político",
+    "alternativas": {
+      "A": "fascista.",
+      "B": "totalitário.",
+      "C": "despótico.",
+      "D": "autocrático.",
+      "E": "democrático."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q082",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 82,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nCais do Valongo – Rio de Janeiro (RJ). Disponível em: https://www.rio.rj.gov.br.\nAcesso em: 19 jul. 2023.\nTEXTO II\nPrincipal porto de entrada de africanos escravizados\nno Brasil e nas Américas, o Cais do Valongo, localizado no\nRio de Janeiro (RJ), passou a integrar a lista do Patrimônio\nMundial da Organização das Nações Unidas para a\nEducação, a Ciência e a Cultura (Unesco) em 1º de\nmarço de 2017. O Brasil recebeu perto de quatro milhões\nde escravos durante os mais de três séculos de duração\ndo regime escravagista. Pelo Cais do Valongo, na\nregião portuária da cidade, passou aproximadamente\num milhão de africanos escravizados em cerca de\n40 anos, o que o tornou o maior porto receptor de\nescravos do mundo.\nFRAZÃO, F. Disponível em: https://agenciabrasil.ebc.com.br. Acesso em: 3 nov. 2021.\nAo ser reconhecido como Patrimônio Mundial pela\nUnesco, o sítio arqueológico mencionado inscreve-se\ncomo",
+    "alternativas": {
+      "A": "guardião da memória de povos oprimidos.",
+      "B": "reduto da tradição de imigrantes estrangeiros.",
+      "C": "região de celebrações de rituais cristianizados.",
+      "D": "depósito de fragmentos de artefatos arquitetônicos.",
+      "E": "local de desembarque de nobres lusitanos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D1_CD1_Q082.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q083",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 83,
+    "lingua_estrangeira": null,
+    "enunciado": "Nas Antilhas, o jovem negro que, na escola, não para\nde repetir “nossos pais, os gauleses”, identifica-se com\no explorador, com o civilizador, com o branco que traz\na verdade aos selvagens, uma verdade toda branca.\nHá identificação, isto é, o jovem negro adota subjetivamente\numa atitude de branco. Ele carrega o herói, que é branco,\ncom toda a sua agressividade — a qual, nessa idade,\nassemelha-se estreitamente a uma dádiva: uma dádiva\ncarregada de sadismo.\nFANON, F. Pele negra, máscaras brancas. Salvador: Edufba, 2008.\nA reflexão do autor sobre o processo de socialização\napresentado no texto expõe qual elemento constituidor\ndas relações sociais?",
+    "alternativas": {
+      "A": "A violência estatal.",
+      "B": "O racismo estrutural.",
+      "C": "A opressão religiosa.",
+      "D": "O desemprego crônico.",
+      "E": "A desigualdade educacional."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q084",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 84,
+    "lingua_estrangeira": null,
+    "enunciado": "Ana Maria [entrevistadora]: Vida de empreguete é tão\ndura assim como vocês retratam no clipe?\nPenha [empregada]: Olha, Ana, difícil mesmo é aturar\ncara de patroa ignorante que não sabe pedir as coisas\ncom educação.\nSonia [patroa]: Ana, eu acho que nós estamos vivendo\numa inversão total de valores, entende? Não somos nós\nque precisamos das empregadas. Elas é que precisam do\nemprego, precisam do dinheiro que nós pagamos.\nCida [empregada]: Até parece, dona Sonia, a senhora\nprecisa de mim até pra pegar água!\nSonia: Eu sou de um tempo em que os serviçais\nsabiam o seu lugar!\nCida: Eu esqueci que a senhora pegou a época da\nescravidão!\nAna Maria: Gente, eu só quis promover aqui uma\nconfraternização...\nChayenne [patroa]: Ana, pare tudo, porque agora eu\nquero falar! Eu sou uma patroa que dou de tudo: eu dou\ncomida, eu dou quartinho, eu dou sabão de coco pra elas\nse lavarem, eu dou papel higiênico, eu dou copo, prato,\ntalher, tudo separado, sem descontar o salário!\nPenha: Agora, pra tirar férias, como manda a lei, é\num sacrifício! E ela viaja e quer que eu fique carregando\na mala dela. Eu não sou carregadora de mala, não!\nMACEDO, R. M. Espelho mágico: produção e recepção de imagens de empregadas\ndomésticas em uma telenovela brasileira. Cadernos Pagu, n. 48, 2016.\nO diálogo, extraído de uma telenovela brasileira exibida\nem 2012, traduz o pensamento de uma sociedade\ncaracterizada pela presença de",
+    "alternativas": {
+      "A": "símbolos da expansão de bens culturais.",
+      "B": "avanços do número de contratos formais.",
+      "C": "elementos do sistema do cativeiro colonial.",
+      "D": "progressos da venda de produtos midiáticos.",
+      "E": "signos da modernização de relações laborais."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q085",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 85,
+    "lingua_estrangeira": null,
+    "enunciado": "Há pouco mais de um ano, o chefe de polícia do\nEstado do Rio de Janeiro, Dr. Alfredo Madureira, em pleno\nexercício de suas atribuições, entendeu tomar energéticas\nprovidências contra o curandeiro Breves, e depois de\nsucessivas queixas que recebera relativamente às curas\npraticadas pelo milagroso esculápio, concluiu as suas\ndiligências policiais com a prisão de Breves. Essa prisão,\nporém, e as medidas tomadas contra a exploração da\nboa-fé de muita gente infeliz tiveram de cessar, porque\napareceram os advogados do curandeiro Breves, em nome\nda liberdade de profissão, e em nome da arte sobrenatural\nde cura com benzeduras e raminhos de alecrim. E assim,\nfindaram as perseguições ao benemérito esculápio que,\nde fronte erguida, continuou a sua carreira de triunfo,\ninterrompida por um curto espaço de tempo.\nAutoridade e curandeirismo. Gazeta de Notícias, 18 out. 1896.\nNo texto, os dois pontos de vista apresentados pela\npolícia e pelos advogados sobre as práticas populares\nde cura se distanciam por apresentarem",
+    "alternativas": {
+      "A": "visões díspares sobre o mesmo tipo de ofício.",
+      "B": "discursos laudatórios sobre a mesma ordem vigente.",
+      "C": "regras sanitárias sobre a mesma atividade terapêutica.",
+      "D": "registros certificados sobre o mesmo exercício médico.",
+      "E": "regulamentos eugênicos sobre o mesmo fenômeno da cultura."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q086",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 86,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nAquarela do Brasil\nBrasil!\nMeu Brasil brasileiro\nMeu mulato inzoneiro\nVou cantar-te nos meus versos\nO Brasil, samba que dá\nBamboleio, que faz gingar\nO Brasil, do meu amor\nTerra de Nosso Senhor\nBrasil! Pra mim! Pra mim, pra mim\nBARROSO, A. Rio de Janeiro: Odeon, 1939 (fragmento).\nTEXTO II\nMenestrel das Alagoas\nQuem é esse que conhece\nAlagoas e Gerais\nE fala a língua do povo\nComo ninguém fala mais?\nQuem é esse?\nDe quem é essa ira santa\nEssa saúde civil\nQue tocando a ferida\nRedescobre o Brasil?\nQuem é esse peregrino\nQue caminha sem parar\nQuem é esse meu poeta\nQue ninguém pode calar?\nNASCIMENTO, M.; BRANT, F. Milton Nascimento ao vivo.\nSão Paulo: Barclay, 1983 (fragmento).\nOs trechos pertencem a canções que se tornaram\nemblemáticas, respectivamente, dos seguintes fatos\nhistóricos:",
+    "alternativas": {
+      "A": "O desenvolvimento econômico dos anos JK e a crise inflacionária da Nova República.",
+      "B": "A expansão do PIB no milagre econômico e o confisco financeiro do início dos anos 1990.",
+      "C": "A euforia social da Era Vargas e a mobilização em torno da campanha pelas Diretas Já.",
+      "D": "O alinhamento ao Ocidente na Guerra Fria e as reformas liberalizantes do fim do século XX.",
+      "E": "A consolidação da política dos governadores e a luta armada contra o Regime Militar."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q087",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 87,
+    "lingua_estrangeira": null,
+    "enunciado": "As propostas dele não devem ser levadas a sério, pois\nfoi visto bêbado num restaurante.\nGALINDO, R. 20 falácias (e as eleições). Disponível em: www.gazetadopovo.com.br.\nAcesso em: 17 out. 2021 (adaptado).\nA afirmação, eficaz como mecanismo de persuasão de\neleitores em contextos políticos, constitui-se como uma\nfalácia porque",
+    "alternativas": {
+      "A": "recorre à circularidade e afirma as suas teses.",
+      "B": "ataca a pessoa e desconsidera as suas ideias.",
+      "C": "aceita a conclusão e refuta as suas premissas.",
+      "D": "evoca a maioria e apresenta os seus argumentos.",
+      "E": "apela à autoridade e investiga os seus fundamentos."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q088",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 88,
+    "lingua_estrangeira": null,
+    "enunciado": "Na medida em que as pesquisas dos africanistas\navançaram, muitos mitos caíram por terra. Está mais do\nque provada a existência de documentação e vestígios\narqueológicos dos mais variados, além da importância\nda oralidade na recuperação da memória dos reinos, das\nlinhagens, dos fundadores das nações africanas. Com\nefeito, aquelas foram sociedades eminentemente orais,\nnas quais os dados históricos ocupam uma posição muito\nmais importante do que consideramos em nossa própria\ncultura e sociedade.\nMACEDO, J. R. Antigas civilizações africanas: historiografia e evidências documentais .\nIn: MACEDO, J. R. (Org.). Desvendando a história da África.\nPorto Alegre: UFRGS, 2008 (adaptado).\nCom vista ao conhecimento da história das civilizações\nafricanas, o texto corrobora a importância de",
+    "alternativas": {
+      "A": "doutrinas da tradição bíblica.",
+      "B": "diários dos viajantes europeus.",
+      "C": "registros da comunicação verbal.",
+      "D": "narrativas das missões jesuíticas.",
+      "E": "manuscritos dos povos muçulmanos."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q089",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 89,
+    "lingua_estrangeira": null,
+    "enunciado": "TEXTO I\nNum apagamento histórico\nMe perguntam como eu cheguei aqui\nA verdade é que eu sempre estive\nO lugar onde vivo me apaga e me incrimina\nMe cala e me torna invisível\nGUAJAJARA, K. Território ancestral. In: Hapohu. S.l.: Sakkara, 2019 (fragmento).\nTEXTO II\nA historiografia ocidental estudou a colonização da\nAmérica apenas do ponto de vista dos europeus, que\ndeixaram testemunhos escritos presentes na documentação\nda época, sobretudo nas crônicas de viagens. A visão\nbaseada na oralidade, em línguas desconhecidas pelo\neuropeu, não foi incorporada sistematicamente ao estudo\ndos povos indígenas, considerados “povos sem história”.\nSILVA, A. P. Memória oral e patrimônio indígena no Brasil nas crônicas do século XVI.\nAnpuh: XXV Simpósio Nacional de História – Fortaleza, 2009 (adaptado).\nO Texto I aproxima-se do Texto II ao elaborar uma crítica\nà produção historiográfica ocidental em sua abordagem\npautada em",
+    "alternativas": {
+      "A": "narrativas científicas.",
+      "B": "valores etnocêntricos.",
+      "C": "conceitos socialistas.",
+      "D": "arquivos positivistas.",
+      "E": "princípios cristocêntricos."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  },
+  {
+    "id": "2023-reaplicacao-D1-CD1-Q090",
+    "prova": {
+      "ano": 2023,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2023 · Reaplicação"
+    },
+    "area": "Ciências Humanas e suas Tecnologias",
+    "numero": 90,
+    "lingua_estrangeira": null,
+    "enunciado": "A luta da Águia contra o Dragão na América Latina\nNo rescaldo da crise de 2008, as instituições financeiras\nchinesas (Banco de Desenvolvimento da China e Banco\nde Exportação e Importação da China) ofereceram crédito\naos países latino-americanos que encontravam dificuldade\npara obter empréstimos nos mercados internacionais,\ncomo a Venezuela, a Argentina e o Equador. Mais flexível\nque os Estados Unidos, a China ofereceu a possibilidade\nde ser paga em commodities. Essa fórmula permitiu ao\npaís garantir o suprimento de recursos naturais necessário\npara atender ao apetite crescente de sua classe média.\nEssa estratégia “ganha-ganha” deu frutos.\nCORREA, A.-D. Le Monde Diplomatique Brasil, n. 171, out. 2021.\nPara os países latino-americanos mencionados, a estratégia\nchinesa apresentada na reportagem resultou no(a)",
+    "alternativas": {
+      "A": "realinhamento da parceria militar.",
+      "B": "ampliação do protecionismo tarifário.",
+      "C": "redução da dependência tecnológica.",
+      "D": "endurecimento da legislação ambiental.",
+      "E": "redirecionamento do comércio externo."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
+    }
+  }
+]
