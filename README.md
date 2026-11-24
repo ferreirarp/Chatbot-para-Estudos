@@ -120,7 +120,9 @@ Descartadas da nota em 2024: regular Q129 (anulada) e reaplicação Q40 ("algori
 não convergiu", motivo oficial). Calculadora conferida com 12 candidatos reais da
 aplicação regular (inglês e espanhol): 24 de 24 notas iguais às oficiais; e com
 28 candidatos da reaplicação: 52 de 52 notas de Natureza e Matemática iguais às
-oficiais (Linguagens e Humanas da reaplicação ainda sem candidatos na amostra).
+oficiais (Linguagens e Humanas da reaplicação: o arquivo de resultados inteiro, 4,33
+milhões de linhas, não tem nenhum candidato com esses códigos de prova, então
+essa parte não pôde ser conferida com notas reais).
 
 ### Observações técnicas
 - O servidor `download.inep.gov.br` não envia o certificado intermediário. Os

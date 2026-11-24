@@ -13,13 +13,13 @@
  },
  "validacao_escala": {
   "CN": {
-   "candidatos": 1,
-   "erro_maximo": 0.045,
+   "candidatos": 41,
+   "erro_maximo": 0.046,
    "acima_de_1_ponto": 0
   },
   "MT": {
-   "candidatos": 1,
-   "erro_maximo": 0.005,
+   "candidatos": 41,
+   "erro_maximo": 0.047,
    "acima_de_1_ponto": 0
   }
  },
