@@ -34,3 +34,31 @@ transforma gráficos em números estimados).
   Root R46) sem desligar a verificação TLS.
 
 Cada questão traz `alertas`: se não estiver vazio, revise antes de usar.
+
+## Provas regulares (fonte principal)
+
+`scripts/extrair_prova_regular.py` extrai **uma prova regular por vez** (caderno
+impresso do INEP), na numeração oficial:
+
+```bash
+pip install pdfplumber pypdf
+python scripts/extrair_prova_regular.py --ano 2023 --dia 2 --caderno 7
+```
+
+Saída: `data/enem/<ano>/D<dia>_CD<caderno>.json` e, só para questões com
+elementos visuais, `data/enem/<ano>/img/D<dia>_CD<caderno>_Q<n>.png`.
+
+- Questões só de texto: salvas só como texto (`texto_fiel: true`).
+- Questões com imagem, gráfico, desenho, tabela ou fórmula: texto + imagem
+  recortada do PDF (`imagem`, `elementos_visuais`, `texto_fiel: false`). Nelas a
+  **imagem é a referência**; o texto serve para busca e pode ter fórmulas quebradas.
+
+Verificações automáticas a cada execução:
+- todas as questões esperadas foram encontradas;
+- cada letra do conteúdo cai em exatamente uma questão (nada cortado ou duplicado);
+- nenhuma figura ou desenho é partido entre duas questões;
+- respostas lidas do gabarito do mesmo caderno.
+
+| Prova | Questões | Só texto | Com imagem | Conferência manual |
+|---|---|---|---|---|
+| 2023, dia 2, caderno 7 (Azul) | 90/90 | 33 | 57 | 57 imagens revisadas; gabarito 90/90 contra leitura independente |
