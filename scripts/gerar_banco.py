@@ -77,10 +77,10 @@ def main() -> None:
                 nome = next(n for n, s in SIGLA.items() if s == sig)
                 escalas_nota[f"{ano}|{nome}"] = {"k": e["k"], "m": e["m"]}
         for q in json.loads(arq.read_text(encoding="utf-8")):
-            c = classif.get(str(q["numero"]), {})
+            chave = str(q["numero"]) + (f"-{q['lingua_estrangeira']}" if q.get("lingua_estrangeira") else "")
+            c = classif.get(chave, {})
             if classif and not c:
                 avisos.append(f"{q['id']}: não classificada")
-            chave = str(q["numero"]) + (f"-{q['lingua_estrangeira']}" if q.get("lingua_estrangeira") else "")
             of = oficial.get(chave, {})
             if oficial and not of:
                 avisos.append(f"{q['id']}: sem dados dos microdados")

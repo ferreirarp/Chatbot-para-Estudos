@@ -77,13 +77,21 @@ casos. As respostas ficam salvas só no navegador de quem usa a página.
 - todas as questões esperadas foram encontradas;
 - cada letra do conteúdo cai em exatamente uma questão (nada cortado ou duplicado);
 - nenhuma figura ou desenho é partido entre duas questões;
-- respostas lidas do gabarito do mesmo caderno.
+- respostas lidas do gabarito do mesmo caderno;
+- páginas da proposta de redação e títulos de seção ("Questões de 01 a 05 (opção
+  espanhol)") não entram em nenhuma questão.
 
 ### Provas incluídas
 
 | Prova | Questões | Só texto | Com imagem | Conferência manual |
 |---|---|---|---|---|
+| 2023 · regular · 1º dia · caderno 1 (Azul) | 95/95 (45 + 5 da 2ª língua estrangeira + 45) | 82 | 13 | 13 imagens revisadas; gabarito 95/95 contra leitura independente; 95 questões classificadas |
 | 2023 · regular · 2º dia · caderno 7 (Azul) | 90/90 | 33 | 57 | 57 imagens revisadas; gabarito 90/90 contra leitura independente; 90 questões classificadas |
+
+Escalas de nota de 2023 (validadas contra as notas oficiais, erro máximo de 0,05 ponto):
+Linguagens 108,09·θ + 499,98; Humanas 112,31·θ + 501,49; Natureza 113,10·θ + 501,14;
+Matemática 129,65·θ + 500,02. A calculadora foi conferida com candidatos reais nas
+quatro áreas (inglês e espanhol incluídos): 24 de 24 notas iguais às oficiais.
 
 ### Observações técnicas
 - O servidor `download.inep.gov.br` não envia o certificado intermediário. Os

@@ -244,21 +244,31 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const FONTE = /Disponível em|Acesso em|\(adaptado\)|^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+, [A-ZÀ-Ý]\./;
   // Desfaz as quebras de linha do PDF, mantendo parágrafos e listas.
   function paragrafos(t) {
-    const linhas = (t || "").split("\n").map((l) => l.trim());
-    const largura = Math.max(30, ...linhas.map((l) => l.length));
-    const out = []; let cur = "", anterior = "";
-    linhas.forEach((s) => {
-      if (!s) { if (cur) { out.push(cur); cur = ""; } anterior = ""; return; }
-      // Parágrafo novo: item de lista, linha de fonte ("Disponível em"), ou
-      // linha anterior curta e terminada em pontuação (fim de parágrafo).
-      const novo = /^[•\-–]\s/.test(s) || /^Disponível em/.test(s) || AUTOR.test(s)
-        || (anterior && /[.:?!)]$/.test(anterior) && anterior.length < largura * 0.8);
-      if (novo || !cur) { if (cur) out.push(cur); cur = s; }
-      else cur += " " + s;
-      anterior = s;
+    const L = (t || "").split("\n").map((l) => l.trim());
+    const continua = (l) => /^\[(?!\s*(\.\.\.|…))/.test(l);       // "[vida passou" (não "[...]")
+    const ehFonte = (l) => /^Disponível em/.test(l) || AUTOR.test(l);
+    // Trechos separados pelas referências bibliográficas; um trecho com
+    // continuações de verso ("[...") é um poema: todas as quebras são mantidas.
+    const trecho = []; let n = 0;
+    L.forEach((l, i) => { trecho[i] = n; if (ehFonte(l)) n++; });
+    const poema = new Set(L.map((l, i) => (continua(l) ? trecho[i] : -1)).filter((x) => x >= 0));
+    const largura = Math.max(30, ...L.map((l) => l.length));
+    const curta = (l) => !!l && !continua(l) && l.length < largura * 0.72;
+    const verso = (i) => poema.has(trecho[i]) || (curta(L[i]) && (curta(L[i - 1]) || curta(L[i + 1])));
+    const out = []; let cur = "";
+    L.forEach((s, i) => {
+      if (!s) { if (cur) { out.push(cur); cur = ""; } return; }
+      const ant = L[i - 1] || "";
+      const novo = /^[•\-–]\s/.test(s) || ehFonte(s);
+      if (continua(s) && cur) { cur += " " + s.slice(1); return; }   // continuação do verso anterior
+      if (!cur || novo) { if (cur) out.push(cur); cur = s; }
+      else if (FONTE.test(cur) && /[.)]$/.test(ant)) { out.push(cur); cur = s; }  // fim da referência
+      else if (verso(i - 1) && verso(i)) cur += "\n" + s;          // mantém a quebra do verso
+      else if (/[.:?!)]$/.test(ant) && curta(ant)) { out.push(cur); cur = s; }  // fim de parágrafo
+      else cur += " " + s;                                            // prosa: junta a linha
     });
     if (cur) out.push(cur);
-    return out.map((p) => (FONTE.test(p) && p.length < 400 ? '<p class="cite">' : "<p>") + esc(p) + "</p>").join("");
+    return out.map((p) => (FONTE.test(p) && p.length < 400 ? '<p class="cite">' : "<p>") + esc(p).replace(/\n/g, "<br>") + "</p>").join("");
   }
 
   function passa(q, ignorar) {
