@@ -78,6 +78,29 @@ def nivel(nota: float, esc: dict) -> str:
     return NIVEIS[max(0, min(len(NIVEIS) - 1, i))]
 
 
+def aplicar_edicoes(banco: list[dict], avisos: list[str]) -> None:
+    """Edições feitas na interface e incorporadas por aplicar_edicoes.py."""
+    arq = DADOS / "edicoes" / "edicoes.json"
+    if not arq.exists():
+        return
+    edicoes = json.loads(arq.read_text(encoding="utf-8"))
+    por_id = {q["id"]: q for q in banco}
+    for qid, ed in edicoes.items():
+        q = por_id.get(qid)
+        if not q:
+            avisos.append(f"edição de {qid}: questão não existe no banco")
+            continue
+        for k, v in ed.get("campos", {}).items():
+            q[k] = v
+        if ed.get("imagem") and q["imagem"]:
+            q["imagem_original"] = q["imagem"]
+            q["imagem"] = ed["imagem"]
+        invalidas = [d for d in q["disciplinas"] if d not in DISCIPLINAS_VALIDAS]
+        if invalidas:
+            avisos.append(f"edição de {qid}: disciplina fora da lista oficial: {invalidas}")
+        q["editada_no_repositorio"] = True
+
+
 def main() -> None:
     banco, avisos = [], []
     matriz_arq = DADOS / "matriz_referencia.json"
@@ -146,6 +169,7 @@ def main() -> None:
                 "descartada_da_nota": of.get("descartada_da_nota", False),
                 "motivo_descarte": of.get("motivo_descarte"),
             })
+    aplicar_edicoes(banco, avisos)
     escalas = calibrar(banco)
     for q in banco:
         d, e = q["dificuldade"], escalas.get(q["area"])

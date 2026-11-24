@@ -74,6 +74,26 @@ com uma faixa provável (±1 desvio-padrão da estimativa). Testada com 6
 candidatos reais: a nota exibida coincidiu com a oficial (arredondada) nos 12
 casos. As respostas ficam salvas só no navegador de quem usa a página.
 
+### Edição de questões e imagens
+Cada cartão tem **Editar questão** (enunciado, alternativas, gabarito,
+disciplinas, conteúdos, observação) e, nas questões com imagem, **Editar
+imagem** (corte arrastando sobre a figura, brilho, contraste e nitidez). Só os
+campos alterados são guardados, por cima do original, e "Restaurar original"
+desfaz. Da imagem guarda-se a receita (corte e ajustes), então ela reabre
+ajustável a partir do original, que nunca é alterado.
+
+- **Página publicada:** edições no banco de dados do artefato e imagens no
+  armazenamento de arquivos dele; só o dono e editores alteram, quem abre o
+  link vê as mesmas edições.
+- **Aberta do disco:** edições só no navegador (localStorage). Brilho,
+  contraste e nitidez exigem abrir por um servidor
+  (`python -m http.server`), porque o navegador bloqueia a leitura de
+  imagens de arquivos locais.
+- **Levar ao repositório:** "Baixar edições (JSON)" e depois
+  `python scripts/aplicar_edicoes.py edicoes-banco-enem.json` e
+  `python scripts/gerar_banco.py`. As edições ficam em
+  `data/enem/edicoes/`, separadas dos arquivos extraídos.
+
 ### Texto e imagem
 - Questões só de texto: salvas só como texto (`texto_fiel: true`).
 - Questões com imagem, gráfico, desenho, tabela ou fórmula: texto + imagem

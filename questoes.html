@@ -163,6 +163,44 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   .card { padding: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Edição de questões e imagens */
+.chip.editada { color: var(--accent); border-color: var(--accent); }
+.btn.sec { font-weight: 500; color: var(--muted); }
+.btn.pri { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn.pri:hover { color: var(--surface); filter: brightness(1.08); }
+.btn.perigo { color: var(--bad); }
+.btn:disabled { opacity: .5; cursor: default; }
+.ed-estado { font-size: .8rem; color: var(--muted); margin: 0; }
+dialog.editor { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink);
+  padding: 0; width: min(760px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow-y: auto; overscroll-behavior: contain; }
+dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
+.editor form { display: grid; gap: 14px; padding: 18px 20px; }
+.editor h2 { margin: 0; font-size: 1.05rem; }
+.editor .sub { margin: -8px 0 0; font-size: .82rem; color: var(--muted); }
+.editor label.campo { display: grid; gap: 4px; font-size: .8rem; font-weight: 600; color: var(--muted); }
+.editor textarea, .editor input[type=text], .editor select { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 7px 9px;
+  background: var(--bg); font-size: .92rem; font-weight: 400; color: var(--ink); }
+.editor textarea { resize: vertical; font-family: var(--font-text); line-height: 1.45; }
+.editor .alts-ed { display: grid; gap: 8px; }
+.editor .alts-ed label { display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; font-weight: 700; color: var(--ink); }
+.editor .alts-ed label span { padding-top: 7px; }
+.editor fieldset { border: 1px solid var(--line); border-radius: 8px; margin: 0; padding: 8px 12px 10px; }
+.editor legend { font-size: .8rem; font-weight: 600; color: var(--muted); padding: 0 4px; }
+.editor .discs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .88rem; }
+.editor .rodape { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; position: sticky; bottom: 0; background: var(--surface);
+  padding: 12px 20px; margin: 0 -20px -18px; border-top: 1px solid var(--line); }
+.editor .rodape .esp { flex: 1; }
+.editor .erro { color: var(--bad); font-size: .85rem; margin: 0; }
+.img-palco { position: relative; touch-action: none; cursor: crosshair; user-select: none; border: 1px solid var(--line); border-radius: 8px;
+  overflow: hidden; background: #fff; }
+.img-palco canvas { display: block; width: 100%; height: auto; }
+.img-corte { position: absolute; border: 2px dashed var(--accent); box-shadow: 0 0 0 9999px rgba(10, 14, 20, .45); pointer-events: none; }
+.ajustes { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px 18px; }
+.ajustes label { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; font-size: .82rem; font-weight: 600; color: var(--muted); }
+.ajustes input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+.ajustes output { font-variant-numeric: tabular-nums; color: var(--ink); }
+.dica { font-size: .8rem; color: var(--muted); margin: 0; }
 </style>
 </head>
 <body>
@@ -194,6 +232,12 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     <div class="fgroup">
       <label class="opt"><input type="checkbox" id="semAnuladas" checked> Ocultar questões anuladas</label>
     </div>
+    <div class="fgroup">
+      <span class="label">Edições</span>
+      <label class="opt"><input type="checkbox" id="soEditadas"> Só questões editadas <span class="n" id="nEditadas">0</span></label>
+      <p class="ed-estado" id="edEstado">Edições salvas neste navegador.</p>
+      <button class="btn sec" id="baixarEdicoes" type="button">Baixar edições (JSON)</button>
+    </div>
     <button class="reset" id="limpar" type="button">Limpar filtros</button>
   </aside>
 
@@ -204,6 +248,57 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     <button class="btn more" id="mais" type="button" hidden>Mostrar mais questões</button>
   </main>
 </div>
+
+<dialog class="editor" id="dlgTexto" aria-labelledby="dlgTextoTitulo">
+  <form method="dialog" id="formTexto">
+    <h2 id="dlgTextoTitulo">Editar questão</h2>
+    <p class="sub" id="dlgTextoProva"></p>
+    <label class="campo">Enunciado (uma linha em branco separa parágrafos)
+      <textarea id="edEnunciado" rows="10"></textarea></label>
+    <div class="alts-ed" id="edAlts"></div>
+    <label class="campo">Resposta correta (gabarito)
+      <select id="edGabarito"><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></label>
+    <fieldset><legend>Disciplinas</legend><div class="discs" id="edDiscs"></div></fieldset>
+    <label class="campo">Conteúdos (separados por ponto e vírgula)
+      <input type="text" id="edConteudos" list="listaConteudos"></label>
+    <datalist id="listaConteudos"></datalist>
+    <label class="campo">Por que esta classificação (opcional)
+      <textarea id="edObs" rows="2"></textarea></label>
+    <p class="erro" id="edErro" hidden></p>
+    <div class="rodape">
+      <button class="btn perigo" type="button" id="edRestaurar">Restaurar original</button>
+      <span class="esp"></span>
+      <button class="btn" type="button" id="edCancelar">Cancelar</button>
+      <button class="btn pri" type="submit" id="edSalvar">Salvar</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog class="editor" id="dlgImagem" aria-labelledby="dlgImagemTitulo">
+  <form method="dialog" id="formImagem">
+    <h2 id="dlgImagemTitulo">Editar imagem</h2>
+    <p class="sub" id="dlgImagemProva"></p>
+    <p class="dica">Arraste sobre a imagem para marcar a área a manter (para rolar, use a margem fora da imagem). O original nunca é alterado.</p>
+    <div class="img-palco" id="imgPalco"><canvas id="imgCanvas"></canvas><div class="img-corte" id="imgCorte" hidden></div></div>
+    <div class="ajustes">
+      <label for="ajBrilho">Brilho <output id="oBrilho">0</output><input type="range" id="ajBrilho" min="-100" max="100" value="0"></label>
+      <label for="ajContraste">Contraste <output id="oContraste">0</output><input type="range" id="ajContraste" min="-100" max="100" value="0"></label>
+      <label for="ajNitidez">Nitidez <output id="oNitidez">0</output><input type="range" id="ajNitidez" min="0" max="100" value="0"></label>
+    </div>
+    <div class="actions">
+      <button class="btn sec" type="button" id="imgSemCorte">Remover corte</button>
+      <button class="btn sec" type="button" id="imgZerar">Zerar ajustes</button>
+      <button class="btn sec" type="button" id="imgComparar" aria-pressed="false">Ver original</button>
+    </div>
+    <p class="erro" id="imgErro" hidden></p>
+    <div class="rodape">
+      <button class="btn perigo" type="button" id="imgRestaurar">Voltar à imagem original</button>
+      <span class="esp"></span>
+      <button class="btn" type="button" id="imgCancelar">Cancelar</button>
+      <button class="btn pri" type="submit" id="imgSalvar">Salvar imagem</button>
+    </div>
+  </form>
+</dialog>
 
 <script src="data/banco_questoes.js"></script>
 <script>
@@ -222,6 +317,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   let lingua = "";  // "ingles", "espanhol" ou "" (ver as duas)
   const NOME_LINGUA = { ingles: "inglês", espanhol: "espanhol" };
   let respostas = {};  // id -> letra escolhida; "?" = só viu a resposta
+  let soEditadas = false;
 
   const $ = (id) => document.getElementById(id);
   const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -238,8 +334,11 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   const HABS = {};
   BANCO.forEach((q) => {
     if (q.habilidade) HABS[q.habilidade.chave] = q.habilidade;
-    q._busca = norm(q.enunciado + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ") + " " + (q.habilidade ? q.habilidade.codigo + " " + q.habilidade.texto : ""));
+    indexar(q);
   });
+  function indexar(q) {
+    q._busca = norm(q.enunciado + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ") + " " + (q.habilidade ? q.habilidade.codigo + " " + q.habilidade.texto : ""));
+  }
   const SIGLAS = ["LC", "CH", "CN", "MT"];
   const ordemHab = (a, b) => SIGLAS.indexOf(a.split(" ")[0]) - SIGLAS.indexOf(b.split(" ")[0]) || parseInt(a.split(" H")[1]) - parseInt(b.split(" H")[1]);
   const ordemDif = (a, b) => (NIVEIS.indexOf(a) + 1 || 99) - (NIVEIS.indexOf(b) + 1 || 99);
@@ -280,6 +379,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
 
   function passa(q, ignorar) {
     if (semAnuladas && q.anulada) return false;
+    if (soEditadas && !q.editada) return false;
     if (lingua && q.lingua && q.lingua !== lingua) return false;
     if (busca && !busca.split(/\s+/).every((t) => q._busca.includes(t))) return false;
     for (const k in filtros) {
@@ -328,6 +428,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
       .concat(q.disciplinas.filter((d) => d !== "Matemática" || !q.area.startsWith("Matemática")).map((d) => `<span class="chip disc">${esc(d)}</span>`))
       .concat(q.conteudos.map((c) => `<span class="chip">${esc(c)}</span>`))
       .concat(q.lingua ? [`<span class="chip">${q.lingua === "ingles" ? "Inglês" : "Espanhol"}</span>`] : [])
+      .concat(q.editada ? ['<span class="chip editada" title="Texto, classificação ou imagem alterados nesta página">Editada</span>'] : [])
       .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : [])
       .concat(!q.anulada && q.descartada_da_nota ? ['<span class="chip warn" title="O INEP não usou esta questão no cálculo da nota">Descartada da nota</span>'] : []);
     const corpo = q.imagem
@@ -355,7 +456,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
       ${barraDificuldade(q)}
       ${corpo}
       <ol class="alts" aria-label="Alternativas">${alts}</ol>
-      <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}</div>
+      <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}${botoesEdicao(q)}</div>
     </article>`;
   }
 
@@ -454,6 +555,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")
       : '<div class="empty">Nenhuma questão com esses filtros. Desmarque algum filtro ou limpe a busca.</div>';
     $("mais").hidden = res.length <= limite;
+    atualizarEstadoEdicao();
     $("mais").textContent = `Mostrar mais questões (${Math.min(POR_PAGINA, res.length - limite)} de ${res.length - limite} restantes)`;
     salvar();
   }
@@ -478,6 +580,7 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     const t = e.target;
     if (t.dataset && t.dataset.k) { t.checked ? filtros[t.dataset.k].add(t.value) : filtros[t.dataset.k].delete(t.value); limite = POR_PAGINA; render(); }
     if (t.id === "semAnuladas") { semAnuladas = t.checked; limite = POR_PAGINA; render(); }
+    if (t.id === "soEditadas") { soEditadas = t.checked; limite = POR_PAGINA; render(); }
     if (t.name === "lingua") { lingua = t.value; limite = POR_PAGINA; render(); }
   });
   let timer;
@@ -491,6 +594,8 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
   });
   $("lista").addEventListener("click", (e) => {
     const b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.editar) { abrirEditorTexto(b.dataset.editar); return; }
+    if (b.dataset.editarImg) { abrirEditorImagem(b.dataset.editarImg); return; }
     if (b.dataset.l) respostas[b.dataset.q] = b.dataset.l;
     else if (b.dataset.ver) respostas[b.dataset.ver] = "?";
     else if (b.dataset.refazer) delete respostas[b.dataset.refazer];
@@ -516,13 +621,350 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
     }
   });
 
+
+  // ================= Edição de questões e imagens =================
+  // Nada do banco original é alterado: cada edição é guardada à parte (só os
+  // campos que mudaram) e aplicada por cima ao carregar. Na página publicada,
+  // as edições ficam no banco de dados do artefato (coleção "edicoes") e as
+  // imagens editadas no armazenamento de arquivos; aberta do disco, ficam
+  // neste navegador. Imagem: guarda-se a "receita" (corte, brilho, contraste,
+  // nitidez) para reabrir e ajustar a partir do original.
+  const DISCIPLINAS = ["Língua Portuguesa", "Língua Inglesa", "Língua Espanhola", "Artes", "Educação Física",
+    "Geografia", "História", "Filosofia", "Sociologia", "Matemática", "Biologia", "Física", "Química"];
+  const CHAVE_LOCAL = "banco-enem-edicoes";
+  const CAMPOS_TEXTO = ["enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao"];
+  const ORIGINAL = new Map();
+  BANCO.forEach((q) => ORIGINAL.set(q.id, JSON.parse(JSON.stringify(
+    Object.fromEntries(CAMPOS_TEXTO.concat("imagem").map((k) => [k, q[k] ?? null]))))));
+  const ED = { modo: "local", db: null, assets: null, downloads: null, podeEditar: true, podeImagem: true, aviso: "" };
+  let edicoes = {};
+  try { edicoes = JSON.parse(localStorage.getItem(CHAVE_LOCAL) || "{}") || {}; } catch (e) { edicoes = {}; }
+
+  const fonteImagem = (reg) => (reg.imagem_id ? "/_blob/" + reg.imagem_id : reg.imagem_dados || null);
+  function aplicarEdicoes() {
+    BANCO.forEach((q) => {
+      const o = ORIGINAL.get(q.id), reg = edicoes[q.id];
+      Object.assign(q, JSON.parse(JSON.stringify(o)));
+      q.editada = false;
+      if (reg && reg.campos) {
+        CAMPOS_TEXTO.forEach((k) => { if (k in reg.campos) q[k] = JSON.parse(JSON.stringify(reg.campos[k])); });
+        q.editada = Object.keys(reg.campos).length > 0;
+      }
+      const img = reg && fonteImagem(reg);
+      if (img && o.imagem) { q.imagem = img; q.editada = true; }
+      indexar(q);
+    });
+  }
+  function botoesEdicao(q) {
+    if (!ED.podeEditar) return "";
+    return `<span style="flex:1"></span><button class="btn sec" type="button" data-editar="${esc(q.id)}">Editar questão</button>`
+      + (ORIGINAL.get(q.id).imagem && ED.podeImagem ? `<button class="btn sec" type="button" data-editar-img="${esc(q.id)}">Editar imagem</button>` : "");
+  }
+  function atualizarEstadoEdicao() {
+    const n = BANCO.filter((q) => q.editada).length;
+    $("nEditadas").textContent = n;
+    $("edEstado").textContent = ED.aviso || (ED.modo === "nuvem"
+      ? (ED.podeEditar ? "Edições salvas no artefato: quem abre este link vê as mesmas." : "Você pode ver as edições, mas só o dono e editores alteram.")
+      : "Edições salvas só neste navegador. Use “Baixar edições” para guardar uma cópia.");
+    $("baixarEdicoes").disabled = n === 0;
+  }
+  function redesenhar(id) {
+    const q = BANCO.find((x) => x.id === id), card = document.getElementById(id);
+    if (q && card) card.outerHTML = cartao(q);
+    atualizarEstadoEdicao();
+  }
+  async function gravar(id, reg) {
+    if (ED.modo === "nuvem") {
+      const ref = ED.db.collection("edicoes").doc(id);
+      if (reg) await ref.set(reg); else await ref.delete();
+    }
+    const novo = Object.assign({}, edicoes);
+    if (reg) novo[id] = reg; else delete novo[id];
+    if (ED.modo === "local") {
+      try { localStorage.setItem(CHAVE_LOCAL, JSON.stringify(novo)); }
+      catch (e) { throw new Error("O navegador não tem espaço para guardar esta edição (imagens ocupam muito). Baixe as edições e apague algumas."); }
+    }
+    edicoes = novo;
+    aplicarEdicoes();
+    redesenhar(id);
+  }
+  const mesmo = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const erroTexto = (e) => (e && e.message) || (e && e.code) || String(e);
+
+  // ---------- editor de texto ----------
+  let emEdicao = null;
+  function abrirEditorTexto(id) {
+    const q = BANCO.find((x) => x.id === id); if (!q) return;
+    emEdicao = id;
+    $("dlgTextoProva").textContent = q.prova.descricao + (q.lingua ? ` · ${q.lingua === "ingles" ? "Inglês" : "Espanhol"}` : "");
+    $("edEnunciado").value = q.enunciado || "";
+    $("edAlts").innerHTML = "ABCDE".split("").map((L) => `<label><span>${L}</span><textarea rows="2" data-alt="${L}"></textarea></label>`).join("");
+    "ABCDE".split("").forEach((L) => { $("edAlts").querySelector(`[data-alt="${L}"]`).value = (q.alternativas || {})[L] || ""; });
+    $("edGabarito").value = q.gabarito || "A";
+    $("edGabarito").disabled = !!q.anulada;
+    $("edDiscs").innerHTML = DISCIPLINAS.map((d, i) => `<label class="opt" for="edd-${i}"><input type="checkbox" id="edd-${i}" value="${esc(d)}"${q.disciplinas.includes(d) ? " checked" : ""}> ${esc(d)}</label>`).join("");
+    $("edConteudos").value = q.conteudos.join("; ");
+    const todos = [...new Set(BANCO.flatMap((x) => x.conteudos))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+    $("listaConteudos").innerHTML = todos.map((c) => `<option value="${esc(c)}">`).join("");
+    $("edObs").value = q.observacao || "";
+    $("edErro").hidden = true;
+    $("edRestaurar").hidden = !(edicoes[id] && edicoes[id].campos && Object.keys(edicoes[id].campos).length);
+    $("dlgTexto").showModal();
+  }
+  function mostrarErro(el, msg) { el.textContent = msg; el.hidden = false; }
+  $("edCancelar").addEventListener("click", () => $("dlgTexto").close());
+  $("formTexto").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const id = emEdicao, o = ORIGINAL.get(id);
+    const alts = {};
+    "ABCDE".split("").forEach((L) => { alts[L] = $("edAlts").querySelector(`[data-alt="${L}"]`).value.trim(); });
+    const novo = {
+      enunciado: $("edEnunciado").value.replace(/\r/g, "").trim(),
+      alternativas: alts,
+      gabarito: o.gabarito === null ? null : $("edGabarito").value,
+      disciplinas: [...$("edDiscs").querySelectorAll("input:checked")].map((i) => i.value),
+      conteudos: $("edConteudos").value.split(";").map((c) => c.trim()).filter(Boolean),
+      observacao: $("edObs").value.trim() || null,
+    };
+    if (!novo.disciplinas.length) return mostrarErro($("edErro"), "Escolha pelo menos uma disciplina.");
+    if (!novo.enunciado) return mostrarErro($("edErro"), "O enunciado não pode ficar vazio.");
+    const origAlts = Object.fromEntries("ABCDE".split("").map((L) => [L, ((o.alternativas || {})[L] || "").trim()]));
+    const campos = {};
+    CAMPOS_TEXTO.forEach((k) => {
+      const base = k === "alternativas" ? origAlts : k === "enunciado" ? (o.enunciado || "").trim() : o[k];
+      if (!mesmo(novo[k], base)) campos[k] = novo[k];
+    });
+    const reg = Object.assign({}, edicoes[id] || {}, { campos, atualizado: new Date().toISOString() });
+    $("edSalvar").disabled = true;
+    try {
+      await gravar(id, Object.keys(campos).length || reg.imagem_id || reg.imagem_dados ? reg : null);
+      $("dlgTexto").close();
+    } catch (err) { mostrarErro($("edErro"), "Não foi possível salvar: " + erroTexto(err)); }
+    finally { $("edSalvar").disabled = false; }
+  });
+  $("edRestaurar").addEventListener("click", async () => {
+    const id = emEdicao, reg = Object.assign({}, edicoes[id] || {});
+    delete reg.campos;
+    try {
+      await gravar(id, reg.imagem_id || reg.imagem_dados ? reg : null);
+      $("dlgTexto").close();
+    } catch (err) { mostrarErro($("edErro"), "Não foi possível restaurar: " + erroTexto(err)); }
+  });
+
+  // ---------- editor de imagem ----------
+  const PREVIA_MAX = 900;  // largura da prévia (o salvamento usa a resolução original)
+  const IM = { id: null, img: null, previa: null, escala: 1, receita: null, comparar: false, arrasto: null, pendente: false };
+  const RECEITA0 = () => ({ brilho: 0, contraste: 0, nitidez: 0, corte: null });
+
+  // Brilho e contraste por tabela; nitidez por máscara de nitidez (kernel em cruz).
+  function ajustar(ctx, w, h, r) {
+    if (!r.brilho && !r.contraste && !r.nitidez) return;
+    const dados = ctx.getImageData(0, 0, w, h), px = dados.data;
+    if (r.brilho || r.contraste) {
+      const c = r.contraste * 2.55, f = (259 * (c + 255)) / (255 * (259 - c)), b = r.brilho * 2.55;
+      const lut = new Uint8ClampedArray(256);
+      for (let v = 0; v < 256; v++) lut[v] = f * (v - 128) + 128 + b;
+      for (let i = 0; i < px.length; i += 4) { px[i] = lut[px[i]]; px[i + 1] = lut[px[i + 1]]; px[i + 2] = lut[px[i + 2]]; }
+    }
+    if (r.nitidez) {
+      const k = (r.nitidez / 100) * 1.5, src = new Uint8ClampedArray(px), lin = w * 4;
+      for (let y = 1; y < h - 1; y++) {
+        for (let x = 1; x < w - 1; x++) {
+          const i = y * lin + x * 4;
+          for (let c = 0; c < 3; c++) {
+            const j = i + c;
+            px[j] = src[j] * (1 + 4 * k) - k * (src[j - 4] + src[j + 4] + src[j - lin] + src[j + lin]);
+          }
+        }
+      }
+    }
+    ctx.putImageData(dados, 0, 0);
+  }
+  function desenharPrevia() {
+    IM.pendente = false;
+    const cv = $("imgCanvas"), ctx = cv.getContext("2d");
+    cv.width = IM.previa.width; cv.height = IM.previa.height;
+    ctx.drawImage(IM.previa, 0, 0);
+    try { if (!IM.comparar) ajustar(ctx, cv.width, cv.height, IM.receita); }
+    catch (e) { mostrarErro($("imgErro"), "Este navegador bloqueou a leitura da imagem (página aberta direto do disco). Abra pela página publicada ou por um servidor local para usar brilho, contraste e nitidez."); }
+    const c = IM.receita.corte, el = $("imgCorte");
+    if (c && !IM.comparar) {
+      const W = IM.img.naturalWidth, H = IM.img.naturalHeight;
+      Object.assign(el.style, { left: (100 * c.x / W) + "%", top: (100 * c.y / H) + "%", width: (100 * c.w / W) + "%", height: (100 * c.h / H) + "%" });
+      el.hidden = false;
+    } else el.hidden = true;
+  }
+  const agendar = () => { if (!IM.pendente) { IM.pendente = true; requestAnimationFrame(desenharPrevia); } };
+  function sincronizarControles() {
+    [["ajBrilho", "oBrilho", "brilho"], ["ajContraste", "oContraste", "contraste"], ["ajNitidez", "oNitidez", "nitidez"]].forEach(([i, o, k]) => {
+      $(i).value = IM.receita[k]; $(o).textContent = IM.receita[k];
+    });
+  }
+  function abrirEditorImagem(id) {
+    const q = BANCO.find((x) => x.id === id), o = ORIGINAL.get(id);
+    if (!q || !o.imagem) return;
+    IM.id = id; IM.comparar = false; $("imgComparar").setAttribute("aria-pressed", "false"); $("imgComparar").textContent = "Ver original";
+    const reg = edicoes[id] || {};
+    IM.receita = Object.assign(RECEITA0(), reg.receita || {});
+    $("dlgImagemProva").textContent = q.prova.descricao;
+    $("imgErro").hidden = true;
+    $("imgRestaurar").hidden = !fonteImagem(reg);
+    sincronizarControles();
+    const img = new Image();
+    img.onload = () => {
+      IM.img = img;
+      IM.escala = Math.min(1, PREVIA_MAX / img.naturalWidth);
+      const p = document.createElement("canvas");
+      p.width = Math.round(img.naturalWidth * IM.escala); p.height = Math.round(img.naturalHeight * IM.escala);
+      p.getContext("2d").drawImage(img, 0, 0, p.width, p.height);
+      IM.previa = p;
+      desenharPrevia();
+    };
+    img.onerror = () => mostrarErro($("imgErro"), "Não foi possível carregar a imagem original.");
+    img.src = o.imagem;
+    $("dlgImagem").showModal();
+  }
+  [["ajBrilho", "oBrilho", "brilho"], ["ajContraste", "oContraste", "contraste"], ["ajNitidez", "oNitidez", "nitidez"]].forEach(([i, o, k]) => {
+    $(i).addEventListener("input", () => { IM.receita[k] = Number($(i).value); $(o).textContent = $(i).value; if (IM.previa) agendar(); });
+  });
+  function pontoNatural(e) {
+    const r = $("imgCanvas").getBoundingClientRect(), W = IM.img.naturalWidth, H = IM.img.naturalHeight;
+    return { x: Math.max(0, Math.min(W, (e.clientX - r.left) / r.width * W)), y: Math.max(0, Math.min(H, (e.clientY - r.top) / r.height * H)) };
+  }
+  $("imgPalco").addEventListener("pointerdown", (e) => {
+    if (!IM.img || IM.comparar) return;
+    IM.arrasto = pontoNatural(e);
+    $("imgPalco").setPointerCapture(e.pointerId);
+  });
+  $("imgPalco").addEventListener("pointermove", (e) => {
+    if (!IM.arrasto) return;
+    const p = pontoNatural(e), a = IM.arrasto;
+    IM.receita.corte = { x: Math.round(Math.min(a.x, p.x)), y: Math.round(Math.min(a.y, p.y)), w: Math.round(Math.abs(p.x - a.x)), h: Math.round(Math.abs(p.y - a.y)) };
+    agendar();
+  });
+  const fimArrasto = () => {
+    if (!IM.arrasto) return;
+    IM.arrasto = null;
+    const c = IM.receita.corte;
+    if (c && (c.w < 12 || c.h < 12)) { IM.receita.corte = null; agendar(); }  // clique simples não corta
+  };
+  $("imgPalco").addEventListener("pointerup", fimArrasto);
+  $("imgPalco").addEventListener("pointercancel", fimArrasto);
+  $("imgSemCorte").addEventListener("click", () => { IM.receita.corte = null; agendar(); });
+  $("imgZerar").addEventListener("click", () => { Object.assign(IM.receita, { brilho: 0, contraste: 0, nitidez: 0 }); sincronizarControles(); agendar(); });
+  $("imgComparar").addEventListener("click", () => {
+    IM.comparar = !IM.comparar;
+    $("imgComparar").setAttribute("aria-pressed", String(IM.comparar));
+    $("imgComparar").textContent = IM.comparar ? "Ver edição" : "Ver original";
+    agendar();
+  });
+  $("imgCancelar").addEventListener("click", () => $("dlgImagem").close());
+  function renderizarFinal() {
+    const W = IM.img.naturalWidth, H = IM.img.naturalHeight, c = IM.receita.corte || { x: 0, y: 0, w: W, h: H };
+    const cv = document.createElement("canvas");
+    cv.width = c.w; cv.height = c.h;
+    const ctx = cv.getContext("2d");
+    ctx.drawImage(IM.img, c.x, c.y, c.w, c.h, 0, 0, c.w, c.h);
+    ajustar(ctx, c.w, c.h, IM.receita);
+    return new Promise((ok, falha) => cv.toBlob((b) => (b ? ok(b) : falha(new Error("falha ao gerar a imagem"))), "image/png"));
+  }
+  const paraDataURL = (blob) => new Promise((ok, falha) => { const f = new FileReader(); f.onload = () => ok(f.result); f.onerror = falha; f.readAsDataURL(blob); });
+  $("formImagem").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!IM.img) return;
+    const id = IM.id, antigo = edicoes[id] || {}, r = IM.receita;
+    const semMudanca = !r.corte && !r.brilho && !r.contraste && !r.nitidez;
+    $("imgSalvar").disabled = true; $("imgSalvar").textContent = "Salvando…";
+    try {
+      const reg = Object.assign({}, antigo, { atualizado: new Date().toISOString() });
+      delete reg.imagem_id; delete reg.imagem_dados; delete reg.receita;
+      if (!semMudanca) {
+        const blob = await renderizarFinal();
+        if (ED.modo === "nuvem") reg.imagem_id = (await ED.assets.upload(blob, { type: "image/png" })).id;
+        else reg.imagem_dados = await paraDataURL(blob);
+        reg.receita = JSON.parse(JSON.stringify(r));
+      }
+      const temCampos = reg.campos && Object.keys(reg.campos).length;
+      await gravar(id, temCampos || reg.imagem_id || reg.imagem_dados ? reg : null);
+      if (antigo.imagem_id && antigo.imagem_id !== reg.imagem_id && ED.assets) ED.assets.delete(antigo.imagem_id).catch(() => {});
+      $("dlgImagem").close();
+    } catch (err) {
+      mostrarErro($("imgErro"), err && err.name === "SecurityError"
+        ? "Este navegador bloqueou a leitura da imagem (página aberta direto do disco). Abra pela página publicada ou por um servidor local."
+        : "Não foi possível salvar: " + erroTexto(err));
+    } finally { $("imgSalvar").disabled = false; $("imgSalvar").textContent = "Salvar imagem"; }
+  });
+  $("imgRestaurar").addEventListener("click", async () => {
+    const id = IM.id, antigo = edicoes[id] || {}, reg = Object.assign({}, antigo);
+    delete reg.imagem_id; delete reg.imagem_dados; delete reg.receita;
+    try {
+      await gravar(id, reg.campos && Object.keys(reg.campos).length ? reg : null);
+      if (antigo.imagem_id && ED.assets) ED.assets.delete(antigo.imagem_id).catch(() => {});
+      $("dlgImagem").close();
+    } catch (err) { mostrarErro($("imgErro"), "Não foi possível restaurar: " + erroTexto(err)); }
+  });
+
+  // ---------- exportar ----------
+  $("baixarEdicoes").addEventListener("click", async () => {
+    const b = $("baixarEdicoes"), rotulo = b.textContent;
+    b.disabled = true; b.textContent = "Preparando…";
+    try {
+      const saida = { formato: "banco-enem-edicoes", versao: 1, gerado_em: new Date().toISOString(), edicoes: {} };
+      for (const [id, reg] of Object.entries(edicoes)) {
+        const item = { campos: reg.campos || {}, receita: reg.receita || null, atualizado: reg.atualizado || null };
+        if (reg.imagem_dados) item.imagem_png = reg.imagem_dados;
+        else if (reg.imagem_id) item.imagem_png = await paraDataURL(await (await fetch("/_blob/" + reg.imagem_id)).blob());
+        saida.edicoes[id] = item;
+      }
+      const texto = JSON.stringify(saida, null, 1), nome = "edicoes-banco-enem.json";
+      if (ED.downloads) await ED.downloads.save({ filename: nome, data: texto });
+      else {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob([texto], { type: "application/json" })); a.download = nome;
+        document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      }
+    } catch (err) {
+      if (!err || err.code !== "cancelled") { ED.aviso = "Não foi possível baixar as edições: " + erroTexto(err); atualizarEstadoEdicao(); ED.aviso = ""; }
+    } finally { b.textContent = rotulo; b.disabled = false; atualizarEstadoEdicao(); }
+  });
+
+  // ---------- na página publicada: banco de dados do artefato ----------
+  async function iniciarNuvem() {
+    if (!window.claude || typeof window.claude.use !== "function") return;
+    const db = await window.claude.use("db");
+    if (!db) return;
+    const user = await window.claude.use("user");
+    let pode = null;
+    try { pode = user ? await user.canEdit() : null; } catch (e) { pode = null; }
+    ED.db = db; ED.modo = "nuvem"; ED.podeEditar = pode !== false;
+    ED.assets = await window.claude.use("assets");
+    ED.podeImagem = !!ED.assets;
+    ED.downloads = await window.claude.use("downloads");
+    edicoes = {}; aplicarEdicoes(); render();
+    ED.aviso = "Carregando edições salvas…"; atualizarEstadoEdicao();
+    const espera = setTimeout(() => { ED.aviso = "As edições salvas ainda não carregaram; o que aparece pode estar desatualizado."; atualizarEstadoEdicao(); }, 10000);
+    db.collection("edicoes").onSnapshot((snap) => {
+      if (!snap.metadata.fromCache) { clearTimeout(espera); ED.aviso = ""; }
+      const novo = {};
+      snap.docs.forEach((d) => { novo[d.id] = d.data(); });
+      if (mesmo(novo, edicoes)) { atualizarEstadoEdicao(); return; }
+      edicoes = novo; aplicarEdicoes(); render();
+    }, (err) => {
+      clearTimeout(espera);
+      ED.aviso = err && err.code === "revoked" ? "Edições indisponíveis nesta visita." : "Não foi possível carregar as edições salvas.";
+      ED.podeEditar = false; render();
+    });
+  }
+
   if (!BANCO.length) {
     $("lista").innerHTML = '<div class="empty">O arquivo data/banco_questoes.js não foi encontrado. Rode <code>python scripts/gerar_banco.py</code> e abra esta página de novo.</div>';
     return;
   }
   carregar();
+  aplicarEdicoes();
   try { respostas = JSON.parse(localStorage.getItem("banco-enem-respostas") || "{}") || {}; } catch (e) { respostas = {}; }
   render();
+  iniciarNuvem().catch(() => { /* segue com as edições locais */ });
 })();
 </script>
 </body>
