@@ -313,9 +313,9 @@ details.texto .enunciado { margin-top: 8px; font-size: .92rem; }
       return `<div class="dif"><div class="dif-topo"><span>Dificuldade</span></div><span class="dif-vazia">Ainda não calibrada: poucas questões desta área no banco.</span></div>`;
     }
     const pos = Math.max(0, Math.min(100, d.posicao * 100));
-    const titulo = `Escala de ${q.area}, calibrada com ${e.n} questões do banco: de ${e.min} (mais fácil) a ${e.max} pontos (mais difícil), em 7 faixas iguais.`;
+    const titulo = `Escala de ${q.area}, calibrada com ${e.n} questões do banco: de ${e.min} (mais fácil) a ${e.max} pontos (mais difícil), em 7 faixas iguais.${e.fora_da_escala ? ` ${e.fora_da_escala} questão(ões) extrema(s) ficaram de fora do cálculo dos limites.` : ""}`;
     return `<div class="dif" style="--pos:${pos.toFixed(1)}%" role="img" aria-label="Dificuldade: ${esc(d.nivel)} (${d.nota_equivalente} pontos)" title="${esc(titulo)}">
-      <div class="dif-topo"><span>Dificuldade na área</span><span>questão de ≈ ${d.nota_equivalente} pontos</span></div>
+      <div class="dif-topo"><span>Dificuldade na área</span><span>questão de ≈ ${d.nota_equivalente} pontos</span></div>${d.fora_da_escala ? `<span class="dif-vazia">Além do limite da barra: o INEP estimou esta questão com discriminação muito baixa, então a dificuldade calculada é extrema e pouco confiável.</span>` : ""}
       <div class="dif-barra"><span class="dif-marca"></span></div>
       <div class="dif-trilho"><span class="dif-seta"></span><span class="dif-rotulo">${esc(d.nivel)}</span></div>
     </div>`;

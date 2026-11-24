@@ -44,8 +44,39 @@ RESOLUCAO = 150  # dpi das imagens recortadas
 # Geometria do caderno do ENEM (pontos PDF; página 567 x 780). Medida em 2023.
 TOPO, BASE = 60.0, 740.0            # abaixo do cabeçalho da página, acima do rodapé
 X_ESQ, X_DIR = 25.0, 545.0          # margens laterais do conteúdo
-DIVISORIA = (280.0, 288.0)          # faixa da linha vertical entre as colunas
+DIVISORIA = (280.0, 288.0)          # faixa entre as colunas (linha divisória ou corredor vazio)
+COM_LINHA_DIVISORIA = True          # 2023: linha vertical; 2024: só espaço em branco
 MARGEM = 2.0
+TAMANHO_MIN_CARACTERE = 3.5         # ignora microtexto de segurança (2024: corpo 1,2–1,8)
+
+# Perfis medidos em cada formato de caderno. Novo formato = novo perfil.
+PERFIS = {
+    "2023": {"largura": 566.9, "TOPO": 60.0, "BASE": 740.0, "X_ESQ": 25.0, "X_DIR": 545.0,
+             "DIVISORIA": (280.0, 288.0), "COM_LINHA_DIVISORIA": True},
+    "2024": {"largura": 636.6, "TOPO": 95.0, "BASE": 780.0, "X_ESQ": 50.0, "X_DIR": 578.0,
+             "DIVISORIA": (311.5, 324.5), "COM_LINHA_DIVISORIA": False},
+}
+
+
+def configurar_geometria(pdf) -> str:
+    """Escolhe o perfil pelo tamanho da página e ajusta as constantes."""
+    global TOPO, BASE, X_ESQ, X_DIR, DIVISORIA, COM_LINHA_DIVISORIA
+    largura = pdf.pages[min(1, len(pdf.pages) - 1)].width
+    nome, perfil = min(PERFIS.items(), key=lambda kv: abs(kv[1]["largura"] - largura))
+    if abs(perfil["largura"] - largura) > 3:
+        sys.exit(f"Formato de página desconhecido (largura {largura:.1f}); é preciso medir um perfil novo.")
+    TOPO, BASE, X_ESQ, X_DIR = perfil["TOPO"], perfil["BASE"], perfil["X_ESQ"], perfil["X_DIR"]
+    DIVISORIA, COM_LINHA_DIVISORIA = perfil["DIVISORIA"], perfil["COM_LINHA_DIVISORIA"]
+    return nome
+
+
+class Documento:
+    """PDF com páginas sem o microtexto de segurança (caracteres minúsculos)."""
+
+    def __init__(self, pdf):
+        self.pdf = pdf
+        self.pages = [p.filter(lambda o: o.get("object_type") != "char"
+                               or o.get("size", 10) >= TAMANHO_MIN_CARACTERE) for p in pdf.pages]
 
 AREAS = {
     (1, "LC"): range(1, 46), (1, "CH"): range(46, 91),
@@ -76,7 +107,56 @@ def area_da_questao(dia: int, numero: int) -> str:
 
 
 # --------------------------------------------------------------- segmentação
+def zonas_por_corredor(pagina) -> list[tuple[float, float, float, float]]:
+    """Sem linha divisória: tudo o que atravessa o corredor entre as colunas
+    (linha de texto ou figura de largura total) marca uma faixa de largura
+    total; o resto da página é lido em duas colunas."""
+    g0, g1 = DIVISORIA
+    bloqueios = []
+    for c in pagina.chars:
+        # folga de 1,5 pt: texto alinhado à direita termina encostado no corredor
+        if c["text"].strip() and TOPO <= c["top"] < BASE and g0 + 1.5 < (c["x0"] + c["x1"]) / 2 < g1 - 1.5:
+            bloqueios.append((c["top"] - 2, c["bottom"] + 2))
+    for o in pagina.rects + pagina.curves + pagina.images + pagina.lines:
+        # só é largura total se avançar bem nas duas colunas (imagens podem
+        # ter a caixa maior que a parte visível)
+        if o["x0"] < g0 - 20 and o["x1"] > g1 + 20 and o["bottom"] > TOPO and o["top"] < BASE \
+                and o["x1"] < X_DIR + 5:
+            bloqueios.append((o["top"] - 2, o["bottom"] + 2))
+    bloqueios.sort()
+    faixas: list[list[float]] = []
+    for t, b in bloqueios:
+        if faixas and t - faixas[-1][1] < 25:  # junta linhas da mesma faixa larga
+            faixas[-1][1] = max(faixas[-1][1], b)
+        else:
+            faixas.append([t, b])
+    # Questão de largura total: a faixa larga começa no cabeçalho dela, não
+    # alguns pontos abaixo (senão o topo do cabeçalho fica na questão anterior).
+    topos = [h["top"] for h in cabecalhos(pagina)]
+    for f in faixas:
+        perto = [t for t in topos if f[0] - 14 <= t < f[0] + 2]
+        if perto:
+            f[0] = min(perto) - 3
+    meio = (g0 + g1) / 2  # cada coluna fica com metade do corredor
+    g0 = g1 = meio
+    zonas, y = [], TOPO
+    for t, b in faixas:
+        t, b = max(TOPO, t), min(BASE, b)
+        if t - y > 12:
+            zonas += [(X_ESQ, y, g0, t), (g1, y, X_DIR, t)]
+            inicio = t
+        else:
+            inicio = y  # sobra estreita acima da faixa larga: pertence a ela
+        zonas.append((X_ESQ, inicio, X_DIR, b))
+        y = b
+    if BASE - y > 12:
+        zonas += [(X_ESQ, y, g0, BASE), (g1, y, X_DIR, BASE)]
+    return zonas
+
+
 def zonas_da_pagina(pagina) -> list[tuple[float, float, float, float]]:
+    if not COM_LINHA_DIVISORIA:
+        return zonas_por_corredor(pagina)
     """Retângulos (x0, topo, x1, base) em ordem de leitura. Onde há a linha
     divisória vertical, a faixa é lida como duas colunas; fora dela, largura
     total."""
@@ -185,11 +265,23 @@ def segmentar(pdf) -> list[dict]:
         if not heads and atual is None:
             continue  # capa / instruções
         titulos = titulos_de_secao(pagina)
-        for (x0, t, x1, b) in zonas_da_pagina(pagina):
-            eventos = sorted(
-                [(h["top"], "questao", h) for h in heads if x0 - 8 <= h["x0"] <= x1 and t - 2 <= h["top"] < b]
-                + [(ti["top"], "titulo", None) for ti in titulos if x0 - 8 <= ti["x0"] <= x1 and t - 2 <= ti["top"] < b],
-                key=lambda e: e[0])
+        zonas = zonas_da_pagina(pagina)
+
+        def zona_de(item) -> int | None:
+            """Cada cabeçalho/título vai para UMA zona: a primeira em que cabe
+            inteiro; se nenhuma, a primeira que contém o seu topo."""
+            cands = [i for i, (x0, t, x1, b) in enumerate(zonas)
+                     if x0 - 8 <= item["x0"] <= x1 and t - 2 <= item["top"] < b]
+            inteiras = [i for i in cands if item["top"] < zonas[i][3] - 6]
+            return (inteiras or cands or [None])[0]
+
+        por_zona: dict[int, list] = {}
+        for h in heads:
+            por_zona.setdefault(zona_de(h), []).append((h["top"], "questao", h))
+        for ti in titulos:
+            por_zona.setdefault(zona_de(ti), []).append((ti["top"], "titulo", None))
+        for iz, (x0, t, x1, b) in enumerate(zonas):
+            eventos = sorted(por_zona.get(iz, []), key=lambda e: e[0])
             cortes = [t] + [e[0] for e in eventos] + [b]
             for k in range(len(cortes) - 1):
                 if k > 0:
@@ -206,8 +298,10 @@ def segmentar(pdf) -> list[dict]:
                         continue
                     if k == 0 and pedaco_vazio(pagina, caixa):
                         continue  # sobra sem conteúdo antes de um título ou no topo da coluna
-                    atual["pedacos"].append((ip, (x0, cortes[k] - MARGEM if k else cortes[k],
-                                                  x1, cortes[k + 1] - MARGEM)))
+                    # margem só antes de um cabeçalho/título (fim de zona não tem)
+                    antes_de_cabecalho = k + 1 < len(cortes) - 1
+                    fim = cortes[k + 1] - (MARGEM if antes_de_cabecalho or b >= BASE else 0)
+                    atual["pedacos"].append((ip, (x0, cortes[k] - MARGEM if k else cortes[k], x1, fim)))
         if not heads and atual is not None and ip == len(pdf.pages) - 1:
             break
     # Descarta pedaços finais em páginas sem nenhum cabeçalho depois da última
@@ -252,7 +346,9 @@ def elementos_visuais(pdf, q: dict) -> list[str]:
             horizontal_longo = (o["bottom"] - o["top"] < 1.5
                                 and o["x1"] - o["x0"] >= 0.7 * (r[2] - r[0]))
             fecho = horizontal_longo and not any(c["top"] > o["bottom"] for c in texto_pedaco)
-            return vertical_divisoria or no_cabecalho or fecho
+            fora_da_area = (not X_ESQ <= (o["x0"] + o["x1"]) / 2 <= X_DIR
+                            or not TOPO <= (o["top"] + o["bottom"]) / 2 <= BASE)
+            return vertical_divisoria or no_cabecalho or fecho or fora_da_area
 
         vetores = [o for o in pg.lines + pg.rects + pg.curves if _intersecta(o, r) and not decorativo(o)]
         if vetores:
@@ -292,7 +388,7 @@ def elementos_visuais(pdf, q: dict) -> list[str]:
 def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
     """Cada caractere do conteúdo (entre a primeira e a última questão) deve
     cair em exatamente um recorte. Detecta cortes e sobreposições."""
-    pedacos: dict[int, list] = {}
+    pedacos: dict[int, list] = {}  # página -> [(número da questão, retângulo)]
     for q in questoes:
         for ip, r in q["pedacos"]:
             pedacos.setdefault(ip, []).append((q["numero"], r))
@@ -305,7 +401,8 @@ def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
             continue
         fora, duplo = [], []
         for c in pdf.pages[ip].chars:
-            if not c["text"].strip() or c["top"] < TOPO or c["bottom"] > BASE + 2:
+            if not c["text"].strip() or c["top"] < TOPO or c["bottom"] > BASE + 2 \
+                    or not X_ESQ <= (c["x0"] + c["x1"]) / 2 <= X_DIR:
                 continue
             donos = {n for n, r in pedacos.get(ip, []) if _intersecta(c, r)
                      and r[0] <= (c["x0"] + c["x1"]) / 2 <= r[2]
@@ -329,8 +426,11 @@ def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
         # Figuras e desenhos não podem ser cortados pela borda de um recorte.
         pg = pdf.pages[ip]
         for o in pg.images + pg.curves + pg.rects:
-            if o["top"] < TOPO or o["bottom"] > BASE:
-                continue
+            if o["top"] < TOPO or o["bottom"] > BASE or not X_ESQ <= (o["x0"] + o["x1"]) / 2 <= X_DIR:
+                continue  # fora da área útil (decoração das bordas da página)
+            donos = {n for n, r in pedacos.get(ip, []) if _fracao_dentro(o, r) > 0.02}
+            if len(donos) == 1 and sum(_fracao_dentro(o, r) for _, r in pedacos.get(ip, [])) > 0.98:
+                continue  # dividido entre pedaços da MESMA questão: não há corte
             fracoes = [_fracao_dentro(o, r) for _, r in pedacos.get(ip, [])]
             maior = max(fracoes, default=0)
             if o["object_type"] == "image":
@@ -347,19 +447,29 @@ def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
 
 # ------------------------------------------------------------------- texto
 def texto_da_questao(pdf, q: dict) -> tuple[str, dict[str, str]]:
-    blocos = []
+    # Cada linha vira (texto, letra do marcador ou None). O marcador da
+    # alternativa é reconhecido pela fonte (BundesbahnPi), não pelo texto:
+    # em 2023 a letra vem duplicada ("AA"), em 2024 vem simples ("A").
+    linhas = []
     for ip, r in q["pedacos"]:
-        t = pdf.pages[ip].crop(r).extract_text(layout=False) or ""
-        blocos.append(t)
-    linhas = "\n".join(blocos).split("\n")
-    # remove o cabeçalho "QUESTÃO N" e títulos de seção
-    linhas = [l for l in linhas if not re.fullmatch(r"\s*QUESTÃO\s+\d+\s*", l)]
+        for ln in pdf.pages[ip].crop(r).extract_text_lines(return_chars=True, strip=True):
+            chars = [c for c in ln["chars"] if c["text"].strip()]
+            n = 0
+            while n < len(chars) and FONTE_ALTERNATIVA in chars[n]["fontname"].lower():
+                n += 1
+            letra = chars[0]["text"].upper() if n and chars[0]["text"].upper() in "ABCDE" else None
+            texto = ln["text"]
+            if letra:
+                texto = texto.replace(" ", "", 0)
+                texto = texto[n:] if texto[:n].replace(" ", "").upper() == letra * n else texto[1:]
+            linhas.append((texto.strip(), letra))
+    # remove o cabeçalho "QUESTÃO N"
+    linhas = [(t, l) for t, l in linhas if not re.fullmatch(r"\s*QUESTÃO\s+\d+\s*", t)]
     corpo, alternativas, atual = [], {}, None
-    for l in linhas:
-        m = re.match(r"^\s*([A-E])\1\s?(.*)$", l)  # marcador duplicado "AA texto"
-        if m and (atual is None and m.group(1) == "A" or atual and ord(m.group(1)) == ord(atual) + 1):
-            atual = m.group(1)
-            alternativas[atual] = m.group(2).strip()
+    for l, letra in linhas:
+        if letra and (atual is None and letra == "A" or atual and ord(letra) == ord(atual) + 1):
+            atual = letra
+            alternativas[atual] = l
         elif atual:
             alternativas[atual] = (alternativas[atual] + " " + l.strip()).strip()
         else:
@@ -394,7 +504,9 @@ def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> P
     prova = baixar(BASE_DOWNLOAD + nome_prova, CACHE / str(ano) / nome_prova, ctx)
     gab = ler_gabarito(baixar(BASE_DOWNLOAD + nome_gab, CACHE / str(ano) / nome_gab, ctx))
 
-    pdf = pdfplumber.open(str(prova))
+    bruto = pdfplumber.open(str(prova))
+    perfil = configurar_geometria(bruto)
+    pdf = Documento(bruto)
     capa = (pdf.pages[0].extract_text() or "").upper()
     cor = next((c for c in ("AZUL", "AMARELO", "BRANCO", "ROSA", "CINZA", "VERDE", "LARANJA")
                 if c in capa), "?").capitalize()

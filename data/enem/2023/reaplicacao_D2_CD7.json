@@ -1015,7 +1015,7 @@
     "area": "Ciências da Natureza e suas Tecnologias",
     "numero": 123,
     "lingua_estrangeira": null,
-    "enunciado": "O esquema representa a etapa fotoquímica da fotossíntese. As moléculas de clorofila e os pigmentos acessórios\nque compõem os fotossistemas I e II são excitados pela radiação luminosa. A energia dessa excitação retira elétrons das\nmoléculas de clorofila a P , no Fotossistema II, e de clorofila a P , no Fotossistema I. Esses elétrons são responsáveis\n680 700\npelo mecanismo de fosforilação do ADP formando ATP e pela redução do NADP+ em NADPH.\nFotossistema I\nP *\n700\nA\n0\nFeSx\nFotossistema II FNR\nP *\n680\nFeO NADP +\nQa\nComplexo\nde\nNADPH\ncitocromo\nhν\nP\n700\nADP + Pi ATP\nP\n680\nComplexo\nhν produtor\nde oxigênio\nHO O + H+\n2 2\naigrenE\nSADAVA, D. et al. Vida: a ciência da biologia. Porto Alegre: Artmed, 2009 (adaptado).\nO agente redutor primário responsável pela reposição dos elétrons perdidos no Fotossistema II é o(a)",
+    "enunciado": "O esquema representa a etapa fotoquímica da fotossíntese. As moléculas de clorofila e os pigmentos acessórios\nque compõem os fotossistemas I e II são excitados pela radiação luminosa. A energia dessa excitação retira elétrons das\nmoléculas de clorofila a P , no Fotossistema II, e de clorofila a P , no Fotossistema I. Esses elétrons são responsáveis\n680 700\npelo mecanismo de fosforilação do ADP formando ATP e pela redução do NADP+ em NADPH.\nFotossistema I\nP *\n700\nA\n0\nFeSx\nFotossistema II FNR\nP *\n680\nFeO NADP +\nQa\nComplexo\nde\nNADPH\ncitocromo\nhν\nP\n700\nADP + Pi ATP\nP\n680\nComplexo\nhν produtor\nde oxigênio\nHO O + H+\n2 2\nag\nenE\nSADAVA, D. et al. Vida: a ciência da biologia. Porto Alegre: Artmed, 2009 (adaptado).\nO agente redutor primário responsável pela reposição dos elétrons perdidos no Fotossistema II é o(a)",
     "alternativas": {
       "A": "complexo Fotossistema I.",
       "B": "complexo de citocromo.",
@@ -1890,7 +1890,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 151,
     "lingua_estrangeira": null,
-    "enunciado": "No espaço, a falta de gravidade faz com que o\norganismo produza mais cálcio e, como o mineral não\né usado, o corpo o expele, fazendo com que os ossos\ndiminuam de tamanho. Um dos ossos que sofrem essa\nredução é o fêmur. O gráfico apresenta a evolução linear\ndo tamanho desse osso, ao longo de três meses, em um\nastronauta que, antes de ir para o espaço, tinha um fêmur\nde 50 cm.\n50\n49,5\n49\n48,5\n48\n47,5\n47\n46,5\n46\n0 1 2 3\nTempo (mês)\n)mc(\nohnamaT\n4 5\nDUARTE, M. O guia dos curiosos. São Paulo: Panda Books, 2015 (adaptado).\nComo esse astronauta ficará cinco meses no espaço,\nconsidere que a tendência de sua evolução óssea,\nobservada nos três primeiros meses, mantenha-se a\nmesma ao longo dos próximos meses.\nO tamanho, em centímetro, do fêmur desse astronauta,\nao completar quatro meses no espaço, será",
+    "enunciado": "No espaço, a falta de gravidade faz com que o\norganismo produza mais cálcio e, como o mineral não\né usado, o corpo o expele, fazendo com que os ossos\ndiminuam de tamanho. Um dos ossos que sofrem essa\nredução é o fêmur. O gráfico apresenta a evolução linear\ndo tamanho desse osso, ao longo de três meses, em um\nastronauta que, antes de ir para o espaço, tinha um fêmur\nde 50 cm.\n50\n49,5\n49\n48,5\n48\n47,5\n47\n46,5\n46\n0 1 2 3\nTempo (mês)\nmc\nohnamaT\n4 5\nDUARTE, M. O guia dos curiosos. São Paulo: Panda Books, 2015 (adaptado).\nComo esse astronauta ficará cinco meses no espaço,\nconsidere que a tendência de sua evolução óssea,\nobservada nos três primeiros meses, mantenha-se a\nmesma ao longo dos próximos meses.\nO tamanho, em centímetro, do fêmur desse astronauta,\nao completar quatro meses no espaço, será",
     "alternativas": {
       "A": "44,8.",
       "B": "46,0.",
@@ -2363,7 +2363,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 166,
     "lingua_estrangeira": null,
-    "enunciado": "Restaurantes geralmente se deparam com o problema\nde definir a quantidade de alimentos a serem preparados\npara cada dia. Diante desse problema, o gerente de\num restaurante anotou as quantidades de clientes que\nalmoçaram em seu restaurante durante os 10 primeiros\ndias do mês e registrou esses dados, obtendo este gráfico:\n100\n90\n80\n70\n60\n50\n40\n30\n20\n10\n1 2 3 4 5 6\nDia\nsetneilc\ned\nedaditnauQ\nQuantidade de clientes nos\n10 primeiros dias do mês\n100 100\n90 94 94 92 94\n86\n80 80\n7 8 9 10\nEle considerou a moda da distribuição das quantidades\nde clientes que almoçaram em seu restaurante nesses\n10 primeiros dias do mês como uma boa medida para\ndimensionar a quantidade de alimentos a serem preparados\ndiariamente.\nO valor da moda dessa distribuição é",
+    "enunciado": "Restaurantes geralmente se deparam com o problema\nde definir a quantidade de alimentos a serem preparados\npara cada dia. Diante desse problema, o gerente de\num restaurante anotou as quantidades de clientes que\nalmoçaram em seu restaurante durante os 10 primeiros\ndias do mês e registrou esses dados, obtendo este gráfico:\n100\n90\n80\n70\n60\n50\n40\n30\n20\n10\n1 2 3 4 5 6\nDia\nsene\ncededad\nnauQ\nQuantidade de clientes nos\n10 primeiros dias do mês\n100 100\n90 94 94 92 94\n86\n80 80\n7 8 9 10\nEle considerou a moda da distribuição das quantidades\nde clientes que almoçaram em seu restaurante nesses\n10 primeiros dias do mês como uma boa medida para\ndimensionar a quantidade de alimentos a serem preparados\ndiariamente.\nO valor da moda dessa distribuição é",
     "alternativas": {
       "A": "90.",
       "B": "91.",
@@ -2806,7 +2806,7 @@
     "lingua_estrangeira": null,
     "enunciado": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é\nCaloria Caloria\n(cal) (cal)\n405 405\n275 275",
     "alternativas": {
-      "A": "DD 175 100 0 30 60 90 Tempo 0 30 60 90 120 Tempo (min) (min) Caloria Caloria (cal) (cal)",
+      "A": "A DD 175 100 0 30 60 90 Tempo 0 30 60 90 120 Tempo (min) (min) Caloria Caloria (cal) (cal)",
       "B": "175 EE 175 130 130 100 100 0 30 60 90 Tempo 0 30 60 90 Tempo (min) (min) Caloria (cal) 405 275",
       "C": "100 0 30 60 90 Tempo (min)"
     },

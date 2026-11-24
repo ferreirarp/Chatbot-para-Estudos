@@ -44,13 +44,31 @@ NIVEIS = ["Para não zerar", "Facílima", "Fácil", "Mediana", "Difícil", "Difi
 MIN_QUESTOES_CALIBRACAO = 10
 
 
+# Itens com discriminação muito baixa (a ≈ 0,2) podem ter b extremo (nota
+# equivalente > 1700) e, sozinhos, comprimiriam a barra da área inteira. Por
+# isso os limites da barra ignoram valores além da cerca de Tukey (3·IQR); esses
+# itens ficam presos à ponta da barra e são marcados como "fora_da_escala".
+FATOR_IQR = 3.0
+
+
+def quartil(v: list[float], p: float) -> float:
+    v = sorted(v)
+    i = (len(v) - 1) * p
+    lo = int(i)
+    return v[lo] + (v[min(lo + 1, len(v) - 1)] - v[lo]) * (i - lo)
+
+
 def calibrar(banco: list[dict]) -> dict:
     escalas = {}
     for area in SIGLA:
         notas = [q["dificuldade"]["nota_equivalente"] for q in banco
                  if q["area"] == area and q["dificuldade"] and q["dificuldade"]["nota_equivalente"] is not None]
         if len(notas) >= MIN_QUESTOES_CALIBRACAO:
-            escalas[area] = {"min": min(notas), "max": max(notas), "n": len(notas), "niveis": NIVEIS}
+            q1, q3 = quartil(notas, .25), quartil(notas, .75)
+            lo, hi = q1 - FATOR_IQR * (q3 - q1), q3 + FATOR_IQR * (q3 - q1)
+            dentro = [n for n in notas if lo <= n <= hi]
+            escalas[area] = {"min": min(dentro), "max": max(dentro), "n": len(notas),
+                             "fora_da_escala": len(notas) - len(dentro), "niveis": NIVEIS}
     return escalas
 
 
@@ -133,7 +151,11 @@ def main() -> None:
         d, e = q["dificuldade"], escalas.get(q["area"])
         if d and e and d["nota_equivalente"] is not None:
             d["nivel"] = nivel(d["nota_equivalente"], e)
-            d["posicao"] = round((d["nota_equivalente"] - e["min"]) / ((e["max"] - e["min"]) or 1), 4)
+            pos = (d["nota_equivalente"] - e["min"]) / ((e["max"] - e["min"]) or 1)
+            d["posicao"] = round(max(0.0, min(1.0, pos)), 4)
+            if not 0 <= pos <= 1:
+                d["fora_da_escala"] = True
+                avisos.append(f"{q['id']}: dificuldade fora da escala da área (nota equivalente {d['nota_equivalente']:.0f}); presa à ponta da barra")
         elif d:
             d["nivel"] = None
             avisos.append(f"{q['id']}: dificuldade sem calibração (área com poucas questões ou sem escala de notas)")
@@ -148,7 +170,7 @@ def main() -> None:
     for area, e in escalas.items():
         largura = (e["max"] - e["min"]) / len(NIVEIS)
         cortes = " | ".join(f"{n}: {e['min'] + i * largura:.0f}–{e['min'] + (i + 1) * largura:.0f}" for i, n in enumerate(NIVEIS))
-        print(f"  {area} ({e['n']} questões): {cortes}")
+        print(f"  {area} ({e['n']} questões, {e['fora_da_escala']} fora da escala): {cortes}")
     for a in avisos:
         print("  aviso:", a)
 

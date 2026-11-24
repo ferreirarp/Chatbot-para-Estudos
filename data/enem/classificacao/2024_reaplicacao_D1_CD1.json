@@ -1,0 +1,799 @@
+{
+ "prova": "2024/reaplicacao_D1_CD1",
+ "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado. Mais de uma disciplina só quando a resolução exige as duas.",
+ "disciplinas_validas": [
+  "Artes",
+  "Biologia",
+  "Educação Física",
+  "Filosofia",
+  "Física",
+  "Geografia",
+  "História",
+  "Língua Espanhola",
+  "Língua Inglesa",
+  "Língua Portuguesa",
+  "Matemática",
+  "Química",
+  "Sociologia"
+ ],
+ "questoes": {
+  "1-ingles": {
+   "disciplinas": [
+    "Língua Inglesa"
+   ],
+   "conteudos": [
+    "Interpretação de texto",
+    "Gêneros textuais"
+   ]
+  },
+  "2-ingles": {
+   "disciplinas": [
+    "Língua Inglesa"
+   ],
+   "conteudos": [
+    "Interpretação de texto"
+   ]
+  },
+  "3-ingles": {
+   "disciplinas": [
+    "Língua Inglesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "4-ingles": {
+   "disciplinas": [
+    "Língua Inglesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "5-ingles": {
+   "disciplinas": [
+    "Língua Inglesa"
+   ],
+   "conteudos": [
+    "Literatura (poesia)",
+    "Variação e diversidade linguística"
+   ]
+  },
+  "1-espanhol": {
+   "disciplinas": [
+    "Língua Espanhola"
+   ],
+   "conteudos": [
+    "Literatura (poesia)"
+   ]
+  },
+  "2-espanhol": {
+   "disciplinas": [
+    "Língua Espanhola"
+   ],
+   "conteudos": [
+    "Literatura (poesia)",
+    "Gramática"
+   ]
+  },
+  "3-espanhol": {
+   "disciplinas": [
+    "Língua Espanhola"
+   ],
+   "conteudos": [
+    "Interpretação de texto",
+    "Recursos expressivos e figuras de linguagem"
+   ]
+  },
+  "4-espanhol": {
+   "disciplinas": [
+    "Língua Espanhola"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "5-espanhol": {
+   "disciplinas": [
+    "Língua Espanhola"
+   ],
+   "conteudos": [
+    "Variação e diversidade linguística"
+   ]
+  },
+  "6": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Coesão e progressão textual",
+    "Literatura (poesia)"
+   ]
+  },
+  "7": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "8": {
+   "disciplinas": [
+    "Artes"
+   ],
+   "conteudos": [
+    "Artes visuais"
+   ]
+  },
+  "9": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "10": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Funções da linguagem"
+   ]
+  },
+  "11": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)",
+    "Recursos expressivos e figuras de linguagem"
+   ]
+  },
+  "12": {
+   "disciplinas": [
+    "Educação Física"
+   ],
+   "conteudos": [
+    "Saúde e práticas corporais"
+   ]
+  },
+  "13": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)"
+   ]
+  },
+  "14": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Argumentação"
+   ]
+  },
+  "15": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)"
+   ]
+  },
+  "16": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)"
+   ]
+  },
+  "17": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "18": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Variação e diversidade linguística"
+   ]
+  },
+  "19": {
+   "disciplinas": [
+    "Educação Física"
+   ],
+   "conteudos": [
+    "Esporte e sociedade"
+   ]
+  },
+  "20": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Variação e diversidade linguística"
+   ]
+  },
+  "21": {
+   "disciplinas": [
+    "Artes"
+   ],
+   "conteudos": [
+    "Artes visuais"
+   ]
+  },
+  "22": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Variação e diversidade linguística"
+   ]
+  },
+  "23": {
+   "disciplinas": [
+    "Educação Física"
+   ],
+   "conteudos": [
+    "Esporte e sociedade"
+   ]
+  },
+  "24": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "25": {
+   "disciplinas": [
+    "Artes"
+   ],
+   "conteudos": [
+    "Música"
+   ]
+  },
+  "26": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "27": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "28": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (poesia)",
+    "Intertextualidade"
+   ]
+  },
+  "29": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Coesão e progressão textual"
+   ]
+  },
+  "30": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "31": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gramática"
+   ]
+  },
+  "32": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (poesia)"
+   ]
+  },
+  "33": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)"
+   ]
+  },
+  "34": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "35": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Recursos expressivos e figuras de linguagem"
+   ]
+  },
+  "36": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "37": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Funções da linguagem"
+   ]
+  },
+  "38": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "39": {
+   "disciplinas": [
+    "Educação Física"
+   ],
+   "conteudos": [
+    "Esporte e sociedade"
+   ]
+  },
+  "40": {
+   "disciplinas": [
+    "Artes"
+   ],
+   "conteudos": [
+    "Artes visuais",
+    "Arte e cultura popular"
+   ]
+  },
+  "41": {
+   "disciplinas": [
+    "Educação Física"
+   ],
+   "conteudos": [
+    "Saúde e práticas corporais"
+   ]
+  },
+  "42": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Variação e diversidade linguística"
+   ]
+  },
+  "43": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Comunicação e informação"
+   ]
+  },
+  "44": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Literatura (prosa)"
+   ]
+  },
+  "45": {
+   "disciplinas": [
+    "Língua Portuguesa"
+   ],
+   "conteudos": [
+    "Gêneros textuais"
+   ]
+  },
+  "46": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História do Brasil: República"
+   ]
+  },
+  "47": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História medieval"
+   ]
+  },
+  "48": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geografia urbana"
+   ]
+  },
+  "49": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História da América"
+   ]
+  },
+  "50": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Cultura e indústria cultural"
+   ]
+  },
+  "51": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Cidadania e direitos"
+   ]
+  },
+  "52": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Cartografia e leitura de mapas"
+   ]
+  },
+  "53": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Ética"
+   ]
+  },
+  "54": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "Escravidão e diáspora africana"
+   ]
+  },
+  "55": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Filosofia contemporânea"
+   ]
+  },
+  "56": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "População e demografia"
+   ]
+  },
+  "57": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geografia agrária"
+   ]
+  },
+  "58": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais"
+   ]
+  },
+  "59": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais",
+    "Geografia agrária"
+   ]
+  },
+  "60": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Cultura e identidade"
+   ]
+  },
+  "61": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geografia agrária",
+    "Questões ambientais"
+   ]
+  },
+  "62": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais"
+   ]
+  },
+  "63": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Cultura e indústria cultural"
+   ]
+  },
+  "64": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Gênero",
+    "Mundo do trabalho"
+   ]
+  },
+  "65": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História do Brasil: República"
+   ]
+  },
+  "66": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "População e demografia",
+    "Economia e globalização"
+   ]
+  },
+  "67": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "Patrimônio cultural"
+   ]
+  },
+  "68": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Teoria do conhecimento"
+   ]
+  },
+  "69": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geografia agrária",
+    "Questões ambientais"
+   ]
+  },
+  "70": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História antiga"
+   ]
+  },
+  "71": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História do Brasil: Império"
+   ]
+  },
+  "72": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Mundo do trabalho"
+   ]
+  },
+  "73": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Relações étnico-raciais"
+   ]
+  },
+  "74": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História contemporânea"
+   ]
+  },
+  "75": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geopolítica"
+   ]
+  },
+  "76": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Movimentos sociais"
+   ]
+  },
+  "77": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Filosofia contemporânea"
+   ]
+  },
+  "78": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geopolítica",
+    "Questões ambientais"
+   ]
+  },
+  "79": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Movimentos sociais",
+    "Política, poder e cidadania"
+   ]
+  },
+  "80": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Cultura e identidade"
+   ]
+  },
+  "81": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Geografia agrária"
+   ]
+  },
+  "82": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História do Brasil: Era Vargas"
+   ]
+  },
+  "83": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História da América"
+   ]
+  },
+  "84": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "História contemporânea"
+   ]
+  },
+  "85": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais",
+    "Geografia agrária"
+   ]
+  },
+  "86": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Filosofia contemporânea"
+   ]
+  },
+  "87": {
+   "disciplinas": [
+    "História"
+   ],
+   "conteudos": [
+    "Escravidão e diáspora africana"
+   ]
+  },
+  "88": {
+   "disciplinas": [
+    "Filosofia"
+   ],
+   "conteudos": [
+    "Filosofia contemporânea"
+   ]
+  },
+  "89": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais",
+    "Cartografia e leitura de mapas"
+   ]
+  },
+  "90": {
+   "disciplinas": [
+    "Sociologia"
+   ],
+   "conteudos": [
+    "Relações étnico-raciais",
+    "Cultura e identidade"
+   ]
+  }
+ }
+}

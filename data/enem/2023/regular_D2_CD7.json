@@ -594,11 +594,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um assistente de laboratório precisou descartar sete frascos contendo solução de nitrato de mercúrio(I) que não\nforam utilizados em uma aula prática. Cada frasco continha 5,25 g de Hg (NO ) dissolvidos em água. Temendo a\n2 3 2\ntoxidez do mercúrio e sabendo que o Hg Cl tem solubilidade muito baixa, o assistente optou por retirar o mercúrio da\n2 2\nsolução por precipitação com cloreto de sódio (NaCl), conforme a equação química:\nHg (NO ) (aq) + 2 NaCl (aq) Hg Cl (s) + 2 NaNO (aq)\n2 3 2 2 2 3\nNa dúvida sobre a massa de NaCl a ser utilizada, o assistente aumentou gradativamente a quantidade adicionada\nem cada frasco, como apresentado no quadro.\nFrasco I II III IV V VI VII\nMassa de NaCl\n0,2 0,4 0,6 0,8 1,0 1,2 1,4\nem grama (g)\nO produto obtido em cada experimento foi filtrado, secado e teve sua massa aferida. O assistente organizou os\nresultados na forma de um gráfico que correlaciona a massa de NaCl adicionada com a massa de Hg Cl obtida em\n2 2\ncada frasco. A massa molar do Hg (NO ) é 525 g mol–1, a do NaCl é 58 g mol–1 e a do Hg Cl é 472 g mol–1.\n2 3 2 2 2\nQual foi o gráfico obtido pelo assistente de laboratório?\n7\n6\n5\n4",
     "alternativas": {
-      "A": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 )g( lC gH ed assaM 2 2 Massa de NaCI (g) 7 6 5 4",
-      "B": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 )g( lC gH ed assaM 2 2 Massa de NaCI (g) 7 6 5 4",
-      "C": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 )g( lC gH ed assaM 2 2 7 6 5 4",
-      "D": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 Massa de NaCI (g) )g( lC gH ed assaM 2 2 Massa de NaCI (g) 7 6 5 4",
-      "E": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 )g( lC gH ed assaM 2 2 Massa de NaCI (g)"
+      "A": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 g C gHedassaM Massa de NaCI (g) 7 6 5 4",
+      "B": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 g C gHedassaM Massa de NaCI (g) 7 6 5 4",
+      "C": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 g C gHedassaM 7 6 5 4",
+      "D": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 Massa de NaCI (g) g C gHedassaM Massa de NaCI (g) 7 6 5 4",
+      "E": "3 2 1 0 0,0 0,2 0,4 0,6 0,8 1,0 1,2 1,4 g C gHedassaM Massa de NaCI (g)"
     },
     "gabarito": "B",
     "anulada": false,
@@ -1289,8 +1289,8 @@
     "lingua_estrangeira": null,
     "enunciado": "O manual de um automóvel alerta sobre os cuidados em relação à pressão do ar no interior dos pneus.\nRecomenda-se que a pressão seja verificada com os pneus frios (à temperatura ambiente). Um motorista,\ndesatento a essa informação, realizou uma viagem longa sobre o asfalto quente e, em seguida, verificou que a\npressão P no interior dos pneus não era a recomendada pelo fabricante. Na ocasião, a temperatura dos pneus\n0\nera T . Após um longo período em repouso, os pneus do carro atingiram a temperatura ambiente T. Durante o\n0\nresfriamento, não há alteração no volume dos pneus e na quantidade de ar no seu interior. Considere o ar dos\npneus um gás perfeito (também denominado gás ideal).\nDurante o processo de resfriamento, os valores de pressão em relação à temperatura (P × T) são representados\npelo gráfico:\nP (Pa) P (Pa)\nP\n0",
     "alternativas": {
-      "A": "DD P 0 T T T (K) T T T (K) 0 0 P (Pa) P (Pa) P P 0 0",
-      "B": "EE T T T (K) T T T (K) 0 0 P (Pa)",
+      "A": "A DD P 0 T T T (K) T T T (K) 0 0 P (Pa) P (Pa) P P 0 0",
+      "B": "B EE T T T (K) T T T (K) 0 0 P (Pa)",
       "C": "P 0 T T T (K) 0"
     },
     "gabarito": "E",
@@ -1543,7 +1543,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 140,
     "lingua_estrangeira": null,
-    "enunciado": "Uma empresa de transporte faz regularmente um levantamento do número de viagens realizadas durante o dia\npor todos os 160 motoristas cadastrados em seu aplicativo. Em um certo dia, foi gerado um relatório, por meio de um\ngráfico de barras, no qual se relacionaram a quantidade de motoristas com a quantidade de viagens realizadas até\naquele instante do dia.\nsadazilaer\nsnegaiv\ned\nedaditnauQ\n7\n6\n5\n4\n3\n2\n1\n0 5 10 15 20 25 30 35 40 45 50 55\nQuantidade de motoristas\nComparando os valores da média, da mediana e da moda da distribuição das quantidades de viagens realizadas\npelos motoristas cadastrados nessa empresa, obtém-se",
+    "enunciado": "Uma empresa de transporte faz regularmente um levantamento do número de viagens realizadas durante o dia\npor todos os 160 motoristas cadastrados em seu aplicativo. Em um certo dia, foi gerado um relatório, por meio de um\ngráfico de barras, no qual se relacionaram a quantidade de motoristas com a quantidade de viagens realizadas até\naquele instante do dia.\nsadaz\nae\nsnegavededad\nnauQ\n7\n6\n5\n4\n3\n2\n1\n0 5 10 15 20 25 30 35 40 45 50 55\nQuantidade de motoristas\nComparando os valores da média, da mediana e da moda da distribuição das quantidades de viagens realizadas\npelos motoristas cadastrados nessa empresa, obtém-se",
     "alternativas": {
       "A": "mediana = média < moda.",
       "B": "mediana = moda < média.",
@@ -2053,7 +2053,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 156,
     "lingua_estrangeira": null,
-    "enunciado": "Uma pessoa caminha por 30 minutos e utiliza um\naplicativo instalado em seu celular para monitorar a\nvariação da intensidade do sinal de internet recebido\npelo aparelho durante o deslocamento. Chegando ao seu\ndestino, o aplicativo forneceu este gráfico:\ntenretni\ned\nlanis\nod\nedadisnetnI\n0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30\nTempo (min)\nPor quantos minutos, durante essa caminhada, o celular\ndessa pessoa ficou sem receber sinal de internet?",
+    "enunciado": "Uma pessoa caminha por 30 minutos e utiliza um\naplicativo instalado em seu celular para monitorar a\nvariação da intensidade do sinal de internet recebido\npelo aparelho durante o deslocamento. Chegando ao seu\ndestino, o aplicativo forneceu este gráfico:\nenen\ned\nansodedadsnen\n0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30\nTempo (min)\nPor quantos minutos, durante essa caminhada, o celular\ndessa pessoa ficou sem receber sinal de internet?",
     "alternativas": {
       "A": "6",
       "B": "8",
@@ -2273,7 +2273,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 163,
     "lingua_estrangeira": null,
-    "enunciado": "Uma empresa de segurança domiciliar oferece o serviço\nde patrulha noturna, no qual vigilantes em motocicletas\nfazem o monitoramento periódico de residências.\nA empresa conta com uma base, de onde acompanha\no trajeto realizado pelos vigilantes durante as patrulhas\ne orienta o deslocamento de equipes de reforço quando\nnecessário. Numa patrulha rotineira, sem ocorrências,\num vigilante conduziu sua motocicleta a uma velocidade\nconstante durante todo o itinerário estabelecido, levando\n30 minutos para conclusão. De acordo com os registros\ndo GPS alocado na motocicleta, a distância da posição\ndo vigilante à base, ao longo do tempo de realização do\ntrajeto, é descrita pelo gráfico.\nDistância do vigilante em relação\nà base em função do tempo\n4\n3\n2\n1\n0 10 20 30\nTempo (min)\netnaligiv\nod\naicnâtsiD\n)mk(\nesab\nà\nA vista superior da trajetória realizada pelo vigilante\ndurante a patrulha registrada no gráfico é descrita pela\nrepresentação",
+    "enunciado": "Uma empresa de segurança domiciliar oferece o serviço\nde patrulha noturna, no qual vigilantes em motocicletas\nfazem o monitoramento periódico de residências.\nA empresa conta com uma base, de onde acompanha\no trajeto realizado pelos vigilantes durante as patrulhas\ne orienta o deslocamento de equipes de reforço quando\nnecessário. Numa patrulha rotineira, sem ocorrências,\num vigilante conduziu sua motocicleta a uma velocidade\nconstante durante todo o itinerário estabelecido, levando\n30 minutos para conclusão. De acordo com os registros\ndo GPS alocado na motocicleta, a distância da posição\ndo vigilante à base, ao longo do tempo de realização do\ntrajeto, é descrita pelo gráfico.\nDistância do vigilante em relação\nà base em função do tempo\n4\n3\n2\n1\n0 10 20 30\nTempo (min)\nena\ngvodacnâsD mk\nesabà\nA vista superior da trajetória realizada pelo vigilante\ndurante a patrulha registrada no gráfico é descrita pela\nrepresentação",
     "alternativas": {
       "A": "",
       "B": "",
@@ -2623,7 +2623,7 @@
     "area": "Matemática e suas Tecnologias",
     "numero": 174,
     "lingua_estrangeira": null,
-    "enunciado": "Uma pessoa comprou um ingresso para o cinema em cuja entrada está afixado um mapa com a representação\nbidimensional do posicionamento das poltronas, conforme a figura. Essa pessoa, após consultar o mapa, começou\na subir uma das escadas e parou na posição indicada pela estrela, direcionada para o norte. Ela conferiu seu bilhete\ne observou que, para encontrar sua poltrona, deveria partir do ponto onde estava, continuar subindo a escada na\ndireção norte por mais quatro fileiras e olhar à sua direita, e sua poltrona será a terceira.\nsarieliF\nadacsE adacsE\nPoltrona\nPosições\nTela\nadartnE\nJ\nI\nH\nG N\nF\nO L\nE\nS\nD\nC\nB\nA\n1 2 3 4 5 6 7 8 9 10 11 12\nNesse cinema, as poltronas são identificadas por uma letra, que indica a fileira, e um número, que fornece a\nposição da poltrona na fileira, respectivamente.\nA poltrona dessa pessoa é a identificada por",
+    "enunciado": "Uma pessoa comprou um ingresso para o cinema em cuja entrada está afixado um mapa com a representação\nbidimensional do posicionamento das poltronas, conforme a figura. Essa pessoa, após consultar o mapa, começou\na subir uma das escadas e parou na posição indicada pela estrela, direcionada para o norte. Ela conferiu seu bilhete\ne observou que, para encontrar sua poltrona, deveria partir do ponto onde estava, continuar subindo a escada na\ndireção norte por mais quatro fileiras e olhar à sua direita, e sua poltrona será a terceira.\nsa\ne\nF\nadacsE adacsE\nPoltrona\nPosições\nTela\nada\nnE\nJ\nI\nH\nG N\nF\nO L\nE\nS\nD\nC\nB\nA\n1 2 3 4 5 6 7 8 9 10 11 12\nNesse cinema, as poltronas são identificadas por uma letra, que indica a fileira, e um número, que fornece a\nposição da poltrona na fileira, respectivamente.\nA poltrona dessa pessoa é a identificada por",
     "alternativas": {
       "A": "A6.",
       "B": "H1.",
@@ -2719,11 +2719,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A figura ilustra uma roda-gigante no exato instante em\nque a cadeira onde se encontra a pessoa P está no ponto\nmais alto dessa roda-gigante.\nP\nSolo\nCom o passar do tempo, à medida que a roda-gigante\ngira, com velocidade angular constante e no sentido\nhorário, a altura da cadeira onde se encontra a pessoa P,\nem relação ao solo, vai se alterando.\nO gráfico que melhor representa a variação dessa altura,\nem função do tempo, contado a partir do instante em que\na cadeira da pessoa P se encontra na posição mais alta\nda roda-gigante, é",
     "alternativas": {
-      "A": "me arutlA olos oa oãçaler 0 Tempo",
-      "B": "me arutlA olos oa oãçaler 0 Tempo",
-      "C": "me arutlA olos oa oãçaler 0 Tempo",
-      "D": "me arutlA olos oa oãçaler 0 Tempo",
-      "E": "me arutlA olos oa oãçaler 0 Tempo"
+      "A": "mea u A oosoaoãçae 0 Tempo",
+      "B": "mea u A oosoaoãçae 0 Tempo",
+      "C": "mea u A oosoaoãçae 0 Tempo",
+      "D": "mea u A oosoaoãçae 0 Tempo",
+      "E": "mea u A oosoaoãçae 0 Tempo"
     },
     "gabarito": "A",
     "anulada": false,
@@ -2751,11 +2751,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Estudantes trabalhando com robótica criaram uma\n“torneira inteligente” que automatiza sua abertura e seu\nfechamento durante a limpeza das mãos. A tecnologia\nfunciona da seguinte forma: ao se colocarem as mãos\nsob a torneira, ela libera água durante 3 segundos para\nque a pessoa possa molhá-las. Em seguida, interrompe o\nfornecimento de água por 5 segundos, enquanto a pessoa\nensaboa suas mãos, e finaliza o ciclo liberando água para\no enxágue por mais 3 segundos. Considere o tempo ( t ),\nem segundo, contado a partir do instante em que se inicia\no ciclo. A vazão de água nessa torneira é constante.\nUm esboço de gráfico que descreve o volume de água\nacumulado, em litro, liberado por essa torneira durante um\nciclo de lavagem das mãos, em função do tempo ( t ), em\nsegundo, é",
     "alternativas": {
-      "A": "0 1 2 3 4 5 6 7 8 9 1011 12 t (s) )L( augá ed emuloV",
-      "B": "0 1 2 3 4 5 6 7 8 9 1011 12 )L( augá ed emuloV t (s)",
-      "C": "0 1 2 3 4 5 6 7 8 9 1011 12 )L( augá ed emuloV t (s)",
-      "D": "0 1 2 3 4 5 6 7 8 9 1011 12 )L( augá ed emuloV t (s)",
-      "E": "0 1 2 3 4 5 6 7 8 9 1011 12 t (s) )L( augá ed emuloV"
+      "A": "0 1 2 3 4 5 6 7 8 9 1011 12 t (s) L augáedemuoV",
+      "B": "0 1 2 3 4 5 6 7 8 9 1011 12 L augáedemuoV t (s)",
+      "C": "0 1 2 3 4 5 6 7 8 9 1011 12 L augáedemuoV t (s)",
+      "D": "0 1 2 3 4 5 6 7 8 9 1011 12 L augáedemuoV t (s)",
+      "E": "0 1 2 3 4 5 6 7 8 9 1011 12 t (s) L augáedemuoV"
     },
     "gabarito": "B",
     "anulada": false,

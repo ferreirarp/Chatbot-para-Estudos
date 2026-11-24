@@ -57,7 +57,10 @@ máximo de 0,05 ponto em relação às notas oficiais.
 que um candidato tem chance intermediária de acertá-la. A barra é **calibrada
 por área**: vai da questão mais fácil à mais difícil daquela área no banco, em
 7 faixas de largura igual (Para não zerar, Facílima, Fácil, Mediana, Difícil,
-Dificílima, Impossível). A calibração é refeita a cada `gerar_banco.py`, ou
+Dificílima, Impossível). Os limites ignoram valores extremos (fora de 3·IQR dos
+quartis): uma questão com discriminação muito baixa pode ter b absurdo (2024,
+Humanas, Q62: nota equivalente 1753) e, sozinha, esmagaria a barra da área; ela
+fica presa à ponta da barra e é sinalizada na interface. A calibração é refeita a cada `gerar_banco.py`, ou
 seja, sempre que uma prova é adicionada. Áreas com menos de 10 questões ficam
 sem barra. Questões descartadas da nota pelo INEP não têm dificuldade.
 
@@ -93,6 +96,10 @@ casos. As respostas ficam salvas só no navegador de quem usa a página.
 | 2023 · regular · 2º dia · caderno 7 (Azul) | 90/90 | 33 | 57 | 57 imagens revisadas; gabarito 90/90 contra leitura independente; 90 questões classificadas |
 | 2023 · reaplicação · 1º dia · caderno 1 (Azul) | 95/95 | 73 | 22 | 22 imagens revisadas; gabarito 95/95 igual aos microdados; 95 questões classificadas |
 | 2023 · reaplicação · 2º dia · caderno 7 (Azul) | 90/90 | 35 | 55 | 55 imagens revisadas; gabarito 90/90 igual aos microdados; 90 questões classificadas |
+| 2024 · regular · 1º dia · caderno 1 (Azul) | 95/95 | 83 | 12 | 12 imagens revisadas; gabarito 95/95 igual aos microdados; 95 questões classificadas |
+| 2024 · regular · 2º dia · caderno 7 (Azul) | 90/90 | 21 | 69 | 69 imagens revisadas; gabarito 89/90 igual aos microdados (Q129 anulada); 90 questões classificadas |
+| 2024 · reaplicação · 1º dia · caderno 1 (Azul) | 95/95 | 79 | 16 | 16 imagens revisadas; gabarito 95/95 igual aos microdados; 95 questões classificadas |
+| 2024 · reaplicação · 2º dia · caderno 7 (Azul) | 90/90 | 32 | 58 | 58 imagens revisadas; gabarito 90/90 igual aos microdados; 90 questões classificadas |
 
 A reaplicação de 2023 (PPL e reaplicação, mesma prova) não repete nenhuma questão
 da aplicação regular do mesmo ano, mas reaproveita questões de edições anteriores.
@@ -104,6 +111,14 @@ Escalas de nota de 2023 (validadas contra as notas oficiais, erro máximo de 0,0
 Linguagens 108,09·θ + 499,98; Humanas 112,31·θ + 501,49; Natureza 113,10·θ + 501,14;
 Matemática 129,65·θ + 500,02. A calculadora foi conferida com candidatos reais nas
 quatro áreas (inglês e espanhol incluídos): 24 de 24 notas iguais às oficiais.
+
+Em 2024 o INEP mudou o leiaute dos cadernos (página mais larga, sem linha
+divisória entre as colunas); o extrator escolhe o perfil de página pela largura.
+Os microdados de 2024 trazem respostas e notas em `RESULTADOS_2024.csv`. As
+constantes da escala de nota de 2024 são idênticas às de 2023 nas quatro áreas.
+Descartadas da nota em 2024: regular Q129 (anulada) e reaplicação Q40 ("algoritmo
+não convergiu", motivo oficial). Calculadora conferida com 12 candidatos reais da
+aplicação regular (inglês e espanhol): 24 de 24 notas iguais às oficiais.
 
 ### Observações técnicas
 - O servidor `download.inep.gov.br` não envia o certificado intermediário. Os

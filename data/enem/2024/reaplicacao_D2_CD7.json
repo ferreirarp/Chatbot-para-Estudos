@@ -1,0 +1,2832 @@
+[
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q091",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 91,
+    "lingua_estrangeira": null,
+    "enunciado": "Tendo em vista a necessidade de economia de energia elétrica, os climatizadores de ar surgem como uma\nalternativa econômica. Esses dispositivos utilizam a evaporação da água como método de troca de calor, conforme\nesquematizado na figura.\nO ar externo (quente) é aspirado para o interior do painel evaporativo e, em contato com a água fria, tem sua\ntemperatura diminuída. Umidificado e mais frio, o ar é empurrado pelo ventilador ao ambiente interno. Quanto maior\né a redução de temperatura produzida pelo climatizador, maior é a sua eficiência. A Tabela 1 apresenta a redução\nde temperatura produzida por um desses aparelhos, em função da temperatura de entrada do ar e de sua umidade\nrelativa (UR) percentual; enquanto a Tabela 2 apresenta os valores médios de temperatura (T) e os valores da UR do\nar de cinco cidades brasileiras, no mês de setembro.\nTabela 1\nTemperatura de entrada do ar (°°C) 25,5 26,0 26,5 27,0 27,5 28,0 28,5\nUmidade relativa do ar (%) Redução de temperatura produzida\n30 a 39 8,6 8,7 8,8 9,0 9,1 9,2 9,4\n40 a 49 7,1 7,2 7,3 7,4 7,5 7,6 7,8\n50 a 59 5,6 5,7 5,8 5,9 6,0 6,1 6,2\n60 a 69 4,5 4,6 4,6 4,7 4,7 4,8 4,8\n70 a 80 2,5 2,5 2,5 2,5 2,6 2,6 2,6\nTabela 2\nCidade T (°°C) UR (%)\nBarbalha (CE) 26,0 58\nBelém (PA) 27,5 75\nCáceres (MT) 28,5 51\nCorumbá (MS) 27,0 52\nJanaúba (MG) 25,5 40\nDisponível em: https://pt.climate-data.org.; www.brizztech.com.br. Acesso em: 25 nov. 2021(adaptado).\nConsiderando os dados apresentados para o mês de setembro, em qual destas cidades o climatizador de ar é\nmais eficiente?",
+    "alternativas": {
+      "A": "Barbalha.",
+      "B": "Belém.",
+      "C": "Cáceres.",
+      "D": "Corumbá.",
+      "E": "Janaúba."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem",
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q091.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q092",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 92,
+    "lingua_estrangeira": null,
+    "enunciado": "Nas últimas décadas, a população dos centros urbanos tem requerido a pavimentação das vias públicas, visando\no aumento do conforto e a minimização do desgaste de veículos. No entanto, essa melhoria da qualidade de vida pode\ntrazer implicações ao meio ambiente. A impermeabilização impede a infiltração de água no solo, sendo carreados,\nportanto, todos os dejetos e impurezas para os cursos de água.\nQual ação poderia mitigar os efeitos danosos da contaminação dos cursos de água em virtude da impermeabilização\ndas vias públicas?",
+    "alternativas": {
+      "A": "Reciclar o lixo doméstico seco.",
+      "B": "Incentivar a construção de fossas sépticas.",
+      "C": "Difundir o uso de vasos de plantas nas vias públicas.",
+      "D": "Promover a construção de parques e espaços arborizados.",
+      "E": "Propor políticas de expansão da canalização das redes fluviais."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q092.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q093",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 93,
+    "lingua_estrangeira": null,
+    "enunciado": "A figura ilustra diferentes etapas de um experimento realizado por Frederick Griffith em 1928 com camundongos\ne pneumococos.\nDisponível em: www.ck12.org. Acesso em: 27 jul. 2012.\nA hipótese testada com a realização desse experimento é que",
+    "alternativas": {
+      "A": "os seres vivos sofrem mutações pelo calor.",
+      "B": "o calor é eficaz para matar microrganismos.",
+      "C": "as bactérias virulentas não são alteradas pelo calor.",
+      "D": "a virulência de uma bactéria pode ser transferida para outra.",
+      "E": "a sobrevivência dos camundongos depende da quantidade de bactérias injetadas."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q093.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q094",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 94,
+    "lingua_estrangeira": null,
+    "enunciado": "Um laboratório farmacêutico desenvolveu um anestésico tópico, em forma de creme, destinado à aplicação na\npele de pacientes a serem submetidos a pequenas intervenções dermatológicas. As nanocápsulas são feitas de um\npolímero 100% biodegradável, dotadas de paredes semipermeáveis, e têm um núcleo oleoso que contém os princípios\nativos prilocaína e lidocaína. O nanoanestésico é responsável pelo transporte e entrega dos princípios ativos à região\ndesejada do organismo.\nVASCONCELOS, Y. Moléculas inovadoras. Pesquisa Fapesp, n. 238, 2015 (adaptado).\nA utilização dessas nanocápsulas implica o(a)",
+    "alternativas": {
+      "A": "diminuição do tempo de vida do fármaco, pela migração do medicamento da epiderme para a hipoderme.",
+      "B": "facilidade de sua absorção na epiderme, pela interação do núcleo oleoso com a camada de gordura da pele.",
+      "C": "acréscimo da concentração dos princípios ativos do anestésico na epiderme, ampliando sua região de atuação.",
+      "D": "utilização de uma maior quantidade do creme, para manter a eficiência da droga mesmo com a miniaturização da cápsula.",
+      "E": "aumento do transporte e da absorção dos princípios ativos, à medida que elas se degradam ao migrarem da epiderme para a derme."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q094.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q095",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 95,
+    "lingua_estrangeira": null,
+    "enunciado": "O politereftalato de etileno (PET) é um polímero muito utilizado na confecção de embalagens para vários produtos\nindustriais, gerando grande quantidade de resíduos no lixo urbano. Como sua degradação é muito lenta no meio\nambiente, faz-se necessário o uso de diferentes técnicas de reciclagem desse material. O PET é bastante susceptível\nà reciclagem química, que se baseia em submeter o polímero a uma reação química, para transformá-lo em outros\ncompostos orgânicos, como exemplificado pelo esquema.\nPASZUN, D.; SPYCHAJ, T. Chemical Recycling of Poly (Ethylene Terephthalate). Ind. Chem. Res., n. 36, 1997.\nNo esquema, o PET foi reciclado utilizando-se uma reação de",
+    "alternativas": {
+      "A": "hidrólise.",
+      "B": "eterificação.",
+      "C": "esterificação.",
+      "D": "neutralização.",
+      "E": "transesterificação."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q095.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q096",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 96,
+    "lingua_estrangeira": null,
+    "enunciado": "A proprietária de um haras comprou um cavalo e, após\nalguns dias, descobriu que o animal apresentava uma\ndoença viral séria. Sentindo-se prejudicada, iniciou\numa disputa judicial para determinar se o cavalo já foi\ncomprado infectado ou se ele adquiriu a doença na nova\npropriedade. Nesses casos, os anticorpos podem auxiliar\nna decisão do juiz, pois sabe-se que a presença da\nimunoglobulina M (IgM), primeira classe de anticorpo a\nser secretada, refere-se a infecções recentes (primárias\nou recorrentes), e que a imunoglobulina G (IgG) refere-se\na infecções um pouco mais antigas. Além das classes, a\nforça de ligação do anticorpo (avidez) também poderá\ntrazer informações importantes, porque quanto maior a\navidez, mais antiga é a infecção inicial.\nQual resultado laboratorial favorecerá a nova proprietária\nno julgamento?",
+    "alternativas": {
+      "A": "IgM positivo e IgG positivo, com baixa avidez.",
+      "B": "IgM negativo e IgG negativo, com baixa avidez.",
+      "C": "IgM negativo e IgG positivo, independentemente da avidez.",
+      "D": "IgM positivo e IgG positivo, independentemente da avidez.",
+      "E": "IgM positivo e IgG negativo, independentemente da avidez."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q097",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 97,
+    "lingua_estrangeira": null,
+    "enunciado": "O longo tempo que polímeros levam para serem\ndegradados tem gerado problema de acúmulo de resíduos\nsólidos. A fim de contornar essa situação, têm sido propostos\nnovos polímeros biodegradáveis que apresentam grupos\nésteres hidrolisáveis, facilitando a assimilação desses\npolímeros pelos microrganismos.\nQual unidade monomérica representa o polímero melhor\nassimilado pelos microrganismos?",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q097.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q098",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 98,
+    "lingua_estrangeira": null,
+    "enunciado": "A utilização de fusíveis em equipamentos eletrônicos\né fundamental para a sua preservação. De forma\nsimplificada, esse dispositivo é composto de terminais\nmetálicos, conectados por um fio condutor envolvido por\num corpo de vidro, como ilustrado na figura. A passagem de\ncorrente elétrica gera calor por efeito Joule, o que provoca\num aumento local na temperatura. Considere que são\nnecessários, em média, 4 A de corrente para a elevação\nda temperatura em 1 °°C. As temperaturas de fusão de\ndiferentes materiais são apresentadas a seguir.\nPara um equipamento que deve operar com uma\ncorrente menor que 1 000 A, o material adequado para\no fusível é o(a)",
+    "alternativas": {
+      "A": "estanho.",
+      "B": "frâncio.",
+      "C": "prata.",
+      "D": "silício.",
+      "E": "zinco."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q098.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q099",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 99,
+    "lingua_estrangeira": null,
+    "enunciado": "A abelha mamangava (Xylocopa sp.) é a mais eficiente\npolinizadora do maracujazeiro, por causa do seu tamanho.\nA abelha europeia (Apis mellifera) não é uma polinizadora\neficiente do maracujazeiro, pois coleta o pólen sem realizar a\nfecundação e seu tamanho pequeno não permite que alcance\no estigma da flor, por causa da distância da base de pouso.\nRAMOS, L. A. Dicas para começar e melhorar sua produção.\nRevista Globo Rural, n. 296, jun. 2010 (adaptado).\nA relação ecológica entre os insetos mencionados é de",
+    "alternativas": {
+      "A": "predação.",
+      "B": "mutualismo.",
+      "C": "competição.",
+      "D": "inquilinismo.",
+      "E": "comensalismo."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q100",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 100,
+    "lingua_estrangeira": null,
+    "enunciado": "Quando utilizadas na iluminação pública noturna, as lâmpadas de LED brancas produzem uma luz branco-azulada,\ncujo brilho difuso dificulta a observação das estrelas, que também chegam aos nossos olhos como luz azulada.\nPor isso, esse tipo de iluminação pública pode ser considerada uma nova forma de poluição: a “poluição azul”,\nque afeta a dinâmica de várias espécies.\nA cidade de Flagstaff, nos Estados Unidos, foi uma das pioneiras na resolução dessa questão. Embora sua iluminação\npública seja feita com lâmpadas de LED brancas, a cidade tomou medidas para impedir o brilho azulado. Conforme\nestudos de uma equipe de cientistas australianos, com a aplicação de um material, é possível alterar a transmissão\ndas frequências indesejadas, mantendo a intensidade total da lâmpada. As figuras do estudo indicam:\n• o espectro de emissão correspondente a uma lâmpada LED branca (A);\n• o espectro de emissão correspondente a uma lâmpada LED branca coberta com o material do estudo (B).\nDIMOVSKI, A. M.; ROBERT, K. A. Artificial Light Pollution: Shifiting Spectral Wavelengths to\nMitigate Physiological and Health Consequences in a Nocturnal Marsupial Mammal.\n, n. 329, 2018 (adaptado).\nNesse estudo, o material utilizado na cobertura",
+    "alternativas": {
+      "A": "reflete a luz azul.",
+      "B": "difrata a luz azul.",
+      "C": "absorve a luz azul e emite luz amarelo-alaranjada.",
+      "D": "absorve a luz azul e emite luz ultravioleta.",
+      "E": "polariza a luz azul transmitida. J. Exp. Zool., n. 329, 2018 (adaptado)."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q100.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q101",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 101,
+    "lingua_estrangeira": null,
+    "enunciado": "Após realizar uma inspeção veicular, um cidadão descobre\nque seu automóvel a gasolina emite anualmente 3 000 kg de\nCO (massa molar 44 g mol−1). Pensando em compensar\n2\nesse impacto, resolveu plantar árvores nativas do Brasil\neficientes na fixação de carbono (massa molar 12 g mol−1).\nAo pesquisar espécies nativas para esse fim, encontrou\nos seguintes dados para a espécie angico-branco: i) cada\n1 000 m2 de plantação dessa árvore correspondem a uma\nmassa arbórea de 3 520 kg; ii) sua massa arbórea contém\n50% de carbono; e iii) apresenta boa adaptação à região.\nDisponível em: www.cnpf.embrapa.br.\nAcesso em: 12 out. 2015 (adaptado).\nA menor área que o cidadão deve utilizar para a plantação\nde angico-branco, visando compensar as emissões de CO ,\n2\né mais próxima de",
+    "alternativas": {
+      "A": "230 m2.",
+      "B": "465 m2.",
+      "C": "850 m2.",
+      "D": "1 700 m2.",
+      "E": "2 000 m2."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q101.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q102",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 102,
+    "lingua_estrangeira": null,
+    "enunciado": "Na lavagem a seco, um solvente é considerado efetivo\npara limpeza de roupas quando evita o encolhimento dos\ntecidos, evapora facilmente e dissolve manchas lipofílicas,\ncomo óleos, ceras e gorduras em geral, por apresentar\npolaridade similar.\nBORGES, L.; MACHADO, P. F. L. Lavagem a seco.\nQuímica Nova na Escola, n. 1, fev. 2013.\nQual estrutura molecular representa o solvente mais efetivo\nna lavagem a seco de roupas?",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q102.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q103",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 103,
+    "lingua_estrangeira": null,
+    "enunciado": "Um cronômetro eletrônico de precisão importado é\nutilizado para realizar medidas em um laboratório de\npesquisa. No manual do equipamento, constam as tensões\n(110 V/220 V) e a frequência (50 Hz) da rede elétrica para\nas quais o equipamento foi calibrado. O manual também\ninforma que a precisão do aparelho está relacionada a um\ncircuito eletrônico interno que realiza a contagem dos ciclos\nda tensão da rede elétrica. O técnico do laboratório testa\na calibragem do equipamento realizando a medida de um\nevento padrão cuja duração é de 60 segundos, mas observa\nque o intervalo de tempo indicado na tela do cronômetro\né diferente. Com isso, percebe que, no laboratório de\npesquisa, a rede elétrica opera a uma frequência de 60 Hz.\nNessa situação, a indicação do intervalo de tempo na tela\ndo cronômetro, em segundo, é",
+    "alternativas": {
+      "A": "10.",
+      "B": "50.",
+      "C": "60.",
+      "D": "72.",
+      "E": "132."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q104",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 104,
+    "lingua_estrangeira": null,
+    "enunciado": "A suspensão de um automóvel funciona como um\nsistema massa-mola amortecido cuja função é reduzir a\namplitude de oscilação do automóvel. Esse sistema pode ser\nk\ncaracterizado por uma frequência de oscilação w = ,\n0 m\nem que k é a constante elástica da mola e m é a massa total\ndo sistema formado por mola, amortecedor, pneu e roda.\nA suspensão do automóvel é originalmente dimensionada\npara que a relação entre w e um parâmetro fixo b seja:\n0\n• w = b, quando não há oscilação do automóvel e o\n0\nsistema volta à posição original rapidamente.\nPorém, seu amortecimento pode ser determinado\ntambém por outras duas relações entre w e b:\n0\n• w > b, quando o sistema oscila algumas vezes até parar;\n0\n• w < b, quando o sistema não oscila, retornando à\n0\nsua posição original lentamente.\nPor questões estéticas, o proprietário de um automóvel\nreduz à metade o comprimento original das molas de sua\nsuspensão e troca rodas e pneus, de modo a manter a\nmesma massa total do sistema. Os demais componentes\npermanecem inalterados.\nComo essas alterações modificam a oscilação do sistema?",
+    "alternativas": {
+      "A": "A constante elástica diminui e o sistema não oscila.",
+      "B": "A constante elástica aumenta e o sistema passa a oscilar.",
+      "C": "A constante elástica diminui e o sistema volta à posição original lentamente.",
+      "D": "A constante elástica diminui e o sistema volta à posição original rapidamente.",
+      "E": "A constante elástica aumenta e o sistema volta à posição original lentamente."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q104.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q105",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 105,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma equipe de pesquisadores interessados em estudar\na concentração de ozônio em uma região da atmosfera\nplaneja enviar um balão para captar dados meteorológicos\na 20 000 m de altitude. Para recuperar os dados captados\npelo dispositivo de medida, o balão precisa estourar quando\natingir a altitude desejada e retornar ao solo, o que ocorrerá\nquando seu volume atingir o valor limite a partir do qual não\nhá mais expansão. As figuras mostram a forma do balão e\ncomo a temperatura e a pressão atmosférica variam com\na altitude em relação ao nível do mar.\nPara essa situação, considera-se o gás dentro do balão\ne os gases atmosféricos como gases ideais. Assume-se\ntambém que a pressão interna ao balão depende somente\nda pressão atmosférica.\nQuantas vezes o raio do balão deve aumentar para captar\nos dados meteorológicos desejados?",
+    "alternativas": {
+      "A": "10,00",
+      "B": "8,00",
+      "C": "2,83",
+      "D": "2,00",
+      "E": "1,25"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q105.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q106",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 106,
+    "lingua_estrangeira": null,
+    "enunciado": "A hipertensão arterial é um problema de saúde que\nse agrava pelo crescente consumo de sal rico em sódio.\nO consumo máximo diário recomendado pelo Ministério da\nSaúde é de, aproximadamente, 5 g de NaCl. No entanto,\nos brasileiros consomem em média 12 g desse sal por dia.\nPor isso, a indústria lançou no mercado o chamado sal\nlight, que apresenta um teor reduzido de cloreto de sódio.\nSua composição é cerca de 50% de NaCl e 50% de KCl,\nem massa.\nMassas molares:\ng g g\nNa=23 ; Cl=35,5 ; K=39\nmol mol mol\nPesquisa de orçamentos familiares: análise do consumo alimentar\npessoal no Brasil. Disponível em: www.biblioteca.ibge.gov.br.\nAcesso em: 27 nov. 2019 (adaptado).\nAinda que os brasileiros consumam apenas sal light, a massa\nde sódio ingerida em excesso será mais próxima de",
+    "alternativas": {
+      "A": "0,4 g.",
+      "B": "1,0 g.",
+      "C": "1,4 g.",
+      "D": "2,8 g.",
+      "E": "3,5 g."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q106.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q107",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 107,
+    "lingua_estrangeira": null,
+    "enunciado": "Um experimento foi montado com o intuito de determinar\no tempo de queda livre de corpos com tamanhos e massas\ndistintas. Para isso, utilizou-se uma prateleira a 50,0 cm do\nchão, onde foram colocadas três frutas, conforme a figura.\nEm um determinado instante, a prateleira foi removida,\nliberando todas as frutas simultaneamente.\nConsidere o tempo de queda da melancia como t ,\n1\ndo melão como t e da maçã como t .\n2 3\nDesprezando-se as forças dissipativas, a relação entre\nos tempos de queda das frutas é",
+    "alternativas": {
+      "A": "t = t = t . 1 2 3",
+      "B": "t > t > t . 1 2 3",
+      "C": "t < t < t . 1 2 3",
+      "D": "t > t < t . 1 2 3",
+      "E": "t < t > t . 1 2 3"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q107.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q108",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 108,
+    "lingua_estrangeira": null,
+    "enunciado": "Pesquisadores da Universidade de Wisconsin-Madison, nos Estados Unidos, desenvolveram um dessalinizador-pilha.\nO invento se mostrou muito promissor para dessalinizar água do mar, empregando eletrodos com bismuto e titânio\nem suas composições. Para realizar a dessalinização, o dispositivo funciona por eletrólise, conforme a figura.\nNo descarregamento do dispositivo ocorre o processo inverso, que permite reaproveitar a energia, como em uma pilha.\nNAM, D.-H.; CHOI, K.-S. Bismuth as a New Chloride-Storage Electrode Enabling the Construction of a Practical High\nCapacity Desalination Battery. Journal of the American Chemical Society, n. 139, 2017 (adaptado).\nDurante a dessalinização da água por eletrólise ocorre a formação de",
+    "alternativas": {
+      "A": "BiOCl no ânodo.",
+      "B": "H (g) no cátodo. 2",
+      "C": "Bi no polo positivo.",
+      "D": "O (g) no polo negativo. 2",
+      "E": "Na Ti (PO ) no ânodo. 3 2 4 3"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q108.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q109",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 109,
+    "lingua_estrangeira": null,
+    "enunciado": "O ácido sulfúrico é uma das principais substâncias produzidas industrialmente no mundo. O esquema apresenta,\nde forma simplificada, as etapas de sua produção.\nEm qual etapa ocorre a conversão química do enxofre (S) para o seu maior estado de oxidação?",
+    "alternativas": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "5"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q109.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q110",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 110,
+    "lingua_estrangeira": null,
+    "enunciado": "O uso excessivo de embalagens plásticas ocasionou\num aumento na quantidade de resíduos plásticos\ndescartados no meio ambiente. Para minimizar o impacto\ncausado pelo acúmulo desses resíduos, pode-se empregar\nalguns procedimentos:\nI. Incineração;\nII. Reciclagem;\nIII. Acondicionamento em aterros sanitários;\nIV. Substituição por plásticos biodegradáveis;\nV. Substituição por plásticos oxibiodegradáveis.\nDo ponto de vista ambiental, o procedimento adequado\npara solucionar o problema de acúmulo desses materiais é",
+    "alternativas": {
+      "A": "incinerar, pois isso reduz a quantidade de resíduos sólidos, e os gases liberados nesse processo não são poluentes.",
+      "B": "reciclar, pois o plástico descartado é utilizado para a produção de novos objetos, e isso evita a síntese de maior quantidade de matéria-prima.",
+      "C": "utilizar plásticos biodegradáveis, uma vez que a matéria-prima é de fonte renovável e a produção desses materiais é simples e de baixo custo.",
+      "D": "dispensar em aterros sanitários, já que esses locais são dimensionados para receber uma grande quantidade de resíduos e sua capacidade não se esgota rapidamente.",
+      "E": "substituir por plásticos oxibiodegradáveis, visto que, ao serem descartados, são rapidamente assimilados pelos microrganismos e não se acumulam no meio ambiente."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q111",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 111,
+    "lingua_estrangeira": null,
+    "enunciado": "As lhamas que vivem nas montanhas dos Andes\nda América do Sul têm hemoglobinas geneticamente\ndiferenciadas de outros mamíferos que vivem ao nível\ndo mar, por exemplo. Essa diferenciação trata-se de uma\nadaptação à sua sobrevivência em altitudes elevadas onde\no ar é rarefeito.\nSCHMIDT-NIELSEN, K. Fisiologia animal: adaptação\nao meio ambiente. São Paulo: Santos, 2002.\nA adaptação desses animais em relação ao seu ambiente\nconfere maior",
+    "alternativas": {
+      "A": "afinidade pelo O , maximizando a captação desse gás. 2",
+      "B": "capacidade de tamponamento, evitando alterações de pH no sangue.",
+      "C": "afinidade pelo CO , facilitando seu transporte para 2 eliminação nos pulmões.",
+      "D": "velocidade no transporte de gases, aumentando a eficiência de troca gasosa.",
+      "E": "solubilidade de gases no plasma, melhorando seu transporte nos tecidos."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q111.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q112",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 112,
+    "lingua_estrangeira": null,
+    "enunciado": "Ao respirarmos, falarmos, tossirmos ou espirrarmos,\nliberamos gotículas e aerossóis. Se estamos com alguma\ninfecção respiratória viral, vírus estarão contidos ali.\nEstima-se que uma pessoa com covid-19 falando alto por\n1 minuto pode gerar mais de 1 000 partículas de aerossóis,\no que poderia levar à liberação de mais de 100 000 partículas\nvirais de SARS-CoV-2. O uso de máscaras pela população\npode auxiliar na redução da transmissão desse vírus,\nconforme representado na figura.\nDisponível em: www.blogs.unicamp.br.\nAcesso em: 17 dez. 2021(adaptado).\nAs máscaras auxiliam no controle dessa doença, pois",
+    "alternativas": {
+      "A": "neutralizam as partículas virais presentes nas gotículas e aerossóis.",
+      "B": "fornecem uma barreira de proteção contra as partículas virais liberadas no ar.",
+      "C": "reduzem a quantidade de vírus nas gotículas produzidas durante a respiração.",
+      "D": "permitem que os indivíduos infectados inspirem e expirem menos partículas virais.",
+      "E": "mantêm afastados os indivíduos não infectados daqueles que já foram infectados."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q112.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q113",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 113,
+    "lingua_estrangeira": null,
+    "enunciado": "A evolução das populações envolve processos de variação\ne adaptação ao longo do tempo, podendo desencadear\no surgimento de novas raças ou espécies a partir de uma\npreexistente. A grande diversidade de organismos presentes\nem nosso planeta pode ser explicada pela moderna teoria\nevolucionista, que associa o darwinismo aos conceitos de\ngenética. Com base nesses conhecimentos, é possível realizar\na reprodução diferencial de genótipos e a formação de raças\ncom diferentes fenótipos, como representado na figura.\nCAIN, M. et al. Discover Biology. Nova York:\nW. W. Norton & Company, 2002 (adaptado).\nA formação dessas raças deve-se ao processo de",
+    "alternativas": {
+      "A": "deriva genética.",
+      "B": "seleção artificial.",
+      "C": "formação de híbridos.",
+      "D": "especiação alopátrica.",
+      "E": "divergência adaptativa."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q113.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q114",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 114,
+    "lingua_estrangeira": null,
+    "enunciado": "Um grupo de pesquisadores realizou um experimento\npara identificar condições ideais para o crescimento de\nervilhas. Utilizaram um solo rico em nutrientes e minerais\n(nitrogênio orgânico, fosfato, cálcio, potássio). Em um lote,\no solo foi esterilizado por calor; em outro, não. Após o\ncultivo, em condições ideais de luminosidade e umidade,\nas plantas cultivadas em solo esterilizado tiveram um\ndesenvolvimento inferior.\nA esterilização reduziu, para as ervilhas, a disponibilidade de",
+    "alternativas": {
+      "A": "água.",
+      "B": "cálcio.",
+      "C": "fosfato.",
+      "D": "potássio.",
+      "E": "nitrogênio."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q115",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 115,
+    "lingua_estrangeira": null,
+    "enunciado": "Os satélites em órbitas geoestacionárias ocupam uma\nposição fixa em relação à superfície da Terra e, por isso,\npodem ser usados como sistemas de comunicação. Pela\nlimitação de espaço, o número de satélites que podem ser\nposicionados numa órbita é finito. O lançamento de um\nsatélite geoestacionário envolve três etapas:\n• Lança-se o satélite da base terrestre até uma órbita\ncircular próxima (órbita R ).\n1\n• No estágio de propulsão, aplica-se um impulso\ntangencial à trajetória no ponto A, mudando-se para\numa órbita elíptica até o satélite atingir o ponto B,\nque coincide com o raio de sua órbita geoestacionária.\n• No ponto B, efetua-se uma mudança para a órbita\ncircular R , aplicando-se um impulso tangente\n2\nà trajetória.\nIdentificando a órbita interna como R , a órbita\n1\ngeoestacionária como R e a órbita elíptica como E,\n2\nas energias mecânicas do satélite nas três órbitas são\nidentificadas, respectivamente, como E , E e E .\n1 2 E\nBEER, F. P. et al. Vector Mechanics: Static and Dynamic.\nNova York: McGraw-Hill, 2009.\nA relação de comparação entre as energias mecânicas\ndo satélite nas três órbitas é",
+    "alternativas": {
+      "A": "E > E > E . 2 E 1",
+      "B": "E < E < E . 2 E 1",
+      "C": "E = E < E . 1 E 2",
+      "D": "E < E = E . 1 E 2",
+      "E": "E > E = E . 1 E 2"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q115.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q116",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 116,
+    "lingua_estrangeira": null,
+    "enunciado": "O DNA mitocondrial pode ser utilizado para evidenciar\num parentesco ou uma descendência. Sabe-se que o\nzigoto recebe mitocôndrias apenas do gameta feminino.\nO heredograma apresenta a genealogia de uma família.\nO DNA mitocondrial do indivíduo W é igual ao do indivíduo",
+    "alternativas": {
+      "A": "1.",
+      "B": "2.",
+      "C": "3.",
+      "D": "4.",
+      "E": "5."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q116.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q117",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 117,
+    "lingua_estrangeira": null,
+    "enunciado": "Aquecedores elétricos utilizam resistência de fio,\nsuportando uma corrente máxima dimensionada pelo\nfabricante. O dimensionamento original do circuito elétrico\nde um aquecedor, esquematizado na figura, foi utilizado\npara provocar a elevação de temperatura em um volume\nde água, durante um determinado intervalo de tempo.\nCaso se pretenda utilizar uma tensão de 250 V,\no circuito precisará ser redimensionado, para garantir o\ncorreto funcionamento do aquecedor. A corrente deve\nser mantida, considerando-se o aquecimento do mesmo\nvolume de água, à mesma temperatura, durante o mesmo\nintervalo de tempo.\nNesse redimensionamento, deve-se acrescentar ao\ncircuito um resistor de",
+    "alternativas": {
+      "A": "22,5 Ω em paralelo.",
+      "B": "22,5 Ω em série.",
+      "C": "71,1 Ω em paralelo.",
+      "D": "71,1 Ω em série.",
+      "E": "101,1 Ω em paralelo."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q117.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q118",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 118,
+    "lingua_estrangeira": null,
+    "enunciado": "Um professor solicita a um grupo de alunos que\norganizem uma coleção de vegetais para apresentar em uma\nfeira de ciências. Dessa forma, os alunos coletaram um\nmusgo, um cogumelo, uma samambaia, uma alga e ramos\nde pinheiro e de goiabeira. Durante a apresentação do\ntrabalho, o professor explicou que, embora todas as\nespécies coletadas tenham muitas características em\ncomum, nem todas são vegetais.\nOs cogumelos diferem das demais espécies por serem",
+    "alternativas": {
+      "A": "talófitos, não apresentando corpo segmentado em diferentes órgãos.",
+      "B": "criptógamos, não apresentando órgãos de reprodução sexuais visíveis.",
+      "C": "heterótrofos, não apresentando capacidade de sintetizarem seu alimento.",
+      "D": "haploides, não apresentando capacidade de se reproduzirem sexuadamente.",
+      "E": "avasculares, não apresentando tecidos especializados de transporte de água e nutrientes."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q119",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 119,
+    "lingua_estrangeira": null,
+    "enunciado": "O titânio é encontrado na natureza em minerais, dos\nquais o rutilo (TiO ) está presente na principal mina do\n2\nBrasil, localizada no Rio Grande do Norte. Para obtenção\ndo titânio metálico, o TiO é submetido a duas operações\n2\nindustriais. A primeira consiste na cloração, produzindo\ntetracloreto de titânio, conforme a equação:\n→\nTiO + 2 Cl + 2 CO ← TiCI + 2 CO\n2 2 4 2\nA segunda operação consiste na redução do tetracloreto\nde titânio, utilizando magnésio metálico:\n→\n2 Mg + TiCl ← 2 MgCl + Ti\n4 2\nConsidere as massas molares:\ng g\nCl = 35,5 ; Ti = 48 .\nmol mol\nQual a massa de gás cloro necessária para produzir 480 kg\nde titânio metálico?",
+    "alternativas": {
+      "A": "179 kg",
+      "B": "359 kg",
+      "C": "480 kg",
+      "D": "710 kg",
+      "E": "1 420 kg"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q119.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q120",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 120,
+    "lingua_estrangeira": null,
+    "enunciado": "Doenças negligenciadas são um grupo de enfermidades tropicais endêmicas que incapacitam ou matam milhões de\npessoas e representam uma necessidade médica importante que permanece não atendida. Comuns em áreas pobres\ndo mundo, as populações atingidas por essas doenças não possuem recursos para pagar por um tratamento que\nexigiria anos de pesquisa e um alto investimento dos laboratórios. Por isso, uma parcela considerável de investimentos\naplicados em estudos dessas doenças vem de atividades filantrópicas.\nEsses investimentos filantrópicos poderiam melhorar a realidade de doentes acometidos pelo(a):",
+    "alternativas": {
+      "A": "Infarto.",
+      "B": "Câncer.",
+      "C": "Alzheimer.",
+      "D": "Influenza A.",
+      "E": "Leishmaniose."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q121",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 121,
+    "lingua_estrangeira": null,
+    "enunciado": "O ouvido humano apresenta algumas características interessantes. Uma delas é que existe uma intensidade mínima,\nou limiar de audibilidade, I , abaixo da qual o som não é audível. O nível de audibilidade é a grandeza que quantifica\n0\na audibilidade (sensação) e sua unidade é o fon, medido em decibéis (dB). O gráfico contém, em escala logarítmica,\ncurvas de igual audibilidade, isto é, cada curva representa uma mesma audibilidade para diferentes frequências.\nCurvas de igual audibilidade\nFonte: H. Fletcher and W. A. Munson, J.A.S.A., n. 5, 1933.\nMAGALHÃES, D. A.; ALVES FILHO, J. P. A discreta dança do ar ao som das equações da física acústica. Física na Escola, n. 16, 2018.\nConsiderando a frequência de 90 Hz, o menor nível de intensidade, em dB, para que possamos perceber algum som é,\naproximadamente,",
+    "alternativas": {
+      "A": "−20.",
+      "B": "0.",
+      "C": "30.",
+      "D": "40.",
+      "E": "4 000."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q121.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q122",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 122,
+    "lingua_estrangeira": null,
+    "enunciado": "Pisaster ochraceus é uma espécie de estrela-do-mar\nque ocorre em comunidades da zona entremarés da América\ndo Norte Ocidental. Seu principal alimento são moluscos da\nespécie Mytilus californianus. Esse molusco, por sua vez,\né dominante e compete por espaço com muitos outros\ninvertebrados e até algas. Pesquisadores estudam as\nrelações ecológicas nesse ambiente desde a década\nde 1960, com o objetivo de entender a dinâmica dessas\ncomunidades. Alguns dados são apresentados no gráfico.\nCAMPBELL, N. et al. Biologia. São Paulo:\nArtmed, 2010 (adaptado).\nA presença de Pisaster influencia a diversidade de espécies,\nnesse ecossistema, porque esses animais",
+    "alternativas": {
+      "A": "fragmentam hábitats, formando novos espaços de colonização.",
+      "B": "servem de presa, aumentando a competição entre as outras espécies.",
+      "C": "isolam geograficamente as populações, reduzindo a taxa de especiação.",
+      "D": "diminuem o número de moluscos, reduzindo a competição destes com outros seres.",
+      "E": "liberam substâncias inibidoras de outros organismos, favorecendo o aumento da população de moluscos."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q122.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q123",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 123,
+    "lingua_estrangeira": null,
+    "enunciado": "É comum o álcool ser mencionado como combustível\necologicamente correto, pois, durante sua queima,\no ciclo biogeoquímico do carbono apresenta balanço\nde massa igual a zero. No entanto, o processo de\nprodução da cana-de-açúcar, matéria-prima empregada\nna indústria sucroalcooleira, faz uso de adubação para\nmelhorar a fertilidade do solo e aumentar a produção.\nDentre os principais nutrientes (nitrogênio, fósforo\ne potássio) que possuem balanço positivo no ciclo\nbiogeoquímico, o nitrogênio é um que merece mais\natenção ambiental. Sabe-se que boa parte do nitrogênio\nativo desses fertilizantes encontra-se na forma dos\níons NH + e NO −. Por intemperismo e percolação,\n4 3\nesses compostos lixiviam para o solo, contaminando\nrios e lagos.\nCARDOSO, A. A.; MACHADO, C. M. D.; PEREIRA, E. A.\nBiocombustível, o mito do combustível limpo.\nQuímica Nova na Escola, n. 28, maio 2008 (adaptado).\nO método de adubação mencionado tem como uma de\nsuas consequências a",
+    "alternativas": {
+      "A": "elevação da alcalinidade das águas naturais.",
+      "B": "redução de nutrientes disponíveis, que afeta a vida aquática.",
+      "C": "proliferação de grandes quantidades de algas nos cursos d’água.",
+      "D": "retenção de íons nitrato e amônio nos solos, que diminui suas solubilidades.",
+      "E": "multiplicação de espécies nativas, que mantém o equilíbrio trófico do ecossistema natural."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q123.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q124",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 124,
+    "lingua_estrangeira": null,
+    "enunciado": "A transferência de calor por radiação pode ser\nobservada realizando-se a experiência de colocar a\nmesma quantidade de água quente em dois copos\nmetálicos com as mesmas características, sendo que a\nsuperfície externa de um deles é pintada de preto (copo 1),\ne a do outro é espelhada (copo 2). Sabe-se que todo\nmaterial emite e absorve energia radiante e que bons\nemissores são também bons absorvedores dessa energia.\nAo se colocar um termômetro dentro de cada copo observa-se,\napós alguns minutos, que a temperatura da água",
+    "alternativas": {
+      "A": "dos dois copos diminui igualmente.",
+      "B": "do copo 1 diminui, e a do copo 2 permanece a mesma.",
+      "C": "do copo 2 diminui, e a do copo 1 permanece a mesma.",
+      "D": "do copo 1 diminui mais rapidamente do que a do copo 2.",
+      "E": "do copo 2 diminui mais rapidamente do que a do copo 1."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q124.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q125",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 125,
+    "lingua_estrangeira": null,
+    "enunciado": "Animais invertebrados que vivem em regiões de estuário, cujas águas têm grandes variações de salinidade,\napresentam estratégias que permitem adaptações a essas variações. Animais que mantêm osmolaridade interna\nrelativamente constante são chamados de osmorreguladores. Já os animais que não controlam ativamente a condição\nosmótica de seus líquidos corporais, adaptando-se à osmolaridade do ambiente, são chamados de osmoconformadores.\nUm pesquisador coletou animais de duas espécies de invertebrados, sendo o Animal A um osmorregulador e\no Animal B, um osmoconformador. Ambos foram submetidos, em laboratório, a ambientes aquáticos com diferentes\nosmolaridades. Em cada situação, foi medida a pressão osmótica interna tanto do Animal A como do Animal B.\nO gráfico que representa corretamente os dados obtidos pelo pesquisador é:",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q125.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q126",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 126,
+    "lingua_estrangeira": null,
+    "enunciado": "Na fissão do urânio-235, esse átomo é dividido em\nátomos mais leves quando bombardeado por um nêutron.\nNos reatores nucleares, novas reações ocorrem a partir\ndos nêutrons liberados na fissão, caracterizando uma reação\nem cadeia. Essa reação é mais eficiente quando esses\nnêutrons têm energia cinética baixa. Por isso, é utilizada\numa substância moderadora na qual os nêutrons possam\ncolidir, transferindo parte da energia.\nConsidere que essas colisões são frontais e\naproximadamente elásticas, que a substância moderadora é\num alvo em repouso e que as velocidades dos nêutrons, υ ,\nnf\ne da substância moderadora, υ , após a colisão, são:\nsf\n(cid:27)m (cid:29)m (cid:24)\n(cid:31) (cid:30)(cid:25) n s(cid:22)(cid:31)\nnf (cid:26)m (cid:28)m (cid:23) 0\nn s\n(cid:28) 2m (cid:25)\n(cid:31) (cid:30)(cid:26) n (cid:23)(cid:31)\nsf (cid:27)m (cid:29)m (cid:24) 0\nn s\nem que m é a massa do nêutron, m é a massa da\nn s\nsubstância moderadora e υ é a velocidade inicial do nêutron.\n0\nA substância moderadora que promoverá a maior redução\nde velocidade dos nêutrons, nesse processo de colisão,\nserá:",
+    "alternativas": {
+      "A": "2D 1",
+      "B": "4He 2",
+      "C": "12C 6",
+      "D": "14N 7",
+      "E": "94Sr 38"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q126.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q127",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 127,
+    "lingua_estrangeira": null,
+    "enunciado": "Atualmente, temos um número considerável de\nalternativas de fontes primárias de energia: geotérmica,\nmaremotriz, biomassa, nuclear e eólica. Essas são\nusadas para obtenção de energias secundárias, como\na energia elétrica.\nDisponível em: www.energiasdomundo.com.br.\nAcesso em: 24 nov. 2014 (adaptado).\nQual fonte primária permite obter essa energia secundária\npor processos químicos?",
+    "alternativas": {
+      "A": "Eólica.",
+      "B": "Nuclear.",
+      "C": "Biomassa.",
+      "D": "Maremotriz.",
+      "E": "Geotérmica."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q128",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 128,
+    "lingua_estrangeira": null,
+    "enunciado": "Ao realizar os preparativos para o Natal, uma pessoa\nresolveu aumentar o número de lâmpadas incandescentes\nde um pisca-pisca que originalmente tinha 20 lâmpadas\nassociadas em paralelo, cada uma com resistência R.\nAdicionou outras 20 lâmpadas com as mesmas\nespecificações e também em paralelo. O circuito passou\na ser composto por 40 lâmpadas em paralelo e uma fonte\nde resistência interna r. A corrente total do circuito com\n40 lâmpadas é proporcional à corrente do circuito com\n20 lâmpadas, ou seja, i = a ⋅ i . Ao ligar o sistema,\n40 20\nela observou que o brilho das lâmpadas diminuiu com\nfator de proporcionalidade igual a a2.\nQual é o fator a, utilizado para a obtenção da redução do\nbrilho em cada lâmpada?\n1",
+    "alternativas": {
+      "A": "2 1",
+      "B": "20 R +r 20",
+      "C": "R +r 40 R +r 40",
+      "D": "R +r 20 R",
+      "E": "+r 40"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q128.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q129",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 129,
+    "lingua_estrangeira": null,
+    "enunciado": "A agência norte-americana que regula medicamentos\n(FDA) aprovou um fármaco cujo uso contínuo reduz o risco\nde infecção do vírus HIV. Esse fármaco surge como profilaxia\nmedicamentosa aos grupos de alto risco, uma vez que age\nna célula infectada inibindo a ação da enzima transcriptase\nreversa. Contudo, a camisinha ainda é o método mais\nseguro, barato e eficaz na prevenção de doenças como a\naids, com taxas de aproximadamente 100% de proteção.\nSEGATTO, C. Época, n. 740, jul. 2012 (adaptado).\nO bloqueio dessa enzima contribui para o controle da\ndoença, pois",
+    "alternativas": {
+      "A": "inibe a transcrição do DNA viral, que impede a formação de moléculas de RNA celular.",
+      "B": "impede a transformação do RNA viral numa fita dupla de DNA, que se integra ao DNA celular.",
+      "C": "evita a duplicação do RNA viral, que leva à formação de proteínas virais defeituosas e inativas.",
+      "D": "dificulta a duplicação do DNA celular, com a formação de duas novas fitas a partir do DNA viral.",
+      "E": "controla a formação de moléculas de RNA transportadoras, que impedem a formação de novos vírus."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q130",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 130,
+    "lingua_estrangeira": null,
+    "enunciado": "Em um laboratório, pesquisadores tentavam desenvolver\numa vacina contra um vírus que infecta tanto roedores como\no homem. Uma das vacinas foi capaz de imunizar 100% dos\nratos testados, o que foi considerado um grande sucesso.\nEntretanto, quatro semanas após, novos experimentos\ncom outras cobaias mostraram que 40% dos animais não\nsobreviveram a testes para a mesma vacina. Em um terceiro\nexperimento, três meses depois, apenas 15% das novas\ncobaias sobreviveram aos testes.\nQual o principal mecanismo envolvido na perda de imunização\ndas cobaias?",
+    "alternativas": {
+      "A": "Diminuição da carga viral nas cobaias.",
+      "B": "Supressão do sistema imune das cobaias.",
+      "C": "Elevada taxa de mutação dos vírus ativos.",
+      "D": "Perda da memória imunológica das cobaias.",
+      "E": "Mudança da janela imunológica dos animais testados."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q131",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 131,
+    "lingua_estrangeira": null,
+    "enunciado": "O bioma Pampa corresponde a quase dois terços do Rio\nGrande do Sul e pouco mais de 2% do Brasil, contendo cerca\nde 3 mil espécies de plantas. Dentre essas, aproximadamente\n400 são gramíneas, que são ervas comumente chamadas\nde grama ou capim e apresentam polinização pelo vento\n(anemocoria). Esse tipo de polinização é pouco eficiente, pois o\nencontro entre os grãos de pólen e o estigma ocorre ao acaso.\nDisponível em: http://zh.clicrbs.com.br.\nAcesso em: 15 nov. 2014 (adaptado).\nUma adaptação que também favoreceu o sucesso reprodutivo\nnessas plantas é o fato de elas possuírem flores com",
+    "alternativas": {
+      "A": "pétalas atrativas.",
+      "B": "néctar açucarado.",
+      "C": "odor desagradável.",
+      "D": "tamanho pronunciado.",
+      "E": "grãos de pólen numerosos."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q132",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 132,
+    "lingua_estrangeira": null,
+    "enunciado": "Segundo especialistas, há uma ligação causal entre\na ocupação nos 12 municípios do sistema de captação\nde água Cantareira, a destruição da mata ciliar de seus\n8 171 km de rios e o esgotamento do sistema. Choveu menos\nno último ano, mas, se a mata nativa ainda estivesse lá,\nos reservatórios poderiam ter mais água — e de melhor\nqualidade. Técnicos propõem o plantio de 30 milhões de\nmudas para recompor a mata ciliar em 34 mil hectares.\nSANT’ANNA, L. O Estado de S. Paulo, 21 fev. 2015 (adaptado).\nEssa ação está diretamente relacionada à prevenção do(a)",
+    "alternativas": {
+      "A": "salinização da água.",
+      "B": "assoreamento do rio.",
+      "C": "compactação do solo.",
+      "D": "contaminação das margens.",
+      "E": "eutrofização dos reservatórios."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q133",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 133,
+    "lingua_estrangeira": null,
+    "enunciado": "A palavra força é usada em nosso cotidiano com\ndiversos significados. Em física, essa mesma palavra\npossui um significado próprio, diferente daqueles da\nlinguagem do nosso dia a dia. As cinco frases seguintes,\ntodas encontradas em textos literários ou jornalísticos,\ncontêm a palavra força empregada em diversos contextos.\n1. “As Forças Armadas estão de prontidão para defender\nas nossas fronteiras.”\n2. “Por motivo de força maior, o professor não poderá\ndar aula hoje.”\n3. “A força do pensamento transforma o mundo.”\n4. “A bola bateu na trave e voltou com mais força ainda.”\n5. “Tudo é atraído para o centro da Terra pela força\nda gravidade.”\nA abordagem científica do termo força aparece na frase",
+    "alternativas": {
+      "A": "1.",
+      "B": "2.",
+      "C": "3.",
+      "D": "4.",
+      "E": "5."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q134",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 134,
+    "lingua_estrangeira": null,
+    "enunciado": "Problemas no DNA são responsáveis por cerca de\nmetade dos casos de perda de audição na infância.\nUm estudo com camundongos mostrou que a injeção de\num vírus, geneticamente modificado, no embrião desses\nanimais pode corrigir o problema e restaurar parte da audição.\nDisponível em: www.bbc.com. Acesso em: 11 jul. 2015 (adaptado).\nDe acordo com o texto, qual técnica permite a correção\nparcial do problema?",
+    "alternativas": {
+      "A": "Terapia gênica.",
+      "B": "Marcação molecular.",
+      "C": "Clonagem terapêutica.",
+      "D": "Hibridização genômica.",
+      "E": "Sequenciamento gênico."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q135",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Ciências da Natureza e suas Tecnologias",
+    "numero": 135,
+    "lingua_estrangeira": null,
+    "enunciado": "O cágado-de-barbelas vive nas águas poluídas do Rio\nPreto, em São José do Rio Preto, interior de São Paulo.\nOs animais dessa espécie, usados em estudos de\necotoxicologia, são atraídos para esses locais por causa\ndo acúmulo de matéria orgânica nos pontos de despejo\nde esgoto, ambientes com grande quantidade de metais\ne baixíssimo teor de oxigênio.\nDisponível em: www.unesp.br. Acesso em: 4 nov. 2014 (adaptado).\nNesse contexto, do ponto de vista ecológico, esses animais\nsão considerados",
+    "alternativas": {
+      "A": "bioindicadores.",
+      "B": "biorremediadores.",
+      "C": "organismos invasores.",
+      "D": "anaeróbios facultativos.",
+      "E": "decompositores adaptados."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q136",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 136,
+    "lingua_estrangeira": null,
+    "enunciado": "Um novo condomínio foi construído na Rua X. Alguns\nlotes já receberam numeração da prefeitura, enquanto\noutros apresentam apenas o sobrenome do seu proprietário.\nO servidor da prefeitura numerará os lotes que ainda não\nforam numerados. Para isso, ele observa o padrão da\nnumeração já existente, conforme apresentado na figura,\npercebendo que, em cada lado da rua, as sequências das\nnumerações formam progressões aritméticas, e, com isso,\natribui um número ao lote da família Costa.\nCosta Pereira 139 Dias 183\nRua X\n84 106 Teixeira Guimarães 172\nO número atribuído ao lote da família Costa é",
+    "alternativas": {
+      "A": "51.",
+      "B": "73.",
+      "C": "95.",
+      "D": "117.",
+      "E": "161."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q136.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q137",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 137,
+    "lingua_estrangeira": null,
+    "enunciado": "Os integrantes de uma banda de rock realizaram um\nprocesso seletivo para contratar um novo vocalista. Foram\npré-selecionados cinco cantores para a realização de três\ntestes. As frequências, medidas em hertz, alcançadas\nnesses testes, por cada cantor foram:\n• I: 380; 410; 470.\n• II: 330; 350; 490.\n• III: 420; 420; 390.\n• IV: 407; 410; 404.\n• V: 310; 380; 480.\nOs integrantes da banda decidiram selecionar o cantor\nque apresentou a maior frequência média nos três testes.\nO cantor selecionado foi o",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q138",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 138,
+    "lingua_estrangeira": null,
+    "enunciado": "A capacidade de refrigeração de um condicionador\nde ar é medida na unidade BTUh. O cálculo de quantos\nBTUh são necessários para a refrigeração adequada de\num ambiente depende de vários fatores. Em um ambiente\nfechado de altura padrão, com uma única pessoa, cada\nmetro quadrado de área do piso demanda 600 BTUh de\ncapacidade do condicionador de ar e, para cada pessoa\na mais nesse ambiente, exige-se mais 600 BTUh. Além\ndisso, cada aparelho eletrônico ligado (excluindo-se o\ncondicionador de ar) demanda mais 600 BTUh.\nDisponível em: www.webarcondicionado.com.br.\nAcesso em: 24 nov. 2021 (adaptado).\nEm uma sala retangular fechada de 6 metros de\ncomprimento, 4 metros de largura e altura padrão,\n5 pessoas trabalham simultaneamente em 5 computadores\nligados, e há um condicionador de ar de 24 600 BTUh.\nUm projeto prevê a contratação de novos funcionários\ne a instalação de novos computadores. Cada funcionário\nterá acesso a um único computador, e cada computador\nsó poderá ser utilizado por um único funcionário.\nSerão mantidos os computadores, os funcionários e o\ncondicionador de ar atuais, devendo este ser suficiente para\na refrigeração adequada da sala após a implementação do\nprojeto. Não haverá outros aparelhos eletrônicos no local.\nQual é a quantidade máxima de novos funcionários que pode\nser contratada de forma que se atenda à implementação\ndo projeto?",
+    "alternativas": {
+      "A": "3",
+      "B": "4",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q139",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 139,
+    "lingua_estrangeira": null,
+    "enunciado": "O Relâmpago de Catatumbo é um fenômeno natural\nque gera muitas tempestades elétricas no estado de\nZulia, Venezuela, por registrar a maior concentração\nde relâmpagos do mundo.\nDe acordo com a estatal Agência Venezuelana de\nNotícias, chegou-se a registrar, em um único ano, um\nmilhão, cento e setenta e seis relâmpagos.\nDisponível em: http://g1.globo.com.\nAcesso em: 31 mar. 2014 (adaptado).\nA representação numérica dessa quantidade de relâmpagos é",
+    "alternativas": {
+      "A": "1 000 176.",
+      "B": "1 176 000.",
+      "C": "100 000 176.",
+      "D": "176 000 000.",
+      "E": "1 000 000 176."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q140",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 140,
+    "lingua_estrangeira": null,
+    "enunciado": "Num dia de promoção, um supermercado propõe dar\ndesconto em um produto e, mantendo fixo o preço da\nunidade, apresenta ao consumidor as seguintes propostas:\n• opção 1: pague 8 e leve 9 unidades;\n• opção 2: leve 8 e pague 7 unidades.\nUm consumidor quer escolher a opção que lhe\noferecerá o maior desconto percentual.\nA opção que oferece o maior desconto, e o percentual\ndesse desconto é",
+    "alternativas": {
+      "A": "opção 1, com 8,88% de desconto.",
+      "B": "opção 1, com 11,11% de desconto.",
+      "C": "opção 1, com 12,50% de desconto.",
+      "D": "opção 2, com 12,50% de desconto.",
+      "E": "opção 2, com 14,28% de desconto."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q141",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 141,
+    "lingua_estrangeira": null,
+    "enunciado": "Para reforçar sua renda familiar, uma pessoa inaugurou\num estabelecimento que vende refrigerantes. Ela adquiriu\num tipo de refrigerante para revenda no primeiro mês de\nfuncionamento do estabelecimento. Foram compradas\n20 caixas desse refrigerante, pagando R$ 18,00 a caixa,\ncom 12 latas cada. Ao final desse mês, obteve R$ 600,00\nde lucro com a venda de todas as latas.\nNo segundo mês, ela compra a mesma quantidade\nde latas de refrigerante comprada no primeiro mês, pelo\nmesmo preço, e decide aumentar o preço de venda de cada\nlata de refrigerante, de modo a aumentar o seu lucro em\nR$ 360,00 em relação ao lucro do mês anterior.\nQual será o novo preço de venda, em real, de cada lata\nde refrigerante?",
+    "alternativas": {
+      "A": "1,50",
+      "B": "2,40",
+      "C": "3,00",
+      "D": "4,00",
+      "E": "5,50"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q142",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 142,
+    "lingua_estrangeira": null,
+    "enunciado": "Em um curso de desenho artístico, a professora\norganizou uma oficina prática com dois estudantes,\nenvolvendo uma atividade de representação visual.\nA figura representa um balanço, constituído de um assento\nretangular paralelo ao plano xOy do chão, ligado a uma\nhaste horizontal por cordas de sustentação paralelas entre\nsi e de mesma medida. O ponto M representa a posição de\num objeto, fixado pela professora, no centro do assento.\nFoi solicitado que o estudante I se posicionasse tendo vista\nfrontal da trajetória descrita pelo ponto M, e a estudante II,\ntendo vista lateral dessa trajetória enquanto o balanço se\nmovimentava. Nesse movimento, as cordas de sustentação\npermaneciam esticadas e ortogonais à haste horizontal.\nA professora solicitou que os estudantes observassem e\ndescrevessem a trajetória realizada pelo ponto M ao longo\ndo movimento.\nAs projeções ortogonais da trajetória realizada pelo ponto\nM vistas pelo estudante I no plano yOz e pela estudante II\nno plano xOz são, respectivamente, representadas por",
+    "alternativas": {
+      "A": "um segmento de reta vertical e um segmento de reta horizontal.",
+      "B": "um segmento de reta vertical e uma curva em forma de parábola.",
+      "C": "uma curva em forma de parábola e um segmento de reta vertical.",
+      "D": "um arco de circunferência e um segmento de reta vertical.",
+      "E": "um segmento de reta vertical e um arco de circunferência."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q142.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q143",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 143,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma confecção de roupas pretende contratar novos\nfuncionários e, para treiná-los, dispõe de duas opções:\n• ela própria realizar o treinamento que teria custo\nde R$ 9 000,00 por funcionário. Nesse caso, ao fim\ndo treinamento, as coleções de peças de roupas\nconfeccionadas por funcionário serão vendidas por\nR$ 1 500,00 pela confecção, valor que será abatido do\ninvestimento com o treinamento de cada funcionário;\n• contratar uma empresa especializada que cobra\nR$ 4 000,00 por funcionário. Nesse caso, as\npeças produzidas no treinamento não poderão ser\ncomercializadas pela confecção.\nA confecção investirá um total de R$ 2 520 000,00 no\ntreinamento desses futuros funcionários.\nQuantos funcionários essa confecção conseguirá treinar a\nmais se optar pela empresa especializada em vez de ela\nprópria realizar o treinamento?",
+    "alternativas": {
+      "A": "294",
+      "B": "336",
+      "C": "390",
+      "D": "504",
+      "E": "630"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q144",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 144,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa ampliou uma foto no computador e,\nao imprimi-la, verificou que a qualidade não estava\nboa. Assim, ficou curioso em saber as grandezas\nenvolvidas no parâmetro que define a qualidade de\numa imagem. Ao pesquisar, descobriu que um parâmetro\nque define a qualidade da imagem, ou resolução, pode\nser considerado pela quantidade de pontos, chamados\npixels, que há em cada quadradinho de 1 cm de lado\ncontido na imagem.\nConsiderando a pesquisa realizada, a unidade de medida\ndo parâmetro de qualidade de uma imagem é expressa por",
+    "alternativas": {
+      "A": "cm2 ⋅ pixel",
+      "B": "cm ⋅ pixel cm",
+      "C": "(cid:31)pixel(cid:30)2 pixel",
+      "D": "cm pixel",
+      "E": "cm2"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q144.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q145",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 145,
+    "lingua_estrangeira": null,
+    "enunciado": "Os preços da gasolina e do etanol no Brasil são\nfrequentemente noticiados nos telejornais. Após pesquisa\nrealizada pelo Índice de Preços Ticket Car (IPTC), os\npreços desses combustíveis, em real por litro, em quatro\nestados e no Distrito Federal, foram divulgados pelo\ntelejornal, conforme o quadro.\nDisponível em: http://economia.uol.com.br.\nAcesso em: 19 jan. 2015 (adaptado).\nDentre os locais divulgados pelo telejornal, o que\napresenta a maior razão entre os preços, em real por litro,\nda gasolina e do etanol é",
+    "alternativas": {
+      "A": "Distrito Federal.",
+      "B": "Goiás.",
+      "C": "Mato Grosso.",
+      "D": "Rio de Janeiro.",
+      "E": "São Paulo."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q145.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q146",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 146,
+    "lingua_estrangeira": null,
+    "enunciado": "Três amigos foram a um restaurante que\nvende diferentes opções de pratos, cada um deles\ncomercializados a um mesmo valor fixo, em real. Eles\nconsumiram, juntos, R$ 16,50 em sucos e cada um pediu\nexatamente um desses pratos, sendo esses os únicos\ngastos efetuados no restaurante. O valor total da conta\nfoi de R$ 82,50, incluída nesse valor uma taxa de serviço\nde 10%, calculada sobre todos os gastos efetuados.\nQual é o preço cobrado, em real, de cada prato\ncomercializado nesse restaurante?",
+    "alternativas": {
+      "A": "19,25",
+      "B": "19,50",
+      "C": "19,80",
+      "D": "20,00",
+      "E": "24,20"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q147",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 147,
+    "lingua_estrangeira": null,
+    "enunciado": "Um engenheiro civil organizou duas equipes de\npedreiros, I e II, para a construção de um muro bastante\nextenso. Todos os pedreiros, de ambas as equipes,\napresentam o mesmo rendimento por hora trabalhada\nfrente à construção planejada. A equipe I era composta\npor 3 pedreiros, que construíram 36 metros quadrados de\nmuro, em 2 dias, trabalhando 6 horas por dia. A equipe II\nera composta por 5 pedreiros, que trabalharam 8 horas\ndiárias, durante 6 dias.\nQuantos metros quadrados a equipe II construiu a mais\ndo que a equipe I?",
+    "alternativas": {
+      "A": "144",
+      "B": "180",
+      "C": "204",
+      "D": "240",
+      "E": "276"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q148",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 148,
+    "lingua_estrangeira": null,
+    "enunciado": "Na primeira edição de uma Feira do Livro, a\norganização contou com a participação de dez voluntários,\nde mesma habilidade e experiência, que montaram cinco\nestandes de livros em uma semana, trabalhando todos\nos dias.\nNa segunda edição da Feira do Livro, a organização\ndispôs de duas semanas para montar os estandes.\nConsidere que todos os novos voluntários escolhidos\ntenham a mesma experiência, habilidade e produtividade\ndos voluntários da primeira edição da feira e que trabalharão\ntodos os dias nessas duas semanas.\nConsidere duas situações para a segunda edição:\n• I: o número de voluntários permanecerá o mesmo;\n• II: o número de estandes a serem montados\npermanecerá o mesmo.\nObserve que o aumento no tempo de organização\npara montar os estandes, junto a uma das duas situações\ncitadas, pode fazer o valor das outras variáveis (número\nde voluntários e de estandes) aumentar, diminuir ou\npermanecer igual.\nO número de estandes na situação I e o número de\nvoluntários na situação II, na segunda edição da feira,\ncomparados aos números da primeira edição, serão,\nrespectivamente,",
+    "alternativas": {
+      "A": "maior e maior.",
+      "B": "maior e menor.",
+      "C": "igual e igual.",
+      "D": "igual e menor.",
+      "E": "menor e menor."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q149",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 149,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma escala termométrica X marca −10 °°X para o ponto\nde fusão da água e 140 °°X para o seu ponto de ebulição.\nNa escala Celsius, as temperaturas de fusão e de ebulição\nda água são 0 °°C e 100 °°C, respectivamente. O gráfico que\nexpressa a relação entre essas duas escalas é uma reta.\nA figura apresenta a representação de cinco gráficos\n(I, II, III, IV e V) num sistema de coordenadas cartesianas.\nQual gráfico representa a relação entre as temperaturas\nnas escalas Celsius e X?",
+    "alternativas": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV",
+      "E": "V"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q149.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q150",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 150,
+    "lingua_estrangeira": null,
+    "enunciado": "Um garrafão, cujas seções transversais são circunferências, encontra-se cheio de água. Ao ser acoplado a um\nbebedouro, ficou com sua base voltada para cima e paralela ao chão. A torneira desse bebedouro foi aberta para escoar\ntoda a água desse garrafão com vazão constante. A vista frontal do garrafão é apresentada na figura.\nO gráfico que melhor representa a variação da altura h da água no garrafão, em função do tempo t, é",
+    "alternativas": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q150.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q151",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 151,
+    "lingua_estrangeira": null,
+    "enunciado": "Na construção de um avião de papel, uma criança dobrou uma folha retangular sobrepondo o lado DC ao lado AB.\nAssim, ela obteve dois novos retângulos, sendo um deles o retângulo DCNM, conforme a figura 1. Em seguida, ela fez\numa nova dobradura, mantendo N fixo e sobrepondo o lado CN, de DCNM, a um segmento de MN. Essa sobreposição\ndeterminou um ponto P em MN e também um ponto Q em DC, conforme a figura 2.\nConsiderando as classificações quanto à medida dos ângulos e à medida dos lados, o triângulo NPQ é",
+    "alternativas": {
+      "A": "acutângulo e escaleno.",
+      "B": "acutângulo e isósceles não equilátero.",
+      "C": "acutângulo e equilátero.",
+      "D": "retângulo e escaleno.",
+      "E": "retângulo e isósceles não equilátero."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q151.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q152",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 152,
+    "lingua_estrangeira": null,
+    "enunciado": "A pressão sonora (P), medida em newton por metro quadrado (N/m²), e o nível dessa pressão sonora (n), medido\nem decibel (dB), se relacionam mediante a expressão\n(cid:30) P (cid:27)\nn(cid:31)20log(cid:28) (cid:25),\n(cid:29)P (cid:26)\n0\nsendo P = 2 × 10–5 N/m2 uma constante, denominada limiar de percepção do ouvido humano.\n0\nDurante uma fiscalização, foi medido, por um decibelímetro, que o ruído proveniente de um carro, com seu som\nautomotivo ligado, atingiu um nível de pressão sonora de 80 dB.\nA pressão sonora, em newton por metro quadrado, proveniente desse ruído foi igual a",
+    "alternativas": {
+      "A": "8 × 10−5",
+      "B": "5 × 10−2",
+      "C": "2 × 10−1",
+      "D": "1 × 103",
+      "E": "2 × 109"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q152.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q153",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 153,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma microempresa pretende fabricar pipas para vender\nno próximo verão. Um modelo de pipa está representado\npelo quadrilátero ABCD.\nNessa representação, os segmentos AB, BC e CE\nmedem, respectivamente, 20 cm, 34 cm e 30 cm. Além\ndisso, E pertence ao segmento AC e é ponto médio do\nsegmento BD.\nA medida da área, em centímetro quadrado, desse\nmodelo de pipa é",
+    "alternativas": {
+      "A": "58.",
+      "B": "96.",
+      "C": "108.",
+      "D": "184.",
+      "E": "672."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q153.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q154",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 154,
+    "lingua_estrangeira": null,
+    "enunciado": "As distâncias no espaço são tão grandes que seria\nmuito difícil gerenciar os números medindo-os em milhas ou\nem quilômetros. Então, os astrônomos criaram uma medida\npadrão, o ano-luz. Um ano-luz é a distância percorrida pela\nluz, no vácuo, durante um ano. Para se ter uma ideia, um\nsegundo-luz é igual a 300 000 km, ou seja, se dois objetos\nestão separados por um segundo-luz, a distância entre\neles é 300 000 km.\nNa imagem, tem-se a representação da Via Láctea e,\nno círculo em detalhe, a distância entre o Sol e a Terra,\nigual a 8 minutos-luz.\nDisponível em: http://ciencia.hsw.uol.com.br.\nAcesso em: 5 ago. 2012.\nA distância entre o Sol e a Terra, em km, escrita como\numa potência de base 10, é de",
+    "alternativas": {
+      "A": "24 × 105",
+      "B": "144 × 105",
+      "C": "18 × 106",
+      "D": "24 × 106",
+      "E": "144 × 106"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q154.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q155",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 155,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma empresa com 425 funcionários resolve sortear,\nnuma festa comemorativa, uma bicicleta entre os\nfuncionários que têm filhos. Dos seus 425 funcionários,\n68 não têm filhos, 153 têm um filho, 119 têm dois filhos e\no restante tem mais de dois filhos. Cartões, com um único\nnúmero impresso, serão distribuídos a funcionários que\ntêm, pelo menos, um filho. Cada funcionário receberá, no\nmáximo, um desses cartões.\nA probabilidade de a bicicleta ser sorteada para um\nfuncionário que tenha exatamente dois filhos é\n357",
+    "alternativas": {
+      "A": "425 238",
+      "B": "425 119",
+      "C": "425 119",
+      "D": "357 1",
+      "E": "119"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q155.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q156",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 156,
+    "lingua_estrangeira": null,
+    "enunciado": "O processo de truncamento de um octaedro regular\nconsiste em retirar, a partir de cada vértice, uma pirâmide\nobtida pelo seccionamento desse poliedro por um plano,\nconforme a figura.\nNão há interseção entre duas dessas secções.\nDisponível em: www.matematicasvisuales.com.\nAcesso em: 21 out. 2019 (adaptado).\nQual é a quantidade de vértices do octaedro truncado?",
+    "alternativas": {
+      "A": "6",
+      "B": "8",
+      "C": "14",
+      "D": "24",
+      "E": "30"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q156.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q157",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 157,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma fábrica de produtos químicos utiliza, para\narmazenar a sua produção, recipientes na forma de cilindros\ncirculares retos, com 1 metro de altura e raio externo da\nbase igual a 25 cm. Para facilitar o transporte desse tipo\nde recipiente, cada um deles será colocado dentro de uma\ncaixa, na forma de paralelepípedo retangular reto de base\nquadrada, e com a mesma altura do cilindro. A empresa\ndeseja construir a menor caixa possível em que possa\ncolocar cada cilindro.\nDe acordo com o texto, a medida interna do lado da base\nda caixa, em centímetro, a ser construída será igual a",
+    "alternativas": {
+      "A": "25.",
+      "B": "35.",
+      "C": "39.",
+      "D": "50.",
+      "E": "157."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q158",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 158,
+    "lingua_estrangeira": null,
+    "enunciado": "No Brasil, o valor mensal pago na conta de energia\nelétrica pode ser calculado pela fórmula: [consumo de\nenergia (kWh) × valor da tarifa (R$/kWh)] + Cosip, sendo\nCosip a Contribuição ao Sistema de Iluminação Pública,\ncujo valor é definido pelo município.\nEm um estado brasileiro que utiliza essa forma de\ncálculo da conta de energia elétrica, o valor da tarifa é\nestipulado conforme as seguintes faixas de consumo:\n• até 100 kWh: R$ 0,90 por kWh;\n• de 101 a 200 kWh: R$ 0,90 para os 100 primeiros\nkWh e R$ 1,00 por kWh consumido a partir daí;\n• acima de 200 kWh: R$ 0,90 para os 100 primeiros\nkWh consumidos; R$ 1,00 por kWh para os 100 kWh\nseguintes e R$ 1,20 por kWh consumido a partir daí.\nUma pessoa desse estado percebe que já consumiu\n180 kWh no mês atual e sabe que, em seu município, é\ncobrada uma Cosip (única) no valor de R$ 10,00 para\nconsumo de até 200 kWh ou de R$ 12,00 para consumo\nsuperior a 200 kWh. Para que a conta do mês atual não\nultrapasse R$ 220,00, ela decide estabelecer como meta\num limite de consumo a partir daquele momento até o final\ndo ciclo de faturamento.\nO limite de consumo, em kWh, que a pessoa deverá\nestabelecer para atingir sua meta é",
+    "alternativas": {
+      "A": "30.",
+      "B": "35.",
+      "C": "40.",
+      "D": "42.",
+      "E": "50."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q158.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q159",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 159,
+    "lingua_estrangeira": null,
+    "enunciado": "Após um período de seca e baixa nos níveis dos\nreservatórios de água, pesquisadores registraram, num\ncerto período, os seguintes volumes de chuva e quantidades\nde dias de precipitação em cinco reservatórios:\n• I: 350 mm em 29 dias;\n• II: 382 mm em 30 dias;\n• III: 390 mm em 31 dias;\n• IV: 389 mm em 33 dias;\n• V: 338 mm em 29 dias.\nUm dos parâmetros utilizados nessa pesquisa é a razão\nentre o volume de chuva, em milímetro, e a quantidade de\ndias de precipitação em cada reservatório, nessa ordem.\nA maior razão se verifica com os dados do reservatório",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q160",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 160,
+    "lingua_estrangeira": null,
+    "enunciado": "Apesar de a participação das mulheres no mercado de\ntrabalho ter crescido ao longo dos anos, ainda existe uma\ngrande diferença salarial entre homens e mulheres. Os dados\ndo Cadastro Geral de Empregados e Desempregados (Caged)\napresentados no gráfico mostram a evolução da diferença salarial\nde contratação, com medições feitas de dois em dois anos.\nDisponível em: http://classificados.folha.uol.com.br.\nAcesso em: 21 jun. 2017 (adaptado).\nDe acordo com os dados fornecidos, qual valor mais se\naproxima da diferença salarial média entre homens e\nmulheres nesse período?",
+    "alternativas": {
+      "A": "121,7",
+      "B": "120,0",
+      "C": "110,5",
+      "D": "82,0",
+      "E": "65,5"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q160.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q161",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 161,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa planeja fazer um intercâmbio com duração\nde dois meses consecutivos a serem escolhidos dentre os\nseguintes meses: abril, maio, junho e julho.\nA tabela apresenta as cinco cidades possíveis para\no intercâmbio de seu interesse (X, Y, Z, W e K), com as\nrespectivas temperaturas máximas mensais registradas\nno mesmo período do ano anterior.\nTemperaturas máximas (°°C)\nCidade Abril Maio Junho Julho\nX 17 27 20 25\nY 24 22 21 25\nZ 20 20 28 20\nW 23 24 20 19\nK 19 25 26 19\nSeu médico recomendou que, com base nos dados\nfornecidos na tabela, ela escolhesse a cidade que\napresentasse, em dois meses consecutivos, a maior média\nde temperatura máxima mensal e fizesse o intercâmbio\nnesse período.\nQual cidade a pessoa deve escolher para satisfazer\nadequadamente a recomendação médica?",
+    "alternativas": {
+      "A": "X",
+      "B": "Y",
+      "C": "Z",
+      "D": "W",
+      "E": "K"
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q161.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q162",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 162,
+    "lingua_estrangeira": null,
+    "enunciado": "Em um supermercado, uma marca de papel higiênico\né comercializada em cinco diferentes tipos de pacotes,\ncontendo quantidades distintas de rolos em cada um. Todos\nos rolos são de mesma largura e com metragens lineares\ndiversas. Os preços de cada tipo de pacote são distintos,\ne as especificações são estas:\n• tipo I: pacote contendo 4 rolos, com metragem linear\nde 60 m por rolo, ao preço de R$ 4,90;\n• tipo II: pacote contendo 12 rolos, com metragem\nlinear de 20 m por rolo, ao preço de R$ 4,50;\n• tipo III: pacote contendo 16 rolos, com metragem\nlinear de 30 m por rolo, ao preço de R$ 8,60;\n• tipo IV: pacote contendo 20 rolos, com metragem\nlinear de 30 m por rolo, ao preço de R$ 11,00;\n• tipo V: pacote contendo 24 rolos, com metragem\nlinear de 20 m por rolo, ao preço de R$ 8,70.\nUm cliente vai a esse supermercado, avalia cada uma\ndas especificações e resolve adquirir um pacote de papel\nhigiênico que tenha o menor preço por metro linear.\nQual foi o tipo de pacote adquirido por esse cliente?",
+    "alternativas": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "IV",
+      "E": "V"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q163",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 163,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma escola analisou as propostas de cinco empresas\npara alugar uma máquina fotocopiadora que atenda à\ndemanda de 12 000 cópias mensais. Cada empresa cobra\num valor fixo pelo aluguel mensal da máquina, mais um\nvalor proporcional ao número de cópias realizadas, ambos\nem real. Assim, o custo total C, do aluguel de uma máquina,\nque atenda a uma demanda de x cópias mensais, em cada\numa das cinco empresas, pode ser dado pelas expressões:\n• empresa I: C = 500 + 0,40x;\n• empresa II: C = 800 + 0,50x;\n• empresa III: C = 2 000 + 0,20x;\n• empresa IV: C = 1 100 + 0,25x;\n• empresa V: C = 600 + 0,30x.\nA escola escolheu a empresa que apresentou a\nproposta que fornecia o serviço necessário pelo menor\ncusto mensal.\nA empresa escolhida foi a",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q163.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q164",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 164,
+    "lingua_estrangeira": null,
+    "enunciado": "O limite recomendável de carga a ser transportada por\num caminhão é 10 000 kg. Ao transportar uma carga que\nexcede em 300 kg esse limite, o consumo de combustível\né 2% maior que o consumo observado ao transportar\n10 000 kg.\nEm uma rodovia, o consumo de combustível desse\ncaminhão é proporcional à quilometragem percorrida,\nquando considerada uma mesma carga transportada.\nSabe-se que, transportando 10 000 kg por 90 km nessa\nrodovia, esse caminhão consome 60 litros de combustível.\nSuponha que esse caminhão irá transportar uma carga de\n10 300 kg por 75 km nessa rodovia.\nQuantos litros de combustível esse caminhão consumirá\npara efetuar esse transporte?",
+    "alternativas": {
+      "A": "49,0",
+      "B": "50,0",
+      "C": "51,0",
+      "D": "58,8",
+      "E": "61,2"
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q165",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 165,
+    "lingua_estrangeira": null,
+    "enunciado": "Para estimar a quantidade de tijolos a ser usada na\nconstrução de uma parede, é necessário saber como o\ntijolo será assentado, pois a estimativa depende de qual\nface do tijolo ficará aparente na parede.\nEm uma obra, um pedreiro deverá construir uma\nparede, na qual haverá uma janela, ambas em formato\nretangular, utilizando tijolos em forma de blocos de faces\ntambém retangulares, com as medidas indicadas na figura\na seguir.\nSegundo as orientações que recebeu, a janela não\npoderá ser tão pequena a ponto de a medida de sua área\nequivaler à área da face aparente de 100 tijolos, e nem tão\ngrande a ponto de ocupar uma área de medida maior ou\n1\nigual a da medida da área da parede, na situação em\n6\nque não houvesse janela na parede. Despreze a espessura\nda massa para assentar esses tijolos.\nNessas condições, as quantidades mínima e máxima de\ntijolos que poderão ser utilizados na construção dessa\nparede são, respectivamente,",
+    "alternativas": {
+      "A": "100 e 400.",
+      "B": "100 e 2 400.",
+      "C": "2 000 e 2 300.",
+      "D": "733 e 2 396.",
+      "E": "2 500 e 2 800."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q165.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q166",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 166,
+    "lingua_estrangeira": null,
+    "enunciado": "A transformação entre os tipos de energia cinética\n(E ) e energia potencial (E ), em sistemas conservativos,\nc p\né regida pela lei que afirma que a energia mecânica, dada\npela soma E + E , é constante ao longo do tempo. Assuma\nc p\nque, em um sistema conservativo, a energia mecânica é de\n12 kJ (quilojoule), sendo observado que a energia cinética\nE (em quilojoule), dada em função do tempo t (em hora),\nc\napresentou o comportamento descrito no gráfico.\nPretende-se avaliar, no período de 0 a 8 horas, qual é o\nmaior valor possível de ser atingido pela energia potencial\nE nesse sistema conservativo.\np\nO valor máximo da energia potencial, em quilojoule, é\nigual a",
+    "alternativas": {
+      "A": "12.",
+      "B": "9.",
+      "C": "5.",
+      "D": "3.",
+      "E": "1."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q166.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q167",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 167,
+    "lingua_estrangeira": null,
+    "enunciado": "Visando obter créditos de carbono, uma empresa,\nemissora de gases de efeito estufa, elabora um projeto de\nreflorestamento em uma área desmatada. De acordo com o\nprojeto, no primeiro ano serão reflorestados 500 hectares.\nA partir daí, a cada ano, a área total reflorestada será\naumentada em 50% em relação ao ano anterior.\nA expressão algébrica que representa a área total\nreflorestada (A ), em hectare, ao final de n anos é\nn",
+    "alternativas": {
+      "A": "A = 500 ⋅ 0,5n−1 n",
+      "B": "A = 500 ⋅ 1,5n−1 n",
+      "C": "A = 500 + n ⋅ 250 n",
+      "D": "A = 500 ⋅ (1 + 0,5n−1) n",
+      "E": "A = 500 + (n − 1) ⋅ 250 n"
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q167.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q168",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 168,
+    "lingua_estrangeira": null,
+    "enunciado": "O automóvel é um bem que se desvaloriza muito\nrapidamente, quando comparado a outros bens. Após\na venda, um automóvel novo já sofre uma grande\ndesvalorização. O histórico de um automóvel novo,\nvendido por R$ 30 000,00, apresenta os seguintes\nvalores (V ) de mercado, após decorridos os períodos\nindicados a seguir:\n• ao final de um ano, R$ 27 000,00;\n• ao final de dois anos, R$ 24 300,00;\n• ao final de três anos, R$ 21 870,00.\nEsses preços seguiram um modelo exponencial que\nexpressa V em função do número n de ano de uso, pela\nrelação V(n) = V · q n, em que V é o valor inicial, q é o\n0 0\nfator de desvalorização e n é o tempo, em ano, decorrido\napós a venda.\nO valor, em milhar de real, com uma casa decimal, que\nmais se aproxima do valor de mercado desse carro, ao\nfinal de seis anos, é",
+    "alternativas": {
+      "A": "13,7.",
+      "B": "14,3.",
+      "C": "14,6.",
+      "D": "15,9.",
+      "E": "17,7."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q168.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q169",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 169,
+    "lingua_estrangeira": null,
+    "enunciado": "A partir de um exame clínico, ficou constatado que\numa pessoa encontrava-se com uma grave deficiência\nde vitaminas X e Y. Ela foi orientada a fazer 100% de\nreposição diária de cada vitamina. Devido à sua condição\nsocioeconômica, ela só dispõe dos alimentos Z e W para\nsuprir essa deficiência. Os alimentos Z e W custam,\nrespectivamente, R$ 3,00 e R$ 8,00 por quilo. Segue um\nquadro com a porcentagem que cada 100 g desses dois\nalimentos fornece de cada vitamina.\nAlimento Z Alimento W\nVitamina\n(% por 100 g) (% por 100 g)\nX 25 8\nY 0 16\nO valor mínimo diário, em real, que a pessoa gastará para\nsuprir suas necessidades de vitaminas X e Y, consumindo\nos alimentos Z e W, é",
+    "alternativas": {
+      "A": "5,00.",
+      "B": "5,60.",
+      "C": "6,10.",
+      "D": "6,20.",
+      "E": "10,00."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q169.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q170",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 170,
+    "lingua_estrangeira": null,
+    "enunciado": "Dois objetos metálicos, ambos com temperatura inicial\nigual a 10 °°C, são aquecidos. Suas temperaturas, y e y ,\n1 2\nem função do tempo t, em segundo, estão representadas\nno plano cartesiano pelas semirretas com origem no ponto\nA(0 ; 10) e que passam, respectivamente, pelos pontos\nB(20 ; 50) e C(40 ; 30). Sabe-se que, em determinado\nintervalo de tempo, a temperatura y aumentou 20 °°C.\n1\nNesse mesmo intervalo de tempo, a temperatura y ,\n2\nem grau Celsius, aumentou",
+    "alternativas": {
+      "A": "5.",
+      "B": "10.",
+      "C": "15.",
+      "D": "20.",
+      "E": "50."
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q170.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q171",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 171,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma empresa produz embalagens para acomodar\nseu produto. As embalagens atuais são cilíndricas e\nmedem 16 cm de diâmetro e 20 cm de altura. A pedido\nda direção, as embalagens terão um novo formato.\nElas serão na forma de paralelepípedos retos retângulos,\nde base quadrada, de lado medindo 16 cm. A capacidade\ndelas deverá ser, pelo menos, 400 mL maior que a das\nembalagens atuais.\nUse 3 como valor aproximado de π.\nO valor aproximado da medida da altura das novas\nembalagens, em centímetro, é",
+    "alternativas": {
+      "A": "11.",
+      "B": "15.",
+      "C": "17.",
+      "D": "62.",
+      "E": "66."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q171.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q172",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 172,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma fábrica utiliza latas cilíndricas como embalagem\nde seus produtos. Para embalar um novo produto, essa\nfábrica necessitará de latas cilíndricas com, no mínimo, o\ntriplo da capacidade volumétrica das que estão em uso,\ne com o menor custo possível. O representante de uma\nempresa de embalagens disponibilizou para essa fábrica\ncinco opções de latas, relacionando as medidas das latas\nnovas com as que estão em uso. São elas:\n• I: multiplicar a medida do raio por 6 e manter a da altura;\n• II: triplicar as medidas da área da base e da altura;\n• III: triplicar a medida do raio e manter a da altura;\n• IV: manter a medida do raio e triplicar a da altura;\n• V: triplicar as medidas do raio e da altura.\nO preço de cada lata é diretamente proporcional à sua\ncapacidade volumétrica.\nAs exigências da fábrica são atendidas pelo tipo de lata\napresentada na opção",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q173",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 173,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma pessoa decide fazer uma viagem de automóvel,\ncujo trecho a ser percorrido é de 560 km em rodovias\nasfaltadas. Ela partiu com o tanque contendo 50 litros\nde gasolina e parou para descansar em um posto de\ncombustível que ficava a 80 km do destino. Na faixa de\nvelocidade em que ela dirigiu até essa parada, o rendimento\nmédio de seu veículo foi de 12 km por litro. Sabendo que,\nem certa faixa de velocidade, o rendimento médio de seu\ncarro é de 16 km por litro, decide alterar sua velocidade\npara percorrer o trecho final da viagem de forma a garantir\nesse maior rendimento. Aproveitando que se encontrava em\num posto de gasolina, essa pessoa pretende reabastecer\nseu carro de modo a conseguir chegar ao destino com,\npelo menos, 25 litros de gasolina no tanque.\nA quantidade mínima de gasolina, em litro, com que essa\npessoa deve reabastecer seu veículo nesse posto, antes\nde seguir viagem, é",
+    "alternativas": {
+      "A": "5.",
+      "B": "10.",
+      "C": "15.",
+      "D": "20.",
+      "E": "55."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q174",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 174,
+    "lingua_estrangeira": null,
+    "enunciado": "Em 2017, foram publicados os resultados de uma\npesquisa sobre a distância média preferida entre pessoas\n“estranhas”, “conhecidas” e “amigas”, dependendo do local\nonde vivem, conforme apresentado.\nDistância média preferida (cm)\nSOROKOWSKA, A. et al. Prefered Interpersonal Distances: a Global\nComparison. J Cross-Cultural Psychol., n. 48, 2017 (adaptado).\nDentre os locais considerados no gráfico, os que\napresentam as menores distâncias médias preferidas entre\n“estranhos”, “conhecidos” e “amigos” são, respectivamente,",
+    "alternativas": {
+      "A": "China, Índia e China.",
+      "B": "Argentina, Argentina e Noruega.",
+      "C": "Noruega, Argentina e Argentina.",
+      "D": "Nigéria, Nigéria e México.",
+      "E": "China, Índia e Nigéria."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q174.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q175",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 175,
+    "lingua_estrangeira": null,
+    "enunciado": "Uma incorporadora põe à venda diversos apartamentos\nde 2 e de 3 quartos. Os de 2 quartos têm varanda e custam\nR$ 220 000,00. Alguns apartamentos de 3 quartos não têm\nvaranda e custam R$ 300 000,00. Se tiverem varanda,\no preço será 15% maior. A previsão do mercado é de\nque imóveis de 2 quartos possam ser revendidos daqui\na 12 meses por 5% a mais que o preço pelo qual foram\ncomprados, enquanto apartamentos de 3 quartos poderão\nser revendidos daqui a 12 meses por 4% a mais do que o\nvalor pago, independentemente de terem varanda.\nUma agência imobiliária tem R$ 1 000 000,00 para\ninvestir e decidiu comprar alguns desses apartamentos.\nA intenção é revendê-los daqui a 12 meses com o maior lucro\npossível. As possibilidades de compra foram analisadas e,\nlevando em conta o valor a investir e a previsão do mercado,\numa decisão sobre a compra foi tomada.\nA decisão quanto à quantidade e ao tipo de apartamentos\na comprar foi de",
+    "alternativas": {
+      "A": "4 de 2 quartos.",
+      "B": "3 de 3 quartos sem varanda.",
+      "C": "3 de 3 quartos com varanda.",
+      "D": "3 de 2 quartos e 1 de 3 quartos sem varanda.",
+      "E": "1 de 2 quartos, 1 de 3 quartos sem varanda e 1 de 3 quartos com varanda."
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q176",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 176,
+    "lingua_estrangeira": null,
+    "enunciado": "É comum pensarmos na equivalência entre a idade\nde um animal de estimação, no caso de cães e gatos, e\nde um ser humano.\nDe acordo com as diretrizes de idade criadas pela\nAmerican Animal Hospital Association (AAHA), o International\nCat Care e a American Association of Feline Practitioners\n(AAFP), a última fase da vida de um gato é chamada\nde geriátrica e começa aos 15 anos de vida do animal.\nA tabela apresenta os primeiros anos da fase geriátrica da\nequivalência entre a idade do gato e a idade de um humano.\nIdade do gato Idade equivalente de um\n(ano) humano (ano)\n15 76\n16 80\n17 84\n18 88\n19 92\n20 96\n21 100\n22 104\n23 108\n24 112\n25 116\nSabe-se que o gato mais velho do mundo morreu\nao completar 38 anos de vida. Considere que o padrão\nobservado na tabela se mantém.\nDisponível em: https://canaldopet.ig.com.br.\nAcesso em: 28 nov. 2021 (adaptado).\nDe acordo com os dados apresentados, a idade em que\no gato mais velho do mundo morreu é equivalente a qual\nidade, em ano, de um humano?",
+    "alternativas": {
+      "A": "129",
+      "B": "133",
+      "C": "158",
+      "D": "168",
+      "E": "176"
+    },
+    "gabarito": "D",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q176.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q177",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 177,
+    "lingua_estrangeira": null,
+    "enunciado": "Na planta baixa de uma casa, um quarto retangular,\ncuja área é de 24 m2, está representado por um retângulo\ncom lados medindo 0,10 m e 0,15 m.\nA escala dessa planta é",
+    "alternativas": {
+      "A": "1 : 24.",
+      "B": "1 : 40.",
+      "C": "1 : 60.",
+      "D": "1 : 1 600.",
+      "E": "1 : 16 000."
+    },
+    "gabarito": "B",
+    "anulada": false,
+    "elementos_visuais": [
+      "formula"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q177.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q178",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 178,
+    "lingua_estrangeira": null,
+    "enunciado": "O dono de dois cachorrinhos, um shitzu e um poodle,\nfez uma pesquisa na internet sobre preços de banho para\nseus cães em cinco lojas próximas à sua casa. Ele pretendia\nlevar os dois cachorrinhos a um mesmo petshop naquela\nsemana para tomar banho.\nPromoção da\nPetshop Shitzu Poodle\nsemana\nBanho para cães da raça\nI R$ 29,00 R$ 18,00\npoodle: R$ 15,00\n10% de desconto no valor\nII R$ 23,00 R$ 20,00 do banho para cães da\nraça poodle\nTraga dois cachorrinhos\npara tomar banho e ganhe\nIII R$ 25,00 R$ 20,00\nR$ 5,00 de desconto no\nvalor total\nTraga dois cachorrinhos\npara tomar banho e ganhe\nIV R$ 22,00 R$ 28,00\n10% de desconto no\nvalor total\n20% de desconto no valor\nV R$ 30,00 R$ 24,00 do banho para cães da\nraça shitzu\nO local escolhido foi o que apresentou o menor preço\npara banho dos dois cachorrinhos.\nO petshop escolhido foi o",
+    "alternativas": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "gabarito": "C",
+    "anulada": false,
+    "elementos_visuais": [
+      "tabela"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q178.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q179",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 179,
+    "lingua_estrangeira": null,
+    "enunciado": "Um tanque de armazenamento de líquidos tem o\nformato de uma pirâmide reta de base quadrada, cujo\nplano que contém essa base é paralelo a um solo plano\ne horizontal. Esse tanque tem capacidade de 240 litros e\naltura de 2 metros. Inicialmente vazio, nele é despejado\num líquido à vazão constante de 0,015 m3/s.\nSabe-se que 1 L = 1 dm3 = 0,001 m3.\nQual expressão fornece a altura, em metro, da coluna de\nlíquido dentro desse tanque em função do tempo t, em\nsegundo?\nt",
+    "alternativas": {
+      "A": "3 2 3t",
+      "B": "2 1 t",
+      "C": "3 10 2 1 t",
+      "D": "3 10 8 3 t",
+      "E": "3 10 2"
+    },
+    "gabarito": "A",
+    "anulada": false,
+    "elementos_visuais": [
+      "figura/gráfico",
+      "formula",
+      "imagem"
+    ],
+    "imagem": "img/reaplicacao_D2_CD7_Q179.png",
+    "texto_fiel": false,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  },
+  {
+    "id": "2024-reaplicacao-D2-CD7-Q180",
+    "prova": {
+      "ano": 2024,
+      "aplicacao": "reaplicacao",
+      "reaplicacao": true,
+      "descricao": "ENEM 2024 · Reaplicação"
+    },
+    "area": "Matemática e suas Tecnologias",
+    "numero": 180,
+    "lingua_estrangeira": null,
+    "enunciado": "Um pintor pretende fazer uma reprodução do quadro\nGuernica em uma tela de dimensões 20 cm por 30 cm. Essa\nobra, de autoria do espanhol Pablo Picasso, é uma pintura\ncom 3,6 m de altura e 7,8 m de comprimento. A reprodução\na ser feita deverá preencher a maior área possível da tela,\nmantendo a proporção entre as dimensões da obra original.\nA escala que deve ser empregada para essa reprodução é",
+    "alternativas": {
+      "A": "1 : 12.",
+      "B": "1 : 18.",
+      "C": "1 : 21.",
+      "D": "1 : 23.",
+      "E": "1 : 26."
+    },
+    "gabarito": "E",
+    "anulada": false,
+    "elementos_visuais": [],
+    "imagem": null,
+    "texto_fiel": true,
+    "alertas": [],
+    "fonte": {
+      "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
+      "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
+    }
+  }
+]

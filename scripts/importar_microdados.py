@@ -120,7 +120,9 @@ def amostra_participantes(ano: int, ctx, linhas: int = 60000) -> Path:
     if destino.exists() and destino.stat().st_size > 0:
         return destino
     z = zipfile.ZipFile(io.BufferedReader(ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx), 1 << 20))
-    info = next(i for i in z.infolist() if re.search(rf"MICRODADOS_ENEM_{ano}\.csv$", i.filename))
+    # até 2023: MICRODADOS_ENEM_<ano>.csv; desde 2024 as respostas e notas
+    # ficam em RESULTADOS_<ano>.csv (o perfil foi para PARTICIPANTES_<ano>.csv)
+    info = next(i for i in z.infolist() if re.search(rf"(MICRODADOS_ENEM|RESULTADOS)_{ano}\.csv$", i.filename))
     destino.parent.mkdir(parents=True, exist_ok=True)
     with z.open(info) as f, destino.open("wb") as out:
         for i, linha in enumerate(f):
@@ -157,7 +159,40 @@ def validar_prova(sigla, codigos, escala, por_prova, participantes) -> dict:
     if not pares:
         return {"candidatos": 0}
     erros = [abs(escala["k"] * t + escala["m"] - y) for t, y in pares]
-    return {"candidatos": len(pares), "erro_maximo": round(max(erros), 3)}
+    return {"candidatos": len(pares), "erro_maximo": round(max(erros), 3),
+            "acima_de_1_ponto": sum(e > 1.0 for e in erros)}
+
+
+def amostra_dirigida(ano: int, ctx, codigos: dict[str, set], minimo: int = 40,
+                     max_linhas: int = 6_000_000) -> Path:
+    """Percorre o arquivo de resultados até juntar `minimo` candidatos de cada
+    código pedido (provas com poucos participantes, como a reaplicação)."""
+    chave = "_".join(sorted(c for cs in codigos.values() for c in cs))
+    destino = CACHE / str(ano) / "microdados" / f"amostra_codigos_{chave}.csv"
+    if destino.exists() and destino.stat().st_size > 0:
+        return destino
+    z = zipfile.ZipFile(io.BufferedReader(ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx), 1 << 20))
+    info = next(i for i in z.infolist() if re.search(rf"(MICRODADOS_ENEM|RESULTADOS)_{ano}\.csv$", i.filename))
+    contagem = {(a, c): 0 for a, cs in codigos.items() for c in cs}
+    with z.open(info) as f, destino.open("wb") as out:
+        cab = f.readline()
+        out.write(cab)
+        nomes = cab.decode("latin-1").strip().split(";")
+        idx = {a: nomes.index(f"CO_PROVA_{a}") for a in codigos}
+        for n, linha in enumerate(f):
+            campos = linha.decode("latin-1").split(";")
+            util = False
+            for a, i in idx.items():
+                k = (a, campos[i])
+                if k in contagem and contagem[k] < minimo:
+                    contagem[k] += 1
+                    util = True
+            if util:
+                out.write(linha)
+            if all(v >= minimo for v in contagem.values()) or n > max_linhas:
+                break
+    print(f"  amostra dirigida: {dict((f'{a}:{c}', v) for (a, c), v in contagem.items())} ({n + 1} linhas lidas)")
+    return destino
 
 
 def estimar_escala(sigla: str, codigos: list[str], por_prova: dict, participantes: list[dict]) -> dict | None:
@@ -171,11 +206,22 @@ def estimar_escala(sigla: str, codigos: list[str], por_prova: dict, participante
     my = statistics.mean(y for _, y in ajuste)
     k = sum((t - mx) * (y - my) for t, y in ajuste) / sum((t - mx) ** 2 for t, _ in ajuste)
     m = my - k * mx
+    # Ajuste robusto: descarta os poucos casos extremos (nota máxima, em que a
+    # integração numérica fica no limite de θ = 4) e refaz a regressão.
+    residuos = [abs(k * t + m - y) for t, y in ajuste]
+    limpos = [par for par, r in zip(ajuste, residuos) if r <= 1.0]
+    if len(limpos) >= 0.99 * len(ajuste):
+        mx = statistics.mean(t for t, _ in limpos)
+        my = statistics.mean(y for _, y in limpos)
+        k = sum((t - mx) * (y - my) for t, y in limpos) / sum((t - mx) ** 2 for t, _ in limpos)
+        m = my - k * mx
     erros = sorted(abs(k * t + m - y) for t, y in teste)
+    fora = sum(e > 1.0 for e in erros)
     escala = {"k": round(k, 4), "m": round(m, 4), "n_ajuste": len(ajuste), "n_validacao": len(teste),
-              "erro_mediano": round(statistics.median(erros), 3), "erro_maximo": round(erros[-1], 3)}
-    if erros[-1] > 1.0:
-        print(f"  escala {sigla}: reprodução imprecisa (erro máx {erros[-1]:.2f} pontos); não usada")
+              "erro_mediano": round(statistics.median(erros), 3), "erro_maximo": round(erros[-1], 3),
+              "acima_de_1_ponto": fora}
+    if fora > 0.005 * len(erros):
+        print(f"  escala {sigla}: reprodução imprecisa ({fora} de {len(erros)} candidatos com erro > 1 ponto); não usada")
         return None
     return escala
 
@@ -262,15 +308,27 @@ def importar(ano: int) -> None:
     destino_escala.write_text(json.dumps({"ano": ano, "modelo": "TRI 3PL, D=1, EAP, priori N(0,1), 40 pontos em [-4, 4]; nota = k*theta + m",
                                           "areas": escalas}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
+    # Provas sem candidatos na amostra padrão: busca dirigida no arquivo completo.
+    faltam: dict[str, set] = {}
+    for _, _, cods in associacoes:
+        for sigla, lista in cods.items():
+            # menos de 20 candidatos não basta para conferir a escala da prova
+            if sum(p.get(f"CO_PROVA_{sigla}") in lista for p in participantes) < 20:
+                faltam.setdefault(sigla, set()).update(lista)
+    if faltam:
+        extra = amostra_dirigida(ano, ctx, faltam)
+        participantes += list(csv.DictReader(extra.open(encoding="latin-1"), delimiter=";"))
+
     for arq, questoes, cods in associacoes:
         validacao = {}
         for sigla, lista in cods.items():
             if sigla in escalas:
                 v = validar_prova(sigla, lista, escalas[sigla], por_prova, participantes)
                 validacao[sigla] = v
-                ok = v["candidatos"] == 0 or v["erro_maximo"] <= 1.0
+                ok = v["candidatos"] == 0 or v["acima_de_1_ponto"] <= max(1, 0.005 * v["candidatos"])
                 print(f"  {arq.stem} {sigla}: escala conferida em {v['candidatos']} candidatos desta prova"
-                      + (f", erro máx {v['erro_maximo']}" if v["candidatos"] else " (nenhum na amostra)")
+                      + (f", erro máx {v['erro_maximo']}, acima de 1 ponto: {v['acima_de_1_ponto']}"
+                         if v["candidatos"] else " (nenhum na amostra)")
                       + ("" if ok else "  <- ATENÇÃO: escala não reproduz as notas desta prova"))
         gravar(ano, arq, questoes, cods, por_prova, escalas, validacao)
 

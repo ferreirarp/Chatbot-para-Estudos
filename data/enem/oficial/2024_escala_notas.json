@@ -1,0 +1,42 @@
+{
+ "ano": 2024,
+ "modelo": "TRI 3PL, D=1, EAP, priori N(0,1), 40 pontos em [-4, 4]; nota = k*theta + m",
+ "areas": {
+  "CH": {
+   "k": 112.3123,
+   "m": 501.488,
+   "n_ajuste": 1500,
+   "n_validacao": 1500,
+   "erro_mediano": 0.024,
+   "erro_maximo": 0.054,
+   "acima_de_1_ponto": 0
+  },
+  "CN": {
+   "k": 113.1021,
+   "m": 501.1428,
+   "n_ajuste": 1500,
+   "n_validacao": 1500,
+   "erro_mediano": 0.024,
+   "erro_maximo": 0.051,
+   "acima_de_1_ponto": 0
+  },
+  "LC": {
+   "k": 108.0876,
+   "m": 499.9781,
+   "n_ajuste": 1500,
+   "n_validacao": 1500,
+   "erro_mediano": 0.025,
+   "erro_maximo": 8.037,
+   "acima_de_1_ponto": 1
+  },
+  "MT": {
+   "k": 129.6452,
+   "m": 500.0211,
+   "n_ajuste": 1500,
+   "n_validacao": 1500,
+   "erro_mediano": 0.025,
+   "erro_maximo": 0.051,
+   "acima_de_1_ponto": 0
+  }
+ }
+}
