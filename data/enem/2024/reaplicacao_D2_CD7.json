@@ -30,7 +30,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Tendo em vista a necessidade de economia de energia elétrica, os climatizadores de ar surgem como uma\nalternativa econômica. Esses dispositivos utilizam a evaporação da água como método de troca de calor, conforme\nesquematizado na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q091_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O ar externo (quente) é aspirado para o interior do painel evaporativo e, em contato com a água fria, tem sua\ntemperatura diminuída. Umidificado e mais frio, o ar é empurrado pelo ventilador ao ambiente interno. Quanto maior\né a redução de temperatura produzida pelo climatizador, maior é a sua eficiência. A Tabela 1 apresenta a redução\nde temperatura produzida por um desses aparelhos, em função da temperatura de entrada do ar e de sua umidade\nrelativa (UR) percentual; enquanto a Tabela 2 apresenta os valores médios de temperatura (T) e os valores da UR do\nar de cinco cidades brasileiras, no mês de setembro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q091_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://pt.climate-data.org.; www.brizztech.com.br. Acesso em: 25 nov. 2021(adaptado).\nConsiderando os dados apresentados para o mês de setembro, em qual destas cidades o climatizador de ar é\nmais eficiente?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q092",
@@ -62,7 +88,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q092_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nas últimas décadas, a população dos centros urbanos tem requerido a pavimentação das vias públicas, visando\no aumento do conforto e a minimização do desgaste de veículos. No entanto, essa melhoria da qualidade de vida pode\ntrazer implicações ao meio ambiente. A impermeabilização impede a infiltração de água no solo, sendo carreados,\nportanto, todos os dejetos e impurezas para os cursos de água.\nQual ação poderia mitigar os efeitos danosos da contaminação dos cursos de água em virtude da impermeabilização\ndas vias públicas?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q093",
@@ -94,7 +133,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A figura ilustra diferentes etapas de um experimento realizado por Frederick Griffith em 1928 com camundongos\ne pneumococos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q093_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.ck12.org. Acesso em: 27 jul. 2012.\nA hipótese testada com a realização desse experimento é que"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q094",
@@ -126,7 +182,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um laboratório farmacêutico desenvolveu um anestésico tópico, em forma de creme, destinado à aplicação na\npele de pacientes a serem submetidos a pequenas intervenções dermatológicas. As nanocápsulas são feitas de um\npolímero 100% biodegradável, dotadas de paredes semipermeáveis, e têm um núcleo oleoso que contém os princípios\nativos prilocaína e lidocaína. O nanoanestésico é responsável pelo transporte e entrega dos princípios ativos à região\ndesejada do organismo."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q094_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VASCONCELOS, Y. Moléculas inovadoras. Pesquisa Fapesp, n. 238, 2015 (adaptado).\nA utilização dessas nanocápsulas implica o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q095",
@@ -158,7 +231,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O politereftalato de etileno (PET) é um polímero muito utilizado na confecção de embalagens para vários produtos\nindustriais, gerando grande quantidade de resíduos no lixo urbano. Como sua degradação é muito lenta no meio\nambiente, faz-se necessário o uso de diferentes técnicas de reciclagem desse material. O PET é bastante susceptível\nà reciclagem química, que se baseia em submeter o polímero a uma reação química, para transformá-lo em outros\ncompostos orgânicos, como exemplificado pelo esquema."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q095_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "PASZUN, D.; SPYCHAJ, T. Chemical Recycling of Poly (Ethylene Terephthalate). Ind. Chem. Res., n. 36, 1997.\nNo esquema, o PET foi reciclado utilizando-se uma reação de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q096",
@@ -220,7 +310,21 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O longo tempo que polímeros levam para serem\ndegradados tem gerado problema de acúmulo de resíduos\nsólidos. A fim de contornar essa situação, têm sido propostos\nnovos polímeros biodegradáveis que apresentam grupos\nésteres hidrolisáveis, facilitando a assimilação desses\npolímeros pelos microrganismos.\nQual unidade monomérica representa o polímero melhor\nassimilado pelos microrganismos?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q097_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q097_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q097_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q097_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q097_f5.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q098",
@@ -252,7 +356,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A utilização de fusíveis em equipamentos eletrônicos\né fundamental para a sua preservação. De forma\nsimplificada, esse dispositivo é composto de terminais\nmetálicos, conectados por um fio condutor envolvido por\num corpo de vidro, como ilustrado na figura. A passagem de\ncorrente elétrica gera calor por efeito Joule, o que provoca\num aumento local na temperatura. Considere que são\nnecessários, em média, 4 A de corrente para a elevação\nda temperatura em 1 °C. As temperaturas de fusão de\ndiferentes materiais são apresentadas a seguir."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q098_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Para um equipamento que deve operar com uma\ncorrente menor que 1 000 A, o material adequado para\no fusível é o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q099",
@@ -314,7 +435,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Quando utilizadas na iluminação pública noturna, as lâmpadas de LED brancas produzem uma luz branco-azulada,\ncujo brilho difuso dificulta a observação das estrelas, que também chegam aos nossos olhos como luz azulada.\nPor isso, esse tipo de iluminação pública pode ser considerada uma nova forma de poluição: a “poluição azul”,\nque afeta a dinâmica de várias espécies.\n\nA cidade de Flagstaff, nos Estados Unidos, foi uma das pioneiras na resolução dessa questão. Embora sua iluminação\npública seja feita com lâmpadas de LED brancas, a cidade tomou medidas para impedir o brilho azulado. Conforme\nestudos de uma equipe de cientistas australianos, com a aplicação de um material, é possível alterar a transmissão\ndas frequências indesejadas, mantendo a intensidade total da lâmpada. As figuras do estudo indicam:\n• o espectro de emissão correspondente a uma lâmpada LED branca (A);\n\n• o espectro de emissão correspondente a uma lâmpada LED branca coberta com o material do estudo (B)."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q100_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "DIMOVSKI, A. M.; ROBERT, K. A. Artificial Light Pollution: Shifiting Spectral Wavelengths to\nMitigate Physiological and Health Consequences in a Nocturnal Marsupial Mammal.\nNesse estudo, o material utilizado na cobertura"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q101",
@@ -329,11 +467,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Após realizar uma inspeção veicular, um cidadão descobre\nque seu automóvel a gasolina emite anualmente 3 000 kg de\nCO (massa molar 44 g mol−1). Pensando em compensar\n2\nesse impacto, resolveu plantar árvores nativas do Brasil\neficientes na fixação de carbono (massa molar 12 g mol−1).\nAo pesquisar espécies nativas para esse fim, encontrou\nos seguintes dados para a espécie angico-branco: i) cada\n1 000 m2 de plantação dessa árvore correspondem a uma\nmassa arbórea de 3 520 kg; ii) sua massa arbórea contém\n50% de carbono; e iii) apresenta boa adaptação à região.\nDisponível em: www.cnpf.embrapa.br.\nAcesso em: 12 out. 2015 (adaptado).\nA menor área que o cidadão deve utilizar para a plantação\nde angico-branco, visando compensar as emissões de CO ,\n2\né mais próxima de",
     "alternativas": {
-      "A": "230 m2.",
-      "B": "465 m2.",
-      "C": "850 m2.",
-      "D": "1 700 m2.",
-      "E": "2 000 m2."
+      "A": "230 m².",
+      "B": "465 m².",
+      "C": "850 m².",
+      "D": "1 700 m².",
+      "E": "2 000 m²."
     },
     "gabarito": "B",
     "anulada": false,
@@ -346,7 +484,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Após realizar uma inspeção veicular, um cidadão descobre\nque seu automóvel a gasolina emite anualmente 3000 kg de\nCO₂ (massa molar 44 g mol⁻¹). Pensando em compensar\nesse impacto, resolveu plantar árvores nativas do Brasil\neficientes na fixação de carbono (massa molar 12 g mol⁻¹).\nAo pesquisar espécies nativas para esse fim, encontrou\nos seguintes dados para a espécie angico-branco: i) cada\n1 000 m² de plantação dessa árvore correspondem a uma\nmassa arbórea de 3 520 kg; ii) sua massa arbórea contém\n50% de carbono; e iii) apresenta boa adaptação à região.\nDisponível em: www.cnpf.embrapa.br.\nAcesso em: 12 out. 2015 (adaptado).\nA menor área que o cidadão deve utilizar para a plantação\nde angico-branco, visando compensar as emissões de CO₂,\né mais próxima de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q102",
@@ -378,7 +524,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na lavagem a seco, um solvente é considerado efetivo\npara limpeza de roupas quando evita o encolhimento dos\ntecidos, evapora facilmente e dissolve manchas lipofílicas,\ncomo óleos, ceras e gorduras em geral, por apresentar\npolaridade similar.\nBORGES, L.; MACHADO, P. F. L. Lavagem a seco.\nQuímica Nova na Escola, n. 1, fev. 2013.\nQual estrutura molecular representa o solvente mais efetivo\nna lavagem a seco de roupas?"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q102_f1.png",
+        "motivo": "figura"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q102_f2.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q102_f3.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q102_f4.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q102_f5.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q102_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q103",
@@ -441,7 +606,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A suspensão de um automóvel funciona como um\nsistema massa-mola amortecido cuja função é reduzir a\namplitude de oscilação do automóvel. Esse sistema pode ser"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q104_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "em que k é a constante elástica da mola e m é a massa total\ndo sistema formado por mola, amortecedor, pneu e roda.\nA suspensão do automóvel é originalmente dimensionada\npara que a relação entre w₀ e um parâmetro fixo b seja:\n\n• w₀ = b, quando não há oscilação do automóvel e o\n\nsistema volta à posição original rapidamente.\n\nPorém, seu amortecimento pode ser determinado\ntambém por outras duas relações entre w₀ e b:\n\n• w₀ > b, quando o sistema oscila algumas vezes até parar;\n\n• w₀ < b, quando o sistema não oscila, retornando à\nsua posição original lentamente.\n\nPor questões estéticas, o proprietário de um automóvel\nreduz à metade o comprimento original das molas de sua\nsuspensão e troca rodas e pneus, de modo a manter a\nmesma massa total do sistema. Os demais componentes\npermanecem inalterados.\nComo essas alterações modificam a oscilação do sistema?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q105",
@@ -473,7 +655,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma equipe de pesquisadores interessados em estudar\na concentração de ozônio em uma região da atmosfera\nplaneja enviar um balão para captar dados meteorológicos\na 20 000 m de altitude. Para recuperar os dados captados\npelo dispositivo de medida, o balão precisa estourar quando\natingir a altitude desejada e retornar ao solo, o que ocorrerá\nquando seu volume atingir o valor limite a partir do qual não\nhá mais expansão. As figuras mostram a forma do balão e\ncomo a temperatura e a pressão atmosférica variam com\na altitude em relação ao nível do mar."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q105_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Para essa situação, considera-se o gás dentro do balão\ne os gases atmosféricos como gases ideais. Assume-se\ntambém que a pressão interna ao balão depende somente\nda pressão atmosférica.\nQuantas vezes o raio do balão deve aumentar para captar\nos dados meteorológicos desejados?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q106",
@@ -505,7 +704,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A hipertensão arterial é um problema de saúde que\nse agrava pelo crescente consumo de sal rico em sódio.\nO consumo máximo diário recomendado pelo Ministério da\nSaúde é de, aproximadamente, 5 g de NaCl. No entanto,\nos brasileiros consomem em média 12 g desse sal por dia.\nPor isso, a indústria lançou no mercado o chamado sal\nlight, que apresenta um teor reduzido de cloreto de sódio.\nSua composição é cerca de 50% de NaCl e 50% de KCl,\nem massa.\nMassas molares:\n\nNa = 23g/mol; Cl = 35,5g/mol; K = 39g/mol\n\nPesquisa de orçamentos familiares: análise do consumo alimentar\npessoal no Brasil. Disponível em: www.biblioteca.ibge.gov.br.\nAcesso em: 27 nov. 2019 (adaptado).\nAinda que os brasileiros consumam apenas sal light, a massa\nde sódio ingerida em excesso será mais próxima de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q107",
@@ -520,11 +727,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um experimento foi montado com o intuito de determinar\no tempo de queda livre de corpos com tamanhos e massas\ndistintas. Para isso, utilizou-se uma prateleira a 50,0 cm do\nchão, onde foram colocadas três frutas, conforme a figura.\nEm um determinado instante, a prateleira foi removida,\nliberando todas as frutas simultaneamente.\nConsidere o tempo de queda da melancia como t ,\n1\ndo melão como t e da maçã como t .\n2 3\nDesprezando-se as forças dissipativas, a relação entre\nos tempos de queda das frutas é",
     "alternativas": {
-      "A": "t = t = t . 1 2 3",
-      "B": "t > t > t . 1 2 3",
-      "C": "t < t < t . 1 2 3",
-      "D": "t > t < t . 1 2 3",
-      "E": "t < t > t . 1 2 3"
+      "A": "t₁ = t₂ = t₃.",
+      "B": "t₁ > t₂ > t₃.",
+      "C": "t₁ < t₂ < t₃.",
+      "D": "t₁ > t₂ < t₃.",
+      "E": "t₁ < t₂ > t₃."
     },
     "gabarito": "A",
     "anulada": false,
@@ -538,7 +745,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um experimento foi montado com o intuito de determinar\no tempo de queda livre de corpos com tamanhos e massas\ndistintas. Para isso, utilizou-se uma prateleira a 50,0 cm do\nchão, onde foram colocadas três frutas, conforme a figura.\nEm um determinado instante, a prateleira foi removida,\nliberando todas as frutas simultaneamente."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q107_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Considere o tempo de queda da melancia como t₁,\ndo melão como t₂ e da maçã como t₃.\nDesprezando-se as forças dissipativas, a relação entre\nos tempos de queda das frutas é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q108",
@@ -554,10 +778,10 @@
     "enunciado": "Pesquisadores da Universidade de Wisconsin-Madison, nos Estados Unidos, desenvolveram um dessalinizador-pilha.\nO invento se mostrou muito promissor para dessalinizar água do mar, empregando eletrodos com bismuto e titânio\nem suas composições. Para realizar a dessalinização, o dispositivo funciona por eletrólise, conforme a figura.\nNo descarregamento do dispositivo ocorre o processo inverso, que permite reaproveitar a energia, como em uma pilha.\nNAM, D.-H.; CHOI, K.-S. Bismuth as a New Chloride-Storage Electrode Enabling the Construction of a Practical High\nCapacity Desalination Battery. Journal of the American Chemical Society, n. 139, 2017 (adaptado).\nDurante a dessalinização da água por eletrólise ocorre a formação de",
     "alternativas": {
       "A": "BiOCl no ânodo.",
-      "B": "H (g) no cátodo. 2",
+      "B": "H₂ (g) no cátodo.",
       "C": "Bi no polo positivo.",
-      "D": "O (g) no polo negativo. 2",
-      "E": "Na Ti (PO ) no ânodo. 3 2 4 3"
+      "D": "O₂ (g) no polo negativo.",
+      "E": "Na₃Ti₂(PO₄)₃ no ânodo."
     },
     "gabarito": "A",
     "anulada": false,
@@ -571,7 +795,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Pesquisadores da Universidade de Wisconsin-Madison, nos Estados Unidos, desenvolveram um dessalinizador-pilha.\nO invento se mostrou muito promissor para dessalinizar água do mar, empregando eletrodos com bismuto e titânio\nem suas composições. Para realizar a dessalinização, o dispositivo funciona por eletrólise, conforme a figura.\nNo descarregamento do dispositivo ocorre o processo inverso, que permite reaproveitar a energia, como em uma pilha."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q108_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "NAM, D.-H.; CHOI, K.-S. Bismuth as a New Chloride-Storage Electrode Enabling the Construction of a Practical High\nCapacity Desalination Battery. Journal of the American Chemical Society, n. 139, 2017 (adaptado).\nDurante a dessalinização da água por eletrólise ocorre a formação de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q109",
@@ -603,7 +844,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O ácido sulfúrico é uma das principais substâncias produzidas industrialmente no mundo. O esquema apresenta,\nde forma simplificada, as etapas de sua produção."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q109_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em qual etapa ocorre a conversão química do enxofre (S) para o seu maior estado de oxidação?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q110",
@@ -648,9 +906,9 @@
     "lingua_estrangeira": null,
     "enunciado": "As lhamas que vivem nas montanhas dos Andes\nda América do Sul têm hemoglobinas geneticamente\ndiferenciadas de outros mamíferos que vivem ao nível\ndo mar, por exemplo. Essa diferenciação trata-se de uma\nadaptação à sua sobrevivência em altitudes elevadas onde\no ar é rarefeito.\nSCHMIDT-NIELSEN, K. Fisiologia animal: adaptação\nao meio ambiente. São Paulo: Santos, 2002.\nA adaptação desses animais em relação ao seu ambiente\nconfere maior",
     "alternativas": {
-      "A": "afinidade pelo O , maximizando a captação desse gás. 2",
+      "A": "afinidade pelo O₂, maximizando a captação desse gás.",
       "B": "capacidade de tamponamento, evitando alterações de pH no sangue.",
-      "C": "afinidade pelo CO , facilitando seu transporte para 2 eliminação nos pulmões.",
+      "C": "afinidade pelo CO₂, facilitando seu transporte para eliminação nos pulmões.",
       "D": "velocidade no transporte de gases, aumentando a eficiência de troca gasosa.",
       "E": "solubilidade de gases no plasma, melhorando seu transporte nos tecidos."
     },
@@ -665,7 +923,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "As lhamas que vivem nas montanhas dos Andes\nda América do Sul têm hemoglobinas geneticamente\ndiferenciadas de outros mamíferos que vivem ao nível\ndo mar, por exemplo. Essa diferenciação trata-se de uma\nadaptação à sua sobrevivência em altitudes elevadas onde\no ar é rarefeito.\nSCHMIDT-NIELSEN, K. Fisiologia animal: adaptação\nao meio ambiente. São Paulo: Santos, 2002.\nA adaptação desses animais em relação ao seu ambiente\nconfere maior"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q112",
@@ -697,7 +963,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Ao respirarmos, falarmos, tossirmos ou espirrarmos,\nliberamos gotículas e aerossóis. Se estamos com alguma\ninfecção respiratória viral, vírus estarão contidos ali.\nEstima-se que uma pessoa com covid-19 falando alto por\n1 minuto pode gerar mais de 1 000 partículas de aerossóis,\no que poderia levar à liberação de mais de 100000 partículas\nvirais de SARS-CoV-2. O uso de máscaras pela população\npode auxiliar na redução da transmissão desse vírus,\nconforme representado na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q112_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.blogs.unicamp.br.\nAcesso em: 17 dez. 2021(adaptado).\nAs máscaras auxiliam no controle dessa doença, pois"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q113",
@@ -729,7 +1012,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A evolução das populações envolve processos de variação\ne adaptação ao longo do tempo, podendo desencadear\no surgimento de novas raças ou espécies a partir de uma\npreexistente. A grande diversidade de organismos presentes\nem nosso planeta pode ser explicada pela moderna teoria\nevolucionista, que associa o darwinismo aos conceitos de\ngenética. Com base nesses conhecimentos, é possível realizar\na reprodução diferencial de genótipos e a formação de raças\ncom diferentes fenótipos, como representado na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q113_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "CAIN, M. et al. Discover Biology. Nova York:\nW. W. Norton & Company, 2002 (adaptado).\nA formação dessas raças deve-se ao processo de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q114",
@@ -774,11 +1074,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Os satélites em órbitas geoestacionárias ocupam uma\nposição fixa em relação à superfície da Terra e, por isso,\npodem ser usados como sistemas de comunicação. Pela\nlimitação de espaço, o número de satélites que podem ser\nposicionados numa órbita é finito. O lançamento de um\nsatélite geoestacionário envolve três etapas:\n• Lança-se o satélite da base terrestre até uma órbita\ncircular próxima (órbita R ).\n1\n• No estágio de propulsão, aplica-se um impulso\ntangencial à trajetória no ponto A, mudando-se para\numa órbita elíptica até o satélite atingir o ponto B,\nque coincide com o raio de sua órbita geoestacionária.\n• No ponto B, efetua-se uma mudança para a órbita\ncircular R , aplicando-se um impulso tangente\n2\nà trajetória.\nIdentificando a órbita interna como R , a órbita\n1\ngeoestacionária como R e a órbita elíptica como E,\n2\nas energias mecânicas do satélite nas três órbitas são\nidentificadas, respectivamente, como E , E e E .\n1 2 E\nBEER, F. P. et al. Vector Mechanics: Static and Dynamic.\nNova York: McGraw-Hill, 2009.\nA relação de comparação entre as energias mecânicas\ndo satélite nas três órbitas é",
     "alternativas": {
-      "A": "E > E > E . 2 E 1",
-      "B": "E < E < E . 2 E 1",
-      "C": "E = E < E . 1 E 2",
-      "D": "E < E = E . 1 E 2",
-      "E": "E > E = E . 1 E 2"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "A",
     "anulada": false,
@@ -792,7 +1092,41 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Os satélites em órbitas geoestacionárias ocupam uma\nposição fixa em relação à superfície da Terra e, por isso,\npodem ser usados como sistemas de comunicação. Pela\nlimitação de espaço, o número de satélites que podem ser\nposicionados numa órbita é finito. O lançamento de um\nsatélite geoestacionário envolve três etapas:\n\n• Lança-se o satélite da base terrestre até uma órbita\ncircular próxima (órbita R₁).\n\n• No estágio de propulsão, aplica-se um impulso\n\ntangencial à trajetória no ponto A, mudando-se para\n\numa órbita elíptica até o satélite atingir o ponto B,\n\nque coincide com o raio de sua órbita geoestacionária.\n\n• No ponto B, efetua-se uma mudança para a órbita\n\ncircular R₂, aplicando-se um impulso tangente\nà trajetória."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q115_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Identificando a órbita interna como R₁, a órbita\ngeoestacionária como R₂ e a órbita elíptica como E,\nas energias mecânicas do satélite nas três órbitas são"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q115_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "BEER, F. P. et al. Vector Mechanics: Static and Dynamic.\nNova York: McGraw-Hill, 2009.\nA relação de comparação entre as energias mecânicas\ndo satélite nas três órbitas é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q115_f3.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q115_f4.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q115_f5.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q115_f6.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q115_f7.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q116",
@@ -824,7 +1158,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O DNA mitocondrial pode ser utilizado para evidenciar\num parentesco ou uma descendência. Sabe-se que o\nzigoto recebe mitocôndrias apenas do gameta feminino.\nO heredograma apresenta a genealogia de uma família."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q116_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O DNA mitocondrial do indivíduo W é igual ao do indivíduo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q117",
@@ -857,7 +1208,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Aquecedores elétricos utilizam resistência de fio,\nsuportando uma corrente máxima dimensionada pelo\nfabricante. O dimensionamento original do circuito elétrico\nde um aquecedor, esquematizado na figura, foi utilizado\npara provocar a elevação de temperatura em um volume\nde água, durante um determinado intervalo de tempo."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q117_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Caso se pretenda utilizar uma tensão de 250 V,\no circuito precisará ser redimensionado, para garantir o\ncorreto funcionamento do aquecedor. A corrente deve\nser mantida, considerando-se o aquecimento do mesmo\nvolume de água, à mesma temperatura, durante o mesmo\nintervalo de tempo.\nNesse redimensionamento, deve-se acrescentar ao\ncircuito um resistor de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q118",
@@ -919,7 +1287,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O titânio é encontrado na natureza em minerais, dos\nquais o rutilo (TiO₂) está presente na principal mina do\nBrasil, localizada no Rio Grande do Norte. Para obtenção\ndo titânio metálico, o TiO₂ é submetido a duas operações\nindustriais. A primeira consiste na cloração, produzindo\ntetracloreto de titânio, conforme a equação:\n\nTiO₂ + 2 Cl₂ + 2 CO →← TiCI₄ + 2 CO₂\n\nA segunda operação consiste na redução do tetracloreto\nde titânio, utilizando magnésio metálico:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q119_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Considere as massas molares:\n\nCl = 35,5 g/mol; Ti = 48 g/mol.\n\nQual a massa de gás cloro necessária para produzir 480 kg\nde titânio metálico?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q120",
@@ -982,7 +1369,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O ouvido humano apresenta algumas características interessantes. Uma delas é que existe uma intensidade mínima,\nou limiar de audibilidade, I₀, abaixo da qual o som não é audível. O nível de audibilidade é a grandeza que quantifica\na audibilidade (sensação) e sua unidade é o fon, medido em decibéis (dB). O gráfico contém, em escala logarítmica,\ncurvas de igual audibilidade, isto é, cada curva representa uma mesma audibilidade para diferentes frequências."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q121_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Fonte: H. Fletcher and W. A. Munson, J.A.S.A., n. 5, 1933.\nMAGALHÃES, D. A.; ALVES FILHO, J. P. A discreta dança do ar ao som das equações da física acústica. Física na Escola, n. 16, 2018.\nConsiderando a frequência de 90 Hz, o menor nível de intensidade, em dB, para que possamos perceber algum som é,\naproximadamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q122",
@@ -1014,7 +1418,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Pisaster ochraceus é uma espécie de estrela-do-mar\nque ocorre em comunidades da zona entremarés da América\ndo Norte Ocidental. Seu principal alimento são moluscos da\nespécie Mytilus californianus. Esse molusco, por sua vez,\né dominante e compete por espaço com muitos outros\ninvertebrados e até algas. Pesquisadores estudam as\nrelações ecológicas nesse ambiente desde a década\nde 1960, com o objetivo de entender a dinâmica dessas\ncomunidades. Alguns dados são apresentados no gráfico."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q122_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "CAMPBELL, N. et al. Biologia. São Paulo:\nArtmed, 2010 (adaptado).\nA presença de Pisaster influencia a diversidade de espécies,\nnesse ecossistema, porque esses animais"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q123",
@@ -1046,7 +1467,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "É comum o álcool ser mencionado como combustível\necologicamente correto, pois, durante sua queima,\no ciclo biogeoquímico do carbono apresenta balanço\nde massa igual a zero. No entanto, o processo de\nprodução da cana-de-açúcar, matéria-prima empregada\nna indústria sucroalcooleira, faz uso de adubação para\nmelhorar a fertilidade do solo e aumentar a produção.\nDentre os principais nutrientes (nitrogênio, fósforo\ne potássio) que possuem balanço positivo no ciclo\nbiogeoquímico, o nitrogênio é um que merece mais\natenção ambiental. Sabe-se que boa parte do nitrogênio\nativo desses fertilizantes encontra-se na forma dos\níons NH ⁺₄ e NO ⁻₃. Por intemperismo e percolação,\nesses compostos lixiviam para o solo, contaminando\nrios e lagos.\nCARDOSO, A. A.; MACHADO, C. M. D.; PEREIRA, E. A.\nBiocombustível, o mito do combustível limpo.\nQuímica Nova na Escola, n. 28, maio 2008 (adaptado).\nO método de adubação mencionado tem como uma de\nsuas consequências a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q124",
@@ -1078,7 +1507,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A transferência de calor por radiação pode ser\nobservada realizando-se a experiência de colocar a\nmesma quantidade de água quente em dois copos\nmetálicos com as mesmas características, sendo que a\nsuperfície externa de um deles é pintada de preto (copo 1),\ne a do outro é espelhada (copo 2). Sabe-se que todo\nmaterial emite e absorve energia radiante e que bons\nemissores são também bons absorvedores dessa energia."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q124_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Ao se colocar um termômetro dentro de cada copo observa-se,\napós alguns minutos, que a temperatura da água"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q125",
@@ -1110,7 +1556,21 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Animais invertebrados que vivem em regiões de estuário, cujas águas têm grandes variações de salinidade,\napresentam estratégias que permitem adaptações a essas variações. Animais que mantêm osmolaridade interna\nrelativamente constante são chamados de osmorreguladores. Já os animais que não controlam ativamente a condição\nosmótica de seus líquidos corporais, adaptando-se à osmolaridade do ambiente, são chamados de osmoconformadores.\n\nUm pesquisador coletou animais de duas espécies de invertebrados, sendo o Animal A um osmorregulador e\no Animal B, um osmoconformador. Ambos foram submetidos, em laboratório, a ambientes aquáticos com diferentes\nosmolaridades. Em cada situação, foi medida a pressão osmótica interna tanto do Animal A como do Animal B.\nO gráfico que representa corretamente os dados obtidos pelo pesquisador é:"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q125_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q125_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q125_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q125_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q125_f5.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q126",
@@ -1125,11 +1585,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Na fissão do urânio-235, esse átomo é dividido em\nátomos mais leves quando bombardeado por um nêutron.\nNos reatores nucleares, novas reações ocorrem a partir\ndos nêutrons liberados na fissão, caracterizando uma reação\nem cadeia. Essa reação é mais eficiente quando esses\nnêutrons têm energia cinética baixa. Por isso, é utilizada\numa substância moderadora na qual os nêutrons possam\ncolidir, transferindo parte da energia.\nConsidere que essas colisões são frontais e\naproximadamente elásticas, que a substância moderadora é\num alvo em repouso e que as velocidades dos nêutrons, υ ,\nnf\ne da substância moderadora, υ , após a colisão, são:\nsf\n(cid:27)m (cid:29)m (cid:24)\n(cid:31) (cid:30)(cid:25) n s(cid:22)(cid:31)\nnf (cid:26)m (cid:28)m (cid:23) 0\nn s\n(cid:28) 2m (cid:25)\n(cid:31) (cid:30)(cid:26) n (cid:23)(cid:31)\nsf (cid:27)m (cid:29)m (cid:24) 0\nn s\nem que m é a massa do nêutron, m é a massa da\nn s\nsubstância moderadora e υ é a velocidade inicial do nêutron.\n0\nA substância moderadora que promoverá a maior redução\nde velocidade dos nêutrons, nesse processo de colisão,\nserá:",
     "alternativas": {
-      "A": "2D 1",
-      "B": "4He 2",
-      "C": "12C 6",
-      "D": "14N 7",
-      "E": "94Sr 38"
+      "A": "²₁D",
+      "B": "⁴₂He",
+      "C": "¹²₆C",
+      "D": "¹⁴₇N",
+      "E": "⁹⁴₃₈Sr"
     },
     "gabarito": "A",
     "anulada": false,
@@ -1142,7 +1602,36 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na fissão do urânio-235, esse átomo é dividido em\nátomos mais leves quando bombardeado por um nêutron.\n\nNos reatores nucleares, novas reações ocorrem a partir\ndos nêutrons liberados na fissão, caracterizando uma reação\nem cadeia. Essa reação é mais eficiente quando esses\nnêutrons têm energia cinética baixa. Por isso, é utilizada\numa substância moderadora na qual os nêutrons possam\ncolidir, transferindo parte da energia.\n\nConsidere que essas colisões são frontais e\naproximadamente elásticas, que a substância moderadora é"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q126_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q126_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q126_f3.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "em que mₙ é a massa do nêutron, mₛ é a massa da\nsubstância moderadora e υ₀ é a velocidade inicial do nêutron.\nA substância moderadora que promoverá a maior redução\nde velocidade dos nêutrons, nesse processo de colisão,\nserá:"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q127",
@@ -1187,11 +1676,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Ao realizar os preparativos para o Natal, uma pessoa\nresolveu aumentar o número de lâmpadas incandescentes\nde um pisca-pisca que originalmente tinha 20 lâmpadas\nassociadas em paralelo, cada uma com resistência R.\nAdicionou outras 20 lâmpadas com as mesmas\nespecificações e também em paralelo. O circuito passou\na ser composto por 40 lâmpadas em paralelo e uma fonte\nde resistência interna r. A corrente total do circuito com\n40 lâmpadas é proporcional à corrente do circuito com\n20 lâmpadas, ou seja, i = a ⋅ i . Ao ligar o sistema,\n40 20\nela observou que o brilho das lâmpadas diminuiu com\nfator de proporcionalidade igual a a2.\nQual é o fator a, utilizado para a obtenção da redução do\nbrilho em cada lâmpada?\n1",
     "alternativas": {
-      "A": "2 1",
-      "B": "20 R +r 20",
-      "C": "R +r 40 R +r 40",
-      "D": "R +r 20 R",
-      "E": "+r 40"
+      "A": "1/2",
+      "B": "1/20",
+      "C": "",
+      "D": "",
+      "E": "R/40 + r"
     },
     "gabarito": "C",
     "anulada": false,
@@ -1204,7 +1693,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Ao realizar os preparativos para o Natal, uma pessoa\nresolveu aumentar o número de lâmpadas incandescentes\nde um pisca-pisca que originalmente tinha 20 lâmpadas\nassociadas em paralelo, cada uma com resistência R.\nAdicionou outras 20 lâmpadas com as mesmas\nespecificações e também em paralelo. O circuito passou\na ser composto por 40 lâmpadas em paralelo e uma fonte\nde resistência interna r. A corrente total do circuito com\n40 lâmpadas é proporcional à corrente do circuito com\n20 lâmpadas, ou seja, i₄₀ = α ⋅ i₂₀. Ao ligar o sistema,\nela observou que o brilho das lâmpadas diminuiu com\nfator de proporcionalidade igual a α².\nQual é o fator α, utilizado para a obtenção da redução do\nbrilho em cada lâmpada?"
+      }
+    ],
+    "alternativas_imagem": {
+      "C": "img/blocos/reaplicacao_D2_CD7_Q128_f1.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q128_f2.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q129",
@@ -1446,7 +1948,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um novo condomínio foi construído na Rua X. Alguns\nlotes já receberam numeração da prefeitura, enquanto\noutros apresentam apenas o sobrenome do seu proprietário.\nO servidor da prefeitura numerará os lotes que ainda não\nforam numerados. Para isso, ele observa o padrão da\nnumeração já existente, conforme apresentado na figura,\npercebendo que, em cada lado da rua, as sequências das\nnumerações formam progressões aritméticas, e, com isso,\natribui um número ao lote da família Costa."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q136_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O número atribuído ao lote da família Costa é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q137",
@@ -1628,7 +2147,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em um curso de desenho artístico, a professora\norganizou uma oficina prática com dois estudantes,\nenvolvendo uma atividade de representação visual.\nA figura representa um balanço, constituído de um assento\nretangular paralelo ao plano xOy do chão, ligado a uma\nhaste horizontal por cordas de sustentação paralelas entre\nsi e de mesma medida. O ponto M representa a posição de\num objeto, fixado pela professora, no centro do assento.\nFoi solicitado que o estudante I se posicionasse tendo vista\nfrontal da trajetória descrita pelo ponto M, e a estudante II,\ntendo vista lateral dessa trajetória enquanto o balanço se\nmovimentava. Nesse movimento, as cordas de sustentação\npermaneciam esticadas e ortogonais à haste horizontal.\nA professora solicitou que os estudantes observassem e\ndescrevessem a trajetória realizada pelo ponto M ao longo\ndo movimento."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q142_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "As projeções ortogonais da trajetória realizada pelo ponto\nM vistas pelo estudante I no plano yOz e pela estudante II\nno plano xOz são, respectivamente, representadas por"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q143",
@@ -1673,11 +2209,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma pessoa ampliou uma foto no computador e,\nao imprimi-la, verificou que a qualidade não estava\nboa. Assim, ficou curioso em saber as grandezas\nenvolvidas no parâmetro que define a qualidade de\numa imagem. Ao pesquisar, descobriu que um parâmetro\nque define a qualidade da imagem, ou resolução, pode\nser considerado pela quantidade de pontos, chamados\npixels, que há em cada quadradinho de 1 cm de lado\ncontido na imagem.\nConsiderando a pesquisa realizada, a unidade de medida\ndo parâmetro de qualidade de uma imagem é expressa por",
     "alternativas": {
-      "A": "cm2 ⋅ pixel",
-      "B": "cm ⋅ pixel cm",
-      "C": "(cid:31)pixel(cid:30)2 pixel",
-      "D": "cm pixel",
-      "E": "cm2"
+      "A": "cm² ⋅ pixel",
+      "B": "cm ⋅ pixel",
+      "C": "",
+      "D": "pixel/cm",
+      "E": "pixel/cm²"
     },
     "gabarito": "E",
     "anulada": false,
@@ -1690,7 +2226,19 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma pessoa ampliou uma foto no computador e,\nao imprimi-la, verificou que a qualidade não estava\nboa. Assim, ficou curioso em saber as grandezas\nenvolvidas no parâmetro que define a qualidade de\numa imagem. Ao pesquisar, descobriu que um parâmetro\nque define a qualidade da imagem, ou resolução, pode\nser considerado pela quantidade de pontos, chamados\npixels, que há em cada quadradinho de 1 cm de lado\ncontido na imagem.\nConsiderando a pesquisa realizada, a unidade de medida\ndo parâmetro de qualidade de uma imagem é expressa por"
+      }
+    ],
+    "alternativas_imagem": {
+      "C": "img/blocos/reaplicacao_D2_CD7_Q144_f1.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q145",
@@ -1722,7 +2270,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Os preços da gasolina e do etanol no Brasil são\nfrequentemente noticiados nos telejornais. Após pesquisa\nrealizada pelo Índice de Preços Ticket Car (IPTC), os\npreços desses combustíveis, em real por litro, em quatro\nestados e no Distrito Federal, foram divulgados pelo\ntelejornal, conforme o quadro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q145_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: http://economia.uol.com.br.\nAcesso em: 19 jan. 2015 (adaptado).\nDentre os locais divulgados pelo telejornal, o que\napresenta a maior razão entre os preços, em real por litro,\nda gasolina e do etanol é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q146",
@@ -1845,7 +2410,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma escala termométrica X marca −10 °X para o ponto\nde fusão da água e 140 °X para o seu ponto de ebulição.\nNa escala Celsius, as temperaturas de fusão e de ebulição\nda água são 0 °C e 100 °C, respectivamente. O gráfico que\nexpressa a relação entre essas duas escalas é uma reta.\n\nA figura apresenta a representação de cinco gráficos\n(I, II, III, IV e V) num sistema de coordenadas cartesianas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q149_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual gráfico representa a relação entre as temperaturas\nnas escalas Celsius e X?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q150",
@@ -1877,7 +2459,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um garrafão, cujas seções transversais são circunferências, encontra-se cheio de água. Ao ser acoplado a um\nbebedouro, ficou com sua base voltada para cima e paralela ao chão. A torneira desse bebedouro foi aberta para escoar\ntoda a água desse garrafão com vazão constante. A vista frontal do garrafão é apresentada na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q150_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O gráfico que melhor representa a variação da altura h da água no garrafão, em função do tempo t, é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q150_f2.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q150_f3.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q150_f4.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q150_f5.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q150_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q151",
@@ -1909,7 +2514,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na construção de um avião de papel, uma criança dobrou uma folha retangular sobrepondo o lado DC ao lado AB.\nAssim, ela obteve dois novos retângulos, sendo um deles o retângulo DCNM, conforme a figura 1. Em seguida, ela fez\numa nova dobradura, mantendo N fixo e sobrepondo o lado CN, de DCNM, a um segmento de MN. Essa sobreposição\ndeterminou um ponto P em MN e também um ponto Q em DC, conforme a figura 2."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q151_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Considerando as classificações quanto à medida dos ângulos e à medida dos lados, o triângulo NPQ é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q152",
@@ -1924,11 +2546,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A pressão sonora (P), medida em newton por metro quadrado (N/m²), e o nível dessa pressão sonora (n), medido\nem decibel (dB), se relacionam mediante a expressão\n(cid:30) P (cid:27)\nn(cid:31)20log(cid:28) (cid:25),\n(cid:29)P (cid:26)\n0\nsendo P = 2 × 10–5 N/m2 uma constante, denominada limiar de percepção do ouvido humano.\n0\nDurante uma fiscalização, foi medido, por um decibelímetro, que o ruído proveniente de um carro, com seu som\nautomotivo ligado, atingiu um nível de pressão sonora de 80 dB.\nA pressão sonora, em newton por metro quadrado, proveniente desse ruído foi igual a",
     "alternativas": {
-      "A": "8 × 10−5",
-      "B": "5 × 10−2",
-      "C": "2 × 10−1",
-      "D": "1 × 103",
-      "E": "2 × 109"
+      "A": "8 × 10⁻⁵",
+      "B": "5 × 10⁻²",
+      "C": "2 × 10⁻¹",
+      "D": "1 × 10³",
+      "E": "2 × 10⁹"
     },
     "gabarito": "C",
     "anulada": false,
@@ -1941,7 +2563,31 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A pressão sonora (P), medida em newton por metro quadrado (N/m²), e o nível dessa pressão sonora (n), medido\nem decibel (dB), se relacionam mediante a expressão"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q152_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q152_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Durante uma fiscalização, foi medido, por um decibelímetro, que o ruído proveniente de um carro, com seu som\nautomotivo ligado, atingiu um nível de pressão sonora de 80 dB.\nA pressão sonora, em newton por metro quadrado, proveniente desse ruído foi igual a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q153",
@@ -1973,7 +2619,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma microempresa pretende fabricar pipas para vender\nno próximo verão. Um modelo de pipa está representado\npelo quadrilátero ABCD."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q153_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nessa representação, os segmentos AB, BC e CE\nmedem, respectivamente, 20 cm, 34 cm e 30 cm. Além\ndisso, E pertence ao segmento AC e é ponto médio do\nsegmento BD.\nA medida da área, em centímetro quadrado, desse\nmodelo de pipa é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q154",
@@ -1988,11 +2651,11 @@
     "lingua_estrangeira": null,
     "enunciado": "As distâncias no espaço são tão grandes que seria\nmuito difícil gerenciar os números medindo-os em milhas ou\nem quilômetros. Então, os astrônomos criaram uma medida\npadrão, o ano-luz. Um ano-luz é a distância percorrida pela\nluz, no vácuo, durante um ano. Para se ter uma ideia, um\nsegundo-luz é igual a 300 000 km, ou seja, se dois objetos\nestão separados por um segundo-luz, a distância entre\neles é 300 000 km.\nNa imagem, tem-se a representação da Via Láctea e,\nno círculo em detalhe, a distância entre o Sol e a Terra,\nigual a 8 minutos-luz.\nDisponível em: http://ciencia.hsw.uol.com.br.\nAcesso em: 5 ago. 2012.\nA distância entre o Sol e a Terra, em km, escrita como\numa potência de base 10, é de",
     "alternativas": {
-      "A": "24 × 105",
-      "B": "144 × 105",
-      "C": "18 × 106",
-      "D": "24 × 106",
-      "E": "144 × 106"
+      "A": "24 × 10⁵",
+      "B": "144 × 10⁵",
+      "C": "18 × 10⁶",
+      "D": "24 × 10⁶",
+      "E": "144 × 10⁶"
     },
     "gabarito": "E",
     "anulada": false,
@@ -2006,7 +2669,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "As distâncias no espaço são tão grandes que seria\nmuito difícil gerenciar os números medindo-os em milhas ou\nem quilômetros. Então, os astrônomos criaram uma medida\npadrão, o ano-luz. Um ano-luz é a distância percorrida pela\nluz, no vácuo, durante um ano. Para se ter uma ideia, um\nsegundo-luz é igual a 300 000 km, ou seja, se dois objetos\nestão separados por um segundo-luz, a distância entre\neles é 300 000 km.\n\nNa imagem, tem-se a representação da Via Láctea e,\nno círculo em detalhe, a distância entre o Sol e a Terra,\nigual a 8 minutos-luz."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q154_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: http://ciencia.hsw.uol.com.br.\nAcesso em: 5 ago. 2012.\nA distância entre o Sol e a Terra, em km, escrita como\numa potência de base 10, é de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q155",
@@ -2021,11 +2701,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma empresa com 425 funcionários resolve sortear,\nnuma festa comemorativa, uma bicicleta entre os\nfuncionários que têm filhos. Dos seus 425 funcionários,\n68 não têm filhos, 153 têm um filho, 119 têm dois filhos e\no restante tem mais de dois filhos. Cartões, com um único\nnúmero impresso, serão distribuídos a funcionários que\ntêm, pelo menos, um filho. Cada funcionário receberá, no\nmáximo, um desses cartões.\nA probabilidade de a bicicleta ser sorteada para um\nfuncionário que tenha exatamente dois filhos é\n357",
     "alternativas": {
-      "A": "425 238",
-      "B": "425 119",
-      "C": "425 119",
-      "D": "357 1",
-      "E": "119"
+      "A": "357/425",
+      "B": "238/425",
+      "C": "119/425",
+      "D": "119/357",
+      "E": "1/119"
     },
     "gabarito": "D",
     "anulada": false,
@@ -2038,7 +2718,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa com 425 funcionários resolve sortear,\nnuma festa comemorativa, uma bicicleta entre os\nfuncionários que têm filhos. Dos seus 425 funcionários,\n68 não têm filhos, 153 têm um filho, 119 têm dois filhos e\no restante tem mais de dois filhos. Cartões, com um único\nnúmero impresso, serão distribuídos a funcionários que\ntêm, pelo menos, um filho. Cada funcionário receberá, no\nmáximo, um desses cartões.\nA probabilidade de a bicicleta ser sorteada para um\nfuncionário que tenha exatamente dois filhos é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q156",
@@ -2070,7 +2758,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O processo de truncamento de um octaedro regular\nconsiste em retirar, a partir de cada vértice, uma pirâmide\nobtida pelo seccionamento desse poliedro por um plano,\nconforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q156_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Não há interseção entre duas dessas secções.\n\nDisponível em: www.matematicasvisuales.com.\nAcesso em: 21 out. 2019 (adaptado).\nQual é a quantidade de vértices do octaedro truncado?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q157",
@@ -2132,7 +2837,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "No Brasil, o valor mensal pago na conta de energia\nelétrica pode ser calculado pela fórmula: [consumo de\nenergia (kWh) × valor da tarifa (R$/kWh)] + Cosip, sendo\nCosip a Contribuição ao Sistema de Iluminação Pública,\ncujo valor é definido pelo município.\n\nEm um estado brasileiro que utiliza essa forma de\ncálculo da conta de energia elétrica, o valor da tarifa é\nestipulado conforme as seguintes faixas de consumo:\n• até 100 kWh: R$ 0,90 por kWh;\n\n• de 101 a 200 kWh: R$ 0,90 para os 100 primeiros\n\nkWh e R$ 1,00 por kWh consumido a partir daí;\n\n• acima de 200 kWh: R$ 0,90 para os 100 primeiros\n\nkWh consumidos; R$ 1,00 por kWh para os 100 kWh\n\nseguintes e R$ 1,20 por kWh consumido a partir daí.\n\nUma pessoa desse estado percebe que já consumiu\n180 kWh no mês atual e sabe que, em seu município, é\ncobrada uma Cosip (única) no valor de R$ 10,00 para\nconsumo de até 200 kWh ou de R$ 12,00 para consumo\nsuperior a 200 kWh. Para que a conta do mês atual não\nultrapasse R$ 220,00, ela decide estabelecer como meta\num limite de consumo a partir daquele momento até o final\ndo ciclo de faturamento.\nO limite de consumo, em kWh, que a pessoa deverá\nestabelecer para atingir sua meta é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q159",
@@ -2194,7 +2907,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Apesar de a participação das mulheres no mercado de\ntrabalho ter crescido ao longo dos anos, ainda existe uma\ngrande diferença salarial entre homens e mulheres. Os dados\ndo Cadastro Geral de Empregados e Desempregados (Caged)\napresentados no gráfico mostram a evolução da diferença salarial\nde contratação, com medições feitas de dois em dois anos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q160_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: http://classificados.folha.uol.com.br.\nAcesso em: 21 jun. 2017 (adaptado).\nDe acordo com os dados fornecidos, qual valor mais se\naproxima da diferença salarial média entre homens e\nmulheres nesse período?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q161",
@@ -2226,7 +2956,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma pessoa planeja fazer um intercâmbio com duração\nde dois meses consecutivos a serem escolhidos dentre os\nseguintes meses: abril, maio, junho e julho.\n\nA tabela apresenta as cinco cidades possíveis para\no intercâmbio de seu interesse (X, Y, Z, W e K), com as\nrespectivas temperaturas máximas mensais registradas\nno mesmo período do ano anterior."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q161_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Seu médico recomendou que, com base nos dados\nfornecidos na tabela, ela escolhesse a cidade que\napresentasse, em dois meses consecutivos, a maior média\nde temperatura máxima mensal e fizesse o intercâmbio\nnesse período.\nQual cidade a pessoa deve escolher para satisfazer\nadequadamente a recomendação médica?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q162",
@@ -2288,7 +3035,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma escola analisou as propostas de cinco empresas\npara alugar uma máquina fotocopiadora que atenda à\ndemanda de 12 000 cópias mensais. Cada empresa cobra\num valor fixo pelo aluguel mensal da máquina, mais um\nvalor proporcional ao número de cópias realizadas, ambos\nem real. Assim, o custo total C, do aluguel de uma máquina,\nque atenda a uma demanda de x cópias mensais, em cada\numa das cinco empresas, pode ser dado pelas expressões:\n• empresa I: C = 500 + 0,40x;\n• empresa II: C = 800 + 0,50x;\n• empresa III: C = 2 000 + 0,20x;\n• empresa IV: C = 1 100 + 0,25x;\n• empresa V: C = 600 + 0,30x.\n\nA escola escolheu a empresa que apresentou a\nproposta que fornecia o serviço necessário pelo menor\ncusto mensal.\nA empresa escolhida foi a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q164",
@@ -2351,7 +3106,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para estimar a quantidade de tijolos a ser usada na\nconstrução de uma parede, é necessário saber como o\ntijolo será assentado, pois a estimativa depende de qual\nface do tijolo ficará aparente na parede.\n\nEm uma obra, um pedreiro deverá construir uma\nparede, na qual haverá uma janela, ambas em formato\nretangular, utilizando tijolos em forma de blocos de faces\ntambém retangulares, com as medidas indicadas na figura\na seguir."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q165_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Segundo as orientações que recebeu, a janela não\npoderá ser tão pequena a ponto de a medida de sua área\nequivaler à área da face aparente de 100 tijolos, e nem tão\ngrande a ponto de ocupar uma área de medida maior ou\nigual a 1/6 da medida da área da parede, na situação em\nque não houvesse janela na parede. Despreze a espessura\nda massa para assentar esses tijolos.\nNessas condições, as quantidades mínima e máxima de\ntijolos que poderão ser utilizados na construção dessa\nparede são, respectivamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q166",
@@ -2384,7 +3156,53 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A transformação entre os tipos de energia cinética"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q166_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "é regida pela lei que afirma que a energia mecânica, dada"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q166_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "que, em um sistema conservativo, a energia mecânica é de\n12 kJ (quilojoule), sendo observado que a energia cinética"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q166_f3.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "apresentou o comportamento descrito no gráfico."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q166_f4.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Pretende-se avaliar, no período de 0 a 8 horas, qual é o\nmaior valor possível de ser atingido pela energia potencial\nEₚ nesse sistema conservativo.\nO valor máximo da energia potencial, em quilojoule, é\nigual a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q167",
@@ -2399,11 +3217,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Visando obter créditos de carbono, uma empresa,\nemissora de gases de efeito estufa, elabora um projeto de\nreflorestamento em uma área desmatada. De acordo com o\nprojeto, no primeiro ano serão reflorestados 500 hectares.\nA partir daí, a cada ano, a área total reflorestada será\naumentada em 50% em relação ao ano anterior.\nA expressão algébrica que representa a área total\nreflorestada (A ), em hectare, ao final de n anos é\nn",
     "alternativas": {
-      "A": "A = 500 ⋅ 0,5n−1 n",
-      "B": "A = 500 ⋅ 1,5n−1 n",
-      "C": "A = 500 + n ⋅ 250 n",
-      "D": "A = 500 ⋅ (1 + 0,5n−1) n",
-      "E": "A = 500 + (n − 1) ⋅ 250 n"
+      "A": "Aₙ = 500 ⋅ 0,5ⁿ⁻¹",
+      "B": "Aₙ = 500 ⋅ 1,5ⁿ⁻¹",
+      "C": "Aₙ = 500 + n ⋅ 250",
+      "D": "Aₙ = 500 ⋅ (1 + 0,5ⁿ⁻¹)",
+      "E": "Aₙ = 500 + (n − 1) ⋅ 250"
     },
     "gabarito": "B",
     "anulada": false,
@@ -2416,7 +3234,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Visando obter créditos de carbono, uma empresa,\nemissora de gases de efeito estufa, elabora um projeto de\nreflorestamento em uma área desmatada. De acordo com o\nprojeto, no primeiro ano serão reflorestados 500 hectares.\nA partir daí, a cada ano, a área total reflorestada será\naumentada em 50% em relação ao ano anterior.\nA expressão algébrica que representa a área total\nreflorestada (Aₙ), em hectare, ao final de n anos é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q168",
@@ -2448,7 +3274,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O automóvel é um bem que se desvaloriza muito\nrapidamente, quando comparado a outros bens. Após\na venda, um automóvel novo já sofre uma grande\ndesvalorização. O histórico de um automóvel novo,\nvendido por R$ 30 000,00, apresenta os seguintes\nvalores (V) de mercado, após decorridos os períodos\nindicados a seguir:\n• ao final de um ano, R$ 27 000,00;\n• ao final de dois anos, R$ 24 300,00;\n• ao final de três anos, R$ 21 870,00.\n\nEsses preços seguiram um modelo exponencial que\nexpressa V em função do número n de ano de uso, pela\nrelação V(n) = V₀ · qⁿ, em que V₀ é o valor inicial, q é o\nfator de desvalorização e n é o tempo, em ano, decorrido\napós a venda.\nO valor, em milhar de real, com uma casa decimal, que\nmais se aproxima do valor de mercado desse carro, ao\nfinal de seis anos, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q169",
@@ -2480,7 +3314,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A partir de um exame clínico, ficou constatado que\numa pessoa encontrava-se com uma grave deficiência\nde vitaminas X e Y. Ela foi orientada a fazer 100% de\nreposição diária de cada vitamina. Devido à sua condição\nsocioeconômica, ela só dispõe dos alimentos Z e W para\nsuprir essa deficiência. Os alimentos Z e W custam,\nrespectivamente, R$ 3,00 e R$ 8,00 por quilo. Segue um\nquadro com a porcentagem que cada 100 g desses dois\nalimentos fornece de cada vitamina."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q169_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O valor mínimo diário, em real, que a pessoa gastará para\nsuprir suas necessidades de vitaminas X e Y, consumindo\nos alimentos Z e W, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q170",
@@ -2513,7 +3364,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Dois objetos metálicos, ambos com temperatura inicial\nigual a 10 °C, são aquecidos. Suas temperaturas, y₁ e y₂,\nem função do tempo t, em segundo, estão representadas\nno plano cartesiano pelas semirretas com origem no ponto\nA(0; 10) e que passam, respectivamente, pelos pontos\nB(20; 50) e C(40; 30). Sabe-se que, em determinado\nintervalo de tempo, a temperatura y₁ aumentou 20 °C."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q170_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nesse mesmo intervalo de tempo, a temperatura y₂,\nem grau Celsius, aumentou"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q171",
@@ -2545,7 +3413,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa produz embalagens para acomodar\nseu produto. As embalagens atuais são cilíndricas e\nmedem 16 cm de diâmetro e 20 cm de altura. A pedido\nda direção, as embalagens terão um novo formato.\nElas serão na forma de paralelepípedos retos retângulos,\nde base quadrada, de lado medindo 16 cm. A capacidade\ndelas deverá ser, pelo menos, 400 mL maior que a das\nembalagens atuais.\nUse 3 como valor aproximado de π.\nO valor aproximado da medida da altura das novas\nembalagens, em centímetro, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q172",
@@ -2637,7 +3513,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em 2017, foram publicados os resultados de uma\npesquisa sobre a distância média preferida entre pessoas\n“estranhas”, “conhecidas” e “amigas”, dependendo do local\nonde vivem, conforme apresentado."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q174_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SOROKOWSKA, A. et al. Prefered Interpersonal Distances: a Global\nComparison. J Cross-Cultural Psychol., n. 48, 2017 (adaptado).\nDentre os locais considerados no gráfico, os que\napresentam as menores distâncias médias preferidas entre\n“estranhos”, “conhecidos” e “amigos” são, respectivamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q175",
@@ -2699,7 +3592,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "É comum pensarmos na equivalência entre a idade\nde um animal de estimação, no caso de cães e gatos, e\nde um ser humano.\n\nDe acordo com as diretrizes de idade criadas pela\nAmerican Animal Hospital Association (AAHA), o International\nCat Care e a American Association of Feline Practitioners\n(AAFP), a última fase da vida de um gato é chamada\nde geriátrica e começa aos 15 anos de vida do animal.\nA tabela apresenta os primeiros anos da fase geriátrica da\nequivalência entre a idade do gato e a idade de um humano."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q176_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Sabe-se que o gato mais velho do mundo morreu\nao completar 38 anos de vida. Considere que o padrão\nobservado na tabela se mantém.\nDisponível em: https://canaldopet.ig.com.br.\nAcesso em: 28 nov. 2021 (adaptado).\nDe acordo com os dados apresentados, a idade em que\no gato mais velho do mundo morreu é equivalente a qual\nidade, em ano, de um humano?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q177",
@@ -2714,11 +3624,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Na planta baixa de uma casa, um quarto retangular,\ncuja área é de 24 m2, está representado por um retângulo\ncom lados medindo 0,10 m e 0,15 m.\nA escala dessa planta é",
     "alternativas": {
-      "A": "1 : 24.",
-      "B": "1 : 40.",
-      "C": "1 : 60.",
-      "D": "1 : 1 600.",
-      "E": "1 : 16 000."
+      "A": "1: 24.",
+      "B": "1: 40.",
+      "C": "1: 60.",
+      "D": "1: 1600.",
+      "E": "1: 16 000."
     },
     "gabarito": "B",
     "anulada": false,
@@ -2731,7 +3641,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na planta baixa de uma casa, um quarto retangular,\ncuja área é de 24 m², está representado por um retângulo\ncom lados medindo 0,10 m e 0,15 m.\nA escala dessa planta é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q178",
@@ -2763,7 +3681,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O dono de dois cachorrinhos, um shitzu e um poodle,\nfez uma pesquisa na internet sobre preços de banho para\nseus cães em cinco lojas próximas à sua casa. Ele pretendia\nlevar os dois cachorrinhos a um mesmo petshop naquela\nsemana para tomar banho."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q178_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O local escolhido foi o que apresentou o menor preço\npara banho dos dois cachorrinhos.\nO petshop escolhido foi o"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q179",
@@ -2778,11 +3713,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um tanque de armazenamento de líquidos tem o\nformato de uma pirâmide reta de base quadrada, cujo\nplano que contém essa base é paralelo a um solo plano\ne horizontal. Esse tanque tem capacidade de 240 litros e\naltura de 2 metros. Inicialmente vazio, nele é despejado\num líquido à vazão constante de 0,015 m3/s.\nSabe-se que 1 L = 1 dm3 = 0,001 m3.\nQual expressão fornece a altura, em metro, da coluna de\nlíquido dentro desse tanque em função do tempo t, em\nsegundo?\nt",
     "alternativas": {
-      "A": "3 2 3t",
-      "B": "2 1 t",
-      "C": "3 10 2 1 t",
-      "D": "3 10 8 3 t",
-      "E": "3 10 2"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "A",
     "anulada": false,
@@ -2797,7 +3732,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um tanque de armazenamento de líquidos tem o\nformato de uma pirâmide reta de base quadrada, cujo\nplano que contém essa base é paralelo a um solo plano\ne horizontal. Esse tanque tem capacidade de 240 litros e\naltura de 2 metros. Inicialmente vazio, nele é despejado\num líquido à vazão constante de 0,015 m³/s.\nSabe-se que 1 L = 1 dm³ = 0,001 m³."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q179_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual expressão fornece a altura, em metro, da coluna de\nlíquido dentro desse tanque em função do tempo t, em\nsegundo?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q179_f2.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q179_f3.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q179_f4.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q179_f5.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q179_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D2-CD7-Q180",

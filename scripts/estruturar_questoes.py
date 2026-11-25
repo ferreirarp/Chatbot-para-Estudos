@@ -37,6 +37,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import extrair_prova_regular as ex  # noqa: E402
 
 RESOLUCAO = 200
+ESPACO = 0.15        # intervalo máximo (fração do corpo da letra) que ainda junta letras
+MODO_ESPACO = "relativo"
 FOLGA = 3.0           # pontos de margem em volta de cada recorte
 JUNTAR = 8.0          # objetos mais próximos que isso viram um recorte só
 
@@ -50,7 +52,9 @@ def _privado(ch: str) -> bool:
 
 def _decorativo(o, r, chars_pedaco, faixas_cab, ip) -> bool:
     vertical_divisoria = ex.DIVISORIA[0] < o["x0"] < ex.DIVISORIA[1] and o["x1"] - o["x0"] < 1
-    no_cabecalho = any(i == ip and a <= o["top"] <= z for i, a, z in faixas_cab)
+    # decoração do cabeçalho: objeto inteiro dentro da faixa do "QUESTÃO N"
+    # (um quadro que só começa logo abaixo dela não é decoração)
+    no_cabecalho = any(i == ip and a <= o["top"] and o["bottom"] <= z + 2 for i, a, z in faixas_cab)
     horizontal_longo = o["bottom"] - o["top"] < 1.5 and o["x1"] - o["x0"] >= 0.7 * (r[2] - r[0])
     fecho = horizontal_longo and not any(c["top"] > o["bottom"] for c in chars_pedaco)
     fora = (not ex.X_ESQ <= (o["x0"] + o["x1"]) / 2 <= ex.X_DIR
@@ -85,23 +89,65 @@ def _fracoes(pg, r, chars):
     """Frações simples: traço horizontal curto com caracteres logo acima e
     logo abaixo, dentro da largura do traço. Retorna [(traço, num, den)]."""
     out = []
-    for o in pg.lines + pg.rects:
-        w, h = o["x1"] - o["x0"], o["bottom"] - o["top"]
-        if not (h < 1.5 and 3 < w < 80):
-            continue
-        if not (r[0] <= (o["x0"] + o["x1"]) / 2 <= r[2] and r[1] <= o["top"] <= r[3]):
+    tam = statistics.median(c["size"] for c in chars) if chars else None
+    if chars and len(chars) < 10:
+        tam = max(c["size"] for c in chars)
+    tracos = [o for o in pg.lines + pg.rects
+              if o["bottom"] - o["top"] < 1.5 and 1.5 < o["x1"] - o["x0"] < 80
+              and r[0] <= (o["x0"] + o["x1"]) / 2 <= r[2] and r[1] <= o["top"] <= r[3]]
+    for o in tracos:
+        # fração dentro de fração: nenhuma delas vira texto (fica o recorte)
+        if any(t is not o and t["x0"] < o["x1"] and o["x0"] < t["x1"] and abs(t["top"] - o["top"]) < 15 for t in tracos):
             continue
         na_largura = [c for c in chars if c["x0"] >= o["x0"] - 1.5 and c["x1"] <= o["x1"] + 1.5]
         num = [c for c in na_largura if 0 <= o["top"] - c["bottom"] < 4.5]
         den = [c for c in na_largura if 0 <= c["top"] - o["bottom"] < 4.5]
-        if num and den:
+        # fração dentro de expoente (letras pequenas, como em 3^(t/2)) não vira
+        # texto: fica para o recorte de fórmula
+        if num and den and tam and max(c["size"] for c in num + den) >= tam * 0.85:
             out.append((o, sorted(num, key=lambda c: c["x0"]), sorted(den, key=lambda c: c["x0"])))
     return out
 
 
 def _parte(cs):
-    t = "".join(c["text"] for c in cs)
+    # expoente/índice dentro do numerador ou denominador (m² em W/m²)
+    grande = max(c["size"] for c in cs)
+    base = max(c["bottom"] for c in cs if c["size"] >= grande * 0.85)
+    t = "".join((c["text"].translate(SOBRESCRITO) if c["bottom"] < base - 1 else c["text"].translate(SUBSCRITO))
+                if c["size"] < grande * 0.85 else c["text"] for c in cs)
     return f"({t})" if re.search(r"[+\-−×·]", t) else t
+
+
+def _juntar_sobrepostas_v(caixas, tol=3.0):
+    """Une caixas que se tocam (com folga `tol` nos dois sentidos)."""
+    out = []
+    for c in caixas:
+        c = c[:]
+        mudou = True
+        while mudou:
+            mudou = False
+            for o in out:
+                if c[0] < o[2] + tol and o[0] < c[2] + tol and c[1] < o[3] + tol and o[1] < c[3] + tol:
+                    c = [min(o[0], c[0]), min(o[1], c[1]), max(o[2], c[2]), max(o[3], c[3])]
+                    out.remove(o)
+                    mudou = True
+                    break
+        out.append(c)
+    return out
+
+
+def _juntar_sobrepostas(caixas, tol=4.0):
+    """Une caixas que se sobrepõem, ou que estão lado a lado na mesma altura
+    a até `tol` pontos (metades de uma fórmula, figuras coladas)."""
+    out = []
+    for c in caixas:
+        for o in out:
+            if c[0] < o[2] + tol and o[0] < c[2] + tol and c[1] < o[3] and o[1] < c[3]:
+                o[:] = [min(o[0], c[0]), min(o[1], c[1]), max(o[2], c[2]), max(o[3], c[3])]
+                break
+        else:
+            out.append(c[:])
+    return out if len(out) == len(caixas) else _juntar_sobrepostas(out, tol)
 
 
 def _linhas(pg, r):
@@ -121,13 +167,17 @@ def _linhas(pg, r):
         unicos.append(c)
     chars = unicos
     tam = statistics.median(c["size"] for c in chars)
+    if len(chars) < 10:  # poucos caracteres (²₁D): a mediana pode ser o tamanho pequeno
+        tam = max(c["size"] for c in chars)
     # frações simples viram texto "num/den" na linha em que o traço está
     insercoes = []
     for o, num, den in _fracoes(pg, r, chars):
         usados = {id(c) for c in num + den}
         chars = [c for c in chars if id(c) not in usados]
+        # a caixa vai do numerador ao denominador (um recorte que inclua a
+        # linha não pode cortar a fração)
         insercoes.append({"text": f"{_parte(num)}/{_parte(den)}", "x0": o["x0"], "x1": o["x1"],
-                          "top": o["top"] - tam * 0.7, "bottom": o["top"] + tam * 0.3,
+                          "top": min(c["top"] for c in num), "bottom": max(c["bottom"] for c in den),
                           "size": tam, "fontname": "fracao", "eixo": o["top"]})
     if not chars and not insercoes:
         return []
@@ -145,21 +195,29 @@ def _linhas(pg, r):
     # Índice/expoente: caractere menor encostado (até 4 pt, em cadeia) a um
     # vizinho à esquerda — ou à direita, como em ¹⁴C — na mesma altura.
     soltos = []
-    for c in pequenos_cand:
-        meio = (c["top"] + c["bottom"]) / 2
-        dv = lambda g: abs((g["top"] + g["bottom"]) / 2 - meio)
-        ancorados = [g for g in normais + [x for x in pequenos_cand if id(x) in grupo_de]
-                     if g is not c and dv(g) < g["size"] * 0.7]
-        esq = [g for g in ancorados if -1.0 <= c["x0"] - g["x1"] < 4.0]
-        dir_ = [g for g in ancorados if -1.0 <= g["x0"] - c["x1"] < 4.0]
-        # vizinho mais provável: perto na horizontal e, sobretudo, na vertical
-        viz = (min(esq, key=lambda g: max(0, c["x0"] - g["x1"]) + 2 * dv(g), default=None)
-               or min(dir_, key=lambda g: max(0, g["x0"] - c["x1"]) + 2 * dv(g), default=None))
-        if viz is not None and id(viz) in grupo_de:
-            grupo_de[viz and id(viz)]["chars"].append(c)
-            grupo_de[id(c)] = grupo_de[id(viz)]
-        else:
-            soltos.append(c)
+    # repete até estabilizar: numa cadeia como ¹²₆C o "1" só se liga depois do "2"
+    pendentes = list(pequenos_cand)
+    while True:
+        antes = len(pendentes)
+        restantes = []
+        for c in pendentes:
+            meio = (c["top"] + c["bottom"]) / 2
+            dv = lambda g: abs((g["top"] + g["bottom"]) / 2 - meio)
+            ancorados = [g for g in normais + [x for x in pequenos_cand if id(x) in grupo_de]
+                         if g is not c and dv(g) < g["size"] * 0.7]
+            esq = [g for g in ancorados if -1.0 <= c["x0"] - g["x1"] < 4.0]
+            dir_ = [g for g in ancorados if -1.0 <= g["x0"] - c["x1"] < 4.0]
+            viz = (min(esq, key=lambda g: max(0, c["x0"] - g["x1"]) + 2 * dv(g), default=None)
+                   or min(dir_, key=lambda g: max(0, g["x0"] - c["x1"]) + 2 * dv(g), default=None))
+            if viz is not None and id(viz) in grupo_de:
+                grupo_de[id(viz)]["chars"].append(c)
+                grupo_de[id(c)] = grupo_de[id(viz)]
+            else:
+                restantes.append(c)
+        pendentes = restantes
+        if len(pendentes) == antes:
+            break
+    soltos += pendentes
     # texto pequeno de verdade (fonte, legenda): linhas próprias
     for c in sorted(soltos, key=lambda c: c["bottom"]):
         alvo = next((g for g in grupos if g.get("pequeno") and abs(g["base"] - c["bottom"]) < 1.5), None)
@@ -172,7 +230,7 @@ def _linhas(pg, r):
         if alvo and abs(alvo["base"] - tam * 0.3 - f["eixo"]) < tam:
             alvo["chars"].append(f)
         else:
-            grupos.append({"base": f["bottom"], "chars": [f]})
+            grupos.append({"base": f["eixo"] + tam * 0.3, "chars": [f]})
     # setas e símbolos soltos (→, ⇌) com linha de base própria voltam à linha
     # em cuja altura estão
     caixa_g = lambda g: (min(c["top"] for c in g["chars"]), max(c["bottom"] for c in g["chars"]))
@@ -189,7 +247,7 @@ def _linhas(pg, r):
     for g in grupos:
         cs = sorted(g["chars"], key=lambda c: c["x0"])
         texto = "".join(c["text"] for c in cs)
-        if re.fullmatch(r"\s*QUESTÃO\s*\d+\s*", texto):
+        if re.fullmatch(r"\s*QUESTÃO\s*\d+\s*", texto, re.I):
             continue
         out.append({"top": min(c["top"] for c in cs), "bottom": max(c["bottom"] for c in cs),
                     "x0": min(c["x0"] for c in cs), "x1": max(c["x1"] for c in cs), "chars": cs, "texto": texto})
@@ -202,14 +260,46 @@ def _texto_linha(ln) -> tuple[str, bool]:
     normais = [c for c in chars if FONTE_ALT not in c["fontname"].lower()]
     if not normais:
         return ln["texto"], False
-    tam = statistics.mode(round(c["size"], 1) for c in normais)
-    base = statistics.median(c["bottom"] for c in normais if abs(c["size"] - tam) < 0.6)
+    # tamanho "normal" da linha: o maior presente (numa linha como ²₁D os
+    # caracteres pequenos são maioria)
+    tam = max([round(c["size"], 1) for c in normais if c["fontname"] != "fracao"] or [round(normais[0]["size"], 1)])
+    base = statistics.median([c["bottom"] for c in normais if abs(c["size"] - tam) < 0.6 and c["fontname"] != "fracao"]
+                             or [c["bottom"] for c in normais])
+    # Espaço entre palavras: relativo ao espaçamento entre letras da própria
+    # linha (a mediana dos intervalos), porque linhas justificadas podem estar
+    # comprimidas (letras a -0,3 pt, palavras a +1,4 pt).
+    intervalos = [b["x0"] - a["x1"] for a, b in zip(chars, chars[1:])]
+    base_letras = statistics.median(intervalos) if len(intervalos) >= 4 else 0.0
+    def limiar_espaco(a, b):
+        corpo = max(a["size"], b["size"])
+        if MODO_ESPACO == "fixo":
+            return ESPACO * corpo
+        return min(ESPACO * corpo, max(0.06 * corpo, base_letras + 0.11 * corpo))
+    # pilha de índice e expoente na mesma posição (²₁D): o expoente vem primeiro
+    def tipo(c):
+        if c["size"] >= tam * 0.85 or FONTE_ALT in c["fontname"].lower():
+            return "n"
+        return "sup" if c["bottom"] < base - 1.0 else "sub" if c["bottom"] > base + 0.6 else "n"
+    ordem, i = [], 0
+    while i < len(chars):
+        if tipo(chars[i]) == "n":
+            ordem.append(chars[i]); i += 1; continue
+        j = i
+        while j < len(chars) and tipo(chars[j]) != "n":
+            j += 1
+        bloco = chars[i:j]
+        sups = [c for c in bloco if tipo(c) == "sup"]
+        subs = [c for c in bloco if tipo(c) == "sub"]
+        empilhado = sups and subs and min(c["x1"] for c in sups + subs) > max(c["x0"] for c in sups + subs) - 6
+        ordem += (sups + subs) if empilhado else bloco
+        i = j
+    chars = ordem
     partes, complexa, anterior = [], False, None
     for c in chars:
-        t = c["text"]
+        t = _texto_char(c)
         if _privado(t):
             complexa = True
-        if anterior is not None and c["x0"] - anterior["x1"] > 0.15 * max(anterior["size"], c["size"]):
+        if anterior is not None and c["x0"] - anterior["x1"] > limiar_espaco(anterior, c):
             partes.append(" ")
         if c["size"] < tam * 0.85 and t.strip() and t not in ",.;:" and FONTE_ALT not in c["fontname"].lower():
             if c["bottom"] < base - 1.0:
@@ -221,14 +311,26 @@ def _texto_linha(ln) -> tuple[str, bool]:
             if conv == t and (c["bottom"] < base - 1.0 or c["bottom"] > base + 0.6):
                 complexa = True  # índice/expoente sem equivalente Unicode
             t = conv
-        partes.append(t)
+        partes.append(t + ("\u20d7" if c.get("seta") else ""))
         anterior = c
     texto = re.sub(r" {2,}", " ", "".join(partes)).strip()
     texto = re.sub(r"(?<=[\d)]) (?=[.,;:](?:\s|$))", "", texto)  # "15/60 ." -> "15/60."
+    texto = re.sub(r" (?=[,.;:!?)\]](?:\s|$|[,.;:!?)\]]))", "", texto)   # "F ," -> "F,"
+    texto = re.sub(r"(?<=[(\[]) ", "", texto)                            # "( t" -> "(t"
+    texto = re.sub(r"([⁰¹²³⁴⁵⁶⁷⁸⁹]+[₀₁₂₃₄₅₆₇₈₉]+) (?=[A-Z])", r"\1", texto)   # "¹²₆ C" -> "¹²₆C"
     return texto, complexa
 
 
 FONTE_ALT = ex.FONTE_ALTERNATIVA
+# Codificação padrão da fonte Symbol (Adobe): a letra latina guardada no PDF
+# é desenhada como a grega correspondente (a -> α, D -> Δ ...).
+SYMBOL = str.maketrans("ABCDEFGHIKLMNOPQRSTUWXYZabcdefghijklmnopqrstuvwxyz",
+                       "ΑΒΧΔΕΦΓΗΙΚΛΜΝΟΠΘΡΣΤΥΩΞΨΖαβχδεφγηιϕκλμνοπθρστυϖωξψζ")
+
+
+def _texto_char(c) -> str:
+    t = c["text"]
+    return t.translate(SYMBOL) if "symbol" in c["fontname"].lower() and len(t) == 1 and t.isascii() and t.isalpha() else t
 
 
 def _marcadores(pg, r) -> list[dict]:
@@ -257,28 +359,68 @@ def _conteudo(pg, ip, caixa, faixas_cab, revisar):
     centro_dentro = lambda o: r[0] <= (o["x0"] + o["x1"]) / 2 <= r[2] and r[1] <= (o["top"] + o["bottom"]) / 2 <= r[3]
     vetores = [o for o in pg.lines + pg.rects + pg.curves
                if centro_dentro(o) and not _decorativo(o, r, chars_reg, faixas_cab, ip)]
+    # seta de vetor: traço curto (e a ponta) logo acima de uma letra -> f⃗
+    setas = set()
+    for o in vetores:
+        if o["x1"] - o["x0"] > 12 or o["bottom"] - o["top"] > 5:
+            continue
+        for c in chars_reg:
+            if c["text"].isalpha() and o["x0"] < c["x1"] + 3 and o["x1"] > c["x0"] - 3 \
+                    and c["top"] - 5 <= o["bottom"] <= c["top"] + 0.5:
+                c["seta"] = True
+                setas.add(id(o))
+                break
+    vetores = [o for o in vetores if id(o) not in setas]
     # traços finos e curtos (barra de fração, de raiz, sublinhado) são de
     # fórmula; formas pequenas (círculo, quadrado de legenda) são figura
     pequenos = [o for o in vetores if o["x1"] - o["x0"] < 60 and o["bottom"] - o["top"] < 15
                 and min(o["x1"] - o["x0"], o["bottom"] - o["top"]) < 1.5]
     objetos += [_caixa(o, r) for o in vetores if o not in pequenos]
+    # traços finos agrupados (2 ou mais, com altura) formam um desenho feito
+    # de linhas (planta de terreno, gráfico de eixos): é figura, não fórmula
+    # mesmo conjunto de caracteres que _linhas usa (centro dentro da região):
+    # um traço que não vira "a/b" lá tem de virar recorte aqui
+    centro_em_r = [c for c in chars_reg if r[0] <= (c["x0"] + c["x1"]) / 2 <= r[2] and r[1] <= (c["top"] + c["bottom"]) / 2 <= r[3]]
+    tracos_fracao = {id(o) for o, _n, _d in _fracoes(pg, r, centro_em_r)}
+    soltos_ = [o for o in pequenos if id(o) not in tracos_fracao]
+    grupos_t = []
+    for o in soltos_:
+        cx = [o["x0"], o["top"], o["x1"], o["bottom"]]
+        for g in grupos_t:
+            b = g["caixa"]
+            if cx[0] - 2 < b[2] and b[0] - 2 < cx[2] and cx[1] - 2 < b[3] and b[1] - 2 < cx[3]:
+                g["caixa"] = [min(b[0], cx[0]), min(b[1], cx[1]), max(b[2], cx[2]), max(b[3], cx[3])]
+                g["n"] += 1
+                g["ids"].add(id(o))
+                break
+        else:
+            grupos_t.append({"caixa": cx, "n": 1, "ids": {id(o)}})
+    desenhados = set()
+    for g in grupos_t:
+        if g["n"] >= 2 and g["caixa"][3] - g["caixa"][1] >= 6:
+            objetos.append(g["caixa"])
+            desenhados |= g["ids"]
+    pequenos = [o for o in pequenos if id(o) not in desenhados]
     caixas = [c for c in _juntar(objetos) if c[3] - c[1] >= 3]  # traço solto (separador) não é figura
     for o in pequenos:  # pequenos traços encostados num desenho fazem parte dele
         for c in caixas:
             if o["x0"] < c[2] + JUNTAR and o["x1"] > c[0] - JUNTAR and o["top"] < c[3] + JUNTAR and o["bottom"] > c[1] - JUNTAR:
                 c[:] = [min(c[0], o["x0"]), min(c[1], o["top"]), max(c[2], o["x1"]), max(c[3], o["bottom"])]
                 break
-    tracos_fracao = {id(o) for o, _n, _d in _fracoes(pg, r, chars_reg)}
     formulas = [[o["x0"], o["top"] - 1, o["x1"], o["bottom"] + 1] for o in pequenos
-                if id(o) not in tracos_fracao and o["bottom"] - o["top"] < 1.5 and o["x1"] - o["x0"] > 3
+                if id(o) not in tracos_fracao and o["bottom"] - o["top"] < 1.5 and o["x1"] - o["x0"] > 1.5
                 and not any(c[1] - 1 <= o["top"] <= c[3] + 1 for c in caixas)]
+
+    def so_pequenos(ln):  # linha só de índices/expoentes soltos
+        return tam_reg and max(c["size"] for c in ln["chars"]) < tam_reg * 0.85
 
     def absorver(cx):
         mudou = True
         while mudou:
             mudou = False
             for ln in linhas:
-                if not ln.get("usada") and min(ln["bottom"], cx[3]) - max(ln["top"], cx[1]) > 0.4 * (ln["bottom"] - ln["top"]):
+                encosta = so_pequenos(ln) and ln["top"] <= cx[3] + 3 and ln["bottom"] >= cx[1] - 3
+                if not ln.get("usada") and (encosta or min(ln["bottom"], cx[3]) - max(ln["top"], cx[1]) > 0.4 * (ln["bottom"] - ln["top"])):
                     cx[:] = [min(cx[0], ln["x0"]), min(cx[1], ln["top"]), max(cx[2], ln["x1"]), max(cx[3], ln["bottom"])]
                     ln["usada"] = mudou = True
 
@@ -288,12 +430,55 @@ def _conteudo(pg, ip, caixa, faixas_cab, revisar):
     bloco_x0 = min([ln["x0"] for ln in normais_reg] or [r[0]])
     bloco_x1 = max([ln["x1"] for ln in normais_reg] or [r[2]])
     itens = []
+    def rotulos(cx):
+        """Linha curta, fora da margem do parágrafo, sem pontuação final e
+        encostada na figura é rótulo dela (“Círculo C₁”)."""
+        mudou = True
+        while mudou:
+            mudou = False
+            for ln in linhas:
+                if ln.get("usada"):
+                    continue
+                txt = "".join(ch["text"] for ch in ln["chars"]).strip()
+                curta = ln["x1"] - ln["x0"] < 0.6 * (bloco_x1 - bloco_x0)
+                fora_da_margem = ln["x0"] > bloco_x0 + 8
+                sem_ponto = not re.search(r"[.:;?!]$", txt)
+                # rótulos de figuras lado a lado ficam numa linha só, com
+                # buracos grandes entre as palavras ("Terreno 1    Terreno 2")
+                cs = ln["chars"]
+                esparsa = len(cs) > 1 and max(b["x0"] - a["x1"] for a, b in zip(cs, cs[1:])) > 15
+                dist = 18 if esparsa else 14
+                perto = (0 <= ln["top"] - cx[3] <= dist) or (0 <= cx[1] - ln["bottom"] <= dist)
+                sobrepoe = ln["x0"] < cx[2] + 20 and ln["x1"] > cx[0] - 20
+                if ((curta and fora_da_margem) or esparsa) and sem_ponto and perto and sobrepoe:
+                    cx[:] = [min(cx[0], ln["x0"]), min(cx[1], ln["top"]), max(cx[2], ln["x1"]), max(cx[3], ln["bottom"])]
+                    ln["usada"] = mudou = True
+
+    # absorve linhas e rótulos; figuras que passam a se sobrepor viram uma só
+    while True:
+        for c in caixas:
+            absorver(c)
+            rotulos(c)
+            absorver(c)
+        juntas = _juntar_sobrepostas(caixas)
+        if len(juntas) == len(caixas):
+            break
+        caixas = juntas
     for c in caixas:
-        absorver(c)
         itens.append((c[1], "figura", (c, "figura")))
     for f in _juntar(formulas):
         if any(f[1] < c[3] and f[3] > c[1] for _, t, (c, _m) in itens):
             continue
+        # o traço leva junto o que está colado acima e abaixo (numerador e
+        # denominador); depois as linhas inteiras entram pela absorção
+        mudou = True
+        while mudou:
+            mudou = False
+            for c in chars_reg:
+                if c["x1"] > f[0] - 1 and c["x0"] < f[2] + 1 and not (f[1] <= c["top"] and c["bottom"] <= f[3]) \
+                        and (0 <= f[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - f[3] <= 4.5 or (c["top"] < f[3] and c["bottom"] > f[1])):
+                    f[:] = [min(f[0], c["x0"]), min(f[1], c["top"]), max(f[2], c["x1"]), max(f[3], c["bottom"])]
+                    mudou = True
         absorver(f)
         itens.append((f[1], "figura", (f, "fórmula")))
         revisar.add("fórmula recortada como imagem")
@@ -307,43 +492,87 @@ def _conteudo(pg, ip, caixa, faixas_cab, revisar):
                 c[3] = min(c[3], ln["top"] - 1 - FOLGA)
             else:
                 c[1] = max(c[1], ln["bottom"] + 1 + FOLGA)
+    # recorte que ficou sem altura depois de aparado não tinha conteúdo próprio
+    itens = [it for it in itens if it[1] != "figura" or it[2][0][3] - it[2][0][1] >= 3]
+    # 1ª passada: linhas complexas viram recorte e incorporam índices colados
     for ln in linhas:
         if ln.get("usada"):
             continue
         texto, complexa = _texto_linha(ln)
         if complexa:
-            itens.append((ln["top"], "figura", ([ln["x0"], ln["top"], ln["x1"], ln["bottom"]], "fórmula")))
+            ln["usada"] = True
+            cx = [ln["x0"], ln["top"], ln["x1"], ln["bottom"]]
+            absorver(cx)
+            itens.append((cx[1], "figura", (cx, "fórmula")))
             revisar.add("fórmula recortada como imagem")
+    # recortes de fórmula na mesma faixa de altura viram um só
+    formulas_it = [it for it in itens if it[1] == "figura" and it[2][1] == "fórmula"]
+    outros = [it for it in itens if not (it[1] == "figura" and it[2][1] == "fórmula")]
+    juntas = []
+    for _, _, (cx, _m) in sorted(formulas_it, key=lambda it: it[2][0][1]):
+        for j in juntas:
+            if cx[1] < j[3] and j[1] < cx[3]:
+                j[:] = [min(j[0], cx[0]), min(j[1], cx[1]), max(j[2], cx[2]), max(j[3], cx[3])]
+                break
         else:
-            # layout: linha centralizada (equação) é parágrafo próprio; recuo
-            # de primeira linha abre parágrafo
-            esq, dir_ = ln["x0"] - bloco_x0, bloco_x1 - ln["x1"]
-            if esq > 12 and dir_ > 12 and abs(esq - dir_) < 10:
-                texto = "\n" + texto + "\n"
-            elif 8 < esq < 40 and dir_ < 25 and tam_reg and statistics.median(c["size"] for c in ln["chars"]) >= tam_reg * 0.95:
-                texto = "\n" + texto
-            itens.append((ln["top"], "linha", texto))
+            juntas.append(cx[:])
+    itens = outros + [(j[1], "figura", (j, "fórmula")) for j in juntas]
+    # 2ª passada: o resto é texto
+    for ln in linhas:
+        if ln.get("usada"):
+            continue
+        texto, _ = _texto_linha(ln)
+        # layout: linha centralizada (equação) é parágrafo próprio; recuo
+        # de primeira linha abre parágrafo
+        esq, dir_ = ln["x0"] - bloco_x0, bloco_x1 - ln["x1"]
+        if esq > 12 and dir_ > 12 and abs(esq - dir_) < 10:
+            texto = "\n" + texto + "\n"
+        elif 8 < esq < 40 and dir_ < 25 and tam_reg and statistics.median(c["size"] for c in ln["chars"]) >= tam_reg * 0.95:
+            texto = "\n" + texto
+        itens.append((ln["top"], "linha", texto))
     return sorted(itens, key=lambda t: t[0])
 
 
 def _fronteira(pg, a, b, x0, x1):
     """Altura que separa a alternativa a da b (b abaixo, mesma coluna): o
     meio da maior faixa vazia entre as duas, considerando letras e objetos."""
-    ocup = []
+    ocup, desenho, letras = [], [], []
     for o in pg.chars + pg.images + pg.lines + pg.rects + pg.curves:
         if o.get("object_type") == "char" and not o["text"].strip():
             continue
-        if o["x1"] > x0 and o["x0"] < x1 and o["bottom"] > a["top"] and o["top"] < b["top"]:
-            ocup.append((max(o["top"], a["top"]), min(o["bottom"], b["top"])))
+        # só objetos com o centro nesta coluna (a caixa de uma imagem da
+        # coluna vizinha pode passar do corredor)
+        if x0 <= (o["x0"] + o["x1"]) / 2 <= x1 and o["bottom"] > a["top"] and o["top"] < b["top"]:
+            if o.get("object_type") == "char":
+                ocup.append((max(o["top"], a["top"]), min(o["bottom"], b["top"])))
+                letras.append(o)
+            else:
+                desenho.append([o["x0"], o["top"], o["x1"], o["bottom"]])
+    # traço de fração + o que está colado acima e abaixo dele = bloco único
+    for d in desenho:
+        if d[3] - d[1] < 1.5 and d[2] - d[0] < 80:
+            for c in letras:
+                if c["x1"] > d[0] - 1 and c["x0"] < d[2] + 1 and (0 <= d[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - d[3] <= 4.5):
+                    d[:] = [min(d[0], c["x0"]), min(d[1], c["top"]), max(d[2], c["x1"]), max(d[3], c["bottom"])]
+    # traços que se tocam formam um bloco sólido (um gráfico inteiro, e não
+    # as linhas de grade com espaços entre elas)
+    for c in _juntar_sobrepostas_v(desenho):
+        ocup.append((max(c[1], a["top"]), min(c[3], b["top"])))
     ocup.sort()
-    melhor, y = (0.0, (a["top"] + b["top"]) / 2), a["top"]
+    # faixas vazias entre a e b; a fronteira é a faixa vazia mais próxima de
+    # b (a mais larga pode estar dentro de a, como entre o traço e o
+    # denominador de uma fração)
+    vazias, y = [], a["top"]
     for t, fim in ocup:
-        if t - y > melhor[0]:
-            melhor = (t - y, (t + y) / 2)
+        if t - y >= 0.8:
+            vazias.append((y, t))
         y = max(y, fim)
-    if b["top"] - y > melhor[0]:
-        melhor = (b["top"] - y, (b["top"] + y) / 2)
-    return melhor[1]
+    if b["top"] - y >= 0.8:
+        vazias.append((y, b["top"]))
+    if not vazias:
+        return b["top"] - 0.3  # linhas coladas: logo acima da letra seguinte
+    y0, y1 = vazias[-1]
+    return (y0 + y1) / 2
 
 
 def _zonas_alternativas(ms, r, topo_texto, pg=None):
@@ -364,10 +593,51 @@ def _zonas_alternativas(ms, r, topo_texto, pg=None):
         passo = statistics.median([b["top"] - a["top"] for a, b in zip(col, col[1:])]) if len(col) > 1 else 60.0
         for i, m in enumerate(col):
             direita = min([o["x0"] - 2 for o in ms if o["x0"] > m["x0"] + 20 and abs(o["top"] - m["top"]) < passo] or [r[2]])
-            topo = _fronteira(pg, col[i - 1], m, m["x0"], direita) if i else max(topo_texto, m["top"] - passo / 2)
+            # 1ª da coluna: último espaço vazio entre o fim do enunciado e ela
+            # (o desenho da alternativa pode subir acima da letra)
+            topo = _fronteira(pg, col[i - 1], m, m["x0"], direita) if i else max(topo_texto, _fronteira(pg, {"top": topo_texto}, m, m["x0"], direita))
             base = _fronteira(pg, m, col[i + 1], m["x0"], direita) if i + 1 < len(col) else r[3]
             zonas[m["letra"]] = (m, [m["x1"] + 0.5, topo, direita, base])
     return zonas
+
+
+NORMALIZA = str.maketrans(dict(zip("⁰¹²³⁴⁵⁶⁷⁸⁹ⁿⁱᵃˣʸᵇᵒᶜ₀₁₂₃₄₅₆₇₈₉ₐₑₒₓₕₖₗₘₙₚₛₜᵣᵢⱼᵤᵥ",
+                                     "0123456789niaxyboc0123456789aeoxhklmnpstrijuv")))
+
+
+def _conferir(pdf, q, faixas_cab, cortes, blocos, alternativas):
+    """Compara as letras e números do PDF com os do texto produzido, por um
+    caminho independente da conversão (todos os caracteres dos pedaços).
+    Falta: caractere que não está no texto nem na imagem salva (que inclui a
+    margem FOLGA). Sobra: texto que repete o que está dentro de um recorte,
+    ou que não existe no PDF."""
+    from collections import Counter
+
+    def contar(margem):
+        cont = Counter()
+        for ip, r in q["pedacos"]:
+            vistos = []
+            for c in pdf.pages[ip].chars:
+                t = _texto_char(c)
+                if not t.strip() or FONTE_ALT in c["fontname"].lower() or "(cid:" in t:
+                    continue
+                cx, cy = (c["x0"] + c["x1"]) / 2, (c["top"] + c["bottom"]) / 2
+                if not (r[0] <= cx <= r[2] and r[1] <= cy <= r[3]):
+                    continue
+                if any(i == ip and h["top"] - 1 <= cy <= h["bottom"] + 1 for i, h in q["cabecalhos"]):
+                    continue  # linha do cabeçalho "QUESTÃO N"
+                if any(i == ip and b[0] - margem <= cx <= b[2] + margem and b[1] - margem <= cy <= b[3] + margem
+                       for i, b in cortes):
+                    continue  # aparece na imagem de um recorte
+                if any(v[0] == t and abs(v[1] - c["x0"]) < 1 and abs(v[2] - c["top"]) < 1 for v in vistos[-6:]):
+                    continue  # glifo repetido no mesmo lugar
+                vistos.append((t, c["x0"], c["top"]))
+                cont.update(ch for ch in t.translate(NORMALIZA) if ch.isalnum())
+        return cont
+    saida = " ".join([b["texto"] for b in blocos if b["tipo"] == "texto"] + list(alternativas.values()))
+    out_chars = Counter(ch for ch in saida.translate(NORMALIZA) if ch.isalnum())
+    fmt = lambda c: "".join(sorted(c.elements()))[:40]
+    return fmt(contar(FOLGA) - out_chars), fmt(out_chars - contar(0))
 
 
 def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
@@ -376,7 +646,10 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
     blocos, alternativas, alt_img = [], {}, {}
     n_fig = [0]
 
+    cortes = []  # (página, caixa) de cada recorte, para a conferência
+
     def recortar(ip, c):
+        cortes.append((ip, tuple(c)))  # caixa do conteúdo; a imagem salva tem FOLGA a mais
         n_fig[0] += 1
         nome = f"{prefixo}_f{n_fig[0]}.png"
         pg = pdf.pages[ip]
@@ -413,7 +686,13 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
             continue
         topo_alt = min(m["top"] for m in ms)
         # texto do enunciado que acaba antes das alternativas
-        linhas_acima = [ln for ln in _linhas(pg, (r[0], r[1], r[2], topo_alt - 1))]
+        # fim do enunciado: última linha de comprimento normal acima das
+        # alternativas (rótulos curtos acima da letra A são do desenho dela)
+        def corrida(ln):  # linha de texto contínua (não rótulos espalhados)
+            cs = ln["chars"]
+            return len(cs) >= 8 and max(b["x0"] - a["x1"] for a, b in zip(cs, cs[1:])) <= 15
+        linhas_acima = [ln for ln in _linhas(pg, (r[0], r[1], r[2], topo_alt - 1))
+                        if ln["x1"] - ln["x0"] >= 0.35 * (r[2] - r[0]) and corrida(ln)]
         topo_texto = max([ln["bottom"] + 1 for ln in linhas_acima] or [r[1]])
         zonas = _zonas_alternativas(ms, r, topo_texto, pg)
         inicio = min(z[1] for _, z in zonas.values())
@@ -440,6 +719,9 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
             b["texto"] = re.sub(r"\n{3,}", "\n\n", b["texto"]).strip("\n")
             b["texto"] = re.sub(r"\n?(CIÊNCIAS DA NATUREZA|MATEMÁTICA|LINGUAGENS|CIÊNCIAS HUMANAS)[^\n]*Questões de \d+ a \d+\s*$", "", b["texto"]).strip()
     blocos = [b for b in blocos if b["tipo"] != "texto" or b["texto"]]
+    falta, sobra = _conferir(pdf, q, faixas_cab, cortes, blocos, alternativas)
+    if falta or sobra:
+        revisar.add("texto difere do PDF" + (f"; faltam: {falta}" if falta else "") + (f"; sobram: {sobra}" if sobra else ""))
     return {"blocos": blocos, "alternativas": alternativas, "alternativas_imagem": alt_img, "revisar": sorted(revisar)}
 
 
@@ -452,11 +734,10 @@ def main() -> None:
     ap.add_argument("--questoes", help="números separados por vírgula (padrão: todas com imagem); 1-ingles para a língua")
     a = ap.parse_args()
 
-    trecho, _ = ex.APLICACOES[a.aplicacao]
     chave = f"{a.aplicacao}_D{a.dia}_CD{a.caderno}"
-    pdf_arq = ex.CACHE / str(a.ano) / f"{a.ano}_PV_{trecho}_D{a.dia}_CD{a.caderno}.pdf"
+    pdf_arq = ex.CACHE / str(a.ano) / ex.arquivos(a.ano, a.aplicacao, a.dia, a.caderno)[0]
     bruto = pdfplumber.open(str(pdf_arq))
-    ex.configurar_geometria(bruto)
+    ex.configurar_geometria(bruto, a.ano)
     pdf = ex.Documento(bruto)
     pasta = ex.SAIDA / str(a.ano)
     arq_json = pasta / f"{chave}.json"

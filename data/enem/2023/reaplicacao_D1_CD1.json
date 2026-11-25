@@ -29,7 +29,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q001_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://images1.the-dots.com. Acesso em: 29 out. 2021.\nPor meio de recursos verbais e não verbais, esse cartaz\nde campanha objetiva"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q002-ingles",
@@ -151,7 +164,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q005_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "MCPHAIL, W. Disponível em: https://fineartamerica.com. Acesso em: 25 out. 2021.\nAo utilizar a expressão “be a shame if something were to\nhappen to it”, o pássaro"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q001-espanhol",
@@ -183,7 +209,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "“Ni para cotufas, estoy en la lona”\n\nAsí se dice en Venezuela. En España diríamos: “Ni para\npalomitas, estoy sin blanca”. Los argentinos utilizarían otra\nforma, y los chilenos, y los mexicanos... Esta es una guía\nbásica de entendimiento entre los hispanohablantes."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q001_espanhol_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "MOLERO, A. El español de España y el español de América.\nMadri: Editorial SM, 2003 (adaptado).\nEsse texto reúne palavras e expressões para destacar a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q002-espanhol",
@@ -245,7 +288,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q003_espanhol_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LINIERS, R. S. Disponível em: https://muhimu.es. Acesso em: 15 out. 2021.\nNessa tirinha, ao utilizar a expressão “doble vacación”, a\nprotagonista conclui que"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q004-espanhol",
@@ -308,7 +364,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q005_espanhol_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.juntadeandalucia.es. Acesso em: 21 out. 2021.\nEsse infográfico foi produzido com o objetivo de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q006",
@@ -671,7 +740,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q017_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://twitter.com/emicida. Acesso em: 23 out. 2021.\nNessa postagem dirigida aos seus seguidores de rede\nsocial, o autor utiliza uma linguagem"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q018",
@@ -763,7 +845,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q020_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "PAULINO, R. Bastidores (detalhe). Gravura sobre tecido em\n\nsuporte de madeira para bordado, 1997.\n\nDisponível em: www.galeriavirgilio.com.br. Acesso em: 29 out. 2010.\nSob a perspectiva em que o artista deve trabalhar com\nas coisas que o tocam profundamente, a singularidade\nda obra Bastidores, produzida com objetos do cotidiano\ne de pouco valor material, mostra a boca, que expressa uma"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q021",
@@ -795,7 +890,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q021_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VIK MUNIZ. Segundo Warhol: dupla Mona Lisa. Fotografia da\n\ncomposição, realizada com geleia e pasta de amendoim.\n\nMAC Lima, Peru, 1999.\n\nDisponível em: www.artnet.com. Acesso em: 1 nov. 2022.\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q021_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ARCIMBOLDO, G. Vertumnus (Imperador Rodolfo II).\n\nÓleo sobre painel de madeira, 70 x 57 cm.\n\nCastelo Skokloster, Suécia, circa 1590.\n\nDisponível em: www.aventurasnahistoria.uol.com.br. Acesso em: 16 fev. 2023.\nProduzidas com mais de 400 anos de diferença, as obras\nde Vik Muniz e Giuseppe Arcimboldo têm em comum\na referência a alimentos. Contudo, enquanto na obra\nde Arcimboldo os alimentos fazem parte de um jogo\nde representação, em Muniz, são empregados como\nmatéria-prima, sinalizando uma"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q022",
@@ -842,7 +963,7 @@
     "alternativas": {
       "A": "“decidiu se dedicar a um projeto que capturasse gás carbônico”.",
       "B": "“a pesquisadora começou a estudar algumas espécies”.",
-      "C": "“Caso funcione, a pesquisa tem potencial para diminuir em 46% o excesso de CO ”. 2",
+      "C": "“Caso funcione, a pesquisa tem potencial para diminuir em 46% o excesso de CO₂”.",
       "D": "“‘Provavelmente não estarei aqui para ver os resultados’”.",
       "E": "“Que as superplantas criadas pela bióloga vinguem e vicejem!”."
     },
@@ -857,7 +978,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Plantas superpoderosas\n\nA bióloga Joanne Chory já tinha 60 anos e um\ndiagnóstico de Parkinson quando decidiu se dedicar a um\nprojeto que capturasse gás carbônico da atmosfera — coisa\nque as plantas fazem regularmente há 2,8 bilhões de anos.\nPara isso, a pesquisadora começou a estudar algumas\nespécies e alterá-las por meio de técnicas de horticultura\ne manipulação genética. A ideia é que capturem mais\ncarbono e o armazenem em suas raízes. Uma dessas\nplantas, um tipo de mostarda, já cresce no delta do rio\nMississipi. Caso funcione, a pesquisa tem potencial para\ndiminuir em 46% o excesso de CO₂ jogado anualmente na\natmosfera. “Provavelmente não estarei aqui para ver os\nresultados. Mas prefiro ser parte da solução a me sentar\ne reclamar”, diz Joanne. Que as superplantas criadas pela\nbióloga vinguem e vicejem!\nCARNEIRO, F. Disponível em: https://veja.abril.com.br.\nAcesso em: 23 out. 2021 (adaptado).\nEsse texto descreve a pesquisa inovadora realizada por\numa bióloga de 60 anos com diagnóstico de Parkinson.\nO trecho que permite uma referência indireta a essa\ncondição física é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q024",
@@ -949,7 +1078,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q026_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LAERTE. Mapa-múndi. Disponível em: www1.folha.uol.com.br. Acesso em: 24 out. 2021.\nNesse cartum, a predominância da função poética da\nlinguagem manifesta-se na"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q027",
@@ -1101,7 +1243,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q031_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://facebook.com/SenadoFederal. Acesso em: 1 nov. 2021.\nCom essa postagem, o enunciador busca"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q032",
@@ -1193,7 +1348,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q034_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.fapcom.edu.br. Acesso em: 20 nov. 2021.\nNesse texto, ao combinar os gêneros anúncio e manchete\nde notícia, o autor pretende"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q035",
@@ -1285,7 +1453,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q037_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "KANDINSKY, W. Sem título (desenho para o Diagrama 17).\n\nNanquim sobre papel, 28,4 cm x 36 cm. Museu de Arte Mount\n\nHolyoke College, South Hadley, 1925.\n\nDisponível em: https://artmuseum.mtholyoke.edu/object/untitled-drawing-diagram-17.\nO artista Wassily Kandinsky apresenta, em sua\nprodução, aspectos formais relacionados aos elementos\nfundamentais da linguagem visual, que comprovam que\na linha é criada a partir do(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q038",
@@ -1317,7 +1498,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q038_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.cnj.jus.br. Acesso em: 30 out. 2021.\nA articulação entre os recursos verbais e não verbais\nutilizados na construção do texto tem como objetivo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q039",
@@ -1349,7 +1543,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q039_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.cnj.jus.br. Acesso em: 28 out. 2021.\nEsse cartaz, parte de uma campanha publicitária, tem\ncomo propósito"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q040",
@@ -1681,7 +1888,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Tobias Kuemmerle, acadêmico da Humboldt-Universität\nde Berlim na Alemanha, fez uma pesquisa de campo no\nChaco, área de mata nativa na fronteira da Argentina\ncom Paraguai e Bolívia. “Estudamos qual é a mudança\nocorrida na região e seu efeito nas emissões de CO₂\ne na diversidade”, diz o pesquisador. “E (o impacto) se\ndeve sobretudo a grandes companhias internacionais\nque compram áreas para desmatar. Tudo está claramente\nligado ao consumo de carne na Europa e à importação de\nsoja. A Europa protege muito sua agricultura, mas compra\ncada vez mais de regiões onde o impacto ambiental é\nmuito grande.”.\nORGAZ, C. Como a elogiada “agricultura verde” da Europa pode estar prejudicando\no meio ambiente no Brasil. Disponível em: www.bbc.com. Acesso em: 17 out. 2021.\nO texto apresenta uma ação da Europa na América Latina\nque ocorre pela combinação dos seguintes elementos:"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q051",
@@ -1923,7 +2138,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nO dispositivo panóptico organiza unidades espaciais\nque permitem ver sem parar e reconhecer imediatamente.\nEm suma, o princípio da masmorra é invertido; ou antes,\nde suas três funções — trancar, privar de luz e esconder —\nsó se conserva a primeira e suprimem-se as outras\nduas. A visibilidade é uma armadilha. Fazer com que a\nvigilância seja permanente em seus efeitos, mesmo se\né descontínua em sua ação; que a perfeição do poder\ntenda a tornar inútil a atualidade de seu exercício; que\nesse aparelho arquitetural seja uma máquina de criar e\nsustentar uma relação de poder independente daquele\nque o exerce.\nFOUCAULT, M. Vigiar e punir: nascimento da prisão. Petrópolis: Vozes, 1987 (adaptado).\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q058_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LAERTE. Disponível em: www.laerte.art.br. Acesso em: 25 nov. 2021.\nO objetivo do modelo de vigilância descrito nos textos I\ne II aponta para o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q059",
@@ -1955,7 +2187,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A concepção tecnocrata está associada à fé em\nmercados — não necessariamente no capitalismo\nlivre, laissez-faire, mas uma crença mais ampla de que\nmecanismos de mercado são os principais instrumentos\npara alcançar o bem público. Esse modo de pensar é\ntecnocrático, no sentido de que esvazia o discurso público\nde argumentos substantivamente morais e questões\nideologicamente contestáveis como se fossem assuntos de\neficiência econômica, domínio de especialistas. A verdadeira\ndivisão, argumentaram eles, não era mais esquerda versus\ndireita, mas aberto versus fechado. Isso insinuava que os\ncontrários à terceirização, tratados de livre-comércio e fluxos\nde capitais irrestritos eram pessoas de mente fechada, não\nde mente aberta; eram tribais, não globais.\nSANDEL, M. J. A tirania do mérito: o que aconteceu ao bem comum?\nRio de Janeiro: Civilização Brasileira, 2020 (adaptado).\nA crítica ao modelo de pensamento apresentado no texto\nfundamenta-se na postura de desvalorização do(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q060",
@@ -2107,7 +2347,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Diferentes projeções para a população brasileira: 2010-2100"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q064_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Fonte: IBGE, revisão 2018; UM/ESA, revisão 2017.\nALVES, J. E. D. A nova projeção da população brasileira do IBGE.\nDisponível em: www.ufjf.br. Acesso em: 1 out. 2021.\nA configuração da projeção demográfica apresentada é\nexplicada pelo(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q065",
@@ -2380,7 +2637,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q073_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VIEIRA FILHO, J. E. R.; FISHLOW, A. Agricultura e indústria no Brasil: inovação e competitividade. Brasília: Ipea, 2017 (adaptado).\nA dinâmica espacial expressa no mapa foi viabilizada pela"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q074",
@@ -2412,7 +2682,21 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "É claramente impossível criar um mapa perfeito, no qual\na escala principal seja preservada em todos os pontos. É fácil,\nporém, manter a escala principal ao longo de certas linhas\nou pontos no mapa em que a escala seja constante e igual à\nescala principal, ocasionando uma distorção nula. Linhas de\ndistorção nula são linhas em uma projeção em que a escala\nprincipal é preservada. São caracterizadas pela tangência ou\nsecância da superfície terrestre com a superfície de projeção.\nMENEZES, P.; FERNANDES, M. Roteiro de cartografia.\nSão Paulo: Oficina de Textos, 2013 (adaptado).\nConforme o texto, a projeção que representará uma região\npróxima à Linha do Equador com a menor distorção da\nescala principal é:"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D1_CD1_Q074_f1.png",
+      "B": "img/blocos/reaplicacao_D1_CD1_Q074_f2.png",
+      "C": "img/blocos/reaplicacao_D1_CD1_Q074_f3.png",
+      "D": "img/blocos/reaplicacao_D1_CD1_Q074_f4.png",
+      "E": "img/blocos/reaplicacao_D1_CD1_Q074_f5.png"
+    },
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q075",
@@ -2655,7 +2939,35 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q082_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Cais do Valongo – Rio de Janeiro (RJ). Disponível em: https://www.rio.rj.gov.br.\nAcesso em: 19 jul. 2023.\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q082_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "escravos do mundo.\nFRAZÃO, F. Disponível em: https://agenciabrasil.ebc.com.br. Acesso em: 3 nov. 2021.\nAo ser reconhecido como Patrimônio Mundial pela\nUnesco, o sítio arqueológico mencionado inscreve-se\ncomo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D1-CD1-Q083",

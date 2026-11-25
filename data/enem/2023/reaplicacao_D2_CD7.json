@@ -102,10 +102,10 @@
     "lingua_estrangeira": null,
     "enunciado": "Na formulação de detergentes sintéticos, são\nencontradas diversas substâncias que possuem ação\nespecífica. Entre essas substâncias, estão os tensoativos\naniônicos, dos quais o dodecilbenzenossulfonato de\nsódio é o mais comum em detergentes para cozinha.\nO dodecilbenzenossulfonato de sódio é um tensoativo\nem razão da presença",
     "alternativas": {
-      "A": "do íon Na+ hidrofílico e pela porção sulfonato lipofílica.",
+      "A": "do íon Na⁺ hidrofílico e pela porção sulfonato lipofílica.",
       "B": "das porções sulfonato hidrofílica e dodecilbenzeno lipofílica.",
       "C": "da porção benzenossulfonato, que possui característica lipofílica.",
-      "D": "do íon Na+, que possui tanto característica hidrofílica quanto lipofílica.",
+      "D": "do íon Na⁺, que possui tanto característica hidrofílica quanto lipofílica.",
       "E": "do dodecilbenzeno, que possui tanto característica hidrofílica quanto lipofílica."
     },
     "gabarito": "B",
@@ -119,7 +119,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na formulação de detergentes sintéticos, são\nencontradas diversas substâncias que possuem ação\nespecífica. Entre essas substâncias, estão os tensoativos\naniônicos, dos quais o dodecilbenzenossulfonato de\nsódio é o mais comum em detergentes para cozinha.\nO dodecilbenzenossulfonato de sódio é um tensoativo\nem razão da presença"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q095",
@@ -151,7 +159,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um carro sedã apresenta tipicamente 200 kg de\nalumínio distribuídos pelo chassi, motor e cabine.\nUma amostra de bauxita, principal fonte natural do metal,\né composta por 50% em massa de óxido de alumínio\n(Al₂O₃). Considere a massa molar do alumínio (Al) igual\na 27 g mol⁻¹ e a do oxigênio (O) igual a 16 g mol⁻¹.\nA massa de bauxita que deve ser empregada para produzir\no alumínio usado na fabricação de um carro desse modelo\né mais próxima de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q096",
@@ -215,7 +231,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A figura apresenta o ciclo biogeoquímico do enxofre, que tem emissões de fontes naturais, biogênicas e\nantropogênicas que podem causar danos no ambiente."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q097_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.jovemexplorador.iag.usp.br. Acesso em: 3 nov. 2022 (adaptado).\nQual é o impacto ambiental gerado a partir dessas emissões?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q098",
@@ -230,11 +263,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A disponibilidade de nutrientes do solo (fertilidade) está associada à capacidade de ceder nutrientes essenciais às\nplantas, a qual é dependente do pH do solo. O cultivo agrícola para grande parte das espécies vegetais desenvolve-se\nde forma adequada no pH próximo a 6. Para isso, os produtores rurais realizam práticas agrícolas e manejo do\nsolo de forma a minimizar os efeitos deletérios do alumínio, manganês e excesso de ferro, além de potencializar a\ndisponibilidade de outros nutrientes, como cálcio, potássio, magnésio e fósforo. Considere um solo alcalino no qual\nse deseja realizar o manejo a fim de ajustar o pH e aumentar sua fertilidade.\nCARDOSO, E. J. B. N.; ANDREOTE, F. D. Microbiologia do solo. Piracicaba: Esalq, 2016 (adaptado).\nO composto que pode ser adicionado ao solo para atender a essa necessidade é",
     "alternativas": {
-      "A": "KNO . 3",
-      "B": "CaCO . 3",
-      "C": "Na PO . 3 4",
-      "D": "Al (SO ) . 2 4 3",
-      "E": "(NH ) SO . 4 2 4"
+      "A": "KNO₃.",
+      "B": "CaCO₃.",
+      "C": "Na₃PO₄.",
+      "D": "Al₂(SO₄)₃.",
+      "E": "(NH₄)₂SO₄."
     },
     "gabarito": "E",
     "anulada": false,
@@ -247,7 +280,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A disponibilidade de nutrientes do solo (fertilidade) está associada à capacidade de ceder nutrientes essenciais às\nplantas, a qual é dependente do pH do solo. O cultivo agrícola para grande parte das espécies vegetais desenvolve-se\nde forma adequada no pH próximo a 6. Para isso, os produtores rurais realizam práticas agrícolas e manejo do\nsolo de forma a minimizar os efeitos deletérios do alumínio, manganês e excesso de ferro, além de potencializar a\ndisponibilidade de outros nutrientes, como cálcio, potássio, magnésio e fósforo. Considere um solo alcalino no qual\nse deseja realizar o manejo a fim de ajustar o pH e aumentar sua fertilidade.\nCARDOSO, E. J. B. N.; ANDREOTE, F. D. Microbiologia do solo. Piracicaba: Esalq, 2016 (adaptado).\nO composto que pode ser adicionado ao solo para atender a essa necessidade é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q099",
@@ -309,7 +350,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A crescente facilidade para aquisição de aerogeradores\ne painéis fotovoltaicos tem permitido que unidades\nconsumidoras tenham suas próprias unidades microgeradoras\nde energia. A integração das unidades microgeradoras à rede\npública de distribuição pode beneficiar tanto as unidades\nconsumidoras quanto as concessionárias de fornecimento,\nconforme o fluxograma. Quando as unidades microgeradoras\nnão geram energia suficiente para a unidade consumidora,\na rede de distribuição supre a diferença. Quando a unidade\nmicrogeradora gera excedente de energia, esse excedente\npoderá ser entregue à concessionária em troca de crédito."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q100_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A vantagem técnica que as unidades microgeradoras\nproporcionam para as concessionárias da rede pública é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q101",
@@ -341,7 +399,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Com o objetivo de demonstrar a transferência\nde energia de um sistema para outro, um professor\nsolicitou a seus alunos que determinassem o calor\nde combustão de alguns alimentos e, para auxiliar\nnessa tarefa, forneceu um quadro que apresenta cinco\nalimentos identificados por números e seus respectivos\ncalores de combustão."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q101_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Posteriormente, entregou uma amostra de 0,5 g de\num alimento indeterminado a um dos estudantes, que\nrealizou o seguinte procedimento experimental: colocou\n4 mL de água em um tubo de ensaio e mediu a temperatura,\nencontrando 20 °C. Em seguida, o estudante queimou o\nalimento recebido, abaixo do tubo de ensaio contendo a\nágua, o que elevou a temperatura da água para 50 °C.\nConsidere que, nas condições do experimento, a perda de\ncalor para o ambiente é desprezível e o calor específico\nda água e sua densidade são, respectivamente,\n1 cal/(g °C) e 1 g/mL.\nQual alimento do quadro o estudante recebeu do professor?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q102",
@@ -404,7 +479,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Lentes fotocrômicas escurecem em ambientes externos\ncom alta incidência de luz ultravioleta (UVA), conforme\nilustrado. Uma vez na sombra, as lentes se tornam claras\nnovamente."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q103_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em lentes fotocrômicas de plástico, são utilizados\ncorantes orgânicos pertencentes à família dos\nindenonaftopiranos. Quando o corante fotocrômico\n(Estrutura 1) é exposto à alta incidência de radiação\nUVA, uma ligação química é quebrada. A molécula\nentão se rearranja, transformando-se em uma espécie\nque absorve radiação de comprimento de onda maior\n(Estrutura 2), fazendo com que a lente escureça."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q103_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ERICKSON, B. Self-Darkening Eyeglasses. Chemical & Engineering News,\nn. 87, 2009 (adaptado).\nO escurecimento desse tipo de lente ocorre porque as\nmoléculas de indenonaftopirano"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q104",
@@ -479,11 +580,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Duas pessoas saem de suas casas para se exercitarem\nnuma pista retilínea cujo comprimento é D. Elas percorrem\ntodo o percurso e, ao final dele, retornam ao ponto de\npartida pelo mesmo caminho. A primeira delas caminha\ncom velocidade de módulo v, e a segunda corre com uma\nvelocidade de módulo 2v. As duas partem do mesmo\nponto, no mesmo instante.\nA distância percorrida pela segunda pessoa até o ponto\nem que as duas se encontram pela primeira vez é",
     "alternativas": {
-      "A": "2D . 3 5D",
-      "B": ". 4",
-      "C": "4D . 3 5D",
-      "D": ". 3",
-      "E": "7D . 4"
+      "A": "2D/3.",
+      "B": "5D/4.",
+      "C": "4D/3.",
+      "D": "5D/3.",
+      "E": "7D/4."
     },
     "gabarito": "C",
     "anulada": false,
@@ -496,7 +597,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Duas pessoas saem de suas casas para se exercitarem\nnuma pista retilínea cujo comprimento é D. Elas percorrem\ntodo o percurso e, ao final dele, retornam ao ponto de\npartida pelo mesmo caminho. A primeira delas caminha\ncom velocidade de módulo v, e a segunda corre com uma\nvelocidade de módulo 2v. As duas partem do mesmo\nponto, no mesmo instante.\nA distância percorrida pela segunda pessoa até o ponto\nem que as duas se encontram pela primeira vez é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q107",
@@ -511,11 +620,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Dois operários deslizam uma pedra, para cima, sobre uma superfície inclinada com velocidade constante.\nUm deles puxa a pedra utilizando uma corda, enquanto o outro a empurra, conforme a figura. No instante em que\na pedra desliza sobre a posição B, apesar da força de atrito f exercida pela superfície, os pés dos operários não\nB\ndeslizam nas posições A e C, por causa, respectivamente, das forças de atrito f e f , exercidas sobre esses pés.\nA C\nN\nC\nB\nA P\nO diagrama que representa os sentidos das forças de atrito exercidas pela superfície da rampa nas posições A, B e C é:\nf\nC C\nf",
     "alternativas": {
-      "A": "B B f A A f C C f",
-      "B": "B B f A A f C C",
-      "C": "f B B f A A f C C f",
-      "D": "B B f A A f C f C",
-      "E": "B B f A A"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "C",
     "anulada": false,
@@ -529,7 +638,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Dois operários deslizam uma pedra, para cima, sobre uma superfície inclinada com velocidade constante."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q107_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O diagrama que representa os sentidos das forças de atrito exercidas pela superfície da rampa nas posições A, B e C é:"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q107_f2.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q107_f3.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q107_f4.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q107_f5.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q107_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q108",
@@ -544,10 +676,10 @@
     "lingua_estrangeira": null,
     "enunciado": "Os agentes lacrimogêneos são espécies químicas capazes de provocar forte irritação das vias aéreas superiores e\ndos olhos. Até o final da década de 1960, a cloroacetofenona (CA) foi a substância mais utilizada com essa finalidade.\nUma forma de descontaminar a pele exposta à CA consiste em lavá-la com uma solução aquosa de determinado sal,\no qual reagirá com a CA, conforme a reação representada.\nO O\nCl O OH\n+ sal + NaCl\nO\nAMORIM, N. M. et al. Química e armas não letais: gás lacrimogêneo em foco. Química Nova na Escola, n. 2, 2015 (adaptado).\nQual destes compostos pode ser usado para fazer essa descontaminação?",
     "alternativas": {
-      "A": "NaCH COO 3",
-      "B": "NaHCO 3",
-      "C": "NaHSO 3",
-      "D": "Na SO 2 4",
+      "A": "NaCH₃COO",
+      "B": "NaHCO₃",
+      "C": "NaHSO₃",
+      "D": "Na₂SO₄",
       "E": "NaOH"
     },
     "gabarito": "B",
@@ -562,7 +694,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Os agentes lacrimogêneos são espécies químicas capazes de provocar forte irritação das vias aéreas superiores e\ndos olhos. Até o final da década de 1960, a cloroacetofenona (CA) foi a substância mais utilizada com essa finalidade.\nUma forma de descontaminar a pele exposta à CA consiste em lavá-la com uma solução aquosa de determinado sal,\no qual reagirá com a CA, conforme a reação representada.\nO O"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q108_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "AMORIM, N. M. et al. Química e armas não letais: gás lacrimogêneo em foco. Química Nova na Escola, n. 2, 2015 (adaptado).\nQual destes compostos pode ser usado para fazer essa descontaminação?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q109",
@@ -595,7 +744,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O etanol de segunda geração envolve o reaproveitamento dos resíduos do bagaço da cana e sua produção ocorre\nem um sistema fechado contínuo, que evita a evaporação. A figura ilustra esse processo."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q109_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "CORONA CARVALHO, J. A. et al. Bagaço de cana-de-açúcar como fonte de glicose: pré-tratamento. Revista Virtual de Química, n. 9, nov. 2016 (adaptado).\nPara evitar o rompimento da dorna por pressão, qual substância, além do combustível, deverá ser continuamente removida\ndo sistema?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q110",
@@ -628,7 +794,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A altura de uma nota musical é determinada pela\nfrequência da vibração que a nota causa. No piano,\nconsidere como referência a nota Lá, cuja frequência\né 440 hertz, e a existência de outras notas Lá com\nfrequências acima e abaixo desta. A tabela a seguir\nmostra as frequências de algumas notas Lá, em função do\nnúmero n de oitavas abaixo e acima do Lá de referência,\ne o gráfico corresponde a uma função contínua que passa\npelos pontos dados na tabela."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q110_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q110_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "JABLONSKI, F. J. Astrofísica observacional. Disponível em:\nhttp://mtc-m18.sid.inpe.br. Acesso em: 28 dez. 2012 (adaptado).\nA partir dessas informações, verifica-se que"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q111",
@@ -660,7 +848,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Lavar a seco significa lavar por meio de fluido ou\nsolvente não aquoso, isto é, trata-se de um processo que\nlimpa sem utilizar a água. Dessa forma, apesar de o nome\nser lavagem a seco, o processo deixa o que está sendo\nlavado molhado pelo solvente utilizado, o qual poderá ser\nfacilmente evaporado ao final do processo. Entre 1850\ne 1940, foram empregados na lavagem a seco alguns\nhidrocarbonetos e organoclorados líquidos, como os que\nestão representados a seguir, entre os quais apenas um\nse mostrou seguro por não ser inflamável, em função\nda sua menor quantidade de ligações C―H."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q111_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "BORGES, L. D.; MACHADO, P. F. L. Lavagem a seco.\nQuímica Nova na Escola, n. 1, fev. 2013 (adaptado).\nPela análise das estruturas químicas, o solvente que se\nmostrou seguro é o"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q112",
@@ -783,7 +988,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A análise da atividade de dois cultivos celulares\nmantidos com diferentes substratos está representada\nno quadro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q115_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual organela celular não está ativa no cultivo B?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q116",
@@ -845,7 +1067,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Observam-se, na figura, peixes nadando na superfície\nde um lago em estágio muito avançado de eutrofização.\nEsse fenômeno pode ser causado pelo aporte externo\nde nutrientes na água, principalmente em razão da ação\nantrópica. Os corpos-d’água adquirem uma coloração\nturva, o que bloqueia a penetração de luz e impede a\nfotossíntese. O problema se agrava quando as algas\ncomeçam a morrer e uma grande quantidade de nutrientes\nprovenientes delas ficam disponíveis aos decompositores,\nque proliferam."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q117_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.pea.org.br. Acesso em: 15 out. 2015 (adaptado).\nO comportamento do animal no ambiente mencionado\nse deve ao(à)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q118",
@@ -891,7 +1130,7 @@
     "enunciado": "Ácido nítrico é um importante reagente usado no\npreparo de nitrato de amônio, NH NO , um fertilizante\n4 3\nnitrogenado. Industrialmente, o ácido nítrico é obtido a\npartir da reação da amônia com gás oxigênio, um processo\nque ocorre em três etapas, todas exotérmicas.\nEtapa 1: 4 NH (g) + 5 O (g) → 4 NO (g) + 6 H O (l)\n3 2 2\nEtapa 2: 2 NO (g) + O (g) → 2 NO (g)\n2 2\nEtapa 3: 3 NO (g) + H O (l) → 2 HNO (aq) + NO (g)\n2 2 3\nNa primeira etapa, forma-se NO, o qual reage com\nmais oxigênio formando NO , um óxido ácido, que reage\n2\ncom a água formando HNO e NO. O composto NO é,\n3\nportanto, um subproduto da reação. É importante o seu\nreaproveitamento, senão ele pode ser liberado para o\nambiente, onde reagirá com o oxigênio, formando NO .\n2\nATKINS, P.; JONES, L. Princípios de química: questionando a vida moderna\ne o meio ambiente. Porto Alegre: Bookman, 2006 (adaptado).\nO procedimento que permite diminuir a quantidade\nformada do subproduto NO é aumentar a",
     "alternativas": {
       "A": "pressão de oxigênio, na etapa 1.",
-      "B": "concentração de NO , na etapa 3. 2",
+      "B": "concentração de NO₂, na etapa 3.",
       "C": "quantidade de amônia, na etapa 1.",
       "D": "quantidade de oxigênio, na etapa 2.",
       "E": "temperatura dos reagentes, na etapa 1."
@@ -907,7 +1146,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Ácido nítrico é um importante reagente usado no\npreparo de nitrato de amônio, NH₄NO₃, um fertilizante\nnitrogenado. Industrialmente, o ácido nítrico é obtido a\npartir da reação da amônia com gás oxigênio, um processo\nque ocorre em três etapas, todas exotérmicas.\n\nEtapa 1: 4 NH₃ (g) + 5 O₂ (g) → 4 NO (g) + 6 H₂O (l)\nEtapa 2: 2 NO (g) + O₂ (g) → 2 NO₂ (g)\n\nEtapa 3: 3 NO₂ (g) + H₂O (l) → 2 HNO₃ (aq) + NO (g)\n\nNa primeira etapa, forma-se NO, o qual reage com\nmais oxigênio formando NO₂, um óxido ácido, que reage\ncom a água formando HNO₃ e NO. O composto NO é,\nportanto, um subproduto da reação. É importante o seu\nreaproveitamento, senão ele pode ser liberado para o\nambiente, onde reagirá com o oxigênio, formando NO₂.\nATKINS, P.; JONES, L. Princípios de química: questionando a vida moderna\ne o meio ambiente. Porto Alegre: Bookman, 2006 (adaptado).\nO procedimento que permite diminuir a quantidade\nformada do subproduto NO é aumentar a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q120",
@@ -940,7 +1187,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na produção do politereftalato de etileno, o PET,\nutiliza-se como reagente o para-dimetilbenzeno,\ntambém chamado de para-xileno, que deve ter alta\npureza. No entanto, o para-xileno obtido do petróleo\npossui contaminação dos seus isômeros orto-xileno\ne meta-xileno, cujas estruturas são apresentadas na\nfigura. No quadro, são listadas as temperaturas de fusão\ne ebulição desses três isômeros.\nCH₃"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q120_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q120_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual processo de separação permite a purificação desse\nreagente?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q121",
@@ -955,11 +1224,11 @@
     "lingua_estrangeira": null,
     "enunciado": "O tratamento do esgoto gerado por fábricas e\nresidências pode se tornar mais acessível em virtude de\numa nova proposta tecnológica, que utiliza um reator capaz\nde transformar nitrogênio orgânico, presente no esgoto, em\nnitrogênio inorgânico. A tecnologia prevê o uso de um cilindro\nde acrílico com espuma de poliuretano em seu interior,\nsob a qual se fixam bactérias capazes de tratar o efluente.\nAs bactérias que ficam no exterior da espuma realizam\nreações de nitrificação desse substrato, e as que ficam\nno interior da espuma realizam reações de desnitrificação.\nDisponível em: http://cienciahoje.uol.com.br. Acesso em: 25 jun. 2015 (adaptado).\nNa primeira etapa do processo, que ocorre no exterior da\nespuma, a ação das bactérias consiste em",
     "alternativas": {
-      "A": "converter nitrogênio gasoso (N ) em fertilizante. 2",
-      "B": "usar CO para converter nitrato em nitrogênio 2 gasoso (N ). 2",
-      "C": "transformar a matéria orgânica morta em íons amônio (NH +). 4",
-      "D": "capturar nitrogênio gasoso (N ) e convertê-lo em 2 amônia (NH ). 3",
-      "E": "utilizar O para transformar amônia (NH ) em nitrito 2 3 e, após, em nitrato."
+      "A": "converter nitrogênio gasoso (N₂) em fertilizante.",
+      "B": "usar CO₂ para converter nitrato em nitrogênio gasoso (N₂).",
+      "C": "transformar a matéria orgânica morta em íons amônio (NH ⁺₄).",
+      "D": "capturar nitrogênio gasoso (N₂) e convertê-lo em amônia (NH₃).",
+      "E": "utilizar O₂ para transformar amônia (NH₃) em nitrito e, após, em nitrato."
     },
     "gabarito": "E",
     "anulada": false,
@@ -972,7 +1241,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O tratamento do esgoto gerado por fábricas e\nresidências pode se tornar mais acessível em virtude de\numa nova proposta tecnológica, que utiliza um reator capaz\nde transformar nitrogênio orgânico, presente no esgoto, em\nnitrogênio inorgânico. A tecnologia prevê o uso de um cilindro\nde acrílico com espuma de poliuretano em seu interior,\nsob a qual se fixam bactérias capazes de tratar o efluente.\nAs bactérias que ficam no exterior da espuma realizam\nreações de nitrificação desse substrato, e as que ficam\nno interior da espuma realizam reações de desnitrificação.\nDisponível em: http://cienciahoje.uol.com.br. Acesso em: 25 jun. 2015 (adaptado).\nNa primeira etapa do processo, que ocorre no exterior da\nespuma, a ação das bactérias consiste em"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q122",
@@ -1035,7 +1312,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O esquema representa a etapa fotoquímica da fotossíntese. As moléculas de clorofila e os pigmentos acessórios\nque compõem os fotossistemas I e II são excitados pela radiação luminosa. A energia dessa excitação retira elétrons das\nmoléculas de clorofila a P₆₈₀, no Fotossistema II, e de clorofila a P₇₀₀, no Fotossistema I. Esses elétrons são responsáveis\npelo mecanismo de fosforilação do ADP formando ATP e pela redução do NADP⁺ em NADPH."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q123_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SADAVA, D. et al. Vida: a ciência da biologia. Porto Alegre: Artmed, 2009 (adaptado).\nO agente redutor primário responsável pela reposição dos elétrons perdidos no Fotossistema II é o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q124",
@@ -1097,7 +1391,21 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para se utilizar um controle remoto que funciona com\numa diferença de potencial de 3 V, compraram-se duas\npilhas tipo AA de 1,5 V cada uma. Sabe-se que a ligação\nem série dessas pilhas possibilita um aumento da diferença\nde potencial do conjunto e da energia total disponível.\nQuando ligadas em paralelo, no entanto, só ocorre o\naumento da energia total disponível.\nQual dos esquemas representa a ligação correta das\npilhas utilizadas no controle remoto?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q125_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q125_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q125_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q125_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q125_f5.png"
+    },
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q126",
@@ -1143,10 +1451,10 @@
     "enunciado": "O odor desagradável de peixe deve-se principalmente\na compostos orgânicos que contêm um grupo amino\n(R―NH ), em que R representa um grupo alquil. Um chefe\n2\nde cozinha experimental dispõe, em seu laboratório, de\ncinco soluções aquosas, dentre as quais deve escolher uma\npara eliminar o odor de peixe, por meio da neutralização\ndo grupo amino. Suponha que a molécula responsável\npelo odor é a metilamina (CH NH , K = 5,5 × 10−4).\n3 2 b\nO quadro apresenta dados de acidez/basicidade de\nalgumas espécies químicas.\nH B\nConsidere: K e K 2\nEspécie Dados de acidez/\nSolução aquosa\nquímica basicidade\nHipoclorito de sódio\nClO− K = 2,5 × 10−7\n(NaClO) b\nHidrogenocarbonato\nHCO − K = 2,8 × 10−8\nde sódio (NaHCO ) 3 b\n3\nÁcido etanoico CH COOH K = 1,8 × 10−5\n3 a\nCloreto de sódio\nNa+ K = 1,6 × 10−15\n(NaCl) a\nEtanol CH CH OH K = 1,3 × 10−16\n3 2 a\nQual substância deve ser escolhida pelo chefe de cozinha?",
     "alternativas": {
       "A": "NaClO",
-      "B": "NaHCO 3",
-      "C": "CH COOH 3",
+      "B": "NaHCO₃",
+      "C": "CH₃COOH",
       "D": "NaCl",
-      "E": "CH CH OH 3 2"
+      "E": "CH₃CH₂OH"
     },
     "gabarito": "C",
     "anulada": false,
@@ -1160,7 +1468,40 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O odor desagradável de peixe deve-se principalmente\na compostos orgânicos que contêm um grupo amino\n(R―NH₂), em que R representa um grupo alquil. Um chefe\nde cozinha experimental dispõe, em seu laboratório, de\ncinco soluções aquosas, dentre as quais deve escolher uma\npara eliminar o odor de peixe, por meio da neutralização\ndo grupo amino. Suponha que a molécula responsável"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q127_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O quadro apresenta dados de acidez/basicidade de\nalgumas espécies químicas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q127_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q127_f3.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual substância deve ser escolhida pelo chefe de cozinha?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q128",
@@ -1252,7 +1593,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um grupo de pesquisadores interessados no estudo\ndo efeito da paisagem na diversidade genética em\npopulações de marsupiais Caluromys philander considerou\nduas paisagens distintas: uma contínua (Pontos 1 e 2)\ne outra fragmentada (Fragmentos 1 e 2), que foi desmatada\npara o plantio de soja. Coletaram amostras de tecidos de\ndez indivíduos em cada paisagem e extraíram o DNA,\nverificando a variabilidade genética, como apresentado\nno quadro.\n\nGenótipo de um lócus gênico de\n\nindivíduos de Caluromys philander"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q130_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LIMA, J. S.; OPREA, M.; COLLEVATI, R. G. Efeito da paisagem na diversidade e diferenciação\ngenética das populações. Genética na Escola, n. 1, 2015 (adaptado).\nCom base nos resultados, qual é a estratégia eficiente no\nmanejo e na conservação dessa espécie?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q131",
@@ -1267,11 +1625,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A primeira tecnologia comercial de comunicação da\ninternet foi realizada usando a rede de voz telefônica,\nimplantada por pares de fios condutores (par trançado),\nque permitiam uma transferência máxima de 56 kbps\n(quilobites por segundo). Nesse padrão de comunicação, a\ntransferência se faz usando uma onda quadrada modulada,\ncom os níveis 1 e 0 representados pela diferença de\npotencial (d.d.p.) nos fios ou pela ausência dessa d.d.p.\nNas comunicações atuais, a capacidade de transferência\nde dados por fibra óptica ou micro-ondas (usando uma\nonda de 2,5 GHz na tecnologia 4G ou uma de 3,5 GHz\nna tecnologia 5G) é muito superior. Na 5G está prevista\numa capacidade de transferência superior a 10 Gbps para\ncada dispositivo conectado. Considere que a informação\n2\né transportada a uma velocidade igual a da velocidade\n3\nda luz (c = 3 × 108 m/s), por uma perturbação do campo\nelétrico ou por uma onda eletromagnética.\nOs comprimentos, em metro, de um bit de informação\ntransportado no par trançado e na rede 5G,\nrespectivamente, são mais próximos de",
     "alternativas": {
-      "A": "3,6 × 103 e 2,0 × 10–2.",
-      "B": "3,6 × 103 e 8,6 × 10–2.",
-      "C": "3,6 × 10–1 e 2,0 × 10–1.",
-      "D": "5,4 × 10–1 e 8,6 × 10–2.",
-      "E": "5,4 × 10–1 e 3,0 × 10–2."
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "A",
     "anulada": false,
@@ -1284,7 +1642,23 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A primeira tecnologia comercial de comunicação da\ninternet foi realizada usando a rede de voz telefônica,\nimplantada por pares de fios condutores (par trançado),\nque permitiam uma transferência máxima de 56 kbps\n(quilobites por segundo). Nesse padrão de comunicação, a\ntransferência se faz usando uma onda quadrada modulada,\ncom os níveis 1 e 0 representados pela diferença de\npotencial (d.d.p.) nos fios ou pela ausência dessa d.d.p.\nNas comunicações atuais, a capacidade de transferência\nde dados por fibra óptica ou micro-ondas (usando uma\nonda de 2,5 GHz na tecnologia 4G ou uma de 3,5 GHz\nna tecnologia 5G) é muito superior. Na 5G está prevista\numa capacidade de transferência superior a 10 Gbps para\ncada dispositivo conectado. Considere que a informação\né transportada a uma velocidade igual a 2/3 da velocidade\nda luz (c = 3 × 10⁸ m/s), por uma perturbação do campo\nelétrico ou por uma onda eletromagnética.\nOs comprimentos, em metro, de um bit de informação\ntransportado no par trançado e na rede 5G,\nrespectivamente, são mais próximos de"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q131_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q131_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q131_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q131_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q131_f5.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q132",
@@ -1419,11 +1793,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um funcionário de uma loja de computadores\nmisturou, por descuido, três computadores defeituosos\ncom sete computadores perfeitos que estavam no estoque.\nUma pequena empresa fez a compra de cinco\ncomputadores nessa loja, escolhendo-os aleatoriamente\ndentre os dez que estavam no estoque.\nQual é a probabilidade de essa empresa ter levado, em\nsua compra, todos os três computadores defeituosos?\n1",
     "alternativas": {
-      "A": "72 1",
-      "B": "12 1",
-      "C": "4 3",
-      "D": "10 3",
-      "E": "7"
+      "A": "1/72",
+      "B": "1/12",
+      "C": "1/4",
+      "D": "3/10",
+      "E": "3/7"
     },
     "gabarito": "B",
     "anulada": false,
@@ -1436,7 +1810,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um funcionário de uma loja de computadores\nmisturou, por descuido, três computadores defeituosos\ncom sete computadores perfeitos que estavam no estoque.\nUma pequena empresa fez a compra de cinco\ncomputadores nessa loja, escolhendo-os aleatoriamente\ndentre os dez que estavam no estoque.\nQual é a probabilidade de essa empresa ter levado, em\nsua compra, todos os três computadores defeituosos?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q137",
@@ -1468,7 +1850,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa fundada em 2005, ao longo dos anos\nganhou popularidade e aumentou consideravelmente sua\natuação na economia do país. Os lucros anuais e seu\npadrão de crescimento podem ser observados na tabela."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q137_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Supondo que se tenha mantido o padrão observado na\ntabela para os 5 anos seguintes, estima-se que o lucro total\ndessa empresa, de 2005 a 2014, em milhar de real, foi"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q138",
@@ -1500,7 +1899,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "“Quanto é mil trilhões\n\nVezes infinito?”\n\nTOLLER, P. Oito anos. In: Paula Toller. Rio de Janeiro: Warner Music Brasil, 1998.\n\nO trecho da canção Oito anos, de Paula Toller, foi\napresentado por um professor de matemática a um grupo\nde cinco alunos. Em seguida, o professor solicitou que\ncada aluno apresentasse uma expressão matemática\nque traduzisse os versos citados. Cinco respostas diferentes\nforam dadas:\nResposta 1: 10⁹ × ∞\nResposta 2: 10¹² × ∅\nResposta 3: 10¹² × ∞\nResposta 4: 10¹⁵ × ∅\nResposta 5: 10¹⁵ × ∞\nA resposta que representa matematicamente o trecho da\ncanção é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q139",
@@ -1592,7 +1999,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Após uma reforma, um clube decide comprar duchas\npara serem instaladas no vestiário. O tipo de ducha\nescolhida, segundo o fabricante, tem probabilidade igual a\n1/10 de apresentar funcionamento irregular. O administrador\ndo clube planeja adquirir uma certa quantidade dessas\nduchas, de forma que a probabilidade de que pelo menos\numa das duchas adquiridas apresente funcionamento\nregular seja igual a, no mínimo, 99/100.\nA quantidade mínima de duchas que deverá ser adquirida\npara atender ao planejamento desse administrador é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q142",
@@ -1624,7 +2039,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na modelagem e no estudo de fenômenos\nperiódicos, em geral, os modelos associados fazem uso\nde funções trigonométricas. Nesse sentido, considere\num experimento, realizado em laboratório, em que uma\nplanta foi colocada em uma estufa, onde a temperatura\né controlável. O experimento consiste em observar\nalterações nas características dessa planta ao ser\nsubmetida a variações de temperatura. Durante 24 horas,\na temperatura T(x) da estufa variou de acordo"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q142_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "é medido em hora, variando no intervalo 0 ≤ x ≤ 24.\nDurante esse experimento, quantas vezes a temperatura\nna estufa atingiu o seu valor mínimo?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q143",
@@ -1656,7 +2090,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A nota final de um estudante em uma disciplina é dada\npela mediana das notas de suas quatro provas.\n\nCinco estudantes dessa disciplina obtiveram as notas\napresentadas no quadro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q143_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O professor dessa disciplina pediu a cada estudante\nque calculasse sua nota final e lhe apresentasse o resultado\nobtido. Os resultados informados pelos estudantes foram:\n• estudante I: 77;\n• estudante II: 70;\n• estudante III: 70;\n• estudante IV: 60;\n• estudante V: 70.\nQual(is) estudante(s) acertou(aram) sua nota final?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q144",
@@ -1689,7 +2140,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A tartaruga ou tachão de trânsito é um dispositivo de\nsinalização horizontal utilizado para canalizar o tráfego\nou garantir o afastamento do fluxo de veículos de zonas\nperigosas ou com grande risco de acidentes. A Figura 1\napresenta alguns deles já instalados."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q144_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.alfasinalizacao.com.br. Acesso em: 28 nov. 2021 (adaptado).\n\nO modelo geométrico de um tachão está representado\nna Figura 2. Ele é formado por duas faces retangulares\nparalelas e quatro faces trapezoidais. Suas arestas\nlaterais, se prolongadas, concorrem em um mesmo ponto."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q144_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual é o sólido representado pelo modelo geométrico\ndo tachão?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q145",
@@ -1704,11 +2181,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Os candidatos A, B e C participaram de um concurso\ncomposto por uma prova de Matemática, uma de Português\ne outra de Geografia, sendo os pesos dessas três provas\ndiferentes. As notas obtidas por esses três candidatos e\nos pesos atribuídos a essas provas estão representados\nnas tabelas:\nTabela I (Notas)\nCandidato Matemática Português Geografi a\nA 9 6 7\nB 8 7 8\nC 9 5 6\nTabela II (Pesos)\nMatérias Pesos\nMatemática 3\nPortuguês 2\nGeografi a 1\nAs notas finais são obtidas somando-se os produtos\ndas notas pelos respectivos pesos. As notas finais dos três\ncandidatos podem ser obtidas multiplicando-se a matriz\ndas notas dos três candidatos nas três provas pela matriz\ndos pesos das três provas.\nA matriz das notas finais dos três candidatos é",
     "alternativas": {
-      "A": "(cid:31)52 37 43(cid:30) (cid:31)46(cid:28) (cid:29) (cid:26)",
-      "B": "(cid:29)46(cid:26) (cid:29) (cid:26) (cid:30)43(cid:27) (cid:31)66(cid:28) (cid:29) (cid:26)",
-      "C": "(cid:29)46(cid:26) (cid:29) (cid:26) (cid:30)20(cid:27) (cid:31)27 12 7(cid:28) (cid:29) (cid:26)",
-      "D": "(cid:29)24 14 8(cid:26) (cid:29) (cid:26) (cid:30)27 10 6(cid:27) (cid:31)27 18 21(cid:28) (cid:29) (cid:26)",
-      "E": "(cid:29)16 14 16(cid:26) (cid:29) (cid:26) (cid:30) 9 5 6 (cid:27)"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "B",
     "anulada": false,
@@ -1722,7 +2199,37 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Os candidatos A, B e C participaram de um concurso\ncomposto por uma prova de Matemática, uma de Português\ne outra de Geografia, sendo os pesos dessas três provas\ndiferentes. As notas obtidas por esses três candidatos e\nos pesos atribuídos a essas provas estão representados\nnas tabelas:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q145_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q145_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "As notas finais são obtidas somando-se os produtos\ndas notas pelos respectivos pesos. As notas finais dos três\ncandidatos podem ser obtidas multiplicando-se a matriz\ndas notas dos três candidatos nas três provas pela matriz\ndos pesos das três provas.\nA matriz das notas finais dos três candidatos é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q145_f3.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q145_f4.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q145_f5.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q145_f6.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q145_f7.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q146",
@@ -1755,7 +2262,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma imobiliária pôs cinco apartamentos à venda em cinco prédios diferentes de uma cidade brasileira. O quadro\napresenta o preço e a área de cada um desses imóveis."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q146_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Um investidor decidiu comprar o apartamento com o menor preço por metro quadrado dentre os cinco apresentados.\nEle deverá comprar o apartamento"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q147",
@@ -1787,7 +2311,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Segundo regras da Fifa, em um campo de futebol, a área penal é a região limitada pelo retângulo ABCD, indicado na\nfigura, cujo lado AB mede, aproximadamente, 16 m. O ponto penal P, equidistante dos lados AB e CD, fica localizado a\n11 m do lado AD. O arco de circunferência, exterior à região penal, tem centro em P, e o raio mede, aproximadamente, 9 m."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q147_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.cbf.com.br. Acesso em: 5 ago. 2008 (adaptado).\nDe acordo com as medidas especificadas no texto e na figura, a distância EF entre as extremidades do arco de\ncírculo é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q148",
@@ -1909,7 +2450,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "No espaço, a falta de gravidade faz com que o\norganismo produza mais cálcio e, como o mineral não\né usado, o corpo o expele, fazendo com que os ossos\ndiminuam de tamanho. Um dos ossos que sofrem essa\nredução é o fêmur. O gráfico apresenta a evolução linear\ndo tamanho desse osso, ao longo de três meses, em um\nastronauta que, antes de ir para o espaço, tinha um fêmur\nde 50 cm."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q151_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "DUARTE, M. O guia dos curiosos. São Paulo: Panda Books, 2015 (adaptado).\n\nComo esse astronauta ficará cinco meses no espaço,\nconsidere que a tendência de sua evolução óssea,\nobservada nos três primeiros meses, mantenha-se a\nmesma ao longo dos próximos meses.\nO tamanho, em centímetro, do fêmur desse astronauta,\nao completar quatro meses no espaço, será"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q152",
@@ -1941,7 +2499,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Especialistas do Instituto Internacional de Águas de\nEstocolmo estimam que cada pessoa necessita de, no\nmínimo, 1 000 m³ de água por ano, para consumo, higiene e\ncultivo de alimentos. Sabe-se também que o Rio Amazonas\ndespeja 200 000 m³ de água no mar por segundo.\nScientific America Brasil, set. 2008.\nPor quanto tempo deveríamos coletar as águas que o\nRio Amazonas despeja no mar para manter a população\nda cidade de São Paulo, estimada em 20 milhões de\npessoas, por um ano?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q153",
@@ -1973,7 +2539,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Mariana não tem computador pessoal em casa e\nprecisa fazer uma pesquisa na internet para um trabalho\nde escola. Então, foi até uma lan house perto de sua casa.\nNa porta da lan house havia esta placa:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q153_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Assim, quantos reais Mariana pagaria para ficar uma\nhora e meia usando a internet nessa lan house?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q154",
@@ -2005,7 +2588,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma padaria criou uma receita de bolo chamada Bolo\nde xícara, pois, com exceção dos ovos e do fermento,\nos demais ingredientes são medidos com xícaras de\nmesma capacidade, conforme descrito."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q154_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O modo de fazer a receita orienta colocar, primeiramente,\nos ovos e depois ir adicionando os ingredientes cujas\nquantidades foram medidas em xícara, da menor para a\nmaior quantidade. Por último, adiciona-se o fermento.\nEm qual ordem os ingredientes medidos em xícara serão\nadicionados na receita?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q155",
@@ -2050,11 +2650,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Em radiometria, a potência radiante emitida por\numa fonte de radiação é diretamente proporcional à\nquantidade de energia, em joule (J), irradiada pela fonte,\ne inversamente proporcional ao intervalo de tempo,\nem segundo (s), que a fonte necessita para emitir essa\nenergia. Por meio de sensores adequados, localizados\nem diferentes distâncias da fonte, medidas em metro (m),\né possível medir a potência radiante por unidade de área\nque chega àquela posição.\nA expressão que representa a unidade de medida para a\ngrandeza potência radiante por unidade de área é",
     "alternativas": {
-      "A": "J ⋅ s ⋅ m2",
-      "B": "J ⋅ s ⋅ m (cid:45)",
-      "C": "(cid:86)(cid:31)(cid:80) J",
-      "D": "⋅m2 s (cid:45)",
-      "E": "(cid:86)(cid:31)(cid:80)(cid:21)"
+      "A": "J ⋅ s ⋅ m²",
+      "B": "J ⋅ s ⋅ m",
+      "C": "",
+      "D": "J/s ⋅ m²",
+      "E": ""
     },
     "gabarito": "E",
     "anulada": false,
@@ -2067,7 +2667,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em radiometria, a potência radiante emitida por\numa fonte de radiação é diretamente proporcional à\nquantidade de energia, em joule (J), irradiada pela fonte,\ne inversamente proporcional ao intervalo de tempo,\nem segundo (s), que a fonte necessita para emitir essa\nenergia. Por meio de sensores adequados, localizados\nem diferentes distâncias da fonte, medidas em metro (m),\né possível medir a potência radiante por unidade de área\nque chega àquela posição.\nA expressão que representa a unidade de medida para a\ngrandeza potência radiante por unidade de área é"
+      }
+    ],
+    "alternativas_imagem": {
+      "C": "img/blocos/reaplicacao_D2_CD7_Q156_f1.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q156_f2.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q157",
@@ -2099,7 +2712,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A trajetória de um avião durante um voo entre duas\ncidades ocorre dentro de áreas de controle de tráfego.\nDurante um voo, é exigido que o avião sobrevoe pontos\nde controle situados no solo e demarcados entre a\norigem (O) e o destino (D) da aeronave. Assim, embora a\ntrajetória do avião ocorra num espaço tridimensional, para\no controlador de voo, a visualização representativa dessa\ntrajetória é dada por uma linha poligonal plana, em que\ntrês pontos de controle sucessivos, nas representações,\ndevem ser não colineares.\nDisponível em: www.kaspersky.com.br. Acesso em: 21 out. 2019 (adaptado).\n\nAs figuras apresentam algumas possibilidades dessas\nrepresentações, nas quais todos os pontos de controle\nestão representados."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q157_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q157_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O\nV\n\nSuponha que um avião fez um voo com origem\ndiferente do destino final e cuja representação apresente\ntrês pontos de controle.\nNesse voo, qual das figuras apresentadas é compatível\ncom as restrições estabelecidas?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q158",
@@ -2131,7 +2766,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma quadra oficial de futebol de salão ocupa uma área\nque corresponde à área de um retângulo com comprimento\nde 40 m e largura de 20 m. Para segurança dos atletas, as\nlinhas demarcatórias da quadra, nas laterais e nos fundos,\ndeverão estar a uma distância de, no mínimo, 2 m de\nobstáculos que não fazem parte da quadra, tais como\nrede de proteção, tela, grade ou parede.\nDisponível em: www.cbfs.com.br. Acesso em: 20 out. 2019 (adaptado).\n\nA gerência do Departamento de Obras de uma\nPrefeitura avalia adquirir um terreno e nele construir\numa quadra oficial de futebol de salão. Há cinco terrenos\ndisponíveis, e a gerência comprará o terreno que tiver\nmenor área, desde que comporte a construção da quadra\ngarantindo todas as demandas que ofereçam segurança\naos atletas. Planeja-se ainda que a quadra seja construída\nde modo que o seu lado maior seja paralelo à rua. A figura\nilustra os terrenos disponíveis e que estão sendo avaliados."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q158_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q158_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Qual dos cinco terrenos a gerência deve adquirir a fim de\natender a todas as exigências apresentadas?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q159",
@@ -2146,11 +2803,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma empresa produziu uma bola de chocolate,\nem formato esférico, para utilizar na decoração de sua\nloja. Essa bola tem 20 cm de diâmetro externo, sendo oca\npor dentro, e a medida da espessura entre as superfícies\ninterna e externa corresponde a 1 cm. Considere que,\nna confecção dessa bola, foi utilizado um tipo de chocolate\nem que 1 g equivale a 0,75 cm³.\nA quantidade de chocolate, em grama, utilizado na confecção\ndessa bola é\n76π",
     "alternativas": {
-      "A": "3 304π",
-      "B": "9 4336π",
-      "C": "9 4000π",
-      "D": "3 18256π",
-      "E": "9"
+      "A": "76π/3",
+      "B": "304π/9",
+      "C": "4336π/9",
+      "D": "4000π/3",
+      "E": "18256π/9"
     },
     "gabarito": "C",
     "anulada": false,
@@ -2163,7 +2820,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa produziu uma bola de chocolate,\nem formato esférico, para utilizar na decoração de sua\nloja. Essa bola tem 20 cm de diâmetro externo, sendo oca\npor dentro, e a medida da espessura entre as superfícies\ninterna e externa corresponde a 1 cm. Considere que,\nna confecção dessa bola, foi utilizado um tipo de chocolate\nem que 1 g equivale a 0,75 cm³.\nA quantidade de chocolate, em grama, utilizado na confecção\ndessa bola é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q160",
@@ -2208,11 +2873,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um reservatório que abastece uma região urbana está\ncom uma quantidade V de água. Previsões meteorológicas\nindicam que a região passará por uma escassez de\nchuva e, por isso, as autoridades locais determinaram a\nrealização de várias medições do volume de água nesse\nreservatório para efeito de monitoramento.\nA primeira medição indicou que o volume de água\nreduziu-se à metade; a segunda indicou a retirada da terça\nparte do que restou; a terceira, a retirada da quarta parte\ndo que restou; a quarta, a retirada da quinta parte do que\nrestou e assim sucessivamente nas demais medições,\nmantendo o seguinte padrão de retirada: na n-ésima\nmedição, a retirada da (n + 1)-ésima parte do que restou.\nConsidere que não houve reabastecimento de água no\nreservatório no período em que foram feitas as medições.\nMantendo esse padrão de retirada, as quantidades de\nágua restantes no reservatório referentes às 7ª, 8ª e 9ª\nmedições são iguais a, respectivamente,\n7 8 9",
     "alternativas": {
-      "A": "V, V e V 8 9 10 6 7 8",
-      "B": "V, V e V 7 8 9 6 7 8",
-      "C": "V, V e V 8 9 10 1 1 1",
-      "D": "V, V e V 7 8 9 1 1 1",
-      "E": "V, V e V 8 9 10"
+      "A": "7/8V, 8/9V e 9/10V",
+      "B": "6/7V, 7/8V e 8/9V",
+      "C": "6/8V, 7/9V e 8/10V",
+      "D": "1/7V, 1/8V e 1/9V",
+      "E": "1/8V, 1/9V e 1/10V"
     },
     "gabarito": "E",
     "anulada": false,
@@ -2225,7 +2890,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um reservatório que abastece uma região urbana está\ncom uma quantidade V de água. Previsões meteorológicas\nindicam que a região passará por uma escassez de\nchuva e, por isso, as autoridades locais determinaram a\nrealização de várias medições do volume de água nesse\nreservatório para efeito de monitoramento.\n\nA primeira medição indicou que o volume de água\nreduziu-se à metade; a segunda indicou a retirada da terça\nparte do que restou; a terceira, a retirada da quarta parte\ndo que restou; a quarta, a retirada da quinta parte do que\nrestou e assim sucessivamente nas demais medições,\nmantendo o seguinte padrão de retirada: na n-ésima\nmedição, a retirada da (n + 1)-ésima parte do que restou.\n\nConsidere que não houve reabastecimento de água no\nreservatório no período em que foram feitas as medições."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q161_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "medições são iguais a, respectivamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q162",
@@ -2257,7 +2941,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um equipamento monitora o volume de água que\npassa por uma tubulação em um período de tempo.\nUm técnico rascunhou cinco possibilidades de unidade de\nmedida para a grandeza que esse equipamento monitora.\n\nNas imagens, cm significa centímetro, e s significa\nsegundo."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q162_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q162_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O rascunho que expressa corretamente uma unidade de\nmedida para a grandeza que esse equipamento monitora\né o"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q163",
@@ -2350,7 +3056,29 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma costureira tem à sua disposição pelo menos\nduas unidades de cada um dos quatro tipos de retalhos\nretangulares com as estampas e os tamanhos apresentados."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q165_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q165_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Para confeccionar um tapete em formato retangular\nde 10 cm × 50 cm, ela utilizará os retalhos, na posição\nindicada na figura, costurando um lado de um a um lado do\noutro, sem que haja rotações desses retalhos. O modelo\nde tapete que pretende confeccionar deverá conter um\núnico retalho de 10 cm × 20 cm e mais três retalhos de\nformato 10 cm × 10 cm, sendo que retalhos de mesma\nestampa não poderão ficar lado a lado.\nQuantos modelos diferentes de tapetes poderão ser\nconfeccionados?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q166",
@@ -2382,7 +3110,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Restaurantes geralmente se deparam com o problema\nde definir a quantidade de alimentos a serem preparados\npara cada dia. Diante desse problema, o gerente de\num restaurante anotou as quantidades de clientes que\nalmoçaram em seu restaurante durante os 10 primeiros\ndias do mês e registrou esses dados, obtendo este gráfico:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q166_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Ele considerou a moda da distribuição das quantidades\nde clientes que almoçaram em seu restaurante nesses\n10 primeiros dias do mês como uma boa medida para\ndimensionar a quantidade de alimentos a serem preparados\ndiariamente.\nO valor da moda dessa distribuição é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q167",
@@ -2474,7 +3219,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma pessoa foi a um supermercado comprar uma\ncaixa de sabão em pó. Lá encontrou várias marcas desse\nproduto, disponibilizado em embalagens com diferentes\ncapacidades e preços. No quadro são fornecidos o preço,\nem real, e o conteúdo, em quilograma, das embalagens\nde cinco diferentes marcas de sabão em pó que estão à\nvenda nesse supermercado."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q169_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A marca cuja embalagem oferece o menor preço, em\nreal, por quilograma de sabão em pó é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q170",
@@ -2489,11 +3251,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma piscina de um clube tem o formato de\nparalelepípedo reto retângulo com 50 m de comprimento,\n25 m de largura e 3 m de profundidade. O proprietário\ndo clube construirá duas novas piscinas, de formatos\ndiferentes, e necessita que cada uma tenha o mesmo volume\nda existente ou o mais próximo possível desse volume.\nA empresa de construção contratada disponibilizou,\npara a avaliação desse proprietário, uma proposta com\ncinco projetos de piscina: três com o formato de cilindro\ncircular reto e duas com o formato de paralelepípedo\nreto retângulo:\n• piscina cilíndrica I (C ): 50 m de diâmetro de base\n1\ne 2 m de profundidade;\n• piscina cilíndrica II (C ): 40 m de diâmetro de base\n2\ne 3 m de profundidade;\n• piscina cilíndrica III (C ): 46 m de diâmetro de base\n3\ne 2,5 m de profundidade;\n• piscina em formato de paralelepípedo I (P): 62 m de\n1\ncomprimento, 24 m de largura e 2 m de profundidade;\n• piscina em formato de paralelepípedo II (P ):\n2\n64 m de comprimento, 30 m de largura e 2 m\nde profundidade.\nConsidere 3 como valor aproximado de π.\nPara atender às suas necessidades, dentre os projetos\npropostos, o proprietário desse clube deverá escolher\nas piscinas",
     "alternativas": {
-      "A": "C e P . 1 2",
-      "B": "C e C . 1 3",
-      "C": "C e P . 2 1",
-      "D": "C e P . 3 2",
-      "E": "P e P . 1 2"
+      "A": "C₁ e P₂.",
+      "B": "C₁ e C₃.",
+      "C": "C₂ e P₁.",
+      "D": "C₃ e P₂.",
+      "E": "P₁ e P₂."
     },
     "gabarito": "A",
     "anulada": false,
@@ -2506,7 +3268,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma piscina de um clube tem o formato de\nparalelepípedo reto retângulo com 50 m de comprimento,\n25 m de largura e 3 m de profundidade. O proprietário\ndo clube construirá duas novas piscinas, de formatos\ndiferentes, e necessita que cada uma tenha o mesmo volume\nda existente ou o mais próximo possível desse volume.\nA empresa de construção contratada disponibilizou,\npara a avaliação desse proprietário, uma proposta com\ncinco projetos de piscina: três com o formato de cilindro\ncircular reto e duas com o formato de paralelepípedo\nreto retângulo:\n\n• piscina cilíndrica I (C₁): 50 m de diâmetro de base\ne 2 m de profundidade;\n\n• piscina cilíndrica II (C₂): 40 m de diâmetro de base\ne 3 m de profundidade;\n\n• piscina cilíndrica III (C₃): 46 m de diâmetro de base\ne 2,5 m de profundidade;\n\n• piscina em formato de paralelepípedo I (P₁): 62 m de\n\ncomprimento, 24 m de largura e 2 m de profundidade;\n\n• piscina em formato de paralelepípedo II (P₂):\n\n64 m de comprimento, 30 m de largura e 2 m\nde profundidade.\nConsidere 3 como valor aproximado de π.\nPara atender às suas necessidades, dentre os projetos\npropostos, o proprietário desse clube deverá escolher\nas piscinas"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q171",
@@ -2521,11 +3291,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um professor de matemática desenvolveu uma\natividade educacional relacionada aos Jogos Olímpicos\ne confeccionou uma maquete que representa uma piscina\nnas dimensões olímpicas. Admitiu que a piscina olímpica\ndeve ter capacidade mínima de 2 500 000 litros e construiu\nsua maquete, referente a esse valor mínimo, na forma de\nparalelepípedo reto retângulo com dimensões internas\n2 cm, 25 cm e 50 cm, cujo volume é 2 500 cm3. Considere\nque 1 L = 103 cm3.\nA maquete confeccionada pelo professor foi elaborada\nna escala",
     "alternativas": {
-      "A": "1 : 100.",
-      "B": "1 : 1 000.",
-      "C": "1 : 2 000.",
-      "D": "1 : 50 000.",
-      "E": "1 : 1 000 000."
+      "A": "1: 100.",
+      "B": "1: 1 000.",
+      "C": "1: 2 000.",
+      "D": "1: 50 000.",
+      "E": "1: 1 000 000."
     },
     "gabarito": "A",
     "anulada": false,
@@ -2538,7 +3308,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um professor de matemática desenvolveu uma\natividade educacional relacionada aos Jogos Olímpicos\ne confeccionou uma maquete que representa uma piscina\nnas dimensões olímpicas. Admitiu que a piscina olímpica\ndeve ter capacidade mínima de 2 500 000 litros e construiu\nsua maquete, referente a esse valor mínimo, na forma de\nparalelepípedo reto retângulo com dimensões internas\n2 cm, 25 cm e 50 cm, cujo volume é 2 500 cm³. Considere\nque 1 L = 10³ cm³.\nA maquete confeccionada pelo professor foi elaborada\nna escala"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q172",
@@ -2570,7 +3348,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O Torcidômetro é uma ferramenta para se entender\na dinâmica do crescimento ou encolhimento das torcidas\ndos times de futebol no país. O gráfico mostra a variação\npercentual, entre 1993 e 2007, das torcidas de cinco times\nnumerados em: I, II, III, IV e V."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q172_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "3 0 1 2 2 2 3 4 5 6 6 7 7\n\n9 0 0 0 0 0 0 0 0 0 0 0 0\n/ / / / / / / / / / / / /\n\n1 8 6 6 8 2 2 2 0 2 6 8 1\n\n1 0 0 0 0 1 1 1 1 0 0 0 1\n\n/ / / / / / / / / / / / /\n\n1 0 8 7 6 1 5 8 1 2 4 5 8\n\n1 2 2 0 1 1 1 1 2 0 2 1 2\n\nDisponível em: www.netvasco.com.br. Acesso em: 25 fev. 2009.\nOs dados exibidos no gráfico indicam que a torcida que\napenas cresceu, entre fevereiro de 2006 e agosto de\n2007, foi a torcida do time"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q173",
@@ -2585,11 +3380,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um tipo de célula se reproduz constantemente por\ndivisão celular, triplicando sua quantidade a cada duas\nhoras, sob condições ideais de proliferação. Suponha uma\nquantidade inicial Q dessas células sob as condições\n0\nideais de proliferação durante um certo período.\nQual a representação algébrica da quantidade Q dessas\ncélulas em função do tempo t, em hora, nesse período?",
     "alternativas": {
-      "A": "Q(t) = Q ⋅ 3t 0",
-      "B": "Q(t) = Q ⋅ 32t 0 t",
-      "C": "Q(t) = Q ⋅ 23 0 t",
-      "D": "Q(t) = Q ⋅ 32 0 t−1",
-      "E": "Q(t) = Q ⋅ 32 0"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "D",
     "anulada": false,
@@ -2602,7 +3397,23 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um tipo de célula se reproduz constantemente por\ndivisão celular, triplicando sua quantidade a cada duas\nhoras, sob condições ideais de proliferação. Suponha uma\nquantidade inicial Q₀ dessas células sob as condições\nideais de proliferação durante um certo período.\nQual a representação algébrica da quantidade Q dessas\ncélulas em função do tempo t, em hora, nesse período?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q173_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q173_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q173_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q173_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q173_f5.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q174",
@@ -2634,7 +3445,23 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q174_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q174_f2.png",
+        "motivo": "fórmula"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q175",
@@ -2667,7 +3494,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um rolo de papel higiênico tradicional é representado\npor um cilindro circular reto retirando-se outro cilindro\ncircular reto interior, de mesmo eixo de simetria, mesma\naltura e diâmetro menor, conforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q175_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Considere um rolo de papel higiênico com 12 cm de\ndiâmetro externo, 4 cm de diâmetro interno e 10 cm\nde altura.\nO volume, em centímetro cúbico, desse rolo é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q176",
@@ -2759,7 +3603,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Estudantes de psicologia experimental estão analisando\num modelo matemático que foi desenvolvido a partir de\num experimento com pombos. Nesse experimento, um\nalimento considerado como uma recompensa reforçadora\nera fornecido em quantidades (Q) para as aves, com a\npossibilidade de atraso no tempo de entrega.\n\nO modelo matemático que relaciona os valores\nreforçadores V₁ e V₂ de duas recompensas em função de suas\nrespectivas quantidades Q₁ e Q₂ e de seus respectivos tempos\nde atraso T₁ e T₂ na disponibilização de cada uma delas é"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D2_CD7_Q178_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Ao analisarem o caso em que a quantidade Q₁ é o\ndobro da quantidade Q₂, cinco estudantes fizeram as\nseguintes afirmações sobre em que condição o valor V₁\nserá maior que o valor V₂:\n\n• estudante 1: sempre, pois Q₁ é o dobro de Q₂;\n\n• estudante 2: apenas quando a razão entre T₂ e T₁\nfor maior que 0,5;\n\n• estudante 3: apenas quando a razão entre T₂ e T₁\nfor menor que 0,5;\n• estudante 4: apenas quando T₁ for igual a T₂;\n\n• estudante 5: apenas quando a razão entre T₂ e T₁\nfor maior que 0,5 e menor que 1.\nQual estudante fez a afirmação correta?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q179",
@@ -2791,7 +3654,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em uma sala escura há um ponto luminoso, a mais\nde 3 metros de distância de uma parede, e um disco\npendurado, paralelo à parede, entre ela e o ponto\nluminoso. O disco encontra-se a 1 metro de distância do\nponto luminoso, projetando uma sombra S₁, em formato\nde círculo, na parede. Esse disco é afastado mais 2 m do\nponto luminoso, em direção à sombra e sem encostar na\nparede, projetando outra sombra S₂, também no formato\nde um círculo.\nSejam A₁ a área de S₁ e A₂ a área de S₂.\nO valor de A/A¹ é\n2"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-reaplicacao-D2-CD7-Q180",
@@ -2806,9 +3677,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é\nCaloria Caloria\n(cal) (cal)\n405 405\n275 275",
     "alternativas": {
-      "A": "A DD 175 100 0 30 60 90 Tempo 0 30 60 90 120 Tempo (min) (min) Caloria Caloria (cal) (cal)",
-      "B": "175 EE 175 130 130 100 100 0 30 60 90 Tempo 0 30 60 90 Tempo (min) (min) Caloria (cal) 405 275",
-      "C": "100 0 30 60 90 Tempo (min)"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "A",
     "anulada": false,
@@ -2823,6 +3696,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_reaplicacao_PPL_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_reaplicacao_PPL_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\n\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/reaplicacao_D2_CD7_Q180_f1.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q180_f2.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q180_f3.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q180_f4.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q180_f5.png"
+    },
+    "revisar": []
   }
 ]

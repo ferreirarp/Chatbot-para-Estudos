@@ -104,7 +104,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q003_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.hongkiat.com. Acesso em: 18 ago. 2017 (adaptado).\nO texto estabelece uma relação entre elementos da\nnatureza e comandos de um programa de computador para"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q004-ingles",
@@ -166,7 +179,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q005_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.clickhole.com. Acesso em: 26 out. 2015.\nA carta da editora Stephanie Allen-Nichols à escritora\nAlice Walker tem o propósito de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q001-espanhol",
@@ -938,7 +964,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q025_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VISCONTI, E. Três meninas no jardim. Óleo sobre tela,\n\n81 × 65 cm. Museu Nacional de Belas Artes,\n\nRio de Janeiro, 1935.\n\nDisponível em: www.eliseuvisconti.com.br. Acesso em: 18 set. 2012.\nEliseu D’Angelo Visconti (1866-1944) desenvolveu diversas\nobras no Brasil, com grande influência das escolas\neuropeias. Em sua pintura Três meninas no jardim, há"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q026",
@@ -1180,7 +1219,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q033_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://defesacivil.rs.gov.br.\nAcesso em: 11 mar. 2024 (adaptado).\nNesse cartaz, a expressão “Vou deixar que você se vá”,\nem conjunto com os elementos não verbais utilizados,\ntem a finalidade de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q034",
@@ -1295,7 +1347,7 @@
       },
       {
         "tipo": "texto",
-        "texto": "MODIGLIANI, A. Cabeça de mulher. Circa 1910-1911.\n\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\n\nNational Gallery of Art, Washington.\n\nWOLKOFF, J. These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art.\nDisponível em: www.artsy.net. Acesso em: 19 jun. 2019.\nA leitura comparativa das duas esculturas, separadas por mais de 2500 anos, indica a"
+        "texto": "MODIGLIANI, A. Cabeça de mulher. Circa 1910-1911.\n\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\n\nNational Gallery of Art, Washington.\n\nWOLKOFF, J. These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art.\nDisponível em: www.artsy.net. Acesso em: 19 jun. 2019.\nA leitura comparativa das duas esculturas, separadas por mais de 2 500 anos, indica a"
       }
     ],
     "alternativas_imagem": {},
@@ -1511,7 +1563,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nA fotografia de Regina Valkenborgh apresenta\n2953 arcos de luz cruzando o céu e registra o nascer e o pôr\ndo sol ao longo de oito anos. Em 2012, essa estudante da\nUniversidade de Hertfordshire colocou uma folha de papel\nfotográfico em uma lata com um pequeno orifício, criando\nassim uma câmera pinhole de baixa tecnologia. Porém,\na lata foi esquecida em um telescópio no observatório da\nuniversidade. Esse projeto esquecido acabou revelando a\nfoto do pôr do sol de maior exposição já tirada.\nSANTOS, A. Disponível em: https://socientifica.com.br.\nAcesso em: 13 nov. 2021 (adaptado).\nTEXTO II\nRepresentação de 2 953 arcos de luz cruzando o céu,\nregistrando o nascer e o pôr do sol ao longo de oito anos"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q043_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VALKENBORGH, R. Fotografia. Reino Unido:\n\nUniversidade Hertfordshire (2012-2020).\n\nDisponível em: www.thisiscolossal.com. Acesso em: 1 nov. 2022.\nO experimento realizado por Regina Valkenborgh resultou\nno entendimento de que a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q044",
@@ -2376,7 +2445,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "A26ª Conferência do Clima das Nações Unidas foi realizada\ncom a perspectiva de que os países tornassem ainda mais\nambiciosos os compromissos assumidos no enfrentamento\ndas mudanças climáticas, de modo a evitar que a temperatura\nglobal se eleve acima de 1,5 °C, marca que já vinha sendo\ndiscutida desde o Acordo de Paris, de 2015.\n\nA pressão do setor empresarial, que se posicionou de\nmaneira contundente nesta COP-26, gerou impacto positivo.\nO Conselho Empresarial Brasileiro para o Desenvolvimento\nSustentável (CEBDS) capitaneou, por meio do movimento\nEmpresários pelo Clima, a adesão de 119 CEOs de importantes\nempresas e 14 instituições do setor privado, de setores tão\ndiversos como agronegócio, alimentício, aviação, elétrico,\nfarmacêutico, finanças, infraestrutura, logística, papel e celulose,\npetroquímico, saúde, tecnologia, telefonia e varejo.\n\nO Brasil deixa a conferência com o compromisso de fazer\nvaler sua meta e reduzir 50% dos gases de efeito estufa até\n2030 em relação aos níveis de 2005 — anteriormente, a meta\nde redução era de 43%.\nGROSSI, M. A mais plural das COPs e a lição de casa para o Brasil.\nDisponível em: www.nexojornal.com.br.\nAcesso em: 24 nov. 2021 (adaptado).\nConforme o texto, o compromisso assumido pelo Brasil foi\nresultado dos tensionamentos promovidos por"
+        "texto": "A 26ª Conferência do Clima das Nações Unidas foi realizada\ncom a perspectiva de que os países tornassem ainda mais\nambiciosos os compromissos assumidos no enfrentamento\ndas mudanças climáticas, de modo a evitar que a temperatura\nglobal se eleve acima de 1,5 °C, marca que já vinha sendo\ndiscutida desde o Acordo de Paris, de 2015.\n\nA pressão do setor empresarial, que se posicionou de\nmaneira contundente nesta COP-26, gerou impacto positivo.\nO Conselho Empresarial Brasileiro para o Desenvolvimento\nSustentável (CEBDS) capitaneou, por meio do movimento\nEmpresários pelo Clima, a adesão de 119 CEOs de importantes\nempresas e 14 instituições do setor privado, de setores tão\ndiversos como agronegócio, alimentício, aviação, elétrico,\nfarmacêutico, finanças, infraestrutura, logística, papel e celulose,\npetroquímico, saúde, tecnologia, telefonia e varejo.\n\nO Brasil deixa a conferência com o compromisso de fazer\nvaler sua meta e reduzir 50% dos gases de efeito estufa até\n2030 em relação aos níveis de 2005 — anteriormente, a meta\nde redução era de 43%.\nGROSSI, M. A mais plural das COPs e a lição de casa para o Brasil.\nDisponível em: www.nexojornal.com.br.\nAcesso em: 24 nov. 2021 (adaptado).\nConforme o texto, o compromisso assumido pelo Brasil foi\nresultado dos tensionamentos promovidos por"
       }
     ],
     "alternativas_imagem": {},
@@ -2562,7 +2631,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q077_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "VIEIRA, A. P. L. O Departamento de Imprensa e Propaganda e a política editorial do Estado Novo (1937-1945).\nRio de Janeiro: Unirio, 2019.\nO que as capas da revista Travel in Brazil, publicadas entre 1941 e 1944 pelo Departamento de Imprensa e Propaganda (DIP),\nevidenciam?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q078",
@@ -2834,7 +2916,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q086_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://earth.google.com. Acesso em: 13 out. 2023.\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q086_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://earth.google.com. Acesso em: 13 out. 2023.\nA comparação entre as imagens de satélite indica a\nocorrência de um processo de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D1-CD1-Q087",

@@ -30,7 +30,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q001_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://mir-s3-cdn-cf.behance.net. Acesso em: 29 out. 2021 (adaptado).\nEsse cartaz de campanha sugere que"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q002-ingles",
@@ -153,7 +166,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q005_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.cartoonstock.com. Acesso em: 25 out. 2021.\nAo retratar o ambiente de trabalho em um escritório, esse\ncartum tem por objetivo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q001-espanhol",
@@ -185,7 +211,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n?QUÉ ME PASA?:\n?PorQUÉ ME CUESTA TANTO ESTUDIAR?\n?pORQUÉ ME CUESTA TANTO CONCENTRARME?\n?PoRQUÉ......\n?pORQUÉ......\n......\n?PORQUé NO CONSIGO APRENDER COMO LOS DEMÁS?"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q001_espanhol_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.otrasvoceseneducacion.org. Acesso em: 8 nov. 2022.\nTEXTO II\n\nIshaan Awashi es un niño de 8 años cuyo mundo está\nplagado de maravillas que nadie más parece apreciar:\ncolores, peces, perros y cometas, que simplemente no son\nimportantes en la vida de los adultos, que parecen más\ninteresados en cosas como los deberes, las notas o la\nlimpieza. E Ishaan parece no poder hacer nada bien en clase.\nCuando los problemas que ocasiona superan a sus padres,\nes internado en un colegio para que le disciplinen. Las cosas\nno mejoran en el nuevo colegio, donde Ishaan tiene además\nque aceptar estar lejos de sus padres. Hasta que un día,\nel nuevo profesor de arte, Ram Shankar Nikumbh, entra en\nescena, se interesa por el pequeño Ishaan y todo cambia.\nDisponível em: https://elfinalde.com. Acesso em: 26 out. 2021 (adaptado).\nO filme Como estrellas en la tierra aborda o tema da\ndislexia. Relacionando o cartaz do filme com a sinopse,\nconstata-se que o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q002-espanhol",
@@ -878,7 +921,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q024_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.defensoriapublica.mt.gov.br. Acesso em: 29 out. 2021 (adaptado).\nEsse anúncio publicitário, veiculado durante o contexto\nda pandemia de covid-19, tem por finalidade"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q025",
@@ -1133,7 +1189,7 @@
     "lingua_estrangeira": null,
     "enunciado": "TEXTO I\nSEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm.\nMuseu Lasar Segall, IbramMinc, São Paulo, 1919.\nTEXTO II\nEm 1933, a obra Eternos caminhantes ingressou\nem uma das primeiras edições das exposições de Arte\nDegenerada, promovida por membros do partido nazista\nalemão. Nos anos seguintes, ela voltaria a ser exibida na\nmostra denominada Exposição da Vergonha, promovida\npor pequenos grupos abastados. Em 1937, essa obra foi\nconfiscada pelo Ministério da Propaganda daquele país, na\ngrande ação nacional-socialista contra a “Arte Degenerada”.\nSCHWARTZ, J. Perseguição à Arte Moderna em tempos de\nguerra. São Paulo: Museu Lasar Segall, 2018 (adaptado).\nQuase cinquenta obras de Lasar Segall foram confiscadas\npelo regime totalitário alemão na primeira metade do\nséculo XX, entre elas a obra Eternos caminhantes,\nconsiderada degenerada por",
     "alternativas": {
-      "A": "representar uma estética tida como inconveniente para oideário político vigente.",
+      "A": "representar uma estética tida como inconveniente para o ideário político vigente.",
       "B": "manifestar um posicionamento político-cultural concebido por grupos de oposição.",
       "C": "expressar a cultura artística por meio da representação parcial do corpo humano.",
       "D": "apresentar uma composição que antecipa o imaginário artístico germânico.",
@@ -1150,7 +1206,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q033_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SEGALL, L. Eternos caminhantes. Óleo sobre tela, 138 x 184 cm.\n\nMuseu Lasar Segall, IbramMinc, São Paulo, 1919.\n\nTEXTO II\n\nEm 1933, a obra Eternos caminhantes ingressou\nem uma das primeiras edições das exposições de Arte\nDegenerada, promovida por membros do partido nazista\nalemão. Nos anos seguintes, ela voltaria a ser exibida na\nmostra denominada Exposição da Vergonha, promovida\npor pequenos grupos abastados. Em 1937, essa obra foi\nconfiscada pelo Ministério da Propaganda daquele país, na\ngrande ação nacional-socialista contra a “Arte Degenerada”.\nSCHWARTZ, J. Perseguição à Arte Moderna em tempos de\nguerra. São Paulo: Museu Lasar Segall, 2018 (adaptado).\nQuase cinquenta obras de Lasar Segall foram confiscadas\npelo regime totalitário alemão na primeira metade do\nséculo XX, entre elas a obra Eternos caminhantes,\nconsiderada degenerada por"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q034",
@@ -1182,7 +1255,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nLogo no início de Gira, um grupo de sete bailarinas\nocupa o centro da cena. Mãos cruzadas sobre a lateral\nesquerda do quadril, olhos fechados, troncos que pendulam\nsobre si mesmos em vaguíssimas órbitas, tudo nelas\nsugere o transe. Está estabelecido o caráter volátil do que\nse passará no palco dali para frente. Mas engana-se quem\npensa que vai assistir a uma representação mimética dos\ncultos afro-brasileiros.\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q034_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.grupocorpo.com.br. Acesso em: 2 jul. 2019.\nNo diálogo que estabelece com religiões afro-brasileiras,\nsintetizado na descrição e na imagem do espetáculo,\na dança exprime uma"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q035",
@@ -1484,7 +1574,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q044_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.facebook.com/minsaude. Acesso em: 13 jun. 2018.\nEssa campanha publicitária do Ministério da Saúde visa"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q045",
@@ -1546,7 +1649,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q046_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SCARELI, G. A máquina de costura e os fios da memória. Revista Brasileira\nde Pesquisa (Auto)Biográfica, n. 18, maio-ago. 2021.\nA definição de Sertão descrita no bordado associa esse\nrecorte espacial a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q047",
@@ -1848,7 +1964,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q056_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LAERTE. Disponível em: www.laerte.art.br. Acesso em: 23 nov. 2021 (adaptado).\nA charge ilustra um anseio presente na sociedade contemporânea, que se caracteriza pela"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q057",
@@ -2120,7 +2249,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q065_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nas reportagens publicadas sobre a inauguração do\nMuseu de Arte de São Paulo, em 1947, quando ele ainda\nocupava um edifício na rua Sete de Abril, Lina Bo Bardi não foi\nmencionada nenhuma vez. A arquiteta era responsável pelo\nprojeto do museu que mudaria para sempre a posição de São\nPaulo no circuito mundial das artes. Mas não houve nenhum\nregistro disso. O louvor se concentrou em seu marido e\nparceiro profissional, o respeitado crítico de arte Pietro Maria\nBardi. Passados 75 anos, a mulher então ignorada recebeu\num Leão de Ouro póstumo, a maior homenagem da Bienal\nde Arquitetura de Veneza, e tem agora sua história contada\nem duas biografias de peso, que procuram destrinchar uma\ncarreira marcada pela ousadia e pela contradição.\nPORTO, W. Lina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias.\nDisponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado).\nAs transformações pelas quais passaram as sociedades\nocidentais e que possibilitaram o reconhecimento recente\ndo trabalho da arquiteta mencionada no texto foram\nresultado das mobilizações sociais pela"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q066",
@@ -2332,7 +2474,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nPor hora, apenas os mais abastados poderão sonhar\nem viajar ao espaço, seja por um foguete ou por um avião\nhíbrido, mas toda a população global poderá sentir os\nefeitos dessas viagens e avanços tecnológicos. Para uma\naventura dessas, as empresas tiveram que criar novas\ntecnologias que podem, em algum momento, voltar para a\nsociedade. A câmera fotográfica, hoje comum no mundo,\nantes foi uma invenção para ser usada em telescópios, e\no titânio, usado até na medicina, foi desenvolvido para a\nconstrução de foguetes.\nORLANDO, G. Corrida espacial dos bilionários pode trazer vantagens para todos.\nDisponível em: https://noticias.r7.com. Acesso em: 5 nov. 2021 (adaptado).\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q072_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "CAZO. Disponível em: www.humorpolitico.com.br. Acesso em: 5 nov. 2021.\nOs textos apresentam perspectivas da nova corrida\nespacial que revelam, respectivamente:"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q073",
@@ -2454,7 +2613,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q076_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "0\n1960 1970 1980 1990 2000 2010 2020 2030 2040 2050\nDécadas\nFonte: IBGE\nDisponível em: www.insper.edu.br. Acesso em: 27 set. 2021 (adaptado).\nQual fator foi determinante para a mudança do indicador\napresentado no gráfico?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q077",
@@ -2847,7 +3019,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D1_CD1_Q089_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "PIVETTA, M. O clima no Antropoceno. Revista Pesquisa Fapesp, n. 307, set. 2021.\nQual medida é capaz de minimizar as mudanças apresentadas nas simulações?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D1-CD1-Q090",

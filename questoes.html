@@ -453,7 +453,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
 
   const formato = (q) => (q.propria ? (q.blocos.some((b) => b.tipo === "figura") ? "Texto + recortes (nova versão)" : "Só texto")
     : q.blocos ? "Texto + recortes (nova versão)" : q.imagem ? "Com figura, tabela ou fórmula" : "Só texto");
-  const aplicacao = (q) => (q.propria ? (q.origem === "outra" ? "Outra fonte" : "Questão autoral") : q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
+  const aplicacao = (q) => (q.propria ? (q.origem === "outra" ? "Outra fonte" : "Questão autoral") : q.prova.aplicacao === "belem" ? "Aplicação Belém, Ananindeua e Marituba" : q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
   const campos = {
     area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
     ano: (q) => [q.prova.ano ? String(q.prova.ano) : "Sem ano"], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
@@ -1423,7 +1423,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   const questoesDaProva = () => MONT.questoes.map((id) => BANCO.find((x) => x.id === id)).filter(Boolean);
   const textoCurto = (q) => curto(((q.blocos ? q.blocos.filter((b) => b.tipo === "texto").map((b) => b.texto).join(" ") : q.enunciado) || "").replace(/\*\*|__/g, "").replace(/\s+/g, " ").trim(), 90);
   const origemCurta = (q) => (q.propria ? (q.fonte || ORIGEM[q.origem] || "Questão própria") + (q.prova.ano ? " " + q.prova.ano : "")
-    : `ENEM ${q.prova.ano}${q.prova.reaplicacao ? " – reaplicação" : ""}`);
+    : `ENEM ${q.prova.ano}${q.prova.reaplicacao ? " – reaplicação" : q.prova.aplicacao === "belem" ? " – aplicação Belém/PA" : ""}`);
   function desenharPainelProva() {
     const o = MONT.opcoes;
     $("pvTitulo").value = MONT.titulo; $("pvColunas").value = String(o.colunas);

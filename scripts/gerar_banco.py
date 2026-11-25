@@ -21,7 +21,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DADOS = RAIZ / "data" / "enem"
 SAIDA = RAIZ / "data" / "banco_questoes.js"
-RE_PROVA = re.compile(r"^(regular|reaplicacao)_D\d_CD\d+\.json$")
+RE_PROVA = re.compile(r"^(regular|reaplicacao|belem)_D\d_CD\d+\.json$")
 SIGLA = {
     "Linguagens, Códigos e suas Tecnologias": "LC",
     "Ciências Humanas e suas Tecnologias": "CH",

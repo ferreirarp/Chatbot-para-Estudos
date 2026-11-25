@@ -29,7 +29,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Muitas pessoas ainda se espantam com o fato de um\npassageiro sair ileso de um acidente de carro enquanto\no veículo onde estava teve perda total. Essas pessoas\ntalvez considerem, equivocadamente, que os carros mais\nseguros são os que têm as estruturas mais rígidas, ou seja,\nestruturas, que durante uma colisão, apresentam menor\ndeformação. Na verdade, o que ocorre é o contrário. Por isso,\na partir de 1958, passaram a ser produzidos carros com partes\nque se deformam facilmente.\nDAY, C. Crumple Zones. Disponível em: https://pubs.aip.org.\nAcesso em: 2 jul. 2024 (adaptado).\n\nAssim, além dos cintos de segurança e dos airbags,\nos carros modernos passaram a contar com o dispositivo\nde segurança conhecido como crumple zone (região\ndeformável, em inglês), conforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q091_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Momentum and Car safety. GCSE Physics Revision.\nDisponível em: www.shalom-education.com.\nAcesso em: 5 jul. 2024 (adaptado).\nConsiderando o carro, seus ocupantes e o muro da figura\ncomo um sistema isolado, o crumple zone aumenta a\nsegurança dos passageiros porque, durante uma colisão,\na deformação da estrutura do carro"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q092",
@@ -44,11 +61,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Células a combustível microbianas (CCM) são capazes\nde gerar eletricidade a partir de águas residuárias urbanas e\nagroindustriais. As CCM são compostas de duas câmaras.\nNuma delas, onde ocorre o tratamento da matéria orgânica,\nas bactérias eletrogênicas crescem formando um biofilme\ne se alimentam dos poluentes presentes no efluente. Ao se\nalimentarem, essas bactérias geram uma corrente elétrica\nque percorre o material sobre o qual elas formaram o biofilme.\nUm fio condutor externo possibilita a migração dessa corrente\npara uma segunda câmara, promovendo uma reação química.\nA figura esquematiza uma CCM e as reações envolvidas.\nCH COO− (aq) + 2 H O (I) → 2 CO (g) + 7 H+ (aq) + 8 e−\n3 2 2\n4 H+ (aq) + O (g) + 4 e− → 2 H O (I)\n2 2\nQUINTO, A. C. Biobaterias geram eletricidade a partir de\nesgoto sanitário e efluentes agroindustriais. Disponível em:\nhttps://jornal.usp.br. Acesso em: 1 dez. 2021 (adaptado).\nQual das equações representa a reação global que ocorre\ndurante o funcionamento dessa CCM?",
     "alternativas": {
-      "A": "CH₃COO⁻ (aq) + O₂ (g) → 2 CO₂ (g) + 3 H⁺ (aq)",
-      "B": "CO₂ (g) + O₂ (g) + H⁺ (aq) → H₂O (l) + CH₃COO⁻ (aq)",
-      "C": "CH₃COO⁻ (aq) +H⁺ (aq) +2 O₂ (g)→2 CO₂ (g) +2 H₂O (l)",
-      "D": "CH₃COO⁻ (aq) + 6H₂O(l)→2CO₂ (g) +2O₂ (g) +15H⁺ (aq)",
-      "E": "2 CO₂ (g) + 11 H⁺ (aq) + O₂ (g)→CH₃COO⁻ (aq) + 4 H₂O (l)"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "C",
     "anulada": false,
@@ -74,12 +91,30 @@
         "motivo": "figura"
       },
       {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q092_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q092_f3.png",
+        "motivo": "fórmula"
+      },
+      {
         "tipo": "texto",
-        "texto": "CH₃COO⁻ (aq) + 2 H₂O (I) → 2 CO₂ (g) + 7 H⁺ (aq) + 8 e⁻\n\n4 H⁺ (aq) + O₂ (g) + 4 e⁻ → 2 H₂O (I)\n\nQUINTO, A. C. Biobaterias geram eletricidade a partir de\nesgoto sanitário e efluentes agroindustriais. Disponível em:\nhttps://jornal.usp.br. Acesso em: 1 dez. 2021 (adaptado).\nQual das equações representa a reação global que ocorre\ndurante o funcionamento dessa CCM?"
+        "texto": "QUINTO, A. C. Biobaterias geram eletricidade a partir de\nesgoto sanitário e efluentes agroindustriais. Disponível em:\nhttps://jornal.usp.br. Acesso em: 1 dez. 2021 (adaptado).\nQual das equações representa a reação global que ocorre\ndurante o funcionamento dessa CCM?"
       }
     ],
-    "alternativas_imagem": {},
-    "revisar": []
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q092_f4.png",
+      "B": "img/blocos/regular_D2_CD7_Q092_f5.png",
+      "C": "img/blocos/regular_D2_CD7_Q092_f6.png",
+      "D": "img/blocos/regular_D2_CD7_Q092_f7.png",
+      "E": "img/blocos/regular_D2_CD7_Q092_f8.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q093",
@@ -142,7 +177,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A nimesulida é um fármaco pouco solúvel em água,\nutilizado como anti-inflamatório, analgésico e antitérmico.\nEssa substância pode ser convertida em uma espécie\neletricamente carregada, de maior solubilidade em água,\nmediante o tratamento com uma base de Brönsted-Lowry,\nisto é, uma espécie química capaz de capturar um próton\n(H⁺). Na figura são apresentados os grupamentos presentes\nna estrutura química da nimesulida."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q094_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "GONÇALVES, A. A. et al. Contextualizando reações ácido-base\nde acordo com a teoria protônica de Brönsted-Lowry\nusando comprimidos de propranolol e nimesulida.\nQuímica Nova, n. 3, 2013 (adaptado).\nNa estrutura desse fármaco, o grupamento capaz de\nreagir com a base de Brönsted-Lowry é o grupo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q095",
@@ -204,7 +256,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Nos automóveis, é importante garantir que o centro de\nmassa (CM) de cada conjunto roda/pneu coincida com o\nseu centro geométrico. Esse processo é realizado em uma\nmáquina de balanceamento, na qual o conjunto roda e pneu\né colocado para girar a uma velocidade de valor constante.\nCom base nas oscilações medidas, a máquina indica a\nposição do centro de massa do conjunto, e pequenas\npeças de chumbo são fixadas em lugares específicos da\nroda até que as vibrações diminuam. Durante o treinamento\nde sua equipe, a fim de corrigir a posição do centro de\nmassa indicada pela máquina, um mecânico apresenta\no esquema a seguir, com cinco possíveis pontos da roda\npara posicionar uma peça de chumbo."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q096_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em qual ponto deve ser fixada a peça de chumbo para corrigir\na posição do centro de massa desse conjunto roda/pneu?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q097",
@@ -276,7 +345,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Apesar de os animais representados no cladograma\ncompartilharem um mesmo ancestral, eles se caracterizam\npor distintos padrões de reprodução ou de nutrição dos\nembriões e descendentes."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q098_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "DIXSON, A. F. Mammalian Sexuality: The Act of Mating and the\nEvolution of Reproduction. Disponível em: www.cambridge.org.\nAcesso em: 2 jul. 2024 (adaptado).\nAo longo do processo evolutivo, percebem-se, entre\nesses animais, perdas e ganhos nos padrões citados que\nenvolvem o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q099",
@@ -349,7 +435,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Mirascópio 3D: produtor de ilusão instantânea\n\nO equipamento ilustrado na figura, de dimensões\napresentadas no esquema, é composto por dois espelhos\ncôncavos E₁ e E₂, apoiados um sobre o outro por suas\nbordas, de tal forma que o vértice de E₁ coincide com\no foco de E₂ e vice-versa. Na abertura circular de\nE₂, é formada uma imagem tridimensional de um objeto\nposicionado sobre o vértice de E₁. Essa imagem é\nformada a partir dos raios procedentes do objeto, refletidos\npor E₂ e E₁, respectivamente, conforme o esquema.\nOs observadores julgam visualizar o objeto quando estão,\nde fato, visualizando sua imagem. O efeito só é possível\nporque as superfícies de ambos os espelhos são de\nextrema qualidade."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q100_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SALZMANN, W. Disponível em: https://wissenstexte.de.\nAcesso em: 27 jun. 2024 (adaptado).\nA natureza da imagem formada e a distância vertical entre\ncada ponto objeto e seu correspondente ponto imagem são"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q101",
@@ -381,7 +484,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A saúde do professor: acústica arquitetônica\n\nDentre os parâmetros acústicos que afetam a\ninteligibilidade dos sons emitidos em ambientes fechados,\ndestacam-se o ruído de fundo do ambiente e o decréscimo\ndo nível sonoro com a distância da fonte emissora. Assim,\nsentar-se no fundo da sala de aula pode prejudicar a\naprendizagem dos estudantes, por impedir que eles\ndistingam, com precisão, os sons emitidos, diminuindo a\ninteligibilidade da fala de seus professores. Considere a\nsituação exemplificada pelo infográfico: à distância de\n1 metro, o nível sonoro da fala de um professor é de\n60 dB e diminui com a distância. Considere, ainda, que o\nruído de fundo nessa sala de aula pode chegar a 45 dB\ne que, para ser compreendida, o nível sonoro da fala do\nprofessor deve estar 5 dB acima desse ruído."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q101_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.ufrrj.br. Acesso em: 2 dez. 2021 (adaptado).\nPara um valor máximo do ruído de fundo, a maior distância\nque um estudante pode estar do professor para que ainda\nconsiga compreender sua fala é mais próxima de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q102",
@@ -443,7 +563,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Aquecedores solares são equipamentos utilizados para\no aquecimento de água pelo calor do Sol. São compostos\npor coletores solares, nos quais ocorre o aquecimento da\nágua, e por um reservatório térmico, em que é armazenada\na água quente para ser utilizada posteriormente. A figura\nilustra esquematicamente como funciona esse equipamento."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q103_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "5 dicas de instalação de aquecedor solar. Disponível em:\nhttps://instaline.com.br. Acesso em: 3 nov. 2023 (adaptado).\nO processo pelo qual ocorre transferência de calor dos\ncoletores solares para o reservatório térmico é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q104",
@@ -475,7 +612,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "As autoridades sanitárias brasileiras têm se preocupado\nmuito nos últimos anos com o aumento da ocorrência\nde doenças transmitidas por mosquitos, principalmente\narboviroses como chikungunya e zika, que se tornaram\nepidêmicas ou endêmicas em áreas urbanas. Parte de\numa análise da relação entre a urbanização e a incidência\ndessas doenças está representada no fluxograma."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q104_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ALMEIDA, L. S.; COTA, A. L. S.; RODRIGUES, D. F. Saneamento,\narboviroses e determinantes ambientais: impactos na saúde urbana.\nCiência & Saúde Coletiva, v. 25, n. 10, 2020 (adaptado).\nNesse contexto, como a urbanização está causando\nriscos à saúde humana?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q105",
@@ -657,7 +811,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O Cerrado e a Amazônia abrigam grande número de\nserpentes popularmente conhecidas como cobras-corais.\nNa Amazônia predominam as corais-verdadeiras, que\nsão peçonhentas, enquanto no Cerrado prevalecem as\nfalsas-corais, que não possuem peçonha. Essas espécies\napresentam um padrão de coloração muito semelhante.\nEssa similaridade traz uma vantagem tanto para as corais\nfalsas como para as verdadeiras.\nFRANÇA, F. G. R. [...] serpentes corais em ambientes\ncampestres, savânicos e florestais da América do Sul.\nBrasília: UnB, 2008 (adaptado).\n\nNas fotografias, são apresentados exemplos dessas\nserpentes: uma coral-verdadeira e uma falsa-coral."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q110_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SILVA, L. C.; COTTA, G. A.; RESENDE, F. C. Cobra-coral: aplicativo\neducativo para reconhecimento das cobras-corais do estado de\nMinas Gerais, Brasil. Herpetologia Brasileira,\nn. 1, 2021 (adaptado).\nQual é a vantagem dessa similaridade para as falsas-corais?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q111",
@@ -731,36 +902,16 @@
         "motivo": "figura"
       },
       {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q112_f2.png",
-        "motivo": "figura"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q112_f3.png",
-        "motivo": "figura"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q112_f4.png",
-        "motivo": "figura"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q112_f5.png",
-        "motivo": "figura"
-      },
-      {
         "tipo": "texto",
         "texto": "GRIFFITHS, A. et al. Introdução à genética. Rio de Janeiro:\nGuanabara Koogan, 2016 (adaptado).\nQual heredograma foi recebido pelo casal?"
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q112_f6.png",
-      "B": "img/blocos/regular_D2_CD7_Q112_f7.png",
-      "C": "img/blocos/regular_D2_CD7_Q112_f8.png",
-      "D": "img/blocos/regular_D2_CD7_Q112_f9.png",
-      "E": "img/blocos/regular_D2_CD7_Q112_f10.png"
+      "A": "img/blocos/regular_D2_CD7_Q112_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q112_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q112_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q112_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q112_f6.png"
     },
     "revisar": []
   },
@@ -794,7 +945,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Metabolismo de procariontes\n\nO esquema representa a ação de organismos no\nciclo do nitrogênio e no ciclo do carbono. Os números\ncorrespondem a algumas etapas dos dois ciclos distintos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q113_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em qual etapa numerada ocorre uma transformação redox\ncomo a que ocorre nos procariontes nitrificantes?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "texto difere do PDF; sobram: Eaaaaaaaacddeeeeflmmmmnnooooopqrrrrrrstt"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q114",
@@ -809,11 +979,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um dos agentes que mais contribui para a poluição\ndo ar é o automóvel a combustão interna. Em áreas\nurbanas, isso é demonstrado dramaticamente pela\nfumaça fotoquímica, resultante da interação entre óxidos\nde nitrogênio, hidrocarbonetos e luz solar, para formar\nprodutos de oxidação, que causam irritação aos olhos, ao\naparelho respiratório e danos às plantas. As condições de\noperação de motores a combustão, como a razão da mistura\nar/combustível no cilindro, influenciam na composição\ndos gases lançados pelo escapamento na atmosfera.\nO gráfico ilustra a variação nas composições dos principais\ngases, dióxido de carbono (CO ), hidrocarbonetos (HC),\n2\nmonóxido de carbono (CO), monóxido de nitrogênio (NO) e\noxigênio molecular (O ), emitidos por um motor a gasolina,\n2\nem diferentes razões ar/combustível, em massa.\nRANGEL, M. C.; CARVALHO, M. F. A. Impacto dos catalisadores automotivos\nno controle da qualidade do ar. Química Nova, v. 26, 2003 (adaptado).\nNa condição de razão ar/combustível igual a 18, haverá\numa emissão",
     "alternativas": {
-      "A": "baixa de O e alta de NO. 2",
+      "A": "baixa de O₂ e alta de NO.",
       "B": "baixa de NO e alta de HC.",
-      "C": "baixa de CO e alta de CO . 2",
+      "C": "baixa de CO e alta de CO₂.",
       "D": "baixa de HC e alta de CO.",
-      "E": "baixa de CO e alta de HC. 2"
+      "E": "baixa de CO₂ e alta de HC."
     },
     "gabarito": "C",
     "anulada": false,
@@ -827,7 +997,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um dos agentes que mais contribui para a poluição\ndo ar é o automóvel a combustão interna. Em áreas\nurbanas, isso é demonstrado dramaticamente pela\nfumaça fotoquímica, resultante da interação entre óxidos\nde nitrogênio, hidrocarbonetos e luz solar, para formar\nprodutos de oxidação, que causam irritação aos olhos, ao\naparelho respiratório e danos às plantas. As condições de\noperação de motores a combustão, como a razão da mistura\nar/combustível no cilindro, influenciam na composição\ndos gases lançados pelo escapamento na atmosfera.\nO gráfico ilustra a variação nas composições dos principais\ngases, dióxido de carbono (CO₂), hidrocarbonetos (HC),\nmonóxido de carbono (CO), monóxido de nitrogênio (NO) e\noxigênio molecular (O₂), emitidos por um motor a gasolina,\nem diferentes razões ar/combustível, em massa."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q114_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "RANGEL, M. C.; CARVALHO, M. F. A. Impacto dos catalisadores automotivos\nno controle da qualidade do ar. Química Nova, v. 26, 2003 (adaptado).\nNa condição de razão ar/combustível igual a 18, haverá\numa emissão"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q115",
@@ -859,7 +1046,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O esquema representa um experimento feito com\ncélulas do protozoário Amoeba proteus. Nele, um grupo\nde células foi tratado com a droga citocalasina B, enquanto\noutro grupo não foi tratado, servindo como controle.\nO formato e o movimento das células tratadas foram\ncomprometidos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q115_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "SADAVA, D. et al. Vida: a ciência da biologia — volume I: célula e\nhereditariedade. Porto Alegre: Artmed, 2009 (adaptado).\nQual componente celular foi afetado pela droga utilizada\nno experimento?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q116",
@@ -895,11 +1099,22 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "O magnésio metálico utilizado em ligas leves é\nproduzido em um processo que envolve várias etapas e\nutiliza água do mar como matéria-prima. A primeira etapa\ndesse processo consiste na reação entre o íon Mg²⁺ e\nhidróxido de cálcio, Ca(OH)₂, obtendo uma mistura que\ncontém hidróxido de magnésio, pouco solúvel, e íons Ca²⁺,\nde acordo com a equação química:\nMg²⁺ (aq) + Ca(OH)₂ (aq) → Mg(OH)₂ (s) + Ca²⁺ (aq)\nO método adequado para separar o Mg(OH)₂ dessa\nmistura é a"
+        "texto": "O magnésio metálico utilizado em ligas leves é\nproduzido em um processo que envolve várias etapas e\nutiliza água do mar como matéria-prima. A primeira etapa\ndesse processo consiste na reação entre o íon Mg²⁺ e\nhidróxido de cálcio, Ca(OH)₂, obtendo uma mistura que\ncontém hidróxido de magnésio, pouco solúvel, e íons Ca²⁺,\nde acordo com a equação química:"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q116_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O método adequado para separar o Mg(OH)₂ dessa\nmistura é a"
       }
     ],
     "alternativas_imagem": {},
-    "revisar": []
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q117",
@@ -1021,7 +1236,44 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para os circuitos de maratonas aquáticas realizadas em\nmares calmos e próximos à praia, é montado um sistema\nde boias que determinam o trajeto a ser seguido pelos\nnadadores. Uma das dificuldades desse tipo de circuito\né compensar os efeitos da corrente marinha. O diagrama\ncontém o circuito em que deve ser realizada uma volta no"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q119_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "módulo é 30 metros por minuto, paralela à praia em toda"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q119_f2.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "precisará nadar na direção apontada pelos vetores υₙ dos\npontos 1 até 2 e de 3 até 4. Considere que a velocidade\ndo nadador é de 50 metros por minuto, em relação à água,\ndurante todo o circuito."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q119_f3.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nessa situação, em quantos minutos o nadador completará\na prova?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q120",
@@ -1083,7 +1335,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Na tirinha, Calvin se divertia em um balanço antes de\nsoltar-se dele e cair ao chão. Em sua fala, ele demonstra ter\nimaginado que permaneceria em movimento circular. Porém,\na força gravitacional, que permanece atuando no garoto,\nmodifica a direção de sua velocidade, fazendo com que ele\nchegue ao chão da maneira ilustrada no último quadrinho."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q121_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "WATTERSON, B. Disponível em: https://tiras-do-calvin.tumblr.com.\nAcesso em: 19 nov. 2021 (adaptado).\nQual vetor representa a força resultante exercida pelo chão\nsobre Calvin no exato momento em que ele toca o chão?"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q121_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q121_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q121_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q121_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q121_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q122",
@@ -1115,7 +1390,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A tirinha ilustra esquimós dentro de um iglu, habitação\nde formato hemisférico construída durante o inverno a partir de\nneve ou blocos de gelo. Essa estrutura de construção se justifica\npelo fato de esse povo habitar as regiões mais setentrionais\nda Groenlândia, Canadá e Alasca."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q122_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LAERTE. Disponível em: https://artedafisicapibid.blogspot.com.\nAcesso em: 4 dez. 2021 (adaptado).\nNa tirinha, a geladeira é necessária para fazer gelo porque"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q123",
@@ -1147,7 +1439,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Os pesticidas naturais vêm sendo utilizados no controle\nde pragas e doenças agrícolas como substituintes de\npesticidas sintéticos tradicionais, por serem menos nocivos\nao ambiente, biodegradáveis e minimizarem custos e riscos\nrelativos à lavoura. Por exemplo, os compostos 1 e 2 estão\nenvolvidos nas respostas de defesa das plantas. Os grupos\nfuncionais presentes nesses compostos são importantes\npara suas propriedades no controle de pragas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q123_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "PINTO-ZEVALLOS, D. M.; ZARBIN, P. H. G. A química na agricultura:\nperspectivas para o desenvolvimento de tecnologias sustentáveis.\nQuímica Nova, n. 10, 2013 (adaptado).\nQual é a função orgânica correspondente ao grupo funcional\ncomum presente nesses dois compostos?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q124",
@@ -1179,7 +1488,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Utilizando-se um mesmo meio nutritivo, três gêneros\nbacterianos diferentes foram submetidos ao cultivo em\ntubos de ensaio. Após certo período de crescimento da\ncultura bacteriana em condições físico-químicas ideais,\nobservou-se que o padrão de distribuição das células\n(representadas por pontos na figura) ao longo dos tubos\nera diferente em cada um dos casos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q124_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em relação ao metabolismo energético, os microrganismos\npresentes nos tubos 1, 2 e 3 são classificados,\nrespectivamente, como"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q125",
@@ -1211,7 +1537,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "As placas que indicam saída de emergência brilham no\nescuro, pois apresentam substâncias que fosforecem na\ncor amarelo-esverdeada após exposição à luz ambiente,\nconforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q125_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Esse fenômeno ocorre pela presença do sulfeto de\nzinco (ZnS), dopado com prata ou cobre, na superfície\nda placa.\nZinc Sulphide Phosphorescence. Disponível em:\nhttps://physicsopenlab.org. Acesso em: 8 nov. 2023 (adaptado).\nO aparecimento do brilho nessas condições ocorre como\nconsequência de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q126",
@@ -1288,7 +1631,7 @@
       },
       {
         "tipo": "texto",
-        "texto": "ALMEIDA, M. A. T. Introdução às ciências físicas 2 — volume 4:\nmódulo 4. Rio de Janeiro: Fundação CECIERJ, 2007 (adaptado).\nAo repetir o experimento colocando um cilindro metálico\noco entre as placas, o esquema que representa o formato\ndas linhas de campo assumido pelo farelo é:"
+        "texto": "Ao repetir o experimento colocando um cilindro metálico\noco entre as placas, o esquema que representa o formato\ndas linhas de campo assumido pelo farelo é:"
       }
     ],
     "alternativas_imagem": {
@@ -1331,7 +1674,35 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Placas solares comuns dependem de dias ensolarados\npara gerar energia. Mas podemos gerar eletricidade com\na ajuda de gotas de chuva, revestindo placas solares\ncom uma fina camada de grafeno. Os íons dissociados a"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q128_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "grafeno e água da chuva um par perfeito para geração\nde energia. O processo requer apenas uma camada de\ngrafeno para que grande quantidade de elétrons (e⁻)\nse movimente ao longo da superfície."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q128_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "TANG, Q. et al. A Solar Cell that is Triggered by Sun and Rain.\nAngewandte Chemie International Edition, n. 55, 2016 (adaptado).\nAo produzir eletricidade em dias chuvosos, o grafeno"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q129",
@@ -1453,7 +1824,60 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O LED é um dispositivo eletrônico que conduz corrente\nelétrica em um único sentido, sendo caracterizado por uma"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q131_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "acende apenas se a corrente que o percorre está no sentido\npermitido e se a diferença de potencial à qual está submetido\né igual ou superior à sua tensão de funcionamento. A figura\nilustra o símbolo do LED usado na representação de circuitos."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q131_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Um estudante de física analisa as propriedades do LED\nem um circuito simples de corrente contínua. Ele dispõe dos\nseguintes materiais: uma bateria ideal de 4,5 V; dois LEDs"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q131_f3.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "1,5 kΩ cada.\nO circuito que o estudante pode montar, para que ambos os"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q131_f4.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q131_f5.png",
+        "motivo": "figura"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q131_f6.png",
+      "B": "img/blocos/regular_D2_CD7_Q131_f7.png",
+      "C": "img/blocos/regular_D2_CD7_Q131_f8.png",
+      "D": "img/blocos/regular_D2_CD7_Q131_f9.png",
+      "E": "img/blocos/regular_D2_CD7_Q131_f10.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q132",
@@ -1486,7 +1910,35 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma caixa decorativa utiliza duas pequenas lâmpadas,\nL₁ (6 V – 9 W) e L₂ (12 V – 18 W), ligadas em série a"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q132_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "48 centímetros, está ligado em paralelo à bateria. Cinco\npontos, A, B, C, D e E, dividem o fio QR em seis segmentos\nde comprimentos iguais. O circuito também tem um\namperímetro com dois terminais. Um dos terminais (P) está\nligado ao fio entre as duas lâmpadas. O outro terminal (S)\nestá livre e será ligado ao fio QR. Dependendo do ponto em\nque esse terminal livre for conectado, ocorrerá a mudança\nna tensão à qual as lâmpadas são submetidas. Os demais\nfios do circuito têm resistências elétricas desprezíveis.\nA figura ilustra esse circuito."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q132_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Em qual desses pontos o amperímetro deve ser conectado\npara que as lâmpadas acendam exatamente segundo as\nespecificações de tensão e potência elétricas fornecidas?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q133",
@@ -1558,7 +2010,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A fitorremediação é uma técnica que utiliza plantas para a remediação de ambientes contaminados. A descontaminação\nde solos pode ocorrer por descarte, absorção e metabolização, imobilização, extração ou volatilização do poluente,\nconforme representado na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q134_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LUIZ, E. P. Avaliação dos métodos de fitorremediação [...] na remoção de chumbo, cobre e zinco. São Paulo: UFABC, 2016 (adaptado).\nO método que retira o mercúrio de uma área contaminada, impedindo sua entrada na cadeia alimentar, é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q135",
@@ -1573,11 +2042,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Brasil fecha 2020 entre os maiores recicladores de latas de alumínio\nA bauxita contém alumina (Al O ), que é a matéria-prima para produção do alumínio (Al). De forma geral, são\n2 3\nnecessários 50 kg de bauxita para produzir 10 kg de alumínio. O Brasil fechou 2020 como um dos principais líderes\nmundiais em reciclagem de latas de alumínio. De acordo com levantamento da Associação Brasileira dos Fabricantes\nde Latas de Alumínio (Abralatas), o país obteve um índice de reciclagem de 97,4%, de um total de 4,0 × 105 toneladas\nde latas vendidas. Considere que a lata é constituída de alumínio puro.\nDisponível em: https://agenciabrasil.ebc.com.br. Acesso em: 30 nov. 2021 (adaptado).\nLevando em conta apenas a reciclagem de latas, qual é o valor mais próximo da massa de bauxita, em tonelada, que\ndeixou de ser extraída da natureza em 2020 no Brasil?\ndeixou de ser extraída da natureza em 2020 no Brasil?",
     "alternativas": {
-      "A": "1,0 × 104 ton",
-      "B": "3,9 × 105 ton",
-      "C": "5,0 × 105 ton",
-      "D": "1,9 × 106 ton",
-      "E": "2,0 × 107 ton"
+      "A": "1,0 × 10⁴ ton",
+      "B": "3,9 × 10⁵ ton",
+      "C": "5,0 × 10⁵ ton",
+      "D": "1,9 × 10⁶ ton",
+      "E": "2,0 × 10⁷ ton"
     },
     "gabarito": "D",
     "anulada": false,
@@ -1590,7 +2059,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Brasil fecha 2020 entre os maiores recicladores de latas de alumínio\n\nA bauxita contém alumina (Al₂O₃), que é a matéria-prima para produção do alumínio (Al). De forma geral, são\nnecessários 50 kg de bauxita para produzir 10 kg de alumínio. O Brasil fechou 2020 como um dos principais líderes\nmundiais em reciclagem de latas de alumínio. De acordo com levantamento da Associação Brasileira dos Fabricantes\nde Latas de Alumínio (Abralatas), o país obteve um índice de reciclagem de 97,4%, de um total de 4,0 × 10⁵ toneladas\nde latas vendidas. Considere que a lata é constituída de alumínio puro.\nDisponível em: https://agenciabrasil.ebc.com.br. Acesso em: 30 nov. 2021 (adaptado).\nLevando em conta apenas a reciclagem de latas, qual é o valor mais próximo da massa de bauxita, em tonelada, que\ndeixou de ser extraída da natureza em 2020 no Brasil?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q136",
@@ -1702,7 +2179,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para abrir a porta de uma empresa, cada funcionário\ndeve cadastrar uma senha utilizando um teclado\nalfanumérico como o representado na figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q138_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Por exemplo: a tecla que contém o número 2 traz as\nletras correlacionadas A, B e C. Cada toque nessa tecla\nmostra, sequencialmente, os seguintes caracteres: 2, A, B\ne C. Para os próximos toques, essa sequência se repete.\nAs demais teclas funcionam da mesma maneira.\n\nAs senhas a serem cadastradas pelos funcionários\ndevem conter 5 caracteres, sendo 2 algarismos distintos\nseguidos de 3 letras diferentes, nessa ordem. Um funcionário\nirá cadastrar a sua primeira senha, podendo escolher entre\nas teclas que apresentam os números 1, 2, 5, 7 e 0 e as\nrespectivas letras correlacionadas, quando houver.\nO número de possibilidades diferentes que esse\nfuncionário tem para cadastrar sua senha é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q139",
@@ -1783,7 +2277,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "João e Felipe participaram, na escola, de uma maratona\nde matemática na qual, durante uma semana, resolveram\n200 questões cada. Nessa maratona, a porcentagem P de\nacertos de cada participante é convertida em um conceito:\n• insatisfatório: se 0 ≤ P < 50;\n• regular: se 50 ≤ P < 60;\n• bom: se 60 ≤ P < 75;\n• muito bom: se 75 ≤ P < 90;\n• excelente: se 90 ≤ P ≤ 100.\n\nJoão acertou 75% das questões da maratona e Felipe\nacertou 30% a menos que a quantidade de questões que\nJoão acertou.\nOs conceitos de João e Felipe foram, respectivamente,"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q141",
@@ -1815,7 +2317,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Três grandezas (I, II e III) se relacionam entre si.\nOs gráficos a seguir, formados por segmentos de reta,\ndescrevem as relações de dependência existentes entre\nas grandezas I e II, e entre as grandezas II e III."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q141_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O valor máximo assumido pela grandeza III, quando a\ngrandeza I varia de 1 a 3, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q142",
@@ -1927,7 +2446,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Para obter um sólido de revolução (rotação de 360°\nem torno de um eixo fixo), uma professora realizou as\nseguintes etapas:\n\n• recortou o trapézio retângulo PQRS de um\nmaterial rígido;\n\n• afixou o lado PS do trapézio em uma vareta fixa\nretilínea (eixo de rotação);\n\n• girou o trapézio 360° em torno da vareta e obteve\num sólido de revolução.\n\nObserve a figura que apresenta o trapézio afixado na\nvareta e o sentido de giro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q144_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O sólido obtido foi um(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q145",
@@ -1959,7 +2495,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O estádio do Maracanã passou por algumas\nmodificações estruturais para a realização da Copa do\nMundo de 2014, como, por exemplo, as dimensões do\ncampo retangular. Para se adaptar aos padrões da Fifa,\nas dimensões do campo foram reduzidas de 110 m × 75 m\npara 105 m × 68 m.\nDisponível em: http://virgula.uol.com.br.\nAcesso em: 14 ago. 2013 (adaptado).\nEm quantos metros quadrados a área do campo do\nMaracanã foi reduzida?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q146",
@@ -2021,7 +2565,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma professora de matemática utiliza em suas\naulas uma “máquina caça-números” para verificar os\nconhecimentos de seus estudantes sobre representações\nde números racionais. Essa máquina tem um visor dividido\nem seis compartimentos e, na lateral, uma alavanca. Cada\nestudante puxa a alavanca e espera que os compartimentos\nparem de girar. A partir daí, precisa responder para a\nprofessora em quais posições se encontram os números\nque representam a mesma quantidade.\n\nUm estudante puxou a alavanca, aguardou que os\ncompartimentos parassem de girar e observou os números\napresentados no visor. A configuração da máquina naquele\ninstante está apresentada na imagem."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q147_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Esse estudante respondeu corretamente à pergunta\nda professora.\nAs posições indicadas pelo estudante foram"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q148",
@@ -2037,9 +2598,9 @@
     "enunciado": "Uma caneca com água fervendo é retirada de um\nforno de micro-ondas. A temperatura T, em grau Celsius,\nda caneca, em função do tempo t, em minuto, pode ser\nmodelada pela função T(t) = a + 80 bt, representada no\ngráfico a seguir.\nOs valores das constantes a e b são",
     "alternativas": {
       "A": "a = 20; b = log(0,5)",
-      "B": "a = 100; b = 0,5 1",
-      "C": "a=20; b=(0,5)10 1 (40)10",
-      "D": "a=20; b= 80",
+      "B": "",
+      "C": "a = 20; b = (0,5)¹⁰",
+      "D": "",
       "E": "a = 20; b = 40"
     },
     "gabarito": "C",
@@ -2054,7 +2615,38 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma caneca com água fervendo é retirada de um\nforno de micro-ondas. A temperatura T, em grau Celsius,\nda caneca, em função do tempo t, em minuto, pode ser"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q148_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "gráfico a seguir."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q148_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Os valores das constantes a e b são"
+      }
+    ],
+    "alternativas_imagem": {
+      "B": "img/blocos/regular_D2_CD7_Q148_f3.png",
+      "D": "img/blocos/regular_D2_CD7_Q148_f4.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q149",
@@ -2071,9 +2663,9 @@
     "alternativas": {
       "A": "6",
       "B": "18",
-      "C": "6 6",
-      "D": "636",
-      "E": "3312"
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "E",
     "anulada": false,
@@ -2086,7 +2678,19 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em uma empresa é comercializado um produto em\nembalagens em formato de cilindro circular reto, com raio\nmedindo 3 cm, e altura medindo 15 cm. Essa empresa\nplaneja comercializar o mesmo produto em embalagens\nem formato de cubo, com capacidade igual a 80% da\ncapacidade da embalagem cilíndrica utilizada atualmente.\nUse 3 como valor aproximado para π.\nA medida da aresta da nova embalagem, em centímetro,\ndeve ser"
+      }
+    ],
+    "alternativas_imagem": {
+      "C": "img/blocos/regular_D2_CD7_Q149_f1.png",
+      "D": "img/blocos/regular_D2_CD7_Q149_f2.png",
+      "E": "img/blocos/regular_D2_CD7_Q149_f3.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q150",
@@ -2119,7 +2723,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma sala com piso no formato retangular, com lados\nde medidas 3 m e 6 m, será dividida em dois ambientes.\nPara isso, serão utilizadas colunas em formato cilíndrico,\ndispostas perpendicularmente ao piso e representadas na\nfigura pelos círculos de cor azul. Os centros desses círculos\nestarão sobre uma reta paralela aos lados de menor medida\ndo piso da sala. Os vãos entre duas colunas e entre uma\ncoluna e a parede não poderão ser superiores a 15 cm."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q150_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Para efetuar a compra dessas colunas, foram feitos\norçamentos com base em dados fornecidos por cinco lojas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q150_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A compra será realizada na loja cujo orçamento resulte\nno menor valor total possível.\nA compra será realizada na loja"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q151",
@@ -2151,7 +2781,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O arquiteto Renzo Piano exibiu a maquete da nova\nsede do Museu Whitney de Arte Americana, um prédio\nassimétrico que tem um vão aberto para a galeria principal,\ncuja medida da área é 1 672 m².\n\nConsidere que a escala da maquete exibida é 1: 200.\nÉpoca, n. 682, jun. 2011 (adaptado).\nA medida da área do vão aberto nessa maquete, em\ncentímetro quadrado, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q152",
@@ -2166,11 +2804,11 @@
     "lingua_estrangeira": null,
     "enunciado": "O gráfico apresenta o valor total de exportações e o\nvalor total de importações, ao longo de um período, em\nbilhão de dólares. O saldo da balança comercial brasileira\né dado pelo valor total de exportações menos o valor total\nde importações num mesmo período.\nValor total de exportações e importações\nDisponível em: http://blogs.estadao.com.br.\nAcesso em: 20 fev. 2013 (adaptado).\nConsidere que os saldos da balança comercial\nbrasileira, nos três meses destacados no gráfico, sejam\nrepresentados por:\n• S : saldo em junho de 2009;\n1\n• S : saldo em janeiro de 2010;\n2\n• S : saldo em junho de 2010.\n3\nA ordenação dos saldos S, S e S, do maior para o menor, é\n1 2 3",
     "alternativas": {
-      "A": "S , S e S . 1 3 2",
-      "B": "S , S e S . 2 1 3",
-      "C": "S , S e S . 2 3 1",
-      "D": "S , S e S . 3 1 2",
-      "E": "S , S e S . 3 2 1"
+      "A": "S₁, S₃ e S₂.",
+      "B": "S₂, S₁ e S₃.",
+      "C": "S₂, S₃ e S₁.",
+      "D": "S₃, S₁ e S₂.",
+      "E": "S₃, S₂ e S₁."
     },
     "gabarito": "A",
     "anulada": false,
@@ -2184,7 +2822,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O gráfico apresenta o valor total de exportações e o\nvalor total de importações, ao longo de um período, em\nbilhão de dólares. O saldo da balança comercial brasileira\né dado pelo valor total de exportações menos o valor total\nde importações num mesmo período.\n\nValor total de exportações e importações"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q152_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Considere que os saldos da balança comercial\nbrasileira, nos três meses destacados no gráfico, sejam\nrepresentados por:\n• S₁: saldo em junho de 2009;\n• S₂: saldo em janeiro de 2010;\n• S₃: saldo em junho de 2010.\nA ordenação dos saldos S₁, S₂ e S₃, do maior para o menor, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q153",
@@ -2296,7 +2951,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um proprietário pretende instalar um sensor de\npresença para a proteção de seu imóvel. O sensor\ndeverá detectar movimentos de objetos e pessoas numa\ndeterminada região plana. A figura ilustra a vista superior\nda área de cobertura (setor circular em azul) de um sensor\ncolocado no ponto S. Essa área depende da medida do\nângulo α, em grau, e do raio R, em metro."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q155_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Ao aumentar o ângulo α ou o raio R aumenta-se a\nárea de cobertura do sensor. Entretanto, quanto maior\nessa área, maior o preço do sensor.\n\nPara esse fim, há cinco tipos de sensores disponíveis\nno mercado, cada um com as seguintes características:\n• tipo I: α = 15° e R = 20 m;\n• tipo II: α = 30° e R = 22 m;\n• tipo III: α = 40° e R = 12 m;\n• tipo IV: α = 60° e R = 16 m;\n• tipo V: α = 90° e R = 10 m.\n\nEsse proprietário pretende adquirir um desses sensores\nque seja capaz de cobrir, no mínimo, uma área de medida\n70 m², com o menor preço possível.\nUse 3 como valor aproximado para π.\nO proprietário do imóvel deverá adquirir o sensor do tipo"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q156",
@@ -2328,7 +3000,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "O uso de aplicativos de transporte tem sido uma\nalternativa à população que busca preços mais competitivos\npara se locomover, principalmente nas grandes cidades.\nAs formas usadas para determinar o valor cobrado por\ncada viagem variam de um aplicativo para outro, mas, em\ngeral, o valor V a ser pago, em real, varia em função de:\n\n• tarifa base F: valor fixo, em real, cobrado no início\nda viagem;\n\n• tempo T: tempo, em minuto, de duração da viagem;\n\n• distância D: distância percorrida, em quilômetro.\n\nUm desses aplicativos cobra R$ 2,00 de valor fixo,\nacrescido de R$ 0,26 por minuto de viagem e de R$ 1,40\npor quilômetro rodado.\nNessas condições, a expressão que fornece o valor V a\nser pago por uma viagem desse aplicativo é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q157",
@@ -2390,7 +3070,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em uma loja de defensivos agrícolas, os preços de\nalguns produtos foram divulgados em um cartaz."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q158_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Sabe-se que 1 litro de defensivo do Tipo A é suficiente\npara aplicação em 0,5 hectare (ha), enquanto que 1 litro de\ndefensivo do Tipo B é suficiente para aplicação em 0,4 ha.\nUm agricultor precisa comprar, nessa loja, uma quantidade\nde litros de defensivo suficiente para aplicar em uma área\nde 20 ha, além de levar uma máscara para aplicação.\nO valor mínimo, em real, a ser gasto pelo agricultor é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q159",
@@ -2405,11 +3102,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma tubulação despeja sempre o mesmo volume de\nágua por unidade de tempo em uma caixa-d’água, o que\nsignifica dizer que a vazão de água nessa tubulação é\nconstante. Na junção dessa tubulação com a caixa-d’água,\nestá instalada uma membrana de filtragem cujo objetivo é\nfiltrar eventuais impurezas presentes na água, combinado\na um bom fluxo de água. O fluxo (φ) de água através\nda superfície da membrana é diretamente proporcional\nà vazão de água na tubulação, medida em mililitro por\nsegundo, e inversamente proporcional à área da superfície\nda membrana, medida em centímetro quadrado.\nA unidade de medida adequada para descrever o fluxo\n(φ) de água que atravessa a superfície da membrana é",
     "alternativas": {
-      "A": "mL⋅s⋅cm2 mL",
-      "B": "⋅cm2 s mL",
-      "C": "cm2⋅s cm2⋅s",
-      "D": "mL cm2",
-      "E": "mL⋅s"
+      "A": "mL ⋅ s ⋅cm²",
+      "B": "mL/s ⋅cm²",
+      "C": "mL/cm²⋅s",
+      "D": "cm⋅s/mL2",
+      "E": "cm/mL⋅s2"
     },
     "gabarito": "C",
     "anulada": false,
@@ -2422,7 +3119,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma tubulação despeja sempre o mesmo volume de\nágua por unidade de tempo em uma caixa-d’água, o que\nsignifica dizer que a vazão de água nessa tubulação é\nconstante. Na junção dessa tubulação com a caixa-d’água,\nestá instalada uma membrana de filtragem cujo objetivo é\nfiltrar eventuais impurezas presentes na água, combinado\na um bom fluxo de água. O fluxo (φ) de água através\nda superfície da membrana é diretamente proporcional\nà vazão de água na tubulação, medida em mililitro por\nsegundo, e inversamente proporcional à área da superfície\nda membrana, medida em centímetro quadrado.\nA unidade de medida adequada para descrever o fluxo\n(φ) de água que atravessa a superfície da membrana é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q160",
@@ -2484,7 +3189,30 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um tanque, em formato de paralelepípedo reto retângulo, tem em seu interior dois anteparos verticais, fixados na\nsua base e em duas paredes opostas, sendo perpendiculares a elas, conforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q161_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Esses anteparos, de espessuras desprezíveis, estão instalados de maneira a dividir a base do tanque em três\nretângulos congruentes, tendo suas alturas iguais à metade e a um quarto da altura do tanque. O tanque é abastecido\npor uma entrada situada no teto, através de um duto que despeja água a uma vazão constante, sendo necessárias\n12 horas para finalizar o seu enchimento.\nO gráfico que descreve, em cada instante, a maior altura de coluna de água, dentre aquelas que vão sendo formadas\nao longo do enchimento do tanque, é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q161_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q161_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q161_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q161_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q161_f6.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q162",
@@ -2547,7 +3275,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um sistema de polias circulares e correias é um dos\nmecanismos responsáveis pela transmissão de movimento\nem máquinas rotativas. O manual de um motor traz uma\nfigura representando um sistema composto por duas polias\ne uma correia de transmissão, tensionada e perfeitamente\najustada sobre as polias, de modo a não apresentar folgas\nnos contatos com as polias. Considere que as partes\ndessa correia que não ficam em contato com as polias são\nrepresentadas por segmentos de reta tangentes às polias."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q163_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Para substituição dessa correia, é necessária a\nespecificação de seu comprimento.\nConsidere 3 como valor aproximado para π.\nA medida do comprimento dessa correia, em centímetro, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q164",
@@ -2580,7 +3325,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A prefeitura de uma cidade planeja construir três postos\nde saúde. Esses postos devem ser construídos em locais\nequidistantes entre si e de forma que as distâncias desses\ntrês postos ao hospital dessa cidade sejam iguais. Foram\nconseguidos três locais para a construção dos postos de\nsaúde que apresentam as características desejadas, e\nque distam 10 km entre si, conforme o esquema, no qual o\nponto H representa o local onde está construído o hospital;\nos pontos P₁, P₂ e P₃, os postos de saúde; e esses quatro\npontos estão em um mesmo plano."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q164_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A distância, em quilômetro, entre o hospital e cada um dos\npostos de saúde, é um valor entre"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q165",
@@ -2635,11 +3397,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A densidade demográfica de uma região é definida\ncomo sendo a razão entre o número de habitantes dessa\nregião e sua área, expressa na unidade habitantes por\nquilômetro quadrado.\nUma região R é subdividida em várias outras, sendo\numa delas a região Q. A área de Q é igual a três quartos da\nárea de R, e o número de habitantes de Q é igual à metade\ndo número de habitantes de R. As densidades demográficas\ncorrespondentes a essas regiões são denotadas por d(Q)\ne d(R).\nA expressão que relaciona d(Q) e d(R) é\n1",
     "alternativas": {
-      "A": "d(cid:31)Q(cid:30)(cid:29) d(cid:31)R(cid:30) 4 1",
-      "B": "d(cid:31)Q(cid:30)(cid:29) d(cid:31)R(cid:30) 2 3",
-      "C": "d(cid:31)Q(cid:30)(cid:29) d(cid:31)R(cid:30) 4 3",
-      "D": "d(cid:31)Q(cid:30)(cid:29) d(cid:31)R(cid:30) 2 2",
-      "E": "d(cid:31)Q(cid:30)(cid:29) d(cid:31)R(cid:30) 3"
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "E",
     "anulada": false,
@@ -2652,7 +3414,23 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A densidade demográfica de uma região é definida\ncomo sendo a razão entre o número de habitantes dessa\nregião e sua área, expressa na unidade habitantes por\nquilômetro quadrado.\n\nUma região R é subdividida em várias outras, sendo\numa delas a região Q. A área de Q é igual a três quartos da\nárea de R, e o número de habitantes de Q é igual à metade\ndo número de habitantes de R. As densidades demográficas\ncorrespondentes a essas regiões são denotadas por d(Q)\ne d(R).\nA expressão que relaciona d(Q) e d(R) é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q166_f1.png",
+      "B": "img/blocos/regular_D2_CD7_Q166_f2.png",
+      "C": "img/blocos/regular_D2_CD7_Q166_f3.png",
+      "D": "img/blocos/regular_D2_CD7_Q166_f4.png",
+      "E": "img/blocos/regular_D2_CD7_Q166_f5.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q167",
@@ -2685,7 +3463,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Atualmente, há telefones celulares com telas de\ndiversos tamanhos e em formatos retangulares. Alguns\ndeles apresentam telas medindo 3 1/2 polegadas, com\ndeterminadas especificações técnicas. Além disso, em\nmuitos modelos, com a inclusão de novas funções no\ncelular, suas telas ficaram maiores, sendo muito comum\nencontrarmos atualmente telas medindo 4 5/6 polegadas,\nconforme a figura."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q167_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.tecmundo.com.br.\nAcesso em: 5 nov. 2014 (adaptado).\nA diferença de tamanho, em valor absoluto, entre as\nmedidas, em polegada, das telas do celular 2 e do celular 1,\nrepresentada apenas com uma casa decimal, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q168",
@@ -2717,7 +3512,21 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Projetistas de uma fábrica de amortecedores realizaram uma série de experimentos que produziram oscilações\nsemelhantes ao comportamento do gráfico de uma senoide, para qualquer tipo de estrada. Cada experimento teve\nduração de 20 minutos, sendo os 9 primeiros minutos em superfície que simula uma rodovia asfaltada, e os 11 minutos\nrestantes em superfície que simula uma estrada de chão.\n\nPara os amortecedores serem aprovados no experimento, exige-se que as amplitudes das ondas oscilatórias, em\ncada tipo de superfície, sejam constantes e, ainda, que a amplitude da oscilação do amortecedor no asfalto seja menor\ndo que sua amplitude da oscilação na estrada de chão.\nO tipo de gráfico que descreve o comportamento oscilatório de um amortecedor aprovado nesse experimento é"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q168_f1.png",
+      "B": "img/blocos/regular_D2_CD7_Q168_f2.png",
+      "C": "img/blocos/regular_D2_CD7_Q168_f3.png",
+      "D": "img/blocos/regular_D2_CD7_Q168_f4.png",
+      "E": "img/blocos/regular_D2_CD7_Q168_f5.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q169",
@@ -2732,11 +3541,11 @@
     "lingua_estrangeira": null,
     "enunciado": "A criptografia refere-se à construção e análise de protocolos que impedem terceiros de lerem mensagens privadas.\nJúlio César, imperador romano, utilizava um código para proteger as mensagens enviadas a seus generais. Assim,\nse a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Nesse código, cada letra do\nalfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C”\npelo “F”, e assim sucessivamente.\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z A B C Letra do texto codifi cado\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z Letra do texto original\nDisponível em: www.codifica.ibict.br. Acesso em: 15 out. 2019.\nQualquer código que tenha um padrão de substituição de letras como o descrito é considerado uma Cifra de César\nou um Código de César. Note que, para decifrar uma Cifra de César, basta descobrir por qual letra o “A” foi substituído,\npois isso define todas as demais substituições a serem feitas.\nUma mensagem, em um alfabeto de 26 letras, foi codificada usando uma Cifra de César. Considere a probabilidade\nde se descobrir, aleatoriamente, o padrão utilizado nessa codificação, e que uma tentativa frustrada deverá ser eliminada\nnas tentativas seguintes.\nA probabilidade de se descobrir o padrão dessa Cifra de César apenas na terceira tentativa é dada por\n1 1 1",
     "alternativas": {
-      "A": "+ + 25 25 25 24 23 1",
-      "B": "+ + 25 24 23 1 1 1",
-      "C": "× × 25 24 23 24 23 1",
-      "D": "× × 25 25 25 24 23 1",
-      "E": "× × 25 24 23"
+      "A": "1/25 + 1/25 + 1/25",
+      "B": "24/25 + 23/24 + 1/23",
+      "C": "1/25 × 1/24 × 1/23",
+      "D": "24/25 × 23/25 × 1/25",
+      "E": "24/25 × 23/24 × 1/23"
     },
     "gabarito": "E",
     "anulada": false,
@@ -2751,7 +3560,39 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A criptografia refere-se à construção e análise de protocolos que impedem terceiros de lerem mensagens privadas.\nJúlio César, imperador romano, utilizava um código para proteger as mensagens enviadas a seus generais. Assim,\nse a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Nesse código, cada letra do\nalfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C”\npelo “F”, e assim sucessivamente."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q169_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q169_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q169_f3.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q169_f4.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.codifica.ibict.br. Acesso em: 15 out. 2019.\n\nQualquer código que tenha um padrão de substituição de letras como o descrito é considerado uma Cifra de César\nou um Código de César. Note que, para decifrar uma Cifra de César, basta descobrir por qual letra o “A” foi substituído,\npois isso define todas as demais substituições a serem feitas.\n\nUma mensagem, em um alfabeto de 26 letras, foi codificada usando uma Cifra de César. Considere a probabilidade\nde se descobrir, aleatoriamente, o padrão utilizado nessa codificação, e que uma tentativa frustrada deverá ser eliminada\nnas tentativas seguintes.\nA probabilidade de se descobrir o padrão dessa Cifra de César apenas na terceira tentativa é dada por"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q170",
@@ -2783,7 +3624,26 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Em uma região com grande incidência de terremotos, observou-se que dois terremotos ocorridos apresentaram\nmagnitudes M₁ e M₂, medidos segundo a escala Richter, e liberaram energias iguais a E₁ e E₂, respectivamente. Entre\nos estudiosos do assunto, é conhecida uma expressão algébrica relacionando esses valores dada por"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q170_f1.png",
+        "motivo": "fórmula"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Estudos mais abrangentes observaram que o primeiro terremoto apresentou a magnitude M₁ = 6,9 e a energia\nliberada foi um décimo da observada no segundo terremoto.\nO valor aproximado da magnitude M₂ do segundo terremoto, expresso com uma casa decimal, é igual a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q171",
@@ -2798,11 +3658,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado\npor essa cerca, deve ter a forma de um triângulo equilátero, um quadrado ou um hexágono regular. A escolha será\npela forma que resulte na maior área.\npela forma que resulte na maior área.\nO jardineiro escolherá a forma de\nk2 3",
     "alternativas": {
-      "A": "hexágono regular, pois a área do jardim, em metro quadrado, será k2 3 . 24",
-      "B": "hexágono regular, pois a área do jardim, em metro quadrado, será 3k2 3 . 2 k2",
-      "C": "quadrado, pois a área do jardim, em metro quadrado, será . 16",
-      "D": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k2 3 . 36",
-      "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k2 3 . 4"
+      "A": "",
+      "B": "hexágono regular, pois a área do jardim, em metro quadrado, será 3k3/2.",
+      "C": "2 quadrado, pois a área do jardim, em metro quadrado, será k/16.",
+      "D": "",
+      "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k3/4."
     },
     "gabarito": "A",
     "anulada": false,
@@ -2815,7 +3675,23 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado\npor essa cerca, deve ter a forma de um triângulo equilátero, um quadrado ou um hexágono regular. A escolha será\npela forma que resulte na maior área.\nO jardineiro escolherá a forma de"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q171_f1.png",
+        "motivo": "figura"
+      }
+    ],
+    "alternativas_imagem": {
+      "A": "img/blocos/regular_D2_CD7_Q171_f2.png",
+      "D": "img/blocos/regular_D2_CD7_Q171_f3.png"
+    },
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q172",
@@ -2848,7 +3724,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um aeroporto disponibiliza o serviço de transporte gratuito entre seus dois terminais utilizando os ônibus A e B, que\npartem simultaneamente, de hora em hora, de terminais diferentes. A distância entre os terminais é de 9 000 metros,\ne o percurso total dos ônibus, de um terminal ao outro, é monitorado por um sistema de cinco câmeras que cobrem\ndiferentes partes do trecho, conforme o esquema."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q172_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O alcance de cada uma das cinco câmeras é:\n• câmera I: 1/5 do percurso;\n• câmera II: 3/10 do percurso;\n• câmera III: 1/10 do percurso;\n• câmera IV: 1/10 do percurso;\n• câmera V: 3/10 do percurso.\n\nEm determinado horário, o ônibus A parte do terminal 1 e realiza o percurso total com velocidade constante de\n250 m/min; enquanto o ônibus B, que parte do terminal 2, realiza o percurso total com velocidade constante de 150 m/min.\nQual câmera registra o momento em que os ônibus A e B se encontram?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q173",
@@ -2880,7 +3773,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa tem 400 funcionários, distribuídos em\ntrês setores: administrativo, logística e produção. O gráfico\napresenta a distribuição quantitativa desses funcionários,\npor setor e por faixa etária."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q173_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Uma viagem de férias será sorteada entre esses\nfuncionários, de forma que todos terão igual probabilidade\nde serem sorteados.\nA maior probabilidade é que o funcionário sorteado esteja\nna faixa etária"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q174",
@@ -2952,11 +3862,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma indústria faz uma parceria com uma distribuidora\nde sucos para lançar no mercado dois tipos de\nembalagens. Para a fabricação dessas embalagens,\na indústria dispõe de folhas de alumínio retangulares,\nde dimensões 10 cm por 20 cm. Cada uma dessas\nfolhas é utilizada para formar a superfície lateral da\nembalagem, em formato de cilindro circular reto, que\nposteriormente recebe fundo e tampa circulares. A figura\nilustra, dependendo de qual das duas extensões será\nutilizada como altura, as duas opções para formar a\npossível embalagem.\nDentre essas duas embalagens, a de maior capacidade\napresentará volume, em centímetro cúbico, igual a",
     "alternativas": {
-      "A": "4 000 π",
-      "B": "2 000 π 4000",
-      "C": "π 1000",
-      "D": "π 500",
-      "E": "π"
+      "A": "4000 π",
+      "B": "2000 π",
+      "C": "4000/π",
+      "D": "1000/π",
+      "E": "500/π"
     },
     "gabarito": "D",
     "anulada": false,
@@ -2970,7 +3880,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma indústria faz uma parceria com uma distribuidora\nde sucos para lançar no mercado dois tipos de\nembalagens. Para a fabricação dessas embalagens,\na indústria dispõe de folhas de alumínio retangulares,\nde dimensões 10 cm por 20 cm. Cada uma dessas\nfolhas é utilizada para formar a superfície lateral da\nembalagem, em formato de cilindro circular reto, que\nposteriormente recebe fundo e tampa circulares. A figura\nilustra, dependendo de qual das duas extensões será\nutilizada como altura, as duas opções para formar a\npossível embalagem."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q175_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Dentre essas duas embalagens, a de maior capacidade\napresentará volume, em centímetro cúbico, igual a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q176",
@@ -3002,7 +3929,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "As receitas anuais obtidas por uma indústria no período\nde 2014 a 2021, em milhão de reais, foram registradas, por\npontos, em um gráfico. Nele, também está representada a\nreta que descreve a tendência de evolução das receitas.\nEssa reta pode ser utilizada para estimar as receitas dos\nanos seguintes."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q176_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A estimativa da receita, em milhão de reais, dessa\nindústria, para o ano de 2026, obtida a partir dessa reta\nde tendência, é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q177",
@@ -3034,7 +3978,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Uma empresa produz mochilas escolares sob\nencomenda. Essa empresa tem um custo total de produção,\ncomposto por um custo fixo, que não depende do número\nde mochilas, mais um custo variável, que é proporcional\nao número de mochilas produzidas. O custo total cresce\nde forma linear, e a tabela apresenta esse custo para três\nquantidades de mochilas produzidas."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q177_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "O custo total, em real, para a produção de 80 mochilas será"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q178",
@@ -3066,7 +4027,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "A umidade relativa do ar é um dos indicadores utilizados\nna meteorologia para fazer previsões sobre o clima.\nO quadro apresenta as médias mensais, em porcentagem,\nda umidade relativa do ar em um período de seis meses\nconsecutivos em uma cidade."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/regular_D2_CD7_Q178_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Nessa cidade, a mediana desses dados, em porcentagem,\nda umidade relativa do ar no período considerado foi"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-regular-D2-CD7-Q179",
@@ -3111,11 +4089,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um hospital tem 7 médicos cardiologistas e 6 médicos\nneurologistas em seu quadro de funcionários. Para\nexecutar determinada atividade, a direção desse hospital\nformará uma equipe com 5 médicos, sendo, pelo menos,\n3 cardiologistas.\nA expressão numérica que representa o número máximo\nde maneiras distintas de formar essa equipe é\n7! 6!",
     "alternativas": {
-      "A": "× 4! 4! 7! 6!",
-      "B": "× 3!×4! 2!×4! 7! 6! 5!",
-      "C": "(cid:30) (cid:30) 3!(cid:31)4! 2!(cid:31)4! 1!(cid:31)4! (cid:29) 7! 6! (cid:26) (cid:29) 7! 6! (cid:26) (cid:29) 7! 6! (cid:26)",
-      "D": "(cid:27) (cid:30) (cid:24)(cid:31)(cid:27) (cid:30) (cid:24)(cid:31)(cid:27) (cid:30) (cid:24) (cid:28)3!(cid:31)4! 2!(cid:31)4!(cid:25) (cid:28)4!(cid:31)3! 1!(cid:31)5!(cid:25) (cid:28)5!(cid:31)2! 0!(cid:31)6!!(cid:25) (cid:30) 7! 6! (cid:27) (cid:30) 7! 6! (cid:27) (cid:30) 7! 6! (cid:27)",
-      "E": "(cid:28) (cid:31) (cid:25)(cid:24)(cid:28) (cid:31) (cid:25)(cid:24)(cid:28) (cid:31) (cid:25) (cid:29)3!(cid:31)4! 2!(cid:31)4!(cid:26) (cid:29)4!(cid:31)3! 1!(cid:31)5!(cid:26) (cid:29)5!(cid:31)2! 0!(cid:31)6!!(cid:26)"
+      "A": "7!/4! × 6!/4!",
+      "B": "7!/(3!×4!) × 6!/(2!×4!)",
+      "C": "",
+      "D": "",
+      "E": ""
     },
     "gabarito": "E",
     "anulada": false,
@@ -3128,6 +4106,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Um hospital tem 7 médicos cardiologistas e 6 médicos\nneurologistas em seu quadro de funcionários. Para\nexecutar determinada atividade, a direção desse hospital\nformará uma equipe com 5 médicos, sendo, pelo menos,\n3 cardiologistas.\nA expressão numérica que representa o número máximo\nde maneiras distintas de formar essa equipe é"
+      }
+    ],
+    "alternativas_imagem": {
+      "C": "img/blocos/regular_D2_CD7_Q180_f1.png",
+      "D": "img/blocos/regular_D2_CD7_Q180_f2.png",
+      "E": "img/blocos/regular_D2_CD7_Q180_f3.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   }
 ]

@@ -29,7 +29,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q001_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "BARRY, L. Disponível em: www.avclub.com. Acesso em: 25 out. 2021.\nEssa história em quadrinhos, que apresenta dois personagens\nfrente a um quadro, ilustra a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q002-ingles",
@@ -91,7 +104,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q003_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LIANA, F. Disponível em: www.newyorker.com.\nAcesso em: 25 out. 2021 (adaptado).\nEsse cartum utiliza recursos verbais e não verbais com\no intuito de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q004-ingles",
@@ -123,7 +149,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q004_ingles_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "COTTINGHAM, R. Disponível em: www.socialsignal.com.\nAcesso em: 6 maio 2013.\nAo abordar a temática das mídias, esse cartum critica"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q005-ingles",
@@ -275,7 +314,24 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "Tienes derecho a que respeten tu\n\norigen, costumbres y creencias."
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q004_espanhol_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "MÉXICO. Convención sobre los derechos del niño (1989).\nAsamblea General de la ONU. Guadalajara; Jalisco: Secretaría\nde Cultura; Secretaría de Desarrollo Humano, 2006.\nEssa charge, que faz referência a um artigo da Convenção\nsobre os direitos da criança, reivindica a necessidade de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q005-espanhol",
@@ -397,7 +453,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q008_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "AL MARGEN. Os defeitos da sociedade.\n\nIlustração, lápis. 2016.\n\nDisponível em: https://culturainquieta.com. Acesso em: 18 nov. 2021.\nAl Margen é um artista argentino que questiona padrões\nde comportamento da sociedade contemporânea. Essa\nilustração reflete práticas sociais sintetizadas na"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q009",
@@ -459,7 +528,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q010_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Folha de S. Paulo, 31 out. 2021.\nNesse anúncio publicitário, o trecho que concentra\nconcomitantemente marcas das funções conativa e\nemotiva da linguagem é"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q011",
@@ -791,7 +873,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q021_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "LORCA, G. À procura de emprego. Fotografia. 1949.\n\nDisponível em: www.livrariacultura.com.br. Acesso em: 18 jun. 2019.\nTEXTO II\n\nA maestria da luz\n\nSombras duras recortadas contra uma parede de\nSão Paulo, uma São Paulo irreconhecível, de superfícies\nde concreto limpas e lajotas impecáveis — sem nenhum\npapel, sem nenhuma sujeira. O título da obra, À procura de\nemprego (1949), explica a intensidade desses personagens\nque parecem querer mergulhar entre as páginas do\nDiário Popular — o jornal que, na época, oferecia a maior\nquantidade de anúncios com oportunidades de trabalho.\nDURAN, J. R. Disponível em: www.livrariacultura.com.br.\nAcesso em: 18 jun. 2019 (adaptado).\nO texto de J. R. Duran confere força expressiva à fotografia\nde German Lorca, produzida na década de 1940, ao"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q022",
@@ -943,7 +1038,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q026_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: www.cfn.org.br. Acesso em: 23 jan. 2024 (adaptado).\nEm busca de adesão ao projeto de combate à desnutrição,\num recurso que esse cartaz mobiliza de forma verbal e\ntambém não verbal é a"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q027",
@@ -1335,7 +1443,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q039_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: http://observatoriodoesporte.mg.gov.br. Acesso em: 22 jun. 2019 (adaptado).\nOs dados desse infográfico sobre a prática corporal do skate indicam que"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q040",
@@ -1368,7 +1489,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q040_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "MESTRE VITALINO. Ceia. Cerâmica policromada.\n\n14 × 24 cm. Acervo Galeria Pé de Boi, Rio de Janeiro.\n\nDisponível em: www.itaucultural.org.br. Acesso em: 26 jul. 2010.\nMestre Vitalino, importante ceramista popular brasileiro,\nna obra reproduzida, retrata uma cena típica da cultura\nnordestina: o horário da refeição. Seus bonecos de\nbarro apresentam características artísticas marcantes,\nrepresentadas como"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q041",
@@ -1520,7 +1654,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q045_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://revistareacao.com.br.\nAcesso em: 11 jan. 2024 (adaptado).\nNesse cartaz, a articulação do texto verbal com imagens de\npeças de quebra-cabeça corrobora a ideia de que é preciso"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q046",
@@ -1702,7 +1849,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q051_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "ARIONAURO. Disponível em: www.arionaurocartuns.com.br.\nAcesso em: 10 out. 2019.\nO direito social do cidadão representado na charge\ndemanda a adoção de qual medida?"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q052",
@@ -1854,7 +2014,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q056_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "A Organização Internacional para as Migrações (OIM)\nfoi criada em 1951 e tem 173 Estados-membros. Desde 2019,\na OIM coordena e é secretariado executivo da Rede da\nOrganização das Nações Unidas (ONU) para migração.\nA OIM está comprometida com o princípio de que a migração\nordenada beneficia a todos.\nObjetivos:\n• Promover a migração regular;\n• Reduzir a migração forçada e irregular;\n• Proteger os direitos de todos os migrantes.\nDisponível em: https://brazil.iom.int.\nAcesso em: 6 out. 2021 (adaptado).\nA relação da OIM com uma organização mais abrangente,\ncomo apresentada no texto, resulta do(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q057",
@@ -1916,7 +2089,33 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q058_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://earth.google.com.\nAcesso em: 13 out. 2023 (adaptado).\nTEXTO II"
+      },
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q058_f2.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://earth.google.com.\nAcesso em: 13 out. 2023 (adaptado).\nA comparação das imagens de satélite indica que o\nrompimento da barragem de rejeitos em Mariana (MG),\nem 2015, provocou o(a)"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q059",
@@ -2458,7 +2657,15 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "texto",
+        "texto": "TEXTO I\n\nA partir da Segunda Guerra Mundial o cenário europeu\nse altera com o progressivo aumento de um sentimento\ndemocrático e de compreensão do poder público e das\nsuas modalidades de ação e de relação com a sociedade,\nque passa a exercer de modo um pouco mais articulado\nalgum controle social, o qual era visto até então como de\nexclusividade do poder público. Essa nova perspectiva\ntambém altera significativamente a percepção da arte e,\npor óbvio, da historicidade da mesma.\nMARZADRO, F. Revista NAU Social, n. 5, maio-out. 2013 (adaptado).\nTEXTO II\n\nA liberdade artística é termômetro democrático\ndos mais sensíveis. Nela encontram-se o pensamento,\na expressão e a criatividade. É o espaço do novo e da\ndiversidade. Não espanta que incomode quem não deseja\num mundo plural e livre. Ainda mais quando extremismos\ne ódio sufocam o convívio das diferenças. É preciso\ncultivar a liberdade artística. Cerceá-la, por imposturas\nque semeiam a discórdia e se valem da confusão,\ndo medo e do preconceito, não é novidade. O nazismo\nse valeu disso contra a “arte degenerada” para instaurar\numa sociedade fascista. Essa repressão não é inocente.\nEla afronta o direito à cultura, que é de todos, e discrimina\nparticularmente certos grupos, como no caso em que\natinge pessoas LGBTQIAPN+. Abre as portas para\na violência, como já vivenciam os adeptos de religiões\nafro-brasileiras, que são apedrejados e que têm suas\ncasas de religião incendiadas, ou quando atendimento\nmédico é negado a crianças por motivação ideológica.\nRIOS, R. R. Arte e democracia. Disponível em:\nhttps://gauchazh.clicrbs.com.br. Acesso em:\n26 out. 2023 (adaptado).\nOs textos enfatizam a importância histórica da manifestação\nartística como um instrumento de"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q077",
@@ -2850,7 +3057,20 @@
     "fonte": {
       "prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_reaplicacao_PPL_D1_CD1.pdf",
       "gabarito": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_reaplicacao_PPL_D1_CD1.pdf"
-    }
+    },
+    "blocos": [
+      {
+        "tipo": "figura",
+        "imagem": "img/blocos/reaplicacao_D1_CD1_Q089_f1.png",
+        "motivo": "figura"
+      },
+      {
+        "tipo": "texto",
+        "texto": "Disponível em: https://alerta.mapbiomas.org. Acesso em: 21 out. 2023 (adaptado).\nO mapa aponta a necessidade de iniciativas governamentais voltadas para"
+      }
+    ],
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2024-reaplicacao-D1-CD1-Q090",

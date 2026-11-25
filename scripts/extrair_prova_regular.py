@@ -58,9 +58,13 @@ PERFIS = {
 }
 
 
-def configurar_geometria(pdf) -> str:
+CORREDOR_ADAPTATIVO = False  # 2025+: o corredor entre colunas muda de página para página
+
+
+def configurar_geometria(pdf, ano: int | None = None) -> str:
     """Escolhe o perfil pelo tamanho da página e ajusta as constantes."""
-    global TOPO, BASE, X_ESQ, X_DIR, DIVISORIA, COM_LINHA_DIVISORIA
+    global TOPO, BASE, X_ESQ, X_DIR, DIVISORIA, COM_LINHA_DIVISORIA, CORREDOR_ADAPTATIVO
+    CORREDOR_ADAPTATIVO = bool(ano and ano >= 2025)
     largura = pdf.pages[min(1, len(pdf.pages) - 1)].width
     nome, perfil = min(PERFIS.items(), key=lambda kv: abs(kv[1]["largura"] - largura))
     if abs(perfil["largura"] - largura) > 3:
@@ -90,10 +94,26 @@ NOMES_AREA = {
     "MT": "Matemática e suas Tecnologias",
 }
 APLICACOES = {
-    # aplicação: (trecho do nome do arquivo no INEP, rótulo)
+    # aplicação: (trecho do nome do arquivo no INEP até 2024, rótulo)
     "regular": ("impresso", "Aplicação regular"),
     "reaplicacao": ("reaplicacao_PPL", "Reaplicação"),
+    # 2025: aplicação própria para Belém, Ananindeua e Marituba (outra prova)
+    "belem": (None, "Aplicação Belém, Ananindeua e Marituba"),
 }
+# Desde 2025 todas as aplicações usam "impresso" e os dias seguem em
+# sequência: regular D1/D2, Belém D3/D4, reaplicação D5/D6.
+DESLOCAMENTO_DIA_2025 = {"regular": 0, "belem": 2, "reaplicacao": 4}
+
+
+def arquivos(ano: int, aplicacao: str, dia: int, caderno: int) -> tuple[str, str]:
+    """Nomes (prova, gabarito) no site do INEP. `dia` é o dia lógico (1 ou 2)."""
+    if ano >= 2025:
+        trecho, d = "impresso", dia + DESLOCAMENTO_DIA_2025[aplicacao]
+    else:
+        trecho, d = APLICACOES[aplicacao][0], dia
+        if trecho is None:
+            sys.exit(f"Aplicação {aplicacao!r} não existe em {ano}.")
+    return f"{ano}_PV_{trecho}_D{d}_CD{caderno}.pdf", f"{ano}_GB_{trecho}_D{d}_CD{caderno}.pdf"
 SIMBOLOS_FORMULA = set("√∑∫∞≤≥≠≈±×÷πΔ∆θλμσΩωαβγ⋅·∙")
 FONTES_FORMULA = ("symbol", "math", "cambria", "euclid", "mt extra", "mtextra")
 FONTE_ALTERNATIVA = "bundesbahnpi"   # fonte dos marcadores (A)...(E)
@@ -107,11 +127,39 @@ def area_da_questao(dia: int, numero: int) -> str:
 
 
 # --------------------------------------------------------------- segmentação
+def corredor_da_pagina(pagina) -> tuple[float, float]:
+    """Corredor medido na página (2025+): a faixa vertical perto do centro
+    com menos letras. Linhas de largura total cobrem todos os x por igual e
+    não mudam onde fica o mínimo."""
+    meio = (DIVISORIA[0] + DIVISORIA[1]) / 2
+    xs = range(int(meio) - 30, int(meio) + 31)
+    cont = {x: 0 for x in xs}
+    for c in pagina.chars:
+        if c["text"].strip() and TOPO <= c["top"] < BASE:
+            for x in xs:
+                if c["x0"] <= x + 0.5 and c["x1"] >= x - 0.5:
+                    cont[x] += 1
+    minimo = min(cont.values())
+    # maior sequência de x com a contagem mínima, a mais próxima do centro
+    seqs, atual = [], []
+    for x in xs:
+        if cont[x] == minimo:
+            atual.append(x)
+        elif atual:
+            seqs.append(atual); atual = []
+    if atual:
+        seqs.append(atual)
+    melhor = max(seqs, key=lambda q: (len(q), -abs((q[0] + q[-1]) / 2 - meio)))
+    if len(melhor) < 4:
+        return DIVISORIA
+    return (melhor[0] - 0.5, melhor[-1] + 0.5)
+
+
 def zonas_por_corredor(pagina) -> list[tuple[float, float, float, float]]:
     """Sem linha divisória: tudo o que atravessa o corredor entre as colunas
     (linha de texto ou figura de largura total) marca uma faixa de largura
     total; o resto da página é lido em duas colunas."""
-    g0, g1 = DIVISORIA
+    g0, g1 = corredor_da_pagina(pagina) if CORREDOR_ADAPTATIVO else DIVISORIA
     bloqueios = []
     for c in pagina.chars:
         # folga de 1,5 pt: texto alinhado à direita termina encostado no corredor
@@ -200,7 +248,8 @@ def cabecalhos(pagina) -> list[dict]:
     achados = []
     for i, w in enumerate(palavras[:-1]):
         prox = palavras[i + 1]
-        if w["text"] == "QUESTÃO" and "bold" in w["fontname"].lower() and prox["text"].isdigit():
+        # 2025: a fonte codifica o "Ã" como "ã" ("QUESTãO")
+        if w["text"].upper() == "QUESTÃO" and "bold" in w["fontname"].lower() and prox["text"].isdigit():
             achados.append({"numero": int(prox["text"]), "x0": w["x0"], "top": w["top"],
                             "bottom": w["bottom"]})
     return achados
@@ -464,7 +513,7 @@ def texto_da_questao(pdf, q: dict) -> tuple[str, dict[str, str]]:
                 texto = texto[n:] if texto[:n].replace(" ", "").upper() == letra * n else texto[1:]
             linhas.append((texto.strip(), letra))
     # remove o cabeçalho "QUESTÃO N"
-    linhas = [(t, l) for t, l in linhas if not re.fullmatch(r"\s*QUESTÃO\s+\d+\s*", t)]
+    linhas = [(t, l) for t, l in linhas if not re.fullmatch(r"\s*QUESTÃO\s+\d+\s*", t, re.I)]
     corpo, alternativas, atual = [], {}, None
     for l, letra in linhas:
         if letra and (atual is None and letra == "A" or atual and ord(letra) == ord(atual) + 1):
@@ -497,15 +546,14 @@ def salvar_imagem(pdf, q: dict, destino: Path) -> None:
 # -------------------------------------------------------------------- main
 def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> Path:
     ctx = contexto_ssl()
-    trecho, rotulo_aplicacao = APLICACOES[aplicacao]
-    nome_prova = f"{ano}_PV_{trecho}_D{dia}_CD{caderno}.pdf"
-    nome_gab = f"{ano}_GB_{trecho}_D{dia}_CD{caderno}.pdf"
+    rotulo_aplicacao = APLICACOES[aplicacao][1]
+    nome_prova, nome_gab = arquivos(ano, aplicacao, dia, caderno)
     chave = f"{aplicacao}_D{dia}_CD{caderno}"
     prova = baixar(BASE_DOWNLOAD + nome_prova, CACHE / str(ano) / nome_prova, ctx)
     gab = ler_gabarito(baixar(BASE_DOWNLOAD + nome_gab, CACHE / str(ano) / nome_gab, ctx))
 
     bruto = pdfplumber.open(str(prova))
-    perfil = configurar_geometria(bruto)
+    perfil = configurar_geometria(bruto, ano)
     pdf = Documento(bruto)
     capa = (pdf.pages[0].extract_text() or "").upper()
     cor = next((c for c in ("AZUL", "AMARELO", "BRANCO", "ROSA", "CINZA", "VERDE", "LARANJA")
@@ -548,6 +596,7 @@ def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> P
                 "ano": ano,
                 "aplicacao": aplicacao,
                 "reaplicacao": aplicacao == "reaplicacao",
+                "rotulo_aplicacao": rotulo_aplicacao,
                 "descricao": f"ENEM {ano} · {rotulo_aplicacao}",
             },
             "area": NOMES_AREA.get(area_da_questao(dia, n)),
