@@ -1,6 +1,6 @@
 {
  "prova": "2023/regular_D1_CD1",
- "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado. Mais de uma disciplina só quando a resolução exige as duas.",
+ "criterio": "Classificar pelo que a resolução exige (conceitos, procedimentos, atitudes, habilidades), não pelo contexto do enunciado.",
  "questoes": {
   "1-ingles": {
    "disciplinas": [
@@ -9,7 +9,22 @@
    "conteudos": [
     "Interpretação de texto",
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "2-ingles": {
    "disciplinas": [
@@ -17,7 +32,16 @@
    ],
    "conteudos": [
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "3-ingles": {
    "disciplinas": [
@@ -25,7 +49,16 @@
    ],
    "conteudos": [
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "4-ingles": {
    "disciplinas": [
@@ -34,7 +67,22 @@
    "conteudos": [
     "Literatura (poesia)",
     "Variação e diversidade linguística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Língua estrangeira: leitura e gramática (complemento)",
+     "topico": "Aspectos culturais e interculturalidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "5-ingles": {
    "disciplinas": [
@@ -43,7 +91,22 @@
    "conteudos": [
     "Interpretação de texto",
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "1-espanhol": {
    "disciplinas": [
@@ -52,7 +115,22 @@
    "conteudos": [
     "Interpretação de texto",
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "2-espanhol": {
    "disciplinas": [
@@ -60,7 +138,16 @@
    ],
    "conteudos": [
     "Gramática"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Língua estrangeira: leitura e gramática (complemento)",
+     "topico": "Gramática em contexto",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "3-espanhol": {
    "disciplinas": [
@@ -68,7 +155,16 @@
    ],
    "conteudos": [
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "4-espanhol": {
    "disciplinas": [
@@ -77,7 +173,22 @@
    "conteudos": [
     "Interpretação de texto",
     "Recursos expressivos e figuras de linguagem"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo dos aspectos linguísticos em diferentes textos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "5-espanhol": {
    "disciplinas": [
@@ -85,7 +196,16 @@
    ],
    "conteudos": [
     "Interpretação de texto"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Espanhola",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "6": {
    "disciplinas": [
@@ -93,7 +213,16 @@
    ],
    "conteudos": [
     "Esporte e sociedade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Educação Física",
+     "conteudo": "Estudo das práticas corporais",
+     "topico": "o esporte",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "7": {
    "disciplinas": [
@@ -102,7 +231,22 @@
    "conteudos": [
     "Literatura (prosa)",
     "Recursos expressivos e figuras de linguagem"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos em diferentes textos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "8": {
    "disciplinas": [
@@ -110,7 +254,16 @@
    ],
    "conteudos": [
     "Variação e diversidade linguística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "9": {
    "disciplinas": [
@@ -118,7 +271,16 @@
    ],
    "conteudos": [
     "Comunicação e informação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos gêneros digitais",
+     "topico": "a função social das novas tecnologias",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "10": {
    "disciplinas": [
@@ -126,7 +288,16 @@
    ],
    "conteudos": [
     "Comunicação e informação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos gêneros digitais",
+     "topico": "a função social das novas tecnologias",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "11": {
    "disciplinas": [
@@ -134,7 +305,16 @@
    ],
    "conteudos": [
     "Argumentação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "formas de apresentação de diferentes pontos de vista",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "12": {
    "disciplinas": [
@@ -142,7 +322,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "13": {
    "disciplinas": [
@@ -150,7 +339,16 @@
    ],
    "conteudos": [
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "14": {
    "disciplinas": [
@@ -158,7 +356,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "15": {
    "disciplinas": [
@@ -166,7 +373,16 @@
    ],
    "conteudos": [
     "Variação e diversidade linguística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "16": {
    "disciplinas": [
@@ -174,7 +390,16 @@
    ],
    "conteudos": [
     "Variação e diversidade linguística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "17": {
    "disciplinas": [
@@ -182,7 +407,16 @@
    ],
    "conteudos": [
     "Recursos expressivos e figuras de linguagem"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos em diferentes textos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "18": {
    "disciplinas": [
@@ -191,7 +425,22 @@
    "conteudos": [
     "Intertextualidade",
     "Interpretação de texto"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Funções da linguagem e comunicação (complemento)",
+     "topico": "Intertextualidade",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto",
+     "topico": "modos de organização da composição textual",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "19": {
    "disciplinas": [
@@ -199,7 +448,16 @@
    ],
    "conteudos": [
     "Argumentação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "formas de apresentação de diferentes pontos de vista",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "20": {
    "disciplinas": [
@@ -207,7 +465,16 @@
    ],
    "conteudos": [
     "Argumentação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "formas de apresentação de diferentes pontos de vista",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "21": {
    "disciplinas": [
@@ -215,7 +482,16 @@
    ],
    "conteudos": [
     "Variação e diversidade linguística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "22": {
    "disciplinas": [
@@ -223,7 +499,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "23": {
    "disciplinas": [
@@ -231,7 +516,16 @@
    ],
    "conteudos": [
     "Intertextualidade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Funções da linguagem e comunicação (complemento)",
+     "topico": "Intertextualidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "24": {
    "disciplinas": [
@@ -239,7 +533,16 @@
    ],
    "conteudos": [
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "25": {
    "disciplinas": [
@@ -248,7 +551,22 @@
    "conteudos": [
     "Literatura (prosa)",
     "Recursos expressivos e figuras de linguagem"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos em diferentes textos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "26": {
    "disciplinas": [
@@ -256,7 +574,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "27": {
    "disciplinas": [
@@ -264,7 +591,16 @@
    ],
    "conteudos": [
     "Coesão e progressão textual"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em processo de coesão textual: elementos de articulação das sequências dos textos ou à construção da micro estrutura do texto",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "28": {
    "disciplinas": [
@@ -273,7 +609,22 @@
    "conteudos": [
     "Funções da linguagem",
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Funções da linguagem e comunicação (complemento)",
+     "topico": "Funções da linguagem",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "29": {
    "disciplinas": [
@@ -281,7 +632,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "30": {
    "disciplinas": [
@@ -289,7 +649,16 @@
    ],
    "conteudos": [
     "Literatura (prosa)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "31": {
    "disciplinas": [
@@ -297,7 +666,16 @@
    ],
    "conteudos": [
     "Literatura (poesia)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto literário",
+     "topico": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "32": {
    "disciplinas": [
@@ -305,7 +683,16 @@
    ],
    "conteudos": [
     "Música"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Música",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "33": {
    "disciplinas": [
@@ -313,7 +700,16 @@
    ],
    "conteudos": [
     "Artes visuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Artes Visuais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "34": {
    "disciplinas": [
@@ -321,7 +717,16 @@
    ],
    "conteudos": [
     "Dança"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Dança",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "35": {
    "disciplinas": [
@@ -329,7 +734,16 @@
    ],
    "conteudos": [
     "Esporte e sociedade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Educação Física",
+     "conteudo": "Estudo das práticas corporais",
+     "topico": "o esporte",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "36": {
    "disciplinas": [
@@ -337,7 +751,16 @@
    ],
    "conteudos": [
     "Arte e cultura popular"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Inclusão, diversidade e multiculturalidade nas produções artísticas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "37": {
    "disciplinas": [
@@ -346,7 +769,16 @@
    "conteudos": [
     "Artes visuais",
     "Comunicação e informação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Artes Visuais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "38": {
    "disciplinas": [
@@ -355,7 +787,22 @@
    "conteudos": [
     "Música",
     "Arte e cultura popular"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Música",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Artes",
+     "conteudo": "Produção e recepção de textos artísticos",
+     "topico": "Inclusão, diversidade e multiculturalidade nas produções artísticas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "39": {
    "disciplinas": [
@@ -364,7 +811,22 @@
    "conteudos": [
     "Variação e diversidade linguística",
     "Comunicação e informação"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "topico": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos gêneros digitais",
+     "topico": "a função social das novas tecnologias",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "40": {
    "disciplinas": [
@@ -372,7 +834,16 @@
    ],
    "conteudos": [
     "Esporte e sociedade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Educação Física",
+     "conteudo": "Estudo das práticas corporais",
+     "topico": "o esporte",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "41": {
    "disciplinas": [
@@ -380,7 +851,16 @@
    ],
    "conteudos": [
     "Esporte e sociedade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Educação Física",
+     "conteudo": "Estudo das práticas corporais",
+     "topico": "o esporte",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "42": {
    "disciplinas": [
@@ -388,7 +868,16 @@
    ],
    "conteudos": [
     "Saúde e práticas corporais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Educação Física",
+     "conteudo": "Estudo das práticas corporais",
+     "topico": "exercício físico e saúde",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "43": {
    "disciplinas": [
@@ -396,7 +885,16 @@
    ],
    "conteudos": [
     "Recursos expressivos e figuras de linguagem"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo dos aspectos linguísticos em diferentes textos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "44": {
    "disciplinas": [
@@ -404,7 +902,16 @@
    ],
    "conteudos": [
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "45": {
    "disciplinas": [
@@ -412,7 +919,16 @@
    ],
    "conteudos": [
     "Gêneros textuais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "topico": "função sociocomunicativa do gênero",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "46": {
    "disciplinas": [
@@ -420,7 +936,16 @@
    ],
    "conteudos": [
     "Conceitos geográficos (lugar, território)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Geografia: conceitos e população (complemento)",
+     "topico": "Conceitos geográficos (espaço, lugar, território, paisagem, região)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "47": {
    "disciplinas": [
@@ -428,7 +953,16 @@
    ],
    "conteudos": [
     "História do Brasil: Império"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Grupos sociais em conflito no Brasil imperial e a construção da nação",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "48": {
    "disciplinas": [
@@ -436,7 +970,16 @@
    ],
    "conteudos": [
     "Geografia agrária"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Características e transformações das estruturas produtivas",
+     "topico": "Produção e transformação dos espaços agrários",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "49": {
    "disciplinas": [
@@ -444,7 +987,16 @@
    ],
    "conteudos": [
     "Geopolítica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Conflitos político-culturais pós-Guerra Fria, reorganização política internacional e os organismos multilaterais nos séculos XX e XXI",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "50": {
    "disciplinas": [
@@ -452,7 +1004,16 @@
    ],
    "conteudos": [
     "Cultura e identidade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Cultura, identidade e alteridade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "51": {
    "disciplinas": [
@@ -460,7 +1021,16 @@
    ],
    "conteudos": [
     "História contemporânea"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Geopolítica e conflitos entre os séculos XIX e XX",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "52": {
    "disciplinas": [
@@ -468,7 +1038,16 @@
    ],
    "conteudos": [
     "Ética"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Ética e moral",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "53": {
    "disciplinas": [
@@ -476,7 +1055,16 @@
    ],
    "conteudos": [
     "Geologia e relevo"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topico": "Estrutura interna da terra",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "54": {
    "disciplinas": [
@@ -485,7 +1073,22 @@
    "conteudos": [
     "Filosofia moderna",
     "Filosofia contemporânea"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia moderna",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia contemporânea",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "55": {
    "disciplinas": [
@@ -496,7 +1099,22 @@
     "Filosofia contemporânea",
     "Cultura e indústria cultural"
    ],
-   "observacao": "Teoria crítica (Adorno e Horkheimer): conceito filosófico aplicado à análise sociológica da indústria cultural."
+   "observacao": "Teoria crítica (Adorno e Horkheimer): conceito filosófico aplicado à análise sociológica da indústria cultural.",
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia contemporânea",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Indústria cultural e meios de comunicação",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "56": {
    "disciplinas": [
@@ -504,7 +1122,16 @@
    ],
    "conteudos": [
     "Política, poder e cidadania"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Poder, Estado e cidadania",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "57": {
    "disciplinas": [
@@ -512,7 +1139,16 @@
    ],
    "conteudos": [
     "Ética"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Ética e moral",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "58": {
    "disciplinas": [
@@ -520,7 +1156,16 @@
    ],
    "conteudos": [
     "Cultura e identidade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Cultura, identidade e alteridade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "59": {
    "disciplinas": [
@@ -528,7 +1173,16 @@
    ],
    "conteudos": [
     "Desigualdade e estratificação social"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Desigualdade e estratificação social",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "60": {
    "disciplinas": [
@@ -537,7 +1191,22 @@
    "conteudos": [
     "Cidadania e direitos",
     "Gênero"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "A luta pela conquista de direitos pelos cidadãos",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Gênero e sexualidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "61": {
    "disciplinas": [
@@ -545,7 +1214,16 @@
    ],
    "conteudos": [
     "Mundo do trabalho"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Trabalho e sociedade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "62": {
    "disciplinas": [
@@ -553,7 +1231,16 @@
    ],
    "conteudos": [
     "História contemporânea"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Geopolítica e conflitos entre os séculos XIX e XX",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "63": {
    "disciplinas": [
@@ -561,7 +1248,16 @@
    ],
    "conteudos": [
     "História do Brasil: Colônia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Brasil Colônia",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "64": {
    "disciplinas": [
@@ -569,7 +1265,16 @@
    ],
    "conteudos": [
     "Questões ambientais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topico": "As questões ambientais contemporâneas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "65": {
    "disciplinas": [
@@ -578,7 +1283,22 @@
    "conteudos": [
     "Gênero",
     "Movimentos sociais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Gênero e sexualidade",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Movimentos sociais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "66": {
    "disciplinas": [
@@ -586,7 +1306,16 @@
    ],
    "conteudos": [
     "Desigualdade e estratificação social"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Desigualdade e estratificação social",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "67": {
    "disciplinas": [
@@ -595,7 +1324,22 @@
    "conteudos": [
     "Geografia agrária",
     "Questões ambientais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Características e transformações das estruturas produtivas",
+     "topico": "Produção e transformação dos espaços agrários",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topico": "As questões ambientais contemporâneas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "68": {
    "disciplinas": [
@@ -603,7 +1347,16 @@
    ],
    "conteudos": [
     "Geografia urbana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Vida urbana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "69": {
    "disciplinas": [
@@ -612,7 +1365,22 @@
    "conteudos": [
     "Cidadania e direitos",
     "Gênero"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "A luta pela conquista de direitos pelos cidadãos",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Gênero e sexualidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "70": {
    "disciplinas": [
@@ -620,7 +1388,16 @@
    ],
    "conteudos": [
     "História do Brasil: Ditadura militar"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Ditadura militar (1964-1985)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "71": {
    "disciplinas": [
@@ -628,7 +1405,16 @@
    ],
    "conteudos": [
     "Geografia agrária"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Características e transformações das estruturas produtivas",
+     "topico": "Produção e transformação dos espaços agrários",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "72": {
    "disciplinas": [
@@ -636,7 +1422,16 @@
    ],
    "conteudos": [
     "Ciência, tecnologia e sociedade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Ciência, tecnologia e sociedade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "73": {
    "disciplinas": [
@@ -644,7 +1439,16 @@
    ],
    "conteudos": [
     "História moderna"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Idade Moderna",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "74": {
    "disciplinas": [
@@ -652,7 +1456,16 @@
    ],
    "conteudos": [
     "América pré-colombiana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "América pré-colombiana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "75": {
    "disciplinas": [
@@ -660,7 +1473,16 @@
    ],
    "conteudos": [
     "Relações étnico-raciais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Relações étnico-raciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "76": {
    "disciplinas": [
@@ -668,7 +1490,16 @@
    ],
    "conteudos": [
     "População e demografia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Geografia: conceitos e população (complemento)",
+     "topico": "População e demografia",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "77": {
    "disciplinas": [
@@ -676,7 +1507,16 @@
    ],
    "conteudos": [
     "Iluminismo"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Revoluções sociais e políticas na Europa Moderna",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "78": {
    "disciplinas": [
@@ -684,7 +1524,16 @@
    ],
    "conteudos": [
     "Geografia urbana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topico": "Vida urbana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "79": {
    "disciplinas": [
@@ -692,7 +1541,16 @@
    ],
    "conteudos": [
     "Filosofia contemporânea"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia contemporânea",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "80": {
    "disciplinas": [
@@ -700,7 +1558,16 @@
    ],
    "conteudos": [
     "História do Brasil: Ditadura militar"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Ditadura militar (1964-1985)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "81": {
    "disciplinas": [
@@ -709,7 +1576,22 @@
    "conteudos": [
     "Filosofia contemporânea",
     "Filosofia política"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia contemporânea",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia política",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "82": {
    "disciplinas": [
@@ -717,7 +1599,16 @@
    ],
    "conteudos": [
     "História do Brasil: República"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Brasil República (1889-1930)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "83": {
    "disciplinas": [
@@ -725,7 +1616,16 @@
    ],
    "conteudos": [
     "Questões ambientais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topico": "As questões ambientais contemporâneas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "84": {
    "disciplinas": [
@@ -733,7 +1633,16 @@
    ],
    "conteudos": [
     "História do Brasil: República"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Brasil República (1889-1930)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "85": {
    "disciplinas": [
@@ -741,7 +1650,16 @@
    ],
    "conteudos": [
     "Economia e globalização"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Características e transformações das estruturas produtivas",
+     "topico": "A globalização e as novas tecnologias de telecomunicação e suas consequências econômicas, políticas e sociais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "86": {
    "disciplinas": [
@@ -750,7 +1668,22 @@
    "conteudos": [
     "Gênero",
     "Cultura e identidade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Gênero e sexualidade",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Sociologia",
+     "conteudo": "Sociologia: conceitos e temas (complemento)",
+     "topico": "Cultura, identidade e alteridade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "87": {
    "disciplinas": [
@@ -758,7 +1691,16 @@
    ],
    "conteudos": [
     "História do Brasil: Era Vargas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "História",
+     "conteudo": "História: períodos e historiografia (complemento)",
+     "topico": "Era Vargas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "88": {
    "disciplinas": [
@@ -766,7 +1708,16 @@
    ],
    "conteudos": [
     "Economia e globalização"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Características e transformações das estruturas produtivas",
+     "topico": "A globalização e as novas tecnologias de telecomunicação e suas consequências econômicas, políticas e sociais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "89": {
    "disciplinas": [
@@ -775,7 +1726,22 @@
    "conteudos": [
     "Questões ambientais",
     "Cartografia e leitura de mapas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topico": "As questões ambientais contemporâneas",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Geografia",
+     "conteudo": "Representação espacial",
+     "topico": "Projeções cartográficas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "90": {
    "disciplinas": [
@@ -783,22 +1749,16 @@
    ],
    "conteudos": [
     "Filosofia antiga"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Filosofia",
+     "conteudo": "Filosofia: períodos e temas (complemento)",
+     "topico": "Filosofia antiga",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   }
- },
- "disciplinas_validas": [
-  "Artes",
-  "Biologia",
-  "Educação Física",
-  "Filosofia",
-  "Física",
-  "Geografia",
-  "História",
-  "Língua Espanhola",
-  "Língua Inglesa",
-  "Língua Portuguesa",
-  "Matemática",
-  "Química",
-  "Sociologia"
- ]
+ }
 }

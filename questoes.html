@@ -70,6 +70,24 @@ aside.filters {
 }
 .fgroup { display: grid; gap: 6px; }
 .fgroup > .label { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+details.fgroup > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; padding: 4px 0; }
+details.fgroup > summary::-webkit-details-marker { display: none; }
+details.fgroup > summary::before { content: "▸"; font-size: .8rem; transition: transform .15s; }
+details.fgroup[open] > summary::before { transform: rotate(90deg); }
+.nsel { margin-left: auto; background: var(--accent); color: #fff; border-radius: 999px; padding: 0 7px; font-size: .7rem; letter-spacing: 0; }
+.nsel:empty { display: none; }
+details.sub { margin: 2px 0 2px 4px; }
+details.sub > summary { list-style: none; cursor: pointer; font-size: .82rem; font-weight: 600; padding: 3px 4px; color: var(--muted); display: flex; gap: 6px; align-items: flex-start; }
+details.sub > summary .n { margin-left: auto; }
+details.sub > summary .gsel { margin: 0; flex: none; }
+.classif { display: grid; gap: 6px; }
+.classif-linha { display: grid; grid-template-columns: 1fr 1.4fr 1.4fr 1fr auto; gap: 6px; }
+.classif-linha select, .classif-linha input { min-width: 0; font: inherit; font-size: .85rem; padding: 4px; }
+@media (max-width: 700px) { .classif-linha { grid-template-columns: 1fr 1fr; } }
+details.sub > summary::-webkit-details-marker { display: none; }
+details.sub > summary::before { content: "▸"; transition: transform .15s; }
+details.sub[open] > summary::before { transform: rotate(90deg); }
+details.sub > .opts { padding-left: 10px; border-left: 1px solid var(--line, #ddd); }
 .search { width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
 .opts { display: grid; gap: 2px; }
 .opt { display: flex; align-items: center; gap: 8px; padding: 4px 6px; border-radius: 6px; cursor: pointer; font-size: .9rem; }
@@ -299,19 +317,18 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       <label class="label" for="busca">Buscar no texto</label>
       <input class="search" id="busca" type="search" placeholder="ex.: polia, probabilidade, ATP">
     </div>
-    <div class="fgroup"><span class="label">Área</span><div class="opts" id="f-area"></div></div>
-    <div class="fgroup"><span class="label">Disciplina</span><div class="opts" id="f-disc"></div></div>
-    <div class="fgroup"><span class="label">Conteúdo</span><div class="opts" id="f-cont"></div></div>
-    <div class="fgroup"><span class="label">Ano</span><div class="opts" id="f-ano"></div></div>
-    <div class="fgroup"><span class="label">Aplicação</span><div class="opts" id="f-apl"></div></div>
-    <div class="fgroup"><span class="label">Dificuldade</span><div class="opts" id="f-dif"></div></div>
-    <div class="fgroup"><span class="label">Habilidade (Matriz de Referência)</span><div class="opts" id="f-hab"></div></div>
-    <div class="fgroup"><span class="label">Formato</span><div class="opts" id="f-fmt"></div></div>
-    <div class="fgroup"><span class="label">Língua estrangeira</span><div class="opts" id="f-lingua">
+    <details class="fgroup" data-grupo="f-area"><summary class="label">Área<span class="nsel"></span></summary><div class="opts" id="f-area"></div></details>
+    <details class="fgroup" data-grupo="f-cont"><summary class="label">Disciplina, conteúdo e tópico<span class="nsel"></span></summary><div class="opts" id="f-cont"></div></details>
+    <details class="fgroup" data-grupo="f-ano"><summary class="label">Ano<span class="nsel"></span></summary><div class="opts" id="f-ano"></div></details>
+    <details class="fgroup" data-grupo="f-apl"><summary class="label">Aplicação<span class="nsel"></span></summary><div class="opts" id="f-apl"></div></details>
+    <details class="fgroup" data-grupo="f-dif"><summary class="label">Dificuldade<span class="nsel"></span></summary><div class="opts" id="f-dif"></div></details>
+    <details class="fgroup" data-grupo="f-hab"><summary class="label">Habilidade (Matriz de Referência)<span class="nsel"></span></summary><div class="opts" id="f-hab"></div></details>
+    <details class="fgroup" data-grupo="f-fmt"><summary class="label">Formato<span class="nsel"></span></summary><div class="opts" id="f-fmt"></div></details>
+    <details class="fgroup" data-grupo="f-lingua"><summary class="label">Língua estrangeira<span class="nsel"></span></summary><div class="opts" id="f-lingua">
       <label class="opt" for="lingua-ingles"><input type="radio" name="lingua" id="lingua-ingles" value="ingles"> Inglês</label>
       <label class="opt" for="lingua-espanhol"><input type="radio" name="lingua" id="lingua-espanhol" value="espanhol"> Espanhol</label>
       <label class="opt" for="lingua-ambas"><input type="radio" name="lingua" id="lingua-ambas" value="" checked> Ver as duas</label>
-    </div></div>
+    </div></details>
     <div class="fgroup">
       <label class="opt"><input type="checkbox" id="semAnuladas" checked> Ocultar questões anuladas</label>
     </div>
@@ -373,10 +390,11 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     <div class="alts-ed" id="edAlts"></div>
     <label class="campo">Resposta correta (gabarito)
       <select id="edGabarito"><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></label>
-    <fieldset><legend>Disciplinas</legend><div class="discs" id="edDiscs"></div></fieldset>
-    <label class="campo">Conteúdos (separados por ponto e vírgula)
-      <input type="text" id="edConteudos" list="listaConteudos"></label>
-    <datalist id="listaConteudos"></datalist>
+    <fieldset><legend>Classificação (Matriz de Referência)</legend>
+      <p class="explica">Uma linha por item que a resolução exige. O subtópico é livre.</p>
+      <div class="classif" id="edDiscs"></div>
+      <button class="btn sec" id="edMaisClassif" type="button">+ Item de classificação</button>
+    </fieldset>
     <label class="campo">Por que esta classificação (opcional)
       <textarea id="edObs" rows="2"></textarea></label>
     <p class="erro" id="edErro" hidden></p>
@@ -440,18 +458,45 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   // prova (data/enem/<ano>/blocos/pacote_<prova>.json, nome -> data URL),
   // baixado só quando a primeira imagem dele é necessária.
   const PACOTES = {};
+  let MODO_PACOTE = false;  // a página não tem as imagens como arquivo (publicada)
+  function pacoteDe(src) {
+    // mesma regra de nomes de scripts/empacotar_recortes.py
+    const m = (src || "").match(/data\/enem\/(\d{4})\/img\/(blocos\/)?((?:regular|reaplicacao|belem)_D\d_CD\d+)_[QT](\d{2,3})[^/]*\.png$/);
+    if (!m) return null;
+    const [tipo, n] = m[2] ? ["pacote", 10] : ["original", 30];
+    const url = `data/enem/${m[1]}/blocos/${tipo}_${m[3]}_${String(Math.floor(Number(m[4]) / n)).padStart(2, "0")}.json`;
+    PACOTES[url] = PACOTES[url] || fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    return { pacote: PACOTES[url], nome: src.split("/").pop() };
+  }
+  function doPacote(im) {
+    const p = pacoteDe(im.getAttribute("src"));
+    if (!p) return;
+    im.dataset.pacote = "1";
+    p.pacote.then((dados) => { if (dados[p.nome]) { MODO_PACOTE = true; im.src = dados[p.nome]; } });
+  }
   document.addEventListener("error", (e) => {
     const im = e.target;
-    if (im.tagName !== "IMG" || im.dataset.pacote) return;
-    // mesma regra de nomes de scripts/empacotar_recortes.py
-    const m = (im.getAttribute("src") || "").match(/data\/enem\/(\d{4})\/img\/(blocos\/)?((?:regular|reaplicacao|belem)_D\d_CD\d+)_[QT](\d{2,3})[^/]*\.png$/);
-    if (!m) return;
-    im.dataset.pacote = "1";
-    const [tipo, n] = m[2] ? ["pacote", 10] : ["original", 30];
-    const url = `data/enem/${m[1]}/blocos/${tipo}_${m[3]}_${String(Math.floor(Number(m[4]) / n)).padStart(2, "0")}.json`, nome = im.getAttribute("src").split("/").pop();
-    PACOTES[url] = PACOTES[url] || fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
-    PACOTES[url].then((p) => { if (p[nome]) im.src = p[nome]; });
+    if (im.tagName === "IMG" && !im.dataset.pacote) doPacote(im);
   }, true);
+  // Na página publicada, os recortes dos cartões vão direto ao pacote (já
+  // pedido em paralelo), sem esperar cada imagem falhar.
+  function adiantarPacotes(raiz) {
+    if (!MODO_PACOTE) return;
+    raiz.querySelectorAll("img").forEach((im) => { if (!im.dataset.pacote && !im.closest("details:not([open])")) doPacote(im); });
+  }
+  const lerJSON = (k, padrao) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : padrao; } catch (_) { return padrao; } };
+  // grupos internos abertos (lembrados entre renderizações e visitas)
+  const GRUPOS_ABERTOS = new Set(lerJSON("banco-enem-grupos-abertos", []));
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement)) return;
+    if (d.classList.contains("sub")) d.open ? GRUPOS_ABERTOS.add(d.dataset.g) : GRUPOS_ABERTOS.delete(d.dataset.g);
+    else if (d.classList.contains("fgroup")) d.open ? GRUPOS_ABERTOS.add("@" + d.dataset.grupo) : GRUPOS_ABERTOS.delete("@" + d.dataset.grupo);
+    else return;
+    try { localStorage.setItem("banco-enem-grupos-abertos", JSON.stringify([...GRUPOS_ABERTOS])); } catch (_) {}
+  }, true);
+  if (!lerJSON("banco-enem-grupos-abertos", null)) ["@f-area", "@f-ano"].forEach((g) => GRUPOS_ABERTOS.add(g));
+  document.querySelectorAll("details.fgroup").forEach((d) => { d.open = GRUPOS_ABERTOS.has("@" + d.dataset.grupo); });
   const ESCALAS = window.ESCALA_DIFICULDADE || {};      // por área: {min, max, n, niveis}
   const ESCALA_NOTAS = window.ESCALA_NOTAS || {};       // "ano|área": {k, m}
   const NIVEIS = ["Para não zerar", "Facílima", "Fácil", "Mediana", "Difícil", "Dificílima", "Impossível"];
@@ -480,7 +525,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     : q.blocos ? "Texto + recortes (nova versão)" : q.imagem ? "Com figura, tabela ou fórmula" : "Só texto");
   const aplicacao = (q) => (q.propria ? (q.origem === "outra" ? "Outra fonte" : "Questão autoral") : q.prova.aplicacao === "belem" ? "Aplicação Belém, Ananindeua e Marituba" : q.prova.reaplicacao ? "Reaplicação" : "Aplicação regular");
   const campos = {
-    area: (q) => [q.area], disc: (q) => q.disciplinas, cont: (q) => q.conteudos,
+    area: (q) => [q.area], disc: (q) => q.disciplinas, cont: chavesClassif,
     ano: (q) => [q.prova.ano ? String(q.prova.ano) : "Sem ano"], apl: (q) => [aplicacao(q)], fmt: (q) => [formato(q)],
     dif: (q) => [q.dificuldade && q.dificuldade.nivel ? q.dificuldade.nivel : SEM_DIF],
     hab: (q) => (q.habilidade ? [q.habilidade.chave] : []),
@@ -496,11 +541,37 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const textoBase = tbase ? tbase.blocos.filter((b) => b.tipo === "texto").map((b) => b.texto).join(" ") : "";
     q._busca = norm(textoBase + " " + textoBlocos + " " + Object.values(q.alternativas || {}).join(" ") + " " + q.conteudos.join(" ") + " " + (q.habilidade ? q.habilidade.codigo + " " + q.habilidade.texto : ""));
   }
+  // Classificação: disciplina > conteúdo > tópico (taxonomia da Matriz de Referência)
+  const SEM_TOPICO = "(tópico a definir)";
+  function chavesClassif(q) {
+    if (q.classificacao && q.classificacao.length) return q.classificacao.map((i) => `${i.disciplina}|${i.conteudo}|${i.topico || SEM_TOPICO}`);
+    return (q.conteudos || []).map((c) => `${(q.disciplinas || [])[0] || "Sem disciplina"}|${c}|${SEM_TOPICO}`);
+  }
+  const ORDEM_CLASSIF = new Map();
+  ["LC", "CH", "CN", "MT"].forEach((sig) => ((window.TAXONOMIA || {})[sig] || []).forEach((c) => {
+    if (!ORDEM_CLASSIF.has(c.nome)) ORDEM_CLASSIF.set(c.nome, ORDEM_CLASSIF.size);
+    c.topicos.forEach((t) => { if (!ORDEM_CLASSIF.has(c.nome + "|" + t.nome)) ORDEM_CLASSIF.set(c.nome + "|" + t.nome, ORDEM_CLASSIF.size); });
+  }));
+  const ORDEM_DISC = ["Língua Portuguesa", "Língua Inglesa", "Língua Espanhola", "Artes", "Educação Física", "História", "Geografia", "Filosofia", "Sociologia", "Física", "Química", "Biologia", "Matemática"];
+  const posicao = (m, k) => (m.has(k) ? m.get(k) : 1e6);
+  const ordemCont = (a, b) => {
+    const [da, ca, ta] = a.split("|"), [db, cb, tb] = b.split("|");
+    return ((ORDEM_DISC.indexOf(da) + 1 || 99) - (ORDEM_DISC.indexOf(db) + 1 || 99))
+      || posicao(ORDEM_CLASSIF, ca) - posicao(ORDEM_CLASSIF, cb)
+      || posicao(ORDEM_CLASSIF, ca + "|" + ta) - posicao(ORDEM_CLASSIF, cb + "|" + tb);
+  };
   const SIGLAS = ["LC", "CH", "CN", "MT"];
   const ordemHab = (a, b) => SIGLAS.indexOf(a.split(" ")[0]) - SIGLAS.indexOf(b.split(" ")[0]) || parseInt(a.split(" H")[1]) - parseInt(b.split(" H")[1]);
   const ordemDif = (a, b) => (NIVEIS.indexOf(a) + 1 || 99) - (NIVEIS.indexOf(b) + 1 || 99);
   const curto = (t, n) => (t && t.length > n ? t.slice(0, n - 1).trimEnd() + "…" : t || "");
-  const rotuloHab = (k) => { const h = HABS[k]; return h ? `${k} · ${curto(h.texto, 70)}` : k; };
+  const rotuloHab = (k) => { const h = HABS[k]; return h ? `${h.codigo} · ${curto(h.texto, 70)}` : k; };
+  // Matriz de Referência: área > competência > habilidade
+  const AREA_DA_SIGLA = {};
+  BANCO.forEach((q) => { if (q.habilidade) AREA_DA_SIGLA[q.habilidade.chave.split(" ")[0]] = q.area; });
+  const grupoHab = (k) => {
+    const h = HABS[k], c = h && h.competencia;
+    return [AREA_DA_SIGLA[k.split(" ")[0]] || k.split(" ")[0], c ? `Competência ${c.numero} · ${curto(c.texto, 60)}` : "Sem competência"];
+  };
 
   // Referência bibliográfica: "SOBRENOME, I." no início da linha.
   const AUTOR = /^[A-ZÀ-Ý][A-ZÀ-Ý'\-]+(?: [A-ZÀ-Ý][A-ZÀ-Ý'\-]+)*, [A-ZÀ-Ý]\./;
@@ -546,18 +617,36 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     return true;
   }
 
-  function montarOpcoes(chave, el, ordem, rotulo) {
+  function montarOpcoes(chave, el, ordem, rotulo, grupo) {
     const base = BANCO.filter((q) => passa(q, chave));
     const todos = new Map();
     BANCO.forEach((q) => campos[chave](q).forEach((v) => todos.set(v, 0)));
     base.forEach((q) => new Set(campos[chave](q)).forEach((v) => todos.set(v, (todos.get(v) || 0) + 1)));
     let valores = [...todos.keys()];
-    if ((chave === "cont" || chave === "hab") && (filtros.disc.size || filtros.area.size)) valores = valores.filter((v) => todos.get(v) > 0 || filtros.cont.has(v));
+    if ((chave === "cont" || chave === "hab") && filtros.area.size) valores = valores.filter((v) => todos.get(v) > 0 || filtros.cont.has(v));
     valores.sort(ordem || ((a, b) => a.localeCompare(b, "pt-BR")));
-    el.innerHTML = valores.length ? valores.map((v, i) => {
-      const id = `op-${chave}-${i}`, n = todos.get(v) || 0;
+    const opcao = (v) => {
+      const id = `op-${chave}-${valores.indexOf(v)}`, n = todos.get(v) || 0;
       return `<label class="opt${n ? "" : " zero"}" for="${id}"><input type="checkbox" id="${id}" data-k="${chave}" value="${esc(v)}"${filtros[chave].has(v) ? " checked" : ""}> <span${rotulo && HABS[v] ? ` title="${esc(HABS[v].texto)}"` : ""}>${esc(rotulo ? rotulo(v) : v)}</span><span class="n">${n}</span></label>`;
-    }).join("") : '<span class="figura-nota">Nenhuma opção</span>';
+    };
+    // agrupado: grupo(v) -> ["nível 1", "nível 2"?]; cada grupo é recolhível
+    const arvore = (lista, nivel, caminho) => {
+      if (!grupo || nivel >= grupo(lista[0]).length) return lista.map(opcao).join("");
+      const grupos = new Map();
+      lista.forEach((v) => { const g = grupo(v)[nivel]; if (!grupos.has(g)) grupos.set(g, []); grupos.get(g).push(v); });
+      return [...grupos].map(([g, vs]) => {
+        const conj = new Set(vs), chaveG = `${chave}|${caminho}${g}`;
+        const soma = base.filter((q) => campos[chave](q).some((v) => conj.has(v))).length;  // questões distintas
+        const aberto = GRUPOS_ABERTOS.has(chaveG) || vs.some((v) => filtros[chave].has(v));
+        const marcados = vs.filter((v) => filtros[chave].has(v)).length;
+        const caixa = `<input type="checkbox" class="gsel" data-gk="${chave}" data-vals="${esc(JSON.stringify(vs))}"${marcados === vs.length ? " checked" : ""}${marcados && marcados < vs.length ? " data-parcial" : ""} aria-label="Marcar todo o grupo ${esc(g)}">`;
+        return `<details class="sub" data-g="${esc(chaveG)}"${aberto ? " open" : ""}><summary>${caixa}<span>${esc(g)}</span><span class="n">${soma}</span></summary><div class="opts">${arvore(vs, nivel + 1, caminho + g + "|")}</div></details>`;
+      }).join("");
+    };
+    el.innerHTML = valores.length ? arvore(valores, 0, "") : '<span class="figura-nota">Nenhuma opção</span>';
+    el.querySelectorAll("input[data-parcial]").forEach((i) => { i.indeterminate = true; });
+    const sel = el.closest("details.fgroup") && el.closest("details.fgroup").querySelector(".nsel");
+    if (sel) sel.textContent = filtros[chave].size || "";
   }
 
   function barraDificuldade(q) {
@@ -606,7 +695,11 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const resolvida = r !== undefined;
     const chips = [`<span class="chip area" data-a="${esc(q.area)}">${esc(q.area)}</span>`]
       .concat(q.disciplinas.filter((d) => d !== "Matemática" || !q.area.startsWith("Matemática")).map((d) => `<span class="chip disc">${esc(d)}</span>`))
-      .concat(q.conteudos.map((c) => `<span class="chip">${esc(c)}</span>`))
+      .concat(chavesClassif(q).map((k) => {
+        const [d, c, t] = k.split("|"), sub = (q.classificacao || []).find((i) => i.conteudo === c && (i.topico || SEM_TOPICO) === t);
+        const rot = t === SEM_TOPICO ? c : t, caminho = [d, c, t === SEM_TOPICO ? null : t, sub && sub.subtopico].filter(Boolean).join(" › ");
+        return `<span class="chip" title="${esc(caminho)}">${esc(curto(rot, 48))}${sub && sub.subtopico ? ` › ${esc(curto(sub.subtopico, 40))}` : ""}</span>`;
+      }))
       .concat(q.lingua ? [`<span class="chip">${q.lingua === "ingles" ? "Inglês" : "Espanhol"}</span>`] : [])
       .concat(q.editada ? ['<span class="chip editada" title="Texto, classificação ou imagem alterados nesta página">Editada</span>'] : [])
       .concat(q.anulada ? ['<span class="chip warn">Anulada pelo INEP</span>'] : [])
@@ -732,19 +825,19 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   function render() {
     const ordemArea = (a, b) => ORDEM_AREA.indexOf(a) - ORDEM_AREA.indexOf(b);
     montarOpcoes("area", $("f-area"), ordemArea);
-    montarOpcoes("disc", $("f-disc"));
-    montarOpcoes("cont", $("f-cont"));
+    montarOpcoes("cont", $("f-cont"), ordemCont, (k) => k.split("|")[2], (k) => k.split("|").slice(0, 2));
     montarOpcoes("ano", $("f-ano"), (a, b) => (Number(b) || 0) - (Number(a) || 0));
     montarOpcoes("apl", $("f-apl"));
     montarOpcoes("fmt", $("f-fmt"));
     montarOpcoes("dif", $("f-dif"), ordemDif);
-    montarOpcoes("hab", $("f-hab"), ordemHab, rotuloHab);
+    montarOpcoes("hab", $("f-hab"), ordemHab, rotuloHab, grupoHab);
     const res = BANCO.filter((q) => passa(q));
     const provas = new Set(BANCO.filter((q) => !q.propria).map((q) => q.id.replace(/-Q\d+.*$/, "")));  // um caderno por dia
     $("fonte").textContent = `${BANCO.length} questões de ${provas.size} prova${provas.size > 1 ? "s" : ""} oficial${provas.size > 1 ? "is" : ""} do INEP`;
     atualizarResumo(res.length);
     $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")
       : '<div class="empty">Nenhuma questão com esses filtros. Desmarque algum filtro ou limpe a busca.</div>';
+    adiantarPacotes($("lista"));
     $("mais").hidden = res.length <= limite;
     atualizarEstadoEdicao();
     $("mais").textContent = `Mostrar mais questões (${Math.min(POR_PAGINA, res.length - limite)} de ${res.length - limite} restantes)`;
@@ -769,6 +862,10 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
 
   document.addEventListener("change", (e) => {
     const t = e.target;
+    if (t.classList && t.classList.contains("gsel")) {
+      JSON.parse(t.dataset.vals).forEach((v) => (t.checked ? filtros[t.dataset.gk].add(v) : filtros[t.dataset.gk].delete(v)));
+      limite = POR_PAGINA; render(); return;
+    }
     if (t.dataset && t.dataset.k) { t.checked ? filtros[t.dataset.k].add(t.value) : filtros[t.dataset.k].delete(t.value); limite = POR_PAGINA; render(); }
     if (t.id === "semAnuladas") { semAnuladas = t.checked; limite = POR_PAGINA; render(); }
     if (t.id === "soEditadas") { soEditadas = t.checked; limite = POR_PAGINA; render(); }
@@ -827,7 +924,47 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   const DISCIPLINAS = ["Língua Portuguesa", "Língua Inglesa", "Língua Espanhola", "Artes", "Educação Física",
     "Geografia", "História", "Filosofia", "Sociologia", "Matemática", "Biologia", "Física", "Química"];
   const CHAVE_LOCAL = "banco-enem-edicoes";
-  const CAMPOS_TEXTO = ["enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao", "blocos"];
+  const CAMPOS_TEXTO = ["enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "classificacao", "observacao", "blocos"];
+  // Editor da classificação: disciplina > conteúdo > tópico (da taxonomia) > subtópico (livre)
+  function conteudosDa(disc) {
+    const r = [];
+    Object.values(window.TAXONOMIA || {}).forEach((cs) => cs.forEach((c) => {
+      if (!c.disciplinas.includes(disc)) return;
+      r.push({ nome: c.nome, topicos: c.topicos.filter((t) => !t.disciplinas || t.disciplinas.includes(disc)).map((t) => t.nome) });
+    }));
+    return r;
+  }
+  function linhaClassif(item) {
+    const div = document.createElement("div");
+    div.className = "classif-linha";
+    div.innerHTML = `<select data-c="disciplina" aria-label="Disciplina"><option value="">Disciplina…</option>${DISCIPLINAS.map((d) => `<option>${esc(d)}</option>`).join("")}</select>
+      <select data-c="conteudo" aria-label="Conteúdo"></select><select data-c="topico" aria-label="Tópico"></select>
+      <input type="text" data-c="subtopico" placeholder="Subtópico (opcional)" aria-label="Subtópico">
+      <button type="button" class="btn sec" data-remover-classif aria-label="Remover item">×</button>`;
+    const [sd, sc, st, ss] = ["disciplina", "conteudo", "topico", "subtopico"].map((k) => div.querySelector(`[data-c="${k}"]`));
+    const encher = () => {
+      const cs = conteudosDa(sd.value);
+      sc.innerHTML = `<option value="">Conteúdo…</option>` + cs.map((c) => `<option>${esc(c.nome)}</option>`).join("");
+      sc.value = cs.some((c) => c.nome === item.conteudo) ? item.conteudo : "";
+      const c = cs.find((x) => x.nome === sc.value);
+      st.innerHTML = `<option value="">Tópico…</option>` + (c ? c.topicos.map((t) => `<option>${esc(t)}</option>`).join("") : "");
+      st.value = c && c.topicos.includes(item.topico) ? item.topico : "";
+    };
+    sd.value = item.disciplina || "";
+    ss.value = item.subtopico || "";
+    encher();
+    sd.addEventListener("change", () => { item = { disciplina: sd.value }; encher(); });
+    sc.addEventListener("change", () => { item = { disciplina: sd.value, conteudo: sc.value }; encher(); });
+    div.querySelector("[data-remover-classif]").addEventListener("click", () => div.remove());
+    return div;
+  }
+  function lerClassif() {
+    return [...$("edDiscs").querySelectorAll(".classif-linha")].map((l) => {
+      const v = (k) => l.querySelector(`[data-c="${k}"]`).value.trim() || null;
+      return { disciplina: v("disciplina"), conteudo: v("conteudo"), topico: v("topico"), subtopico: v("subtopico") };
+    }).filter((i) => i.disciplina);
+  }
+  document.addEventListener("click", (e) => { if (e.target.id === "edMaisClassif") $("edDiscs").appendChild(linhaClassif({})); });
   const ORIGINAL = new Map();
   BANCO.forEach((q) => ORIGINAL.set(q.id, JSON.parse(JSON.stringify(
     Object.fromEntries(CAMPOS_TEXTO.concat("imagem", "alternativas_imagem").map((k) => [k, q[k] ?? null]))))));
@@ -1000,10 +1137,10 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     "ABCDE".split("").forEach((L) => { $("edAlts").querySelector(`[data-alt="${L}"]`).value = (q.alternativas || {})[L] || ""; });
     $("edGabarito").value = q.gabarito || "A";
     $("edGabarito").disabled = !!q.anulada;
-    $("edDiscs").innerHTML = DISCIPLINAS.map((d, i) => `<label class="opt" for="edd-${i}"><input type="checkbox" id="edd-${i}" value="${esc(d)}"${q.disciplinas.includes(d) ? " checked" : ""}> ${esc(d)}</label>`).join("");
-    $("edConteudos").value = q.conteudos.join("; ");
-    const todos = [...new Set(BANCO.flatMap((x) => x.conteudos))].sort((a, b) => a.localeCompare(b, "pt-BR"));
-    $("listaConteudos").innerHTML = todos.map((c) => `<option value="${esc(c)}">`).join("");
+    $("edDiscs").innerHTML = "";
+    const itens = (q.classificacao && q.classificacao.length) ? q.classificacao
+      : (q.disciplinas || []).map((d) => ({ disciplina: d, conteudo: null, topico: null, subtopico: null }));
+    (itens.length ? itens : [{}]).forEach((i) => $("edDiscs").appendChild(linhaClassif(i)));
     $("edObs").value = q.observacao || "";
     $("edErro").hidden = true;
     $("edRestaurar").hidden = !temCampos(edicoes[id]);
@@ -1048,12 +1185,13 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       enunciado: EB ? (o.enunciado || "").trim() : $("edEnunciado").value.replace(/\r/g, "").trim(),
       alternativas: alts,
       gabarito: o.gabarito === null ? null : $("edGabarito").value,
-      disciplinas: [...$("edDiscs").querySelectorAll("input:checked")].map((i) => i.value),
-      conteudos: $("edConteudos").value.split(";").map((c) => c.trim()).filter(Boolean),
+      classificacao: lerClassif(),
       observacao: $("edObs").value.trim() || null,
       blocos: null,
     };
-    if (!novo.disciplinas.length) return mostrarErro($("edErro"), "Escolha pelo menos uma disciplina.");
+    if (!novo.classificacao.length) return mostrarErro($("edErro"), "Escolha pelo menos uma disciplina na classificação.");
+    novo.disciplinas = [...new Set(novo.classificacao.map((i) => i.disciplina))];
+    novo.conteudos = [...new Set(novo.classificacao.map((i) => i.conteudo).filter(Boolean))];
     if (!novo.enunciado && !EB) return mostrarErro($("edErro"), "O enunciado não pode ficar vazio.");
     const qAtual = BANCO.find((x) => x.id === id);
     if (qAtual && qAtual.propria) {
@@ -1068,7 +1206,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
           id, origem: $("edOrigem").value, fonte: $("edFonte").value.trim() || null, ano: ano ? Number(ano) : null,
           area: $("edArea").value, habilidade: $("edHab").value || null,
           blocos: await gravarImagensNovas(EB.filter((b) => b.tipo === "figura" || b.texto)),
-          alternativas: alts, gabarito: novo.gabarito, disciplinas: novo.disciplinas, conteudos: novo.conteudos,
+          alternativas: alts, gabarito: novo.gabarito, disciplinas: novo.disciplinas, conteudos: novo.conteudos, classificacao: novo.classificacao,
           observacao: novo.observacao, atualizado: new Date().toISOString(),
         });
         await gravarPropria(r);

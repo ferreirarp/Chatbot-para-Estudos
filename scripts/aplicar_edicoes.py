@@ -22,7 +22,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA = RAIZ / "data" / "enem" / "edicoes"
 ARQ = PASTA / "edicoes.json"
-CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao", "blocos"}
+CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "classificacao", "observacao", "blocos"}
 RE_RECORTE = re.compile(r"^(b\d+|alt-[A-E])$")
 RE_ID = re.compile(r"^\d{4}-(regular|reaplicacao|belem)-D\d-CD\d+-Q\d{3}(-(ingles|espanhol))?$")
 PREFIXO_PNG = "data:image/png;base64,"

@@ -1,0 +1,2323 @@
+{
+ "fonte": "INEP, Matriz de Referência do ENEM: Objetos de conhecimento associados às Matrizes de Referência",
+ "criterio": "Classificar pelo que a resolução exige (conceitos, procedimentos, atitudes, habilidades), não pelo contexto do enunciado.",
+ "areas": {
+  "LC": {
+   "nome": "Linguagens, Códigos e suas Tecnologias",
+   "conteudos": [
+    {
+     "nome": "Estudo do texto",
+     "disciplinas": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo do texto: as sequências discursivas e os gêneros textuais no sistema de comunicação e informação - modos de organização da composição textual; atividades de produção escrita e de leitura de textos gerados nas diferentes esferas sociais - públicas e privadas",
+     "topicos": [
+      {
+       "nome": "modos de organização da composição textual",
+       "origem": "matriz"
+      },
+      {
+       "nome": "atividades de produção escrita e de leitura de textos gerados nas diferentes esferas sociais - públicas e privadas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo das práticas corporais",
+     "disciplinas": [
+      "Educação Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo das práticas corporais: a linguagem corporal como integradora social e formadora de identidade - performance corporal e identidades juvenis; possibilidades de vivência crítica e emancipada do lazer; mitos e verdades sobre os corpos masculino e feminino na sociedade atual; exercício físico e saúde; o corpo e a expressão artística e cultural; o corpo no mundo dos símbolos e como produção da cultura; práticas corporais e autonomia; condicionamentos e esforços físicos; o esporte;. a dança; as lutas; os jogos; as brincadeiras",
+     "topicos": [
+      {
+       "nome": "performance corporal e identidades juvenis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "possibilidades de vivência crítica e emancipada do lazer",
+       "origem": "matriz"
+      },
+      {
+       "nome": "mitos e verdades sobre os corpos masculino e feminino na sociedade atual",
+       "origem": "matriz"
+      },
+      {
+       "nome": "exercício físico e saúde",
+       "origem": "matriz"
+      },
+      {
+       "nome": "o corpo e a expressão artística e cultural",
+       "origem": "matriz"
+      },
+      {
+       "nome": "o corpo no mundo dos símbolos e como produção da cultura",
+       "origem": "matriz"
+      },
+      {
+       "nome": "práticas corporais e autonomia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "condicionamentos e esforços físicos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "o esporte",
+       "origem": "matriz"
+      },
+      {
+       "nome": "a dança",
+       "origem": "matriz"
+      },
+      {
+       "nome": "as lutas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "os jogos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "as brincadeiras",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Produção e recepção de textos artísticos",
+     "disciplinas": [
+      "Artes"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Produção e recepção de textos artísticos: interpretação e representação do mundo para o fortalecimento dos processos de identidade e cidadania – Artes Visuais: estrutura morfológica, sintática, o contexto da obra artística, o contexto da comunidade. Teatro: estrutura morfológica, sintática, o contexto da obra artística, o contexto da comunidade, as fontes de criação. Música: estrutura morfológica, sintática, o contexto da obra artística, o contexto da comunidade, as fontes de criação. Dança: estrutura morfológica, sintática, o contexto da obra artística, o contexto da comunidade, as fontes de criação. Conteúdos estruturantes das linguagens artísticas (Artes Visuais, Dança, Música, Teatro), elaborados a partir de suas estruturas morfológicas e sintáticas; inclusão, diversidade e multiculturalidade: a valorização da pluralidade expressada nas produções estéticas e artísticas das minorias sociais e dos portadores de necessidades especiais educacionais",
+     "topicos": [
+      {
+       "nome": "Artes Visuais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Teatro",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Música",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Dança",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conteúdos estruturantes das linguagens artísticas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Inclusão, diversidade e multiculturalidade nas produções artísticas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo do texto literário",
+     "disciplinas": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo do texto literário: relações entre produção literária e processo social, concepções artísticas, procedimentos de construção e recepção de textos - produção literária e processo social; processos de formação literária e de formação nacional; produção de textos literários, sua recepção e a constituição do patrimônio literário nacional; relações entre a dialética cosmopolitismo/localismo e a produção literária nacional; elementos de continuidade e ruptura entre os diversos momentos da literatura brasileira; associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas.; articulações entre os recursos expressivos e estruturais do texto literário e o processo social relacionado ao momento de sua produção; representação literária: natureza, função, organização e estrutura do texto literário; relações entre literatura, outras artes e outros saberes",
+     "topicos": [
+      {
+       "nome": "produção literária e processo social",
+       "origem": "matriz"
+      },
+      {
+       "nome": "processos de formação literária e de formação nacional",
+       "origem": "matriz"
+      },
+      {
+       "nome": "produção de textos literários, sua recepção e a constituição do patrimônio literário nacional",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relações entre a dialética cosmopolitismo/localismo e a produção literária nacional",
+       "origem": "matriz"
+      },
+      {
+       "nome": "elementos de continuidade e ruptura entre os diversos momentos da literatura brasileira",
+       "origem": "matriz"
+      },
+      {
+       "nome": "associações entre concepções artísticas e procedimentos de construção do texto literário em seus gêneros (épico/narrativo, lírico e dramático) e formas diversas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "articulações entre os recursos expressivos e estruturais do texto literário e o processo social relacionado ao momento de sua produção",
+       "origem": "matriz"
+      },
+      {
+       "nome": "representação literária: natureza, função, organização e estrutura do texto literário",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relações entre literatura, outras artes e outros saberes",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo dos aspectos linguísticos em diferentes textos",
+     "disciplinas": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo dos aspectos linguísticos em diferentes textos: recursos expressivos da língua, procedimentos de construção e recepção de textos - organização da macroestrutura semântica e a articulação entre ideias e proposições (relações lógico- semânticas)",
+     "topicos": [
+      {
+       "nome": "organização da macroestrutura semântica e a articulação entre ideias e proposições (relações lógico- semânticas)",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+     "disciplinas": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos: argumentação: tipo, gêneros e usos em língua portuguesa - formas de apresentação de diferentes pontos de vista; organização e progressão textual; papéis sociais e comunicativos dos interlocutores, relação entre usos e propósitos comunicativos, função sociocomunicativa do gênero, aspectos da dimensão espaçotemporal em que se produz o texto",
+     "topicos": [
+      {
+       "nome": "formas de apresentação de diferentes pontos de vista",
+       "origem": "matriz"
+      },
+      {
+       "nome": "organização e progressão textual",
+       "origem": "matriz"
+      },
+      {
+       "nome": "papéis sociais e comunicativos dos interlocutores",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relação entre usos e propósitos comunicativos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "função sociocomunicativa do gênero",
+       "origem": "matriz"
+      },
+      {
+       "nome": "aspectos da dimensão espaçotemporal em que se produz o texto",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo dos aspectos linguísticos da língua portuguesa",
+     "disciplinas": [
+      "Língua Portuguesa"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo dos aspectos linguísticos da língua portuguesa: usos da língua: norma culta e variação linguística - uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais; uso dos recursos linguísticos em processo de coesão textual: elementos de articulação das sequências dos textos ou à construção da micro estrutura do texto",
+     "topicos": [
+      {
+       "nome": "uso dos recursos linguísticos em relação ao contexto em que o texto é constituído: elementos de referência pessoal, temporal, espacial, registro linguístico, grau de formalidade, seleção lexical, tempos e modos verbais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "uso dos recursos linguísticos em processo de coesão textual: elementos de articulação das sequências dos textos ou à construção da micro estrutura do texto",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Estudo dos gêneros digitais",
+     "disciplinas": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Estudo dos gêneros digitais: tecnologia da comunicação e informação: impacto e função social - o texto literário típico da cultura de massa: o suporte textual em gêneros digitais; a caracterização dos interlocutores na comunicação tecnológica; os recursos linguísticos e os gêneros digitais; a função social das novas tecnologias",
+     "topicos": [
+      {
+       "nome": "o texto literário típico da cultura de massa: o suporte textual em gêneros digitais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "a caracterização dos interlocutores na comunicação tecnológica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "os recursos linguísticos e os gêneros digitais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "a função social das novas tecnologias",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Língua estrangeira: leitura e gramática (complemento)",
+     "disciplinas": [
+      "Língua Inglesa",
+      "Língua Espanhola"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Compreensão global do texto",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Vocabulário e expressões em contexto",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Gramática em contexto",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Aspectos culturais e interculturalidade",
+       "origem": "complemento"
+      }
+     ]
+    },
+    {
+     "nome": "Gramática da língua portuguesa (complemento)",
+     "disciplinas": [
+      "Língua Portuguesa"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Morfologia (classes de palavras)",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Sintaxe e pontuação",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Semântica e sentido das palavras",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Concordância, regência e colocação",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Ortografia e acentuação",
+       "origem": "complemento"
+      }
+     ]
+    },
+    {
+     "nome": "Funções da linguagem e comunicação (complemento)",
+     "disciplinas": [
+      "Língua Portuguesa"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Funções da linguagem",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Elementos da comunicação",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Intertextualidade",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Linguagem verbal e não verbal",
+       "origem": "complemento"
+      }
+     ]
+    }
+   ]
+  },
+  "MT": {
+   "nome": "Matemática e suas Tecnologias",
+   "conteudos": [
+    {
+     "nome": "Conhecimentos numéricos",
+     "disciplinas": [
+      "Matemática"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos numéricos: operações em conjuntos numéricos (naturais, inteiros, racionais e reais), desigualdades, divisibilidade, fatoração, razões e proporções, porcentagem e juros, relações de dependência entre grandezas, sequências e progressões, princípios de contagem",
+     "topicos": [
+      {
+       "nome": "operações em conjuntos numéricos (naturais, inteiros, racionais e reais)",
+       "origem": "matriz"
+      },
+      {
+       "nome": "desigualdades",
+       "origem": "matriz"
+      },
+      {
+       "nome": "divisibilidade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "fatoração",
+       "origem": "matriz"
+      },
+      {
+       "nome": "razões e proporções",
+       "origem": "matriz"
+      },
+      {
+       "nome": "porcentagem e juros",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relações de dependência entre grandezas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "sequências e progressões",
+       "origem": "matriz"
+      },
+      {
+       "nome": "princípios de contagem",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Conhecimentos geométricos",
+     "disciplinas": [
+      "Matemática"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos geométricos: características das figuras geométricas planas e espaciais; grandezas, unidades de medida e escalas; comprimentos, áreas e volumes; ângulos; posições de retas; simetrias de figuras planas ou espaciais; congruência e semelhança de triângulos; teorema de Tales; relações métricas nos triângulos; circunferências; trigonometria do ângulo agudo",
+     "topicos": [
+      {
+       "nome": "características das figuras geométricas planas e espaciais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "grandezas, unidades de medida e escalas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "comprimentos, áreas e volumes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "ângulos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "posições de retas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "simetrias de figuras planas ou espaciais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "congruência e semelhança de triângulos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "teorema de Tales",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relações métricas nos triângulos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "circunferências",
+       "origem": "matriz"
+      },
+      {
+       "nome": "trigonometria do ângulo agudo",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Conhecimentos de estatística e probabilidade",
+     "disciplinas": [
+      "Matemática"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos de estatística e probabilidade: representação e análise de dados; medidas de tendência central (médias, moda e mediana); desvios e variância; noções de probabilidade",
+     "topicos": [
+      {
+       "nome": "representação e análise de dados",
+       "origem": "matriz"
+      },
+      {
+       "nome": "medidas de tendência central (médias, moda e mediana)",
+       "origem": "matriz"
+      },
+      {
+       "nome": "desvios e variância",
+       "origem": "matriz"
+      },
+      {
+       "nome": "noções de probabilidade",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Conhecimentos algébricos",
+     "disciplinas": [
+      "Matemática"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos algébricos: gráficos e funções; funções algébricas do 1.º e do 2.º graus, polinomiais, racionais, exponenciais e logarítmicas; equações e inequações; relações no ciclo trigonométrico e funções trigonométricas",
+     "topicos": [
+      {
+       "nome": "gráficos e funções",
+       "origem": "matriz"
+      },
+      {
+       "nome": "funções algébricas do 1.º e do 2.º graus, polinomiais, racionais, exponenciais e logarítmicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "equações e inequações",
+       "origem": "matriz"
+      },
+      {
+       "nome": "relações no ciclo trigonométrico e funções trigonométricas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Conhecimentos algébricos/geométricos",
+     "disciplinas": [
+      "Matemática"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos algébricos/geométricos: plano cartesiano; retas; circunferências; paralelismo e perpendicularidade, sistemas de equações",
+     "topicos": [
+      {
+       "nome": "plano cartesiano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "retas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "circunferências",
+       "origem": "matriz"
+      },
+      {
+       "nome": "paralelismo e perpendicularidade, sistemas de equações",
+       "origem": "matriz"
+      }
+     ]
+    }
+   ]
+  },
+  "CN": {
+   "nome": "Ciências da Natureza e suas Tecnologias",
+   "conteudos": [
+    {
+     "nome": "Conhecimentos básicos e fundamentais",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Conhecimentos básicos e fundamentais - Noções de ordem de grandeza. Notação Científica. Sistema Internacional de Unidades. Metodologia de investigação: a procura de regularidades e de sinais na interpretação física do mundo. Observações e mensurações: representação de grandezas físicas como grandezas mensuráveis. Ferramentas básicas: gráficos e vetores. Conceituação de grandezas vetoriais e escalares. Operações básicas com vetores",
+     "topicos": [
+      {
+       "nome": "Noções de ordem de grandeza",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Notação Científica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Sistema Internacional de Unidades",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Metodologia de investigação: a procura de regularidades e de sinais na interpretação física do mundo",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Observações e mensurações: representação de grandezas físicas como grandezas mensuráveis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ferramentas básicas: gráficos e vetores",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceituação de grandezas vetoriais e escalares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Operações básicas com vetores",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "O movimento, o equilíbrio e a descoberta de leis físicas – Grandezas fundamentais da mecânica: tempo, espaço, velocidade e aceleração. Relação histórica entre força e movimento. Descrições do movimento e sua interpretação: quantificação do movimento e sua descrição matemática e gráfica. Casos especiais de movimentos e suas regularidades observáveis. Conceito de inércia. Noção de sistemas de referência inerciais e não inerciais. Noção dinâmica de massa e quantidade de movimento (momento linear). Força e variação da quantidade de movimento. Leis de Newton. Centro de massa e a ideia de ponto material. Conceito de forças externas e internas. Lei da conservação da quantidade de movimento (momento linear) e teorema do impulso. Momento de uma força (torque). Condições de equilíbrio estático de ponto material e de corpos rígidos. Força de atrito, força peso, força normal de contato e tração. Diagramas de forças. Identificação das forças que atuam nos movimentos circulares. Noção de força centrípeta e sua quantificação. A hidrostática: aspectos históricos e variáveis relevantes. Empuxo. Princípios de Pascal, Arquimedes e Stevin: condições de flutuação, relação entre diferença de nível e pressão hidrostática",
+     "topicos": [
+      {
+       "nome": "Grandezas fundamentais da mecânica: tempo, espaço, velocidade e aceleração",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Relação histórica entre força e movimento",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Descrições do movimento e sua interpretação: quantificação do movimento e sua descrição matemática e gráfica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Casos especiais de movimentos e suas regularidades observáveis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceito de inércia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noção de sistemas de referência inerciais e não inerciais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noção dinâmica de massa e quantidade de movimento (momento linear)",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Força e variação da quantidade de movimento",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Leis de Newton",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Centro de massa e a ideia de ponto material",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceito de forças externas e internas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lei da conservação da quantidade de movimento (momento linear) e teorema do impulso",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Momento de uma força (torque)",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Condições de equilíbrio estático de ponto material e de corpos rígidos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Força de atrito, força peso, força normal de contato e tração",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Diagramas de forças",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Identificação das forças que atuam nos movimentos circulares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noção de força centrípeta e sua quantificação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "A hidrostática: aspectos históricos e variáveis relevantes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Empuxo",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Princípios de Pascal, Arquimedes e Stevin: condições de flutuação, relação entre diferença de nível e pressão hidrostática",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Energia, trabalho e potência",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Energia, trabalho e potência - Conceituação de trabalho, energia e potência. Conceito de energia potencial e de energia cinética. Conservação de energia mecânica e dissipação de energia. Trabalho da força gravitacional e energia potencial gravitacional. Forças conservativas e dissipativas",
+     "topicos": [
+      {
+       "nome": "Conceituação de trabalho, energia e potência",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceito de energia potencial e de energia cinética",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conservação de energia mecânica e dissipação de energia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Trabalho da força gravitacional e energia potencial gravitacional",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Forças conservativas e dissipativas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "A Mecânica e o funcionamento do Universo",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "A Mecânica e o funcionamento do Universo - Força peso. Aceleração gravitacional. Lei da Gravitação Universal. Leis de Kepler. Movimentos de corpos celestes. Influência na Terra: marés e variações climáticas. Concepções históricas sobre a origem do universo e sua evolução",
+     "topicos": [
+      {
+       "nome": "Força peso",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aceleração gravitacional",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lei da Gravitação Universal",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Leis de Kepler",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Movimentos de corpos celestes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Influência na Terra: marés e variações climáticas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Concepções históricas sobre a origem do universo e sua evolução",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Fenômenos Elétricos e Magnéticos",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Fenômenos Elétricos e Magnéticos - Carga elétrica e corrente elétrica. Lei de Coulomb. Campo elétrico e potencial elétrico. Linhas de campo. Superfícies equipotenciais. Poder das pontas. Blindagem. Capacitores. Efeito Joule. Lei de Ohm. Resistência elétrica e resistividade. Relações entre grandezas elétricas: tensão, corrente, potência e energia. Circuitos elétricos simples. Correntes contínua e alternada. Medidores elétricos. Representação gráfica de circuitos. Símbolos convencionais. Potência e consumo de energia em dispositivos elétricos. Campo magnético. Imãs permanentes. Linhas de campo magnético. Campo magnético terrestre",
+     "topicos": [
+      {
+       "nome": "Carga elétrica e corrente elétrica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lei de Coulomb",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Campo elétrico e potencial elétrico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Linhas de campo",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Superfícies equipotenciais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Poder das pontas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Blindagem",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Capacitores",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Efeito Joule",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lei de Ohm",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Resistência elétrica e resistividade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Relações entre grandezas elétricas: tensão, corrente, potência e energia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Circuitos elétricos simples",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Correntes contínua e alternada",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Medidores elétricos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Representação gráfica de circuitos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Símbolos convencionais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Potência e consumo de energia em dispositivos elétricos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Campo magnético",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Imãs permanentes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Linhas de campo magnético",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Campo magnético terrestre",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Oscilações, ondas, óptica e radiação",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Oscilações, ondas, óptica e radiação - Feixes e frentes de ondas. Reflexão e refração. Óptica geométrica: lentes e espelhos. Formação de imagens. Instrumentos ópticos simples. Fenômenos ondulatórios. Pulsos e ondas. Período, frequência, ciclo. Propagação: relação entre velocidade, frequência e comprimento de onda. Ondas em diferentes meios de propagação",
+     "topicos": [
+      {
+       "nome": "Feixes e frentes de ondas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Reflexão e refração",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Óptica geométrica: lentes e espelhos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Formação de imagens",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Instrumentos ópticos simples",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fenômenos ondulatórios",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Pulsos e ondas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Período, frequência, ciclo",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Propagação: relação entre velocidade, frequência e comprimento de onda",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ondas em diferentes meios de propagação",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "O calor e os fenômenos térmicos",
+     "disciplinas": [
+      "Física"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "O calor e os fenômenos térmicos - Conceitos de calor e de temperatura. Escalas termométricas. Transferência de calor e equilíbrio térmico. Capacidade calorífica e calor específico. Condução do calor. Dilatação térmica. Mudanças de estado físico e calor latente de transformação. Comportamento de Gases ideais. Máquinas térmicas. Ciclo de Carnot. Leis da Termodinâmica. Aplicações e fenômenos térmicos de uso cotidiano. Compreensão de fenômenos climáticos relacionados ao ciclo da água",
+     "topicos": [
+      {
+       "nome": "Conceitos de calor e de temperatura",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Escalas termométricas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Transferência de calor e equilíbrio térmico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Capacidade calorífica e calor específico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Condução do calor",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Dilatação térmica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Mudanças de estado físico e calor latente de transformação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Comportamento de Gases ideais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Máquinas térmicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ciclo de Carnot",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Leis da Termodinâmica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aplicações e fenômenos térmicos de uso cotidiano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Compreensão de fenômenos climáticos relacionados ao ciclo da água",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Transformações Químicas",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Transformações Químicas - Evidências de transformações químicas. Interpretando transformações químicas. Sistemas Gasosos: Lei dos gases. Equação geral dos gases ideais, Princípio de Avogadro, conceito de molécula; massa molar, volume molar dos gases. Teoria cinética dos gases. Misturas gasosas. Modelo corpuscular da matéria. Modelo atômico de Dalton. Natureza elétrica da matéria: Modelo Atômico de Thomson, Rutherford, Rutherford-Bohr. Átomos e sua estrutura. Número atômico, número de massa, isótopos, massa atômica. Elementos químicos e Tabela Periódica. Reações químicas",
+     "topicos": [
+      {
+       "nome": "Evidências de transformações químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Interpretando transformações químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Sistemas Gasosos: Lei dos gases",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Equação geral dos gases ideais, Princípio de Avogadro, conceito de molécula; massa molar, volume molar dos gases",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Teoria cinética dos gases",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Misturas gasosas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Modelo corpuscular da matéria",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Modelo atômico de Dalton",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Natureza elétrica da matéria: Modelo Atômico de Thomson, Rutherford, Rutherford-Bohr",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Átomos e sua estrutura",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Número atômico, número de massa, isótopos, massa atômica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Elementos químicos e Tabela Periódica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Reações químicas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Representação das transformações químicas",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Representação das transformações químicas - Fórmulas químicas. Balanceamento de equações químicas. Aspectos quantitativos das transformações químicas. Leis ponderais das reações químicas. Determinação de fórmulas químicas. Grandezas Químicas: massa, volume, mol, massa molar, constante de Avogadro. Cálculos estequiométricos",
+     "topicos": [
+      {
+       "nome": "Fórmulas químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Balanceamento de equações químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos quantitativos das transformações químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Leis ponderais das reações químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Determinação de fórmulas químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Grandezas Químicas: massa, volume, mol, massa molar, constante de Avogadro",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Cálculos estequiométricos",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Materiais, suas propriedades e usos",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Materiais, suas propriedades e usos - Propriedades de materiais. Estados físicos de materiais. Mudanças de estado. Misturas: tipos e métodos de separação. Substâncias químicas: classificação e características gerais. Metais e Ligas metálicas. Ferro, cobre e alumínio. Ligações metálicas. Substâncias iônicas: características e propriedades. Substâncias iônicas do grupo: cloreto, carbonato, nitrato e sulfato. Ligação iônica. Substâncias moleculares: características e propriedades. Substâncias moleculares: H₂, O₂, N₂, Cl₂, NH₃, H₂O, HCl, CH₄. Ligação Covalente. Polaridade de moléculas. Forças intermoleculares. Relação entre estruturas, propriedade e aplicação das substâncias",
+     "topicos": [
+      {
+       "nome": "Propriedades de materiais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Estados físicos de materiais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Mudanças de estado",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Misturas: tipos e métodos de separação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Substâncias químicas: classificação e características gerais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Metais e Ligas metálicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ferro, cobre e alumínio",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ligações metálicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Substâncias iônicas: características e propriedades",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Substâncias iônicas do grupo: cloreto, carbonato, nitrato e sulfato",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ligação iônica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Substâncias moleculares: características e propriedades",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Substâncias moleculares: H₂, O₂, N₂, Cl₂, NH₃, H₂O, HCl, CH₄",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ligação Covalente",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Polaridade de moléculas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Forças intermoleculares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Relação entre estruturas, propriedade e aplicação das substâncias",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Água",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Água - Ocorrência e importância na vida animal e vegetal. Ligação, estrutura e propriedades. Sistemas em Solução Aquosa: Soluções verdadeiras, soluções coloidais e suspensões. Solubilidade. Concentração das soluções. Aspectos qualitativos das propriedades coligativas das soluções. Ácidos, Bases, Sais e Óxidos: definição, classificação, propriedades, formulação e nomenclatura. Conceitos de ácidos e base. Principais propriedades dos ácidos e bases: indicadores, condutibilidade elétrica, reação com metais, reação de neutralização",
+     "topicos": [
+      {
+       "nome": "Ocorrência e importância na vida animal e vegetal",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ligação, estrutura e propriedades",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Sistemas em Solução Aquosa: Soluções verdadeiras, soluções coloidais e suspensões",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Solubilidade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Concentração das soluções",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos qualitativos das propriedades coligativas das soluções",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ácidos, Bases, Sais e Óxidos: definição, classificação, propriedades, formulação e nomenclatura",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceitos de ácidos e base",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Principais propriedades dos ácidos e bases: indicadores, condutibilidade elétrica, reação com metais, reação de neutralização",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Transformações Químicas e Energia",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Transformações Químicas e Energia - Transformações químicas e energia calorífica. Calor de reação. Entalpia. Equações termoquímicas. Lei de Hess. Transformações químicas e energia elétrica. Reação de oxirredução. Potenciais padrão de redução. Pilha. Eletrólise. Leis de Faraday. Transformações nucleares. Conceitos fundamentais da radioatividade. Reações de fissão e fusão nuclear. Desintegração radioativa e radioisótopos",
+     "topicos": [
+      {
+       "nome": "Transformações químicas e energia calorífica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Calor de reação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Entalpia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Equações termoquímicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lei de Hess",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Transformações químicas e energia elétrica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Reação de oxirredução",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Potenciais padrão de redução",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Pilha",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Eletrólise",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Leis de Faraday",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Transformações nucleares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conceitos fundamentais da radioatividade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Reações de fissão e fusão nuclear",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Desintegração radioativa e radioisótopos",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Dinâmica das Transformações Químicas",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Dinâmica das Transformações Químicas - Transformações Químicas e velocidade. Velocidade de reação. Energia de ativação. Fatores que alteram a velocidade de reação: concentração, pressão, temperatura e catalisador",
+     "topicos": [
+      {
+       "nome": "Transformações Químicas e velocidade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Velocidade de reação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Energia de ativação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fatores que alteram a velocidade de reação: concentração, pressão, temperatura e catalisador",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Transformação Química e Equilíbrio",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Transformação Química e Equilíbrio - Caracterização do sistema em equilíbrio. Constante de equilíbrio. Produto iônico da água, equilíbrio ácido-base e pH. Solubilidade dos sais e hidrólise. Fatores que alteram o sistema em equilíbrio. Aplicação da velocidade e do equilíbrio químico no cotidiano",
+     "topicos": [
+      {
+       "nome": "Caracterização do sistema em equilíbrio",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Constante de equilíbrio",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Produto iônico da água, equilíbrio ácido-base e pH. Solubilidade dos sais e hidrólise",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fatores que alteram o sistema em equilíbrio",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aplicação da velocidade e do equilíbrio químico no cotidiano",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Compostos de Carbono",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Compostos de Carbono - Características gerais dos compostos orgânicos. Principais funções orgânicas. Estrutura e propriedades de Hidrocarbonetos. Estrutura e propriedades de compostos orgânicos oxigenados. Fermentação. Estrutura e propriedades de compostos orgânicos nitrogenados. Macromoléculas naturais e sintéticas. Noções básicas sobre polímeros. Amido, glicogênio e celulose. Borracha natural e sintética. Polietileno, poliestireno, PVC, Teflon, náilon. Óleos e gorduras, sabões e detergentes sintéticos. Proteínas e enzimas",
+     "topicos": [
+      {
+       "nome": "Características gerais dos compostos orgânicos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Principais funções orgânicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Estrutura e propriedades de Hidrocarbonetos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Estrutura e propriedades de compostos orgânicos oxigenados",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fermentação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Estrutura e propriedades de compostos orgânicos nitrogenados",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Macromoléculas naturais e sintéticas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noções básicas sobre polímeros",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Amido, glicogênio e celulose",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Borracha natural e sintética",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Polietileno, poliestireno, PVC, Teflon, náilon",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Óleos e gorduras, sabões e detergentes sintéticos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Proteínas e enzimas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Relações da Química com as Tecnologias, a Sociedade e o Meio Ambiente",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Relações da Química com as Tecnologias, a Sociedade e o Meio Ambiente - Química no cotidiano. Química na agricultura e na saúde. Química nos alimentos. Química e ambiente. Aspectos científico-tecnológicos, socioeconômicos e ambientais associados à obtenção ou produção de substâncias químicas. Indústria Química: obtenção e utilização do cloro, hidróxido de sódio, ácido sulfúrico, amônia e ácido nítrico. Mineração e Metalurgia. Poluição e tratamento de água. Poluição atmosférica. Contaminação e proteção do ambiente",
+     "topicos": [
+      {
+       "nome": "Química no cotidiano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Química na agricultura e na saúde",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Química nos alimentos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Química e ambiente",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos científico-tecnológicos, socioeconômicos e ambientais associados à obtenção ou produção de substâncias químicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Indústria Química: obtenção e utilização do cloro, hidróxido de sódio, ácido sulfúrico, amônia e ácido nítrico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Mineração e Metalurgia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Poluição e tratamento de água",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Poluição atmosférica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Contaminação e proteção do ambiente",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Energias Químicas no Cotidiano",
+     "disciplinas": [
+      "Química"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Energias Químicas no Cotidiano - Petróleo, gás natural e carvão. Madeira e hulha. Biomassa. Biocombustíveis. Impactos ambientais de combustíveis fosseis. Energia nuclear. Lixo atômico. Vantagens e desvantagens do uso de energia nuclear",
+     "topicos": [
+      {
+       "nome": "Petróleo, gás natural e carvão",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Madeira e hulha",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biomassa",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biocombustíveis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Impactos ambientais de combustíveis fosseis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Energia nuclear",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Lixo atômico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Vantagens e desvantagens do uso de energia nuclear",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Moléculas, células e tecidos",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Moléculas, células e tecidos - Estrutura e fisiologia celular: membrana, citoplasma e núcleo. Divisão celular. Aspectos bioquímicos das estruturas celulares. Aspectos gerais do metabolismo celular. Metabolismo energético: fotossíntese e respiração. Codificação da informação genética. Síntese proteica. Diferenciação celular. Principais tecidos animais e vegetais. Origem e evolução das células. Noções sobre células-tronco, clonagem e tecnologia do DNA recombinante. Aplicações de biotecnologia na produção de alimentos, fármacos e componentes biológicos. Aplicações de tecnologias relacionadas ao DNA a investigações científicas, determinação da paternidade, investigação criminal e identificação de indivíduos. Aspectos éticos relacionados ao desenvolvimento biotecnológico. Biotecnologia e sustentabilidade",
+     "topicos": [
+      {
+       "nome": "Estrutura e fisiologia celular: membrana, citoplasma e núcleo",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Divisão celular",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos bioquímicos das estruturas celulares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos gerais do metabolismo celular",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Metabolismo energético: fotossíntese e respiração",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Codificação da informação genética",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Síntese proteica",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Diferenciação celular",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Principais tecidos animais e vegetais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Origem e evolução das células",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noções sobre células-tronco, clonagem e tecnologia do DNA recombinante",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aplicações de biotecnologia na produção de alimentos, fármacos e componentes biológicos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aplicações de tecnologias relacionadas ao DNA a investigações científicas, determinação da paternidade, investigação criminal e identificação de indivíduos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos éticos relacionados ao desenvolvimento biotecnológico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biotecnologia e sustentabilidade",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Hereditariedade e diversidade da vida",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Hereditariedade e diversidade da vida - Princípios básicos que regem a transmissão de características hereditárias. Concepções pré-mendelianas sobre a hereditariedade. Aspectos genéticos do funcionamento do corpo humano. Antígenos e anticorpos. Grupos sanguíneos, transplantes e doenças autoimunes. Neoplasias e a influência de fatores ambientais. Mutações gênicas e cromossômicas. Aconselhamento genético. Fundamentos genéticos da evolução. Aspectos genéticos da formação e manutenção da diversidade biológica",
+     "topicos": [
+      {
+       "nome": "Princípios básicos que regem a transmissão de características hereditárias",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Concepções pré-mendelianas sobre a hereditariedade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos genéticos do funcionamento do corpo humano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Antígenos e anticorpos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Grupos sanguíneos, transplantes e doenças autoimunes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Neoplasias e a influência de fatores ambientais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Mutações gênicas e cromossômicas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aconselhamento genético",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fundamentos genéticos da evolução",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos genéticos da formação e manutenção da diversidade biológica",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Identidade dos seres vivos",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Identidade dos seres vivos - Níveis de organização dos seres vivos. Vírus, procariontes e eucariontes. Autótrofos e heterótrofos. Seres unicelulares e pluricelulares. Sistemática e as grandes linhas da evolução dos seres vivos. Tipos de ciclo de vida. Evolução e padrões anatômicos e fisiológicos observados nos seres vivos. Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes. Embriologia, anatomia e fisiologia humana. Evolução humana. Biotecnologia e sistemática",
+     "topicos": [
+      {
+       "nome": "Níveis de organização dos seres vivos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Vírus, procariontes e eucariontes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Autótrofos e heterótrofos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Seres unicelulares e pluricelulares",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Sistemática e as grandes linhas da evolução dos seres vivos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Tipos de ciclo de vida",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Evolução e padrões anatômicos e fisiológicos observados nos seres vivos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Embriologia, anatomia e fisiologia humana",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Evolução humana",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biotecnologia e sistemática",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Ecologia e ciências ambientais",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Ecologia e ciências ambientais - Ecossistemas. Fatores bióticos e abióticos. Habitat e nicho ecológico. A comunidade biológica: teia alimentar, sucessão e comunidade clímax. Dinâmica de populações. Interações entre os seres vivos. Ciclos biogeoquímicos. Fluxo de energia no ecossistema. Biogeografia. Biomas brasileiros. Exploração e uso de recursos naturais. Problemas ambientais: mudanças climáticas, efeito estufa; desmatamento; erosão; poluição da água, do solo e do ar. Conservação e recuperação de ecossistemas. Conservação da biodiversidade. Tecnologias ambientais. Noções de saneamento básico. Noções de legislação ambiental: água, florestas, unidades de conservação; biodiversidade",
+     "topicos": [
+      {
+       "nome": "Ecossistemas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fatores bióticos e abióticos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Habitat e nicho ecológico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "A comunidade biológica: teia alimentar, sucessão e comunidade clímax",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Dinâmica de populações",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Interações entre os seres vivos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Ciclos biogeoquímicos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Fluxo de energia no ecossistema",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biogeografia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Biomas brasileiros",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Exploração e uso de recursos naturais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Problemas ambientais: mudanças climáticas, efeito estufa; desmatamento; erosão; poluição da água, do solo e do ar",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conservação e recuperação de ecossistemas",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Conservação da biodiversidade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Tecnologias ambientais",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noções de saneamento básico",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noções de legislação ambiental: água, florestas, unidades de conservação; biodiversidade",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Origem e evolução da vida",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Origem e evolução da vida - A biologia como ciência: história, métodos, técnicas e experimentação. Hipóteses sobre a origem do Universo, da Terra e dos seres vivos. Teorias de evolução. Explicações pré-darwinistas para a modificação das espécies. A teoria evolutiva de Charles Darwin. Teoria sintética da evolução. Seleção artificial e seu impacto sobre ambientes naturais e sobre populações humanas",
+     "topicos": [
+      {
+       "nome": "A biologia como ciência: história, métodos, técnicas e experimentação",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Hipóteses sobre a origem do Universo, da Terra e dos seres vivos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Teorias de evolução",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Explicações pré-darwinistas para a modificação das espécies",
+       "origem": "matriz"
+      },
+      {
+       "nome": "A teoria evolutiva de Charles Darwin",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Teoria sintética da evolução",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Seleção artificial e seu impacto sobre ambientes naturais e sobre populações humanas",
+       "origem": "matriz"
+      }
+     ]
+    },
+    {
+     "nome": "Qualidade de vida das populações humanas",
+     "disciplinas": [
+      "Biologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Qualidade de vida das populações humanas - Aspectos biológicos da pobreza e do desenvolvimento humano. Indicadores sociais, ambientais e econômicos. Índice de desenvolvimento humano. Principais doenças que afetam a população brasileira: caracterização, prevenção e profilaxia. Noções de primeiros socorros. Doenças sexualmente transmissíveis. Aspectos sociais da biologia: uso indevido de drogas; gravidez na adolescência; obesidade. Violência e segurança pública. Exercícios físicos e vida saudável. Aspectos biológicos do desenvolvimento sustentável. Legislação e cidadania",
+     "topicos": [
+      {
+       "nome": "Aspectos biológicos da pobreza e do desenvolvimento humano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Indicadores sociais, ambientais e econômicos",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Índice de desenvolvimento humano",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Principais doenças que afetam a população brasileira: caracterização, prevenção e profilaxia",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Noções de primeiros socorros",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Doenças sexualmente transmissíveis",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos sociais da biologia: uso indevido de drogas; gravidez na adolescência; obesidade",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Violência e segurança pública",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Exercícios físicos e vida saudável",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Aspectos biológicos do desenvolvimento sustentável",
+       "origem": "matriz"
+      },
+      {
+       "nome": "Legislação e cidadania",
+       "origem": "matriz"
+      }
+     ]
+    }
+   ]
+  },
+  "CH": {
+   "nome": "Ciências Humanas e suas Tecnologias",
+   "conteudos": [
+    {
+     "nome": "Diversidade cultural, conflitos e vida em sociedade",
+     "disciplinas": [
+      "Filosofia",
+      "História",
+      "Sociologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Diversidade cultural, conflitos e vida em sociedade",
+     "topicos": [
+      {
+       "nome": "Cultura Material e imaterial",
+       "texto_matriz": "Cultura Material e imaterial; patrimônio e diversidade cultural no Brasil",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "A Conquista da América",
+       "texto_matriz": "A Conquista da América. Conflitos entre europeus e indígenas na América colonial. A escravidão e formas de resistência indígena e africana na América",
+       "origem": "matriz",
+       "disciplinas": [
+        "História"
+       ]
+      },
+      {
+       "nome": "História cultural dos povos africanos",
+       "texto_matriz": "História cultural dos povos africanos. A luta dos negros no Brasil e o negro na formação da sociedade brasileira",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "História dos povos indígenas e a formação sócio-cultural brasileira",
+       "texto_matriz": "História dos povos indígenas e a formação sócio-cultural brasileira",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "Movimentos culturais no mundo ocidental e seus impactos na vida política e social",
+       "texto_matriz": "Movimentos culturais no mundo ocidental e seus impactos na vida política e social",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Filosofia",
+        "Sociologia"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "disciplinas": [
+      "Filosofia",
+      "Geografia",
+      "História",
+      "Sociologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Formas de organização social, movimentos sociais, pensamento político e ação do Estado",
+     "topicos": [
+      {
+       "nome": "Cidadania e democracia na Antiguidade",
+       "texto_matriz": "Cidadania e democracia na Antiguidade; Estado e direitos do cidadão a partir da Idade Moderna; democracia direta, indireta e representativa",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Filosofia",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "Revoluções sociais e políticas na Europa Moderna",
+       "texto_matriz": "Revoluções sociais e políticas na Europa Moderna",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Filosofia"
+       ]
+      },
+      {
+       "nome": "Formação territorial brasileira",
+       "texto_matriz": "Formação territorial brasileira; as regiões brasileiras; políticas de reordenamento territorial",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "História"
+       ]
+      },
+      {
+       "nome": "As lutas pela conquista da independência política das colônias da América",
+       "texto_matriz": "As lutas pela conquista da independência política das colônias da América",
+       "origem": "matriz",
+       "disciplinas": [
+        "História"
+       ]
+      },
+      {
+       "nome": "Grupos sociais em conflito no Brasil imperial e a construção da nação",
+       "texto_matriz": "Grupos sociais em conflito no Brasil imperial e a construção da nação",
+       "origem": "matriz",
+       "disciplinas": [
+        "História"
+       ]
+      },
+      {
+       "nome": "O desenvolvimento do pensamento liberal na sociedade capitalista e seus críticos nos séculos XIX e XX",
+       "texto_matriz": "O desenvolvimento do pensamento liberal na sociedade capitalista e seus críticos nos séculos XIX e XX",
+       "origem": "matriz",
+       "disciplinas": [
+        "Filosofia",
+        "Sociologia",
+        "História"
+       ]
+      },
+      {
+       "nome": "Políticas de colonização, migração, imigração e emigração no Brasil nos séculos XIX e XX",
+       "texto_matriz": "Políticas de colonização, migração, imigração e emigração no Brasil nos séculos XIX e XX",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "História"
+       ]
+      },
+      {
+       "nome": "A atuação dos grupos sociais e os grandes processos revolucionários do século XX",
+       "texto_matriz": "A atuação dos grupos sociais e os grandes processos revolucionários do século XX: Revolução Bolchevique, Revolução Chinesa, Revolução Cubana",
+       "origem": "matriz",
+       "disciplinas": [
+        "História"
+       ]
+      },
+      {
+       "nome": "Geopolítica e conflitos entre os séculos XIX e XX",
+       "texto_matriz": "Geopolítica e conflitos entre os séculos XIX e XX: Imperialismo, a ocupação da Ásia e da África, as Guerras Mundiais e a Guerra Fria",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "Os sistemas totalitários na Europa do século XX",
+       "texto_matriz": "Os sistemas totalitários na Europa do século XX: nazi-fascista, franquismo, salazarismo e stalinismo. Ditaduras políticas na América Latina: Estado Novo no Brasil e ditaduras na América",
+       "origem": "matriz",
+       "disciplinas": [
+        "História"
+       ]
+      },
+      {
+       "nome": "Conflitos político-culturais pós-Guerra Fria, reorganização política internacional e os organismos multilaterais nos séculos XX e XXI",
+       "texto_matriz": "Conflitos político-culturais pós-Guerra Fria, reorganização política internacional e os organismos multilaterais nos séculos XX e XXI",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "História"
+       ]
+      },
+      {
+       "nome": "A luta pela conquista de direitos pelos cidadãos",
+       "texto_matriz": "A luta pela conquista de direitos pelos cidadãos: direitos civis, humanos, políticos e sociais. Direitos sociais nas constituições brasileiras. Políticas afirmativas",
+       "origem": "matriz",
+       "disciplinas": [
+        "Sociologia",
+        "História",
+        "Filosofia"
+       ]
+      },
+      {
+       "nome": "Vida urbana",
+       "texto_matriz": "Vida urbana: redes e hierarquia nas cidades, pobreza e segregação espacial",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "Sociologia"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Características e transformações das estruturas produtivas",
+     "disciplinas": [
+      "Geografia",
+      "História",
+      "Sociologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Características e transformações das estruturas produtivas",
+     "topicos": [
+      {
+       "nome": "Diferentes formas de organização da produção",
+       "texto_matriz": "Diferentes formas de organização da produção: escravismo antigo, feudalismo, capitalismo, socialismo e suas diferentes experiências",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "Economia agro-exportadora brasileira",
+       "texto_matriz": "Economia agro-exportadora brasileira: complexo açucareiro; a mineração no período colonial; a economia cafeeira; a borracha na Amazônia",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "Revolução Industrial",
+       "texto_matriz": "Revolução Industrial: criação do sistema de fábrica na Europa e transformações no processo de produção. Formação do espaço urbano-industrial. Transformações na estrutura produtiva no século XX: o fordismo, o toyotismo, as novas técnicas de produção e seus impactos",
+       "origem": "matriz",
+       "disciplinas": [
+        "História",
+        "Geografia",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "A industrialização brasileira, a urbanização e as transformações sociais e trabalhistas",
+       "texto_matriz": "A industrialização brasileira, a urbanização e as transformações sociais e trabalhistas",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "História",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "A globalização e as novas tecnologias de telecomunicação e suas consequências econômicas, políticas e sociais",
+       "texto_matriz": "A globalização e as novas tecnologias de telecomunicação e suas consequências econômicas, políticas e sociais",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "Produção e transformação dos espaços agrários",
+       "texto_matriz": "Produção e transformação dos espaços agrários. Modernização da agricultura e estruturas agrárias tradicionais. O agronegócio, a agricultura familiar, os assalariados do campo e as lutas sociais no campo. A relação campo-cidade",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "disciplinas": [
+      "Geografia",
+      "Sociologia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Os domínios naturais e a relação do ser humano com o ambiente",
+     "topicos": [
+      {
+       "nome": "Relação homem-natureza, a apropriação dos recursos naturais pelas sociedades ao longo do tempo",
+       "texto_matriz": "Relação homem-natureza, a apropriação dos recursos naturais pelas sociedades ao longo do tempo. Impacto ambiental das atividades econômicas no Brasil. Recursos minerais e energéticos: exploração e impactos. Recursos hídricos; bacias hidrográficas e seus aproveitamentos",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "As questões ambientais contemporâneas",
+       "texto_matriz": "As questões ambientais contemporâneas: mudança climática, ilhas de calor, efeito estufa, chuva ácida, a destruição da camada de ozônio. A nova ordem ambiental internacional; políticas territoriais ambientais; uso e conservação dos recursos naturais, unidades de conservação, corredores ecológicos, zoneamento ecológico e econômico",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "Origem e evolução do conceito de sustentabilidade",
+       "texto_matriz": "Origem e evolução do conceito de sustentabilidade",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia",
+        "Sociologia"
+       ]
+      },
+      {
+       "nome": "Estrutura interna da terra",
+       "texto_matriz": "Estrutura interna da terra. Estruturas do solo e do relevo; agentes internos e externos modeladores do relevo",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "Situação geral da atmosfera e classificação climática",
+       "texto_matriz": "Situação geral da atmosfera e classificação climática. As características climáticas do território brasileiro",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      },
+      {
+       "nome": "Os grandes domínios da vegetação no Brasil e no mundo",
+       "texto_matriz": "Os grandes domínios da vegetação no Brasil e no mundo",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Representação espacial",
+     "disciplinas": [
+      "Geografia"
+     ],
+     "origem": "matriz",
+     "texto_matriz": "Representação espacial",
+     "topicos": [
+      {
+       "nome": "Projeções cartográficas",
+       "texto_matriz": "Projeções cartográficas; leitura de mapas temáticos, físicos e políticos; tecnologias modernas aplicadas à cartografia",
+       "origem": "matriz",
+       "disciplinas": [
+        "Geografia"
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Filosofia: períodos e temas (complemento)",
+     "disciplinas": [
+      "Filosofia"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Filosofia antiga",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia medieval",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia moderna",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia contemporânea",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Ética e moral",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia política",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Teoria do conhecimento",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Estética",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Lógica e argumentação",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia da ciência",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Filosofia da linguagem",
+       "origem": "complemento"
+      }
+     ]
+    },
+    {
+     "nome": "Sociologia: conceitos e temas (complemento)",
+     "disciplinas": [
+      "Sociologia"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Cultura, identidade e alteridade",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Indústria cultural e meios de comunicação",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Trabalho e sociedade",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Desigualdade e estratificação social",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Relações étnico-raciais",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Gênero e sexualidade",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Movimentos sociais",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Poder, Estado e cidadania",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Ciência, tecnologia e sociedade",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Teoria sociológica clássica",
+       "origem": "complemento"
+      }
+     ]
+    },
+    {
+     "nome": "Geografia: conceitos e população (complemento)",
+     "disciplinas": [
+      "Geografia"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Conceitos geográficos (espaço, lugar, território, paisagem, região)",
+       "origem": "complemento"
+      },
+      {
+       "nome": "População e demografia",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Fontes de energia e matriz energética",
+       "origem": "complemento"
+      }
+     ]
+    },
+    {
+     "nome": "História: períodos e historiografia (complemento)",
+     "disciplinas": [
+      "História"
+     ],
+     "origem": "complemento",
+     "topicos": [
+      {
+       "nome": "Pré-história e Antiguidade oriental",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Grécia e Roma antigas",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Idade Média",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Idade Moderna",
+       "origem": "complemento"
+      },
+      {
+       "nome": "América pré-colombiana",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Brasil Colônia",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Brasil Império",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Brasil República (1889-1930)",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Era Vargas",
+       "origem": "complemento"
+      },
+      {
+       "nome": "República populista (1945-1964)",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Ditadura militar (1964-1985)",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Redemocratização e Nova República",
+       "origem": "complemento"
+      },
+      {
+       "nome": "Historiografia e fontes históricas",
+       "origem": "complemento"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

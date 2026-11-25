@@ -48,15 +48,15 @@ def main() -> None:
             continue
         ano, recorte, prova, _, num = m.groups()
         tipo = "pacote" if recorte else "original"
-        bruto = (RAIZ / caminho).read_bytes()
-        mime, dados = "png", bruto
-        im = Image.open(io.BytesIO(bruto)).convert("RGB")
-        # foto (muitas cores): JPEG, bem menor; desenho e texto: PNG, sem borrão
+        im = Image.open(RAIZ / caminho).convert("RGB")
+        # WebP: ~4x menor que o PNG. Foto (muitas cores): com perda, q80;
+        # desenho e texto: sem perda, para não borrar traços e letras.
+        b = io.BytesIO()
         if im.getcolors(maxcolors=4096) is None:
-            b = io.BytesIO()
-            im.save(b, "JPEG", quality=85, optimize=True)
-            if b.tell() < len(bruto):
-                mime, dados = "jpeg", b.getvalue()
+            im.save(b, "WEBP", quality=80, method=6)
+        else:
+            im.save(b, "WEBP", lossless=True, method=6)
+        mime, dados = "webp", b.getvalue()
         grupo = f"{tipo}_{prova}_{int(num) // POR_PACOTE[tipo]:02d}"
         pacotes[(ano, grupo)][Path(caminho).name] = f"data:image/{mime};base64," + base64.b64encode(dados).decode()
 

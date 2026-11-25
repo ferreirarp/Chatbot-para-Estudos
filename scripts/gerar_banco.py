@@ -78,6 +78,35 @@ def nivel(nota: float, esc: dict) -> str:
     return NIVEIS[max(0, min(len(NIVEIS) - 1, i))]
 
 
+TAXONOMIA = json.loads((DADOS / "taxonomia.json").read_text(encoding="utf-8"))
+_TOPICOS = {(c["nome"]): {t["nome"] for t in c["topicos"]} for a in TAXONOMIA["areas"].values() for c in a["conteudos"]}
+_DISC_DO_CONTEUDO = {c["nome"]: set(c["disciplinas"]) for a in TAXONOMIA["areas"].values() for c in a["conteudos"]}
+
+
+def validar_item(item: dict) -> str | None:
+    """Confere disciplina > conteúdo > tópico contra a taxonomia (o
+    subtópico é livre: a matriz não chega a esse nível)."""
+    if item.get("disciplina") not in DISCIPLINAS_VALIDAS:
+        return f"disciplina {item.get('disciplina')!r}"
+    if item.get("conteudo") not in _TOPICOS:
+        return f"conteúdo {item.get('conteudo')!r}"
+    if item["disciplina"] not in _DISC_DO_CONTEUDO[item["conteudo"]]:
+        return f"{item['disciplina']} não tem o conteúdo {item['conteudo']!r}"
+    if item.get("topico") and item["topico"] not in _TOPICOS[item["conteudo"]]:
+        return f"tópico {item['topico']!r}"
+    return None
+
+
+def taxonomia_compacta() -> dict:
+    """Árvore para a interface: área > conteúdo > tópicos (com disciplinas)."""
+    return {sig: [{"nome": c["nome"], "disciplinas": c["disciplinas"], "origem": c["origem"],
+                   "topicos": [{"nome": t["nome"], **({"disciplinas": t["disciplinas"]} if t.get("disciplinas") else {}),
+                                **({"origem": "complemento"} if t["origem"] == "complemento" else {})}
+                               for t in c["topicos"]]}
+                  for c in a["conteudos"]]
+            for sig, a in TAXONOMIA["areas"].items()}
+
+
 def aplicar_edicoes(banco: list[dict], avisos: list[str]) -> None:
     """Edições feitas na interface e incorporadas por aplicar_edicoes.py."""
     arq = DADOS / "edicoes" / "edicoes.json"
@@ -92,6 +121,15 @@ def aplicar_edicoes(banco: list[dict], avisos: list[str]) -> None:
             continue
         for k, v in ed.get("campos", {}).items():
             q[k] = v
+        if ed.get("campos", {}).get("classificacao"):
+            cl = q["classificacao"]
+            for item in cl:
+                problema = validar_item(item)
+                if problema:
+                    avisos.append(f"edição de {qid}: classificação fora da taxonomia ({problema})")
+            q["disciplinas"] = list(dict.fromkeys(i["disciplina"] for i in cl))
+            q["conteudos"] = list(dict.fromkeys(i["conteudo"] for i in cl if i.get("conteudo")))
+            q["classificacao_provisoria"] = False
         for chave, r in (ed.get("recortes") or {}).items():
             if chave.startswith("alt-") and q.get("alternativas_imagem"):
                 q["alternativas_imagem"][chave[4:]] = r["imagem"]
@@ -138,6 +176,14 @@ def main() -> None:
         for q in json.loads(arq.read_text(encoding="utf-8")):
             chave = str(q["numero"]) + (f"-{q['lingua_estrangeira']}" if q.get("lingua_estrangeira") else "")
             c = classif.get(chave, {})
+            classificacao = c.get("classificacao") or []
+            for item in classificacao:
+                problema = validar_item(item)
+                if problema:
+                    avisos.append(f"{q['id']}: classificação fora da taxonomia ({problema})")
+            if classificacao:
+                c = dict(c, disciplinas=list(dict.fromkeys(i["disciplina"] for i in classificacao)),
+                         conteudos=list(dict.fromkeys(i["conteudo"] for i in classificacao)))
             invalidas = [d for d in c.get("disciplinas", []) if d not in DISCIPLINAS_VALIDAS]
             if invalidas:
                 avisos.append(f"{q['id']}: disciplina fora da lista oficial: {invalidas}")
@@ -156,6 +202,9 @@ def main() -> None:
                 "area": q["area"],
                 "disciplinas": c.get("disciplinas", []),
                 "conteudos": c.get("conteudos", []),
+                # disciplina > conteúdo > tópico > subtópico (taxonomia da Matriz)
+                "classificacao": classificacao,
+                "classificacao_provisoria": bool(c.get("provisorio")),
                 "observacao": c.get("observacao"),
                 "lingua": q.get("lingua_estrangeira"),
                 "texto_base": q.get("texto_base"),
@@ -210,7 +259,8 @@ def main() -> None:
         "window.BANCO_QUESTOES = " + json.dumps(banco, ensure_ascii=False) + ";\n"
         "window.ESCALA_DIFICULDADE = " + json.dumps(escalas, ensure_ascii=False) + ";\n"
         "window.ESCALA_NOTAS = " + json.dumps(escalas_nota, ensure_ascii=False) + ";\n"
-        "window.TEXTOS_BASE = " + json.dumps(textos_base, ensure_ascii=False) + ";\n",
+        "window.TEXTOS_BASE = " + json.dumps(textos_base, ensure_ascii=False) + ";\n"
+        "window.TAXONOMIA = " + json.dumps(taxonomia_compacta(), ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
     print(f"{len(banco)} questões -> {SAIDA.relative_to(RAIZ)}")

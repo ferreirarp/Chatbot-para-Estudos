@@ -1,6 +1,6 @@
 {
  "prova": "2023/regular_D2_CD7",
- "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado. Mais de uma disciplina só quando a resolução exige as duas.",
+ "criterio": "Classificar pelo que a resolução exige (conceitos, procedimentos, atitudes, habilidades), não pelo contexto do enunciado.",
  "questoes": {
   "91": {
    "disciplinas": [
@@ -8,7 +8,16 @@
    ],
    "conteudos": [
     "Ecologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Ecologia e ciências ambientais",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "92": {
    "disciplinas": [
@@ -16,7 +25,16 @@
    ],
    "conteudos": [
     "Fisiologia humana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Embriologia, anatomia e fisiologia humana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "93": {
    "disciplinas": [
@@ -27,7 +45,22 @@
     "Energia",
     "Química ambiental"
    ],
-   "observacao": "Saber que a fissão gera calor sem combustível fóssil (Física) e descartar chuva ácida e gases tóxicos (Química ambiental)."
+   "observacao": "Saber que a fissão gera calor sem combustível fóssil (Física) e descartar chuva ácida e gases tóxicos (Química ambiental).",
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Energia, trabalho e potência",
+     "topico": null,
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "O calor e os fenômenos térmicos",
+     "topico": "Aplicações e fenômenos térmicos de uso cotidiano",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "94": {
    "disciplinas": [
@@ -35,7 +68,16 @@
    ],
    "conteudos": [
     "Química ambiental"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Relações da Química com as Tecnologias, a Sociedade e o Meio Ambiente",
+     "topico": "Química e ambiente",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "95": {
    "disciplinas": [
@@ -43,7 +85,16 @@
    ],
    "conteudos": [
     "Fisiologia animal"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "96": {
    "disciplinas": [
@@ -51,7 +102,16 @@
    ],
    "conteudos": [
     "Estequiometria"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Representação das transformações químicas",
+     "topico": "Cálculos estequiométricos",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "97": {
    "disciplinas": [
@@ -59,7 +119,16 @@
    ],
    "conteudos": [
     "Botânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "98": {
    "disciplinas": [
@@ -67,7 +136,16 @@
    ],
    "conteudos": [
     "Bioquímica e metabolismo"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Moléculas, células e tecidos",
+     "topico": "Aspectos gerais do metabolismo celular",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "99": {
    "disciplinas": [
@@ -75,7 +153,16 @@
    ],
    "conteudos": [
     "Saúde e parasitologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Qualidade de vida das populações humanas",
+     "topico": "Principais doenças que afetam a população brasileira: caracterização, prevenção e profilaxia",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "100": {
    "disciplinas": [
@@ -83,7 +170,16 @@
    ],
    "conteudos": [
     "Cinemática"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "topico": "Descrições do movimento e sua interpretação: quantificação do movimento e sua descrição matemática e gráfica",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "101": {
    "disciplinas": [
@@ -91,7 +187,16 @@
    ],
    "conteudos": [
     "Fisiologia humana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Embriologia, anatomia e fisiologia humana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "102": {
    "disciplinas": [
@@ -99,7 +204,16 @@
    ],
    "conteudos": [
     "Química orgânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Compostos de Carbono",
+     "topico": "Principais funções orgânicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "103": {
    "disciplinas": [
@@ -107,7 +221,16 @@
    ],
    "conteudos": [
     "Botânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "104": {
    "disciplinas": [
@@ -115,7 +238,16 @@
    ],
    "conteudos": [
     "Equilíbrio químico"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Transformação Química e Equilíbrio",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "105": {
    "disciplinas": [
@@ -123,7 +255,16 @@
    ],
    "conteudos": [
     "Botânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Funções vitais dos seres vivos e sua relação com a adaptação desses organismos a diferentes ambientes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "106": {
    "disciplinas": [
@@ -132,7 +273,22 @@
    "conteudos": [
     "Genética e biologia molecular",
     "Imunologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Hereditariedade e diversidade da vida",
+     "topico": "Princípios básicos que regem a transmissão de características hereditárias",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Hereditariedade e diversidade da vida",
+     "topico": "Antígenos e anticorpos",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "107": {
    "disciplinas": [
@@ -140,7 +296,16 @@
    ],
    "conteudos": [
     "Reprodução e embriologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Identidade dos seres vivos",
+     "topico": "Embriologia, anatomia e fisiologia humana",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "108": {
    "disciplinas": [
@@ -148,7 +313,16 @@
    ],
    "conteudos": [
     "Eletromagnetismo"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Fenômenos Elétricos e Magnéticos",
+     "topico": "Campo magnético",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "109": {
    "disciplinas": [
@@ -156,7 +330,16 @@
    ],
    "conteudos": [
     "Dinâmica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "topico": "Leis de Newton",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "110": {
    "disciplinas": [
@@ -164,7 +347,16 @@
    ],
    "conteudos": [
     "Estequiometria"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Representação das transformações químicas",
+     "topico": "Cálculos estequiométricos",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "111": {
    "disciplinas": [
@@ -172,7 +364,16 @@
    ],
    "conteudos": [
     "Ondulatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Fenômenos ondulatórios",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "112": {
    "disciplinas": [
@@ -181,7 +382,22 @@
    "conteudos": [
     "Ondulatória",
     "Óptica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Fenômenos ondulatórios",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Óptica geométrica: lentes e espelhos",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "113": {
    "disciplinas": [
@@ -192,7 +408,22 @@
     "Ondulatória",
     "Geometria espacial"
    ],
-   "observacao": "Intensidade = potência/área exige a área da esfera (4πr²) e notação científica."
+   "observacao": "Intensidade = potência/área exige a área da esfera (4πr²) e notação científica.",
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Fenômenos ondulatórios",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "comprimentos, áreas e volumes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "114": {
    "disciplinas": [
@@ -200,7 +431,16 @@
    ],
    "conteudos": [
     "Dinâmica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "topico": "Leis de Newton",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "115": {
    "disciplinas": [
@@ -208,7 +448,16 @@
    ],
    "conteudos": [
     "Ecologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Ecologia e ciências ambientais",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "116": {
    "disciplinas": [
@@ -216,7 +465,16 @@
    ],
    "conteudos": [
     "Ecologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Ecologia e ciências ambientais",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "117": {
    "disciplinas": [
@@ -227,7 +485,22 @@
     "Radiação e física moderna",
     "Razão, proporção e escala"
    ],
-   "observacao": "Interpretar a dose em Sv e montar a proporção anual."
+   "observacao": "Interpretar a dose em Sv e montar a proporção anual.",
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": null,
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "Conhecimentos básicos e fundamentais",
+     "topico": "Noções de ordem de grandeza",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "118": {
    "disciplinas": [
@@ -235,7 +508,16 @@
    ],
    "conteudos": [
     "Química orgânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Compostos de Carbono",
+     "topico": "Principais funções orgânicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "119": {
    "disciplinas": [
@@ -245,7 +527,16 @@
    "conteudos": [
     "Gases"
    ],
-   "observacao": "Equação de Clapeyron (PV = nRT) com conversão de unidades: conteúdo comum às duas disciplinas."
+   "observacao": "Equação de Clapeyron (PV = nRT) com conversão de unidades: conteúdo comum às duas disciplinas.",
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Transformações Químicas",
+     "topico": "Sistemas Gasosos: Lei dos gases",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "120": {
    "disciplinas": [
@@ -253,7 +544,16 @@
    ],
    "conteudos": [
     "Eletrodinâmica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Fenômenos Elétricos e Magnéticos",
+     "topico": "Relações entre grandezas elétricas: tensão, corrente, potência e energia",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "121": {
    "disciplinas": [
@@ -261,7 +561,16 @@
    ],
    "conteudos": [
     "Ligações químicas e polaridade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Materiais, suas propriedades e usos",
+     "topico": "Polaridade de moléculas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "122": {
    "disciplinas": [
@@ -269,7 +578,16 @@
    ],
    "conteudos": [
     "Termologia"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O calor e os fenômenos térmicos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "123": {
    "disciplinas": [
@@ -277,7 +595,16 @@
    ],
    "conteudos": [
     "Química orgânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Compostos de Carbono",
+     "topico": "Principais funções orgânicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "124": {
    "disciplinas": [
@@ -285,7 +612,16 @@
    ],
    "conteudos": [
     "Cinemática"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "topico": "Descrições do movimento e sua interpretação: quantificação do movimento e sua descrição matemática e gráfica",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "125": {
    "disciplinas": [
@@ -295,7 +631,22 @@
     "Genética e biologia molecular",
     "Citologia"
    ],
-   "observacao": "Formação de gametas na meiose de portadores de trissomia."
+   "observacao": "Formação de gametas na meiose de portadores de trissomia.",
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Hereditariedade e diversidade da vida",
+     "topico": "Princípios básicos que regem a transmissão de características hereditárias",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Moléculas, células e tecidos",
+     "topico": "Estrutura e fisiologia celular: membrana, citoplasma e núcleo",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "126": {
    "disciplinas": [
@@ -304,7 +655,22 @@
    "conteudos": [
     "Química orgânica",
     "Ácidos e bases"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Compostos de Carbono",
+     "topico": "Principais funções orgânicas",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Química",
+     "conteudo": "Água",
+     "topico": "Conceitos de ácidos e base",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "127": {
    "disciplinas": [
@@ -312,7 +678,16 @@
    ],
    "conteudos": [
     "Bioquímica e metabolismo"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Moléculas, células e tecidos",
+     "topico": "Aspectos gerais do metabolismo celular",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "128": {
    "disciplinas": [
@@ -320,7 +695,16 @@
    ],
    "conteudos": [
     "Ondulatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Fenômenos ondulatórios",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "129": {
    "disciplinas": [
@@ -328,7 +712,16 @@
    ],
    "conteudos": [
     "Ligações químicas e polaridade"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Materiais, suas propriedades e usos",
+     "topico": "Polaridade de moléculas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "130": {
    "disciplinas": [
@@ -339,7 +732,22 @@
     "Termologia",
     "Química ambiental"
    ],
-   "observacao": "Baixa condutividade térmica (Física) e redução de resíduo não biodegradável (Química ambiental)."
+   "observacao": "Baixa condutividade térmica (Física) e redução de resíduo não biodegradável (Química ambiental).",
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "O calor e os fenômenos térmicos",
+     "topico": null,
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "O calor e os fenômenos térmicos",
+     "topico": "Aplicações e fenômenos térmicos de uso cotidiano",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "131": {
    "disciplinas": [
@@ -347,7 +755,16 @@
    ],
    "conteudos": [
     "Soluções"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Água",
+     "topico": "Concentração das soluções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "132": {
    "disciplinas": [
@@ -358,7 +775,22 @@
     "Gases",
     "Termologia"
    ],
-   "observacao": "Transformação a volume constante (P proporcional a T): conteúdo comum às duas disciplinas."
+   "observacao": "Transformação a volume constante (P proporcional a T): conteúdo comum às duas disciplinas.",
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Transformações Químicas",
+     "topico": "Sistemas Gasosos: Lei dos gases",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "O calor e os fenômenos térmicos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "133": {
    "disciplinas": [
@@ -366,7 +798,16 @@
    ],
    "conteudos": [
     "Química orgânica"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Química",
+     "conteudo": "Compostos de Carbono",
+     "topico": "Principais funções orgânicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "134": {
    "disciplinas": [
@@ -376,7 +817,22 @@
     "Citologia",
     "Genética e biologia molecular"
    ],
-   "observacao": "Origem dos micronúcleos: cromossomos na divisão celular."
+   "observacao": "Origem dos micronúcleos: cromossomos na divisão celular.",
+   "classificacao": [
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Moléculas, células e tecidos",
+     "topico": "Estrutura e fisiologia celular: membrana, citoplasma e núcleo",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Biologia",
+     "conteudo": "Hereditariedade e diversidade da vida",
+     "topico": "Princípios básicos que regem a transmissão de características hereditárias",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "135": {
    "disciplinas": [
@@ -386,7 +842,22 @@
     "Ondulatória",
     "Cinemática"
    ],
-   "observacao": "Velocidade do som a partir dos tempos de eco."
+   "observacao": "Velocidade do som a partir dos tempos de eco.",
+   "classificacao": [
+    {
+     "disciplina": "Física",
+     "conteudo": "Oscilações, ondas, óptica e radiação",
+     "topico": "Fenômenos ondulatórios",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Física",
+     "conteudo": "O movimento, o equilíbrio e a descoberta de leis físicas",
+     "topico": "Descrições do movimento e sua interpretação: quantificação do movimento e sua descrição matemática e gráfica",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "136": {
    "disciplinas": [
@@ -394,7 +865,16 @@
    ],
    "conteudos": [
     "Geometria espacial"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "comprimentos, áreas e volumes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "137": {
    "disciplinas": [
@@ -402,7 +882,16 @@
    ],
    "conteudos": [
     "Estatística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "medidas de tendência central (médias, moda e mediana)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "138": {
    "disciplinas": [
@@ -410,7 +899,16 @@
    ],
    "conteudos": [
     "Probabilidade e combinatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "noções de probabilidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "139": {
    "disciplinas": [
@@ -419,7 +917,22 @@
    "conteudos": [
     "Leitura de gráficos e tabelas",
     "Sequências e progressões"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "sequências e progressões",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "140": {
    "disciplinas": [
@@ -427,7 +940,16 @@
    ],
    "conteudos": [
     "Estatística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "medidas de tendência central (médias, moda e mediana)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "141": {
    "disciplinas": [
@@ -435,7 +957,16 @@
    ],
    "conteudos": [
     "Probabilidade e combinatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "noções de probabilidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "142": {
    "disciplinas": [
@@ -443,7 +974,16 @@
    ],
    "conteudos": [
     "Geometria espacial"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "comprimentos, áreas e volumes",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "143": {
    "disciplinas": [
@@ -451,7 +991,16 @@
    ],
    "conteudos": [
     "Porcentagem e matemática financeira"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "porcentagem e juros",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "144": {
    "disciplinas": [
@@ -460,7 +1009,22 @@
    "conteudos": [
     "Geometria espacial",
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "comprimentos, áreas e volumes",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "145": {
    "disciplinas": [
@@ -468,7 +1032,16 @@
    ],
    "conteudos": [
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "146": {
    "disciplinas": [
@@ -477,7 +1050,22 @@
    "conteudos": [
     "Raciocínio lógico",
     "Sequências e progressões"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": null,
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "sequências e progressões",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "147": {
    "disciplinas": [
@@ -485,7 +1073,16 @@
    ],
    "conteudos": [
     "Razão, proporção e escala"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "razões e proporções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "148": {
    "disciplinas": [
@@ -493,7 +1090,16 @@
    ],
    "conteudos": [
     "Trigonometria"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "trigonometria do ângulo agudo",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "149": {
    "disciplinas": [
@@ -501,7 +1107,16 @@
    ],
    "conteudos": [
     "Razão, proporção e escala"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "razões e proporções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "150": {
    "disciplinas": [
@@ -510,7 +1125,22 @@
    "conteudos": [
     "Funções",
     "Porcentagem e matemática financeira"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "gráficos e funções",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "porcentagem e juros",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "151": {
    "disciplinas": [
@@ -518,7 +1148,16 @@
    ],
    "conteudos": [
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "152": {
    "disciplinas": [
@@ -526,7 +1165,16 @@
    ],
    "conteudos": [
     "Logaritmos e exponenciais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "funções algébricas do 1.º e do 2.º graus, polinomiais, racionais, exponenciais e logarítmicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "153": {
    "disciplinas": [
@@ -534,7 +1182,16 @@
    ],
    "conteudos": [
     "Aritmética e operações"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "operações em conjuntos numéricos (naturais, inteiros, racionais e reais)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "154": {
    "disciplinas": [
@@ -542,7 +1199,16 @@
    ],
    "conteudos": [
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "155": {
    "disciplinas": [
@@ -550,7 +1216,16 @@
    ],
    "conteudos": [
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "156": {
    "disciplinas": [
@@ -558,7 +1233,16 @@
    ],
    "conteudos": [
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "157": {
    "disciplinas": [
@@ -567,7 +1251,22 @@
    "conteudos": [
     "Estatística",
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "medidas de tendência central (médias, moda e mediana)",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "158": {
    "disciplinas": [
@@ -576,7 +1275,22 @@
    "conteudos": [
     "Aritmética e operações",
     "Porcentagem e matemática financeira"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "operações em conjuntos numéricos (naturais, inteiros, racionais e reais)",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "porcentagem e juros",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "159": {
    "disciplinas": [
@@ -584,7 +1298,16 @@
    ],
    "conteudos": [
     "Logaritmos e exponenciais"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "funções algébricas do 1.º e do 2.º graus, polinomiais, racionais, exponenciais e logarítmicas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "160": {
    "disciplinas": [
@@ -592,7 +1315,16 @@
    ],
    "conteudos": [
     "Probabilidade e combinatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "noções de probabilidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "161": {
    "disciplinas": [
@@ -600,7 +1332,16 @@
    ],
    "conteudos": [
     "Porcentagem e matemática financeira"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "porcentagem e juros",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "162": {
    "disciplinas": [
@@ -608,7 +1349,16 @@
    ],
    "conteudos": [
     "Funções"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "gráficos e funções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "163": {
    "disciplinas": [
@@ -617,7 +1367,22 @@
    "conteudos": [
     "Leitura de gráficos e tabelas",
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "164": {
    "disciplinas": [
@@ -625,7 +1390,16 @@
    ],
    "conteudos": [
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "165": {
    "disciplinas": [
@@ -633,7 +1407,16 @@
    ],
    "conteudos": [
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "166": {
    "disciplinas": [
@@ -642,7 +1425,22 @@
    "conteudos": [
     "Leitura de gráficos e tabelas",
     "Aritmética e operações"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "operações em conjuntos numéricos (naturais, inteiros, racionais e reais)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "167": {
    "disciplinas": [
@@ -651,7 +1449,22 @@
    "conteudos": [
     "Razão, proporção e escala",
     "Porcentagem e matemática financeira"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "razões e proporções",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "porcentagem e juros",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "168": {
    "disciplinas": [
@@ -659,7 +1472,16 @@
    ],
    "conteudos": [
     "Probabilidade e combinatória"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "noções de probabilidade",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "169": {
    "disciplinas": [
@@ -667,7 +1489,16 @@
    ],
    "conteudos": [
     "Sequências e progressões"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "sequências e progressões",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "170": {
    "disciplinas": [
@@ -675,7 +1506,16 @@
    ],
    "conteudos": [
     "Funções"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "gráficos e funções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "171": {
    "disciplinas": [
@@ -683,7 +1523,16 @@
    ],
    "conteudos": [
     "Razão, proporção e escala"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "razões e proporções",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "172": {
    "disciplinas": [
@@ -692,7 +1541,22 @@
    "conteudos": [
     "Geometria plana",
     "Trigonometria"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "trigonometria do ângulo agudo",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "173": {
    "disciplinas": [
@@ -700,7 +1564,16 @@
    ],
    "conteudos": [
     "Grandezas e medidas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "grandezas, unidades de medida e escalas",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "174": {
    "disciplinas": [
@@ -709,7 +1582,22 @@
    "conteudos": [
     "Raciocínio lógico",
     "Geometria plana"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": null,
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "características das figuras geométricas planas e espaciais",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "175": {
    "disciplinas": [
@@ -717,7 +1605,16 @@
    ],
    "conteudos": [
     "Álgebra (equações e sistemas)"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "equações e inequações",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "176": {
    "disciplinas": [
@@ -725,7 +1622,16 @@
    ],
    "conteudos": [
     "Sequências e progressões"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": "sequências e progressões",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "177": {
    "disciplinas": [
@@ -734,7 +1640,22 @@
    "conteudos": [
     "Funções",
     "Trigonometria"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "gráficos e funções",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos geométricos",
+     "topico": "trigonometria do ângulo agudo",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "178": {
    "disciplinas": [
@@ -743,7 +1664,22 @@
    "conteudos": [
     "Funções",
     "Leitura de gráficos e tabelas"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos algébricos",
+     "topico": "gráficos e funções",
+     "subtopico": null
+    },
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "representação e análise de dados",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "179": {
    "disciplinas": [
@@ -751,7 +1687,16 @@
    ],
    "conteudos": [
     "Raciocínio lógico"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos numéricos",
+     "topico": null,
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   },
   "180": {
    "disciplinas": [
@@ -759,22 +1704,16 @@
    ],
    "conteudos": [
     "Estatística"
-   ]
+   ],
+   "classificacao": [
+    {
+     "disciplina": "Matemática",
+     "conteudo": "Conhecimentos de estatística e probabilidade",
+     "topico": "medidas de tendência central (médias, moda e mediana)",
+     "subtopico": null
+    }
+   ],
+   "provisorio": true
   }
- },
- "disciplinas_validas": [
-  "Artes",
-  "Biologia",
-  "Educação Física",
-  "Filosofia",
-  "Física",
-  "Geografia",
-  "História",
-  "Língua Espanhola",
-  "Língua Inglesa",
-  "Língua Portuguesa",
-  "Matemática",
-  "Química",
-  "Sociologia"
- ]
+ }
 }
