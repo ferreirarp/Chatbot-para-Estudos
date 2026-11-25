@@ -1094,7 +1094,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "De acordo com a Constituição Federal, é competência\ndos municípios o gerenciamento dos serviços de limpeza e\ncoleta dos resíduos urbanos (lixo). No entanto, há relatos\nde que parte desse lixo acaba sendo incinerado, liberando\nsubstâncias tóxicas para o ambiente e causando acidentes\npor explosões, principalmente quando ocorre a incineração\nde frascos de aerossóis (por exemplo: desodorantes,\ninseticidas e repelentes). A temperatura elevada provoca\na vaporização de todo o conteúdo dentro desse tipo de\nfrasco, aumentando a pressão em seu interior até culminar\nna explosão da embalagem.\nZVEIBIL, V. Z. et al. Cartilha de limpeza urbana. Disponível em:\nwww.ibam.org.br. Acesso em: 6 jul. 2015 (adaptado).\n\nSuponha um frasco metálico de um aerossol de\ncapacidade igual a 100 mL, contendo 0,1 mol de produtos\ngasosos à temperatura de 650 °C, no momento da explosão.\nConsidere: R = 0,082 L⋅atm/mol⋅K\nA pressão, em atm, dentro do frasco, no momento da\nexplosão, é mais próxima de"
+        "texto": "De acordo com a Constituição Federal, é competência\ndos municípios o gerenciamento dos serviços de limpeza e\ncoleta dos resíduos urbanos (lixo). No entanto, há relatos\nde que parte desse lixo acaba sendo incinerado, liberando\nsubstâncias tóxicas para o ambiente e causando acidentes\npor explosões, principalmente quando ocorre a incineração\nde frascos de aerossóis (por exemplo: desodorantes,\ninseticidas e repelentes). A temperatura elevada provoca\na vaporização de todo o conteúdo dentro desse tipo de\nfrasco, aumentando a pressão em seu interior até culminar\nna explosão da embalagem.\nZVEIBIL, V. Z. et al. Cartilha de limpeza urbana. Disponível em:\nwww.ibam.org.br. Acesso em: 6 jul. 2015 (adaptado).\n\nSuponha um frasco metálico de um aerossol de\ncapacidade igual a 100 mL, contendo 0,1 mol de produtos\ngasosos à temperatura de 650 °C, no momento da explosão.\nConsidere: R = 0,082 (L⋅atm)/(mol⋅K)\nA pressão, em atm, dentro do frasco, no momento da\nexplosão, é mais próxima de"
       }
     ],
     "alternativas_imagem": {},
@@ -2037,11 +2037,11 @@
     "lingua_estrangeira": null,
     "enunciado": "No alojamento de uma universidade, há alguns quartos com o padrão superior ao dos demais. Um desses quartos\nficou disponível, e muitos estudantes se candidataram para morar no local. Para escolher quem ficará com o quarto,\num sorteio será realizado. Para esse sorteio, cartões individuais com os nomes de todos os estudantes inscritos serão\ndepositados em uma urna, sendo que, para cada estudante de primeiro ano, será depositado um único cartão com\nseu nome; para cada estudante de segundo ano, dois cartões com seu nome; e, para cada estudante de terceiro ano,\ntrês cartões com seu nome. Foram inscritos 200 estudantes de primeiro ano, 150 de segundo ano e 100 de terceiro\nano. Todos os cartões têm a mesma probabilidade de serem sorteados.\nQual a probabilidade de o vencedor do sorteio ser um estudante de terceiro ano?\n1",
     "alternativas": {
-      "A": "1/2 1",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "1/2",
+      "B": "1/3",
+      "C": "1/8",
+      "D": "2/9",
+      "E": "3/8"
     },
     "gabarito": "E",
     "anulada": false,
@@ -2061,16 +2061,8 @@
         "texto": "No alojamento de uma universidade, há alguns quartos com o padrão superior ao dos demais. Um desses quartos\nficou disponível, e muitos estudantes se candidataram para morar no local. Para escolher quem ficará com o quarto,\num sorteio será realizado. Para esse sorteio, cartões individuais com os nomes de todos os estudantes inscritos serão\ndepositados em uma urna, sendo que, para cada estudante de primeiro ano, será depositado um único cartão com\nseu nome; para cada estudante de segundo ano, dois cartões com seu nome; e, para cada estudante de terceiro ano,\ntrês cartões com seu nome. Foram inscritos 200 estudantes de primeiro ano, 150 de segundo ano e 100 de terceiro\nano. Todos os cartões têm a mesma probabilidade de serem sorteados.\nQual a probabilidade de o vencedor do sorteio ser um estudante de terceiro ano?"
       }
     ],
-    "alternativas_imagem": {
-      "B": "img/blocos/regular_D2_CD7_Q141_f1.png",
-      "C": "img/blocos/regular_D2_CD7_Q141_f2.png",
-      "D": "img/blocos/regular_D2_CD7_Q141_f3.png",
-      "E": "img/blocos/regular_D2_CD7_Q141_f4.png"
-    },
-    "revisar": [
-      "fórmula recortada como imagem",
-      "texto difere do PDF; sobram: 1"
-    ]
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2023-regular-D2-CD7-Q142",
@@ -3471,11 +3463,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Entre maratonistas, um parâmetro utilizado é o de\neconomia de corrida (EC). O valor desse parâmetro é\ncalculado pela razão entre o consumo de oxigênio, em\nmililitro (mL) por minuto (min), e a massa, em quilograma (kg),\ndo atleta correndo a uma velocidade constante.\nDisponível em: www.treinamentoonline.com.br. Acesso em: 23 out. 2019 (adaptado).\nUm maratonista, visando melhorar sua performance,\nauxiliado por um médico, mensura o seu consumo de\noxigênio por minuto a velocidade constante. Com base\nnesse consumo e na massa do atleta, o médico calcula\no EC do atleta.\nA unidade de medida da grandeza descrita pelo\nparâmetro EC é\nmin",
     "alternativas": {
-      "A": "min/mL⋅kg",
-      "B": "mL/min⋅kg",
-      "C": "min⋅mL/kg",
-      "D": "min⋅kg/mL",
-      "E": "mL⋅kg/min"
+      "A": "min/(mL⋅kg)",
+      "B": "mL/(min⋅kg)",
+      "C": "(min⋅mL)/kg",
+      "D": "(min⋅kg)/mL",
+      "E": "(mL⋅kg)/min"
     },
     "gabarito": "B",
     "anulada": false,

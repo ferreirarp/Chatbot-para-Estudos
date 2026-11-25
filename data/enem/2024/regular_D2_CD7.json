@@ -1861,19 +1861,14 @@
         "tipo": "figura",
         "imagem": "img/blocos/regular_D2_CD7_Q131_f4.png",
         "motivo": "fórmula"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q131_f5.png",
-        "motivo": "figura"
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q131_f6.png",
-      "B": "img/blocos/regular_D2_CD7_Q131_f7.png",
-      "C": "img/blocos/regular_D2_CD7_Q131_f8.png",
-      "D": "img/blocos/regular_D2_CD7_Q131_f9.png",
-      "E": "img/blocos/regular_D2_CD7_Q131_f10.png"
+      "A": "img/blocos/regular_D2_CD7_Q131_f5.png",
+      "B": "img/blocos/regular_D2_CD7_Q131_f6.png",
+      "C": "img/blocos/regular_D2_CD7_Q131_f7.png",
+      "D": "img/blocos/regular_D2_CD7_Q131_f8.png",
+      "E": "img/blocos/regular_D2_CD7_Q131_f9.png"
     },
     "revisar": [
       "fórmula recortada como imagem"
@@ -2598,8 +2593,8 @@
     "enunciado": "Uma caneca com água fervendo é retirada de um\nforno de micro-ondas. A temperatura T, em grau Celsius,\nda caneca, em função do tempo t, em minuto, pode ser\nmodelada pela função T(t) = a + 80 bt, representada no\ngráfico a seguir.\nOs valores das constantes a e b são",
     "alternativas": {
       "A": "a = 20; b = log(0,5)",
-      "B": "",
-      "C": "a = 20; b = (0,5)¹⁰",
+      "B": "a = 100; b = 0,5",
+      "C": "",
       "D": "",
       "E": "a = 20; b = 40"
     },
@@ -2641,7 +2636,7 @@
       }
     ],
     "alternativas_imagem": {
-      "B": "img/blocos/regular_D2_CD7_Q148_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q148_f3.png",
       "D": "img/blocos/regular_D2_CD7_Q148_f4.png"
     },
     "revisar": [
@@ -3104,9 +3099,9 @@
     "alternativas": {
       "A": "mL ⋅ s ⋅cm²",
       "B": "mL/s ⋅cm²",
-      "C": "mL/cm²⋅s",
-      "D": "cm⋅s/mL2",
-      "E": "cm/mL⋅s2"
+      "C": "mL/(cm²⋅s)",
+      "D": "",
+      "E": ""
     },
     "gabarito": "C",
     "anulada": false,
@@ -3126,8 +3121,13 @@
         "texto": "Uma tubulação despeja sempre o mesmo volume de\nágua por unidade de tempo em uma caixa-d’água, o que\nsignifica dizer que a vazão de água nessa tubulação é\nconstante. Na junção dessa tubulação com a caixa-d’água,\nestá instalada uma membrana de filtragem cujo objetivo é\nfiltrar eventuais impurezas presentes na água, combinado\na um bom fluxo de água. O fluxo (φ) de água através\nda superfície da membrana é diretamente proporcional\nà vazão de água na tubulação, medida em mililitro por\nsegundo, e inversamente proporcional à área da superfície\nda membrana, medida em centímetro quadrado.\nA unidade de medida adequada para descrever o fluxo\n(φ) de água que atravessa a superfície da membrana é"
       }
     ],
-    "alternativas_imagem": {},
-    "revisar": []
+    "alternativas_imagem": {
+      "D": "img/blocos/regular_D2_CD7_Q159_f1.png",
+      "E": "img/blocos/regular_D2_CD7_Q159_f2.png"
+    },
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q160",
@@ -3660,7 +3660,7 @@
     "alternativas": {
       "A": "",
       "B": "hexágono regular, pois a área do jardim, em metro quadrado, será 3k3/2.",
-      "C": "2 quadrado, pois a área do jardim, em metro quadrado, será k/16.",
+      "C": "",
       "D": "",
       "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k3/4."
     },
@@ -3689,9 +3689,12 @@
     ],
     "alternativas_imagem": {
       "A": "img/blocos/regular_D2_CD7_Q171_f2.png",
-      "D": "img/blocos/regular_D2_CD7_Q171_f3.png"
+      "C": "img/blocos/regular_D2_CD7_Q171_f3.png",
+      "D": "img/blocos/regular_D2_CD7_Q171_f4.png"
     },
-    "revisar": []
+    "revisar": [
+      "fórmula recortada como imagem"
+    ]
   },
   {
     "id": "2024-regular-D2-CD7-Q172",

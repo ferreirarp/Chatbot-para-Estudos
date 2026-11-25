@@ -104,7 +104,13 @@ def _fracoes(pg, r, chars):
         den = [c for c in na_largura if 0 <= c["top"] - o["bottom"] < 4.5]
         # fração dentro de expoente (letras pequenas, como em 3^(t/2)) não vira
         # texto: fica para o recorte de fórmula
-        if num and den and tam and max(c["size"] for c in num + den) >= tam * 0.85:
+        # conservador: tudo o que está em volta do traço (na largura dele, até
+        # 8 pt acima ou abaixo) tem de ser numerador ou denominador; se sobrar
+        # algo (um expoente mais alto, como em cm²·s), a fração fica no recorte
+        usados = {id(c) for c in num + den}
+        sobra = [c for c in chars if id(c) not in usados and o["x0"] - 1 <= (c["x0"] + c["x1"]) / 2 <= o["x1"] + 1
+                 and (0 <= o["top"] - c["bottom"] <= 8 or 0 <= c["top"] - o["bottom"] <= 8)]
+        if num and den and not sobra and tam and max(c["size"] for c in num + den) >= tam * 0.85:
             out.append((o, sorted(num, key=lambda c: c["x0"]), sorted(den, key=lambda c: c["x0"])))
     return out
 
@@ -115,7 +121,7 @@ def _parte(cs):
     base = max(c["bottom"] for c in cs if c["size"] >= grande * 0.85)
     t = "".join((c["text"].translate(SOBRESCRITO) if c["bottom"] < base - 1 else c["text"].translate(SUBSCRITO))
                 if c["size"] < grande * 0.85 else c["text"] for c in cs)
-    return f"({t})" if re.search(r"[+\-−×·]", t) else t
+    return f"({t})" if re.search(r"[+\-−×·⋅]", t) else t
 
 
 def _juntar_sobrepostas_v(caixas, tol=3.0):
@@ -471,14 +477,10 @@ def _conteudo(pg, ip, caixa, faixas_cab, revisar):
             continue
         # o traço leva junto o que está colado acima e abaixo (numerador e
         # denominador); depois as linhas inteiras entram pela absorção
-        mudou = True
-        while mudou:
-            mudou = False
-            for c in chars_reg:
-                if c["x1"] > f[0] - 1 and c["x0"] < f[2] + 1 and not (f[1] <= c["top"] and c["bottom"] <= f[3]) \
-                        and (0 <= f[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - f[3] <= 4.5 or (c["top"] < f[3] and c["bottom"] > f[1])):
-                    f[:] = [min(f[0], c["x0"]), min(f[1], c["top"]), max(f[2], c["x1"]), max(f[3], c["bottom"])]
-                    mudou = True
+        t0 = list(f)  # distâncias medidas a partir do traço, sem encadear
+        for c in chars_reg:
+            if c["x1"] > t0[0] - 1 and c["x0"] < t0[2] + 1 and (0 <= t0[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - t0[3] <= 4.5):
+                f[:] = [min(f[0], c["x0"]), min(f[1], c["top"]), max(f[2], c["x1"]), max(f[3], c["bottom"])]
         absorver(f)
         itens.append((f[1], "figura", (f, "fórmula")))
         revisar.add("fórmula recortada como imagem")
@@ -551,12 +553,20 @@ def _fronteira(pg, a, b, x0, x1):
     # traço de fração + o que está colado acima e abaixo dele = bloco único
     for d in desenho:
         if d[3] - d[1] < 1.5 and d[2] - d[0] < 80:
-            for c in letras:
-                if c["x1"] > d[0] - 1 and c["x0"] < d[2] + 1 and (0 <= d[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - d[3] <= 4.5):
+            t0 = list(d)  # distâncias medidas a partir do traço, sem encadear
+            # todos os caracteres da coluna (o denominador pode passar da letra b)
+            for c in [c for c in pg.chars if c["text"].strip() and x0 <= (c["x0"] + c["x1"]) / 2 <= x1]:
+                if c["x1"] > t0[0] - 1 and c["x0"] < t0[2] + 1 and (0 <= t0[1] - c["bottom"] <= 4.5 or 0 <= c["top"] - t0[3] <= 4.5):
                     d[:] = [min(d[0], c["x0"]), min(d[1], c["top"]), max(d[2], c["x1"]), max(d[3], c["bottom"])]
     # traços que se tocam formam um bloco sólido (um gráfico inteiro, e não
     # as linhas de grade com espaços entre elas)
-    for c in _juntar_sobrepostas_v(desenho):
+    solidos = _juntar_sobrepostas_v(desenho)
+    # desenho que atravessa a linha da letra de b começa acima dela: o topo
+    # dele é a fronteira (o desenho inteiro é da alternativa b)
+    cruzam = [c for c in solidos if c[1] < b["top"] < c[3] and c[1] >= a["top"] - 2]
+    if cruzam:
+        return max(a["top"], min(c[1] for c in cruzam) - 0.5)
+    for c in solidos:
         ocup.append((max(c[1], a["top"]), min(c[3], b["top"])))
     ocup.sort()
     # faixas vazias entre a e b; a fronteira é a faixa vazia mais próxima de

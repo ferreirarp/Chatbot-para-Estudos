@@ -2894,16 +2894,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Um reservatório que abastece uma região urbana está\ncom uma quantidade V de água. Previsões meteorológicas\nindicam que a região passará por uma escassez de\nchuva e, por isso, as autoridades locais determinaram a\nrealização de várias medições do volume de água nesse\nreservatório para efeito de monitoramento.\n\nA primeira medição indicou que o volume de água\nreduziu-se à metade; a segunda indicou a retirada da terça\nparte do que restou; a terceira, a retirada da quarta parte\ndo que restou; a quarta, a retirada da quinta parte do que\nrestou e assim sucessivamente nas demais medições,\nmantendo o seguinte padrão de retirada: na n-ésima\nmedição, a retirada da (n + 1)-ésima parte do que restou.\n\nConsidere que não houve reabastecimento de água no\nreservatório no período em que foram feitas as medições."
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/reaplicacao_D2_CD7_Q161_f1.png",
-        "motivo": "fórmula"
-      },
-      {
-        "tipo": "texto",
-        "texto": "medições são iguais a, respectivamente,"
+        "texto": "Um reservatório que abastece uma região urbana está\ncom uma quantidade V de água. Previsões meteorológicas\nindicam que a região passará por uma escassez de\nchuva e, por isso, as autoridades locais determinaram a\nrealização de várias medições do volume de água nesse\nreservatório para efeito de monitoramento.\n\nA primeira medição indicou que o volume de água\nreduziu-se à metade; a segunda indicou a retirada da terça\nparte do que restou; a terceira, a retirada da quarta parte\ndo que restou; a quarta, a retirada da quinta parte do que\nrestou e assim sucessivamente nas demais medições,\nmantendo o seguinte padrão de retirada: na n-ésima\nmedição, a retirada da (n + 1)-ésima parte do que restou.\n\nConsidere que não houve reabastecimento de água no\nreservatório no período em que foram feitas as medições.\nMantendo esse padrão de retirada, as quantidades de\nágua restantes no reservatório referentes às 7ª, 8ª e 9ª\nmedições são iguais a, respectivamente,"
       }
     ],
     "alternativas_imagem": {},
@@ -3448,14 +3439,8 @@
     },
     "blocos": [
       {
-        "tipo": "figura",
-        "imagem": "img/blocos/reaplicacao_D2_CD7_Q174_f1.png",
-        "motivo": "fórmula"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/reaplicacao_D2_CD7_Q174_f2.png",
-        "motivo": "fórmula"
+        "tipo": "texto",
+        "texto": "A proprietária de uma confecção pretende liquidar\nas camisas que possui em estoque, por meio de uma\npromoção na qual fará a venda de lotes com iguais\nquantidades de camisas. Para a 1ª semana, pretende\nanunciar a venda de cada lote de camisas por R$ 720,00.\nNa 2ª semana, para acelerar as vendas, planeja anunciar\na venda de lotes com 3 unidades a mais do que os lotes\nvendidos na primeira semana, ainda por R$ 720,00 cada\nlote, e de forma que o preço unitário de cada peça seja\nR$ 20,00 mais baixo do que o valor que teria sido cobrado\npor peça na 1ª semana de promoção.\nQuantas camisas deverão conter os lotes que serão\ncolocados à venda na 1ª semana para que seja possível\npraticar essa promoção?"
       }
     ],
     "alternativas_imagem": {},
@@ -3700,7 +3685,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\n\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é"
+        "texto": "Veja o gasto médio de calorias, por hora de atividade, quando são exercidas algumas atividades domésticas:\n\n• varrer o chão: 200 calorias;\n• passar aspirador de pó: 350 calorias;\n• limpar janelas: 260 calorias.\nDisponível em: www.corpoacorpo.uol.com.br. Acesso em: 4 dez. 2017 (adaptado).\n\nUma pessoa varreu o chão da casa, depois passou o aspirador de pó e, por fim, limpou as janelas, gastando\n30 minutos em cada atividade, sem parar para descansar. Considere que o gasto de calorias em uma atividade varie\nproporcionalmente em relação ao tempo.\nO gráfico que melhor representa o gasto acumulado de calorias dessa pessoa durante as atividades desenvolvidas é\nCaloria Caloria"
       }
     ],
     "alternativas_imagem": {
