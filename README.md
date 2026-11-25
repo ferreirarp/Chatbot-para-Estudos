@@ -108,9 +108,52 @@ figura); nas questões de 2025 Q138 e 2026 Q180 a imagem "como está na prova"
 sai desalinhada (as alternativas, corretas, vêm dos recortes).
 
 Para a página publicada (limite de 512 arquivos), `scripts/empacotar_recortes.py`
-junta as imagens em pacotes JSON: recortes de 10 em 10 questões e imagens
-"como está na prova" de 30 em 30. A página só baixa um pacote quando a imagem
+junta as imagens em pacotes JSON, em WebP (cerca de 4 vezes menor que PNG):
+recortes de 10 em 10 questões e imagens "como está na prova" de 30 em 30. A página só baixa um pacote quando a imagem
 falta como arquivo. Os pacotes são derivados das PNGs e não vão para o git.
+
+### Classificação pela Matriz de Referência
+`data/enem/taxonomia.json` (gerado por `scripts/taxonomia.py` a partir dos
+"Objetos de conhecimento associados às Matrizes de Referência" do INEP)
+organiza área › disciplina › conteúdo › tópico. A matriz só nomeia as
+disciplinas de Ciências da Natureza; nas outras áreas a disciplina de cada
+conteúdo ou tópico foi atribuída no script, e o que a matriz não cobre (ex.:
+Ética, Teoria do conhecimento, gramática de língua estrangeira) está marcado
+como **complemento**. O subtópico é livre e definido por questão.
+
+A classificação antiga foi migrada por `scripts/migrar_classificacao.py` e
+fica **provisória** (tópico aproximado, sem subtópico) até a questão ganhar
+a ficha de comentários, que traz a classificação revista. Na interface, o
+filtro "Disciplina, conteúdo e tópico" é uma árvore com seleção por grupo, e
+as habilidades aparecem por área › competência.
+
+### Comentários das questões
+Cada questão pode ter uma ficha em `data/enem/comentarios/<ano>_<prova>.json`:
+- comentário do enunciado;
+- comentário da alternativa correta;
+- um comentário por distrator;
+- análise da questão (objetivo, o que facilita e o que dificulta, dados do
+  INEP);
+- recursos (resoluções comentadas, Wikipédia, vídeos, imagens livres), cada
+  um no trecho a que se refere.
+
+Os textos são redigidos a partir de pesquisa na web, não copiados. O padrão
+está em `docs/procedimentos.md`, e `scripts/comentarios.py` valida as fichas
+e gera os `.js` que a página carrega quando a questão é respondida.
+Situação: piloto com 4 questões de 2025 (Física, Matemática, Filosofia e
+Língua Portuguesa).
+
+### Manutenção (botões da página)
+Na página publicada, a dona vê o grupo "Manutenção do banco":
+- **Atualizar dados** roda `scripts/atualizar_dados.py`: provas novas no
+  servidor do INEP, microdados que saíram e comentários pendentes ou com
+  pesquisa antiga.
+- **Revisar e limpar** roda `scripts/manutencao.py`: anomalias, imagens
+  órfãs, validação, banco e pacotes.
+
+Cada botão dispara uma tarefa agendada (conector Claude Code Remote) que abre
+uma sessão do Claude na nuvem. A sessão segue `docs/procedimentos.md`, salva
+no git e republica a página. Os dois scripts também rodam à mão.
 
 ### Questões próprias e provas impressas
 - **+ Nova questão** (barra lateral): questão autoral ou de outra fonte, com

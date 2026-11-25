@@ -160,6 +160,8 @@ def main() -> None:
         if not RE_PROVA.match(arq.name):
             continue
         ano = arq.parent.name
+        coment_arq = DADOS / "comentarios" / f"{ano}_{arq.name}"
+        comentarios = json.loads(coment_arq.read_text(encoding="utf-8")) if coment_arq.exists() else {}
         classif_arq = DADOS / "classificacao" / f"{ano}_{arq.name}"
         classif = json.loads(classif_arq.read_text(encoding="utf-8"))["questoes"] if classif_arq.exists() else {}
         if not classif:
@@ -176,6 +178,9 @@ def main() -> None:
         for q in json.loads(arq.read_text(encoding="utf-8")):
             chave = str(q["numero"]) + (f"-{q['lingua_estrangeira']}" if q.get("lingua_estrangeira") else "")
             c = classif.get(chave, {})
+            ficha = comentarios.get(chave)
+            if ficha and ficha.get("classificacao"):  # classificação revista na ficha: definitiva
+                c = dict(c, classificacao=ficha["classificacao"], provisorio=False)
             classificacao = c.get("classificacao") or []
             for item in classificacao:
                 problema = validar_item(item)
@@ -205,6 +210,8 @@ def main() -> None:
                 # disciplina > conteúdo > tópico > subtópico (taxonomia da Matriz)
                 "classificacao": classificacao,
                 "classificacao_provisoria": bool(c.get("provisorio")),
+                # comentários da questão: arquivo da prova, carregado sob demanda
+                "comentario": (f"data/enem/comentarios/{ano}_{arq.stem}.js" if ficha else None),
                 "observacao": c.get("observacao"),
                 "lingua": q.get("lingua_estrangeira"),
                 "texto_base": q.get("texto_base"),

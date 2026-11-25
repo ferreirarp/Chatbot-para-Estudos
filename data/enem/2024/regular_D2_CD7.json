@@ -3658,11 +3658,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado\npor essa cerca, deve ter a forma de um triângulo equilátero, um quadrado ou um hexágono regular. A escolha será\npela forma que resulte na maior área.\npela forma que resulte na maior área.\nO jardineiro escolherá a forma de\nk2 3",
     "alternativas": {
-      "A": "",
-      "B": "hexágono regular, pois a área do jardim, em metro quadrado, será 3k3/2.",
+      "A": "hexágono regular, pois a área do jardim, em metro quadrado, será k3/24.",
+      "B": "",
       "C": "",
       "D": "",
-      "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k3/4."
+      "E": ""
     },
     "gabarito": "A",
     "anulada": false,
@@ -3688,9 +3688,10 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q171_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q171_f2.png",
       "C": "img/blocos/regular_D2_CD7_Q171_f3.png",
-      "D": "img/blocos/regular_D2_CD7_Q171_f4.png"
+      "D": "img/blocos/regular_D2_CD7_Q171_f4.png",
+      "E": "img/blocos/regular_D2_CD7_Q171_f5.png"
     },
     "revisar": [
       "fórmula recortada como imagem"

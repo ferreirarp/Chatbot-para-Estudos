@@ -67,6 +67,21 @@
   "atualizado": "2026-11-25",
   "nota": "conferida com o PDF: aviso falso (texto dentro de figura)"
  },
+ "2024-regular-D2-CD7-Q171": {
+  "campos": {
+   "alternativas": {
+    "A": "hexágono regular, pois a área do jardim, em metro quadrado, será k²√3/24.",
+    "B": "hexágono regular, pois a área do jardim, em metro quadrado, será 3k²√3/2.",
+    "C": "quadrado, pois a área do jardim, em metro quadrado, será k²/16.",
+    "D": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k²√3/36.",
+    "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k²√3/4."
+   },
+   "alternativas_imagem": {},
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "alternativas transcritas do PDF: o recorte perdia o √ e cortava o numerador de A"
+ },
  "2025-belem-D1-CD1-Q038": {
   "campos": {
    "revisar": []
@@ -106,14 +121,14 @@
    "alternativas": {
     "A": "2, 4, 6, 8 e 10",
     "B": "2, 2², 2³, 2⁴ e 2⁵",
-    "C": "",
+    "C": "1/2, 1/4, 1/6, 1/8 e 1/10",
     "D": "1/2, 1/2², 1/2³, 1/2⁴ e 1/2⁵",
     "E": "1, 1/2, 1/2², 1/2³ e 1/2⁴"
    },
    "revisar": []
   },
   "atualizado": "2026-11-25",
-  "nota": "numeradores das frações de D vazaram para B (revisão visual)"
+  "nota": "alternativas conferidas com o PDF (frações e posição do \"e\")"
  },
  "2025-regular-D2-CD7-Q135": {
   "campos": {

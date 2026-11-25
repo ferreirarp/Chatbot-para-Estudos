@@ -1,0 +1,56 @@
+{
+ "15": {
+  "enunciado": "O texto, de um artigo sobre promoção de atividade física, tem **duas partes ligadas por \"No entanto\"**:\n\n1. **O que melhorou** ao longo do século: menos mortalidade infantil, mais escolaridade, mais saneamento, melhores habitações, mais vacinação e maior expectativa de vida.\n2. **O que piorou ao mesmo tempo** (\"de forma concomitante\"): aumento do excesso de peso e das doenças crônicas não transmissíveis, além de tabagismo, alimentação inadequada e sedentarismo.\n\nA pergunta pede o termo que completa a contradição: a melhoria dos indicadores sociais se opõe a quê?",
+  "correta": "O conector **\"No entanto\"** marca a oposição. Tudo o que vem depois dele trata da **saúde da população**: excesso de peso em mais de 50% dos adultos, doenças cardiovasculares, diabetes e câncer como principais causas de morte, e altos índices de inatividade física.\n\nA contradição é, portanto, entre indicadores sociais que melhoraram e uma **saúde da população** que piorou em aspectos importantes. Por isso a alternativa D está correta.",
+  "distratores": {
+   "A": "O **nível educacional** aparece no texto entre os indicadores que **melhoraram** (\"melhorias nos níveis educacionais\"). Ele está do mesmo lado da contradição, e não do lado oposto.",
+   "B": "A **cobertura vacinal** também é citada como avanço (\"aumento nas coberturas de vacinação\"). É um dos indicadores sociais que melhoraram, não o elemento que se opõe a eles.",
+   "C": "O **saneamento básico** está na lista de melhorias (\"aumento da cobertura de saneamento básico\"). Escolhê-lo é confundir os dois polos da oposição.",
+   "E": "A **infraestrutura habitacional** corresponde às \"melhorias nas habitações\" citadas no início. Assim como A, B e C, é um termo do lado positivo do texto."
+  },
+  "analise": "**Objetivo:** reconhecer a organização argumentativa do texto (situação positiva + \"No entanto\" + situação negativa) e identificar os dois polos de uma contradição. É uma questão de leitura, não de conhecimento sobre saúde: tudo de que o estudante precisa está no texto.\n\n**O que facilita:** os quatro distratores são **literalmente** itens da lista de melhorias. Basta conferir cada um no primeiro bloco do texto para eliminá-lo.\n\n**O que dificulta:** o texto é longo e cheio de números, o que pode desviar a atenção para os percentuais. O termo \"indicadores sociais\" no comando pode levar o estudante a procurar o que piorou entre esses mesmos indicadores, e não o termo que se opõe a eles. Conhecer a ideia de **transição epidemiológica** (troca de doenças infecciosas por doenças crônicas) ajuda a perceber o sentido geral do texto.\n\n**Dados do INEP:** o INEP associou esta questão à habilidade H10, de Educação Física (\"reconhecer a necessidade de transformação de hábitos corporais em função das necessidades cinestésicas\"), por causa do tema (sedentarismo e saúde). Aqui ela fica classificada em **Língua Portuguesa**, porque a resolução exige apenas leitura da estrutura do texto, sem conhecimento de Educação Física. Dificuldade equivalente a cerca de 454 pontos (faixa \"Facílima\").",
+  "recursos": [
+   {
+    "titulo": "Transição epidemiológica: a troca das doenças infecciosas pelas crônicas",
+    "url": "https://pt.wikipedia.org/wiki/Transi%C3%A7%C3%A3o_epidemiol%C3%B3gica",
+    "tipo": "wikipedia",
+    "trecho": "analise"
+   },
+   {
+    "titulo": "Doenças não transmissíveis (crônicas)",
+    "url": "https://pt.wikipedia.org/wiki/Doen%C3%A7a_n%C3%A3o_transmiss%C3%ADvel",
+    "tipo": "wikipedia",
+    "trecho": "correta"
+   },
+   {
+    "titulo": "Resolução comentada da questão 15 (2ª aplicação)",
+    "url": "https://hplusmed.com.br/resolve/enem/2025/segunda-aplicacao/questao-15/",
+    "tipo": "comentario",
+    "trecho": "analise",
+    "credito": "H+Med"
+   },
+   {
+    "titulo": "Resolução passo a passo (ENEM 2025 PPL, questão 15)",
+    "url": "https://www.memorizevestibular.com/blog/questoes/enem-2025-ppl/dia-1-questao-15",
+    "tipo": "comentario",
+    "trecho": "analise",
+    "credito": "Memorize Vestibular"
+   }
+  ],
+  "classificacao": [
+   {
+    "disciplina": "Língua Portuguesa",
+    "conteudo": "Estudo do texto argumentativo, seus gêneros e recursos linguísticos",
+    "topico": "organização e progressão textual",
+    "subtopico": "Oposição marcada por conector (\"No entanto\") e identificação dos polos de uma contradição"
+   }
+  ],
+  "fontes_consultadas": [
+   "https://hplusmed.com.br/resolve/enem/2025/segunda-aplicacao/questao-15/",
+   "https://www.memorizevestibular.com/blog/questoes/enem-2025-ppl/dia-1-questao-15",
+   "https://nogabarito.com.br/questao/enem-2025-d1-ppl-azul-015"
+  ],
+  "pesquisado_em": "2026-11-25",
+  "revisado": false
+ }
+}

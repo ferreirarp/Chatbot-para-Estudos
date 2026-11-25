@@ -3241,19 +3241,14 @@
       {
         "tipo": "texto",
         "texto": "A expressão algébrica que representa a relação entre D e T é"
-      },
-      {
-        "tipo": "figura",
-        "imagem": "img/blocos/regular_D2_CD7_Q160_f2.png",
-        "motivo": "fórmula"
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q160_f3.png",
-      "B": "img/blocos/regular_D2_CD7_Q160_f4.png",
-      "C": "img/blocos/regular_D2_CD7_Q160_f5.png",
-      "D": "img/blocos/regular_D2_CD7_Q160_f6.png",
-      "E": "img/blocos/regular_D2_CD7_Q160_f7.png"
+      "A": "img/blocos/regular_D2_CD7_Q160_f2.png",
+      "B": "img/blocos/regular_D2_CD7_Q160_f3.png",
+      "C": "img/blocos/regular_D2_CD7_Q160_f4.png",
+      "D": "img/blocos/regular_D2_CD7_Q160_f5.png",
+      "E": "img/blocos/regular_D2_CD7_Q160_f6.png"
     },
     "revisar": [
       "fórmula recortada como imagem"
@@ -3881,9 +3876,9 @@
     "lingua_estrangeira": null,
     "enunciado": "Em uma cidade, será construído um túnel que atravessa uma\nmontanha para facilitar o trânsito de automóveis e bicicletas.\nDois projetos foram elaborados e os esquemas com as vistas\nfrontais desses projetos são apresentados na figura.\nO Projeto 1 conta com dois túneis, um exclusivo para\nbicicletas e o outro, para automóveis. O Projeto 2 conta com\num único túnel, com espaços reservados para o trânsito exclusivo\nde bicicletas e automóveis. Nos dois projetos, os túneis têm o\nformato de semicilindro reto de mesma extensão, com vias de\nida e volta para os dois tipos de veículos, separados por muretas.\nO projeto a ser aprovado será aquele que apresentar a\nmenor área da seção transversal, pois implicará menor volume\nde material retirado da montanha.\nConsidere 3 como aproximação para p e desconsidere as\nespessuras das muretas.\nO projeto a ser aprovado é",
     "alternativas": {
-      "A": "o 1, pois apresenta área de seção transversal medindo 67,5 m².",
-      "B": "o 2, pois apresenta área de seção transversal medindo 121,5 m².",
-      "C": "o 1, pois apresenta área de seção transversal medindo 135 m².",
+      "A": "o 1, pois apresenta área de seção transversal medindo",
+      "B": "67,5 m². o 2, pois apresenta área de seção transversal medindo",
+      "C": "121,5 m². o 1, pois apresenta área de seção transversal medindo 135 m².",
       "D": "o 2, pois apresenta área de seção transversal medindo 243 m².",
       "E": "qualquer um dos dois, pois apresentam áreas de suas seções transversais com medidas iguais."
     },

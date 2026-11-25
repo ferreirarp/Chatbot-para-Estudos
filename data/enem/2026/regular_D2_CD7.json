@@ -2665,11 +2665,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Um usuário de telefonia móvel quer contratar um serviço de\ndados 5G e foi informado de que a taxa média de transferência\nde dados ofertada nesse serviço é 436 Mb/s. Como ele não\nconhecia essa unidade de medida, pesquisou e verificou que\nela relaciona duas grandezas.\nQual razão entre as grandezas fornece a taxa média de\ntransferência de dados?\nvolumededados",
     "alternativas": {
-      "A": "tempo distância",
-      "B": "volume de dados tempo",
-      "C": "volume de dados velocidade",
-      "D": "",
-      "E": ""
+      "A": "(volume de dados)/tempo",
+      "B": "distância/(volume de dados)",
+      "C": "tempo/(volume de dados)",
+      "D": "velocidade/distância",
+      "E": "distância/tempo"
     },
     "gabarito": "A",
     "anulada": false,
@@ -2687,16 +2687,11 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Um usuário de telefonia móvel quer contratar um serviço de\ndados 5G e foi informado de que a taxa média de transferência\nde dados ofertada nesse serviço é 436 Mb/s. Como ele não\nconhecia essa unidade de medida, pesquisou e verificou que\nela relaciona duas grandezas.\nQual razão entre as grandezas fornece a taxa média de\ntransferência de dados?\nvolume de dados"
+        "texto": "Um usuário de telefonia móvel quer contratar um serviço de\ndados 5G e foi informado de que a taxa média de transferência\nde dados ofertada nesse serviço é 436 Mb/s. Como ele não\nconhecia essa unidade de medida, pesquisou e verificou que\nela relaciona duas grandezas.\nQual razão entre as grandezas fornece a taxa média de\ntransferência de dados?"
       }
     ],
-    "alternativas_imagem": {
-      "D": "img/blocos/regular_D2_CD7_Q149_f1.png",
-      "E": "img/blocos/regular_D2_CD7_Q149_f2.png"
-    },
-    "revisar": [
-      "fórmula recortada como imagem"
-    ]
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2026-regular-D2-CD7-Q150",

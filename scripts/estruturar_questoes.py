@@ -119,9 +119,15 @@ def _parte(cs):
     # expoente/índice dentro do numerador ou denominador (m² em W/m²)
     grande = max(c["size"] for c in cs)
     base = max(c["bottom"] for c in cs if c["size"] >= grande * 0.85)
-    t = "".join((c["text"].translate(SOBRESCRITO) if c["bottom"] < base - 1 else c["text"].translate(SUBSCRITO))
-                if c["size"] < grande * 0.85 else c["text"] for c in cs)
-    return f"({t})" if re.search(r"[+\-−×·⋅]", t) else t
+    cs = sorted(cs, key=lambda c: c["x0"])
+    t = ""
+    for i, c in enumerate(cs):
+        # espaço entre palavras ("volume de dados"): explícito no PDF ou folga larga
+        if i and c["size"] >= grande * 0.85 and (c.get("_esp") or c["x0"] - cs[i - 1]["x1"] > 0.12 * c["size"]):
+            t += " "
+        t += ((c["text"].translate(SOBRESCRITO) if c["bottom"] < base - 1 else c["text"].translate(SUBSCRITO))
+              if c["size"] < grande * 0.85 else c["text"])
+    return f"({t})" if re.search(r"[+\-−×·⋅ ]", t) else t
 
 
 def _juntar_sobrepostas_v(caixas, tol=3.0):
@@ -594,9 +600,44 @@ def _fronteira(pg, a, b, x0, x1):
     if b["top"] - y >= 0.8:
         vazias.append((y, b["top"]))
     if not vazias:
-        return b["top"] - 0.3  # linhas coladas: logo acima da letra seguinte
+        # caixas dos caracteres se sobrepõem (frações, colchetes altos): procura
+        # a faixa sem tinta na imagem da região
+        y = _faixa_branca(pg, a, b, x0, x1)
+        return y if y is not None else b["top"] - 0.3
     y0, y1 = vazias[-1]
     return (y0 + y1) / 2
+
+
+def _faixa_branca(pg, a, b, x0, x1):
+    """Altura de corte entre a e b pela tinta da imagem renderizada: o meio
+    da faixa branca mais larga; sem faixa branca, a linha com menos tinta no
+    meio do intervalo. A busca vai um pouco abaixo do topo da letra b,
+    porque fórmulas altas ficam centradas na letra e sobem acima dela."""
+    if pg is None or b["top"] - a["top"] < 4:
+        return None
+    escala = 4  # 288 dpi
+    altura_b = (b.get("bottom") or b["top"] + 10) - b["top"]
+    caixa = (max(0, x0), max(0, a["top"]), min(pg.width, x1), min(pg.height, b["top"] + 0.6 * altura_b))
+    im = pg.crop(caixa).to_image(resolution=72 * escala).original.convert("L")
+    w, h = im.size
+    px = im.load()
+    tinta = [sum(1 for x in range(w) if px[x, yy] < 200) for yy in range(h)]
+    melhor, ini = None, None
+    for yy, t in enumerate(tinta + [1]):
+        if t == 0 and ini is None:
+            ini = yy
+        elif t and ini is not None:
+            if ini > 0 and (melhor is None or yy - ini > melhor[1] - melhor[0]):
+                melhor = (ini, yy)
+            ini = None
+    if melhor and melhor[1] - melhor[0] >= 2:
+        return caixa[1] + (melhor[0] + melhor[1]) / 2 / escala
+    lo, hi = int(h * 0.25), int(h * 0.85)
+    if hi <= lo:
+        return None
+    meio = h / 2
+    yy = min(range(lo, hi), key=lambda r: (tinta[r], abs(r - meio)))
+    return caixa[1] + yy / escala
 
 
 def _zonas_alternativas(ms, r, topo_texto, pg=None):

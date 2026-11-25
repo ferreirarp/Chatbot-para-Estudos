@@ -1863,8 +1863,8 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma pessoa necessita armazenar uma quantidade V de\nlíquido e possui um recipiente no formato de cilindro circular reto,\n4\ncom raio da base medindo r, o qual comporta apenas dessa\n9\nquantidade. Essa pessoa comprou, então, um novo recipiente\nno mesmo formato, com raio da base medindo R, mantendo\na mesma medida da área lateral do primeiro recipiente, e que\ncomporta exatamente a quantidade V de líquido.\nR\nA razão entre os raios dos dois recipientes é\nr\n4",
     "alternativas": {
-      "A": "",
-      "B": "",
+      "A": "4/9",
+      "B": "5/9",
       "C": "5/4",
       "D": "3/2",
       "E": "9/4"
@@ -1885,16 +1885,11 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Uma pessoa necessita armazenar uma quantidade V de\nlíquido e possui um recipiente no formato de cilindro circular reto,\ncom raio da base medindo r, o qual comporta apenas 4/9 dessa\nquantidade. Essa pessoa comprou, então, um novo recipiente\nno mesmo formato, com raio da base medindo R, mantendo\na mesma medida da área lateral do primeiro recipiente, e que\ncomporta exatamente a quantidade V de líquido.\nA razão R/r entre os raios dos dois recipientes é\n4"
+        "texto": "Uma pessoa necessita armazenar uma quantidade V de\nlíquido e possui um recipiente no formato de cilindro circular reto,\ncom raio da base medindo r, o qual comporta apenas 4/9 dessa\nquantidade. Essa pessoa comprou, então, um novo recipiente\nno mesmo formato, com raio da base medindo R, mantendo\na mesma medida da área lateral do primeiro recipiente, e que\ncomporta exatamente a quantidade V de líquido.\nA razão R/r entre os raios dos dois recipientes é"
       }
     ],
-    "alternativas_imagem": {
-      "A": "img/blocos/belem_D2_CD7_Q136_f1.png",
-      "B": "img/blocos/belem_D2_CD7_Q136_f2.png"
-    },
-    "revisar": [
-      "fórmula recortada como imagem"
-    ]
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2025-belem-D2-CD7-Q137",
@@ -2564,8 +2559,8 @@
     "lingua_estrangeira": null,
     "enunciado": "Um estudante posicionou uma haste entre uma parede e uma\nvela. A haste, com 20 cm de comprimento, foi colocada paralela\nà parede, na qual projetava uma sombra de comprimento H.\nO estudante mediu a distância entre a chama da vela e a parede,\nencontrando 140 cm, e elaborou um esquema para ilustrar a\nsituação, como na figura, em que X representa a distância entre\na haste e a chama da vela.\nQual é a relação entre H e X nesse experimento?\nH 1",
     "alternativas": {
-      "A": "= 1/7 X⃗ H",
-      "B": "= 7 X⃗",
+      "A": "H/X = 1/7",
+      "B": "H/X = 7",
       "C": "H ⋅ X = 700",
       "D": "H ⋅ X = 1 400",
       "E": "H ⋅ X = 2 800"
@@ -2596,7 +2591,7 @@
       },
       {
         "tipo": "texto",
-        "texto": "Qual é a relação entre H e X nesse experimento?\nH"
+        "texto": "Qual é a relação entre H e X nesse experimento?"
       }
     ],
     "alternativas_imagem": {},
@@ -3327,11 +3322,11 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma vacina foi testada em um grupo formado por\n15 mulheres e 15 homens. Em testes clínicos realizados ao\nlongo de vários anos, a vacina mostrou-se capaz de imunizar\n80% das mulheres e 60% dos homens contra uma doença.\nUm repórter, pretendendo fazer uma entrevista com uma das\npessoas desse grupo, obteve uma listagem com os 30 números\nde telefone dessas pessoas, porém sem os respectivos nomes.\nEle escolheu aleatoriamente um desses números e ligou para\nagendar a entrevista.\nA probabilidade de que a pessoa para a qual o repórter telefonou\nseja um homem ou uma pessoa que tenha adquirido imunidade\na essa doença com o uso da vacina é\n1",
     "alternativas": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": "",
-      "E": ""
+      "A": "1/20",
+      "B": "3/10",
+      "C": "7/20",
+      "D": "8/10",
+      "E": "9/10"
     },
     "gabarito": "E",
     "anulada": false,
@@ -3349,19 +3344,11 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Uma vacina foi testada em um grupo formado por\n15 mulheres e 15 homens. Em testes clínicos realizados ao\nlongo de vários anos, a vacina mostrou-se capaz de imunizar\n80% das mulheres e 60% dos homens contra uma doença.\n\nUm repórter, pretendendo fazer uma entrevista com uma das\npessoas desse grupo, obteve uma listagem com os 30 números\nde telefone dessas pessoas, porém sem os respectivos nomes.\nEle escolheu aleatoriamente um desses números e ligou para\nagendar a entrevista.\nA probabilidade de que a pessoa para a qual o repórter telefonou\nseja um homem ou uma pessoa que tenha adquirido imunidade\na essa doença com o uso da vacina é\n1"
+        "texto": "Uma vacina foi testada em um grupo formado por\n15 mulheres e 15 homens. Em testes clínicos realizados ao\nlongo de vários anos, a vacina mostrou-se capaz de imunizar\n80% das mulheres e 60% dos homens contra uma doença.\n\nUm repórter, pretendendo fazer uma entrevista com uma das\npessoas desse grupo, obteve uma listagem com os 30 números\nde telefone dessas pessoas, porém sem os respectivos nomes.\nEle escolheu aleatoriamente um desses números e ligou para\nagendar a entrevista.\nA probabilidade de que a pessoa para a qual o repórter telefonou\nseja um homem ou uma pessoa que tenha adquirido imunidade\na essa doença com o uso da vacina é"
       }
     ],
-    "alternativas_imagem": {
-      "A": "img/blocos/belem_D2_CD7_Q169_f1.png",
-      "B": "img/blocos/belem_D2_CD7_Q169_f2.png",
-      "C": "img/blocos/belem_D2_CD7_Q169_f3.png",
-      "D": "img/blocos/belem_D2_CD7_Q169_f4.png",
-      "E": "img/blocos/belem_D2_CD7_Q169_f5.png"
-    },
-    "revisar": [
-      "fórmula recortada como imagem"
-    ]
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2025-belem-D2-CD7-Q170",
@@ -3469,9 +3456,9 @@
     "lingua_estrangeira": null,
     "enunciado": "O gerente de um restaurante, para melhorar o atendimento\nem seu estabelecimento, registrou nesta semana o número de\nmesas ocupadas de segunda a sexta-feira, em cinco intervalos\nde tempo, conforme apresentado na tabela.\nHorários seg ter Qua Qui sex\n11 h às 12 h 10 12 12 10 6\n12 h às 13 h 73 83 20 48 38\n13 h às 14 h 124 110 35 50 56\n14 h às 15 h 57 39 20 24 44\n15 h às 16 h 8 12 24 56 105\nTotal 272 256 111 188 249\nAtualmente o restaurante conta com 3 garçons, e cada um\natende, no máximo, 24 mesas por hora. O gerente pretende\ncontratar, para a próxima semana, garçons adicionais para\naqueles dias em que os 3 garçons foram insuficientes para\natender à demanda de mesas em algum dos intervalos\nconsiderados. Para isso, utilizou os dados registrados na tabela.\nA quantidade mínima de novos garçons a serem contratados será",
     "alternativas": {
-      "A": "5 garçons na segunda-feira, 4 na terça-feira, 1 na quarta-feira, 2 na quinta-feira e 4 na sexta-feira.",
-      "B": "2 garçons na segunda-feira, 2 na terça-feira, 1 na quinta-feira e 2 na sexta-feira.",
-      "C": "1 garçom na segunda-feira, 1 na terça-feira e 1 na sexta-feira.",
+      "A": "5 garçons na segunda-feira, 4 na terça-feira, 1 na quarta-feira,",
+      "B": "2 na quinta-feira e 4 na sexta-feira. 2 garçons na segunda-feira, 2 na terça-feira, 1 na quinta-feira",
+      "C": "e 2 na sexta-feira. 1 garçom na segunda-feira, 1 na terça-feira e 1 na sexta-feira.",
       "D": "2 garçons na segunda-feira, 2 na terça-feira e 2 na sexta-feira.",
       "E": "3 garçons na segunda-feira, 2 na terça-feira e 2 na sexta-feira."
     },

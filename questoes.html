@@ -81,6 +81,21 @@ details.sub > summary { list-style: none; cursor: pointer; font-size: .82rem; fo
 details.sub > summary .n { margin-left: auto; }
 details.sub > summary .gsel { margin: 0; flex: none; }
 .classif { display: grid; gap: 6px; }
+.manut { display: grid; gap: 6px; }
+.manut .ed-estado { margin: 0; }
+.coment { border: 1px solid var(--accent); border-radius: var(--radius); padding: 10px 14px; margin: 4px 0; }
+.coment > summary { cursor: pointer; font-weight: 600; }
+.coment-corpo section { margin-top: 10px; }
+.coment-corpo h4 { margin: 0 0 4px; font-size: .92rem; }
+.coment-corpo p { margin: 0 0 6px; line-height: 1.55; }
+.coment-corpo .ok h4 { color: var(--ok, #1a7f37); }
+.distrator { display: grid; grid-template-columns: auto 1fr; gap: 8px; margin-bottom: 6px; }
+.recursos { margin: 4px 0 8px; padding-left: 18px; font-size: .85rem; }
+.recursos .rec-tipo { font-weight: 600; color: var(--muted); }
+.recursos .rec-img { list-style: none; margin-left: -18px; }
+.recursos figure { margin: 4px 0; }
+.recursos img { max-width: min(100%, 420px); height: auto; border-radius: 6px; }
+.recursos figcaption, .rec-cred, .coment-nota { font-size: .75rem; color: var(--muted); }
 .classif-linha { display: grid; grid-template-columns: 1fr 1.4fr 1.4fr 1fr auto; gap: 6px; }
 .classif-linha select, .classif-linha input { min-width: 0; font: inherit; font-size: .85rem; padding: 4px; }
 @media (max-width: 700px) { .classif-linha { grid-template-columns: 1fr 1fr; } }
@@ -339,6 +354,17 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       <button class="btn sec" id="baixarEdicoes" type="button">Baixar edições (JSON)</button>
       <button class="btn pri" id="novaQuestao" type="button">+ Nova questão</button>
     </div>
+    <details class="fgroup" data-grupo="f-manut" id="grupoManut" hidden><summary class="label">Manutenção do banco<span class="nsel"></span></summary>
+      <div class="manut">
+        <p class="ed-estado">Abre uma sessão do Claude na nuvem que faz o trabalho e republica esta página. Você recebe um aviso no celular quando terminar.</p>
+        <button class="btn sec" type="button" data-disparar="atualizar">Atualizar dados</button>
+        <p class="ed-estado">Provas e microdados novos do INEP, comentários que faltam ou com pesquisa antiga.</p>
+        <button class="btn sec" type="button" data-disparar="revisar">Revisar e limpar</button>
+        <p class="ed-estado">Anomalias, imagens órfãs, validação, compactação e teste da página.</p>
+        <label class="campo">Instrução extra (opcional)<textarea id="manutTexto" rows="2" placeholder="ex.: comece pela prova de 2024"></textarea></label>
+        <p class="ed-estado" id="manutEstado" aria-live="polite"></p>
+      </div>
+    </details>
     <button class="reset" id="limpar" type="button">Limpar filtros</button>
   </aside>
 
@@ -560,6 +586,51 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       || posicao(ORDEM_CLASSIF, ca) - posicao(ORDEM_CLASSIF, cb)
       || posicao(ORDEM_CLASSIF, ca + "|" + ta) - posicao(ORDEM_CLASSIF, cb + "|" + tb);
   };
+  // Comentários: um arquivo .js por prova (window.COMENTARIOS[id]), pedido
+  // só quando a primeira questão daquela prova é respondida.
+  const SCRIPTS_COMENT = {};
+  function carregarComentario(src) {
+    if (!SCRIPTS_COMENT[src]) SCRIPTS_COMENT[src] = new Promise((ok) => {
+      const s = document.createElement("script");
+      s.src = src; s.onload = () => ok(true); s.onerror = () => ok(false);
+      document.head.appendChild(s);
+    });
+    return SCRIPTS_COMENT[src];
+  }
+  // texto dos comentários: parágrafos, **negrito**, _itálico_ e [links](https://...)
+  function textoComent(t) {
+    return (t || "").split(/\n\s*\n/).map((p) => "<p>" + esc(p.trim())
+      .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+      .replace(/(^|[\s(])_([^_]+)_(?=[\s).,;:!?]|$)/g, "$1<i>$2</i>")
+      .replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+      .replace(/\n/g, "<br>") + "</p>").join("");
+  }
+  const NOME_RECURSO = { comentario: "Resolução comentada", video: "Vídeo", artigo: "Leitura", wikipedia: "Wikipédia", imagem: "Imagem", dados: "Dados", apostila: "Material didático", simulador: "Simulação" };
+  function recursosDe(f, trecho) {
+    const rs = (f.recursos || []).filter((r) => r.trecho === trecho && /^https:\/\//.test(r.url || ""));
+    if (!rs.length) return "";
+    return `<ul class="recursos">${rs.map((r) => r.tipo === "imagem"
+      ? `<li class="rec-img"><figure><img src="${esc(r.url)}" alt="${esc(r.titulo)}" loading="lazy"><figcaption>${esc(r.titulo)}${r.credito ? ` · ${esc(r.credito)}` : ""}</figcaption></figure></li>`
+      : `<li><span class="rec-tipo">${esc(NOME_RECURSO[r.tipo] || r.tipo)}</span> <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.titulo)}</a>${r.credito ? ` <span class="rec-cred">(${esc(r.credito)})</span>` : ""}</li>`).join("")}</ul>`;
+  }
+  function htmlComentario(q, f) {
+    const letras = "ABCDE".split("").filter((L) => f.distratores && f.distratores[L]);
+    return `<section><h4>O enunciado</h4>${textoComent(f.enunciado)}${recursosDe(f, "enunciado")}</section>
+      ${q.gabarito && !q.anulada ? `<section class="ok"><h4>Por que ${esc(q.gabarito)} está correta</h4>${textoComent(f.correta)}${recursosDe(f, "correta")}${recursosDe(f, q.gabarito)}</section>` : ""}
+      <section><h4>Por que as outras estão erradas</h4>${letras.map((L) => `<div class="distrator"><span class="bubble">${L}</span><div>${textoComent(f.distratores[L])}${recursosDe(f, L)}</div></div>`).join("")}</section>
+      <section><h4>Análise da questão</h4>${textoComent(f.analise)}${recursosDe(f, "analise")}</section>
+      <p class="coment-nota">Comentário ${f.revisado ? "revisado" : "gerado a partir de pesquisa e ainda não revisado por um professor"}${f.pesquisado_em ? ` · pesquisa de ${esc(f.pesquisado_em.split("-").reverse().join("/"))}` : ""}.</p>`;
+  }
+  function preencherComentarios(raiz) {
+    raiz.querySelectorAll("[data-coment]").forEach((el) => {
+      const q = BANCO.find((x) => x.id === el.dataset.coment);
+      if (!q) return;
+      carregarComentario(q.comentario).then((ok) => {
+        const f = ok && window.COMENTARIOS && window.COMENTARIOS[q.id];
+        el.querySelector(".coment-corpo").innerHTML = f ? htmlComentario(q, f) : "Não foi possível carregar os comentários.";
+      });
+    });
+  }
   const SIGLAS = ["LC", "CH", "CN", "MT"];
   const ordemHab = (a, b) => SIGLAS.indexOf(a.split(" ")[0]) - SIGLAS.indexOf(b.split(" ")[0]) || parseInt(a.split(" H")[1]) - parseInt(b.split(" H")[1]);
   const ordemDif = (a, b) => (NIVEIS.indexOf(a) + 1 || 99) - (NIVEIS.indexOf(b) + 1 || 99);
@@ -739,6 +810,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       ${base}
       ${corpo}
       <ol class="alts" aria-label="Alternativas">${alts}</ol>
+      ${(resolvida || q.anulada) && q.comentario ? `<details class="coment" data-coment="${esc(q.id)}" open><summary>Comentários da questão</summary><div class="coment-corpo">Carregando…</div></details>` : ""}
       <div class="actions">${q.anulada ? '<span class="feedback">Questão anulada: sem resposta oficial.</span>' : resolvida ? fb + ' <button class="btn" type="button" data-refazer="' + esc(q.id) + '">Refazer</button>' : '<button class="btn" type="button" data-ver="' + esc(q.id) + '">Mostrar resposta</button>'}${botaoProva(q)}${botoesEdicao(q)}</div>
     </article>`;
   }
@@ -838,6 +910,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")
       : '<div class="empty">Nenhuma questão com esses filtros. Desmarque algum filtro ou limpe a busca.</div>';
     adiantarPacotes($("lista"));
+    preencherComentarios($("lista"));
     $("mais").hidden = res.length <= limite;
     atualizarEstadoEdicao();
     $("mais").textContent = `Mostrar mais questões (${Math.min(POR_PAGINA, res.length - limite)} de ${res.length - limite} restantes)`;
@@ -892,7 +965,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const id = b.dataset.q || b.dataset.ver || b.dataset.refazer;
     const q = BANCO.find((x) => x.id === id);
     const card = document.getElementById(id);
-    if (q && card) { card.outerHTML = cartao(q); }
+    if (q && card) {
+      card.outerHTML = cartao(q);
+      const novo = document.getElementById(id);
+      adiantarPacotes(novo);
+      preencherComentarios(novo);
+    }
     atualizarResumo(BANCO.filter((x) => passa(x)).length);
   });
   $("resumo").addEventListener("click", (e) => {
@@ -1752,6 +1830,48 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       catch (err) { estadoProva("Não foi possível excluir: " + erroTexto(err)); }
     }
   });
+
+  // ---------- manutenção: dispara as tarefas agendadas (Claude Code Remote) ----------
+  const TAREFAS = { atualizar: "trig_01QvC1aR9PmnTR3e15hTaDKG", revisar: "trig_014i9AYZ5kwc7xLCnVKGqQfZ" };
+  const MSG_MCP = {
+    server_not_connected: "o conector Claude Code Remote não está ativo na sua conta (Configurações > Conectores).",
+    not_granted: "a permissão para usar o conector foi negada nesta página.",
+    consent_required: "é preciso permitir o uso do conector.",
+    blocked_by_policy: "a política da organização não permite disparar tarefas daqui.",
+    rate_limited: "muitas chamadas seguidas; tente de novo em alguns minutos.",
+    tool_error: "a tarefa agendada recusou o disparo (ela ainda existe?).",
+  };
+  async function iniciarManutencao() {
+    if (!window.claude || typeof window.claude.use !== "function") return;
+    const user = await window.claude.use("user");
+    let dona = false;
+    try { dona = user ? await user.isOwner() : false; } catch (_) { dona = false; }
+    if (!dona) return;
+    $("grupoManut").hidden = false;
+    $("grupoManut").addEventListener("click", async (e) => {
+      const b = e.target.closest("[data-disparar]");
+      if (!b) return;
+      const tipo = b.dataset.disparar, estado = $("manutEstado");
+      if (b.dataset.confirmar !== "1") {
+        b.dataset.confirmar = "1"; const rot = b.textContent; b.dataset.rotulo = rot; b.textContent = "Confirmar: " + rot;
+        setTimeout(() => { if (b.dataset.confirmar === "1") { b.dataset.confirmar = ""; b.textContent = rot; } }, 6000);
+        return;
+      }
+      b.dataset.confirmar = ""; b.textContent = b.dataset.rotulo; b.disabled = true;
+      estado.textContent = "Disparando…";
+      try {
+        const mcp = await window.claude.use("mcp");
+        if (!mcp) throw { code: "server_not_connected" };
+        const texto = $("manutTexto").value.trim();
+        await mcp.callTool("Claude Code Remote", "fire_trigger", texto ? { trigger_id: TAREFAS[tipo], text: texto } : { trigger_id: TAREFAS[tipo] }, { cache: false });
+        estado.textContent = `Pedido enviado (${b.textContent}). A sessão leva de minutos a algumas horas; a página é republicada no fim.`;
+        $("manutTexto").value = "";
+      } catch (err) {
+        estado.textContent = "Não foi possível disparar: " + (MSG_MCP[err && err.code] || erroTexto(err));
+      } finally { b.disabled = false; }
+    });
+  }
+  iniciarManutencao();
 
   // ---------- na página publicada: banco de dados do artefato ----------
   async function iniciarNuvem() {

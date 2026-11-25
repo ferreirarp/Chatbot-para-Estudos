@@ -2481,8 +2481,8 @@
     "enunciado": "Uma fábrica trabalha com chapas metálicas para fabricar\nlaminados de diferentes espessuras por meio de sucessivas\ndobras. Em cada etapa, o laminado é dobrado ao meio, conforme\na figura.\nA partir de uma chapa metálica com 1 mm de espessura, esse\nprocedimento é repetido sucessivamente até que se obtenha\no laminado na espessura desejada.\nAs espessuras, em milímetro, desses laminados após a 1ª, 2ª,\n3ª, 4ª e 5ª dobras são, respectivamente,",
     "alternativas": {
       "A": "2, 4, 6, 8 e 10",
-      "B": "2, 2², 2³, 2⁴ e 2⁵ 1 1 1 1 1",
-      "C": "",
+      "B": "2, 2², 2³, 2⁴ e 2⁵",
+      "C": "1/2, 1/4, 1/6, 1/8 1/10 e",
       "D": "1/2, 1/2², 1/2³, 1/2⁴ 1/2⁵ e",
       "E": "1, 1/2, 1/2², 1/2³ e 1/2⁴"
     },
@@ -2515,13 +2515,8 @@
         "texto": "A partir de uma chapa metálica com 1 mm de espessura, esse\nprocedimento é repetido sucessivamente até que se obtenha\no laminado na espessura desejada.\nAs espessuras, em milímetro, desses laminados após a 1ª, 2ª,\n3ª, 4ª e 5ª dobras são, respectivamente,"
       }
     ],
-    "alternativas_imagem": {
-      "C": "img/blocos/reaplicacao_D2_CD7_Q148_f2.png"
-    },
-    "revisar": [
-      "fórmula recortada como imagem",
-      "texto difere do PDF; sobram: 11111"
-    ]
+    "alternativas_imagem": {},
+    "revisar": []
   },
   {
     "id": "2025-reaplicacao-D2-CD7-Q149",
