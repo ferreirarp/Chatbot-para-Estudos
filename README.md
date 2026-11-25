@@ -9,13 +9,17 @@ interface para estudar e filtrar (`questoes.html`).
 
 ```bash
 pip install pdfplumber pypdf
-# 1. extrair (aplicação regular é o padrão; use --aplicacao reaplicacao para a PPL)
+# 1. extrair (aplicação regular é o padrão; --aplicacao reaplicacao ou belem)
 python scripts/extrair_prova_regular.py --ano 2023 --dia 2 --caderno 7
+# 1b. converter em texto + recortes (blocos)
+python scripts/estruturar_questoes.py --ano 2023 --dia 2 --caderno 7
 # 2. classificar as questões em data/enem/classificacao/<ano>_<aplicacao>_D<dia>_CD<caderno>.json
 # 3. importar dados oficiais dos Microdados (habilidade, dificuldade, descarte)
 python scripts/importar_microdados.py --ano 2023
 # 4. gerar o banco usado pela interface
 python scripts/gerar_banco.py
+# 5. só para publicar: pacotes de imagens (fora do git)
+python scripts/empacotar_recortes.py
 ```
 
 Abra `questoes.html` no navegador (funciona direto do disco, sem servidor).
@@ -25,7 +29,10 @@ Abra `questoes.html` no navegador (funciona direto do disco, sem servidor).
 | Arquivo | Conteúdo |
 |---|---|
 | `data/enem/<ano>/<aplicacao>_D<dia>_CD<caderno>.json` | Questões extraídas de uma prova |
-| `data/enem/<ano>/img/*.png` | Recorte da questão, só quando há imagem, gráfico, tabela ou fórmula |
+| `data/enem/<ano>/<prova>_textos_base.json` | Textos compartilhados por várias questões (2025 em diante: "Texto para as questões X a Y") |
+| `data/enem/<ano>/img/*.png` | Imagem da questão como está na prova, só quando há imagem, gráfico, tabela ou fórmula |
+| `data/enem/<ano>/img/blocos/*.png` | Recortes dos objetos visuais usados nos blocos e nas alternativas em desenho |
+| `data/enem/edicoes/edicoes.json` | Correções manuais por cima do extraído (aplicadas por `gerar_banco.py`) |
 | `data/enem/classificacao/*.json` | Disciplinas e conteúdos de cada questão (feito à parte; não é apagado ao reextrair) |
 | `data/enem/oficial/*.json` | Dados oficiais por questão, dos Microdados do ENEM: habilidade, parâmetros da TRI (a, b, c), descarte da nota |
 | `data/enem/matriz_referencia.json` | Texto das habilidades H1–H30 e competências de cada área (Matriz de Referência) |
@@ -41,9 +48,12 @@ fluidos do corpo, resolvida por polaridade e solubilidade, é Química, não Bio
 
 ### Dados oficiais (Microdados do ENEM)
 `importar_microdados.py` baixa por partes, do pacote de microdados do INEP, só o
-`ITENS_PROVA_<ano>.csv` e a Matriz de Referência. Cada prova extraída é
-associada ao código de prova (`CO_PROVA`) cujo gabarito bate com 100% das
-questões da área; sem correspondência exata, nada é importado.
+`ITENS_PROVA_<ano>.csv` e a Matriz de Referência (o pacote de 2025 usa
+compressão Deflate64, que o Python não lê: o importador baixa o zip inteiro e
+usa o `unzip` do sistema). Cada prova extraída é associada ao código de prova
+(`CO_PROVA`) cujo gabarito bate com 100% das questões da área. Com uma única
+divergência e nenhum outro código próximo, o desempate é o vetor de gabarito
+gravado por candidato (`TX_GABARITO_<área>`), que é o usado na correção.
 
 **Escala de notas:** o INEP calcula a proficiência θ por TRI de 3 parâmetros
 (D = 1), método EAP com priori normal padrão e 40 pontos de quadratura, e a
@@ -74,7 +84,7 @@ com uma faixa provável (±1 desvio-padrão da estimativa). Testada com 6
 candidatos reais: a nota exibida coincidiu com a oficial (arredondada) nos 12
 casos. As respostas ficam salvas só no navegador de quem usa a página.
 
-### Texto + recortes (piloto, 20 questões de 2024)
+### Texto + recortes
 `scripts/estruturar_questoes.py` reescreve questões salvas como imagem inteira
 em texto, recortando só os objetos visuais (foto, gráfico, desenho, tabela,
 fórmula complexa). Regras: linhas que se sobrepõem a uma figura (rótulos,
@@ -87,14 +97,20 @@ inteira continua salva e aparece em "Ver a questão como está na prova".
     python scripts/estruturar_questoes.py --ano 2024 --dia 2 --caderno 7 --questoes 92,97
     python scripts/gerar_banco.py
 
-**Situação (todas as 302 questões com imagem de 2023 e 2024 já convertidas):**
-a conferência automática marca 35 com "Conferir" (33 por fórmula complexa
-mantida como recorte, 2 por texto duplicado dentro de um recorte). Defeitos
-conhecidos e não marcados: 2023 regular Q135 (o recorte do esquema leva junto
-duas linhas de texto) e 2023 regular Q129 (rótulos "Cl Cl" fora da figura).
+**Situação:** todas as questões com imagem de 2023 a 2026 estão convertidas.
+Cada aviso "Conferir" foi revisado contra o PDF; as correções e os avisos
+conferidos ficam em `data/enem/edicoes/edicoes.json`, e nenhum aviso fica
+pendente na interface. "Fórmula recortada como imagem" é nota de extração e
+não aparece para quem estuda. Defeitos conhecidos: 2023 regular Q135 (o recorte
+do esquema leva junto duas linhas de texto), 2023 regular Q129 (rótulos "Cl Cl"
+fora da figura) e 2025 regular Q107 (duas linhas de texto dentro do recorte da
+figura); nas questões de 2025 Q138 e 2026 Q180 a imagem "como está na prova"
+sai desalinhada (as alternativas, corretas, vêm dos recortes).
+
 Para a página publicada (limite de 512 arquivos), `scripts/empacotar_recortes.py`
-junta os recortes em pacotes JSON de 10 questões; a página só baixa o pacote
-quando precisa.
+junta as imagens em pacotes JSON: recortes de 10 em 10 questões e imagens
+"como está na prova" de 30 em 30. A página só baixa um pacote quando a imagem
+falta como arquivo. Os pacotes são derivados das PNGs e não vão para o git.
 
 ### Questões próprias e provas impressas
 - **+ Nova questão** (barra lateral): questão autoral ou de outra fonte, com
@@ -166,6 +182,31 @@ estava fora do lugar na prova).
 | 2024 · regular · 2º dia · caderno 7 (Azul) | 90/90 | 21 | 69 | 69 imagens revisadas; gabarito 89/90 igual aos microdados (Q129 anulada); 90 questões classificadas |
 | 2024 · reaplicação · 1º dia · caderno 1 (Azul) | 95/95 | 79 | 16 | 16 imagens revisadas; gabarito 95/95 igual aos microdados; 95 questões classificadas |
 | 2024 · reaplicação · 2º dia · caderno 7 (Azul) | 90/90 | 32 | 58 | 58 imagens revisadas; gabarito 90/90 igual aos microdados; 90 questões classificadas |
+| 2025 · regular · 1º dia · caderno 1 | 95/95 | 76 | 19 | gabarito 95/95 igual aos microdados; 1 texto-base; 95 classificadas |
+| 2025 · regular · 2º dia · caderno 7 | 90/90 | 37 | 53 | gabarito 90/90 igual aos microdados (3 anuladas); 90 classificadas |
+| 2025 · Belém, Ananindeua e Marituba · 1º dia · caderno 1 | 95/95 | 77 | 18 | gabarito 95/95 igual aos microdados; 1 texto-base; 95 classificadas |
+| 2025 · Belém, Ananindeua e Marituba · 2º dia · caderno 7 | 90/90 | 54 | 36 | gabarito 90/90 igual aos microdados; 90 classificadas |
+| 2025 · reaplicação · 1º dia · caderno 1 | 95/95 | 82 | 13 | gabarito 95/95 (Q15: ver abaixo); 95 classificadas |
+| 2025 · reaplicação · 2º dia · caderno 7 | 90/90 | 47 | 43 | gabarito 90/90 igual aos microdados; 90 classificadas |
+| 2026 · regular · 1º dia · caderno 1 | 95/95 | 78 | 17 | gabarito do PDF (microdados ainda não publicados); 2 textos-base; 95 classificadas |
+| 2026 · regular · 2º dia · caderno 7 | 90/90 | 38 | 52 | gabarito do PDF (1 anulada); 90 classificadas |
+
+**2025:** escalas de nota (validadas em 1500 candidatos, erro máximo 0,05
+ponto): Linguagens 108,09·θ + 499,98; Humanas 112,31·θ + 501,49; Natureza
+113,10·θ + 501,14; Matemática 129,65·θ + 500,02, iguais às de 2023 e 2024.
+Descartadas da nota: regular 2º dia Q123, Q125, Q132, Q172 e Q174; reaplicação
+Q62. Na reaplicação, Linguagens Q15: o `ITENS_PROVA` traz B, mas o caderno, o
+vetor de gabarito dos 43 candidatos da amostra (TX_GABARITO_LC) e as notas
+oficiais indicam D. Com D a escala reproduz as notas (erro máximo 0,048 ponto);
+com B erra até 30 pontos. Fica D, e a questão conta na nota. A aplicação de
+Belém, Ananindeua e Marituba não tem nenhum candidato no arquivo de resultados
+(lido inteiro, 4,8 milhões de linhas), então a escala dela não foi conferida
+com notas reais; o gabarito bate 100% com os microdados.
+
+**2026:** os microdados ainda não existem (o pacote retorna 404); as questões
+não têm habilidade nem dificuldade até a publicação. Os cadernos de 2026 usam
+letras espaçadas em títulos e algumas fontes trazem glifos sem largura; o
+extrator detecta cabeçalhos por caractere e usa os espaços explícitos do PDF.
 
 A reaplicação de 2023 (PPL e reaplicação, mesma prova) não repete nenhuma questão
 da aplicação regular do mesmo ano, mas reaproveita questões de edições anteriores.
@@ -194,6 +235,6 @@ essa parte não pôde ser conferida com notas reais).
 - O servidor `download.inep.gov.br` não envia o certificado intermediário. Os
   scripts confiam nesse intermediário (`scripts/certs/`, emitido pela GlobalSign
   Root R46) sem desligar a verificação TLS.
-- `scripts/extrair_enem.py` guarda funções de download e de leitura de gabarito
-  usadas pelo extrator. Também extrai os cadernos adaptados (DOSVOX), que não são
-  mais usados no banco.
+- `scripts/comum.py` guarda caminhos, download e leitura do gabarito, usados
+  pelo extrator e pelo importador. (O antigo extrator dos cadernos DOSVOX foi
+  removido: não era mais usado no banco.)

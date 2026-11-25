@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <style>
+[hidden] { display: none !important; }
 /* Layout: filtros fixos à esquerda (empilham no celular) + lista de questões
    em formato de cartão-resposta, com alternativas em bolinhas. */
 :root {
@@ -442,10 +443,12 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
   document.addEventListener("error", (e) => {
     const im = e.target;
     if (im.tagName !== "IMG" || im.dataset.pacote) return;
-    const m = (im.getAttribute("src") || "").match(/data\/enem\/(\d{4})\/img\/blocos\/((?:regular|reaplicacao|belem)_D\d_CD\d+)_Q(\d{3})[^/]*\.png$/);
+    // mesma regra de nomes de scripts/empacotar_recortes.py
+    const m = (im.getAttribute("src") || "").match(/data\/enem\/(\d{4})\/img\/(blocos\/)?((?:regular|reaplicacao|belem)_D\d_CD\d+)_[QT](\d{2,3})[^/]*\.png$/);
     if (!m) return;
     im.dataset.pacote = "1";
-    const url = `data/enem/${m[1]}/blocos/pacote_${m[2]}_${String(Math.floor(Number(m[3]) / 10)).padStart(2, "0")}.json`, nome = im.getAttribute("src").split("/").pop();
+    const [tipo, n] = m[2] ? ["pacote", 10] : ["original", 30];
+    const url = `data/enem/${m[1]}/blocos/${tipo}_${m[3]}_${String(Math.floor(Number(m[4]) / n)).padStart(2, "0")}.json`, nome = im.getAttribute("src").split("/").pop();
     PACOTES[url] = PACOTES[url] || fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
     PACOTES[url].then((p) => { if (p[nome]) im.src = p[nome]; });
   }, true);
@@ -737,7 +740,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     montarOpcoes("dif", $("f-dif"), ordemDif);
     montarOpcoes("hab", $("f-hab"), ordemHab, rotuloHab);
     const res = BANCO.filter((q) => passa(q));
-    const provas = new Set(BANCO.map((q) => q.prova.descricao));
+    const provas = new Set(BANCO.filter((q) => !q.propria).map((q) => q.id.replace(/-Q\d+.*$/, "")));  // um caderno por dia
     $("fonte").textContent = `${BANCO.length} questões de ${provas.size} prova${provas.size > 1 ? "s" : ""} oficial${provas.size > 1 ? "is" : ""} do INEP`;
     atualizarResumo(res.length);
     $("lista").innerHTML = res.length ? res.slice(0, limite).map(cartao).join("")

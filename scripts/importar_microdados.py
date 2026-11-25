@@ -43,7 +43,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from extrair_enem import CACHE, RAIZ, contexto_ssl  # noqa: E402
+from comum import CACHE, RAIZ, contexto_ssl  # noqa: E402
 
 DADOS = RAIZ / "data" / "enem"
 URL_MICRODADOS = "https://download.inep.gov.br/microdados/microdados_enem_{ano}.zip"

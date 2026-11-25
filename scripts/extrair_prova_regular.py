@@ -32,7 +32,7 @@ except ImportError:  # pragma: no cover
     sys.exit("Instale as dependências: pip install pdfplumber pypdf")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from extrair_enem import (  # noqa: E402  (reaproveita download e gabarito)
+from comum import (  # noqa: E402
     BASE_DOWNLOAD, CACHE, RAIZ, baixar, contexto_ssl, ler_gabarito, normalizar_resposta,
 )
 
