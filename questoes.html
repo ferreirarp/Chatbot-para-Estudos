@@ -427,6 +427,20 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const dpi = Number(im.dataset.dpi ?? 200);
     if (dpi > 0 && im.naturalWidth) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
   }, true);
+  // Recortes ausentes como arquivo (página publicada): vêm de um pacote por
+  // prova (data/enem/<ano>/blocos/pacote_<prova>.json, nome -> data URL),
+  // baixado só quando a primeira imagem dele é necessária.
+  const PACOTES = {};
+  document.addEventListener("error", (e) => {
+    const im = e.target;
+    if (im.tagName !== "IMG" || im.dataset.pacote) return;
+    const m = (im.getAttribute("src") || "").match(/data\/enem\/(\d{4})\/img\/blocos\/((?:regular|reaplicacao|belem)_D\d_CD\d+)_Q(\d{3})[^/]*\.png$/);
+    if (!m) return;
+    im.dataset.pacote = "1";
+    const url = `data/enem/${m[1]}/blocos/pacote_${m[2]}_${String(Math.floor(Number(m[3]) / 10)).padStart(2, "0")}.json`, nome = im.getAttribute("src").split("/").pop();
+    PACOTES[url] = PACOTES[url] || fetch(url).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    PACOTES[url].then((p) => { if (p[nome]) im.src = p[nome]; });
+  }, true);
   const ESCALAS = window.ESCALA_DIFICULDADE || {};      // por área: {min, max, n, niveis}
   const ESCALA_NOTAS = window.ESCALA_NOTAS || {};       // "ano|área": {k, m}
   const NIVEIS = ["Para não zerar", "Facílima", "Fácil", "Mediana", "Difícil", "Dificílima", "Impossível"];

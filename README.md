@@ -87,6 +87,15 @@ inteira continua salva e aparece em "Ver a questão como está na prova".
     python scripts/estruturar_questoes.py --ano 2024 --dia 2 --caderno 7 --questoes 92,97
     python scripts/gerar_banco.py
 
+**Situação (todas as 302 questões com imagem de 2023 e 2024 já convertidas):**
+a conferência automática marca 35 com "Conferir" (33 por fórmula complexa
+mantida como recorte, 2 por texto duplicado dentro de um recorte). Defeitos
+conhecidos e não marcados: 2023 regular Q135 (o recorte do esquema leva junto
+duas linhas de texto) e 2023 regular Q129 (rótulos "Cl Cl" fora da figura).
+Para a página publicada (limite de 512 arquivos), `scripts/empacotar_recortes.py`
+junta os recortes em pacotes JSON de 10 questões; a página só baixa o pacote
+quando precisa.
+
 ### Questões próprias e provas impressas
 - **+ Nova questão** (barra lateral): questão autoral ou de outra fonte, com
   origem, fonte, ano, área e habilidade da Matriz do ENEM. O enunciado é feito
