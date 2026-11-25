@@ -28,6 +28,7 @@ Gera:
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import csv
 import io
 import json
@@ -85,6 +86,28 @@ class ArquivoRemoto(io.RawIOBase):
         return len(dados)
 
 
+def abrir_resultados(ano: int, ctx):
+    """Abre o CSV de resultados dentro do pacote de microdados, como fluxo de
+    bytes. Lê por partes, pela rede; se o arquivo usar Deflate64 (2025), que o
+    zipfile do Python não lê, baixa o pacote inteiro uma vez para o cache e
+    descompacta com o `unzip` do sistema."""
+    z = zipfile.ZipFile(io.BufferedReader(ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx), 1 << 20))
+    info = next(i for i in z.infolist() if re.search(rf"(MICRODADOS_ENEM|RESULTADOS)_{ano}\.csv$", i.filename))
+    try:
+        return z.open(info)
+    except NotImplementedError:
+        pacote = CACHE / str(ano) / f"microdados_enem_{ano}.zip"
+        if not pacote.exists() or pacote.stat().st_size != ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx).tamanho:
+            print(f"  baixando o pacote completo de {ano} (compressão Deflate64)...", flush=True)
+            pacote.parent.mkdir(parents=True, exist_ok=True)
+            req = urllib.request.Request(URL_MICRODADOS.format(ano=ano), headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, context=ctx, timeout=600) as r, pacote.open("wb") as out:
+                while bloco := r.read(1 << 22):
+                    out.write(bloco)
+        proc = subprocess.Popen(["unzip", "-p", str(pacote), info.filename], stdout=subprocess.PIPE)
+        return proc.stdout
+
+
 def extrair_do_zip(ano: int, padrao: str, destino: Path, ctx) -> Path:
     if destino.exists() and destino.stat().st_size > 0:
         return destino
@@ -119,12 +142,10 @@ def amostra_participantes(ano: int, ctx, linhas: int = 60000) -> Path:
     destino = CACHE / str(ano) / "microdados" / f"participantes_amostra_{linhas}.csv"
     if destino.exists() and destino.stat().st_size > 0:
         return destino
-    z = zipfile.ZipFile(io.BufferedReader(ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx), 1 << 20))
     # até 2023: MICRODADOS_ENEM_<ano>.csv; desde 2024 as respostas e notas
     # ficam em RESULTADOS_<ano>.csv (o perfil foi para PARTICIPANTES_<ano>.csv)
-    info = next(i for i in z.infolist() if re.search(rf"(MICRODADOS_ENEM|RESULTADOS)_{ano}\.csv$", i.filename))
     destino.parent.mkdir(parents=True, exist_ok=True)
-    with z.open(info) as f, destino.open("wb") as out:
+    with abrir_resultados(ano, ctx) as f, destino.open("wb") as out:
         for i, linha in enumerate(f):
             out.write(linha)
             if i >= linhas:
@@ -171,10 +192,8 @@ def amostra_dirigida(ano: int, ctx, codigos: dict[str, set], minimo: int = 40,
     destino = CACHE / str(ano) / "microdados" / f"amostra_codigos_{chave}.csv"
     if destino.exists() and destino.stat().st_size > 0:
         return destino
-    z = zipfile.ZipFile(io.BufferedReader(ArquivoRemoto(URL_MICRODADOS.format(ano=ano), ctx), 1 << 20))
-    info = next(i for i in z.infolist() if re.search(rf"(MICRODADOS_ENEM|RESULTADOS)_{ano}\.csv$", i.filename))
     contagem = {(a, c): 0 for a, cs in codigos.items() for c in cs}
-    with z.open(info) as f, destino.open("wb") as out:
+    with abrir_resultados(ano, ctx) as f, destino.open("wb") as out:
         cab = f.readline()
         out.write(cab)
         nomes = cab.decode("latin-1").strip().split(";")
@@ -288,6 +307,8 @@ def importar(ano: int) -> None:
     # 1ª passagem: associar provas a códigos; 2ª: escala por área; 3ª: gravar.
     associacoes = []
     for arq in sorted((DADOS / str(ano)).glob("*_D*_CD*.json")):
+        if not re.fullmatch(r"(regular|reaplicacao|belem)_D\d_CD\d+\.json", arq.name):
+            continue  # textos-base e outros arquivos auxiliares
         questoes = json.loads(arq.read_text(encoding="utf-8"))
         associacoes.append((arq, questoes, associar(arq, questoes, por_prova)))
 
@@ -319,6 +340,7 @@ def importar(ano: int) -> None:
         extra = amostra_dirigida(ano, ctx, faltam)
         participantes += list(csv.DictReader(extra.open(encoding="latin-1"), delimiter=";"))
 
+    conferir_divergencias(associacoes, por_prova, participantes)
     for arq, questoes, cods in associacoes:
         validacao = {}
         for sigla, lista in cods.items():
@@ -347,12 +369,56 @@ def associar(arq: Path, questoes: list[dict], por_prova: dict) -> dict[str, list
             acertos = sum(1 for k, g in esperado.items() if k in linhas and linhas[k]["TX_GABARITO"] == g)
             candidatos.append((acertos, cod))
         candidatos.sort(reverse=True)
-        if not candidatos or candidatos[0][0] != len(esperado):
-            melhor = candidatos[0] if candidatos else (0, None)
-            print(f"  {arq.name} {sigla}: nenhum código bate 100% (melhor {melhor[1]}: {melhor[0]}/{len(esperado)})")
-            continue
-        codigos[sigla] = [c for a, c in candidatos if a == len(esperado)]
+        n = len(esperado)
+        melhor = candidatos[0] if candidatos else (0, None)
+        segundo = candidatos[1][0] if len(candidatos) > 1 else 0
+        if melhor[0] == n:
+            codigos[sigla] = [c for a, c in candidatos if a == n]
+        elif melhor[0] == n - 1 and segundo <= n - 5:
+            # uma única divergência e nenhum outro código perto: é a prova
+            # certa com um gabarito diferente (erro no PDF ou no microdado).
+            # A questão fica fora da nota, porque não dá para saber qual vale.
+            k = next(k for k, g in esperado.items()
+                     if k in por_prova[melhor[1]] and por_prova[melhor[1]][k]["TX_GABARITO"] != g)
+            DIVERGENCIAS[(arq.stem, k)] = por_prova[melhor[1]][k]["TX_GABARITO"]
+            print(f"  {arq.name} {sigla}: código {melhor[1]} com 1 divergência na questão {k} "
+                  f"(gabarito {esperado[k]}, microdado {DIVERGENCIAS[(arq.stem, k)]}): fica fora da nota")
+            codigos[sigla] = [melhor[1]]
+        else:
+            print(f"  {arq.name} {sigla}: nenhum código bate (melhor {melhor[1]}: {melhor[0]}/{n})")
     return codigos
+
+
+DIVERGENCIAS: dict[tuple[str, str], str] = {}
+
+
+def conferir_divergencias(associacoes, por_prova, participantes) -> None:
+    """Desempata uma divergência de gabarito pelo vetor de gabarito gravado
+    para cada candidato (TX_GABARITO_<área>), que é o usado na correção.
+    Em 2025 (reaplicação, LC, posição 15) o ITENS_PROVA traz B, mas o vetor
+    dos candidatos e o caderno trazem D, e só com D as notas oficiais são
+    reproduzidas."""
+    for arq, questoes, cods in associacoes:
+        for q in questoes:
+            k = chave_questao(q)
+            if (arq.stem, k) not in DIVERGENCIAS:
+                continue
+            sigla = next((sg for sg, lista in cods.items() if k in por_prova[lista[0]]), None)
+            if not sigla:
+                continue
+            cod = cods[sigla][0]
+            chaves = list(por_prova[cod])
+            ordem = sorted((c for c in chaves if c.endswith("-ingles")), key=lambda c: int(c.split("-")[0])) \
+                + sorted((c for c in chaves if c.endswith("-espanhol")), key=lambda c: int(c.split("-")[0])) \
+                + sorted((c for c in chaves if "-" not in c), key=int)
+            i = ordem.index(k)
+            votos = Counter(p[f"TX_GABARITO_{sigla}"][i] for p in participantes
+                            if p.get(f"CO_PROVA_{sigla}") == cod and len(p.get(f"TX_GABARITO_{sigla}") or "") == len(ordem))
+            if votos and votos.most_common(1)[0][0] == q["gabarito"]:
+                print(f"  {arq.stem} {k}: o vetor de gabarito dos candidatos ({sum(votos.values())}) confirma "
+                      f"{q['gabarito']}; o {DIVERGENCIAS[(arq.stem, k)]} do ITENS_PROVA é erro do arquivo de itens")
+                por_prova[cod][k]["TX_GABARITO"] = q["gabarito"]
+                del DIVERGENCIAS[(arq.stem, k)]
 
 
 def gravar(ano, arq, questoes, codigos, por_prova, escalas, validacao=None) -> None:
@@ -376,6 +442,9 @@ def gravar(ano, arq, questoes, codigos, por_prova, escalas, validacao=None) -> N
                 "nota_equivalente": round(esc["k"] * b + esc["m"]) if (b is not None and esc) else None,
                 "descartada_da_nota": r["IN_ITEM_ABAN"] == "1",
                 "motivo_descarte": r["TX_MOTIVO_ABAN"] or None,
+                # gabarito diferente do publicado no PDF: os parâmetros podem
+                # não ser deste item, então a questão não entra na nota
+                "gabarito_microdado": DIVERGENCIAS.get((arq.stem, chave_questao(q))),
                 "item_adaptado": r["IN_ITEM_ADAPTADO"] == "1",
             }
     destino = DADOS / "oficial" / f"{ano}_{arq.stem}.json"

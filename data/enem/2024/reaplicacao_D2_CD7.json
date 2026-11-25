@@ -318,11 +318,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/reaplicacao_D2_CD7_Q097_f1.png",
-      "B": "img/blocos/reaplicacao_D2_CD7_Q097_f2.png",
-      "C": "img/blocos/reaplicacao_D2_CD7_Q097_f3.png",
-      "D": "img/blocos/reaplicacao_D2_CD7_Q097_f4.png",
-      "E": "img/blocos/reaplicacao_D2_CD7_Q097_f5.png"
+      "A": "img/blocos/reaplicacao_D2_CD7_Q097_f6.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q097_f7.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q097_f8.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q097_f9.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q097_f10.png"
     },
     "revisar": []
   },
@@ -488,7 +488,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Após realizar uma inspeção veicular, um cidadão descobre\nque seu automóvel a gasolina emite anualmente 3000 kg de\nCO₂ (massa molar 44 g mol⁻¹). Pensando em compensar\nesse impacto, resolveu plantar árvores nativas do Brasil\neficientes na fixação de carbono (massa molar 12 g mol⁻¹).\nAo pesquisar espécies nativas para esse fim, encontrou\nos seguintes dados para a espécie angico-branco: i) cada\n1 000 m² de plantação dessa árvore correspondem a uma\nmassa arbórea de 3 520 kg; ii) sua massa arbórea contém\n50% de carbono; e iii) apresenta boa adaptação à região.\nDisponível em: www.cnpf.embrapa.br.\nAcesso em: 12 out. 2015 (adaptado).\nA menor área que o cidadão deve utilizar para a plantação\nde angico-branco, visando compensar as emissões de CO₂,\né mais próxima de"
+        "texto": "Após realizar uma inspeção veicular, um cidadão descobre\nque seu automóvel a gasolina emite anualmente 3 000 kg de\nCO₂ (massa molar 44 g mol⁻¹). Pensando em compensar\nesse impacto, resolveu plantar árvores nativas do Brasil\neficientes na fixação de carbono (massa molar 12 g mol⁻¹).\nAo pesquisar espécies nativas para esse fim, encontrou\nos seguintes dados para a espécie angico-branco: i) cada\n1 000 m² de plantação dessa árvore correspondem a uma\nmassa arbórea de 3 520 kg; ii) sua massa arbórea contém\n50% de carbono; e iii) apresenta boa adaptação à região.\nDisponível em: www.cnpf.embrapa.br.\nAcesso em: 12 out. 2015 (adaptado).\nA menor área que o cidadão deve utilizar para a plantação\nde angico-branco, visando compensar as emissões de CO₂,\né mais próxima de"
       }
     ],
     "alternativas_imagem": {},
@@ -532,11 +532,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/reaplicacao_D2_CD7_Q102_f1.png",
-      "B": "img/blocos/reaplicacao_D2_CD7_Q102_f2.png",
-      "C": "img/blocos/reaplicacao_D2_CD7_Q102_f3.png",
-      "D": "img/blocos/reaplicacao_D2_CD7_Q102_f4.png",
-      "E": "img/blocos/reaplicacao_D2_CD7_Q102_f5.png"
+      "A": "img/blocos/reaplicacao_D2_CD7_Q102_f6.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q102_f7.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q102_f8.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q102_f9.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q102_f10.png"
     },
     "revisar": []
   },
@@ -962,7 +962,7 @@
     "blocos": [
       {
         "tipo": "texto",
-        "texto": "Ao respirarmos, falarmos, tossirmos ou espirrarmos,\nliberamos gotículas e aerossóis. Se estamos com alguma\ninfecção respiratória viral, vírus estarão contidos ali.\nEstima-se que uma pessoa com covid-19 falando alto por\n1 minuto pode gerar mais de 1 000 partículas de aerossóis,\no que poderia levar à liberação de mais de 100000 partículas\nvirais de SARS-CoV-2. O uso de máscaras pela população\npode auxiliar na redução da transmissão desse vírus,\nconforme representado na figura."
+        "texto": "Ao respirarmos, falarmos, tossirmos ou espirrarmos,\nliberamos gotículas e aerossóis. Se estamos com alguma\ninfecção respiratória viral, vírus estarão contidos ali.\nEstima-se que uma pessoa com covid-19 falando alto por\n1 minuto pode gerar mais de 1 000 partículas de aerossóis,\no que poderia levar à liberação de mais de 100 000 partículas\nvirais de SARS-CoV-2. O uso de máscaras pela população\npode auxiliar na redução da transmissão desse vírus,\nconforme representado na figura."
       },
       {
         "tipo": "figura",
@@ -1559,11 +1559,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/reaplicacao_D2_CD7_Q125_f1.png",
-      "B": "img/blocos/reaplicacao_D2_CD7_Q125_f2.png",
-      "C": "img/blocos/reaplicacao_D2_CD7_Q125_f3.png",
-      "D": "img/blocos/reaplicacao_D2_CD7_Q125_f4.png",
-      "E": "img/blocos/reaplicacao_D2_CD7_Q125_f5.png"
+      "A": "img/blocos/reaplicacao_D2_CD7_Q125_f6.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q125_f7.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q125_f8.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q125_f9.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q125_f10.png"
     },
     "revisar": []
   },
@@ -2471,11 +2471,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/reaplicacao_D2_CD7_Q150_f2.png",
-      "B": "img/blocos/reaplicacao_D2_CD7_Q150_f3.png",
-      "C": "img/blocos/reaplicacao_D2_CD7_Q150_f4.png",
-      "D": "img/blocos/reaplicacao_D2_CD7_Q150_f5.png",
-      "E": "img/blocos/reaplicacao_D2_CD7_Q150_f6.png"
+      "A": "img/blocos/reaplicacao_D2_CD7_Q150_f7.png",
+      "B": "img/blocos/reaplicacao_D2_CD7_Q150_f8.png",
+      "C": "img/blocos/reaplicacao_D2_CD7_Q150_f9.png",
+      "D": "img/blocos/reaplicacao_D2_CD7_Q150_f10.png",
+      "E": "img/blocos/reaplicacao_D2_CD7_Q150_f11.png"
     },
     "revisar": []
   },
@@ -3622,7 +3622,7 @@
       "A": "1: 24.",
       "B": "1: 40.",
       "C": "1: 60.",
-      "D": "1: 1600.",
+      "D": "1: 1 600.",
       "E": "1: 16 000."
     },
     "gabarito": "B",

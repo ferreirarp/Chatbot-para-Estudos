@@ -1,0 +1,754 @@
+{
+ "prova": "2025/belem_D2_CD7",
+ "criterio": "Disciplina = habilidade e conhecimento usados para chegar à resposta, não o contexto do enunciado. Mais de uma disciplina só quando a resolução exige as duas.",
+ "disciplinas_validas": [
+  "Artes",
+  "Biologia",
+  "Educação Física",
+  "Filosofia",
+  "Física",
+  "Geografia",
+  "História",
+  "Língua Espanhola",
+  "Língua Inglesa",
+  "Língua Portuguesa",
+  "Matemática",
+  "Química",
+  "Sociologia"
+ ],
+ "questoes": {
+  "91": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Termologia"
+   ]
+  },
+  "92": {
+   "disciplinas": [
+    "Geografia"
+   ],
+   "conteudos": [
+    "Questões ambientais"
+   ]
+  },
+  "93": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Química ambiental"
+   ]
+  },
+  "94": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Biotecnologia",
+    "Imunologia"
+   ]
+  },
+  "95": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Evolução"
+   ]
+  },
+  "96": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Saúde e parasitologia"
+   ]
+  },
+  "97": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Evolução",
+    "Botânica"
+   ]
+  },
+  "98": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Saúde e parasitologia"
+   ]
+  },
+  "99": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Citologia"
+   ]
+  },
+  "100": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Ácidos e bases"
+   ]
+  },
+  "101": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Genética e biologia molecular"
+   ]
+  },
+  "102": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Eletrodinâmica",
+    "Energia"
+   ]
+  },
+  "103": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Cinética química",
+    "Bioquímica e metabolismo"
+   ]
+  },
+  "104": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Química ambiental"
+   ]
+  },
+  "105": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Química orgânica"
+   ]
+  },
+  "106": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Citologia"
+   ]
+  },
+  "107": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Estequiometria",
+    "Ácidos e bases"
+   ]
+  },
+  "108": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Eletroquímica e oxirredução"
+   ]
+  },
+  "109": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Dinâmica"
+   ]
+  },
+  "110": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Termoquímica"
+   ]
+  },
+  "111": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Estequiometria"
+   ]
+  },
+  "112": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Ecologia"
+   ]
+  },
+  "113": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Fisiologia humana"
+   ]
+  },
+  "114": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Citologia"
+   ]
+  },
+  "115": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Química orgânica"
+   ]
+  },
+  "116": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Separação de misturas"
+   ]
+  },
+  "117": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Química ambiental"
+   ]
+  },
+  "118": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Estequiometria",
+    "Soluções"
+   ]
+  },
+  "119": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Cinemática"
+   ]
+  },
+  "120": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Cinemática"
+   ]
+  },
+  "121": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Ácidos e bases"
+   ]
+  },
+  "122": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Eletrodinâmica"
+   ]
+  },
+  "123": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Dinâmica"
+   ]
+  },
+  "124": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Evolução",
+    "Genética e biologia molecular"
+   ]
+  },
+  "125": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Genética e biologia molecular",
+    "Biotecnologia"
+   ]
+  },
+  "126": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Ligações químicas e polaridade",
+    "Separação de misturas"
+   ]
+  },
+  "127": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Fisiologia humana"
+   ]
+  },
+  "128": {
+   "disciplinas": [
+    "Química"
+   ],
+   "conteudos": [
+    "Funções inorgânicas"
+   ]
+  },
+  "129": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Ondulatória"
+   ]
+  },
+  "130": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Ecologia"
+   ]
+  },
+  "131": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Biotecnologia"
+   ]
+  },
+  "132": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Fisiologia humana"
+   ]
+  },
+  "133": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Termologia"
+   ]
+  },
+  "134": {
+   "disciplinas": [
+    "Biologia"
+   ],
+   "conteudos": [
+    "Fisiologia animal"
+   ]
+  },
+  "135": {
+   "disciplinas": [
+    "Física"
+   ],
+   "conteudos": [
+    "Ondulatória"
+   ]
+  },
+  "136": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria espacial"
+   ]
+  },
+  "137": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Aritmética e operações"
+   ]
+  },
+  "138": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria plana"
+   ]
+  },
+  "139": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Grandezas e medidas"
+   ]
+  },
+  "140": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Probabilidade e combinatória"
+   ]
+  },
+  "141": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria espacial"
+   ]
+  },
+  "142": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Aritmética e operações"
+   ]
+  },
+  "143": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Raciocínio lógico"
+   ]
+  },
+  "144": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Porcentagem e matemática financeira"
+   ]
+  },
+  "145": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Porcentagem e matemática financeira"
+   ]
+  },
+  "146": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria plana"
+   ]
+  },
+  "147": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "148": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria espacial"
+   ]
+  },
+  "149": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Razão, proporção e escala"
+   ]
+  },
+  "150": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Grandezas e medidas"
+   ]
+  },
+  "151": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Razão, proporção e escala",
+    "Geometria plana"
+   ]
+  },
+  "152": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Funções",
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "153": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Grandezas e medidas"
+   ]
+  },
+  "154": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Razão, proporção e escala"
+   ]
+  },
+  "155": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Porcentagem e matemática financeira"
+   ]
+  },
+  "156": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "157": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Aritmética e operações"
+   ]
+  },
+  "158": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Razão, proporção e escala"
+   ]
+  },
+  "159": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Sequências e progressões"
+   ]
+  },
+  "160": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Porcentagem e matemática financeira"
+   ]
+  },
+  "161": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística"
+   ]
+  },
+  "162": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Grandezas e medidas"
+   ]
+  },
+  "163": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria plana"
+   ]
+  },
+  "164": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Razão, proporção e escala"
+   ]
+  },
+  "165": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Grandezas e medidas"
+   ]
+  },
+  "166": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Funções"
+   ]
+  },
+  "167": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística",
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "168": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística"
+   ]
+  },
+  "169": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Probabilidade e combinatória"
+   ]
+  },
+  "170": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Raciocínio lógico"
+   ]
+  },
+  "171": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria plana"
+   ]
+  },
+  "172": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística"
+   ]
+  },
+  "173": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística"
+   ]
+  },
+  "174": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Aritmética e operações"
+   ]
+  },
+  "175": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Álgebra (equações e sistemas)"
+   ]
+  },
+  "176": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Funções",
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "177": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Geometria plana"
+   ]
+  },
+  "178": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Estatística"
+   ]
+  },
+  "179": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Leitura de gráficos e tabelas"
+   ]
+  },
+  "180": {
+   "disciplinas": [
+    "Matemática"
+   ],
+   "conteudos": [
+    "Raciocínio lógico"
+   ]
+  }
+ }
+}

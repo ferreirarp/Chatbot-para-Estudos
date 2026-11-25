@@ -243,6 +243,28 @@ def zonas_da_pagina(pagina) -> list[tuple[float, float, float, float]]:
     return zonas
 
 
+def _cabecalhos_por_caracteres(pagina) -> list[dict]:
+    """"QUESTÃO N" com letras espaçadas (2026: "Q U ES T Ã O 09"): junta os
+    caracteres em negrito de cada linha, ignorando os espaços."""
+    cs = sorted((c for c in pagina.chars if c["text"].strip() and "bold" in c["fontname"].lower()),
+                key=lambda c: (round(c["top"]), c["x0"]))
+    linhas: list[list] = []
+    for c in cs:
+        if linhas and abs(linhas[-1][0]["top"] - c["top"]) < 2:
+            linhas[-1].append(c)
+        else:
+            linhas.append([c])
+    achados = []
+    for ln in linhas:
+        ln.sort(key=lambda c: c["x0"])
+        texto = "".join(c["text"] for c in ln)
+        for m in re.finditer(r"QUEST[ÃAã]O(\d{2,3})", texto, re.I):
+            c0 = ln[m.start()]
+            achados.append({"numero": int(m.group(1)), "x0": c0["x0"], "top": c0["top"],
+                            "bottom": max(c["bottom"] for c in ln[m.start():m.end()])})
+    return achados
+
+
 def cabecalhos(pagina) -> list[dict]:
     palavras = pagina.extract_words(extra_attrs=["fontname"])
     achados = []
@@ -252,7 +274,9 @@ def cabecalhos(pagina) -> list[dict]:
         if w["text"].upper() == "QUESTÃO" and "bold" in w["fontname"].lower() and prox["text"].isdigit():
             achados.append({"numero": int(prox["text"]), "x0": w["x0"], "top": w["top"],
                             "bottom": w["bottom"]})
-    return achados
+    vistos = {h["numero"] for h in achados}
+    achados += [h for h in _cabecalhos_por_caracteres(pagina) if h["numero"] not in vistos]
+    return sorted(achados, key=lambda h: (h["top"], h["x0"]))
 
 
 RE_TITULO_AREA = re.compile(
@@ -274,6 +298,25 @@ def e_pagina_de_redacao(pagina) -> bool:
     return titulo and not cabecalhos(pagina)
 
 
+def _titulos_por_linhas(pagina) -> list[dict]:
+    """Títulos com letras espaçadas (2026: "Q uestõ es de 136 a 180")."""
+    achados = []
+    linhas = pagina.extract_text_lines(return_chars=True)
+    for i, ln in enumerate(linhas):
+        sem = ln["text"].replace(" ", "")
+        m = re.match(r"Textoparaas?Questões?de(\d+)a(\d+)", sem)
+        if m:
+            achados.append({"x0": ln["x0"], "top": ln["top"], "texto_base": (int(m.group(1)), int(m.group(2)))})
+            continue
+        if re.match(r"Questõesde\d+a\d+", sem):
+            topo = ln["top"]
+            for ac in linhas[max(0, i - 2):i]:  # nome da área logo acima
+                if ln["top"] - ac["top"] < 25 and re.match(r"(LINGUAGENS|CIÊNCIAS|MATEMÁTICA)", ac["text"], re.I):
+                    topo = ac["top"]
+            achados.append({"x0": ln["x0"], "top": topo})
+    return achados
+
+
 def titulos_de_secao(pagina) -> list[dict]:
     """Títulos como "Questões de 01 a 05 (opção espanhol)" ou "MATEMÁTICA E
     SUAS TECNOLOGIAS / Questões de 136 a 180". Encerram a questão anterior."""
@@ -282,6 +325,13 @@ def titulos_de_secao(pagina) -> list[dict]:
     for i, w in enumerate(palavras[:-2]):
         if w["text"] == "Questões" and palavras[i + 1]["text"] == "de" and palavras[i + 2]["text"].isdigit():
             topo = w["top"]
+            # 2025+: "Texto para as Questões de 06 a 10." abre um texto-base
+            ant = [p["text"] for p in palavras[max(0, i - 3):i] if abs(p["top"] - w["top"]) < 3]
+            if len(ant) == 3 and ant[0] == "Texto" and ant[1] == "para":
+                fim = palavras[i + 4]["text"] if i + 4 < len(palavras) else palavras[i + 2]["text"]
+                achados.append({"x0": palavras[i - 3]["x0"], "top": topo,
+                                "texto_base": (int(palavras[i + 2]["text"]), int(re.sub(r"\D", "", fim) or 0))})
+                continue
             # inclui o nome da área em maiúsculas logo acima, se houver
             acima = [p for p in palavras if w["top"] - 30 <= p["top"] < w["top"] - 2
                      and p["text"].isupper() and len(p["text"]) > 2
@@ -289,6 +339,13 @@ def titulos_de_secao(pagina) -> list[dict]:
             if acima:
                 topo = min(p["top"] for p in acima)
             achados.append({"x0": w["x0"], "top": topo})
+    por_linha = _titulos_por_linhas(pagina)
+    for t in por_linha:
+        igual = [a for a in achados if abs(a["top"] - t["top"]) < 20 and abs(a["x0"] - t["x0"]) < 60]
+        if not igual:
+            achados.append(t)
+        elif t["top"] < igual[0]["top"]:  # o nome da área acima (em qualquer caixa) começa o título
+            igual[0]["top"] = t["top"]
     return achados
 
 
@@ -301,9 +358,14 @@ def pedaco_vazio(pagina, caixa) -> bool:
     return not tem_texto and not tem_figura
 
 
+TEXTOS_BASE: list[dict] = []  # preenchido por segmentar (2025+)
+
+
 def segmentar(pdf) -> list[dict]:
     """Retorna as questões em ordem de leitura, cada uma com seus pedaços
-    (página, retângulo) e a posição dos seus cabeçalhos."""
+    (página, retângulo) e a posição dos seus cabeçalhos. Textos-base
+    ("Texto para as Questões de 06 a 10") ficam em TEXTOS_BASE."""
+    TEXTOS_BASE.clear()
     questoes: list[dict] = []
     atual = None
     for ip, pagina in enumerate(pdf.pages):
@@ -311,9 +373,9 @@ def segmentar(pdf) -> list[dict]:
             atual = None  # a questão anterior termina antes da redação
             continue
         heads = cabecalhos(pagina)
-        if not heads and atual is None:
-            continue  # capa / instruções
         titulos = titulos_de_secao(pagina)
+        if not heads and atual is None and not any(t.get("texto_base") for t in titulos):
+            continue  # capa / instruções
         zonas = zonas_da_pagina(pagina)
 
         def zona_de(item) -> int | None:
@@ -328,22 +390,30 @@ def segmentar(pdf) -> list[dict]:
         for h in heads:
             por_zona.setdefault(zona_de(h), []).append((h["top"], "questao", h))
         for ti in titulos:
-            por_zona.setdefault(zona_de(ti), []).append((ti["top"], "titulo", None))
+            por_zona.setdefault(zona_de(ti), []).append((ti["top"], "titulo", ti))
         for iz, (x0, t, x1, b) in enumerate(zonas):
             eventos = sorted(por_zona.get(iz, []), key=lambda e: e[0])
             cortes = [t] + [e[0] for e in eventos] + [b]
             for k in range(len(cortes) - 1):
                 if k > 0:
                     _, tipo, h = eventos[k - 1]
-                    if tipo == "titulo":
+                    if tipo == "titulo" and h.get("texto_base"):
+                        # texto-base: tudo até a próxima questão é dele
+                        a, z = h["texto_base"]
+                        # o título funciona como cabeçalho (a faixa colorida dele é decoração)
+                        cab = {"numero": f"T{a}-{z}", "x0": h["x0"], "top": h["top"] - 5, "bottom": h["top"] + 12}
+                        atual = {"numero": f"T{a}-{z}", "texto_base": (a, z), "pedacos": [], "cabecalhos": [(ip, cab)]}
+                        TEXTOS_BASE.append(atual)
+                    elif tipo == "titulo":
                         atual = None  # título de seção: o que vem até a próxima questão não é de ninguém
                         continue
-                    atual = {"numero": h["numero"], "pedacos": [], "cabecalhos": []}
-                    atual["cabecalhos"].append((ip, h))
-                    questoes.append(atual)
+                    else:
+                        atual = {"numero": h["numero"], "pedacos": [], "cabecalhos": []}
+                        atual["cabecalhos"].append((ip, h))
+                        questoes.append(atual)
                 if atual is not None and cortes[k + 1] - cortes[k] > 4:
                     caixa = (x0, cortes[k], x1, cortes[k + 1])
-                    if k == 0 and e_titulo_de_area(pagina.crop(caixa).extract_text() or ""):
+                    if k == 0 and "texto_base" not in atual and e_titulo_de_area(pagina.crop(caixa).extract_text() or ""):
                         continue
                     if k == 0 and pedaco_vazio(pagina, caixa):
                         continue  # sobra sem conteúdo antes de um título ou no topo da coluna
@@ -378,6 +448,20 @@ def _fracao_dentro(obj, r) -> float:
     return w * h / area
 
 
+def faixa_de_titulo(o, chars) -> bool:
+    """Decoração de 2025+: faixa colorida baixa atrás de um título de seção
+    ("Texto para as Questões de 06 a 10", "LINGUAGENS... Questões de 01 a 05"),
+    ou marca pequena encostada na margem."""
+    w, h = o["x1"] - o["x0"], o["bottom"] - o["top"]
+    if w < 12 and h < 12 and (o["x0"] < X_ESQ or o["x1"] > X_DIR):
+        return True
+    if h > 36 or w < 150:
+        return False
+    dentro = "".join(c["text"] for c in chars if o["x0"] <= (c["x0"] + c["x1"]) / 2 <= o["x1"]
+                     and o["top"] <= (c["top"] + c["bottom"]) / 2 <= o["bottom"])
+    return bool(re.search(r"Questões\s*de\s*\d+|Textopara|QUESTÃO", dentro.replace(" ", ""), re.I))
+
+
 def elementos_visuais(pdf, q: dict) -> list[str]:
     tipos: set[str] = set()
     faixas_cab = [(ip, h["top"] - 3, h["bottom"] + 8) for ip, h in q["cabecalhos"]]
@@ -397,7 +481,7 @@ def elementos_visuais(pdf, q: dict) -> list[str]:
             fecho = horizontal_longo and not any(c["top"] > o["bottom"] for c in texto_pedaco)
             fora_da_area = (not X_ESQ <= (o["x0"] + o["x1"]) / 2 <= X_DIR
                             or not TOPO <= (o["top"] + o["bottom"]) / 2 <= BASE)
-            return vertical_divisoria or no_cabecalho or fecho or fora_da_area
+            return vertical_divisoria or no_cabecalho or fecho or fora_da_area or faixa_de_titulo(o, pg.chars)
 
         vetores = [o for o in pg.lines + pg.rects + pg.curves if _intersecta(o, r) and not decorativo(o)]
         if vetores:
@@ -464,8 +548,8 @@ def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
             fora = [c for c in fora if c["top"] > min(h["top"] for q in questoes
                                                        for i, h in q["cabecalhos"] if i == ip)]
         texto_fora = re.sub(r"\s+", " ", "".join(c["text"] for c in fora))
-        if fora and re.fullmatch(r"[A-ZÀ-Ý ,]*Questões ?de ?\d+ ?a ?\d+.{0,40}",
-                                 texto_fora.replace("Questõesde", "Questões de")):
+        if fora and re.fullmatch(r"[A-ZÀ-Ýa-zà-ý ,]*Questões ?de ?\d+ ?a ?\d+.{0,40}",
+                                 texto_fora.replace("Questõesde", "Questões de"), re.I):
             fora = []  # só o título de área
         if fora:
             amostra = "".join(c["text"] for c in fora[:40])
@@ -475,7 +559,8 @@ def verificar_cobertura(pdf, questoes: list[dict]) -> list[str]:
         # Figuras e desenhos não podem ser cortados pela borda de um recorte.
         pg = pdf.pages[ip]
         for o in pg.images + pg.curves + pg.rects:
-            if o["top"] < TOPO or o["bottom"] > BASE or not X_ESQ <= (o["x0"] + o["x1"]) / 2 <= X_DIR:
+            if o["top"] < TOPO or o["bottom"] > BASE or not X_ESQ <= (o["x0"] + o["x1"]) / 2 <= X_DIR \
+                    or faixa_de_titulo(o, pg.chars):
                 continue  # fora da área útil (decoração das bordas da página)
             donos = {n for n, r in pedacos.get(ip, []) if _fracao_dentro(o, r) > 0.02}
             if len(donos) == 1 and sum(_fracao_dentro(o, r) for _, r in pedacos.get(ip, [])) > 0.98:
@@ -513,7 +598,7 @@ def texto_da_questao(pdf, q: dict) -> tuple[str, dict[str, str]]:
                 texto = texto[n:] if texto[:n].replace(" ", "").upper() == letra * n else texto[1:]
             linhas.append((texto.strip(), letra))
     # remove o cabeçalho "QUESTÃO N"
-    linhas = [(t, l) for t, l in linhas if not re.fullmatch(r"\s*QUESTÃO\s+\d+\s*", t, re.I)]
+    linhas = [(t, l) for t, l in linhas if not re.fullmatch(r"QUESTÃO\d+", t.replace(" ", ""), re.I)]
     corpo, alternativas, atual = [], {}, None
     for l, letra in linhas:
         if letra and (atual is None and letra == "A" or atual and ord(letra) == ord(atual) + 1):
@@ -607,6 +692,9 @@ def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> P
             "alternativas": alternativas,
             "gabarito": resposta,
             "anulada": anulada,
+            "texto_base": next((f"{ano}-{aplicacao}-D{dia}-CD{caderno}-T{t['texto_base'][0]:02d}"
+                                for t in TEXTOS_BASE if t["texto_base"][0] <= n <= t["texto_base"][1]
+                                and not (lingua and n <= 5)), None),
             "elementos_visuais": visuais,
             "imagem": imagem,
             "texto_fiel": not visuais,
@@ -614,7 +702,7 @@ def processar(ano: int, dia: int, caderno: int, aplicacao: str = "regular") -> P
             "fonte": {"prova": BASE_DOWNLOAD + nome_prova, "gabarito": BASE_DOWNLOAD + nome_gab},
         })
 
-    alertas_gerais += verificar_cobertura(pdf, questoes)
+    alertas_gerais += verificar_cobertura(pdf, questoes + TEXTOS_BASE)
 
     pasta.mkdir(parents=True, exist_ok=True)
     destino = pasta / f"{chave}.json"

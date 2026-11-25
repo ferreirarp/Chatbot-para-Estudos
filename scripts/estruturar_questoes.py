@@ -59,7 +59,7 @@ def _decorativo(o, r, chars_pedaco, faixas_cab, ip) -> bool:
     fecho = horizontal_longo and not any(c["top"] > o["bottom"] for c in chars_pedaco)
     fora = (not ex.X_ESQ <= (o["x0"] + o["x1"]) / 2 <= ex.X_DIR
             or not ex.TOPO <= (o["top"] + o["bottom"]) / 2 <= ex.BASE)
-    return vertical_divisoria or no_cabecalho or fecho or fora
+    return vertical_divisoria or no_cabecalho or fecho or fora or ex.faixa_de_titulo(o, chars_pedaco)
 
 
 def _caixa(o, r):
@@ -161,6 +161,16 @@ def _linhas(pg, r):
     dos caracteres de tamanho normal; índices e expoentes (menores) entram na
     linha a que estão encostados. Um caractere pertence à região em que cai
     o seu centro."""
+    # o PDF traz os espaços entre palavras como caracteres; marca quem vem
+    # logo depois de um (fontes com larguras erradas deixam folgas falsas
+    # entre letras, e o espaço explícito é a referência mais confiável)
+    depois_de_espaco = False
+    for c in pg.chars:
+        if not c["text"].strip():
+            depois_de_espaco = True
+            continue
+        c["_esp"] = depois_de_espaco
+        depois_de_espaco = False
     chars = [c for c in pg.chars if c["text"].strip()
              and r[0] <= (c["x0"] + c["x1"]) / 2 <= r[2] and r[1] <= (c["top"] + c["bottom"]) / 2 <= r[3]]
     if not chars:
@@ -253,7 +263,7 @@ def _linhas(pg, r):
     for g in grupos:
         cs = sorted(g["chars"], key=lambda c: c["x0"])
         texto = "".join(c["text"] for c in cs)
-        if re.fullmatch(r"\s*QUESTÃO\s*\d+\s*", texto, re.I):
+        if re.fullmatch(r"\s*QUESTÃO\s*\d+\s*", texto, re.I) or re.fullmatch(r"\s*Textoparaas?Questões?de\d+a\d+\.?\s*", texto):
             continue
         out.append({"top": min(c["top"] for c in cs), "bottom": max(c["bottom"] for c in cs),
                     "x0": min(c["x0"] for c in cs), "x1": max(c["x1"] for c in cs), "chars": cs, "texto": texto})
@@ -280,6 +290,10 @@ def _texto_linha(ln) -> tuple[str, bool]:
         corpo = max(a["size"], b["size"])
         if MODO_ESPACO == "fixo":
             return ESPACO * corpo
+        if b.get("_esp") and b["x0"] - a["x1"] > -0.5 and abs(a["size"] - b["size"]) < 0.5:
+            return -1e9  # espaço explícito no PDF
+        if a["x1"] - a["x0"] < 0.05 and a["text"].strip():
+            return 1e9   # glifo sem largura na fonte (2026): a folga é falsa
         return min(ESPACO * corpo, max(0.06 * corpo, base_letras + 0.11 * corpo))
     # pilha de índice e expoente na mesma posição (²₁D): o expoente vem primeiro
     def tipo(c):
@@ -345,7 +359,7 @@ def _marcadores(pg, r) -> list[dict]:
     ms = []
     for c in sorted(pg.chars, key=lambda c: (round(c["top"]), c["x0"])):
         if FONTE_ALT in c["fontname"].lower() and c["text"].upper() in "ABCDE" and c["text"].strip() \
-                and ex._intersecta(c, r):
+                and r[0] <= (c["x0"] + c["x1"]) / 2 <= r[2] and r[1] <= (c["top"] + c["bottom"]) / 2 <= r[3]:
             if ms and ms[-1]["letra"] == c["text"].upper() and abs(ms[-1]["top"] - c["top"]) < 3 \
                     and c["x0"] - ms[-1]["x1"] < 3:
                 ms[-1]["x1"] = c["x1"]
@@ -650,6 +664,29 @@ def _conferir(pdf, q, faixas_cab, cortes, blocos, alternativas):
     return fmt(contar(FOLGA) - out_chars), fmt(out_chars - contar(0))
 
 
+def _alternativas_raster(pdf, pedacos) -> dict:
+    """{letra: (página, caixa)} quando cada letra A-E da questão tem, logo à
+    direita, uma imagem (bitmap) que a contém na vertical. Procura a página
+    inteira na faixa vertical da questão, porque essas alternativas podem
+    atravessar o corredor entre as colunas."""
+    achadas = {}
+    for ip in sorted({ip for ip, _ in pedacos}):
+        pg = pdf.pages[ip]
+        topo = min(r[1] for j, r in pedacos if j == ip)
+        base = max(r[3] for j, r in pedacos if j == ip)
+        for c in pg.chars:
+            if FONTE_ALT not in c["fontname"].lower() or c["text"] not in "ABCDE" or c["text"] in achadas:
+                continue
+            if not topo <= c["top"] <= base:
+                continue
+            meio = (c["top"] + c["bottom"]) / 2
+            cand = [i for i in pg.images if 0 <= i["x0"] - c["x1"] <= 30 and i["top"] <= meio <= i["bottom"]]
+            if cand:
+                i = min(cand, key=lambda i: i["x0"] - c["x1"])
+                achadas[c["text"]] = (ip, (i["x0"], i["top"], i["x1"], i["bottom"]))
+    return achadas if sorted(achadas) == list("ABCDE") else {}
+
+
 def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
     faixas_cab = [(ip, h["top"] - 3, h["bottom"] + 8) for ip, h in q["cabecalhos"]]
     revisar: set[str] = set()
@@ -657,8 +694,13 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
     n_fig = [0]
 
     cortes = []  # (página, caixa) de cada recorte, para a conferência
+    caixas_de = {}  # caminho do recorte -> (página, caixa)
 
     def recortar(ip, c):
+        c = list(c)
+        for j, h in q["cabecalhos"]:  # o cabeçalho "QUESTÃO N" nunca entra no recorte
+            if j == ip and c[1] < h["bottom"] + 1 < c[3]:
+                c[1] = h["bottom"] + 1
         cortes.append((ip, tuple(c)))  # caixa do conteúdo; a imagem salva tem FOLGA a mais
         n_fig[0] += 1
         nome = f"{prefixo}_f{n_fig[0]}.png"
@@ -667,6 +709,7 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
         img = pg.crop(caixa).to_image(resolution=RESOLUCAO).original.convert("RGB")
         (pasta_img).mkdir(parents=True, exist_ok=True)
         img.save(pasta_img / nome, optimize=True)
+        caixas_de[f"img/blocos/{nome}"] = (ip, tuple(c))
         return f"img/blocos/{nome}"
 
     def ao_enunciado(itens, ip):
@@ -722,6 +765,25 @@ def estruturar(pdf, q: dict, pasta_img: Path, prefixo: str) -> dict:
             else:
                 alternativas[letra] = " ".join(d.strip() for _, t, d in itens).strip()
             ultima = letra
+    for L, t in alternativas.items():  # título de seção colado na última alternativa
+        alternativas[L] = re.sub(r"\s*Questões de \d+ a \d+\s*(\(opção [a-zçê]+\))?\s*$", "", t)
+    if alt_img or sorted(alternativas) != list("ABCDE") or any(not alternativas.get(L) and L not in alt_img for L in "ABCDE"):
+        # Alternativas que são imagens inteiras ao lado da letra (gráficos em
+        # duas colunas que atravessam o corredor central): usa a caixa da imagem.
+        achadas = _alternativas_raster(pdf, q["pedacos"])
+        if achadas:
+            usados = set(achadas.values())
+            def cai_em_alternativa(ip, c):
+                caixa = dict(zip(("x0", "top", "x1", "bottom"), c))
+                return any(ip == j and ex._intersecta(caixa, cx) for j, cx in usados)
+            blocos = [b for b in blocos if b["tipo"] != "figura" or b["imagem"] not in caixas_de
+                      or not cai_em_alternativa(*caixas_de[b["imagem"]])]
+            cortes = [(ip, c) for ip, c in cortes if not cai_em_alternativa(ip, c)]
+            alt_img, alternativas = {}, {}
+            for letra, (ip, cx) in sorted(achadas.items()):
+                alt_img[letra] = recortar(ip, list(cx))
+                alternativas[letra] = ""
+            revisar.discard("alternativa continua em outra coluna: conferir")
     if sorted(alternativas) != list("ABCDE"):
         revisar.add("alternativas incompletas: conferir com a imagem original")
     for b in blocos:
@@ -779,6 +841,45 @@ def main() -> None:
         feitas += 1
     arq_json.write_text(json.dumps(questoes_json, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{feitas} questões estruturadas em {arq_json.relative_to(ex.RAIZ)}")
+
+    # textos-base (2025+): "Texto para as Questões de 06 a 10", guardados uma vez
+    bases = {}
+    for t in ex.TEXTOS_BASE:
+        a0, a1 = t["texto_base"]
+        tid = f"{a.ano}-{a.aplicacao}-D{a.dia}-CD{a.caderno}-T{a0:02d}"
+        res = estruturar(pdf, t, pasta / "img" / "blocos", f"{chave}_T{a0:02d}")
+        blocos = res["blocos"]
+        if blocos and blocos[0]["tipo"] == "texto":  # tira o título, a interface mostra o seu
+            blocos[0]["texto"] = re.sub(r"^\s*Texto para as? Questões? de \d+ a \d+\.?\s*", "", blocos[0]["texto"]).strip()
+        for b in blocos:
+            if b["tipo"] != "texto":
+                continue
+            # linhas numeradas (1, 2, 3...) são citadas pelas questões: mantêm a quebra
+            ls = [l for l in b["texto"].split("\n") if l.strip()]
+            numeradas = sum(bool(re.match(r"^\d{1,3}\s", l)) for l in ls)
+            if len(ls) >= 5 and numeradas >= 0.6 * len(ls):
+                b["estilo"] = "linhas"
+        # linhas sem número antes da linha 1 (título, subtítulo) viram blocos próprios
+        novos = []
+        for b in blocos:
+            if b.get("estilo") == "linhas":
+                ls = b["texto"].split("\n")
+                i = next((k for k, l in enumerate(ls) if re.match(r"^\d{1,3}\s", l)), 0)
+                if i:
+                    novos.append({"tipo": "texto", "estilo": "titulo", "texto": ls[0]})
+                    if i > 1:
+                        novos.append({"tipo": "texto", "estilo": "centro", "texto": " ".join(ls[1:i])})
+                    b = dict(b, texto="\n".join(ls[i:]))
+            novos.append(b)
+        blocos = [b for b in novos if b["tipo"] != "texto" or b["texto"]]
+        bases[tid] = {"id": tid, "questoes": [a0, a1], "blocos": blocos,
+                      "revisar": [r for r in res["revisar"] if "alternativas" not in r]}
+        print(f"  texto-base {tid}: {len(blocos)} blocos{' | revisar: ' + '; '.join(bases[tid]['revisar']) if bases[tid]['revisar'] else ''}")
+    arq_bases = pasta / f"{chave}_textos_base.json"
+    if bases:
+        arq_bases.write_text(json.dumps(bases, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    elif arq_bases.exists():
+        arq_bases.unlink()
 
 
 if __name__ == "__main__":

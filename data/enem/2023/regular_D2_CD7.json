@@ -3686,7 +3686,9 @@
       "D": "img/blocos/regular_D2_CD7_Q177_f5.png",
       "E": "img/blocos/regular_D2_CD7_Q177_f6.png"
     },
-    "revisar": []
+    "revisar": [
+      "texto difere do PDF; faltam: moos"
+    ]
   },
   {
     "id": "2023-regular-D2-CD7-Q178",

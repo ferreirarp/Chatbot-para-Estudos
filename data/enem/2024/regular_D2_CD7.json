@@ -1352,11 +1352,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q121_f2.png",
-      "B": "img/blocos/regular_D2_CD7_Q121_f3.png",
-      "C": "img/blocos/regular_D2_CD7_Q121_f4.png",
-      "D": "img/blocos/regular_D2_CD7_Q121_f5.png",
-      "E": "img/blocos/regular_D2_CD7_Q121_f6.png"
+      "A": "img/blocos/regular_D2_CD7_Q121_f7.png",
+      "B": "img/blocos/regular_D2_CD7_Q121_f8.png",
+      "C": "img/blocos/regular_D2_CD7_Q121_f9.png",
+      "D": "img/blocos/regular_D2_CD7_Q121_f10.png",
+      "E": "img/blocos/regular_D2_CD7_Q121_f11.png"
     },
     "revisar": []
   },
@@ -1635,11 +1635,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q127_f2.png",
-      "B": "img/blocos/regular_D2_CD7_Q127_f3.png",
-      "C": "img/blocos/regular_D2_CD7_Q127_f4.png",
-      "D": "img/blocos/regular_D2_CD7_Q127_f5.png",
-      "E": "img/blocos/regular_D2_CD7_Q127_f6.png"
+      "A": "img/blocos/regular_D2_CD7_Q127_f7.png",
+      "B": "img/blocos/regular_D2_CD7_Q127_f8.png",
+      "C": "img/blocos/regular_D2_CD7_Q127_f9.png",
+      "D": "img/blocos/regular_D2_CD7_Q127_f10.png",
+      "E": "img/blocos/regular_D2_CD7_Q127_f11.png"
     },
     "revisar": []
   },
@@ -1864,11 +1864,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q131_f5.png",
-      "B": "img/blocos/regular_D2_CD7_Q131_f6.png",
-      "C": "img/blocos/regular_D2_CD7_Q131_f7.png",
-      "D": "img/blocos/regular_D2_CD7_Q131_f8.png",
-      "E": "img/blocos/regular_D2_CD7_Q131_f9.png"
+      "A": "img/blocos/regular_D2_CD7_Q131_f10.png",
+      "B": "img/blocos/regular_D2_CD7_Q131_f11.png",
+      "C": "img/blocos/regular_D2_CD7_Q131_f12.png",
+      "D": "img/blocos/regular_D2_CD7_Q131_f13.png",
+      "E": "img/blocos/regular_D2_CD7_Q131_f14.png"
     },
     "revisar": [
       "fórmula recortada como imagem"
@@ -3206,11 +3206,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q161_f2.png",
-      "B": "img/blocos/regular_D2_CD7_Q161_f3.png",
-      "C": "img/blocos/regular_D2_CD7_Q161_f4.png",
-      "D": "img/blocos/regular_D2_CD7_Q161_f5.png",
-      "E": "img/blocos/regular_D2_CD7_Q161_f6.png"
+      "A": "img/blocos/regular_D2_CD7_Q161_f7.png",
+      "B": "img/blocos/regular_D2_CD7_Q161_f8.png",
+      "C": "img/blocos/regular_D2_CD7_Q161_f9.png",
+      "D": "img/blocos/regular_D2_CD7_Q161_f10.png",
+      "E": "img/blocos/regular_D2_CD7_Q161_f11.png"
     },
     "revisar": []
   },
@@ -3520,11 +3520,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q168_f1.png",
-      "B": "img/blocos/regular_D2_CD7_Q168_f2.png",
-      "C": "img/blocos/regular_D2_CD7_Q168_f3.png",
-      "D": "img/blocos/regular_D2_CD7_Q168_f4.png",
-      "E": "img/blocos/regular_D2_CD7_Q168_f5.png"
+      "A": "img/blocos/regular_D2_CD7_Q168_f6.png",
+      "B": "img/blocos/regular_D2_CD7_Q168_f7.png",
+      "C": "img/blocos/regular_D2_CD7_Q168_f8.png",
+      "D": "img/blocos/regular_D2_CD7_Q168_f9.png",
+      "E": "img/blocos/regular_D2_CD7_Q168_f10.png"
     },
     "revisar": []
   },
@@ -3844,11 +3844,11 @@
       }
     ],
     "alternativas_imagem": {
-      "A": "img/blocos/regular_D2_CD7_Q174_f2.png",
-      "B": "img/blocos/regular_D2_CD7_Q174_f3.png",
-      "C": "img/blocos/regular_D2_CD7_Q174_f4.png",
-      "D": "img/blocos/regular_D2_CD7_Q174_f5.png",
-      "E": "img/blocos/regular_D2_CD7_Q174_f6.png"
+      "A": "img/blocos/regular_D2_CD7_Q174_f7.png",
+      "B": "img/blocos/regular_D2_CD7_Q174_f8.png",
+      "C": "img/blocos/regular_D2_CD7_Q174_f9.png",
+      "D": "img/blocos/regular_D2_CD7_Q174_f10.png",
+      "E": "img/blocos/regular_D2_CD7_Q174_f11.png"
     },
     "revisar": []
   },
@@ -3865,8 +3865,8 @@
     "lingua_estrangeira": null,
     "enunciado": "Uma indústria faz uma parceria com uma distribuidora\nde sucos para lançar no mercado dois tipos de\nembalagens. Para a fabricação dessas embalagens,\na indústria dispõe de folhas de alumínio retangulares,\nde dimensões 10 cm por 20 cm. Cada uma dessas\nfolhas é utilizada para formar a superfície lateral da\nembalagem, em formato de cilindro circular reto, que\nposteriormente recebe fundo e tampa circulares. A figura\nilustra, dependendo de qual das duas extensões será\nutilizada como altura, as duas opções para formar a\npossível embalagem.\nDentre essas duas embalagens, a de maior capacidade\napresentará volume, em centímetro cúbico, igual a",
     "alternativas": {
-      "A": "4000 π",
-      "B": "2000 π",
+      "A": "4 000 π",
+      "B": "2 000 π",
       "C": "4000/π",
       "D": "1000/π",
       "E": "500/π"

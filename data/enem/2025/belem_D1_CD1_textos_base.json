@@ -1,0 +1,27 @@
+{
+  "2025-belem-D1-CD1-T06": {
+    "id": "2025-belem-D1-CD1-T06",
+    "questoes": [
+      6,
+      10
+    ],
+    "blocos": [
+      {
+        "tipo": "texto",
+        "estilo": "titulo",
+        "texto": "Saudades da secretária eletrônica"
+      },
+      {
+        "tipo": "texto",
+        "estilo": "centro",
+        "texto": " Talvez o Vale do Silício queira transformar nossos cérebros em patê para depois comê-lo"
+      },
+      {
+        "tipo": "texto",
+        "texto": "1 Meu velho pai sabe das coisas. Eu o chamo de “velho pai” não porque seja realmente velho:\n2 é como ele se chama ao falar comigo. Às vezes usa o epíteto num modo semi-irônico, como\n3 quem põe um cachimbo na boca pra uma foto. Outras vezes é mais a sério — acende o\n4 cachimbo. Na semana passada, por exemplo, me escreveu à uma e meia da manhã pedindo\n5 para lhe mandar um x-salada: “Alimente seu velho pai”. Meu velho pai não usa Uber Eats,\n6 iFood, Rappi ou qualquer uma “dessas coisas”.\n7 Meu velho pai tá de saco cheio “dessas coisas”. Outro dia ele me ligou. “Recebeu\n8 minha mensagem?”. “Por onde?”. Silêncio. “Não aguento mais essas coisas” — e começou\n9 a reclamar da dificuldade de nos comunicarmos por tantos canais: “É WhatsApp, SMS,\n10 e-mail, DM no Facebook, no Instagram, no Twitter...”. “Qual era a mensagem, pai?”. “Aí é\n11 que tá. Eu tive uma ideia muito boa no meio da noite e te escrevi pra não esquecer, agora\n12 não lembro nem da ideia e nem por onde escrevi”.\n13 Segundo meu velho pai, a razão de ele e tantos outros estarmos desmemoriados é\n14 “dessas coisas”: aplicativos e plataformas e dispositivos jorrando uma quantidade infinita\n15 de informação que de bom grado entuchamos retina abaixo, cada tela um daqueles funis\n16 de milho pra transformar fígado de ganso em patê. (Talvez o plano do Zuckerberg e seus\n17 comparsas seja esse: transformar nossos cérebros em patê para depois comê-los com\n18 cream-crackers-low-carb-glúten-free-ESG-sem-pegadas-de-carbono. A hipótese é absurda,\n19 mas não mais que o furdunço global que estamos vivendo).\n20 Meu velho pai tá injuriado com o furdunço global que estamos vivendo e tem uma\n21 proposta bem razoável para minorá-lo. “Cinco anos sem inventarem nada. Nada. Todo\n22 mundo fica com o celular que tem, com o Android que tem, o IOS que tem, com os aplicativos\n23 que tem e os canais de televisão que tem. Quando a gente aprender a usar tudo, assistir\n24 a todas as séries, ler todos os livros, ouvir todos os podcasts, vê se precisa inventar mais\n25 alguma coisa ou para por aí mesmo”.\n26 Concordo. A humanidade precisa de um novo Adobe Reader a cada semana pra quê,\n27 exatamente?! De que forma PhDs em física podem “otimizar” um troço que é basicamente\n28 um xerox eletrônico?\n29 Na faculdade eu penava pra entender o que o Marx queria dizer com aquele papo de\n30 “a infraestrutura produz a superestrutura”. Mais tarde entendi e era simples e verdadeiro.\n31 A nossa maneira de agir molda a nossa maneira de pensar. Um pescador no século 19 se\n32 relaciona com o tempo, a comida, o sexo e as unhas dos pés de formas completamente\n33 diferentes do que um programador de vinte e dois anos, hoje, no Vale do Silício. É evidente\n34 que existe uma ligação direta entre a placa do meu celular e a minha placa para bruxismo.\n35 Quando meus dedos aflitos param de digitar, passam o turno pros dentes.\n36 O supracitado alemão resumiu o que parecia ser o fim dos tempos com a frase “tudo\n37 o que é sólido desmancha no ar”. O que diria sobre nossa época em que o próprio ar se\n38 desmancha, inundado por dióxido de carbono, metano, óxido nitroso e sei lá mais o quê?\n39 “Tinha que ser geral”, sugere meu velho pai, “com Biden, Merkel, China, ONU, com tudo:\n40 cinco anos sem inventarem nada. Nada. Que saudades da secretária eletrônica”.\nPRATA, A. Disponível em: www1.folha.uol.com.br. Acesso em: 11 ago. 2024 (adaptado)",
+        "estilo": "linhas"
+      }
+    ],
+    "revisar": []
+  }
+}

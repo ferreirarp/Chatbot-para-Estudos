@@ -103,7 +103,8 @@ def aplicar_edicoes(banco: list[dict], avisos: list[str]) -> None:
         invalidas = [d for d in q["disciplinas"] if d not in DISCIPLINAS_VALIDAS]
         if invalidas:
             avisos.append(f"edição de {qid}: disciplina fora da lista oficial: {invalidas}")
-        q["editada_no_repositorio"] = True
+        if set(ed.get("campos", {})) - {"revisar"} or ed.get("recortes") or ed.get("imagem"):
+            q["editada_no_repositorio"] = True  # só limpar avisos conferidos não conta como edição
 
 
 def main() -> None:
@@ -111,6 +112,12 @@ def main() -> None:
     matriz_arq = DADOS / "matriz_referencia.json"
     matriz = json.loads(matriz_arq.read_text(encoding="utf-8")) if matriz_arq.exists() else {}
     escalas_nota = {}  # "ano|área" -> {k, m}: conversão θ → nota usada pela calculadora
+    textos_base = {}   # id -> {questoes, blocos}: textos compartilhados (2025+)
+    for arq in sorted(DADOS.glob("*/*_textos_base.json")):
+        ano = arq.parent.name
+        for tid, t in json.loads(arq.read_text(encoding="utf-8")).items():
+            t["blocos"] = [dict(b, imagem=f"data/enem/{ano}/{b['imagem']}") if b["tipo"] == "figura" else b for b in t["blocos"]]
+            textos_base[tid] = t
     for arq in sorted(DADOS.glob("*/*.json")):
         if not RE_PROVA.match(arq.name):
             continue
@@ -151,7 +158,8 @@ def main() -> None:
                 "conteudos": c.get("conteudos", []),
                 "observacao": c.get("observacao"),
                 "lingua": q.get("lingua_estrangeira"),
-                "enunciado": q["enunciado"],
+                "texto_base": q.get("texto_base"),
+                "enunciado": re.sub(r"^\s*QUESTÃO\s*\d+[ \d]*\n", "", q["enunciado"]),  # cabeçalho residual
                 "alternativas": q["alternativas"],
                 "gabarito": q["gabarito"],
                 "anulada": q["anulada"],
@@ -163,7 +171,8 @@ def main() -> None:
                             for b in q["blocos"]] if q.get("blocos") else None),
                 "alternativas_imagem": ({L: f"data/enem/{ano}/{v}" for L, v in q["alternativas_imagem"].items()}
                                         if q.get("alternativas_imagem") else None),
-                "revisar": q.get("revisar") or [],
+                # "fórmula recortada como imagem" é nota de extração, não erro
+                "revisar": [r for r in q.get("revisar") or [] if r != "fórmula recortada como imagem"],
                 "habilidade": ({
                     "codigo": hab,
                     "chave": f"{sigla} {hab}",
@@ -173,10 +182,12 @@ def main() -> None:
                 "dificuldade": ({
                     "b": round(b, 3),
                     "nota_equivalente": of.get("nota_equivalente"),
-                } if b is not None else None),
+                } if b is not None and not of.get("gabarito_microdado") else None),
                 # parâmetros da TRI para a calculadora de nota
                 "tri": ({"a": of["param_a"], "b": of["param_b"], "c": of["param_c"]}
-                        if b is not None and not of.get("descartada_da_nota") else None),
+                        if b is not None and not of.get("descartada_da_nota")
+                        and not of.get("gabarito_microdado") else None),
+                "gabarito_microdado": of.get("gabarito_microdado"),
                 "descartada_da_nota": of.get("descartada_da_nota", False),
                 "motivo_descarte": of.get("motivo_descarte"),
             })
@@ -198,7 +209,8 @@ def main() -> None:
         "// Gerado por scripts/gerar_banco.py — não editar à mão.\n"
         "window.BANCO_QUESTOES = " + json.dumps(banco, ensure_ascii=False) + ";\n"
         "window.ESCALA_DIFICULDADE = " + json.dumps(escalas, ensure_ascii=False) + ";\n"
-        "window.ESCALA_NOTAS = " + json.dumps(escalas_nota, ensure_ascii=False) + ";\n",
+        "window.ESCALA_NOTAS = " + json.dumps(escalas_nota, ensure_ascii=False) + ";\n"
+        "window.TEXTOS_BASE = " + json.dumps(textos_base, ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
     print(f"{len(banco)} questões -> {SAIDA.relative_to(RAIZ)}")
@@ -206,6 +218,9 @@ def main() -> None:
         largura = (e["max"] - e["min"]) / len(NIVEIS)
         cortes = " | ".join(f"{n}: {e['min'] + i * largura:.0f}–{e['min'] + (i + 1) * largura:.0f}" for i, n in enumerate(NIVEIS))
         print(f"  {area} ({e['n']} questões, {e['fora_da_escala']} fora da escala): {cortes}")
+    for q in banco:
+        if q["texto_base"] and q["texto_base"] not in textos_base:
+            avisos.append(f"{q['id']}: texto-base {q['texto_base']} não encontrado (rode estruturar_questoes.py)")
     for a in avisos:
         print("  aviso:", a)
 

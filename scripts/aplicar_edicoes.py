@@ -24,7 +24,7 @@ PASTA = RAIZ / "data" / "enem" / "edicoes"
 ARQ = PASTA / "edicoes.json"
 CAMPOS = {"enunciado", "alternativas", "gabarito", "disciplinas", "conteudos", "observacao", "blocos"}
 RE_RECORTE = re.compile(r"^(b\d+|alt-[A-E])$")
-RE_ID = re.compile(r"^\d{4}-(regular|reaplicacao)-D\d-CD\d+-Q\d{3}(-(ingles|espanhol))?$")
+RE_ID = re.compile(r"^\d{4}-(regular|reaplicacao|belem)-D\d-CD\d+-Q\d{3}(-(ingles|espanhol))?$")
 PREFIXO_PNG = "data:image/png;base64,"
 RE_DATA_URL = re.compile(r"^data:image/(png|jpeg|webp|gif);base64,")
 

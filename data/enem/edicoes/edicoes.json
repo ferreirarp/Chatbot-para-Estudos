@@ -1,4 +1,18 @@
 {
+ "2023-regular-D2-CD7-Q172": {
+  "campos": {
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "conferida com o PDF: aviso falso (texto dentro de figura)"
+ },
+ "2023-regular-D2-CD7-Q177": {
+  "campos": {
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "conferida com o PDF: alternativas em imagem corretas; aviso falso"
+ },
  "2024-regular-D1-CD1-Q036": {
   "campos": {
    "blocos": [
@@ -45,5 +59,67 @@
   },
   "atualizado": "2026-11-24T00:00:00Z",
   "motivo": "Erro de diagramação da prova: \"TEXTO II\" estava na mesma linha de \"TEXTO I\"."
+ },
+ "2024-regular-D2-CD7-Q113": {
+  "campos": {
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "conferida com o PDF: aviso falso (texto dentro de figura)"
+ },
+ "2025-belem-D1-CD1-Q038": {
+  "campos": {
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "conferida com o PDF: aviso falso (texto dentro de figura)"
+ },
+ "2025-reaplicacao-D2-CD7-Q121": {
+  "campos": {
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "Para monitoramento do funcionamento de dispositivos silenciosos, é necessário que alguma sinalização visual ou sonora\nseja instalada. Uma solução simples é a instalação de um diodo emissor de luz (LED) em paralelo com o dispositivo, conforme o\nesquema do circuito elétrico. Para minimizar o consumo de energia, sugere-se que o LED opere com tensão de 3 V. Assim, sua\ninstalação em paralelo com um dispositivo de resistência R igual a 300 Ω, que opera em 12 V, requer a inclusão de um resistor"
+    },
+    {
+     "tipo": "figura",
+     "imagem": "data/enem/2025/img/blocos/reaplicacao_D2_CD7_Q121_f1.png",
+     "motivo": "fórmula"
+    },
+    {
+     "tipo": "texto",
+     "texto": "O gráfico apresenta a curva da corrente elétrica (em miliampère) versus a tensão elétrica (em volt), característica de um LED."
+    },
+    {
+     "tipo": "figura",
+     "imagem": "data/enem/2025/img/blocos/reaplicacao_D2_CD7_Q121_f2.png",
+     "motivo": "figura"
+    }
+   ],
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "índice 'p' de R_p solto no fim (revisão visual)"
+ },
+ "2025-reaplicacao-D2-CD7-Q148": {
+  "campos": {
+   "alternativas": {
+    "A": "2, 4, 6, 8 e 10",
+    "B": "2, 2², 2³, 2⁴ e 2⁵",
+    "C": "",
+    "D": "1/2, 1/2², 1/2³, 1/2⁴ e 1/2⁵",
+    "E": "1, 1/2, 1/2², 1/2³ e 1/2⁴"
+   },
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "numeradores das frações de D vazaram para B (revisão visual)"
+ },
+ "2025-regular-D2-CD7-Q135": {
+  "campos": {
+   "revisar": []
+  },
+  "atualizado": "2026-11-25",
+  "nota": "conferida com o PDF: aviso falso (texto dentro de figura)"
  }
 }
