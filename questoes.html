@@ -82,6 +82,8 @@ details.sub > summary .n { margin-left: auto; }
 details.sub > summary .gsel { margin: 0; flex: none; }
 .classif { display: grid; gap: 6px; }
 .manut { display: grid; gap: 6px; }
+.pv-exportar { border: 1px solid var(--line, #ddd); border-radius: var(--radius); padding: 8px 12px; display: grid; gap: 8px; }
+.pv-exportar legend { font-weight: 600; font-size: .9rem; padding: 0 4px; }
 .manut .ed-estado { margin: 0; }
 .coment { border: 1px solid var(--accent); border-radius: var(--radius); padding: 10px 14px; margin: 4px 0; }
 .coment > summary { cursor: pointer; font-weight: 600; }
@@ -384,10 +386,20 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       <p class="explica" id="pvAviso"></p>
       <div class="actions">
         <button class="btn pri" type="button" id="pvImprimir">Imprimir</button>
-        <button class="btn" type="button" id="pvBaixar">Baixar para imprimir (HTML)</button>
         <button class="btn" type="button" id="pvSalvar">Salvar prova</button>
         <button class="btn sec" type="button" id="pvLimpar">Começar outra</button>
       </div>
+      <fieldset class="pv-exportar">
+        <legend>Exportar em documento</legend>
+        <label>Questões <select id="pvQuais"><option value="prova">da prova montada</option><option value="busca">da busca atual</option></select></label>
+        <div class="actions">
+          <button class="btn" type="button" data-exportar="docx">Word (.docx)</button>
+          <button class="btn" type="button" data-exportar="pdf">PDF</button>
+          <button class="btn" type="button" id="pvBaixar">HTML</button>
+          <button class="btn" type="button" data-exportar="txt">Texto (.txt)</button>
+        </div>
+        <p class="explica">O Word também abre no LibreOffice e no Google Docs. O PDF sai pela janela de impressão do navegador (destino “Salvar como PDF”). As opções acima (origem, cartão-resposta, gabarito) valem para todos os formatos.</p>
+      </fieldset>
       <p class="explica" id="pvEstado"></p>
       <div id="pvSalvas"></div>
     </section>
@@ -1745,8 +1757,20 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     const dpi = Number(im.dataset.dpi ?? 200);
     if (dpi > 0 && im.naturalWidth) im.style.width = Math.round(im.naturalWidth * (72 / dpi) * 1.5) + "px";
   }
-  $("pvImprimir").addEventListener("click", () => {
-    const qs = questoesDaProva();
+  const LIMITE_EXPORTAR = 300;
+  function questoesExportar() {
+    if ($("pvQuais").value !== "busca") return questoesDaProva();
+    return BANCO.filter((x) => passa(x)).slice(0, LIMITE_EXPORTAR);
+  }
+  const nomeArquivo = (ext) => ((MONT.titulo || "questoes").normalize("NFD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").toLowerCase() || "questoes") + "." + ext;
+  async function salvarArquivo(nome, dados, tipo) {
+    if (ED.downloads) return ED.downloads.save({ filename: nome, data: dados });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(dados instanceof Blob ? dados : new Blob([dados], { type: tipo })); a.download = nome;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  }
+  $("pvImprimir").addEventListener("click", () => imprimir(questoesDaProva()));
+  function imprimir(qs, dica) {
     if (!qs.length) return estadoProva("Adicione questões antes de imprimir.");
     $("impressao").innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
     const imgs = [...$("impressao").querySelectorAll("img")];
@@ -1757,19 +1781,19 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
         document.body.classList.add("imprimindo");
         const fim = () => { document.body.classList.remove("imprimindo"); window.removeEventListener("afterprint", fim); };
         window.addEventListener("afterprint", fim);
-        estadoProva("Se a janela de impressão não abrir, use “Baixar para imprimir” e imprima o arquivo baixado.");
+        estadoProva(dica || "Se a janela de impressão não abrir, use “HTML” e imprima o arquivo baixado.");
         try { window.print(); } catch (e) { fim(); }
       });
-  });
+  }
   $("pvBaixar").addEventListener("click", async () => {
-    const qs = questoesDaProva();
+    const qs = questoesExportar();
     if (!qs.length) return estadoProva("Adicione questões antes de baixar.");
     const b = $("pvBaixar"); b.disabled = true; estadoProva("Preparando o arquivo (as imagens vão dentro dele)…");
     try {
       const div = document.createElement("div");
       div.innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
       for (const im of div.querySelectorAll("img")) {
-        const blob = await (await fetch(im.getAttribute("src"))).blob();
+        const blob = await imagemBlob(im.getAttribute("src"));
         const dpi = Number(im.dataset.dpi ?? 200);
         if (dpi > 0) { const bmp = await createImageBitmap(blob); im.style.width = Math.round(bmp.width * (72 / dpi) * 1.5) + "px"; }
         im.src = await paraDataURL(blob);
@@ -1779,18 +1803,197 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
       const doc = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(titulo)}</title>`
         + `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">`
         + `<style>${css}\nbody{background:#fff!important;color:#000;padding:12mm!important;max-width:210mm;margin:0 auto}@media print{body{padding:0!important;max-width:none}}</style></head><body>${div.innerHTML}</body></html>`;
-      const nome = (titulo.normalize("NFD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").toLowerCase() || "prova") + ".html";
-      if (ED.downloads) await ED.downloads.save({ filename: nome, data: doc });
-      else {
-        const a = document.createElement("a");
-        a.href = URL.createObjectURL(new Blob([doc], { type: "text/html" })); a.download = nome;
-        document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
-      }
+      await salvarArquivo(nomeArquivo("html"), doc, "text/html");
       estadoProva("Arquivo pronto: abra no navegador e use Imprimir (ou salvar em PDF).");
     } catch (err) {
       estadoProva(err && err.code === "cancelled" ? "" : "Não foi possível gerar o arquivo: " + erroTexto(err));
     } finally { b.disabled = false; }
   });
+  // ---------- exportação: .docx (gerado aqui, sem bibliotecas) e .txt ----------
+  // Imagem como Blob: o arquivo, ou o pacote da página publicada.
+  async function imagemBlob(src) {
+    try { const r = await fetch(src); if (r.ok) return await r.blob(); } catch (_) { /* tenta o pacote */ }
+    const p = pacoteDe(src);
+    const dados = p && (await p.pacote)[p.nome];
+    if (!dados) throw new Error("imagem indisponível: " + src.split("/").pop());
+    return (await fetch(dados)).blob();
+  }
+  // PNG (o Word não lê WebP em todas as versões) e tamanho em pixels
+  async function imagemPNG(src) {
+    const bmp = await createImageBitmap(await imagemBlob(src));
+    const c = document.createElement("canvas"); c.width = bmp.width; c.height = bmp.height;
+    const g = c.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, c.width, c.height); g.drawImage(bmp, 0, 0);
+    const png = await new Promise((ok) => c.toBlob(ok, "image/png"));
+    return { bytes: new Uint8Array(await png.arrayBuffer()), w: bmp.width, h: bmp.height };
+  }
+  // ZIP sem compressão (método "store"), suficiente para .docx
+  const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+  function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zip(arquivos) {  // [{nome, dados: Uint8Array}]
+    const enc = new TextEncoder(), partes = [], central = [];
+    let pos = 0;
+    const u16 = (v) => [v & 255, (v >>> 8) & 255], u32 = (v) => [v & 255, (v >>> 8) & 255, (v >>> 16) & 255, (v >>> 24) & 255];
+    for (const a of arquivos) {
+      const nome = enc.encode(a.nome), crc = crc32(a.dados), n = a.dados.length;
+      const comum = [...u16(20), ...u16(0x0800), ...u16(0), ...u16(0), ...u16(0x21), ...u32(crc), ...u32(n), ...u32(n), ...u16(nome.length), ...u16(0)];
+      const local = new Uint8Array([...u32(0x04034b50), ...comum]);
+      partes.push(local, nome, a.dados);
+      central.push(new Uint8Array([...u32(0x02014b50), ...u16(20), ...comum, ...u16(0), ...u16(0), ...u16(0), ...u32(0), ...u32(pos)]), nome);
+      pos += local.length + nome.length + n;
+    }
+    const tamCentral = central.reduce((t, x) => t + x.length, 0);
+    const fim = new Uint8Array([...u32(0x06054b50), ...u16(0), ...u16(0), ...u16(arquivos.length), ...u16(arquivos.length), ...u32(tamCentral), ...u32(pos), ...u16(0)]);
+    return new Blob([...partes, ...central, fim], { type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" });
+  }
+  const xmlEsc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  // Texto dos documentos: o mesmo HTML que a página mostra (parágrafos
+  // refeitos, poemas, referências, índices), convertido em trechos.
+  const elem = (html) => { const d = document.createElement("div"); d.innerHTML = html; return d; };
+  function runsDocx(no) {  // nó HTML -> <w:r> com negrito, itálico, índice/expoente e quebras
+    let xml = "";
+    const andar = (n, f) => {
+      if (n.nodeType === 3) {
+        if (!n.nodeValue) return;
+        const pr = (f.b ? "<w:b/>" : "") + (f.i ? "<w:i/>" : "") + (f.va ? `<w:vertAlign w:val="${f.va}"/>` : "");
+        xml += `<w:r>${pr ? `<w:rPr>${pr}</w:rPr>` : ""}<w:t xml:space="preserve">${xmlEsc(n.nodeValue.replace(/\s+/g, " "))}</w:t></w:r>`;
+        return;
+      }
+      if (n.nodeType !== 1) return;
+      const t = n.tagName;
+      if (t === "BR") { xml += "<w:r><w:br/></w:r>"; return; }
+      if (t === "IMG") return;
+      const g = Object.assign({}, f, t === "STRONG" || t === "B" ? { b: true } : t === "EM" || t === "I" || n.classList.contains("cite") ? { i: n.classList.contains("cite") ? f.i : true } : t === "SUP" ? { va: "superscript" } : t === "SUB" ? { va: "subscript" } : {});
+      n.childNodes.forEach((c) => andar(c, g));
+    };
+    andar(no, {});
+    return xml;
+  }
+  const textoPlano = (no) => {
+    const c = no.cloneNode(true);
+    c.querySelectorAll("br").forEach((b) => b.replaceWith("\n"));
+    c.querySelectorAll("sup").forEach((x) => x.replaceWith("^" + x.textContent));
+    c.querySelectorAll("sub").forEach((x) => x.replaceWith("_" + x.textContent));
+    return c.textContent.replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").trim();
+  };
+
+  // Estrutura comum aos formatos: {tipo: "titulo"|"par"|"img"|"quebra", no (HTML), ...}
+  function itensDocumento(qs, o, titulo) {
+    const it = [], impressos = new Set();
+    const par = (html, extra) => it.push(Object.assign({ tipo: "par", no: elem(html) }, extra));
+    if (titulo) it.push({ tipo: "titulo", no: elem(`<b>${esc(titulo)}</b>`) });
+    // percorre o HTML da página: parágrafos, linhas numeradas e figuras
+    const conteudo = (html) => {
+      const d = elem(html);
+      d.querySelectorAll("img").forEach((im) => { im.closest("figure, p, div").dataset.figura = "1"; });
+      [...d.children].forEach((n) => {
+        if (n.matches("figure") || n.querySelector("img")) {
+          n.querySelectorAll("img").forEach((im) => it.push({ tipo: "img", src: im.getAttribute("src"), dpi: Number(im.dataset.dpi ?? 200) }));
+        } else if (n.classList.contains("b-linhas")) {
+          [...n.children].forEach((l) => it.push({ tipo: "par", no: elem(esc(l.textContent.replace(/^(\d+)/, "$1  ").replace(/\s+/g, " ").trim())), junto: true }));
+        } else if (n.textContent.trim()) {
+          it.push({ tipo: "par", no: n, centro: n.classList.contains("b-centro") || n.classList.contains("b-titulo") });
+        }
+      });
+    };
+    qs.forEach((q, i) => {
+      const tb = q.texto_base && TEXTOS_BASE[q.texto_base];
+      if (tb && !impressos.has(q.texto_base)) {
+        impressos.add(q.texto_base);
+        const nums = qs.map((x, j) => (x.texto_base === q.texto_base ? j + 1 : 0)).filter(Boolean);
+        par(`<b>Texto para ${nums.length > 1 ? `as questões ${nums[0]} a ${nums[nums.length - 1]}` : `a questão ${nums[0]}`}</b>`, { espaco: true });
+        conteudo(htmlBlocos(tb.blocos));
+      }
+      par(`<b>Questão ${i + 1}</b>${o.fonte ? ` (${esc(origemCurta(q))})` : ""}`, { espaco: true });
+      if (!q.blocos && q.imagem) { it.push({ tipo: "img", src: q.imagem, dpi: 150 }); return; }
+      conteudo(q.blocos ? htmlBlocos(q.blocos) : paragrafos(q.enunciado));
+      "ABCDE".split("").forEach((L) => {
+        const im = (q.alternativas_imagem || {})[L], tx = (q.alternativas || {})[L];
+        if (im) par(`<b>${L})</b>`, { img: { src: im, dpi: 200 } });
+        else if (tx) par(`<b>${L})</b> ${fmt(indices(esc(tx)))}`);
+      });
+    });
+    if (o.cartao) {
+      it.push({ tipo: "quebra" }, { tipo: "titulo", no: elem(`<b>Cartão-resposta${titulo ? " · " + esc(titulo) : ""}</b>`) });
+      qs.forEach((q, i) => par(`${i + 1}.&nbsp;&nbsp; ( ) A &nbsp; ( ) B &nbsp; ( ) C &nbsp; ( ) D &nbsp; ( ) E`, { junto: true }));
+    }
+    if (o.gabarito) {
+      it.push({ tipo: "quebra" }, { tipo: "titulo", no: elem(`<b>Gabarito${titulo ? " · " + esc(titulo) : ""}</b>`) });
+      qs.forEach((q, i) => par(`${i + 1}. ${q.anulada ? "anulada" : esc(q.gabarito || "—")}`, { junto: true }));
+    }
+    return it;
+  }
+
+  async function gerarDocx(qs, o, titulo, progresso) {
+    const itens = itensDocumento(qs, o, titulo), imagens = [];
+    const LARGURA = 6120000;  // 17 cm de área útil (A4 com margens de 2 cm), em EMU
+    const desenho = async (src, dpi) => {
+      const im = await imagemPNG(src), n = imagens.length + 1;
+      imagens.push(im.bytes);
+      let cx = Math.round(im.w * (72 / dpi) * 1.5 * 9525), cy = Math.round(im.h * (72 / dpi) * 1.5 * 9525);
+      if (cx > LARGURA) { cy = Math.round(cy * LARGURA / cx); cx = LARGURA; }
+      return `<w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${cx}" cy="${cy}"/><wp:docPr id="${n}" name="Imagem ${n}"/>`
+        + `<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">`
+        + `<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="${n}" name="imagem${n}.png"/><pic:cNvPicPr/></pic:nvPicPr>`
+        + `<pic:blipFill><a:blip r:embed="rImg${n}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>`
+        + `<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>`;
+    };
+    let corpo = "", feitas = 0;
+    const total = itens.filter((x) => x.tipo === "img" || x.img).length;
+    for (const x of itens) {
+      if (x.tipo === "quebra") { corpo += '<w:p><w:r><w:br w:type="page"/></w:r></w:p>'; continue; }
+      if (x.tipo === "titulo") { corpo += `<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:after="240"/></w:pPr>${runsDocx(x.no)}</w:p>`; continue; }
+      const pPr = `<w:pPr>${x.centro || x.tipo === "img" ? '<w:jc w:val="center"/>' : ""}<w:spacing w:before="${x.espaco ? 240 : 0}" w:after="${x.junto ? 0 : 120}"/></w:pPr>`;
+      let conteudo = x.tipo === "img" ? await desenho(x.src, x.dpi) : runsDocx(x.no);
+      if (x.img) conteudo += '<w:r><w:t xml:space="preserve"> </w:t></w:r>' + await desenho(x.img.src, x.img.dpi);
+      if (x.tipo === "img" || x.img) progresso(++feitas, total);
+      corpo += `<w:p>${pPr}${conteudo}</w:p>`;
+    }
+    const enc = new TextEncoder(), cab = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+    const documento = cab + '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"><w:body>'
+      + corpo + '<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="709" w:footer="709" w:gutter="0"/></w:sectPr></w:body></w:document>';
+    const rels = cab + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+      + imagens.map((_, i) => `<Relationship Id="rImg${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/imagem${i + 1}.png"/>`).join("") + "</Relationships>";
+    return zip([
+      { nome: "[Content_Types].xml", dados: enc.encode(cab + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>') },
+      { nome: "_rels/.rels", dados: enc.encode(cab + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>') },
+      { nome: "word/document.xml", dados: enc.encode(documento) },
+      { nome: "word/_rels/document.xml.rels", dados: enc.encode(rels) },
+      ...imagens.map((b, i) => ({ nome: `word/media/imagem${i + 1}.png`, dados: b })),
+    ]);
+  }
+
+  function gerarTxt(qs, o, titulo) {
+    return itensDocumento(qs, o, titulo).map((x) => {
+      if (x.tipo === "quebra") return "\n" + "-".repeat(40);
+      if (x.tipo === "titulo") return textoPlano(x.no).toUpperCase() + "\n";
+      if (x.tipo === "img") return "[figura]";
+      return (x.espaco ? "\n" : "") + textoPlano(x.no) + (x.img ? " [alternativa em imagem]" : "") + (x.junto ? "" : "\n");
+    }).join("\n").replace(/\n{3,}/g, "\n\n") + "\n";
+  }
+
+  $("painelProva").addEventListener("click", async (e) => {
+    const b = e.target.closest("[data-exportar]");
+    if (!b) return;
+    const qs = questoesExportar(), formato = b.dataset.exportar;
+    if (!qs.length) return estadoProva($("pvQuais").value === "busca" ? "A busca atual não tem questões." : "Adicione questões à prova ou escolha “da busca atual”.");
+    const aviso = $("pvQuais").value === "busca" && BANCO.filter((x) => passa(x)).length > LIMITE_EXPORTAR ? ` (só as ${LIMITE_EXPORTAR} primeiras da busca)` : "";
+    if (formato === "pdf") return imprimir(qs, `Na janela de impressão, escolha o destino “Salvar como PDF”${aviso}.`);
+    b.disabled = true;
+    try {
+      if (formato === "txt") {
+        await salvarArquivo(nomeArquivo("txt"), gerarTxt(qs, MONT.opcoes, MONT.titulo), "text/plain;charset=utf-8");
+        estadoProva(`Arquivo de texto pronto: ${qs.length} questões${aviso}. Figuras aparecem como [figura].`);
+      } else {
+        estadoProva("Preparando o documento…");
+        const doc = await gerarDocx(qs, MONT.opcoes, MONT.titulo, (n, t) => estadoProva(`Preparando o documento: imagem ${n} de ${t}…`));
+        await salvarArquivo(nomeArquivo("docx"), doc);
+        estadoProva(`Documento Word pronto: ${qs.length} questões${aviso}.`);
+      }
+    } catch (err) {
+      estadoProva(err && err.code === "cancelled" ? "" : "Não foi possível gerar o arquivo: " + erroTexto(err));
+    } finally { b.disabled = false; }
+  });
+
   async function gravarProva(p, apagar) {
     if (ED.modo === "nuvem") {
       const ref = ED.db.collection("provas").doc(p.id);

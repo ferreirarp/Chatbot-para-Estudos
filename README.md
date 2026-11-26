@@ -141,7 +141,7 @@ Os textos são redigidos a partir de pesquisa na web, não copiados. O padrão
 está em `docs/procedimentos.md`, e `scripts/comentarios.py` valida as fichas
 e gera os `.js` que a página carrega quando a questão é respondida.
 Situação: piloto com 4 questões de 2025 (Física, Matemática, Filosofia e
-Língua Portuguesa).
+Língua Portuguesa); o restante está no plano (`docs/plano.md`).
 
 ### Manutenção (botões da página)
 Na página publicada, a dona vê o grupo "Manutenção do banco":
@@ -154,6 +154,19 @@ Na página publicada, a dona vê o grupo "Manutenção do banco":
 Cada botão dispara uma tarefa agendada (conector Claude Code Remote) que abre
 uma sessão do Claude na nuvem. A sessão segue `docs/procedimentos.md`, salva
 no git e republica a página. Os dois scripts também rodam à mão.
+
+### Exportar em documento
+No painel "Montar prova", "Exportar em documento" salva as questões da prova
+montada ou as da busca atual (até 300) nestes formatos:
+- **Word (.docx)**, gerado no próprio navegador, com as imagens dentro; abre
+  também no LibreOffice e no Google Docs;
+- **PDF**, pela janela de impressão do navegador;
+- **HTML**;
+- **texto (.txt)**.
+
+O texto sai com os mesmos parágrafos, índices e expoentes da página. As
+opções de origem, cartão-resposta e gabarito valem para todos os formatos.
+Formatação e cabeçalho estão no plano (`docs/plano.md`).
 
 ### Questões próprias e provas impressas
 - **+ Nova questão** (barra lateral): questão autoral ou de outra fonte, com

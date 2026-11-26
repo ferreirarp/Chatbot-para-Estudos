@@ -77,10 +77,16 @@
     "E": "triângulo equilátero, pois a área do jardim, em metro quadrado, será k²√3/4."
    },
    "alternativas_imagem": {},
-   "revisar": []
+   "revisar": [],
+   "blocos": [
+    {
+     "tipo": "texto",
+     "texto": "Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado\npor essa cerca, deve ter a forma de um triângulo equilátero, um quadrado ou um hexágono regular. A escolha será\npela forma que resulte na maior área.\nO jardineiro escolherá a forma de"
+    }
+   ]
   },
   "atualizado": "2026-11-25",
-  "nota": "alternativas transcritas do PDF: o recorte perdia o √ e cortava o numerador de A"
+  "nota": "alternativas transcritas do PDF: o recorte perdia o √ e cortava o numerador de A; removido o fragmento de imagem do numerador cortado"
  },
  "2025-belem-D1-CD1-Q038": {
   "campos": {
