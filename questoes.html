@@ -398,7 +398,7 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
           <button class="btn" type="button" id="pvBaixar">HTML</button>
           <button class="btn" type="button" data-exportar="txt">Texto (.txt)</button>
         </div>
-        <p class="explica">O Word também abre no LibreOffice e no Google Docs. O PDF sai pela janela de impressão do navegador (destino “Salvar como PDF”). As opções acima (origem, cartão-resposta, gabarito) valem para todos os formatos.</p>
+        <p class="explica">O Word também abre no LibreOffice e no Google Docs. PDF e Imprimir usam a janela de impressão do navegador (destino “Salvar como PDF”); aqui no claude.ai, onde ela é bloqueada, baixam um arquivo que abre essa janela sozinho. As opções acima (origem, cartão-resposta, gabarito) valem para todos os formatos.</p>
       </fieldset>
       <p class="explica" id="pvEstado"></p>
       <div id="pvSalvas"></div>
@@ -1769,9 +1769,13 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
     a.href = URL.createObjectURL(dados instanceof Blob ? dados : new Blob([dados], { type: tipo })); a.download = nome;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   }
+  // Dentro do claude.ai a página roda num quadro isolado, onde window.print()
+  // é ignorado em silêncio: lá, imprimir = baixar um HTML que imprime sozinho.
+  const EM_QUADRO = (() => { try { return window.self !== window.top; } catch (_) { return true; } })();
   $("pvImprimir").addEventListener("click", () => imprimir(questoesDaProva()));
   function imprimir(qs, dica) {
     if (!qs.length) return estadoProva("Adicione questões antes de imprimir.");
+    if (EM_QUADRO) return baixarHTML(qs, true, $("pvImprimir"));
     $("impressao").innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
     const imgs = [...$("impressao").querySelectorAll("img")];
     estadoProva("Preparando a impressão…");
@@ -1785,30 +1789,37 @@ dialog.editor::backdrop { background: rgba(10, 14, 20, .55); }
         try { window.print(); } catch (e) { fim(); }
       });
   }
-  $("pvBaixar").addEventListener("click", async () => {
-    const qs = questoesExportar();
-    if (!qs.length) return estadoProva("Adicione questões antes de baixar.");
-    const b = $("pvBaixar"); b.disabled = true; estadoProva("Preparando o arquivo (as imagens vão dentro dele)…");
+  // Documento HTML completo, com as imagens dentro; com autoImprimir, abre a
+  // janela de impressão sozinho ao ser aberto.
+  async function documentoHTML(qs, autoImprimir) {
+    const div = document.createElement("div");
+    div.innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
+    for (const im of div.querySelectorAll("img")) {
+      const blob = await imagemBlob(im.getAttribute("src"));
+      const dpi = Number(im.dataset.dpi ?? 200);
+      if (dpi > 0) { const bmp = await createImageBitmap(blob); im.style.width = Math.round(bmp.width * (72 / dpi) * 1.5) + "px"; }
+      im.src = await paraDataURL(blob);
+    }
+    const css = [...document.querySelectorAll("style")].map((x) => x.textContent).join("\n");
+    return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(MONT.titulo || "Prova")}</title>`
+      + `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">`
+      + `<style>${css}\nbody{background:#fff!important;color:#000;padding:12mm!important;max-width:210mm;margin:0 auto}@media print{body{padding:0!important;max-width:none}}</style></head><body>${div.innerHTML}`
+      + (autoImprimir ? `<script>window.addEventListener("load",function(){setTimeout(function(){window.print()},400)})<\/script>` : "") + `</body></html>`;
+  }
+  async function baixarHTML(qs, autoImprimir, botao) {
+    if (!qs.length) return estadoProva("Adicione questões à prova ou escolha “da busca atual”.");
+    if (botao) botao.disabled = true;
+    estadoProva("Preparando o arquivo (as imagens vão dentro dele)…");
     try {
-      const div = document.createElement("div");
-      div.innerHTML = htmlProvaDoc(qs, MONT.opcoes, MONT.titulo);
-      for (const im of div.querySelectorAll("img")) {
-        const blob = await imagemBlob(im.getAttribute("src"));
-        const dpi = Number(im.dataset.dpi ?? 200);
-        if (dpi > 0) { const bmp = await createImageBitmap(blob); im.style.width = Math.round(bmp.width * (72 / dpi) * 1.5) + "px"; }
-        im.src = await paraDataURL(blob);
-      }
-      const css = [...document.querySelectorAll("style")].map((x) => x.textContent).join("\n");
-      const titulo = MONT.titulo || "Prova";
-      const doc = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(titulo)}</title>`
-        + `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">`
-        + `<style>${css}\nbody{background:#fff!important;color:#000;padding:12mm!important;max-width:210mm;margin:0 auto}@media print{body{padding:0!important;max-width:none}}</style></head><body>${div.innerHTML}</body></html>`;
-      await salvarArquivo(nomeArquivo("html"), doc, "text/html");
-      estadoProva("Arquivo pronto: abra no navegador e use Imprimir (ou salvar em PDF).");
+      await salvarArquivo(autoImprimir ? nomeArquivo("html").replace(/\.html$/, "-imprimir.html") : nomeArquivo("html"), await documentoHTML(qs, autoImprimir), "text/html");
+      estadoProva(autoImprimir
+        ? "Arquivo baixado. Abra-o: a janela de impressão aparece sozinha (para PDF, escolha o destino “Salvar como PDF”)."
+        : "Arquivo pronto: abra no navegador e use Imprimir (ou salvar em PDF).");
     } catch (err) {
       estadoProva(err && err.code === "cancelled" ? "" : "Não foi possível gerar o arquivo: " + erroTexto(err));
-    } finally { b.disabled = false; }
-  });
+    } finally { if (botao) botao.disabled = false; }
+  }
+  $("pvBaixar").addEventListener("click", () => baixarHTML(questoesExportar(), false, $("pvBaixar")));
   // ---------- exportação: .docx (gerado aqui, sem bibliotecas) e .txt ----------
   // Imagem como Blob: o arquivo, ou o pacote da página publicada.
   async function imagemBlob(src) {
